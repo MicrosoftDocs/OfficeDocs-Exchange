@@ -34,6 +34,8 @@ Set up connectors to:
 - Apply security restrictions, or controls, to mail exchanges with a business partner or service provider.
     
 - Enable email notifications from a printer or other non-mailbox entity.
+
+- Avoid basic IP throttling, such as NDR errors in this range: 451 4.7.500-699 (ASxxx).
     
 Most organizations that use Office 365 don't need connectors. This topic helps you decide whether your organization needs a connector, and which one. You can also find out what connectors are and how they work.
   
