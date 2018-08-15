@@ -17,6 +17,8 @@ description: "The Directory Based Edge Blocking (DBEB) feature in Exchange Onlin
 The Directory Based Edge Blocking (DBEB) feature in Exchange Online and Exchange Online Protection (EOP) lets you reject messages for invalid recipients at the service network perimeter. DBEB lets admins add mail-enabled recipients to Office 365 and block all messages sent to email addresses that aren't present in Office 365.
   
 If a message is sent to a valid email address present in Office 365, the message continues through the rest of the service filtering layers (anti-malware, anti-spam, transport rules). If the address is not present, the service blocks the message before filtering even occurs, and a non-delivery report (NDR) is sent to the sender informing them that their message was not delivered. The contents of the NDR will be similar to the following: '550 5.4.1 [\< *nosuchuser*  \>@\<  *recipient_domain*  \>]: Recipient address rejected: Access denied'. 
+
+<Please add this as a note>: For a hybrid configuration, the recipient's SMTP domain must have the DNS MX record pointing to O365/EOP.
   
 ## Configure DBEB
 
