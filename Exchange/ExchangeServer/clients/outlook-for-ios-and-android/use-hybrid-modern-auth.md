@@ -143,7 +143,7 @@ Enabling support for hybrid Modern Authentication in your organization requires 
     
 3. Enable hybrid Modern Authentication
     
-4. Contact Microsoft
+4. Contact Microsoft*
     
 ### Create a conditional access policy
 
@@ -195,7 +195,7 @@ In addition to the above minimum policy requirements, you should consider deploy
 > To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](https://docs.microsoft.com/intune/app-protection-enabled-apps-android).
   
 ### Enable hybrid Modern Authentication
-
+  
 1. If you haven't enabled hybrid Modern Authentication, review the prerequisites as outlined in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](https://support.office.com/article/ef753b32-7251-4c9e-b442-1a5aec14e58d?). After you've completed the prereqsuisites, do the steps in [How to configure Exchange Server on-premises to use hybrid Modern Authentication](https://support.office.com/article/cef3044d-d4cb-4586-8e82-ee97bd3b14ad?).
   
 2. Create an Exchange on-premises device access allow rule to allow Exchange Online to connect to your on-premises environment using the ActiveSync protocol:
@@ -222,6 +222,10 @@ In addition to the above minimum policy requirements, you should consider deploy
   - Property: `maxRequestLength`
     
   - Value: set in KB size (10MB is 10240, for example)
+  
+### Contact Microsoft
+  
+To enable support of hybrid Modern Authentication for Outlook for iOS and Android, you must contact your Microsoft account team, customer sales and services (CSS) contact, or your technical account manager. You will need to provide all SMTP domains (and UPN domains in the event that your UPN domains don't match the SMTP address). Once the domains are provided and enabled, hybrid Modern Authentication will be supported for on-premises mailboxes using Outlook for iOS and Android.
   
 ## Client features that aren't supported
 
