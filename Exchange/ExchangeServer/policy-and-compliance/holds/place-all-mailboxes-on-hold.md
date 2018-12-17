@@ -51,8 +51,15 @@ The example uses the [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9
 You can use the EAC to select up to 500 mailboxes and place them on hold. For details, see [Create or remove an In-Place Hold](in-place-holds.md).
   
 > [!TIP]
-> To place more than 500 users on In-Place Hold, use the Exchange Management Shell. See [New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
-  
+> To place more than 500 users on In-Place Hold, use the Exchange Management Shell. See[New-MailboxSearch](http://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
+
+
+> [!TIP]
+In Hybrid Scenario Where all mailboxes in Office365  are on legal hold or in-place Hold as the Organization Retain Policy Requirement and Your organization might need to retain Leaved  employees' email after they leave the organization and doesn't want to assign O365 License for leaved Employee or Want to Delete the leaved  Employee AD Account and Keep their emails for Specific Period or Forever  as The Organization Email retain Policy Requirement then You can use  "Inactive mailbox" Feature That available  in specific License Plan “ Exchange Online Plan 2 , Office 365 Enterprise E3 and E5 subscriptions “ to retain The Leave Employee Data without License Required or Existing AD account 
+[Inactive mailbox](https://docs.microsoft.com/en-us/office365/securitycompliance/inactive-mailboxes-in-office-365)
+If you have Exchange Online Plan 1 license and you would Like to use Inactive mailbox  you would have to assign a separate Exchange Online Archiving license to the mailbox 
+
+
 ## More information
 <a name="moreinfo"> </a>
 
