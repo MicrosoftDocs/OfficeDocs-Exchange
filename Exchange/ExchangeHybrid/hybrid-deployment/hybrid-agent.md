@@ -16,7 +16,7 @@ to identify specific connectivity requirements for Modern Hybrid deployments.
 ### Agent
 
 The Hybrid Agent itself has limited inbound or outbound connection requirements,
-making it appropriate for installation in a DMZ. However, limited does not mean
+making it appropriate for installation in a demilitarized zone (DMZ). However, limited does not mean
 “none.” Being built on Azure AD Application Proxy technology, the agent’s core
 requirements are no different. These are summed up in the “Open Your Ports”
 section in https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-enable.
@@ -26,7 +26,7 @@ section in https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/a
 The Stand Alone Hybrid Configuration Wizard is, as its name indicates, a wizard
 which guides the process of hybrid configuration. It is capable of downloading
 and installing the agent, as well as configuring and validating the endpoints,
-but to do so, it requires remote powershell connectivity to the CAS server
+but to do so, it requires remote powershell connectivity to the client access server (CAS) 
 selected for the agent endpoint.
 
 Note that as a ClickOnce client, a browser with ClickOnce support such as
@@ -135,12 +135,12 @@ https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
 describes the required (and hybrid) ports and IPs outbound from on-prem to the
 service.
 
-SMTP does not traverse the Hybrid Agent and will still require a public
+Simple Mail Transfer Protocol (SMTP) does not traverse the Hybrid Agent and will still require a public
 certificate for mail flow between Office 365 and on-premises.
 
 MailTips, Message Tracking and Multi-mailbox search do not traverse the Hybrid
 Agent. These Hybrid features would require the classic connectivity model where
-EWS and Autodiscover are published on-premises and externally available to
+Exchange Web Services (EWS) and Autodiscover are published on-premises and externally available to
 office 365.
 
 ## Running Setup
@@ -154,7 +154,7 @@ You must run the HCW from the machine where you want the agent installed. After
 the Agent is installed and configured, the HCW will locate a preferred server to
 connect to and run the standard hybrid configuration steps. You do not have to
 run the HCW from the Exchange server directly, but as stated above, the machine
-where the HCW is executed from must be able to HTTPS and RPS the selected CAS
+where the HCW is executed from must be able to Hyper Text Transfer Protocol Secure (HTTPS) and Mailbox Replication Service (MRS) the selected CAS
 server.
 
 ### Installation Prerequisites
