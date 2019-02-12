@@ -70,6 +70,14 @@ You can use a journal rule to journal only internal messages, only external mess
 
 - **All messages**: Journal rules with the scope set to journal all messages that pass through your organization regardless of origin or destination. These include messages that may have already been processed by journal rules in the Internal and External scopes.
 
+>[!NOTE]
+>* When multiple journal rules are configured and an email matches the scope of multiple journal rules, all matching rules will be triggered. Therefore, a journal report will be sent to each journal mailbox specified for each of the journal rules triggered.
+
+>* If the same journal mailbox is specified in multiple rules and the email triggers these rules, only one journal report will be sent to that journal mailbox.
+
+>* Journal rules use SMTP mailFrom addresses to identify if the email is internal or external. If the SMTP from address shows the domain that is added as accepted domain or remote domain in their Exchange Online, it will be treated as internal email although it originated externally. For example, a spoof email from an external source with X-MS-Exchange-Organization-AuthAs:Anonymous. Therefore, any journal rule scoped for external email will not be triggered for these spoof emails sent from external sources if the SMTP from address shows that the domain name is an accepted domain/remote domain.
+
+
 ### Journal recipient
 
 You can implement targeted journaling rules by specifying the SMTP address of the recipient you want to journal. The recipient can be a mailbox, distribution group, mail user, or contact. These recipients may be subject to regulatory requirements, or they may be involved in legal proceedings where email messages or other communications are collected as evidence. By targeting specific recipients or groups of recipients, you can easily configure a journaling environment that matches your organization's processes and meets regulatory and legal requirements. Targeting only the specific recipients that need to be journaled also minimizes storage and other costs associated with retention of large amounts of data.
