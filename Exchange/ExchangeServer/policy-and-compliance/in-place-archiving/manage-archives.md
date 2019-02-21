@@ -188,6 +188,7 @@ When you disable an archive mailbox, it becomes disconnected. A disconnected arc
 4. On the **Create in-place archive** page, click **OK**.
     
     You can have Exchange automatically select a mailbox database for the re-enabled archive mailbox or you can click **Browse** to specify one.
+    To manually complete this, use the following CMDlet in the exchange powershell module: Enable-mailbox -identity "John, Doe" -ArchiveGUID <ID> -ArchiveDatabase <SERVERNAME> -Archive
     
 ### Use the Exchange Management Shell to re-enable an archive mailbox
 
