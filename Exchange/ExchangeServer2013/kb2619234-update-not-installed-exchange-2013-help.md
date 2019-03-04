@@ -19,7 +19,7 @@ Microsoft Exchange Server 2013 Setup can’t continue because the local computer
 
 Exchange 2013 Setup requires an update to Windows that allows Outlook Anywhere (formerly known as RPC over HTTP) to work correctly.
 
-Download and install the 64-bit update from the following URL, and then click **retry** on the **Readiness Checks** page.
+Download and install the 64-bit update, see the the following URL for the detail. You might have to call the support to receive the update at no cost as it has been depreciated, and then click **retry** on the **Readiness Checks** page.
 
 
 > [!NOTE]
