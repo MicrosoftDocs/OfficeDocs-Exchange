@@ -75,12 +75,20 @@ Disable-MailPublicFolder -Identity "\Marketing\Reports"
 
 For detailed syntax and parameter information, see [Disable-MailPublicFolder](http://technet.microsoft.com/library/92d6c890-a96a-469a-b864-99d9656b12e0.aspx).
 
+Move the following section in a topic of its own and add a hyperlink here. Also, mention this note:
+
+If you expect the mail enabled public folder to receive emails from external users, follow the steps
+
 ## Allow anonymous users to send email to a mail-enabled public folder
 <a name="CreateItems"> </a>
+
+Following steps are required if you expect the mail enabled public folder to receive emails from external users
 
 You can use either Outlook or the Exchange Management Shell to set permissions on a public folder's Anonymous account. You can't use the EAC to set permissions on the Anonymous account.
 
  **Use Outlook to set permissions for the Anonymous account**
+Note:
+Only existing public folder owners can add new users to the permission
 
 1. Open Outlook using an account that's been granted Owner permissions on the email-enabled public folder you want anonymous users to send mail to.
 
