@@ -83,6 +83,7 @@ The following table identifies the Active Directory environments that Exchange c
 
 |**AD forest functional level**|**Exchange 2019**|**Exchange 2016 CU7 and later**|**Exchange 2016 CU3 to CU6**|**Exchange 2016 CU2 and earlier**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3 RU22 or later**|**Exchange 2010 SP3 RU5 - RU21**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+|Windows Server 2019|X|X|X|X|X|||
 |Windows Server 2016|X|X|X|X|X|X||
 |Windows Server 2012 R2|X|X|X|X|X|X|X|
 |Windows Server 2012||X|X|X|X|X|X|
