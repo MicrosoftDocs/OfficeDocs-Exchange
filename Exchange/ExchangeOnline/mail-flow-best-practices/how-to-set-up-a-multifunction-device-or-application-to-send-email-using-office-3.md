@@ -94,6 +94,8 @@ The following diagram gives you a conceptual overview of what you're environment
 
 - **Port**: Port 587 (recommended) or port 25 is required and must be unblocked on your network. Some network firewalls or ISPs block ports—especially port 25.
 
+- **DNS**: You must use the DNS name smtp.office365.com. Do not use an IP address for the Office 365 server, as IP Addresses are not supported.
+
 > [!NOTE]
 > For information about TLS, see [How Exchange Online uses TLS to secure email connections in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=620842) and for detailed technical information about how Exchange Online uses TLS with cipher suite ordering, see [Enhancing mail flow security for Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=620841).
 
@@ -146,7 +148,7 @@ We recommend adding an SPF record to avoid having messages flagged as spam. If y
 
     ![Make a note of the MX record Points to address value.](../media/76d8ba1c-2d13-4081-9687-12b206b0ce2d.png)
 
-4. Go back to the device, and in the settings, under what would normally be called **Server** or **Smart Host**, enter the MX record **POINTS TO ADDRESS** value you recorded in step 3.
+4. Go back to the device, and in the settings, under what would normally be called **Server** or **Smart Host**, enter the MX record **POINTS TO ADDRESS** value you recorded in step 3.  Do NOT use an IP address for the Office 365 server connection, as IP addresses are not supported.
 
 5. Now that you are done configuring your device settings, go to your domain registrar's website to update your DNS records. Edit your sender policy framework (SPF) record. In the entry, include the IP address that you noted in step 1. The finished string looks similar to this:
 
