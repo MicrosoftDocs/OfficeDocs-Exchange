@@ -146,6 +146,3 @@ To verify that you've successfully activated a lagged mailbox database copy, do 
   ```
   Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
   ```
-
-
-

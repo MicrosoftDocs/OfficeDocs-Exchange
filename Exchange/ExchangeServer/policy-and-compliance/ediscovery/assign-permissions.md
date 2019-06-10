@@ -85,6 +85,3 @@ To verify that you've added the user to the Discovery Management role group, use
   ```
   Get-RoleGroupMember -Identity "Discovery Management"
   ```
-
-
-

@@ -100,6 +100,3 @@ To verify that you've successfully customized the Outlook on the web sign-in, la
 2. If you don't see your changes, clear your browsing history (delete temporary Internet files), and refresh the browser window.
 
  **Note**: To see the effects of your changes, you can keep the .css file open and refresh the browser window after you save each change.
-
-
-

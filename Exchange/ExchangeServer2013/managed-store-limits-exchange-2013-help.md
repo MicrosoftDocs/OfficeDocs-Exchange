@@ -12,28 +12,28 @@ author: msdmaguire
 mtps_version: v=EXCHG.150
 ---
 
-# Managed Store Limits
+# Managed Store Limits in Exchange 2013
 
-**Summary:** About Managed Store connection limits and how to configure them.
+**Summary:** Administrators can learn about Managed Store connection limits in Exchange Server 2013 and how to configure them.
 
 In Microsoft Exchange Server 2013, connection and usage limits have been placed on the Exchange Managed Store to prevent a single application or a single user from using all the available connections to the Managed Store. If a single user or application is allowed to use all of the connections, other users or applications cannot be able to access the Managed Store, which could result in downtime.
 
 > [!NOTE]
-> For any connections made by accounts that have administrative privileges, the maximum session limits have been increased to 64,000.
+> For any connections made by accounts that have administrative privileges, the maximum session limits have been increased to 64,000. <br/><br/> Exchange Online limits (including Managed Store limits) are described in the [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 ## Terminology
 
 Knowledge of the following terms will help you understand the types of connections referenced in this topic.
 
-  - Sessions
-    Sessions represent the connections used by services and client applications, such as Microsoft Outlook, to connect to the Managed Store. Services and clients can have multiple sessions at a particular time. The terms *connections* and *sessions* can be used interchangeably.
+- **Sessions**
 
-<!-- end list -->
+  Sessions represent the connections used by services and client applications, such as Microsoft Outlook, to connect to the Managed Store. Services and clients can have multiple sessions at a particular time. The terms *connections* and *sessions* can be used interchangeably.
 
-  - Threads
-    Threads represent concurrently executing requests to the Managed Store. For example, if a user opens a folder in Outlook, Outlook executes a request to the Managed Store on behalf of the user. That execution of the request is a single thread.
+- **Threads**
 
-    In Exchange Server 2013, there are no longer thread limits based on client type. Instead, for all clients, the maximum number of threads **per mailbox database** is 50. The exception is the Availability service, which has a maximum limit of 16 per user.
+  Threads represent concurrently executing requests to the Managed Store. For example, if a user opens a folder in Outlook, Outlook executes a request to the Managed Store on behalf of the user. That execution of the request is a single thread.
+
+  In Exchange Server 2013, there are no longer thread limits based on client type. Instead, for all clients, the maximum number of threads **per mailbox database** is 50. The exception is the Availability service, which has a maximum limit of 16 per user.
 
 ## Session Limits
 
@@ -43,9 +43,9 @@ Previous versions of Exchange set limits on the number of connections to the Man
 
 The types of connection limits in Exchange 2013 are as follows:
 
-  - **Max sessions per process**: Specifies the maximum number of sessions that an Exchange service can have open at one time on a mailbox database.
+- **Max sessions per process**: Specifies the maximum number of sessions that an Exchange service can have open at one time on a mailbox database.
 
-  - **Max user sessions per process**: Specifies the maximum number of sessions for a particular protocol for a single user.
+- **Max user sessions per process**: Specifies the maximum number of sessions for a particular protocol for a single user.
 
 The following section, "Configure Session Limits," describes how to modify these limits.
 

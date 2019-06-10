@@ -55,9 +55,8 @@ This example makes the following changes to the Pickup directory on the Mailbox 
 
 - The maximum rate of message processing for the Pickup and Replay directories is increased to 200 messages per minute.
 
-<!-- end list -->
 ```powershell
-    Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
+Set-TransportService Exchange01 -PickupDirectoryPath "D:\Pickup Directory" -PickupDirectoryMaxHeaderSize 96KB -PickupDirectoryMaxRecipientsPerMessage 250 -PickupDirectoryMaxMessagesPerMinute 200
 ```
 
 > [!NOTE]
@@ -72,7 +71,7 @@ This example makes the following changes to the Pickup directory on the Mailbox 
 To configure the Replay directory, use the following syntax.
 
 ```powershell
-    Set-TransportService <ServerIdentity> -ReplayDirectoryPath "C:\Replay Directory" <LocalFilePath> -PickupDirectoryMaxMessagesPerMinute <Integer>
+Set-TransportService <ServerIdentity> -ReplayDirectoryPath "C:\Replay Directory" <LocalFilePath> -PickupDirectoryMaxMessagesPerMinute <Integer>
 ```
 
 This example makes the following changes to the Replay directory on the Mailbox server named Exchange01:
@@ -81,9 +80,8 @@ This example makes the following changes to the Replay directory on the Mailbox 
 
 - The maximum rate of message processing for the Pickup and Replay directories is increased to 200 messages per minute.
 
-<!-- end list -->
 ```powershell
-    Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
+Set-TransportService Exchange01 -ReplayDirectoryPath "D:\Replay Directory" -PickupDirectoryMaxMessagesPerMinute 200
 ```
 
 > [!NOTE]

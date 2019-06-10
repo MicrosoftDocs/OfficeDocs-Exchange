@@ -166,6 +166,3 @@ To verify that you've successfully seeded a mailbox database copy, do one of the
   ```
 
     The Status and Content Index State should both be Healthy.
-
-
-

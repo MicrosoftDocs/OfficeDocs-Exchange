@@ -20,15 +20,11 @@ manager: dansimp
 In order for you to use Kerberos authentication with load-balanced Mailbox servers running Client Access services, you have to complete the configuration steps described in this article.
 
 ## Create the alternate service account credential in Active Directory Domain Services
-<a name="CreateAltService"> </a>
 
 All Exchange servers that run Client Access services that share the same namespaces and URLs must use the same *alternate service account credential* or (ASA credential). In general, it's sufficient to have a single account for a forest for each version of Exchange.
 
 > [!IMPORTANT]
-> Exchange 2010 and Exchange 2016 can't share the same ASA credential. If your ASA credential was created for Exchange 2010, you have to create a new one for Exchange 2016.
-
-> [!IMPORTANT]
-> While CNAME records are supported for shared namespaces, Microsoft recommends using A records. This ensures that the client correctly issues a Kerberos ticket request based on the shared name, and not the server FQDN.
+> Exchange 2010 and Exchange 2016 can't share the same ASA credential. If your ASA credential was created for Exchange 2010, you have to create a new one for Exchange 2016. <br/><br/> While CNAME records are supported for shared namespaces, Microsoft recommends using A records. This ensures that the client correctly issues a Kerberos ticket request based on the shared name, and not the server FQDN.
 
 When you set up the ASA credential, keep these guidelines in mind:
 
@@ -44,7 +40,7 @@ When you set up the ASA credential, keep these guidelines in mind:
 
 1. On a domain-joined computer, run Windows PowerShell or the Exchange Management Shell.
 
-    Use the **Import-Module** cmdlet to import the Active Directory module.
+   Use the **Import-Module** cmdlet to import the Active Directory module.
 
    ```
    Import-Module ActiveDirectory
@@ -81,12 +77,10 @@ When you set up the ASA credential, keep these guidelines in mind:
 For more information about these cmdlets, see [Import-Module](https://technet.microsoft.com/library/hh849725.aspx) and [New-ADComputer](https://technet.microsoft.com/library/ee617245.aspx).
 
 ## Cross-forest scenarios
-<a name="crossforestscenarios"> </a>
 
 If you have a cross-forest or resource-forest deployment, and you have users that are outside the Active Directory forest that contains Exchange, you must configure forest trust relationships between the forests. Also, for each forest in the deployment, you have to set up a routing rule that enables trust between all name suffixes within the forest and across forests. For more information about managing cross-forest trusts, see [Managing forest trusts](https://technet.microsoft.com/library/cc772440.aspx).
 
 ## Identify the Service Principal Names to associate with the ASA credential
-<a name="identifytheserviceprincipalnames"> </a>
 
 After you create the ASA credential, you have to associate Exchange Service Principal Names (SPNs) with the ASA credential. The list of Exchange SPNs may vary with your configuration, but should include at least the following:
 
@@ -94,14 +88,13 @@ After you create the ASA credential, you have to associate Exchange Service Prin
 
 The SPN values must match the service name on the network load balancer instead of on individual servers. To help plan which SPN values you should use, consider the following scenarios:
 
-- [Single Active Directory site](kerberos-auth-for-load-balanced-client-access.md#singleADsite)
+- [Single Active Directory site](#single-active-directory-site)
 
-- [Multiple Active Directory sites](kerberos-auth-for-load-balanced-client-access.md#multipleADsite)
+- [Multiple Active Directory sites](#multiple-active-directory-sites)
 
 In each of these scenarios, assume that the load-balanced, fully-qualified domain names (FQDNs) have been deployed for the internal URLs, external URLs, and the autodiscover internal URI used by members running Client Access services.
 
 ### Single Active Directory site
-<a name="singleADsite"> </a>
 
 If you have a single Active Directory site, your environment may resemble the one in the following figure:
 
@@ -114,7 +107,6 @@ Based on the FQDNs that are used by the internal Outlook clients in the precedin
 - http/autodiscover.corp.tailspintoys.com
 
 ### Multiple Active Directory sites
-<a name="multipleADsite"> </a>
 
 If you have multiple Active Directory sites, your environment may resemble the one in the following figure:
 
@@ -133,7 +125,6 @@ You would also have to associate the following SPNs with the ASA credential that
 - http/autodiscoversdc.corp.tailspintoys.com
 
 ## Configure and then verify configuration of the ASA credential on each server running Client Access services
-<a name="deploytheASAcredential"> </a>
 
 After you've created the account, you have to verify that the account has replicated to all AD DS domain controllers. Specifically, the account must be present on each server running Client Access services that will use the ASA credential. Next, you configure the account as the ASA credential on each server running Client Access services in your deployment.
 
@@ -146,7 +137,6 @@ You configure the ASA credential by using the Exchange Management Shell as descr
 The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](http://technet.microsoft.com/library/6ac55aae-472a-4ed6-83df-2d0e7b48e05c.aspx). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
 
 ### Deploy the ASA Credential to the first Exchange server running Client Access services
-<a name="DeployASACred"> </a>
 
 1. Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server.
 
@@ -201,7 +191,6 @@ cas-1 Latest: 1/12/2016 10:19:22 AM, tailspin\EXCH2016ASA$
 ```
 
 ### Deploy the ASA credential to another Exchange server running Client Access services
-<a name="DeployASACred"> </a>
 
 1. Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server.
 
@@ -248,7 +237,6 @@ cas-2 Latest: 1/12/2016 10:37:59 AM, tailspin\EXCH2016ASA$
 ```
 
 ### Verify the deployment of the ASA credential
-<a name="DeployASACred"> </a>
 
 - Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server.
 
@@ -279,10 +267,9 @@ AlternateServiceAccountConfiguration : Latest: 1/12/2016 10:19:22 AM, tailspin\E
 ```
 
 ## Associate Service Principal Names (SPNs) with the ASA credential
-<a name="associateSPN"> </a>
 
 > [!IMPORTANT]
-> Don't associate SPNs with an ASA credential until you have deployed that credential to at least one Exchange Server, as described earlier in [Deploy the ASA Credential to the first Exchange server running Client Access services](kerberos-auth-for-load-balanced-client-access.md#DeployASACred). Otherwise, you will experience Kerberos authentication errors.
+> Don't associate SPNs with an ASA credential until you have deployed that credential to at least one Exchange Server, as described earlier in [Deploy the ASA Credential to the first Exchange server running Client Access services](#deploy-the-asa-credential-to-the-first-exchange-server-running-client-access-services). Otherwise, you will experience Kerberos authentication errors.
 
 Before you associate the SPNs with the ASA credential, you have to verify that the target SPNs aren't already associated with a different account in the forest. The ASA credential must be the only account in the forest with which these SPNs are associated. You can verify that no other account in the forest is associated with the SPNs by running the **setspn** command from the command line.
 
@@ -341,7 +328,6 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
    You have to run this command only one time.
 
 ## Enable Kerberos authentication for Outlook clients
-<a name="associateSPN"> </a>
 
 1. Open the Exchange Management Shell on an Exchange 2016 or Exchange 2019 server.
 
@@ -366,7 +352,6 @@ Before you associate the SPNs with the ASA credential, you have to verify that t
 4. Repeat steps 2 and 3 for each Exchange 2016 or Exchange 2019 server that is running Client Access services for which you want to enable Kerberos authentication.
 
 ### Verify Exchange client Kerberos authentication
-<a name="Validateauthentication"> </a>
 
 After you've successfully configured Kerberos and the ASA credential, verify that clients can authenticate successfully, as described in these tasks.
 
@@ -401,12 +386,10 @@ When you configured the ASA credential on each server running Client Access serv
    If you see that the **AuthenticationType** value is **Negotiate**, the server is successfully creating Kerberos authenticated connections.
 
 ## Maintain the ASA credential
-<a name="maintainASAcredential"> </a>
 
 If you have to refresh the password on the ASA credential periodically, use the steps for configuring the ASA credential in this article. Consider setting up a scheduled task to perform regular password maintenance. Be sure to monitor the scheduled task to ensure timely password rollovers and prevent possible authentication outages.
 
 ## Turn Kerberos authentication off
-<a name="turnKerberosoff"> </a>
 
 To configure your servers that are running Client Access services to stop using Kerberos, disassociate or remove the SPNs from the ASA credential. If the SPNs are removed, Kerberos authentication won't be tried by your clients, and clients that are configured to use Negotiate authentication will use NTLM instead. Clients that are configured to use only Kerberos will be unable to connect. After the SPNs are removed, you should also delete the account.
 
@@ -419,6 +402,3 @@ To configure your servers that are running Client Access services to stop using 
    ```
 
 2. Although you don't have to do this immediately, you should eventually restart all client computers to clear the Kerberos ticket cache from the computer.
-
-
-

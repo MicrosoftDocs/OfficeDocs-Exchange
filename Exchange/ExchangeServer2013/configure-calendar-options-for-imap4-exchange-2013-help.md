@@ -22,11 +22,11 @@ For additional information related to IMAP4, see [POP3 and IMAP4 in Exchange Ser
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "IMAP4 settings" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "IMAP4 settings" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -42,7 +42,7 @@ Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
 This example enables IMAP4 users to access calendar information from an internal server.
 
 ```powershell
-    Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl
+Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl
 ```
 
 This example enables IMAP4 users to access calendar information from the Internet on an external server.

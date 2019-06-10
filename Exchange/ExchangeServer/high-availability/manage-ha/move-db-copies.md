@@ -21,9 +21,9 @@ If the mailbox database being moved is replicated to one or more mailbox databas
 
 > [!NOTE]
 > After you create a new mailbox database, you can move it to another volume, folder, location, or path by using either the EAC or the Exchange Management Shell. For step-by-step instructions about how to move the database path for a **non-replicated** mailbox database, see [Manage mailbox databases in Exchange Server](../../architecture/mailbox-servers/manage-databases.md).
-  
+
 Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](https://docs.microsoft.com/exchange/high-availability/manage-ha/manage-database-copies).
-  
+
 ## What do you need to know before you begin?
 
 - Estimated time to complete this task: 2 minutes, plus the time to move the data, which depends on a variety of factors, such as the size of the database, the speed, available bandwidth and latency of the network, and storage speeds.
@@ -46,15 +46,15 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 1. Note any replay lag or truncation lag settings for all copies of the mailbox database being moved. You can obtain this information by using the [Get-MailboxDatabase](http://technet.microsoft.com/library/e12bd6d3-3793-49cb-9ab6-948d42dd409e.aspx) cmdlet, as shown in this example.
 
-  ```
-  Get-MailboxDatabase DB1 | Format-List *lag*
-  ```
+   ```
+   Get-MailboxDatabase DB1 | Format-List *lag*
+   ```
 
 2. If circular logging is enabled for the database, it must be disabled before proceeding. You can disable circular logging for a mailbox database by using the [Set-MailboxDatabase](http://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx) cmdlet, as shown in this example.
 
-  ```
-  Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
-  ```
+   ```
+   Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+   ```
 
 3. Remove all mailbox database copies for the database being moved. For detailed steps, see [Remove a mailbox database copy](remove-db-copies.md). After all copies are removed, preserve the database and transaction log files from each server from which the database copy is being removed by moving them to another location. These files are being preserved so the database copies don't require re-seeding after they have been re-added.
 
@@ -71,29 +71,29 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 8. On each server that contains a copy of the mailbox database being moved, run the following command to stop and restart the content index services.
 
-  ```
-  Restart-Service MSExchangeFastSearch
-  ```
+   ```
+   Restart-Service MSExchangeFastSearch
+   ```
 
 9. Optionally, enable circular logging by using the [Set-MailboxDatabase](http://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx) cmdlet, as shown in this example.
 
-  ```
-  Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
-  ```
+   ```
+   Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
+   ```
 
 10. Reconfigure any previously set values for replay lag time and truncation lag time by using the [Set-MailboxDatabaseCopy](http://technet.microsoft.com/library/839f8781-2eb1-47bd-85ff-a31c8773998a.aspx) cmdlet, as shown in this example.
 
-  ```
-  Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
-  ```
+    ```
+    Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
+    ```
 
 11. As each copy is added, we recommend that you verify the health and status of the copy prior to adding the next copy. You can verify the health and status by:
 
-1. Examining the event log for any error or warning events related to the database or the database copy.
+    1. Examining the event log for any error or warning events related to the database or the database copy.
 
-2. Using the [Get-MailboxDatabaseCopyStatus](http://technet.microsoft.com/library/6ad690fb-3a23-41d4-b19d-666b34e62b26.aspx) cmdlet to check the health and status of continuous replication for the database copy.
+    2. Using the [Get-MailboxDatabaseCopyStatus](http://technet.microsoft.com/library/6ad690fb-3a23-41d4-b19d-666b34e62b26.aspx) cmdlet to check the health and status of continuous replication for the database copy.
 
-3. Using the [Test-ReplicationHealth](http://technet.microsoft.com/library/da55fa0f-e100-44b1-b9b4-bf14e55a5b4d.aspx) cmdlet to verify the health and status of the database availability group and continuous replication.
+    3. Using the [Test-ReplicationHealth](http://technet.microsoft.com/library/da55fa0f-e100-44b1-b9b4-bf14e55a5b4d.aspx) cmdlet to verify the health and status of the database availability group and continuous replication.
 
 For detailed syntax and parameter information, see the following topics:
 
@@ -120,6 +120,3 @@ To verify that you've successfully moved the path for a mailbox database copy, d
   ```
 
     The Status and Content Index State should both be Healthy.
-
-
-

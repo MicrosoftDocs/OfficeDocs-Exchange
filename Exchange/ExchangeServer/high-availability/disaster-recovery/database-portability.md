@@ -90,6 +90,3 @@ To verify that you've successfully moved a mailbox, do the following:
 - Open the mailbox using Outlook on the web.
 
 - Open the mailbox using Microsoft Outlook.
-
-
-

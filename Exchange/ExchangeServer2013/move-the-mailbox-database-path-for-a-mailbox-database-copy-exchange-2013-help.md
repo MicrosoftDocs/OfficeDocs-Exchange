@@ -24,15 +24,15 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 2 minutes, plus the time to move the data, which depends on a variety of factors, such as the size of the database, the speed, available bandwidth and latency of the network, and storage speeds.
+- Estimated time to complete this task: 2 minutes, plus the time to move the data, which depends on a variety of factors, such as the size of the database, the speed, available bandwidth and latency of the network, and storage speeds.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
-  - To perform the move operation, the database must be temporarily dismounted, making it inaccessible to all users. If the database is currently dismounted, it isn't remounted upon completion.
+- To perform the move operation, the database must be temporarily dismounted, making it inaccessible to all users. If the database is currently dismounted, it isn't remounted upon completion.
 
-  - To perform the move operation, replication for the database must be disabled for all copies. It's not enough to suspend replication; you must disable it by using the [Remove-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335119\(v=exchg.150\)) cmdlet to remove the database copies.
+- To perform the move operation, replication for the database must be disabled for all copies. It's not enough to suspend replication; you must disable it by using the [Remove-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335119\(v=exchg.150\)) cmdlet to remove the database copies.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -44,15 +44,15 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 1. Note any replay lag or truncation lag settings for all copies of the mailbox database being moved. You can obtain this information by using the [Get-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb124924\(v=exchg.150\)) cmdlet, as shown in this example.
 
-    ```powershell
-        Get-MailboxDatabase DB1 | Format-List *lag*
-    ```
+   ```powershell
+   Get-MailboxDatabase DB1 | Format-List *lag*
+   ```
 
 2. If circular logging is enabled for the database, it must be disabled before proceeding. You can disable circular logging for a mailbox database by using the [Set-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb123971\(v=exchg.150\)) cmdlet, as shown in this example.
 
-    ```powershell
-    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
-    ```
+   ```powershell
+   Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
+   ```
 
 3. Remove all mailbox database copies for the database being moved. For detailed steps, see [Remove a mailbox database copy](remove-a-mailbox-database-copy-exchange-2013-help.md). After all copies are removed, preserve the database and transaction log files from each server from which the database copy is being removed by moving them to another location. These files are being preserved so the database copies don't require re-seeding after they have been re-added.
 
@@ -70,9 +70,10 @@ Looking for other management tasks related to mailbox database copies? Check out
 8. On each server that contains a copy of the mailbox database being moved, run the following commands to stop and restart the content index services.
 
     ```powershell
-        Net stop MSExchangeFastSearch
-        Net start MSExchangeFastSearch
+    Net stop MSExchangeFastSearch
+    Net start MSExchangeFastSearch
     ```
+
 9. Optionally, enable circular logging by using the [Set-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb123971\(v=exchg.150\)) cmdlet, as shown in this example.
 
     ```powershell
@@ -95,26 +96,26 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 For detailed syntax and parameter information, see the following topics:
 
-  - [Get-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb124924\(v=exchg.150\))
+- [Get-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb124924\(v=exchg.150\))
 
-  - [Set-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb123971\(v=exchg.150\))
+- [Set-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb123971\(v=exchg.150\))
 
-  - [Set-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd298104\(v=exchg.150\))
+- [Set-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd298104\(v=exchg.150\))
 
-  - [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/en-us/library/dd298044\(v=exchg.150\))
+- [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/en-us/library/dd298044\(v=exchg.150\))
 
-  - [Test-ReplicationHealth](https://technet.microsoft.com/en-us/library/bb691314\(v=exchg.150\))
+- [Test-ReplicationHealth](https://technet.microsoft.com/en-us/library/bb691314\(v=exchg.150\))
 
 ## How do you know this worked?
 
 To verify that you've successfully moved the path for a mailbox database copy, do one of the following:
 
-  - In the EAC, navigate to **Servers** \> **Databases**. Select the database that was copied. In the Details pane, the status of the database copy and its content index are displayed, along with the current copy queue length. Verify that the status is Healthy.
+- In the EAC, navigate to **Servers** \> **Databases**. Select the database that was copied. In the Details pane, the status of the database copy and its content index are displayed, along with the current copy queue length. Verify that the status is Healthy.
 
-  - In the Shell, run the following command to verify the mailbox database copy was created and is healthy.
+- In the Shell, run the following command to verify the mailbox database copy was created and is healthy.
 
-    ```powershell
-        Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
-        ```
+  ```powershell
+  Get-MailboxDatabaseCopyStatus <DatabaseCopyName>
+  ```
 
     The Status and Content Index State should both be Healthy.

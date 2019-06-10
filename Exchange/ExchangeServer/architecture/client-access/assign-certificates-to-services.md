@@ -88,6 +88,3 @@ To verify that you have successfully assigned a certificate to one or more Excha
   ```
   Get-ExchangeCertificate | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,Services
   ```
-
-
-

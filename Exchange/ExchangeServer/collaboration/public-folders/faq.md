@@ -171,6 +171,3 @@ No. If you try to change the master hierarchy mailbox, you'll receive an error.
 ## Do public folders have full text searching capabilities?
 
 Yes, full text search has been available for public folders since Exchange 2013. However, you can't search across multiple public folders.
-
-
-

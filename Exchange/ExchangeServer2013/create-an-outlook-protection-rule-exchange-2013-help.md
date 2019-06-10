@@ -22,17 +22,17 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
 ## What do you need to know before you begin?
 
-  - Estimated time to completion: 1 minute.
+- Estimated time to completion: 1 minute.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-  - You must have an [AD RMS](https://technet.microsoft.com/en-us/library/hh831364.aspx) server deployed in the same Active Directory forest as your server running Microsoft Exchange Server 2013.
+- You must have an [AD RMS](https://technet.microsoft.com/en-us/library/hh831364.aspx) server deployed in the same Active Directory forest as your server running Microsoft Exchange Server 2013.
 
-  - If you configure Outlook protection rules to IRM-protect messages, consider enabling transport decryption to allow transport agents, including the Transport Rules agent, to decrypt and access the message. If you use journaling, you should also consider enabling journal report decryption to allow the Journaling agent to save an unencrypted copy of the message in the journal report. For more information, see [Journal report decryption](journal-report-decryption-exchange-2013-help.md).
+- If you configure Outlook protection rules to IRM-protect messages, consider enabling transport decryption to allow transport agents, including the Transport Rules agent, to decrypt and access the message. If you use journaling, you should also consider enabling journal report decryption to allow the Journaling agent to save an unencrypted copy of the message in the journal report. For more information, see [Journal report decryption](journal-report-decryption-exchange-2013-help.md).
 
-  - You can't use the Exchange Administration Center (EAC) to create Outlook protection rules. You must use the Shell.
+- You can't use the Exchange Administration Center (EAC) to create Outlook protection rules. You must use the Shell.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -42,7 +42,7 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 This example creates the Outlook protection rule Project Contoso. The rule protects messages sent to the ContosoPMs distribution group with the AD RMS template Business Critical.
 
 ```powershell
-    New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
+New-OutlookProtectionRule -Name "Project Contoso" -SentTo "DL-ContosoPMs@contoso.com" -ApplyRightsProtectionTemplate "Business Critical"
 ```
 
 > [!NOTE]
@@ -56,9 +56,9 @@ For detailed syntax and parameter information, see [New-OutlookProtectionRule](h
 
 To verify that you have successfully created an Outlook protection rule, do the following:
 
-  - Run the [Get-OutlookProtectionRule](https://technet.microsoft.com/en-us/library/dd298004\(v=exchg.150\)) cmdlet to make sure that the rule has been created and to view the rule's properties. For an example of how to retrieve an Outlook protection rule, see [Examples](https://technet.microsoft.com/en-us/dd298004\(exchg.150\)#examples) in **Get-OutlookProtectionRule**.
+- Run the [Get-OutlookProtectionRule](https://technet.microsoft.com/en-us/library/dd298004\(v=exchg.150\)) cmdlet to make sure that the rule has been created and to view the rule's properties. For an example of how to retrieve an Outlook protection rule, see [Examples](https://technet.microsoft.com/en-us/dd298004\(exchg.150\)#examples) in **Get-OutlookProtectionRule**.
 
-  - Use Outlook 2010 to create a test message that meets the rule's condition and make sure the rule is triggered on the client.
+- Use Outlook 2010 to create a test message that meets the rule's condition and make sure the rule is triggered on the client.
 
     > [!NOTE]
     > It may take some time for an Outlook protection rule to be available in Outlook.

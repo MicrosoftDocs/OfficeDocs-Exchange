@@ -124,6 +124,3 @@ Dial tone portability is a feature that provides a limited business continuity s
 The process for using dial tone portability is called a *dial tone recovery*. A dial tone recovery involves creating an empty database on a Mailbox server to replace a failed database. This empty database, referred to as a *dial tone database*, allows users to send and receive e-mail while the failed database is recovered. After the failed database is recovered, the dial done database and the recovered database are swapped, and then the data from the dial tone database is merged into the recovered database.
 
 For more information, see [Dial tone portability](dial-tone-portability.md). For detailed steps to perform a dial tone recovery, see [Perform a dial tone recovery](dial-tone-recovery.md).
-
-
-

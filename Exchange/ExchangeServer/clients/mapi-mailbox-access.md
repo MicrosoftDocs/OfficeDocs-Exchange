@@ -182,6 +182,3 @@ To verify that you've successfully enabled or disabled MAPI access to a mailbox,
   ```
   Get-CasMailbox -ResultSize unlimited -Filter {MAPIEnabled -eq $false}
   ```
-
-
-

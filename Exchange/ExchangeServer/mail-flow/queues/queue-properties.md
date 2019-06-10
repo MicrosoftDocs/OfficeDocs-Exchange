@@ -61,6 +61,3 @@ For more information about Queue Viewer, see [Queue Viewer](queue-viewer.md). Fo
 |**Status**| `Status`|**Equals** (`eq`)  <br/> **Does Not Equal** (`-ne`)|The current queue status. A queue can have one of the following status values: Active, Connecting, Suspended, Ready, or Retry. For more information, see [Queue status](queues.md#queue-status).|
 |n/a| `TlsDomain`|Equals (`-eq`)  <br/> Does Not Equal (`-ne`)  <br/> Contains (`-like`)|The FQDN of the destination domain if the domain is configured for Domain Security (mutual TLS authentication).|
 |n/a| `Velocity`|Equals (`-eq`)  <br/> Does not equal (`-ne`)  <br/> Greater than (`-gt`)  <br/> Greater than or equal to (`-ge`)  <br/> Less than (`-lt`)  <br/> Less than or equal to (`-le`)|A calculated number that indicates how effectively the queue is draining. For more information, see [IncomingRate, OutgoingRate, and Velocity](queues.md#incomingrate-outgoingrate-and-velocity)|
-
-
-

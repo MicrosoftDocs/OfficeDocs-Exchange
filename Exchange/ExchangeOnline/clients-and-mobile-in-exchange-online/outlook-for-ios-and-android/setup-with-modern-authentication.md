@@ -5,7 +5,7 @@ ms.topic: article
 author: msdmaguire
 ms.author: dmaguire
 ms.assetid: 1efe7737-b573-4f36-a0f2-27714d2ebdb0
-ms.date: 9/21/2018
+ms.date:
 title: Account setup with modern authentication in Exchange Online
 ms.collection: 
 - exchange-online
@@ -21,7 +21,23 @@ manager: dansimp
 
  **Summary**: How users with modern authentication-enabled accounts can quickly set up their Outlook for iOS and Android accounts in Exchange Online.
 
-There are two ways that users in your Exchange Online organization can set up their own Outlook for iOS and Android accounts: AutoDetect and single sign-on. Both methods leverage modern authentication. In addition, Outlook for iOS and Android offers IT administrators the ability to "push" account configurations to their Office 365 users, as well as, control whether Outlook for iOS and Android supports personal accounts.
+Users with modern authentication-enabled accounts (Office 365 accounts or [on-premises accounts leveraging hybrid modern authentication](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)) have two ways to set up their own Outlook for iOS and Android accounts: AutoDetect and single sign-on. In addition, Outlook for iOS and Android also offers IT administrators the ability to "push" account configurations to their Office 365 users, and to control whether Outlook for iOS and Android supports personal accounts.
+
+## Modern Authentication
+
+Modern authentication is an umbrella term for a combination of authentication and authorization methods. These include:
+
+- **Authentication methods**: Multi-factor Authentication; Client Certificate-based authentication.
+
+- **Authorization methods**: Microsoft's implementation of Open Authorization (OAuth).
+
+Modern authentication is enabled through the use of the Active Directory Authentication Library (ADAL). ADAL-based authentication is what Outlook for iOS and Android uses to access Exchange Online mailboxes in Office 365. ADAL authentication, used by Office apps on both desktop and mobile devices, involves users signing in directly to Azure Active Directory, which is Office 365's identity provider, instead of providing credentials to Outlook.
+
+ADAL-based authentication leverages OAuth for modern authentication-enabled accounts (Office 365 accounts or [on-premises accounts leveraging hybrid modern authentication](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)). It also provides a secure mechanism for Outlook for iOS and Android  to access email, without requiring access to user credentials. At sign in, the user authenticates directly with Azure Active Directory and receives an access/refresh token pair in return. The access token grants Outlook for iOS and Android access to the appropriate resources in Office 365 (e.g. the user's mailbox). A refresh token is used to obtain a new access or refresh token pair when the current access token expires. OAuth provides Outlook with a secure mechanism to access Office 365, without needing or storing a user's credentials. For more information, see the Office Blog post [New access and security controls for Outlook for iOS and Android](https://go.microsoft.com/fwlink/p/?LinkId=623595).
+
+By default, the access token lifetime is one hour, and the refresh token lifetime is 90 days. These values can be adjusted; for more information see [Configure authentication session management with conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime). Note that, if you choose to reduce these lifetimes, you can also reduce the performance of Outlook for iOS and Android, because a smaller lifetime increases the number of times the application must acquire a fresh access token.
+
+A previously granted access token is valid until it expires. Upon expiration, the client will attempt to use the refresh token to obtain a new access token. Then, because the user's password has changed, the refresh token will be invalidated (assuming directory synchronization has occurred between on-premises and Azure Active Directory). The invalidated refresh token will force the user to re-authenticate in order to obtain a new access token and refresh token pair.
 
 ## AutoDetect
 
@@ -39,7 +55,17 @@ In the event that AutoDetect fails for a user, the following images show an alte
 
 ## Single sign-on
 
-Outlook for iOS and Android supports single sign-on via authentication token re-use. If a user is already signed in to another Microsoft app on their device, like Word or Company Portal, Outlook for iOS for Android will detect that token and use it for its own authentication. When such a token is detected, users already enrolled in Outlook for iOS and Android will see their account available as "Found" under **Accounts** on the **Settings** menu. New users will see their account in the initial account setup screen.
+All Microsoft apps that leverage the Azure Active Directory Authentication Library (ADAL) support single sign-on. In addition, single sign-on is also supported when the apps are used in conjunction with either the Microsoft Authenticator, or Microsoft Company Portal apps.
+
+Tokens can be shared and re-used by other Microsoft apps (such as Word mobile) under the following scenarios:
+
+1. When the apps are signed by the same signing certificate, and use the same service endpoint or audience URL (such as the Office 365 URL). In this case, the token is stored in app shared storage.
+
+2. When the apps leverage or support single sign-on with a broker app. The tokens are stored within the broker app. Microsoft Authenticator is an example of a broker app. In the broker app scenario, after you attempt to sign in to Outlook for iOS and Android, ADAL will launch the Microsoft Authenticator app, which will make a connection to Azure Active Directory to obtain the token. It will then hold on to the token and re-use it for authentication requests from other apps, for as long as the configured token lifetime allows.
+
+For more information, see [How to enable cross-app SSO on iOS using ADAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-sso-ios).
+
+If a user is already signed in to another Microsoft app on their device, like Word or Company Portal, Outlook for iOS for Android will detect that token and use it for its own authentication. When such a token is detected, users adding an account in Outlook for iOS and Android will see the discovered account available as "Found" under **Accounts** on the **Settings** menu. New users will see their account in the initial account setup screen.
 
 The following images show an example of account configuration via single sign-on for a first-time user:
 

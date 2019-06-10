@@ -75,4 +75,4 @@ Messages sent from the Exchange Online organization to recipients in the on-prem
 
 ![Hybrid mail flow with an Edge Transport server](media/821fe099-56f5-4501-8e1a-e184ba07a653.png)
 
-[Exchange Server Deployment Assistant](https://aka.ms/eda)  
+[Exchange Server Deployment Assistant](https://aka.ms/eda)

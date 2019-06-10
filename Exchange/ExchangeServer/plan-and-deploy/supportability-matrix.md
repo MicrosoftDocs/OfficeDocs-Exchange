@@ -58,7 +58,7 @@ The following tables identify the operating system platforms on which each versi
 |Windows Server 2008 SP2|||||X|
 
 > [!NOTE]
->  Client operating systems only support the Exchange management tools.
+> Client operating systems only support the Exchange management tools.
 
 |**Client operating system**|**Exchange 2019**|**Exchange 2016 CU3 and later**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----|:-----|:-----|:-----|

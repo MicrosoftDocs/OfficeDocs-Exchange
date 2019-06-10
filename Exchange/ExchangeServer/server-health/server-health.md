@@ -40,6 +40,3 @@ Workload management is made of these components:
 - *System workload management* automatically throttles specific Exchange workloads by monitoring the health of key server resources. These settings should be customized only under the direction of Microsoft Customer Service and Support.
 
 For more information about user workload management, see [User workload management in Exchange Server](workload-management.md).
-
-
-

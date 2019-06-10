@@ -48,7 +48,6 @@ An Exchange Online/Office 365 user must be represented by a MailUser object in t
     > Outlook 2016 for Mac is supported for cross-premises public folders. If clients in your organization use Outlook 2016 for Mac, make sure they have installed the April 2016 update. Otherwise, those users will not be able to access public folders in a hybrid topology. For more information, see [Accessing public folders with Outlook 2016 for Mac](http://technet.microsoft.com/library/bc9b8226-bd8b-4edc-882b-4f19cfe118eb.aspx).
 
 ## Step 1: Download the scripts
-<a name="download"> </a>
 
 1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/en-us/download/details.aspx?id=46381):
 
@@ -59,7 +58,6 @@ An Exchange Online/Office 365 user must be represented by a MailUser object in t
 2. Save the files to the local computer on which you'll be running PowerShell. For example, C:\PFScripts.
 
 ## Step 2: Configure directory synchronization
-<a name="dirsync"> </a>
 
 The Directory Synchronization service doesn't synchronize mail-enabled public folders. Running the following script will synchronize the mail-enabled public folders across premises and Office 365. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permission are not supported in Hybrid Deployment scenarios. For more information, see [Exchange hybrid deployment documentation](../exchange-hybrid.md#exchange-hybrid-deployment-documentation).
 
@@ -78,7 +76,6 @@ Where `Credential` is your Office 365 user name and password, and `CsvSummaryFil
 > Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the `-WhatIf` switch. <br/> We also recommend that you run this script daily to synchronize your mail-enabled public folders.
 
 ## Step 3: Configure Exchange Online users to access Exchange 2013 on-premises public folders
-<a name="Access"> </a>
 
 The final step in this procedure is to configure the Exchange online organization and to allow access to the Exchange 2013 public folders.
 
@@ -92,14 +89,13 @@ Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes
 > You must wait until ActiveDirectory synchronization has completed to see the changes. This process can take up to 3 hours to complete. If you don't want to wait for the recurring synchronizations that occur every three hours, you can force directory synchronization at any time. For detailed steps to do force directory synchronization, see [Force directory synchronization](http://technet.microsoft.com/en-us/library/jj151771.aspx).
 
 ## How do I know this worked?
-<a name="Access"> </a>
 
-1. Log on to Outlook for a user who is in Exchange Online and perform the following public folder tests:
+Log on to Outlook for a user who is in Exchange Online and perform the following public folder tests:
 
-   - View the hierarchy.
+- View the hierarchy.
 
-   - Check permissions
+- Check permissions
 
-   - Create and delete public folders.
+- Create and delete public folders.
 
-   - Post content to and delete content from a public folder.
+- Post content to and delete content from a public folder.

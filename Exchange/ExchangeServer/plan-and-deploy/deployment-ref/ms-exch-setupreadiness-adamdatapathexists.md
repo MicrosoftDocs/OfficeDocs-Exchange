@@ -28,4 +28,3 @@ To resolve this issue, remove the existing AD LDS directory and then run Setup a
 For more information about AD LDS directory management, see [Administering AD LDS Directory Partitions](https://go.microsoft.com/fwlink/p/?LinkId=272302).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

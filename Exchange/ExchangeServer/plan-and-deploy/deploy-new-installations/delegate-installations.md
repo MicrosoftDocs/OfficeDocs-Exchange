@@ -112,4 +112,3 @@ The high-level Active Directory changes that are made when you provision an Exch
 - The server is added as a provisioned server in the Exchange admin center (EAC).
 
 Only members of the Organization Management role group in Exchange have the permissions required to make these changes to Active Directory.
-

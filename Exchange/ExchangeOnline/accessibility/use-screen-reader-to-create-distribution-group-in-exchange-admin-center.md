@@ -73,7 +73,7 @@ To complete the tasks covered in this topic, [Use a screen reader to open the Ex
 7. In the **New** menu, press the Down Arrow key until you hear "Distribution group." Then, press Enter. (In Narrator, you may hear "Empty line" or nothing at all. The three items on this menu are **distribution group**, **security group**, and **dynamic distribution group**. Select the first item in the menu.) The **new distribution group** page opens in a new browser window.
 
    > [!TIP]
-   >The **new distribution group** window includes two buttons named **Add** and two named **Remove**. The first set of **Add** and **Remove** buttons affects the **Select Owners** box. The second set applies to the **Select Members** box.
+   > The **new distribution group** window includes two buttons named **Add** and two named **Remove**. The first set of **Add** and **Remove** buttons affects the **Select Owners** box. The second set applies to the **Select Members** box.
 
 8. Tab to the following options, and complete the group details.
 

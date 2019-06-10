@@ -95,6 +95,3 @@ Get-Mailbox -Identity <MailboxIdentity> | Format-List Name,RecipientTypeDetails,
 ```
 
 For detailed syntax and parameter information, see [Get-Mailbox](http://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx).
-
-
-

@@ -106,6 +106,3 @@ To verify that you have successfully suspended or resumed a mailbox database cop
   ```
   Get-MailboxDatabaseCopyStatus <DatabaseCopyName> | Format-List
   ```
-
-
-

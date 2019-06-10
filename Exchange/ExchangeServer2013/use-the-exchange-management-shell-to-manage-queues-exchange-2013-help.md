@@ -22,30 +22,6 @@ When you use the Shell to view and manage queues and messages in queues on trans
 
 Note that you can also use Queue Viewer in the Exchange Toolbox to manage queues and messages in queues. However, the queue and message viewing cmdlets support more filterable properties and filter options than Queue Viewer. For more information about using Queue Viewer, see [Queue Viewer](queue-viewer-exchange-2013-help.md).
 
-**Contents**
-
-  - Queue filtering parameters
-
-      - Queue identity
-
-      - Queue Filter parameter
-
-      - Include and Exclude parameters
-
-  - Get-QueueDigest
-
-  - Message filtering parameters
-
-      - Message identity
-
-      - Message Filter parameter
-
-      - Queue parameter
-
-  - Comparison operators to use when filtering queues or messages
-
-  - Advanced paging parameters
-
 ## Queue filtering parameters
 
 The following table describes the filtering parameters that are available on the queue management cmdlets.
@@ -102,19 +78,19 @@ The *\<Server\>* placeholder is the hostname or FQDN of the Exchange server, for
 
 The \<*Queue*\> placeholder accepts one of the following values:
 
-  - **Persistent queue name**: Persistent queues have unique, consistent names on all Mailbox or Edge Transport servers. The persistent queue names are:
+- **Persistent queue name**: Persistent queues have unique, consistent names on all Mailbox or Edge Transport servers. The persistent queue names are:
 
-      - **Submission**: This queue contains messages waiting to be processed by the categorizer.
+  - **Submission**: This queue contains messages waiting to be processed by the categorizer.
 
-      - **Unreachable**: This queue contains messages that can't be routed. This queue doesn't exist until messages are placed in it.
+  - **Unreachable**: This queue contains messages that can't be routed. This queue doesn't exist until messages are placed in it.
 
-      - **Poison**: This queue contains messages that are determined to be harmful to the Exchange server. This queue doesn't exist until messages are placed in it.
+  - **Poison**: This queue contains messages that are determined to be harmful to the Exchange server. This queue doesn't exist until messages are placed in it.
 
-  - **Delivery queue name**: The name of a delivery queue is the value of the **NextHopDomain** property of the queue. For example, the queue name could be the address space of a Send connector, the name of an Active Directory site, or the name of a DAG. For more information, see the "NextHopSolutionKey" section in the [Queues](queues-exchange-2013-help.md) topic.
+- **Delivery queue name**: The name of a delivery queue is the value of the **NextHopDomain** property of the queue. For example, the queue name could be the address space of a Send connector, the name of an Active Directory site, or the name of a DAG. For more information, see the "NextHopSolutionKey" section in the [Queues](queues-exchange-2013-help.md) topic.
 
-  - **Queue integer**: Delivery queues and shadow queues are assigned a unique integer value in the queue database. However, you need to run the **Get-Queue** cmdlet to find the integer value for the queue in the **Identity** or **QueueIdentity** properties.
+- **Queue integer**: Delivery queues and shadow queues are assigned a unique integer value in the queue database. However, you need to run the **Get-Queue** cmdlet to find the integer value for the queue in the **Identity** or **QueueIdentity** properties.
 
-  - **Shadow queue name**: A shadow queue uses the syntax `Shadow\`*\<QueueInteger\>*
+- **Shadow queue name**: A shadow queue uses the syntax `Shadow\`*\<QueueInteger\>*
 
 The following table summarizes the syntax you can use with *Identity* parameter on the queue management cmdlets. In all values, *\<Server\>* is the hostname or FQDN of the server.
 
@@ -172,11 +148,11 @@ For examples of procedures that use the *Filter* parameter to view and manage qu
 
 Exchange 2013 has the *Include* and *Exclude* parameters available on the `Get-Queue` cmdlet. You can use these parameters individually, together, and with the *Filter* parameter to fine-tune your queue results on the local or specified transport server. For example, you can:
 
-  - Exclude empty queues from the results.
+- Exclude empty queues from the results.
 
-  - Exclude queues to external destinations from the results.
+- Exclude queues to external destinations from the results.
 
-  - Include queues that have a specific value of **DeliveryType** in the results.
+- Include queues that have a specific value of **DeliveryType** in the results.
 
 The *Include* and *Exclude* parameters use the following queue properties to filter queues:
 
@@ -485,13 +461,13 @@ You can specify a filter that evaluates multiple expressions by using the **-and
 This example displays a list of queues that have a destination to any SMTP domain name that ends in Contoso.com and that currently contain more than 500 messages.
 
 ```powershell
-    Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
+Get-Queue -Filter {Identity -like "*contoso.com*" -and MessageCount -gt 500}
 ```
 
 This example displays a list of messages that are sent from any email address in the contoso.com domain that have an SCL that's greater than 5.
 
 ```powershell
-    Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
+Get-Message -Filter {FromAddress -like "*Contoso.com*" -and SCL -gt 5}
 ```
 
 ## Advanced paging parameters
@@ -565,17 +541,17 @@ The following example uses scripting to retrieve the first page of results, sets
 1. Open the Shell and type the following command to retrieve the first page of results.
 
     ```powershell
-        $Results=Get-message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
+    $Results=Get-message -Server mailbox01.contoso.com -ResultSize 500 -SortOrder +FromAddress,-Size
     ```
 
 2. To set the bookmark object, type the following command to save the last element of the first page to a variable.
 
     ```powershell
-        $temp=$results[$results.length-1]
+    $temp=$results[$results.length-1]
     ```
 
 3. To retrieve the next 500 objects on the specified server and to exclude the bookmark object, type the following command.
 
     ```powershell
-        Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
+    Get-message -Server mailbox01.contoso.com -BookmarkObject:$temp -IncludeBookmark $False -ResultSize 500 -SortOrder +FromAddress,-Size
     ```

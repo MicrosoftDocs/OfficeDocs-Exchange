@@ -115,6 +115,3 @@ To verify that you've successfully configured connectivity logging, use these st
   ```
 
 2. Open the location of the connectivity log in Windows Explorer or File Explorer to verify that the log files exist, that data is being written to the files, and that the files are being recycled based on the maximum file size and maximum directory size values that you configured. If you disabled connectivity logging, verify that the log files aren't being updated.
-
-
-

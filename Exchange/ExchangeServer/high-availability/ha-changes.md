@@ -318,6 +318,3 @@ Windows Server 2012 R2 or later enables you to create a failover cluster without
 - You can't manage the Windows failover cluster using the Failover Cluster Management tool. Instead, you need to use Windows PowerShell and you need to run the PowerShell cmdlets against the individual cluster members.
 
 Exchange 2013 SP1 or later running on Exchange on Windows Server 2012 R2 or later enables you to create a DAG without a cluster administrative access point. For more information, see [Creating DAGs](manage-ha/manage-dags.md#creating-dags) and [Create a database availability group](manage-ha/create-dags.md).
-
-
-

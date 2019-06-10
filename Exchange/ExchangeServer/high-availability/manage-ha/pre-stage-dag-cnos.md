@@ -75,6 +75,3 @@ To verify that you've successfully created the CNO, do the following:
 2. Expand the forest node.
 
 3. Open the OU in which you created the account, and then verify that the account is listed.
-
-
-

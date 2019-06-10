@@ -245,6 +245,3 @@ If you want to move a resource mailbox to an Exchange forest, you need to set th
 |**userCertificate**|Directly copy the corresponding attribute of the source mailbox.|
 |**userSMIMECertificate**|Directly copy the corresponding attribute of the source mailbox.|
 |**wWWHomePage**|Directly copy the corresponding attribute of the source mailbox.|
-
-
-

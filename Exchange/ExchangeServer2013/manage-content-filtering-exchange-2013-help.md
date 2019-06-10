@@ -20,15 +20,15 @@ Content filtering is provided by the Content Filter agent. The Content Filter ag
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 10 minutes
+- Estimated time to complete each procedure: 10 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam feature" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam feature" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
 
-  - You can only use the Shell to perform this procedure.
+- You can only use the Shell to perform this procedure.
 
-  - By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
+- By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -123,43 +123,39 @@ To verify that you have successfully enabled or disabled content filtering for i
 To replace the existing values, run the following command:
 
 ```powershell
-    Set-ContentFilterConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenders <sender1,sender2...> -BypassedSenderDomains <domain1,domain2...>
+Set-ContentFilterConfig -BypassedRecipients <recipient1,recipient2...> -BypassedSenders <sender1,sender2...> -BypassedSenderDomains <domain1,domain2...>
 ```
 
 This example configures the following exceptions in content filtering:
 
-  - The recipients laura@contoso.com and julia@contoso.com aren't checked by content filtering.
+- The recipients laura@contoso.com and julia@contoso.com aren't checked by content filtering.
 
-  - The senders steve@fabrikam.com and cindy@fabrikam.com aren't checked by content filtering.
+- The senders steve@fabrikam.com and cindy@fabrikam.com aren't checked by content filtering.
 
-  - All senders in the domain nwtraders.com and all subdomains aren't checked by content filtering.
-
-<!-- end list -->
+- All senders in the domain nwtraders.com and all subdomains aren't checked by content filtering.
 
 ```powershell
-    Set-ContentFilterConfig -BypassedRecipients laura@contoso.com,julia@contoso.com -BypassedSenders steve@fabrikam.com,cindy@fabrikam.com -BypassedSenderDomains *.nwtraders.com
+Set-ContentFilterConfig -BypassedRecipients laura@contoso.com,julia@contoso.com -BypassedSenders steve@fabrikam.com,cindy@fabrikam.com -BypassedSenderDomains *.nwtraders.com
 ```
 
 To add or remove entries without modifying any existing values, run the following command:
 
 ```powershell
-    Set-ContentFilterConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
+Set-ContentFilterConfig -BypassedRecipients @{Add="<recipient1>","<recipient2>"...; Remove="<recipient1>","<recipient2>"...} -BypassedSenders @{Add="<sender1>","<sender2>"...; Remove="<sender1>","<sender2>"...} -BypassedSenderDomains @{Add="<domain1>","<domain2>"...; Remove="<domain1>","<domain2>"...}
 ```
 
 This example configures the following exceptions in content filtering:
 
-  - Add tiffany@contoso.com and chris@contoso.com to the list of existing recipients who aren't checked by content filtering.
+- Add tiffany@contoso.com and chris@contoso.com to the list of existing recipients who aren't checked by content filtering.
 
-  - Add joe@fabrikam.com and michelle@fabrikam.com to the list of existing senders who aren't checked by content filtering.
+- Add joe@fabrikam.com and michelle@fabrikam.com to the list of existing senders who aren't checked by content filtering.
 
-  - Add blueyonderairlines.com to the list of existing domains whose senders aren't checked by content filtering.
+- Add blueyonderairlines.com to the list of existing domains whose senders aren't checked by content filtering.
 
-  - Remove the domain woodgrovebank.com and all subdomains from the list of existing domains whose senders aren't checked by content filtering.
-
-<!-- end list -->
+- Remove the domain woodgrovebank.com and all subdomains from the list of existing domains whose senders aren't checked by content filtering.
 
 ```powershell
-    Set-ContentFilterConfig -BypassedRecipients @{Add="tiffany@contoso.com","chris@contoso.com"} -BypassedSenders @{Add="joe@fabrikam.com","michelle@fabrikam.com"} -BypassedSenderDomains @{Add="blueyonderairlines.com"; Remove="*.woodgrovebank.com"}
+Set-ContentFilterConfig -BypassedRecipients @{Add="tiffany@contoso.com","chris@contoso.com"} -BypassedSenders @{Add="joe@fabrikam.com","michelle@fabrikam.com"} -BypassedSenderDomains @{Add="blueyonderairlines.com"; Remove="*.woodgrovebank.com"}
 ```
 
 ## How do you know this worked?
@@ -169,7 +165,7 @@ To verify that you have successfully configured the recipient and sender excepti
 1. Run the following command:
 
     ```powershell
-        Get-ContentFilterConfig | Format-List Bypassed*
+    Get-ContentFilterConfig | Format-List Bypassed*
     ```
 
 2. Verify the values displayed match the settings you specified.
@@ -223,7 +219,7 @@ To verify that you have successfully configured the allowed and block phrases, d
 To configure the spam confidence level (SCL) thresholds and actions, run the following command:
 
 ```powershell
-    Set-ContentFilterConfig -SCLDeleteEnabled <$true | $false> -SCLDeleteThreshold <Value> -SCLRejectEnabled <$true | $false> -SCLRejectThreshold <Value> -SCLQuarantineEnabled <$true | $false> -SCLQuarantineThreshold <Value>
+Set-ContentFilterConfig -SCLDeleteEnabled <$true | $false> -SCLDeleteThreshold <Value> -SCLRejectEnabled <$true | $false> -SCLRejectThreshold <Value> -SCLQuarantineEnabled <$true | $false> -SCLQuarantineThreshold <Value>
 ```
 
 > [!NOTE]
@@ -231,16 +227,14 @@ To configure the spam confidence level (SCL) thresholds and actions, run the fol
 
 This example configures the following values for the SCL thresholds:
 
-  - The Delete action is enabled and the corresponding SCL threshold is set to 9.
+- The Delete action is enabled and the corresponding SCL threshold is set to 9.
 
-  - The Reject action is enabled and the corresponding SCL threshold is set to 8.
+- The Reject action is enabled and the corresponding SCL threshold is set to 8.
 
-  - The Quarantine action is enabled and the corresponding SCL threshold is set to 7.
-
-<!-- end list -->
+- The Quarantine action is enabled and the corresponding SCL threshold is set to 7.
 
 ```powershell
-    Set-ContentFilterConfig -SCLDeleteEnabled $true -SCLDeleteThreshold 9 -SCLRejectEnabled $true -SCLRejectThreshold 8 -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
+Set-ContentFilterConfig -SCLDeleteEnabled $true -SCLDeleteThreshold 9 -SCLRejectEnabled $true -SCLRejectThreshold 8 -SCLQuarantineEnabled $true -SCLQuarantineThreshold 7
 ```
 
 ## How do you know this worked?
@@ -250,7 +244,7 @@ To verify that you have successfully configured the SCL thresholds, do the follo
 1. Run the following command:
 
     ```powershell
-        Get-ContentFilterConfig | Format-List SCL*
+    Get-ContentFilterConfig | Format-List SCL*
     ```
 
 2. Verify the values displayed match the settings you specified.
@@ -268,7 +262,7 @@ Set-ContentFilterConfig -RejectionResponse "<Custom Text>"
 This example configures the Content Filter agent to send a customized rejection response.
 
 ```powershell
-    Set-ContentFilterConfig -RejectionResponse "Your message was rejected because it appears to be SPAM."
+Set-ContentFilterConfig -RejectionResponse "Your message was rejected because it appears to be SPAM."
 ```
 
 ## How do you know this worked?
@@ -278,7 +272,7 @@ To verify that you have successfully configured the rejection response, do the f
 1. Run the following command:
 
     ```powershell
-        Get-ContentFilterConfig | Format-List *Reject*
+    Get-ContentFilterConfig | Format-List *Reject*
     ```
 
 2. Verify the values displayed match the settings you specified.

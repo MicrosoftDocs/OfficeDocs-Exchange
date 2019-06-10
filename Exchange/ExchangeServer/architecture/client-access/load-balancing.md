@@ -119,12 +119,12 @@ SSL should terminate at the load balancer as this offers a centralized place to 
 The ports that need to be load balanced include some, such as those for IMAP4 or POP3, that may not even be used in your Exchange organization.
 
 |**TCP Port**|**Roles**|**Uses**|
-|:-----|:-----|:-----|
+|:-----:|:-----:|:-----|
 |25|Mailbox|Inbound SMTP|
 |587|Mailbox|Inbound SMTP for clients|
 |110|Mailbox|POP3 clients|
 |143|Mailbox|IMAP4 clients|
-|443|Mailbox|HTTPS (Outlook on the web, AutoDiscover, web services, ActiveSync, MAPI over HTTP, RPC over HTTP, OAB, EAC|
+|443|Mailbox|HTTPS (Outlook on the web, AutoDiscover, web services, ActiveSync, <br>MAPI over HTTP, RPC over HTTP, OAB, EAC)|
 |993|Mailbox|Secure IMAP4 clients|
 |995|Mailbox|Secure POP3 clients|
 
@@ -183,6 +183,3 @@ Managed Availability includes an offline responder. When the offline responder i
 To ensure that load balancers do not route traffic to a Mailbox server that Managed Availability has marked as offline, load balancer health probes must be configured to check \<virtualdirectory\>/healthcheck.htm , for example, https://mail.contoso.com/owa/healthcheck.htm.
 
 Read more about managed availability in [Managed availability](../../high-availability/managed-availability/managed-availability.md).
-
-
-

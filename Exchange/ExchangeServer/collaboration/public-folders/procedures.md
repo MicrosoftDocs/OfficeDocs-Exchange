@@ -52,6 +52,3 @@ Use one or more of the procedures listed below to get your public folder infrast
 [Restore public folders and public folder mailboxes from failed moves](http://technet.microsoft.com/library/2ade83c9-5f9b-4945-bf32-48fa8185b515.aspx)
 
 [View statistics for public folders and public folder items](view-statistics.md)
-
-
-

@@ -132,4 +132,3 @@ For more information about unattended Setup from the command line, see [Install 
 ## How do you know this worked?
 
 To verify that you've successfully installed an Exchange CU, see [Verify Exchange Server installations](post-installation-tasks/verify-installation.md).
-

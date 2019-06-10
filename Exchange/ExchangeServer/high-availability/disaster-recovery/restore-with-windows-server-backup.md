@@ -76,6 +76,3 @@ The **Recovery Progress** page will indicate whether or not the recovery process
 - On the server on which Windows Server Backup was run, verify that the job completed successfully by viewing the backup logs.
 
 - Open Event Viewer and verify that a restore completion event was logged in the Application event log.
-
-
-

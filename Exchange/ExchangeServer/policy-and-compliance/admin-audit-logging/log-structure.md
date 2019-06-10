@@ -80,6 +80,3 @@ Based on the information in this log entry, we know the following occurred:
     > The modified properties are saved to the audit log because the _LogLevel_ parameter on the `Set-AdminAuditLogConfig` cmdlet was set to `Verbose` in this example.
 
 - The operation completed successfully without any errors.
-
-
-

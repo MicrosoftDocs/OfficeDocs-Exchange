@@ -18,17 +18,17 @@ _**Applies to:** Exchange Server 2013_
 
 When you enable circular logging for a mailbox database, the type of circular logging you get depends on whether or not the mailbox database is replicated using continuous replication:
 
-  - If the mailbox database is not replicated, it will use JET circular logging. In this case, enabling or disabling JET circular logging will require a dismount and mount of the database.
+- If the mailbox database is not replicated, it will use JET circular logging. In this case, enabling or disabling JET circular logging will require a dismount and mount of the database.
 
-  - If the mailbox database is replicated, it will use continuous replication circular logging (CRCL). In this case, enabling or disabling CRCL takes effect dynamically; there is no need to dismount and re-mount the database.
+- If the mailbox database is replicated, it will use continuous replication circular logging (CRCL). In this case, enabling or disabling CRCL takes effect dynamically; there is no need to dismount and re-mount the database.
 
 For more information about circular logging and CRCL, see [Exchange Native Data Protection](backup-restore-and-disaster-recovery-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 1 minute
+- Estimated time to complete: 1 minute
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Database Permissions" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Database Permissions" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 ## Use the EAC to configure circular logging for a database
 

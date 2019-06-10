@@ -22,11 +22,11 @@ Looking for other management tasks related to recovery databases? Check out [Rec
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 1 minute
+- Estimated time to complete this task: 1 minute
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox recovery" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox recovery" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -42,7 +42,7 @@ New-MailboxDatabase -Recovery -Name RDB1 -Server MBX2
 This example creates the recovery database RDB2 on the Mailbox server MBX1 using a custom path for the database file and log folder.
 
 ```powershell
-    New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
+New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
 ```
 
 For detailed syntax and parameter information, see [New-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997976\(v=exchg.150\)).
@@ -51,11 +51,11 @@ For detailed syntax and parameter information, see [New-MailboxDatabase](https:/
 
 To verify that you've successfully created a recovery database, do the following:
 
-  - In the Shell, run the following command to display configuration information for the recovery database.
+- In the Shell, run the following command to display configuration information for the recovery database.
 
-    ```powershell
-    Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
-    ```
+  ```powershell
+  Get-MailboxDatabase <RecoveryDatabaseName> | Format-List
+  ```
 
 ## Other Tasks
 

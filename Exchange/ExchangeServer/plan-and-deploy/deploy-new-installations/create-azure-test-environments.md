@@ -423,4 +423,3 @@ Start-AZVM -Name exVM -ResourceGroupName $rgName
 [What's new in Exchange Server](../../new-features/new-features.md)
 
 [Cloud adoption Test Lab Guides (TLGs)](https://technet.microsoft.com/library/dn635308.aspx)
-

@@ -23,4 +23,3 @@ The installation of Exchange Server 2016 or later can't continue because Setup f
 
 > [!IMPORTANT]
 > After you upgrade your Exchange 2013 Edge Transport servers to Exchange 2013 CU10 or later, you need to **re-create** the Edge subscription between your Exchange organization and each Edge Transport server (to update the Edge Transport server's Exchange version in Active Directory). For more information about re-creating Edge subscriptions in Exchange 2013, see [Managing Edge Subscriptions](https://go.microsoft.com/fwlink/p/?LinkId=624335).
-

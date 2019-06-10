@@ -27,11 +27,11 @@ For additional management tasks related to mail users, see [Manage mail users](h
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 2 minutes.
+- Estimated time to complete each procedure: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail users" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail users" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -105,24 +105,24 @@ When you're mail-enabling users in bulk, you first export the list of users that
 1. Run the following command to export a list of existing users that aren't mail-enabled or don't have a mailbox in your organization to a file on the administrator's desktop named UsersToMailEnable.csv.
 
     ```powershell
-        Get-User | Where {$_.RecipientType -eq "User"} | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
+    Get-User | Where {$_.RecipientType -eq "User"} | Out-File "C:\Users\Administrator\Desktop\UsersToMailEnable.csv"
     ```
 
     The resulting file will be similar to the following file.
 
     ```powershell
-        Name            RecipientType
-        ----            -------------
-        Guest           User
-        krbtgt          User
-        RMS_SERVICE     User
-        David Pelton    User
-        Kim Akers       User
-        Janet Schorr    User
-        Jeffrey Zang    User
-        Spencer Low     User
-        Toni Poe        User
-        ...
+    Name            RecipientType
+    ----            -------------
+    Guest           User
+    krbtgt          User
+    RMS_SERVICE     User
+    David Pelton    User
+    Kim Akers       User
+    Janet Schorr    User
+    Jeffrey Zang    User
+    Spencer Low     User
+    Toni Poe        User
+    ...
     ```
 
 2. Make the following changes to the CSV file:
@@ -136,20 +136,20 @@ When you're mail-enabling users in bulk, you first export the list of users that
     The updated CSV file should look similar to the following file.
 
     ```powershell
-        Name,EmailAddress
-        David Pelton,davidp@contoso.com
-        Kim Akers,kakers@tailspintoys.com
-        Janet Schorr,janet.schorr@adatum.com
-        Jeffrey Zang,jzang@tailspintoys.com
-        Spencer Low,spencerl@fouthcoffee.com
-        Toni Poe,tonip@contoso.com
-        ...
+    Name,EmailAddress
+    David Pelton,davidp@contoso.com
+    Kim Akers,kakers@tailspintoys.com
+    Janet Schorr,janet.schorr@adatum.com
+    Jeffrey Zang,jzang@tailspintoys.com
+    Spencer Low,spencerl@fouthcoffee.com
+    Toni Poe,tonip@contoso.com
+    ...
     ```
 
 3. Run the following command to use the data in the CSV file to mail-enable the users listed in the file.
 
     ```powershell
-        Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    Import-CSV "C:\Users\Administrator\Desktop\UsersToMailEnable.csv" | ForEach-Object {Enable-MailUser -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
     ```
 
     The command results display information about the new mail-enabled users.
@@ -158,13 +158,13 @@ When you're mail-enabling users in bulk, you first export the list of users that
 
 To verify that you've successfully mail-enabled Active Directory users, do one of the following:
 
-  - In the EAC, navigate to **Recipients** \> **Contacts**. New mail users are displayed in the contact list. Under **Contact Type**, the type is **Mail user**.
+- In the EAC, navigate to **Recipients** \> **Contacts**. New mail users are displayed in the contact list. Under **Contact Type**, the type is **Mail user**.
 
-    > [!NOTE]
-    > You may have to click <STRONG>Refresh</STRONG> <IMG title="Refresh Icon" alt="Refresh Icon" src="images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif"> to display new mail users.
+  > [!NOTE]
+  > You may have to click <STRONG>Refresh</STRONG> <IMG title="Refresh Icon" alt="Refresh Icon" src="images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif"> to display new mail users.
 
-  - In the Shell, run the following command to display information about new mail users.
+- In the Shell, run the following command to display information about new mail users.
 
-    ```powershell
-    Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
-    ```
+  ```powershell
+  Get-MailUser | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress
+  ```

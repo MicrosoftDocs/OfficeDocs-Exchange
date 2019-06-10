@@ -109,6 +109,3 @@ Get-TransportService [<ServerIdentity> ] | Format-List MessageTrackingLog*
 ```
 
 You can also open the location of the message tracking log in Windows Explorer or File Explorer to verify that the log files exist, that data is being written to the files, and that they're being recycled based on the maximum file size and maximum directory size values that you configured.
-
-
-

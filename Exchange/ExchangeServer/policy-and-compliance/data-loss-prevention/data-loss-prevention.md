@@ -101,6 +101,3 @@ To see information about messages that contain DLP policy detections in your env
 - [Document Fingerprinting](http://technet.microsoft.com/library/1e0c579c-26e0-462a-a1b0-d7506dfe05fa.aspx)
 
 - [Messaging Policy and Compliance Cmdlets](http://technet.microsoft.com/library/78ed4e33-f031-40fe-b632-9b15e3234e77.aspx)
-
-
-

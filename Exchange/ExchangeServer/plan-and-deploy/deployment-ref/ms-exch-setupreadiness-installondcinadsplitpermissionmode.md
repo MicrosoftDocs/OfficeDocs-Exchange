@@ -41,4 +41,3 @@ For more information about split and shared permissions in Exchange 2013 or late
 - [Configure Exchange 2013 for Shared Permissions](https://technet.microsoft.com/library/dd638146(v=exchg.150).aspx)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

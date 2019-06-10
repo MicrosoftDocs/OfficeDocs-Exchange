@@ -308,6 +308,3 @@ To verify that you have successfully redirected messages in queues, use either o
   ```
   Get-Queue
   ```
-
-
-

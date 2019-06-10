@@ -50,6 +50,3 @@ Note that if you roll back your migration, you will lose any content that was ad
   ```
 
 5. See [Configure Exchange 2013 public folders for a hybrid deployment](https://go.microsoft.com/fwlink/p/?linkid=845190) for instructions on reconfiguring access to your on-premises public folders, so that your Exchange Online users can access them.
-
-
-

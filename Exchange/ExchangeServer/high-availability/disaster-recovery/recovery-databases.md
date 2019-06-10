@@ -83,6 +83,3 @@ An RDB is designed for mailbox database recovery under the following conditions 
 RDBs are generally not designed for scenarios in which you have to restore entire servers, when you have to restore multiple databases, or when you're in an emergency situation that requires changing or rebuilding your Active Directory topology.
 
 For detailed steps about how to create an RDB, see [Create a recovery database](create-recovery-dbs.md). For detailed steps about how to use an RDB, see [Restore data using a recovery database](restore-data-using-recovery-dbs.md).
-
-
-

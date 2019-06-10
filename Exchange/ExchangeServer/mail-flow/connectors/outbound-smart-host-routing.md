@@ -123,6 +123,3 @@ For information about other options, see [New-SendConnector](http://technet.micr
 To verify that you have successfully created a Send connector to route outbound email through a smart host, send a message from a user in your organization to an external domain that's serviced by the Send connector.
 
 You can also turn on protocol logging for the Send connector, and view the information in the log. For more information, see [Protocol logging](protocol-logging.md).
-
-
-

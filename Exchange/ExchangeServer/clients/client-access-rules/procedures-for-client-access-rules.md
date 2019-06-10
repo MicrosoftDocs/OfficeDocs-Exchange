@@ -238,4 +238,3 @@ Test-ClientAccessRule -User julia@contoso.com -AuthenticationType BasicAuthentic
 ```
 
 For detailed syntax and parameter information, see [Test-ClientAccessRule](http://technet.microsoft.com/library/d17ee6d8-e5f4-4b5d-977c-85e8dadeaf48.aspx).
-

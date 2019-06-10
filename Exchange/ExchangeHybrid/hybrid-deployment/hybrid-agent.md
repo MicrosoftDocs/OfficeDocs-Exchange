@@ -28,7 +28,7 @@ The agent install and the configuration of Hybrid via the Hybrid Configuration W
 The Hybrid agent has the following requirements:
 
 - The computer it's installed on needs to be:
-  
+
   - Running Windows Server 2012 R2 or 2016 with .NET Framework 4.6.2 (or later, as supported by the Exchange version you are installing on)
 
   - Joined to an Active Directory domain

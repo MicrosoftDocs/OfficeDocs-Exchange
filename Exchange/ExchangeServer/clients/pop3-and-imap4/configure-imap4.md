@@ -223,6 +223,3 @@ To verify that you have enabled and configured IMAP4 on the Exchange server, per
 ## Next steps
 
 To enabled or disable IMAP4 access to individual mailboxes, see [Enable or disable POP3 or IMAP4 access to mailboxes in Exchange Server](configure-mailbox-access.md).
-
-
-

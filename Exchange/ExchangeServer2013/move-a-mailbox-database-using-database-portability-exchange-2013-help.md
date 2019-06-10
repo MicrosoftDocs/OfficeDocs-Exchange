@@ -20,11 +20,11 @@ You can use database portability to move a Microsoft Exchange Server 2013 mailbo
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes, plus the time it takes to restore the data, move the database files, and wait for Active Directory replication to complete.
+- Estimated time to complete: 5 minutes, plus the time it takes to restore the data, move the database files, and wait for Active Directory replication to complete.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox recovery" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox recovery" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - You can't use the EAC to move user mailboxes to a recovered or dial tone database using database portability.
+- You can't use the EAC to move user mailboxes to a recovered or dial tone database using database portability.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -48,7 +48,7 @@ You can use database portability to move a Microsoft Exchange Server 2013 mailbo
 2. Create a database on a server using the following syntax:
 
     ```powershell
-        New-MailboxDatabase -Name <DatabaseName> -Server <ServerName> -EdbFilePath <DatabaseFileNameandPath> -LogFolderPath <LogFilesPath>
+    New-MailboxDatabase -Name <DatabaseName> -Server <ServerName> -EdbFilePath <DatabaseFileNameandPath> -LogFolderPath <LogFilesPath>
     ```
 
 3. Set the *This database can be over written by restore* attribute using the following syntax:
@@ -68,7 +68,7 @@ You can use database portability to move a Microsoft Exchange Server 2013 mailbo
 6. After the database is mounted, modify the user account settings with the [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\)) cmdlet so that the account points to the mailbox on the new mailbox server. To move all of the users from the old database to the new database, use the following syntax.
 
     ```powershell
-        Get-Mailbox -Database <SourceDatabase> |where {$_.ObjectClass -NotMatch '(SystemAttendantMailbox|ExOleDbSystemMailbox)'}| Set-Mailbox -Database <TargetDatabase>
+    Get-Mailbox -Database <SourceDatabase> |where {$_.ObjectClass -NotMatch '(SystemAttendantMailbox|ExOleDbSystemMailbox)'}| Set-Mailbox -Database <TargetDatabase>
     ```
 
 7. Trigger delivery of any messages remaining in queues using the following syntax.
@@ -83,6 +83,6 @@ After Active Directory replication is complete, all users can access their mailb
 
 To verify that you've successfully moved a mailbox, do the following:
 
-  - Open the mailbox using Outlook Web App.
+- Open the mailbox using Outlook Web App.
 
-  - Open the mailbox using Microsoft Outlook.
+- Open the mailbox using Microsoft Outlook.

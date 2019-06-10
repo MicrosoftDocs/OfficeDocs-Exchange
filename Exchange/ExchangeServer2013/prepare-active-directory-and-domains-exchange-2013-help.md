@@ -174,9 +174,9 @@ When you're ready, do the following to prepare an individual domain in your Acti
 
 2. Run the following command. Include the FQDN of the domain you want to prepare. If you want to prepare the domain you're running the command in, you don't have to include the FQDN.
 
-    ```powershell
-        Setup.exe /PrepareDomain:<FQDN of the domain you want to prepare> /IAcceptExchangeServerLicenseTerms
-    ```
+   ```powershell
+   Setup.exe /PrepareDomain:<FQDN of the domain you want to prepare> /IAcceptExchangeServerLicenseTerms
+   ```
 
 3. Repeat the steps for each Active Directory domain where you'll install an Exchange server or where mail-enabled users will be located.
 

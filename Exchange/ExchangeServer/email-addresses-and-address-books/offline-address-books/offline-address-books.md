@@ -186,6 +186,3 @@ In Exchange 2010, moving OAB generation to another server required you to specif
 - Create a new organization mailbox on a different server, and configure the OAB to use that organization mailbox. For more information, see [Use the Exchange Management Shell to create organization mailboxes](oab-procedures.md#CreateOrgMailboxes).
 
 Remember, you can configure multiple OABs to use the same organization mailbox, but you can't configure an OAB to use more than one organization mailbox. If you need multiple copies of the OAB in different locations (typically, in different Active Directory sites), verify that an organization mailbox is exists in the site, and enable shadow distribution for the OAB. For more information, see [Use the Exchange Management Shell to enable shadow distribution for offline address books](oab-procedures.md#OABEnableShadow).
-
-
-

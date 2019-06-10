@@ -17,4 +17,3 @@ title: Exchange content updates
 This topic lists Exchange Server and Exchange Online topics that have been changed over the last several weeks.
 
 [!INCLUDE [exchange-content-updates](../hub/includes/exchange-content-updates.md)]
-

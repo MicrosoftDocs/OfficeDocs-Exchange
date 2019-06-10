@@ -20,13 +20,13 @@ You can use Windows Server Backup to back up and restore Exchange databases. Exc
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 1 minute, plus the time it takes to back up the data
+- Estimated time to complete: 1 minute, plus the time it takes to back up the data
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox recovery" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox recovery" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - The Windows Server Backup feature must be installed on the local computer.
+- The Windows Server Backup feature must be installed on the local computer.
 
-  - During the backup operation, a consistency check of the Exchange data files is run to make sure that the files are in a good state and can be used for recovery. If the consistency check succeeds, Exchange data is available for recovery from that backup. If the consistency check fails, the Exchange data isn't available for recovery. Windows Server Backup runs the consistency check on the snapshot taken for the backup. As a result, before copying files from the snapshot to backup media, the consistency of the backup is known, and the user is notified of the consistency check results.
+- During the backup operation, a consistency check of the Exchange data files is run to make sure that the files are in a good state and can be used for recovery. If the consistency check succeeds, Exchange data is available for recovery from that backup. If the consistency check fails, the Exchange data isn't available for recovery. Windows Server Backup runs the consistency check on the snapshot taken for the backup. As a result, before copying files from the snapshot to backup media, the consistency of the backup is known, and the user is notified of the consistency check results.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -71,14 +71,14 @@ You can use Windows Server Backup to back up and restore Exchange databases. Exc
 
 To verify that you've successfully backed up the data, do any of the following:
 
-  - On the server on which Windows Server Backup was run, the last backup status will be displayed, which should say Successful. You can also verify that the backup completed successfully by viewing the Windows Server Backup logs.
+- On the server on which Windows Server Backup was run, the last backup status will be displayed, which should say Successful. You can also verify that the backup completed successfully by viewing the Windows Server Backup logs.
 
-  - Open Event Viewer and verify that a backup completion event was logged in the Application event log.
+- Open Event Viewer and verify that a backup completion event was logged in the Application event log.
 
-  - Run the following command in the Exchange Management Shell to verify that each database on the selected volume(s) was backed up successfully:
+- Run the following command in the Exchange Management Shell to verify that each database on the selected volume(s) was backed up successfully:
 
-    ```powershell
-        Get-MailboxDatabase -Server <ServerName> -Status | fl Name,*FullBackup
-    ```
+  ```powershell
+  Get-MailboxDatabase -Server <ServerName> -Status | fl Name,*FullBackup
+  ```
 
-    The *SnapshotLastFullBackup* and *LastFullBackup* properties of the database indicate when the last successful backup was taken, and if it was a VSS full backup.
+  The *SnapshotLastFullBackup* and *LastFullBackup* properties of the database indicate when the last successful backup was taken, and if it was a VSS full backup.

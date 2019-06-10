@@ -269,6 +269,3 @@ To verify that you've configured Exchange to accept mail for multiple authoritat
 1. Send test messages to an affected recipient from a mailbox that's outside of your Exchange organization, and verify the email addresses that accept or reject mail.
 
 2. Send test messages from an affected mailbox to an external recipient, and verify the From address of the message.
-
-
-

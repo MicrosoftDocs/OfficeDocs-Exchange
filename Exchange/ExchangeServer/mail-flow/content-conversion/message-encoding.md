@@ -182,6 +182,3 @@ The following table describes the order of precedence from highest priority to l
 |Mail contact or mail user|Mac attachment format| `BinHex`, `AppleSingle`, or `AppleDouble` (the default value is `BinHex`).|
 |Outlook or Outlook on the web|Message format|Plain text or HTML|
 |Remote domain|Content type| `MimeHtmlText` (the default value), `MimeText`, or `MimeHtml`|
-
-
-

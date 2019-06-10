@@ -61,6 +61,3 @@ Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
 ```
 
 For detailed syntax and parameter information, see [Move-ActiveMailboxDatabase](http://technet.microsoft.com/library/755d1ecb-95d1-45e3-9a21-56df9f196f37.aspx).
-
-
-

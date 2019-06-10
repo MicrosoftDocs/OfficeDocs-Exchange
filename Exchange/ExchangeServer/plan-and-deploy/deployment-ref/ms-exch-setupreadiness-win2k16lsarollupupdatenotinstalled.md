@@ -31,4 +31,3 @@ Download and install the 64-bit update from the following URL, and then click **
 [December 13, 2016 (KB3206632) security update](https://go.microsoft.com/fwlink/p/?linkid=837748)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

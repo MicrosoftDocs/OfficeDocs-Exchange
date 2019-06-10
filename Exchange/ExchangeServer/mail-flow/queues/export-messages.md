@@ -165,6 +165,3 @@ Get-Queue -Server Mailbox01 | Get-Message -ResultSize Unlimited | Suspend-Messag
 ```
 Get-Message -Server Mailbox01 -ResultSize Unlimited | ForEach-Object {$Temp="D:\Mailbox01 Export\"+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp}
 ```
-
-
-

@@ -108,6 +108,3 @@ Set-MailboxDatabase -Identity MDB2 -RecoverableItemsWarningQuota 15GB -Recoverab
 ```
 
 For detailed syntax and parameter information, see [Set-MailboxDatabase](http://technet.microsoft.com/library/a01edc66-bc10-4f65-9df4-432cb9e88f58.aspx).
-
-
-

@@ -172,6 +172,3 @@ In addition to the overall disaster recovery scenario, you can also restore publ
 In all of these situations, the public folder or public folder mailbox is recoverable by using the **MailboxRestoreRequest** cmdlets.
 
 For more information, see [Restore public folders and public folder mailboxes from failed moves](http://technet.microsoft.com/library/2ade83c9-5f9b-4945-bf32-48fa8185b515.aspx).
-
-
-

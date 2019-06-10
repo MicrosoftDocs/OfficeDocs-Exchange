@@ -119,5 +119,3 @@ To verify that you've configured the OAB generation schedule on one or more Exch
 ## See also
 
 [Procedures for offline address books in Exchange Server](../../email-addresses-and-address-books/offline-address-books/oab-procedures.md)
-
-

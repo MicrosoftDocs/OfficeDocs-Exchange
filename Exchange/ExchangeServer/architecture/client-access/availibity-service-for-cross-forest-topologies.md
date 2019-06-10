@@ -99,6 +99,3 @@ This example adds the Availability address space configuration object for the so
 ```
 Add-AvailabilityAddressspace -Forestname Contoso.com -Accessmethod OrgWideFB -Credential (Get-Credential)
 ```
-
-
-

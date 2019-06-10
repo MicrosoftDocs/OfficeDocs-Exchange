@@ -389,6 +389,3 @@ Be aware that any items added to the Office 365 group, or any edit operations pe
 Note also that it's not possible to restore a subset of public folders, which means all of the public folders there were migrated should be restored.
 
 The corresponding groups in Office 365 won't be deleted as part of the roll back process. You'll have to clean or delete those groups manually.
-
-
-

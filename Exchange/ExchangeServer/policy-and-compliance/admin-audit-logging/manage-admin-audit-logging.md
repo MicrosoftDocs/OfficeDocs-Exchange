@@ -161,6 +161,3 @@ To view the admin audit logging settings that you've configured for your organiz
 ```
 Get-AdminAuditLogConfig
 ```
-
-
-

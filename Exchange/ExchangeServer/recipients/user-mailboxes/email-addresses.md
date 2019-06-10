@@ -217,6 +217,3 @@ Or
   ```
 
 - Verify that the new email address is included in the results for each mailbox.
-
-
-

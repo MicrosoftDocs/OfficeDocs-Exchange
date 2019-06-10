@@ -173,6 +173,3 @@ During long absences from work, users may accrue a large amount of email. Depend
 If your organization has never implemented MRM, and your users aren't familiar with its features, you can also use retention holds during the initial *warm up and training* phase of your MRM deployment. You can create and deploy retention policies and educate users about the policies without the risk of having items moved or deleted before users can tag them. A few days before the warm up and training period ends, you should remind users of the warm-up deadline. After the deadline, you can remove the retention hold from user mailboxes, allowing the Managed Folder Assistant to process mailbox items and take the specified retention action.
 
 For details about how to place a mailbox on retention hold, see [Place a Mailbox on Retention Hold](http://technet.microsoft.com/library/2baac4a7-3402-4142-bfb3-1649a950e677.aspx).
-
-
-

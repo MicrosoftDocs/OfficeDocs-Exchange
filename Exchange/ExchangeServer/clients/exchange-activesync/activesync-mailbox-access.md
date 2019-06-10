@@ -196,6 +196,3 @@ To verify that you've successfully enabled or disabled Exchange ActiveSync acces
   ```
   Get-CasMailbox -ResultSize unlimited -Filter {ActiveSyncEnabled -eq $false}
   ```
-
-
-

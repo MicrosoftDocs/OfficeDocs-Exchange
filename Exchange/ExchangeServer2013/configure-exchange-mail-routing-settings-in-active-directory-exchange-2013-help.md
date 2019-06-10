@@ -20,13 +20,13 @@ By default Microsoft Exchange Server 2013 references the IP site link objects in
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 15 minutes
+- Estimated time to complete each procedure: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Active Directory site and site link management" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Active Directory site and site link management" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - You can only use the Shell to perform this procedure.
+- You can only use the Shell to perform this procedure.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -38,7 +38,7 @@ Determine the name of the Active Directory IP site link for which you want to se
 To set an Exchange-specific cost on an Active Directory site link, run the following command:
 
 ```powershell
- Set-AdSiteLink <ADSiteLinkIdentity> -ExchangeCost <Integer | $null>
+Set-AdSiteLink <ADSiteLinkIdentity> -ExchangeCost <Integer | $null>
 ```
 
 This example sets an Exchange-specific cost of 10 on the IP site link named IPSiteLinkAB.
@@ -59,9 +59,9 @@ To verify that you have successfully set an Exchange cost on an Active Directory
 
 1. Run the following command:
 
-    ```powershell
-    Get-AdSiteLink | Format-List Name,ExchangeCost
-    ```
+   ```powershell
+   Get-AdSiteLink | Format-List Name,ExchangeCost
+   ```
 
 2. Verify the Exchange cost is configured on the Active Directory site link.
 
@@ -93,8 +93,8 @@ To verify that you have successfully configured an Active Directory site as a hu
 
 1. Run the following command:
 
-    ```powershell
-    Get-AdSite | Format-List Name,HubSiteEnabled
-    ```
+   ```powershell
+   Get-AdSite | Format-List Name,HubSiteEnabled
+   ```
 
 2. Verify the *HubSiteEnabled* value is `True` for the Active Directory site.

@@ -83,6 +83,3 @@ To verify that you've successfully backed up the data, do any of the following:
   ```
 
     The _SnapshotLastFullBackup_ and _LastFullBackup_ properties of the database indicate when the last successful backup was taken, and if it was a VSS full backup.
-
-
-

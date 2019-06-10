@@ -62,7 +62,7 @@ To record custom prompts and greetings by using the telephone user interface (TU
   ```
 
 > [!NOTE]
->  Before you can enable the recording of a custom prompt or greeting, you must sign in to the mailbox that's set up for recording prompts. After you record the new prompt or greeting, you must sign out and then sign back in before you can hear the new prompt or greeting when you use the TUI.
+> Before you can enable the recording of a custom prompt or greeting, you must sign in to the mailbox that's set up for recording prompts. After you record the new prompt or greeting, you must sign out and then sign back in before you can hear the new prompt or greeting when you use the TUI.
 
 ## Perform TUI prompt recording on a UM auto attendant
 

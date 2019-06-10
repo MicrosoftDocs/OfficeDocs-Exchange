@@ -29,17 +29,17 @@ For additional management tasks related to Client Access servers, see [UM servic
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 3 minutes.
+- Estimated time to complete: 3 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Server Configuration Settings" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Exchange Server Configuration Settings" entry in the [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md) topic.
 
-  - Verify that the Client Access server is installed, either on the same computer as the Mailbox server or on a separate computer.
+- Verify that the Client Access server is installed, either on the same computer as the Mailbox server or on a separate computer.
 
-  - If you're putting a Client Access server into Maintenance Mode, verify that there's enough healthy capacity in the Client Access array to allow the server to go out of service.
+- If you're putting a Client Access server into Maintenance Mode, verify that there's enough healthy capacity in the Client Access array to allow the server to go out of service.
 
-  - Before taking a server out of Maintenance Mode, verify the health of the server and make sure it's ready to go into service.
+- Before taking a server out of Maintenance Mode, verify the health of the server and make sure it's ready to go into service.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

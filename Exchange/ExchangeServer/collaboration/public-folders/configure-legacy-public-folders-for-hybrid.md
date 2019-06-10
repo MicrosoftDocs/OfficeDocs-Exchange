@@ -64,7 +64,7 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 
     - To download the November 2012 Outlook update for Outlook 2010, see [Update for Microsoft Outlook 2010 (KB2687623) 32-Bit Edition](https://www.microsoft.com/download/details.aspx?id=35702).
 
-    - To download the November 2012 Outlook update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](https://www.microsoft.com/download/details.aspx?id=35718).
+    - To download the November 2012 Outlook update for Outlook 2007, see [Update for Microsoft Office Outlook 2007 (KB2687404)](http://www.catalog.update.microsoft.com/Search.aspx?q=outlook+2007) and download in preferred language.
 
 - Outlook 2016 for Mac and Outlook for Mac for Office 365 are supported for cross-premises public folders if the following conditions are true:
 
@@ -177,4 +177,3 @@ Log on to Outlook for a user who is in Exchange Online and perform the following
   - Check permissions
   - Create and delete public folders.
   - Post content to and delete content from a public folder.
-

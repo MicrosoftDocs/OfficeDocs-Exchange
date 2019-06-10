@@ -38,4 +38,3 @@ To learn more about how Exchange stores and retrieves information in Active Dire
 For more information about Active Directory forest design, see [AD DS Design Guide](https://go.microsoft.com/fwlink/p/?LinkId=264957).
 
 To learn more about computers running Windows in an Active Directory domain and deploying Exchange 2013 or later in a domain that has a disjoint namespace, see [Disjoint Namespace Scenarios](https://technet.microsoft.com/library/bb676377(v=exchg.150).aspx).
-

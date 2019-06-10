@@ -307,6 +307,3 @@ To verify that you have successfully completed your migration, do the following:
   ```
 
 For more information, see [Get-MigrationUserStatistics](http://technet.microsoft.com/library/b771bb31-7f5a-462f-b5e2-ce49fde9bfe5.aspx).
-
-
-

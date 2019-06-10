@@ -141,6 +141,3 @@ Run the following command in the Exchange Management Shell.
 ```
 Get-Mailbox <identity> | Format-List AcceptMessagesOnlyFrom,AcceptMessagesOnlyFromDLMembers,RejectMessagesFrom,RejectMessagesFromDLMembers,RequireSenderAuthenticationEnabled
 ```
-
-
-

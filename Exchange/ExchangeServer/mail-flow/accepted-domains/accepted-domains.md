@@ -108,4 +108,3 @@ Because the forest root FQDN is automatically configured as the first accepted d
 - The first default domain is used as the primary address for all recipients in the default email address policy. If you configure another accepted domain as the default domain, the default email address policy isn't automatically updated.
 
 - Although you can configure any accepted domain as the default domain, you typically specify an authoritative domain.
-

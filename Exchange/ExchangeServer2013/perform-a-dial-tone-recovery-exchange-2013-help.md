@@ -20,13 +20,13 @@ Using dial tone portability, users can have a temporary mailbox for sending and 
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes, plus the time it takes to restore and move the data.
+- Estimated time to complete: 5 minutes, plus the time it takes to restore and move the data.
 
-  - You must have fewer than the maximum number of databases deployed to create a dial tone database. Exchange 2013 Standard Edition supports a maximum of five databases per server. Exchange 2013 Enterprise Edition supports a maximum of 50 databases per server in RTM and CU1, and 100 databases per server in CU2 and later.
+- You must have fewer than the maximum number of databases deployed to create a dial tone database. Exchange 2013 Standard Edition supports a maximum of five databases per server. Exchange 2013 Enterprise Edition supports a maximum of 50 databases per server in RTM and CU1, and 100 databases per server in CU2 and later.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox recovery" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox recovery" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -65,6 +65,7 @@ Using dial tone portability, users can have a temporary mailbox for sending and 
     ```powershell
     Mount-Database -Identity RDB1
     ```
+
     ```powershell
     Dismount-Database -Identity RDB1
     ```
@@ -106,28 +107,28 @@ Using dial tone portability, users can have a temporary mailbox for sending and 
 14. After the restore operation is complete, you can dismount and remove the RDB, as shown in this example.
 
     ```powershell
-        Dismount-Database -Identity RDB1
-        Remove-MailboxDatabase -Identity RDB1
+    Dismount-Database -Identity RDB1
+    Remove-MailboxDatabase -Identity RDB1
     ```
 
 For detailed syntax and parameter information, see the following topics:
 
-  - [New-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997976\(v=exchg.150\))
+- [New-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997976\(v=exchg.150\))
 
-  - [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\))
+- [Get-Mailbox](https://technet.microsoft.com/en-us/library/bb123685\(v=exchg.150\))
 
-  - [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\))
+- [Set-Mailbox](https://technet.microsoft.com/en-us/library/bb123981\(v=exchg.150\))
 
-  - [Mount-Database](https://technet.microsoft.com/en-us/library/aa998871\(v=exchg.150\))
+- [Mount-Database](https://technet.microsoft.com/en-us/library/aa998871\(v=exchg.150\))
 
-  - [Dismount-Database](https://technet.microsoft.com/en-us/library/bb124936\(v=exchg.150\))
+- [Dismount-Database](https://technet.microsoft.com/en-us/library/bb124936\(v=exchg.150\))
 
-  - [Remove-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997931\(v=exchg.150\))
+- [Remove-MailboxDatabase](https://technet.microsoft.com/en-us/library/aa997931\(v=exchg.150\))
 
 ## How do you know this worked?
 
 To verify that you've successfully moved a mailbox, do the following:
 
-  - Open the mailbox using Microsoft Office Outlook Web App.
+- Open the mailbox using Microsoft Office Outlook Web App.
 
-  - Open the mailbox using Microsoft Outlook.
+- Open the mailbox using Microsoft Outlook.

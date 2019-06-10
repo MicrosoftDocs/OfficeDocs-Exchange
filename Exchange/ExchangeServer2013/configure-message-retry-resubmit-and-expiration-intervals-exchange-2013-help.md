@@ -20,13 +20,13 @@ In Microsoft Exchange Server 2013, you can configure message retry, resubmit, an
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 10 minutes
+- Estimated time to complete each procedure: 10 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport service" and "Edge Transport server" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport service" and "Edge Transport server" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+- Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -93,48 +93,11 @@ Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -Tra
 
 This example changes the following values on the Mailbox server named Mailbox01: on the Edge Transport server Exchange01.
 
-  - The number of transient failure retry attempts is set to 8.
+- The number of transient failure retry attempts is set to 8.
 
-  - The transient failure retry interval is set to 1 minute.
+- The transient failure retry interval is set to 1 minute.
 
-  - The outbound connection failure retry interval is set to 45 minutes.
-
-<!-- end list -->
-
-```powershell
-Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00
-```
-
-> [!NOTE]
-> The <EM>TransientFailureRetryCount</EM> and <EM>TransientFailureRetryInterval</EM> parameters are also available on the <STRONG>Set-FrontEndTransportService</STRONG> cmdlet for the Front End Transport service on Client Access servers.
-
-## Configure the transient failure retry attempts, the transient failure retry interval, and the outbound connection failure retry interval
-
-## Use the EAC to configure the transient failure retry attempts, the transient failure retry interval, and the outbound connection failure retry interval
-
-1. In the EAC, click **Servers** \> **Servers**, select the server, click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon"), and then click **Transport limits**.
-
-2. In the **Retries** section, enter a value for **Outbound connection failure retry interval (seconds)**, the **Transient failure retry interval (minutes)**, or the **Transient failure retry attempts**.
-
-3. When you are finished, click **Save**.
-
-## Use the Shell to configure the transient failure retry attempts, the transient failure retry interval, and the outbound connection failure retry interval
-
-Use the following syntax to configure the transient failure retry attempts, the transient failure retry interval, and the outbound connection failure retry interval in the Transport service on a Mailbox server or on an Edge Transport server.
-
-```powershell
-Set-TransportService <ServerIdentity> -TransientFailureRetryCount <Integer> -TransientFailureRetryInterval <hh:mm:ss> -OutboundConnectionFailureRetryInterval <dd.hh:mm:ss>
-```
-
-This example changes the following values on the Mailbox server named Mailbox01: on the Edge Transport server Exchange01.
-
-  - The number of transient failure retry attempts is set to 8.
-
-  - The transient failure retry interval is set to 1 minute.
-
-  - The outbound connection failure retry interval is set to 45 minutes.
-
-<!-- end list -->
+- The outbound connection failure retry interval is set to 45 minutes.
 
 ```powershell
 Set-TransportService Mailbox01 -TransientFailureRetryCount 8 -TransientFailureRetryInterval 00:01:00 -OutboundConnectionFailureRetryInterval 00:45:00

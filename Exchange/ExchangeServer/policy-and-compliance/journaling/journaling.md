@@ -167,6 +167,3 @@ Because journal rules are stored in Active Directory, they're read and applied b
 <a name="trouble"> </a>
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612). If you're having trouble with the alternate journaling mailbox, see [KB2829319](https://go.microsoft.com/fwlink/p/?LinkId=331674).
-
-
-

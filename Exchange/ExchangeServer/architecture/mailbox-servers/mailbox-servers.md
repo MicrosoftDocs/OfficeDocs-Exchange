@@ -32,6 +32,3 @@ The following articles contain procedures for common Mailbox server management t
 - [Prepare mailboxes for cross-forest move requests](prep-mailboxes-for-cross-forest-moves.md)
 
 - [Enable the MRS Proxy endpoint for remote moves](mrs-proxy-endpoint.md)
-
-
-

@@ -29,7 +29,7 @@ You received this bounce message with error code 5.6.11 because your message con
 
 A _bare line feed_ is a line feed (LF) character that's not immediately preceded by a carriage return (CR) character. In other words, instead of a line of text ending with CR LF, it ends with only LF.
 
-Typically, each line in an email message ends with a carriage return followed by a line feed (CR LF). 
+Typically, each line in an email message ends with a carriage return followed by a line feed (CR LF).
 
 If a message contains bare line feeds, the SMTP Chunking feature is required to transmit the message between email servers. Chunking uses the SMTP BDAT command as defined in [RFC 3030](https://go.microsoft.com/fwlink/p/?LinkId=784893). If the destination email server doesn't support BDAT, then it can't accept messages that contain bare line feeds.
 

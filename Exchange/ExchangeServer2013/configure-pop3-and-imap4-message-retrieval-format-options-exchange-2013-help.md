@@ -22,11 +22,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes.
+- Estimated time to complete each procedure: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 settings" and "IMAP4 settings" entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 settings" and "IMAP4 settings" entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -43,19 +43,19 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 4. Under **Message MIME format**, choose from the following settings:
 
-      - Text
+    - Text
 
-      - HTML
+    - HTML
 
-      - HTML and alternative text
+    - HTML and alternative text
 
-      - Enriched text
+    - Enriched text
 
-      - Enriched text and alternative text
+    - Enriched text and alternative text
 
-      - Best body format
+    - Best body format
 
-      - TNEF
+    - TNEF
 
 5. Click **Save**.
 
@@ -140,19 +140,19 @@ Do the following to verify that you've successfully set POP3 message retrieval s
 
 4. Under **Message MIME format**, choose from the following settings:
 
-      - Text
+    - Text
 
-      - HTML
+    - HTML
 
-      - HTML and alternative text
+    - HTML and alternative text
 
-      - Enriched text
+    - Enriched text
 
-      - Enriched text and alternative text
+    - Enriched text and alternative text
 
-      - Best body format
+    - Best body format
 
-      - TNEF
+    - TNEF
 
 5. Click **Save**.
 

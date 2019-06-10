@@ -37,9 +37,9 @@ You can use the [Get-FailedContentIndexDocuments](https://technet.microsoft.com/
 
 For more information about unsearchable items, see :
 
-  - [File formats indexed by Exchange Search](file-formats-indexed-by-exchange-search-exchange-2013-help.md)
+- [File formats indexed by Exchange Search](file-formats-indexed-by-exchange-search-exchange-2013-help.md)
 
-  - [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)
+- [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md)
 
 ## Diagnose Exchange Search issues
 
@@ -84,7 +84,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 4. **Check the database copy indexing health**: Is the content index healthy? Use the **Get-MailboxDatabaseCopyStatus** cmdlet to check the content indexing health for a database copy.
 
     ```powershell
-        Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
+    Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
     ```
 
     For detailed syntax and parameter information, see [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/en-us/library/dd298044\(v=exchg.150\)).

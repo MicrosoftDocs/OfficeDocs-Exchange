@@ -83,17 +83,17 @@ Support for legacy transport agents is controlled by keys in the application con
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes
+- Estimated time to complete: 15 minutes
 
-  - Exchange permissions don't apply to the procedures in this topic. These procedures are performed in the operating system of the Exchange Server.
+- Exchange permissions don't apply to the procedures in this topic. These procedures are performed in the operating system of the Exchange Server.
 
-  - Changes you save to an application configuration file are applied after you restart the corresponding service.
+- Changes you save to an application configuration file are applied after you restart the corresponding service.
 
-  - When you restart any of the services that are associated with the application configuration files, mail flow on the server is temporarily interrupted.
+- When you restart any of the services that are associated with the application configuration files, mail flow on the server is temporarily interrupted.
 
-  - Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+- Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -117,12 +117,12 @@ Use the following procedure to enable support for legacy transport agents:
 2. Locate the *\</configuration\>* key at the end of the file, and paste the following keys before the *\</configuration\>* key:
 
     ```powershell
-        <startup useLegacyV2RuntimeActivationPolicy="true">
-           <supportedRuntime version="v4.0" />
-           <supportedRuntime version="v3.5" />
-           <supportedRuntime version="v3.0" />
-           <supportedRuntime version="v2.0" />
-        </startup>
+    <startup useLegacyV2RuntimeActivationPolicy="true">
+       <supportedRuntime version="v4.0" />
+       <supportedRuntime version="v3.5" />
+       <supportedRuntime version="v3.0" />
+       <supportedRuntime version="v2.0" />
+    </startup>
     ```
 
 3. When you are finished, save and close the application configuration file.
@@ -132,13 +132,13 @@ Use the following procedure to enable support for legacy transport agents:
 5. Restart the associated Windows service by running the following command:
 
     ```powershell
-        net stop <service> && net start <service>
+    net stop <service> && net start <service>
     ```
 
     For example, if you modified the EdgeTransport.exe.config file, you need to restart the Microsoft Exchange Transport service by running the following command:
 
     ```powershell
-        net stop MSExchangeTransport && net start MSExchangeTransport
+    net stop MSExchangeTransport && net start MSExchangeTransport
     ```
 
 6. Repeat Step 5 to restart services associated with the other modified application configuration files.
@@ -147,6 +147,4 @@ Use the following procedure to enable support for legacy transport agents:
 
 You'll know this procedure works if the legacy transport agent installs successfully. If you try to install a legacy transport agent without performing the procedures in this topic, you'll receive an error that's similar to the following:
 
-```powershell
-Mixed mode assembly is built against version '<version>' of the runtime and cannot be loaded in the 4.0 runtime without additional configuration information.
-```
+`Mixed mode assembly is built against version '<version>' of the runtime and cannot be loaded in the 4.0 runtime without additional configuration information.`

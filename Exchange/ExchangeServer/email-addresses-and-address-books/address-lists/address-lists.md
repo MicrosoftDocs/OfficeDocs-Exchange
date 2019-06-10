@@ -114,4 +114,3 @@ After you create or modify an address list, you need to update the membership.
 If the address list contains a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to update the address list (not the EAC). For more information, see [Update address lists](address-list-procedures.md#UpdateAddressList).
 
 To update a GAL, you always need to use the Exchange Management Shell. For more information, see [Use the Exchange Management Shell to update global address lists](address-list-procedures.md#UpdateGAL).
-

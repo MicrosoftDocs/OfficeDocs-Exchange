@@ -52,6 +52,3 @@ The following table describes the supportability of the backup and recovery opti
 For detailed steps to back up Exchange using WSB, see [Use Windows Server Backup to back up Exchange](backup-with-windows-server-backup.md).
 
 For detailed steps to restore data from a backup taken with WSB, see [Use Windows Server Backup to restore a backup of Exchange](restore-with-windows-server-backup.md).
-
-
-

@@ -25,15 +25,15 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes.
+- Estimated time to complete: 15 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - An active federation trust for the on-premises Exchange organization must be configured. For details, see [Configure a federation trust](configure-a-federation-trust-exchange-2013-help.md).
+- An active federation trust for the on-premises Exchange organization must be configured. For details, see [Configure a federation trust](configure-a-federation-trust-exchange-2013-help.md).
 
-  - The external organization you want to configure in the organization relationship must also have a federation trust established with the Azure AD authentication system. You'll use the primary federated domain for the external Exchange organization when configuring the organization relationship.
+- The external organization you want to configure in the organization relationship must also have a federation trust established with the Azure AD authentication system. You'll use the primary federated domain for the external Exchange organization when configuring the organization relationship.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## Use the EAC to create an organization relationship
 
@@ -49,15 +49,15 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
     To set the free/busy access level, select one of the following:
 
-      - **Calendar free/busy information with time only**
+    - **Calendar free/busy information with time only**
 
-      - **Calendar free/busy with time, subject, and location**
+    - **Calendar free/busy with time, subject, and location**
 
     To set which users will share calendar free/busy information, select one of the following:
 
-      - **Everyone in your organization**
+    - **Everyone in your organization**
 
-      - **A specified security group**
+    - **A specified security group**
 
         To specify a security group, click **browse**.
 
@@ -67,42 +67,38 @@ To learn more about federated sharing, see [Sharing](sharing-exchange-2013-help.
 
 This example creates an organization relationship with Contoso, Ltd with the following conditions:
 
-  - The organization relationship is enabled for contoso.com, northamerica.contoso.com, and europe.contoso.com.
+- The organization relationship is enabled for contoso.com, northamerica.contoso.com, and europe.contoso.com.
 
-  - Free/busy access is enabled.
+- Free/busy access is enabled.
 
-  - The requesting organization receives free/busy time, subject, and location information from the target organization.
-
-<!-- end list -->
+- The requesting organization receives free/busy time, subject, and location information from the target organization.
 
 ```powershell
-    New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
+New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northamerica.contoso.com","europe.contoso.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
 ```
 
 This example attempts to automatically discover configuration information from the external Exchange organization Contoso.com by using the domain names provided in the **Get-FederationInformation** cmdlet. If you use this method to create your organization relationship, you must first make sure that you've created an organization identifier by using the **Set-FederatedOrganizationIdentifier** cmdlet.
 
 ```powershell
-    Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -LimitedDetails
+Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -LimitedDetails
 ```
 
 For detailed syntax and parameter information, see [Get-FederationInformation](https://technet.microsoft.com/en-us/library/dd351221\(v=exchg.150\)) and [New-OrganizationRelationship](https://technet.microsoft.com/en-us/library/ee332357\(v=exchg.150\)).
 
 This example creates an organization relationship with Fourth Coffee. In this example, the connection settings with the external Exchange organization are provided. The following conditions apply:
 
-  - The organization relationship is established with the domain fourthcoffee.com, a federated domain of Fourth Coffee.
+- The organization relationship is established with the domain fourthcoffee.com, a federated domain of Fourth Coffee.
 
-  - The Exchange Web Services application URL is mail.fourthcoffee.com.
+- The Exchange Web Services application URL is mail.fourthcoffee.com.
 
-  - The Autodiscover URL is https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity.
+- The Autodiscover URL is https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity.
 
-  - Free/busy access is enabled.
+- Free/busy access is enabled.
 
-  - The requesting organization receives only free/busy information with the time.
-
-<!-- end list -->
+- The requesting organization receives only free/busy information with the time.
 
 ```powershell
-    New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
+New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
 ```
 
 For detailed syntax and parameter information, see [New-OrganizationRelationship](https://technet.microsoft.com/en-us/library/ee332357\(v=exchg.150\)).

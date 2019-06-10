@@ -34,4 +34,3 @@ For information about DNS name resolution, troubleshooting, and A records, see t
 - [Managing resource records](https://go.microsoft.com/fwlink/p/?LinkId=294829)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

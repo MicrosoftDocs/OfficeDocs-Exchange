@@ -40,6 +40,3 @@ To learn about keyboard shortcuts for other Microsoft products, visit the [Keybo
 For information about keyboard shortcuts in Outlook on the web, see [Keyboard shortcuts in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=823540).
 
 For information about accessibility features in Office 365, including keyboard shortcuts, see [Accessibility in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=521946).
-
-
-

@@ -42,48 +42,48 @@ Mail users are similar to mail contacts. Both have external email addresses and 
 
 3. Do one of the following to specify the email address type for the mail user:
 
-  - To specify an SMTP email address for the mail user's external email address, click **SMTP**.
+   - To specify an SMTP email address for the mail user's external email address, click **SMTP**.
 
     > [!NOTE]
     > Exchange validates SMTP addresses for correct formatting. If your entry is inconsistent with the SMTP format, an error message will be displayed when you click **Save** to create the mail user.
 
-  - To specify a custom address type, click the option button and then type the custom address type. For example, you can specify an X.500, GroupWise, or Lotus Notes address.
+   - To specify a custom address type, click the option button and then type the custom address type. For example, you can specify an X.500, GroupWise, or Lotus Notes address.
 
 4. In the **\* External email address** box, type the mail user's external email address. Email sent to this mail user is forwarded to this email address. This is required.
 
 5. Select one of the following options:
 
-  - **Existing user**: Select to mail-enable an existing user.
+   - **Existing user**: Select to mail-enable an existing user.
 
-    Click **Browse** to open the **Select User - Entire Forest** dialog box. This dialog box displays a list of user accounts in the organization that aren't mail-enabled or don't have mailboxes. Select the user account you want to mail-enable, and then click **OK**. If you select this option, you don't have to provide user account information because this information already exists in Active Directory.
+     Click **Browse** to open the **Select User - Entire Forest** dialog box. This dialog box displays a list of user accounts in the organization that aren't mail-enabled or don't have mailboxes. Select the user account you want to mail-enable, and then click **OK**. If you select this option, you don't have to provide user account information because this information already exists in Active Directory.
 
-  - **New user**: Select to create a new user account in Active Directory and mail-enable the user. If you select this option, you'll have to provide the required user account information.
+   - **New user**: Select to create a new user account in Active Directory and mail-enable the user. If you select this option, you'll have to provide the required user account information.
 
 6. If you selected **New User** in Step 5, complete the following information on the **New mail user** page. Otherwise skip to Step 7.
 
-  - **First name**: Type the first name of the mail user.
+   - **First name**: Type the first name of the mail user.
 
-  - **Initials**: Type the initials of the mail user.
+   - **Initials**: Type the initials of the mail user.
 
-  - **Last name**: Type the last name of the mail user.
+   - **Last name**: Type the last name of the mail user.
 
-  - **\* Display name**: Use this box to type a display name for the user. This is the name that's listed in the contacts list in the EAC and in your organization's address book. By default, this box is populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
+   - **\* Display name**: Use this box to type a display name for the user. This is the name that's listed in the contacts list in the EAC and in your organization's address book. By default, this box is populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
 
-  - **\* Name**: Use this box to type a name for the mail user. This is the name that's listed in the directory service. This box is also populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name because this is required. This name also can't exceed 64 characters.
+   - **\* Name**: Use this box to type a name for the mail user. This is the name that's listed in the directory service. This box is also populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name because this is required. This name also can't exceed 64 characters.
 
-  - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
+   - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
 
-    To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
+     To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
 
-  - **\* User logon name**: Type the name that the mail user will use to log on to the domain. The user logon name consists of a user name on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name the user account resides in.
+   - **\* User logon name**: Type the name that the mail user will use to log on to the domain. The user logon name consists of a user name on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name the user account resides in.
 
-  - **\* New Password**: Type the password that the mail user must use to log on to the domain. Make sure that the password you supply complies with the password length, complexity, and history requirements of the domain you're creating the user account in.
+   - **\* New Password**: Type the password that the mail user must use to log on to the domain. Make sure that the password you supply complies with the password length, complexity, and history requirements of the domain you're creating the user account in.
 
-  - **\* Confirm password**: Use this box to confirm the password that you typed in the **Password** box.
+   - **\* Confirm password**: Use this box to confirm the password that you typed in the **Password** box.
 
-  - **Require password change on next logon**: Select this check box if you want mail users to reset the password when they first log on to the domain.
+   - **Require password change on next logon**: Select this check box if you want mail users to reset the password when they first log on to the domain.
 
-    If you select this check box, at first logon, the new mail user will be prompted with a dialog box in which to change the password. The mail user won't be allowed to perform any tasks until the password is changed successfully.
+     If you select this check box, at first logon, the new mail user will be prompted with a dialog box in which to change the password. The mail user won't be allowed to perform any tasks until the password is changed successfully.
 
 7. When you've finished, click **Save** to create the mail user.
 
@@ -247,7 +247,7 @@ Use the **Member Of** section to view a list of the distribution groups or secur
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a message to this recipient. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
 > [!NOTE]
->  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
+> MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
 ### Use the Exchange Management Shell to change mail user properties
 
@@ -331,7 +331,7 @@ When you bulk edit mail users, you can change the following property areas:
 
 2. In the list of contacts, select two or more mail users. You can't bulk edit a combination of mail contacts and mail users.
 
-  **Note**: You can select multiple adjacent mail users by holding down the Shift key and clicking the first mail user, and then clicking the last mail user you want to edit. You can also select multiple mail users by holding down the Ctrl key and clicking each one that you want to edit.
+   **Note**: You can select multiple adjacent mail users by holding down the Shift key and clicking the first mail user, and then clicking the last mail user you want to edit. You can also select multiple mail users by holding down the Ctrl key and clicking each one that you want to edit.
 
 3. In the Details pane, under **Bulk Edit**, click **Update** under **Contact Information** or **Organization**.
 
@@ -348,4 +348,3 @@ To verify that you've successfully bulk edited mail users, do one of the followi
   ```
   Get-User -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser') -and (Company -eq 'Adatum')} | Format-List Name,Office,Manager
   ```
-

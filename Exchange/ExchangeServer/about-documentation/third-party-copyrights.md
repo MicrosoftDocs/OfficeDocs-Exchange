@@ -54,6 +54,3 @@ Windows Server 2008
 Windows Server 2008 R2
 
 Windows 7
-
-
-

@@ -185,6 +185,3 @@ The following values aren't rewritten because the information is part of message
 - Header fields located inside MIME body parts that may be signed.
 
 - The boundary string parameter of the MIME content type.
-
-
-

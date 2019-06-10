@@ -76,7 +76,6 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 - After you follow the instructions in this article to configure your on-premises public folders for a hybrid deployment, users who are external to your organization won't be able to send messages to your on-premises public folders unless you take additional steps. You can either set the accepted domain for the public folders to Internal Relay (see [Manage Accepted Domains in Exchange Online](http://technet.microsoft.com/library/0fc0ecc0-e133-48fa-9d72-cb4793a73960.aspx)) or you can disable Directory Based Edge Blocking (DBEB) (see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx)).
 
 ## Step 2: Make remote public folders discoverable
-<a name="Discoverable"> </a>
 
 1. If your public folders are on Exchange 2010 or later servers, you must install the Client Access server (CAS) role on all mailbox servers that have a public folder database. This allows the Microsoft Exchange RpcClientAccess service to be running so that all clients can access public folders. For more information, see [Install Exchange Server 2010](https://technet.microsoft.com/en-us/library/bb124778%28v=exchg.141%29.aspx).
 
@@ -113,7 +112,6 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 5. Repeat the preceding steps for every public folder server in your organization.
 
 ## Step 3: Download the scripts
-<a name="download"> </a>
 
 1. Download the following files from [Mail-enabled Public Folders - directory sync script](https://www.microsoft.com/en-us/download/details.aspx?id=46381):
 
@@ -124,7 +122,6 @@ A hybrid configuration with Exchange 2003 public folders is not supported. If yo
 2. Save the files to the local computer on which you'll be running PowerShell. For example, C:\PFScripts.
 
 ## Step 4: Configure directory synchronization
-<a name="dirsync"> </a>
 
 The Directory Synchronization service doesn't synchronize mail-enabled public folders. Running the following script will synchronize the mail-enabled public folders across premises. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permission are not supported in Hybrid Deployment scenarios. For more information, see [Exchange hybrid deployment documentation](../exchange-hybrid.md#exchange-hybrid-deployment-documentation).
 
@@ -143,11 +140,10 @@ The Directory Synchronization service doesn't synchronize mail-enabled public fo
 > Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the `-WhatIf` switch. <br/> We also recommend that you run this script daily to synchronize your mail-enabled public folders.
 
 ## Step 5: Configure Exchange Online users to access on-premises public folders
-<a name="Access"> </a>
 
 The final step in this procedure is to configure the Exchange Online organization and to allow access to the legacy on-premises public folders.
 
-Enable the exchange online organization to access the on-premises public folders. You will point to all of the proxy public folder mailboxes that you created in [Step 2: Make remote public folders discoverable](set-up-legacy-hybrid-public-folders.md#Discoverable).
+Enable the exchange online organization to access the on-premises public folders. You will point to all of the proxy public folder mailboxes that you created in [Step 2: Make remote public folders discoverable](#step-2-make-remote-public-folders-discoverable).
 
 Run the following command in **Windows PowerShell**:
 
@@ -161,14 +157,13 @@ You must wait until ActiveDirectory synchronization has completed to see the cha
 > An Office 365 user who is not represented by a MailUser object on-premises (local to the target public folder hierarchy) won't be able to access legacy or Exchange 2013 on-premises public folders. See the Knowledge Base article [Exchange Online users can't access legacy on-premises public folders](https://go.microsoft.com/fwlink/p/?LinkId=699451) for a solution.
 
 ## How do I know this worked?
-<a name="Access"> </a>
 
-1. Log on to Outlook for a user who is in Exchange Online, and then run the following public folder tests:
+Log on to Outlook for a user who is in Exchange Online, and then run the following public folder tests:
 
-   - View the hierarchy.
+- View the hierarchy.
 
-   - Check permissions.
+- Check permissions.
 
-   - Create and delete public folders.
+- Create and delete public folders.
 
-   - Post content to and delete content from a public folder.
+- Post content to and delete content from a public folder.

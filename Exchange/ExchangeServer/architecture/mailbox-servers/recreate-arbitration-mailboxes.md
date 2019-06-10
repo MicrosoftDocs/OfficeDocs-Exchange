@@ -203,4 +203,3 @@ View the results of the command to verify that appropriate system mailbox, eithe
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

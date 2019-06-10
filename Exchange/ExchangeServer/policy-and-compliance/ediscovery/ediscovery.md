@@ -286,4 +286,3 @@ The following table contains links to Exchange Server topics that will help you 
 |[Export eDiscovery search results to a PST file](export-results-to-pst.md)|Learn how to export the results of an eDiscovery search to a PST file.|
 |[Message properties and search operators for In-Place eDiscovery in Exchange Server](message-properties-and-search-operators.md)|Learn which email message properties can be searched using In-Place eDiscovery. The topic provides syntax examples for each property, information about search operators such as **AND** and **OR**, and information about other search query techniques such as using double quotation marks (" ") and prefix wildcards.|
 |[Search and place a hold on public folders using In-Place eDiscovery](search-public-folders.md)|Learn how to use In-Place eDiscovery to search and place a hold on all public folders in your organization.|
-

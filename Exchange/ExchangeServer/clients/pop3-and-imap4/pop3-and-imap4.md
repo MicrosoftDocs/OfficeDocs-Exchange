@@ -100,6 +100,3 @@ By default, Exchange uses the following settings for **internal** IMAP4 connecti
 - **TCP port and encryption method**: 993 for always SSL/TLS encrypted connections, and 143 for unencrypted connections, or for opportunistic TLS (**STARTTLS**) that results in an encrypted connection after the initial plain text protocol handshake.
 
 To allow **external** IMAP4 clients to connect to mailboxes, you need to configure these settings for external connections. For more information, see [Enable and configure IMAP4 on an Exchange server](configure-imap4.md).
-
-
-

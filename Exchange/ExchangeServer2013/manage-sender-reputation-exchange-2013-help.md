@@ -20,17 +20,17 @@ Sender reputation is provided by the Protocol Analysis agent. Sender reputation 
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam features" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-spam features" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
 
-  - You can only use the Shell to perform this procedure.
+- You can only use the Shell to perform this procedure.
 
-  - By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
+- By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
 
-  - The Protocol Analysis agent is the underlying agent for sender reputation functionality. When you disable sender reputation, the Protocol Analysis agent is still enabled.
+- The Protocol Analysis agent is the underlying agent for sender reputation functionality. When you disable sender reputation, the Protocol Analysis agent is still enabled.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -62,7 +62,7 @@ To verify that you have successfully enabled or disabled sender reputation, do t
 2. Verify the sender reputation values you configured by running the following command:
 
     ```powershell
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
     ```
 
 ## Use the Shell to enable or disable sender reputation for internal or external messages
@@ -100,7 +100,7 @@ To verify that you have successfully enabled or disabled sender reputation for i
 1. Run the following command:
 
     ```powershell
-        Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
+    Get-SenderReputationConfig | Format-List Enabled,*MailEnabled
     ```
 
 2. Verify the values displayed match the values you configured.
@@ -165,13 +165,13 @@ You may need to perform additional steps to allow sender reputation to traverse 
 To configure outbound access for the detection of open proxy servers, run the following command:
 
 ```powershell
-    Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
+Set-SenderReputationConfig -ProxyServerName <String> -ProxyServerPort <Port> -ProxyServerType <String>
 ```
 
 This example configures sender reputation to use the open proxy server named SERVER01 that uses the HTTP CONNECT protocol on port 80.
 
 ```powershell
-    Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
+Set-SenderReputationConfig - ProxyServerName SERVER01 -ProxyServerPort 80 -ProxyServerType HttpConnect
 ```
 
 ## How do you know this worked?
@@ -181,7 +181,7 @@ To verify that you have successfully configured outbound access for detection of
 1. Run the following command:
 
     ```powershell
-        Get-SenderReputationConfig | Format-List ProxyServer*
+    Get-SenderReputationConfig | Format-List ProxyServer*
     ```
 
 2. Verify the values displayed are the values you configured.

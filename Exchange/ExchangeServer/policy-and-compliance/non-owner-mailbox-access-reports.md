@@ -128,6 +128,3 @@ The following table describes the types of actions logged, and whether these act
 |**Send as**|A message was sent using SendAs permission. This means another user sent the message as though it came from the mailbox owner.|Yes|Yes|
 |**Send on behalf of**|A message was sent using SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message will indicate to the recipient who the message was sent on behalf of and who actually sent the message.|Yes|No|
 |**MessageBind**|A message was viewed in the preview pane or opened.|No|No|
-
-
-

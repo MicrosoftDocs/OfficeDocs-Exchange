@@ -27,18 +27,18 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 ## What do you need to know before you begin?
 
-  - Estimated time to completion: 5 minutes.
+- Estimated time to completion: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
 ## Configure deleted item retention for a mailbox
 
-**Use the EAC to configure deleted item retention for a mailbox**
+### Use the EAC to configure deleted item retention for a mailbox
 
 1. Navigate to **Recipients** \> **Mailboxes**.
 
@@ -46,15 +46,15 @@ To learn more about deleted item retention, the Recoverable Items folder, In-Pla
 
 3. On the mailbox property page, click **Mailbox usage**, click **More options**, and then select one of the following
 
-      - **Use the default retention settings from the mailbox database**: Use this setting to use the deleted item retention setting that's configured for the mailbox database.
+   - **Use the default retention settings from the mailbox database**: Use this setting to use the deleted item retention setting that's configured for the mailbox database.
 
-      - **Customize the settings for this mailbox**: Use this setting to configure deleted item retention settings for the mailbox.
+   - **Customize the settings for this mailbox**: Use this setting to configure deleted item retention settings for the mailbox.
 
-        **Keep deleted items for (days)**: This box displays the length of time that deleted items are retained before they're permanently deleted and can't be recovered by the user. When the mailbox is created, this value is based on the deleted item retention settings configured for the mailbox database. By default, a mailbox database is configured to retain deleted items for 14 days. The value range for this property is from 0 through 24,855 days.
+     **Keep deleted items for (days)**: This box displays the length of time that deleted items are retained before they're permanently deleted and can't be recovered by the user. When the mailbox is created, this value is based on the deleted item retention settings configured for the mailbox database. By default, a mailbox database is configured to retain deleted items for 14 days. The value range for this property is from 0 through 24,855 days.
 
-      - **Don't permanently delete items until the database is backed up**: Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
+     **Don't permanently delete items until the database is backed up**: Select this check box to prevent mailboxes and email messages from being deleted until after the mailbox database on which the mailbox is located has been backed up.
 
-**Use the Shell to configure deleted item retention for a mailbox**
+### Use the Shell to configure deleted item retention for a mailbox
 
 This example configures April Stewart's mailbox to retain deleted items for 30 days.
 
@@ -72,7 +72,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://technet
 This example configures a recoverable items warning quota of 12 GB and a recoverable items quota of 15 GB for April Stewart's mailbox.
 
 ```powershell
-    Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
+Set-Mailbox -Identity "April Stewart" -RecoverableItemsWarningQuota 12GB -RecoverableItemsQuota 15GB -UseDatabaseQuotaDefaults $false
 ```
 
 > [!NOTE]

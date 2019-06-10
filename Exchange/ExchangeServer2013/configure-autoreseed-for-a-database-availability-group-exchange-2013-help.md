@@ -25,15 +25,15 @@ For additional management tasks related to DAGs, see [Managing database availabi
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 10 minutes.
+- Estimated time to complete this task: 10 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
-  - A single logical disk/partition per physical disk must be created.
+- A single logical disk/partition per physical disk must be created.
 
-  - The specific database and log folder structure described in the steps below must be used.
+- The specific database and log folder structure described in the steps below must be used.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -109,11 +109,11 @@ The created directories should appear in the output list.
 
 For every volume that will be used for databases (including spare volumes), use the Windows Disk Management application (diskmgmt.msc) to mount each volume in a mounted folder under C:\\ExchangeVolumes\\. For example, if there are 2 volumes with databases and 1 spare volume, mount the volumes to the following mounted folders:
 
-  - C:\\ExchangeVolumes\\Volume1
+- C:\\ExchangeVolumes\\Volume1
 
-  - C:\\ExchangeVolumes\\Volume2
+- C:\\ExchangeVolumes\\Volume2
 
-  - C:\\ExchangeVolumes\\Volume3
+- C:\\ExchangeVolumes\\Volume3
 
 The names of the mounted folders can be any folder name, as long as the folders are mounted under the root volume's path.
 
@@ -179,9 +179,9 @@ The mounted volume should appear in the mount point list.
 
 Next, create two directories underneath the folders you created in Step 5, one for each database and one for each of the database's log stream that will be stored on the same volume. You must use the following format for your directory structure:
 
-C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.db
+C:\\\<*DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.db
 
-C:\\\< *DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
+C:\\\<*DatabaseFolderName*\>\\*DatabaseName*\\\<*DatabaseName*\>.log
 
 This example illustrates how to create directories for 4 databases that will be stored on Volume 1:
 

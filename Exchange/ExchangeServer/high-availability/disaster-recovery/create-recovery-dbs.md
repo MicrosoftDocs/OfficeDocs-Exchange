@@ -63,6 +63,3 @@ To verify that you've successfully created a recovery database, do the following
 ## Other Tasks
 
 After you create a recovery database, you may also want to restore data using a recovery database. For detailed steps, see [Restore data using a recovery database](restore-data-using-recovery-dbs.md).
-
-
-

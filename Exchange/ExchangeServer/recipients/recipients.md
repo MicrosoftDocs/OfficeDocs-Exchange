@@ -216,6 +216,3 @@ The following table contains links to topics that will help you learn about and 
 |[Filters in recipient Shell commands](http://technet.microsoft.com/library/fb4b1396-9aae-4037-be1a-b09e336b890e.aspx)|Learn how to use precanned or custom filters with commands to filter a set of recipients.|
 |[Manage permissions for recipients](mailbox-permissions.md)|Learn how to use the EAC or the Exchange Management Shell to assign permissions to users and groups.|
 |[Automatic Mailbox Distribution](http://technet.microsoft.com/library/f4db4636-948c-466b-839c-300c1a3a9544.aspx)|Learn about how automatic mailbox distribution works and how to control which mailbox databases are selected for new and moved mailboxes.|
-
-
-

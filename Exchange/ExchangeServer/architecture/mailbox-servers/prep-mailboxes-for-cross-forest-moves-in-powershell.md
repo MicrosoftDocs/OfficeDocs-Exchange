@@ -212,6 +212,3 @@ If the _LinkedMailUser_ parameter is set, the script copies the source **objectS
 ### LegacyExchangeDN attribute
 
 When the **Update-Recipient** cmdlet is called to convert the target object into a mail user, a new **LegacyExchangeDN** attribute is generated for the target mail user. The script copies the **LegacyExchangeDN** attribute of the target mail user as an x500 address to the **proxyAddress** properties of the source mailbox user.
-
-
-

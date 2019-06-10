@@ -418,4 +418,3 @@ To verify that you've successfully installed and configured the ABP Routing Agen
   ```
 
 - Have a user that's assigned an ABP send an email message to an user that's assigned a different ABP, and verify that the sender's email address doesn't resolve to their display name.
-

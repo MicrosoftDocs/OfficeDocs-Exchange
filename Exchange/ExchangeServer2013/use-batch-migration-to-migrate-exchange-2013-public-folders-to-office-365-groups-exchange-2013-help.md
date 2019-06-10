@@ -23,31 +23,31 @@ This article contains the step-by-step procedures for performing the actual batc
 
 Ensure that all of the following conditions are met before you begin preparing your migration.
 
-  - The Exchange 2013 server needs to be running **Exchange 2013 CU15** or later.
+- The Exchange 2013 server needs to be running **Exchange 2013 CU15** or later.
 
-  - In Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
+- In Exchange Online, you need to be a member of the Organization Management role group. This role group is different from the permissions assigned to you when you subscribe to Office 365 or Exchange Online. For details about how to enable the Organization Management role group, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
-  - In Exchange 2013, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/?linkid=299212).
+- In Exchange 2013, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/?linkid=299212).
 
-  - Before you migrate your public folders to Office 365 Groups, we recommend that you first move user mailboxes to Office365 for those users who need access to Office 365 Groups after migration. For more information, see [Ways to migrate multiple email accounts to Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
+- Before you migrate your public folders to Office 365 Groups, we recommend that you first move user mailboxes to Office365 for those users who need access to Office 365 Groups after migration. For more information, see [Ways to migrate multiple email accounts to Office 365](https://support.office.com/article/ways-to-migrate-multiple-email-accounts-to-office-365-0a4913fe-60fb-498f-9155-a86516418842).
 
-  - MRS Proxy needs to be enabled on at least one Exchange server, and that server must also be hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](enable-the-mrs-proxy-endpoint-for-remote-moves-exchange-2013-help.md) for details.
+- MRS Proxy needs to be enabled on at least one Exchange server, and that server must also be hosting public folder mailboxes. See [Enable the MRS Proxy endpoint for remote moves](enable-the-mrs-proxy-endpoint-for-remote-moves-exchange-2013-help.md) for details.
 
-  - You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2013 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.150\).aspx).
+- You can't use the Exchange admin center (EAC) or the Exchange Management Console (EMC) to perform this procedure. On the Exchange 2013 servers, you need to use the Exchange Management Shell. For Exchange Online, you need to use Exchange Online PowerShell. For more information, see [Connect to Exchange Online using remote PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.150\).aspx).
 
-  - Only public folders of type calendar and mail can be migrated to Office 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Office 365 are expected to be created prior to the migration.
+- Only public folders of type calendar and mail can be migrated to Office 365 Groups at this time; migration of other types of public folders is not supported. Also, the target groups in Office 365 are expected to be created prior to the migration.
 
-  - The batch migration process only copies messages and calendar items from public folders for migration to Office 365 Groups. It doesn't copy other entities of public folders like policies, rules, and permissions, since those are not supported in Office 365 Groups.
+- The batch migration process only copies messages and calendar items from public folders for migration to Office 365 Groups. It doesn't copy other entities of public folders like policies, rules, and permissions, since those are not supported in Office 365 Groups.
 
-  - Office 365 Groups comes with a 50GB mailbox. Ensure that the sum of public folder data that you are migrating totals less than 50GB. In addition, leave storage space for additional content to be added by your users in the future, post-migration. We recommend migrating public folders no bigger than 25GB in total size.
+- Office 365 Groups comes with a 50GB mailbox. Ensure that the sum of public folder data that you are migrating totals less than 50GB. In addition, leave storage space for additional content to be added by your users in the future, post-migration. We recommend migrating public folders no bigger than 25GB in total size.
 
-  - This is not an "all or nothing" migration. You can pick and choose specific public folders to migrate, and only those public folders will be migrated. If the public folder being migrated has sub-folders, those sub-folders will not be automatically included in the migration. If you need to migrate them, you need to explicitly include them.
+- This is not an "all or nothing" migration. You can pick and choose specific public folders to migrate, and only those public folders will be migrated. If the public folder being migrated has sub-folders, those sub-folders will not be automatically included in the migration. If you need to migrate them, you need to explicitly include them.
 
-  - The public folders will not be affected in any manner by this migration. However, once you use our lock-down script to make the migrated public folders read-only, your users will be forced to use Office 365 Groups instead of public folders. 
+- The public folders will not be affected in any manner by this migration. However, once you use our lock-down script to make the migrated public folders read-only, your users will be forced to use Office 365 Groups instead of public folders. 
 
-  - You must use a single migration batch to migrate all of your public folder data. Exchange allows creating only one migration batch at a time. If you attempt to create more than one migration batch simultaneously, the result will be an error.
+- You must use a single migration batch to migrate all of your public folder data. Exchange allows creating only one migration batch at a time. If you attempt to create more than one migration batch simultaneously, the result will be an error.
 
-  - Before you begin, we recommend that you read this article in its entirety, as downtime is required for some steps.
+- Before you begin, we recommend that you read this article in its entirety, as downtime is required for some steps.
 
 ## Step 1: Get the scripts
 
@@ -58,21 +58,21 @@ Before proceeding, verify you have downloaded and saved all of the following scr
 > [!NOTE]
 > Make sure to save all scripts and files to the same location.
 
-  - **AddMembersToGroups.ps1**. This script adds members and owners to Office 365 Groups based on permission entries in the source public folders.
+- **AddMembersToGroups.ps1**: This script adds members and owners to Office 365 Groups based on permission entries in the source public folders.
 
-  - **AddMembersToGroups.strings.psd1**. This support file is used by the script `AddMembersToGroups.ps1`.
+- **AddMembersToGroups.strings.psd1**: This support file is used by the script `AddMembersToGroups.ps1`.
 
-  - **LockAndSavePublicFolderProperties.ps1**. This script makes public folders read-only to prevent any modifications, and it transfers the mail-related public folder properties (provided the public folders are mail-enabled) to the target groups, which will re-route emails from the public folders to the target groups. This script also backs up the permission entries and the mail properties before modifying them.
+- **LockAndSavePublicFolderProperties.ps1**: This script makes public folders read-only to prevent any modifications, and it transfers the mail-related public folder properties (provided the public folders are mail-enabled) to the target groups, which will re-route emails from the public folders to the target groups. This script also backs up the permission entries and the mail properties before modifying them.
 
-  - **LockAndSavePublicFolderProperties.strings.psd1:** This support file is used by the script `LockAndSavePublicFolderProperties.ps1`.
+- **LockAndSavePublicFolderProperties.strings.psd1**: This support file is used by the script `LockAndSavePublicFolderProperties.ps1`.
 
-  - **UnlockAndRestorePublicFolderProperties.ps1**. This script restores access rights and mail properties of the public folders using backup files created by `LockandSavePublicFolderProperties.ps1`.
+- **UnlockAndRestorePublicFolderProperties.ps1**: This script restores access rights and mail properties of the public folders using backup files created by `LockandSavePublicFolderProperties.ps1`.
 
-  - **UnlockAndRestorePublicFolderProperties.strings.psd1**. This support file is used by the script `UnlockAndRestorePublicFolderProperties.ps1`.
+- **UnlockAndRestorePublicFolderProperties.strings.psd1**: This support file is used by the script `UnlockAndRestorePublicFolderProperties.ps1`.
 
-  - **WriteLog.ps1**. This script enables the preceding three scripts to write logs.
+- **WriteLog.ps1**: This script enables the preceding three scripts to write logs.
 
-  - **RetryScriptBlock.ps1**. This script enables the `AddMembersToGroups`, `LockAndSavePublicFolderProperties`, and `UnlockAndRestorePublicFolderProperties` scripts to retry certain actions in the event of transient errors.
+- **RetryScriptBlock.ps1**: This script enables the `AddMembersToGroups`, `LockAndSavePublicFolderProperties`, and `UnlockAndRestorePublicFolderProperties` scripts to retry certain actions in the event of transient errors.
 
 For details about `AddMembersToGroups.ps1`, `LockAndSavePublicFolderProperties.ps1`, and `UnlockAndRestorePublicFolderProperties.ps1`, and the tasks they execute in your environment, see Migration scripts later in this article.
 
@@ -102,20 +102,20 @@ Create a .csv file, which will provide input for one of the migration scripts.
 
 The .csv file needs to contain the following columns:
 
-  - **FolderPath**. Path of the public folder to be migrated.
+- **FolderPath**. Path of the public folder to be migrated.
 
-  - **TargetGroupMailbox**. SMTP address of the target group in Office 365. You can run the following command to see the primary SMTP address.
+- **TargetGroupMailbox**. SMTP address of the target group in Office 365. You can run the following command to see the primary SMTP address.
 
-    ```powershell
-    Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
-    ```
+  ```powershell
+  Get-UnifiedGroup <alias of the group> | Format-Table PrimarySmtpAddress
+  ```
 
 An example .csv:
 
 ```powershell
-    "FolderPath","TargetGroupMailbox"
-    "\Sales","sales@contoso.onmicrosoft.com"
-    "\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
+"FolderPath","TargetGroupMailbox"
+"\Sales","sales@contoso.onmicrosoft.com"
+"\Sales\EMEA","emeasales@contoso.onmicrosoft.com"
 ```
 
 Note that a mail folder and a calendar folder can be merged into a single group in Office 365. However, any other scenario of multiple public folders merging into one group isn't supported within a single migration batch. If you do need to map multiple public folders to the same Office 365 group, you can accomplish this by running different migration batches, which should be executed consecutively, one after another. You can have up to 500 entries in each migration batch.
@@ -132,44 +132,42 @@ In this step, you gather information from your Exchange environment, and then yo
 
     1. Pass the credential of a user with administrator permissions in the Exchange 2013 environment into the variable `$Source_Credential`. When you eventually run the migration request in Exchange Online, you will use this credential to gain access to your Exchange 2013 servers in order to copy the content over to Exchange Online.
 
-          ```powershell
-            $Source_Credential = Get-Credential
-            <source_domain>\<PublicFolder_Administrator_Account>
-          ```
+       ```powershell
+       $Source_Credential = Get-Credential
+       <source_domain>\<PublicFolder_Administrator_Account>
+       ```
 
     2. Use the MRS proxy server information from your Exchange 2013 environment that you noted in Step 1 above and pass that value into the variable `$Source_RemoteServer`.
 
-        ```powershell
-        $Source_RemoteServer = "<MRS proxy endpoint>"
-        ```
+       ```powershell
+       $Source_RemoteServer = "<MRS proxy endpoint>"
+       ```
 
 3. In Exchange Online PowerShell, run the following command to create a migration endpoint:
 
-    ```powershell
-        $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RemoteServer $Source_RemoteServer -Credentials $Source_Credential
-    ```
+   ```powershell
+   $PfEndpoint = New-MigrationEndpoint -PublicFolderToUnifiedGroup -Name PFToGroupEndpoint -RemoteServer $Source_RemoteServer -Credentials $Source_Credential
+   ```
 
 4. Run the following command to create a new public folder-to-Office 365 group migration batch. In this command:
 
-      - **CSVData** is the .csv file created above in *Step 3: Create the .csv file*. Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
+   - **CSVData** is the .csv file created above in *Step 3: Create the .csv file*. Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
 
-      - **NotificationEmails** is an optional parameter that can be used to set email addresses that will receive notifications about the status and progress of the migration.
+   - **NotificationEmails** is an optional parameter that can be used to set email addresses that will receive notifications about the status and progress of the migration.
 
-      - **AutoStart** is an optional parameter which, when used, starts the migration batch as soon as it is created.
+   - **AutoStart** is an optional parameter which, when used, starts the migration batch as soon as it is created.
 
-      - **PublicFolderToUnifiedGroup** is the parameter to indicate that it is a public folder to Office 365 Groups migration batch.
+   - **PublicFolderToUnifiedGroup** is the parameter to indicate that it is a public folder to Office 365 Groups migration batch.
 
-    <!-- end list -->
-
-    ```powershell
-        New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
-    ```
+   ```powershell
+   New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+   ```
 
 5. Start the migration by running the following command in Exchange Online PowerShell. Note that this step is necessary only if the `-AutoStart` parameter was not used while creating the batch above in step 4.
 
-    ```powershell
-    Start-MigrationBatch PublicFolderToGroupMigration
-    ```
+   ```powershell
+   Start-MigrationBatch PublicFolderToGroupMigration
+   ```
 
 While batch migrations need to be created using the `New-MigrationBatch` cmdlet in Exchange Online PowerShell, the progress of the migration can be viewed and managed in Exchange admin center. You can also view the progress of the migration by running the [Get-MigrationBatch](https://technet.microsoft.com/en-us/library/jj219164\(v=exchg.150\)) and [Get-MigrationUser](https://technet.microsoft.com/en-us/library/jj218702\(v=exchg.150\)) cmdlets. The `New-MigrationBatch` cmdlet initiates a migration user for each Office 365 group mailbox, and you can view the status of these requests using the mailbox migration page.
 
@@ -189,18 +187,16 @@ You can add members to the target group in Office 365 manually as required. Howe
 
 In the following command:
 
-  - **MappingCsv** is the .csv file created above in *Step 3: Create the .csv file*. Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
+- **MappingCsv** is the .csv file created above in *Step 3: Create the .csv file*. Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
 
-  - **BackupDir** is the directory where the migration log files will be stored.
+- **BackupDir** is the directory where the migration log files will be stored.
 
-  - **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
+- **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
 
-  - **Credential** is the Exchange Online user name and password.
-
-<!-- end list -->
+- **Credential** is the Exchange Online user name and password.
 
 ```powershell
-    .\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+.\AddMembersToGroups.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
 ```
 
 Once users have been added to a group in Office 365, they can begin using it.
@@ -214,18 +210,16 @@ When the majority of the data in your public folders has migrated to Office 365 
 
 In the following command:
 
-  - **MappingCsv** is the .csv file created above in *Step 3: Create the .csv file*. Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
+- **MappingCsv** is the .csv file created above in *Step 3: Create the .csv file*. Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
 
-  - **BackupDir** is the directory where the backup files for permission entries, MEPF properties, and migration log files will be stored. This backup will be useful in case you need to roll back to public folders.
+- **BackupDir** is the directory where the backup files for permission entries, MEPF properties, and migration log files will be stored. This backup will be useful in case you need to roll back to public folders.
 
-  - **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
+- **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
 
-  - **Credential** is the Exchange Online user name and password.
-
-<!-- end list -->
+- **Credential** is the Exchange Online user name and password.
 
 ```powershell
-    .\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+.\LockAndSavePublicFolderProperties.ps1 -MappingCsv <path to .csv file> -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
 ```
 
 ## Step 7: Finalize the public folder to Office 365 Groups migration
@@ -238,16 +232,14 @@ Remove-MigrationBatch <name of migration batch>
 
 Next, create a new batch with the same .csv file by running the following command. In this command:
 
-  - **CsvData** is the .csv file created above in *Step 3: Create the .csv file*. Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
+- **CsvData** is the .csv file created above in *Step 3: Create the .csv file*. Be sure to provide the full path to this file. If the file was moved for any reason, be sure to verify and use the new location.
 
-  - **NotificationEmails** is an optional parameter that can be used to set email addresses that will receive notifications about the status and progress of the migration.
+- **NotificationEmails** is an optional parameter that can be used to set email addresses that will receive notifications about the status and progress of the migration.
 
-  - **AutoStart** is an optional parameter which, when used, starts the migration batch as soon as it is created.
-
-<!-- end list -->
+- **AutoStart** is an optional parameter which, when used, starts the migration batch as soon as it is created.
 
 ```powershell
-    New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
+New-MigrationBatch -Name PublicFolderToGroupMigration -CSVData (Get-Content <path to .csv file> -Encoding Byte) -PublicFolderToUnifiedGroup -SourceEndpoint $PfEndpoint.Identity [-NotificationEmails <email addresses for migration notifications>] [-AutoStart]
 ```
 
 After the new batch is created, start the migration by running the following command in Exchange Online PowerShell. Note that this step is only necessary if the `-AutoStart` parameter was not used in the preceding command.
@@ -265,9 +257,9 @@ After you have finished this step (the batch status is **Completed**), verify th
 
 The following known issues can occur during a typical public folders to Office 365 Groups migration.
 
-  - The script that transfers SMTP address from mail-enabled public folders to Office 365 Group only adds the addresses as secondary email addresses in Exchange Online. Because of this, if you have Exchange Online Protection (EOP) or Centralized Mail Flow setup in your environment, will have issues sending email to the groups (to the secondary email addresses) post-migration.
+- The script that transfers SMTP address from mail-enabled public folders to Office 365 Group only adds the addresses as secondary email addresses in Exchange Online. Because of this, if you have Exchange Online Protection (EOP) or Centralized Mail Flow setup in your environment, will have issues sending email to the groups (to the secondary email addresses) post-migration.
 
-  - If the .csv mapping file has an entry with invalid public folder path, the migration batch displays as **Completed** without throwing an error, and no further data is copied.
+- If the .csv mapping file has an entry with invalid public folder path, the migration batch displays as **Completed** without throwing an error, and no further data is copied.
 
 ## Migration scripts
 
@@ -277,15 +269,15 @@ For your reference, this section provides in-depth descriptions for three of the
 
 This script will read the permissions of the public folders being migrated and then add members and owners to Office 365 Groups as follows:
 
-  - Users with the following permission roles will be added as members to a group in Office 365. **Permission roles:** Owner, PublishingEditor, Editor, PublishingAuthor, Author
+- Users with the following permission roles will be added as members to a group in Office 365. **Permission roles:** Owner, PublishingEditor, Editor, PublishingAuthor, Author
 
-  - In addition to the above, users with the following minimum access rights will also be added as members to a group in Office 365. **Access rights:** ReadItems, CreateItems, FolderVisible, EditOwnedItems, DeleteOwnedItems
+- In addition to the above, users with the following minimum access rights will also be added as members to a group in Office 365. **Access rights:** ReadItems, CreateItems, FolderVisible, EditOwnedItems, DeleteOwnedItems
 
-  - Users with access right "Owner" will be added as owners to a group and users with other eligible access rights will be added as members.
+- Users with access right "Owner" will be added as owners to a group and users with other eligible access rights will be added as members.
 
-  - Security groups cannot be added as members to groups in Office 365. Therefore they will be expanded, and then the individual users will be added as members or owners to the groups based on the access rights of the security group.
+- Security groups cannot be added as members to groups in Office 365. Therefore they will be expanded, and then the individual users will be added as members or owners to the groups based on the access rights of the security group.
 
-  - When users in security groups that have access rights over a public folder have themselves explicit permissions over the same public folder, explicit permissions will be given preference. For example, consider a case in which a security group called "SG1" has members User1 and User2. Permission entries for the public folder "PF1" are as follows:
+- When users in security groups that have access rights over a public folder have themselves explicit permissions over the same public folder, explicit permissions will be given preference. For example, consider a case in which a security group called "SG1" has members User1 and User2. Permission entries for the public folder "PF1" are as follows:
 
     SG1: Author in PF1
 
@@ -293,7 +285,7 @@ This script will read the permissions of the public folders being migrated and t
 
     In this case, User1 will be added as an owner to the group in Office 365.
 
-  - When the default permission of a public folder being migrated is 'Author' or above, the script will suggest setting the corresponding group's privacy setting as 'Public'.
+- When the default permission of a public folder being migrated is 'Author' or above, the script will suggest setting the corresponding group's privacy setting as 'Public'.
 
 This script can be run even after the lock-down of public folders, with parameter the `ArePublicFoldersLocked` set to` $true`. In this scenario, the script will read permissions from the back up file created during lock-down.
 
@@ -305,43 +297,43 @@ If there are multiple migration batches, a separate backup directory should be u
 
 The following mail properties will be stored, along with respective mail-enabled public folders and Office 365 groups:
 
-  - PrimarySMTPAddress
+- PrimarySMTPAddress
 
-  - EmailAddresses
+- EmailAddresses
 
-  - ExternalEmailAddress
+- ExternalEmailAddress
 
-  - EmailAddressPolicyEnabled
+- EmailAddressPolicyEnabled
 
-  - GrantSendOnBehalfTo
+- GrantSendOnBehalfTo
 
-  - SendAs Trustee list
+- SendAs Trustee list
 
 The above mail properties will be stored in a .csv file, which can be used in the roll back process (if you want to return to using public folders, see How do I roll back to public folders from Office 365 Groups? for more information). A snapshot of the mail-enabled public folders' properties will also be stored in a file called PfMailProperties.csv. This file is not necessary for the roll back process, but can still be used for your reference.
 
 The following mail properties will be migrated to target group as part of lock down:
 
-  - PrimarySMTPAddress
+- PrimarySMTPAddress
 
-  - EmailAddresses
+- EmailAddresses
 
-  - SendAs Trustee list
+- SendAs Trustee list
 
-  - GrantSendOnBehalfTo
+- GrantSendOnBehalfTo
 
 The script ensures that the PrimarySMTPAddress and EmailAddresses of migrating mail-enabled public folders will be added as secondary SMTP addresses of the corresponding groups in Office 365. Also, SendAs and SendOnBehalfTo permissions of users on mail-enabled public folders will be given equivalent permission in the corresponding target groups.
 
-**Access rights allowed**
+#### Access rights allowed
 
 Only the following access rights will be allowed for users to ensure that the public folders are made read-only for all users. These are stored in **ListOfAccessRightsAllowed**.
 
-  - ReadItems
+- ReadItems
 
-  - CreateSubfolders
+- CreateSubfolders
 
-  - FolderContact
+- FolderContact
 
-  - FolderVisible
+- FolderVisible
 
 The permission entries will be modified as follows:
 
@@ -422,16 +414,14 @@ In the event that you change your mind and want to return to using public folder
 
 On your Exchange 2013 server, run the following command. In this command:
 
-  - **BackupDir** is the directory where the backup files for permission entries, MEPF properties, and migration log files will be stored. Make sure you use the same location you specified in *Step 6: Lock down the public folders to cut-over (public folder downtime required)*.
+- **BackupDir** is the directory where the backup files for permission entries, MEPF properties, and migration log files will be stored. Make sure you use the same location you specified in *Step 6: Lock down the public folders to cut-over (public folder downtime required)*.
 
-  - **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
+- **ArePublicFoldersOnPremises** is a parameter to indicate whether public folders are located on-premises or in Exchange Online.
 
-  - **Credential** is the Exchange Online user name and password.
-
-<!-- end list -->
+- **Credential** is the Exchange Online user name and password.
 
 ```powershell
-    .\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
+.\UnlockAndRestorePublicFolderProperties.ps1 -BackupDir <path to backup directory> -ArePublicFoldersOnPremises $true -Credential (Get-Credential)
 ```
 
 Be aware that any items added to the Office 365 group, or any edit operations performed in the groups, are not copied back to your public folders. Therefore there will be data loss, assuming new data was added while the public folder was a group.

@@ -95,6 +95,3 @@ When you create an app configuration policy in the Azure Portal or through your 
 |com.microsoft.outlook.EmailProfile.AccountType|This value specifies the account type being configured based on the authentication model.  <br/> **Value type**: String  <br/> **Accepted values**: BasicAuth  <br/> **Default if not specified**: BasicAuth  <br/> **Required**: No  <br/> **Example**: BasicAuth|
 
  <sup>*</sup> Microsoft Intune users can use tokens that will expand to the correct value according to the MDM enrolled user. See [Add app configuration policies for managed iOS devices](https://docs.microsoft.com/intune/app-configuration-policies-use-ios) for more information.
-
-
-

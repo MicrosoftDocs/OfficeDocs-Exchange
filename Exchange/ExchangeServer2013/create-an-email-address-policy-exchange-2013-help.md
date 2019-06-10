@@ -22,9 +22,9 @@ For a recipient to receive or send email messages, the recipient must have an em
 
 When creating an email address policy, you can use the following email address types:
 
-  - **Precanned SMTP email address**. *Precanned* SMTP email addresses are commonly used email address types that are provided for you.
+- **Precanned SMTP email address**. *Precanned* SMTP email addresses are commonly used email address types that are provided for you.
 
-  - **Custom SMTP email address**. If you don't want to use one of the precanned SMTP email addresses, you can specify a custom SMTP email address.
+- **Custom SMTP email address**. If you don't want to use one of the precanned SMTP email addresses, you can specify a custom SMTP email address.
 
     When creating a custom SMTP email address, you can use the variables in the following table to specify alternate values for the local part of the email address.
 
@@ -71,23 +71,23 @@ When creating an email address policy, you can use the following email address t
     </tbody>
     </table>
 
-  - **Non-SMTP email address**. The following types of non-SMTP email addresses are supported:
+- **Non-SMTP email address**. The following types of non-SMTP email addresses are supported:
 
-      - EX (Legacy DN Proxy Address Prefix DisplayName)
+  - EX (Legacy DN Proxy Address Prefix DisplayName)
 
-      - X.500
+  - X.500
 
-      - X.400
+  - X.400
 
-      - MSMail
+  - MSMail
 
-      - CcMail
+  - CcMail
 
-      - Lotus Notes
+  - Lotus Notes
 
-      - Novell GroupWise
+  - Novell GroupWise
 
-      - Exchange Unified Messaging proxy address (EUM proxy address)
+  - Exchange Unified Messaging proxy address (EUM proxy address)
 
     > [!IMPORTANT]
     > In Exchange, all non-SMTP email addresses are considered custom addresses. Exchange doesn't provide unique dialog boxes or property pages for X.400, GroupWise, or Lotus Notes email address types. If you add a non-SMTP custom email address, you must have the appropriate dynamic-link library (DLL) files. If you don't provide the appropriate DLL files, you won't be able to create a customized email address policy. The following error will be logged in Event Viewer: "The email address description object in the Microsoft Exchange directory for the 'SADF' address type on 'i386' machines are missing."
@@ -100,13 +100,13 @@ For detailed instructions about how to create an email address policy, see the f
 
 ## What do you need to know before begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Email address policies" entry in the [Email addresses and address books](email-addresses-and-address-books-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Email address policies" entry in the [Email addresses and address books](email-addresses-and-address-books-exchange-2013-help.md) topic.
 
-  - Before an SMTP address domain can be used in an email address policy, you must configure an accepted domain. To learn more, see [Accepted domains](accepted-domains-exchange-2013-help.md).
+- Before an SMTP address domain can be used in an email address policy, you must configure an accepted domain. To learn more, see [Accepted domains](accepted-domains-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!WARNING]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -117,11 +117,11 @@ For detailed instructions about how to create an email address policy, see the f
 
 2. In **Email Address Policy**, complete the following fields:
 
-      - **Policy name**
+   - **Policy name**
 
-      - **Email address format**
+   - **Email address format**
 
-      - **Specify the types of recipients this email address will apply to**
+   - **Specify the types of recipients this email address will apply to**
 
 3. Click **Add a rule** to further restrict the recipients that this policy will apply to. This creates a Boolean **And** statement.
 
@@ -139,7 +139,7 @@ For detailed instructions about how to create an email address policy, see the f
 This example creates an email address policy that includes mailbox users in the Southeast offices who will have email addresses that include their last name combined with the first two letters of their first name.
 
 ```powershell
-    New-EmailAddressPolicy -Name "southeast offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "Georgia","Alabama","Louisiana" -EnabledEmailAddressTemplates "SMTP:%s%2g@southeast.contoso.com"
+New-EmailAddressPolicy -Name "southeast offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "Georgia","Alabama","Louisiana" -EnabledEmailAddressTemplates "SMTP:%s%2g@southeast.contoso.com"
 ```
 
 For detailed syntax and parameter information, see [New-EmailAddressPolicy](https://technet.microsoft.com/en-us/library/aa996800\(v=exchg.150\)).

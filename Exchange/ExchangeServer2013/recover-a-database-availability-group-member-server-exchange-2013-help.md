@@ -22,23 +22,23 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 30 minutes
+- Estimated time to complete: 30 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
-  - If Exchange is installed in a location other than the default location, you must use the */TargetDir* Setup switch to specify the location of the Exchange program files. If you don't use the */TargetDir* switch, the Exchange program files will be installed in the default location (%programfiles%\\Microsoft\\Exchange Server\\V15).
+- If Exchange is installed in a location other than the default location, you must use the */TargetDir* Setup switch to specify the location of the Exchange program files. If you don't use the */TargetDir* switch, the Exchange program files will be installed in the default location (%programfiles%\\Microsoft\\Exchange Server\\V15).
 
-    To determine the install location, follow these steps:
+  To determine the install location, follow these steps:
 
-    1. Open ADSIEDIT.MSC or LDP.EXE.
+  1. Open ADSIEDIT.MSC or LDP.EXE.
 
-    2. Navigate to the following location: **CN=ExServerName,CN=Servers,CN=First Administrative Group,CN=Administrative Groups,CN=ExOrg Name,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=DomainName,CN=Com**
+  2. Navigate to the following location: **CN=ExServerName,CN=Servers,CN=First Administrative Group,CN=Administrative Groups,CN=ExOrg Name,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=DomainName,CN=Com**
 
-    3. Right-click the Exchange server object, and then click **Properties**.
+  3. Right-click the Exchange server object, and then click **Properties**.
 
-    4. Locate the **msExchInstallPath** attribute. This attribute stores the current installation path.
+  4. Locate the **msExchInstallPath** attribute. This attribute stores the current installation path.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -48,7 +48,7 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 1. Retrieve any replay lag or truncation lag settings for any mailbox database copies that exist on the server being recovered by using the [Get-MailboxDatabase](https://technet.microsoft.com/en-us/library/bb124924\(v=exchg.150\)) cmdlet:
 
     ```powershell
-        Get-MailboxDatabase DB1 | Format-List *lag*
+    Get-MailboxDatabase DB1 | Format-List *lag*
     ```
 
 2. Remove any mailbox database copies that exist on the server being recovered by using the [Remove-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd335119\(v=exchg.150\)) cmdlet:
@@ -83,16 +83,16 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 7. After the server has been added back to the DAG, you can reconfigure mailbox database copies by using the [Add-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd298105\(v=exchg.150\)) cmdlet. If any of the database copies being added previously had replay lag or truncation lag times greater than 0, you can use the *ReplayLagTime* and *TruncationLagTime* parameters of the [Add-MailboxDatabaseCopy](https://technet.microsoft.com/en-us/library/dd298105\(v=exchg.150\)) cmdlet to reconfigure those settings:
 
     ```powershell
-        Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX1
-        Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00
-        Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -TruncationLagTime 3.00:00:00
+    Add-MailboxDatabaseCopy -Identity DB1 -MailboxServer MBX1
+    Add-MailboxDatabaseCopy -Identity DB2 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00
+    Add-MailboxDatabaseCopy -Identity DB3 -MailboxServer MBX1 -ReplayLagTime 3.00:00:00 -TruncationLagTime 3.00:00:00
     ```
 
 ## How do you know this worked?
 
 To verify that you've successfully recovered the DAG member, do the following:
 
-  - In the Shell, run the following command to verify the health and status of the recovered DAG member.
+- In the Shell, run the following command to verify the health and status of the recovered DAG member.
 
     ```powershell
     Test-ReplicationHealth <ServerName>

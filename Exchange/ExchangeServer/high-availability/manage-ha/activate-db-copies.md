@@ -109,6 +109,3 @@ To verify that you've successfully activated a mailbox database copy, do one of 
 [Mailbox database copies](../../high-availability/database-availability-groups/database-copies.md)
 
 [Configure mailbox database copy properties](configure-db-properties.md)
-
-
-

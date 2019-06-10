@@ -208,6 +208,3 @@ If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page
   - [Restore deleted items in Outlook 2013 or Outlook Server](https://go.microsoft.com/fwlink/p/?linkId=821537)
 
   - [Recover deleted items or email in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924)
-
-
-

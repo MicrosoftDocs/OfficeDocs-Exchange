@@ -148,5 +148,3 @@ To verify that you've successfully migrated all of your Exchange 2013 public fol
   ```
 
   In the list public folder mailboxes that are returned, verify that they've each been moved to an Exchange 2016 Mailbox server.
-
-

@@ -256,6 +256,3 @@ The table above is based on information provided by [RFC 5321 (Simple Mail Trans
  **Failure response**: `550 5.1.1 User unknown`
 
  **Possible reasons for failure**: The specified recipient doesn't exist.
-
-
-

@@ -77,6 +77,3 @@ To verify that you've successfully removed a mailbox database copy, do one of th
   ```
 
     The removed passive copy is no longer listed.
-
-
-

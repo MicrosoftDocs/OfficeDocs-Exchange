@@ -25,4 +25,3 @@ The following attributes of ActiveSync device access rules are copied from an on
 |Characteristic|Exchange 2010, 2013, 2016|
 |Identity|Exchange 2010, 2013, 2016|
 |QueryString|Exchange 2010, 2013, 2016|
-

@@ -17,8 +17,7 @@ description: "Sharing Policy attributes can be copied by the Hybrid Configuratio
 
 # Sharing Policy attributes
 
-The following attributes of Sharing Policy are copied from an on-premises Exchange organization to Exchange Online when 
-the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
+The following attributes of Sharing Policy are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
 |**Sharing Policy**|**Available In**|
 |:-----|:-----|

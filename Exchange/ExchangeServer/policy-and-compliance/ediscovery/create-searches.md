@@ -225,6 +225,3 @@ Get-MailboxSearch "FY15 Q2 Financial Results" | Format-List Name,Status,LastRunB
   - `Errors`
 
     The reason is that it requires a lot of resources to return these properties for all eDiscovery searches in your organization.
-
-
-

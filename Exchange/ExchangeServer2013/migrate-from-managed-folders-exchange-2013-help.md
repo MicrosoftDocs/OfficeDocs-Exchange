@@ -120,13 +120,13 @@ The following table compares the MRM functionality available when using retentio
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 20 minutes.
+- Estimated time to complete: 20 minutes.
 
-  - Procedures in this topic require specific permissions. See each procedure for its permissions information.
+- Procedures in this topic require specific permissions. See each procedure for its permissions information.
 
-  - You can't use the Exchange admin center (EAC) to create retention tags based on retention policies.
+- You can't use the Exchange admin center (EAC) to create retention tags based on retention policies.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
@@ -227,12 +227,12 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 There are two methods you can use for this step:
 
-  - **Create retention tags based on the managed folders and their corresponding managed content settings**: With this method, you use the **New-RetentionPolicyTag** cmdlet with the *ManagedFolderToUpgrade* parameter. When you specify this parameter, the corresponding retention tag is automatically applied to the managed folder.
+- **Create retention tags based on the managed folders and their corresponding managed content settings**: With this method, you use the **New-RetentionPolicyTag** cmdlet with the *ManagedFolderToUpgrade* parameter. When you specify this parameter, the corresponding retention tag is automatically applied to the managed folder.
 
     > [!IMPORTANT]
     > If the managed folder you want to port has multiple managed content settings for different message classes, only one retention tag is created, and the highest retention age of all the managed content settings is used as the retention age for the ported tag, irrespective of the message class of the managed content settings.<BR>For example, review the following managed content settings for the managed folder Corp-DeletedItems.
 
-  - **Create retention tags by manually specifying the retention settings**: With this method, you use the **New-RetentionPolicyTag** cmdlet without the *ManagedFolderToUpgrade* parameter. When you don't specify this parameter, any retention policy tags you add to the policy are applied to the default folders, and the default policy tag is applied to the entire mailbox. However, any personal tags you add to the policy aren't automatically applied to the managed folders.
+- **Create retention tags by manually specifying the retention settings**: With this method, you use the **New-RetentionPolicyTag** cmdlet without the *ManagedFolderToUpgrade* parameter. When you don't specify this parameter, any retention policy tags you add to the policy are applied to the default folders, and the default policy tag is applied to the entire mailbox. However, any personal tags you add to the policy aren't automatically applied to the managed folders.
 
 > [!NOTE]
 > If you are in a mixed environment with Exchange 2013 and Exchange 2010 servers, you can use the <STRONG>Port Managed Folder</STRONG> wizard in the Exchange Management Console (EMC) on an Exchange 2010 server to easily port managed folder and corresponding managed content setting to retention tags.
@@ -316,18 +316,18 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://technet
 
 To verify that you have migrated from managed folders to retention policies, do the following:
 
-  - Generate a report of all user mailboxes and the retention policy applied to them.
+- Generate a report of all user mailboxes and the retention policy applied to them.
 
-    This command retrieves the retention policy applied to all mailboxes in an organization, and their retention hold status.
+  This command retrieves the retention policy applied to all mailboxes in an organization, and their retention hold status.
 
-    ```powershell
-        Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*"} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
-    ```
+  ```powershell
+  Get-Mailbox -ResultSize unlimited -Filter {Name -NotLike "DiscoverySearch*"} | Format-Table Name,RetentionPolicy,RetentionHoldEnabled -Auto
+  ```
 
-  - After the Managed Folder Assistant has processed a mailbox with a retention policy, use the [Get-RetentionPolicyTag](https://technet.microsoft.com/en-us/library/dd298009\(v=exchg.150\)) cmdlet to retrieve the retention tags provisioned in the user mailbox.
+- After the Managed Folder Assistant has processed a mailbox with a retention policy, use the [Get-RetentionPolicyTag](https://technet.microsoft.com/en-us/library/dd298009\(v=exchg.150\)) cmdlet to retrieve the retention tags provisioned in the user mailbox.
 
-    This command retrieves the retention tags actually applied to April Stewart's mailbox.
+  This command retrieves the retention tags actually applied to April Stewart's mailbox.
 
-    ```powershell
-    Get-RetentionPolicyTag -Mailbox astewart
-    ```
+  ```powershell
+  Get-RetentionPolicyTag -Mailbox astewart
+  ```

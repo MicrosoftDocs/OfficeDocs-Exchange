@@ -299,6 +299,3 @@ To verify that you have successfully removed an address rewrite entry, do the fo
 2. From a mailbox that was affected by the address rewrite entry, send a test message to an external mailbox. Verify the test message is no longer affected by the removed address rewrite entry.
 
 3. From the external mailbox, reply to the test message. Verify the original mailbox receives the reply and that the message is unaffected by the removed address rewrite entry.
-
-
-

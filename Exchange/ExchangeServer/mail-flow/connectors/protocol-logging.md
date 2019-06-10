@@ -114,6 +114,3 @@ The protocol log stores each SMTP protocol event on a single line in the log. Th
 |**context**|Additional contextual information that may be associated with the SMTP event.|
 
 One SMTP conversation that represents sending or receiving a single email message generates multiple SMTP events. Each event is recorded on a separate line in the protocol log. An Exchange server has many SMTP conversations going on at any given time. This creates protocol log entries from different SMTP conversations that are mixed together. You can use the **session-id** and **sequence-number** fields to sort the protocol log entries by each individual SMTP conversation.
-
-
-

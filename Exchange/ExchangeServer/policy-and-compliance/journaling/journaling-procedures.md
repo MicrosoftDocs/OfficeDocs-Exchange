@@ -390,6 +390,3 @@ To enable journal report decryption, perform the following steps:
   ```
 
 For more information, see [Enable or Disable Journal Report Decryption](http://technet.microsoft.com/library/1dedbe73-2c1a-4b14-8799-5091aaec7965.aspx).
-
-
-

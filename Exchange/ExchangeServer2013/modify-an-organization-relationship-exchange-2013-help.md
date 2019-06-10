@@ -24,23 +24,23 @@ For additional management tasks related to federation, see [Federation procedure
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes.
+- Estimated time to complete: 15 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the *Calendar and Sharing Permissions* entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the *Calendar and Sharing Permissions* entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - An active federation trust for the on-premises Exchange organization must be configured.
+- An active federation trust for the on-premises Exchange organization must be configured.
 
-  - The external organization you want to configure in the organization relationship must also have a federation trust established with the Azure AD authentication system.
+- The external organization you want to configure in the organization relationship must also have a federation trust established with the Azure AD authentication system.
 
-  - The procedures in this topic make changes to an organization relationship named Contoso. The examples show how to:
+- The procedures in this topic make changes to an organization relationship named Contoso. The examples show how to:
 
-      - Add a domain named service.contoso.com to the external organization.
+  - Add a domain named service.contoso.com to the external organization.
 
-      - Disable free/busy sharing for the organization relationship.
+  - Disable free/busy sharing for the organization relationship.
 
-      - Change the free/busy access level from *Calendar free/busy information with time, subject, and location* to *Calendar free/busy information with time only*.
+  - Change the free/busy access level from *Calendar free/busy information with time, subject, and location* to *Calendar free/busy information with time only*.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## Use the EAC to add a domain to an organization relationship
 
@@ -80,25 +80,25 @@ For additional management tasks related to federation, see [Federation procedure
 
 ## Use the Shell to modify the organization relationship
 
-  - This example adds the domain name service.contoso.com to the organization relationship Contoso.
+- This example adds the domain name service.contoso.com to the organization relationship Contoso.
 
-    ```powershell
-        $domains = (Get-OrganizationRelationship Contoso).DomainNames
-        $domains += 'service.contoso.com'
-        Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
-    ```
+  ```powershell
+  $domains = (Get-OrganizationRelationship Contoso).DomainNames
+  $domains += 'service.contoso.com'
+  Set-OrganizationRelationship -Identity Contoso -DomainNames $domains
+  ```
 
-  - This example disables the organization relationship Contoso.
+- This example disables the organization relationship Contoso.
 
-    ```powershell
-    Set-OrganizationRelationship -Identity Contoso -Enabled $false
-    ```
+  ```powershell
+  Set-OrganizationRelationship -Identity Contoso -Enabled $false
+  ```
 
-  - This example enables calendar availability information access for the organization relationship WoodgroveBank and sets the access level to `AvailabilityOnly` (calendar free/busy information with time only).
+- This example enables calendar availability information access for the organization relationship WoodgroveBank and sets the access level to `AvailabilityOnly` (calendar free/busy information with time only).
 
-    ```powershell
-        Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
-    ```
+  ```powershell
+  Set-OrganizationRelationship -Identity Contoso -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly
+  ```
 
 For detailed syntax and parameter information, see [Get-OrganizationRelationship](https://technet.microsoft.com/en-us/library/ee332343\(v=exchg.150\)) and [Set-OrganizationRelationship](https://technet.microsoft.com/en-us/library/ee332326\(v=exchg.150\)).
 

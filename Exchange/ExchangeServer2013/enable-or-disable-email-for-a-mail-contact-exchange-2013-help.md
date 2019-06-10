@@ -24,11 +24,11 @@ For additional management tasks related to mail contacts, see [Manage mail conta
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 2 minutes.
+- Estimated time to complete each procedure: 2 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail contacts" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail contacts" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -102,37 +102,37 @@ When you're mail-enabling contacts in bulk, you first export the list of contact
 1. Run the following command to export a list of existing contacts that aren't mail-enabled to a file on the administrator's desktop named Contacts.csv.
 
     ```powershell
-        Get-Contact | Where {$_.RecipientType -eq "Contact"} | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
+    Get-Contact | Where {$_.RecipientType -eq "Contact"} | Out-File "C:\Users\Administrator\Desktop\Contacts.csv"
     ```
 
     The resulting file will be similar to the following file.
 
     ```powershell
-        Name
-        Walter Harp
-        James Alvord
-        Rainer Witt
-        Susan Burk
-        Ian Tien
-        ...
+    Name
+    Walter Harp
+    James Alvord
+    Rainer Witt
+    Susan Burk
+    Ian Tien
+    ...
     ```
 
 2. Add a column heading named **EmailAddress** and then add an email address for each contact in the file. The name and external email address for each contact must be separated by a comma. The updated CSV file should look similar to the following file.
 
     ```powershell
-        Name,EmailAddress
-        James Alvord,james@contoso.com
-        Susan Burk,sburk@tailspintoys.com
-        Walter Harp,wharp@tailspintoys.com
-        Ian Tien,iant@tailspintoys.com
-        Rainer Witt,rainerw@fourthcoffee.com
-        ...
+    Name,EmailAddress
+    James Alvord,james@contoso.com
+    Susan Burk,sburk@tailspintoys.com
+    Walter Harp,wharp@tailspintoys.com
+    Ian Tien,iant@tailspintoys.com
+    Rainer Witt,rainerw@fourthcoffee.com
+    ...
     ```
 
 3. Run the following command to use the data in the CSV file to mail-enable the contacts listed in the file.
 
     ```powershell
-        Import-CSV C:\Users\Administrator\Desktop\Contacts.csv | ForEach-Object {Enable-MailContact -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
+    Import-CSV C:\Users\Administrator\Desktop\Contacts.csv | ForEach-Object {Enable-MailContact -Identity $_.Name -ExternalEmailAddress $_.EmailAddress}
     ```
 
     The command results display information about the new mail-enabled contacts.
@@ -141,12 +141,12 @@ When you're mail-enabling contacts in bulk, you first export the list of contact
 
 To verify that you've successfully mail-enabled Active Directory contacts, do one of the following:
 
-  - In the EAC, navigate to **Recipients** \> **Contacts**. New mail contacts are displayed in the contact list. Under **Contact Type**, the type is **Mail contact**.
+- In the EAC, navigate to **Recipients** \> **Contacts**. New mail contacts are displayed in the contact list. Under **Contact Type**, the type is **Mail contact**.
 
     > [!NOTE]
     > You may have to click <STRONG>Refresh</STRONG> <IMG title="Refresh Icon" alt="Refresh Icon" src="images/Dn624163.85f271ca-32a4-426c-842a-d2172567099d(EXCHG.150).gif"> to display new mail contacts.
 
-  - In the Shell, run the following command to display information about new mail contacts.
+- In the Shell, run the following command to display information about new mail contacts.
 
     ```powershell
     Get-MailContact | Format-Table Name,RecipientTypeDetails,ExternalEmailAddress

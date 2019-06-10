@@ -101,6 +101,3 @@ To verify that you've successfully configured the activation policy, do one of t
   ```
   Get-MailboxServer <ServerName> | Format-List DatabaseCopyAutoActivationPolicy
   ```
-
-
-

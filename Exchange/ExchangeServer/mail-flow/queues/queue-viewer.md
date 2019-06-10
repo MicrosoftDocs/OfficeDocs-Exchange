@@ -55,6 +55,3 @@ The topics in the following table contain procedures that use Queue Viewer:
 |[Properties of messages in queues](message-properties.md)|Describes the message properties, and shows the properties that are available in Queue View versus the Exchange Management Shell.|
 |[Procedures for queues](queue-procedures.md)|Explains how to view, retry, resubmit, suspend, and resume queues.|
 |[Procedures for messages in queues](message-procedures.md)|Explains how to remove, suspend, resume, and redirect messages in queues.|
-
-
-

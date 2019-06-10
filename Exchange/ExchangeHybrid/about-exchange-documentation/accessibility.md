@@ -20,11 +20,11 @@ description: "Microsoft is committed to making its products and services easier 
 
 Microsoft is committed to making its products and services easier for everyone to use. The following sections provide information about the features, products, and services that make Microsoft Exchange more accessible for people with disabilities:
 
-- [Accessibility features of Exchange ](accessibility.md#BKMK_Access15)
+- [Accessibility features of Exchange](#accessibility-features-of-exchange)
 
-- [Accessibility features of Exchange Help](accessibility.md#BKMK_AccessHelp)
+- [Accessibility features of Exchange Help](#accessibility-features-of-exchange-help)
 
-- [Accessibility products and services from Microsoft](accessibility.md#BKMK_AccessMS)
+- [Accessibility products and services from Microsoft](#accessibility-products-and-services-from-microsoft)
 
 ## Accessibility features of Exchange
 <a name="BKMK_Access15"> </a>

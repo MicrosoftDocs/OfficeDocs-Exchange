@@ -287,6 +287,3 @@ The levels of support for operating system and browser combinations that you can
 |Internet Explorer 9|Unsupported|n/a|n/a|n/a|
 |Internet Explorer 10|Unsupported|Supported|n/a|n/a|
 |Internet Explorer 11|Supported|n/a|Supported|Supported|
-
-
-

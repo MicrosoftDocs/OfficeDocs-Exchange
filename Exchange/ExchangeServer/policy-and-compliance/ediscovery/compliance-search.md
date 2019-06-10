@@ -276,6 +276,3 @@ After you create and start the In-Place eDiscovery search that was created by th
 5. Click **Start** to export the search results to a PST file.
 
     A window is displayed that contains status information about the export process.
-
-
-

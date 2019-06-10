@@ -53,7 +53,7 @@ There are three basic methods you can use to modify the rules quota for a mailbo
     This example decreases the rules quota to 200 KB for the user douglas@contoso.com.
 
     ```
-    Set-Mailbox -Identity douglas@contoso.com -RulesQuota " 200 KB"
+    Set-Mailbox -Identity douglas@contoso.com -RulesQuota "200 KB"
     ```
 
 - **Filter mailboxes by attributes**: This method requires that the mailboxes all share a unique filterable attribute. For example:

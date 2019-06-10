@@ -3830,6 +3830,3 @@ A DLP policy is 55% confident that it's detected this type of sensitive informat
 |**Keyword_ssn**|
 |:-----|
 |Social Security  <br/> Social Security#  <br/> Soc Sec  <br/> SSN  <br/> SSNS  <br/> SSN#  <br/> SS#  <br/> SSID|
-
-
-

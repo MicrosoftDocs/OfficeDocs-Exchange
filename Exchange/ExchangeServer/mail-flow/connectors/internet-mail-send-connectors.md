@@ -106,6 +106,3 @@ After you create the Send connector, it appears in the Send connector list. To c
 To verify that you have successfully created a Send Connector that sends mail to the internet, create and send a message from an internal mailbox to an outside recipient, and verify the recipient receives the message.
 
 You can also turn on protocol logging for the Send connector, and view the information in the log. For more information, see [Protocol logging](protocol-logging.md).
-
-
-

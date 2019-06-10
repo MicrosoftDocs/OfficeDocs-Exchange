@@ -22,7 +22,7 @@ localization_priority: Priority
 
 ---
 
-# How to migrate mailboxes from one Office 365 tenant to another 
+# How to migrate mailboxes from one Office 365 tenant to another
 
 This article explains how to migrate mailboxes and service settings from one Office 365 tenant to another Office 365 tenant in a business-merger scenario. If you have more than 500 users to migrate or a large amount of SharePoint data to migrate, it's a good idea to work with an [Office 365 partner](https://go.microsoft.com/fwlink/p/?LinkId=393485).
 
@@ -211,7 +211,7 @@ Use the following sample Windows PowerShell scripts as a starting point for crea
 
 ### Copy all Office 365 accounts with a specific proxy address into a CSV file
 
-```Powershell
+```powershell
 ##########################################################################
 # Script: showproxies.ps1
 # Copies all accounts in Office 365 that contain/don't contain a specific
@@ -250,7 +250,7 @@ Invoke-Item addresses.csv
 
 ### Bulk Create es in Office 365
 
-```Powershell
+```powershell
 ################################################################################
 # Script: create-rooms.ps1
 # Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***
@@ -294,7 +294,7 @@ New-mailbox -Name $_.RoomName -room -primarysmtpaddress $_.RoomSMTPAddress -reso
 
 ### Bulk remove secondary email address from mailboxes
 
-```Powershell
+```powershell
 ##########################################################################
 #      Script:  remove-proxy.ps1
 # Description:*** RUN THIS SCRIPT FROM A WINDOWS POWERSHELL SESSION ***

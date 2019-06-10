@@ -428,6 +428,3 @@ To verify that you have successfully resumed a queue, use either of the followin
   ```
   Get-Queue -Identity <QueueIdentity>
   ```
-
-
-

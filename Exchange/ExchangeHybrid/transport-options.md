@@ -44,7 +44,7 @@ You'll need to choose how to route inbound and outbound mail when you plan and c
 
     If you don't want to expose your domain-joined internal Exchange servers directly to the Internet, you can deploy Edge Transport servers in your perimeter network. For more information about adding an Edge Transport server to your hybrid deployment, see [Edge Transport servers with hybrid deployments](edge-transport-servers.md).
 
-Regardless of how you route messages to and from the Internet, all messages sent between the on-premises and Exchange Online organizations are sent using secure transport. For more information, see [Trusted communication](transport-options.md#trust) later in this topic.
+Regardless of how you route messages to and from the Internet, all messages sent between the on-premises and Exchange Online organizations are sent using secure transport. For more information, see [Trusted communication](#trusted-communication) later in this topic.
 
 To learn more about how these options affect message routing in your organization, see [Transport routing in Exchange hybrid deployments](transport-routing.md).
 

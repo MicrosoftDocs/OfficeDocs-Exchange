@@ -61,4 +61,3 @@ Exchange 2013 and all later versions use a licensing model that's similar to how
 - **Client Access licenses (CALs)**: Exchange also comes in two CAL editions, which are referred to as a Standard CAL and an Enterprise CAL. You can mix and match the Exchange server editions with the CAL types. For example, you can use Enterprise CALs with Standard Edition or Standard CALs with Enterprise Edition.
 
 For more information about Exchange license types, see [Licensing](https://go.microsoft.com/fwlink/p/?LinkId=392675).
-

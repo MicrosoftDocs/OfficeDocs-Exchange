@@ -174,6 +174,3 @@ Hold settings and content in the Recoverable Items folder are also preserved whe
 
 > [!TIP]
 > For Exchange Server, an Exchange hybrid deployment is the recommended way to migrate on-premises mailboxes to Office 365.
-
-
-

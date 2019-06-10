@@ -250,6 +250,3 @@ The following example reads the data from all the files matching CounterData\* a
 ```
 CollectReplicationMetrics.ps1 -SummariseFiles (dir CounterData*) -Mode ProcessOnly -ReportPath
 ```
-
-
-

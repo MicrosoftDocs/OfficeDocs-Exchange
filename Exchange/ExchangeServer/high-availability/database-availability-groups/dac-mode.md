@@ -67,6 +67,3 @@ Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
 In the preceding example, DAG2 is enabled for DAC mode.
 
 For more information about enabling DAC mode, see [Configure database availability group properties](../../high-availability/manage-ha/configure-dag-properties.md) and [Set-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx).
-
-
-

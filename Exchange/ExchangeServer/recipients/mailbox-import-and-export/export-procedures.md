@@ -342,6 +342,3 @@ To verify that you've successfully removed a mailbox export request, replace _\<
 ```
 Get-MailboxExportRequest -Mailbox <MailboxIdentity> | Format-List Name,FilePath,Mailbox,Status
 ```
-
-
-

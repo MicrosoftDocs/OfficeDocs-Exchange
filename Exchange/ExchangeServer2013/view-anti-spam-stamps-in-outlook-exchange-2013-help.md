@@ -20,11 +20,11 @@ You can use Microsoft Outlook to view the anti-spam stamps that Microsoft Exchan
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 15 minutes
+- Estimated time to complete each procedure: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox access" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox access" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -37,11 +37,11 @@ You can use Microsoft Outlook to view the anti-spam stamps that Microsoft Exchan
 
 3. In the **Properties** dialog box, in the **Internet headers** section, use the scroll bar to view the anti-spam stamps as shown in the following example.
 
-    ```powershell
-        X-MS-Exchange-Organization-PCL:7
-        X-MS-Exchange-Organization-SCL:6
-        X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
-    ```
+   ```powershell
+   X-MS-Exchange-Organization-PCL:7
+   X-MS-Exchange-Organization-SCL:6
+   X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+   ```
 
 ## Use Outlook 2007 to view anti-spam stamps
 
@@ -51,8 +51,8 @@ You can use Microsoft Outlook to view the anti-spam stamps that Microsoft Exchan
 
 3. In the **Message Options** dialog box, in the **Internet headers** section, use the scroll bar to view the anti-spam stamps as shown in the following example.
 
-    ```powershell
-        X-MS-Exchange-Organization-PCL:7
-        X-MS-Exchange-Organization-SCL:6
-        X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
-    ```
+   ```powershell
+   X-MS-Exchange-Organization-PCL:7
+   X-MS-Exchange-Organization-SCL:6
+   X-MS-Exchange-Organization-Antispam-Report: DV:3.1.3924.1409;SID:SenderIDStatus Fail;PCL:PhishingLevel SUSPICIOUS;CW:CustomList;PP:Presolved;TIME:TimeBasedFeatures
+   ```

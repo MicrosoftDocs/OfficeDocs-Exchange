@@ -97,6 +97,3 @@ Users who are assigned the View Only Management role group can view the configur
 |Transport configuration - Edge Transport|Edge Transport server local administrator|
 |Transport logs - Edge Transport|Edge Transport server local administrator|
 |Mail flow rules (also known as transport rules) - Edge Transport|Edge Transport server local administrator|
-
-
-

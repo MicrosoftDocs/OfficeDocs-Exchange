@@ -24,7 +24,7 @@ However, there are client-specific message size limits you can configure for Out
 > [!NOTE]
 > For any message size limit, you need to set a value that's larger than the actual size you want enforced. This accounts for the Base64 encoding of attachments and other binary data. Base64 encoding increases the size of the message by approximately 33%, so the value you specify should be approximately 33% larger than the actual message size you want enforced. For example, if you specify a maximum message size value of 64 MB, you can expect a realistic maximum message size of approximately 48 MB.
 
-**ActiveSync**
+## ActiveSync
 
 |**Services**|**Configuration file**|**Keys and default values**|**Size**|
 |:-----|:-----|:-----|:-----|
@@ -34,7 +34,7 @@ However, there are client-specific message size limits you can configure for Out
 |Backend|`%ExchangeInstallPath%ClientAccess\Sync\web.config`|`maxRequestLength="10240"`|kilobytes|
 |Backend|`%ExchangeInstallPath%ClientAccess\Sync\web.config`|`<add key="MaxDocumentDataSize" value="10240000">`|bytes|
 
- **Comments on ActiveSync limits**
+### Comments on ActiveSync limits
 
 By default, there is no _maxAllowedContentLength_ key in the `web.config` files for ActiveSync. However, the maximum message size for ActiveSync is affected by the **maxAllowedContentLength** value that is applied to all web sites on the server. The default value is 30000000 bytes. To see these values for ActiveSync on Mailbox servers in IIS Manager, perform the following steps:
 
@@ -56,7 +56,7 @@ To change the **maxAllowedContentLength** value, enter a new value in bytes, and
 
 After you change the value in IIS Manager, a new _maxAllowedContentLength_ key is written to the corresponding Client Access or backend web.config file that's described in the table.
 
-**Exchange Web Services**
+## Exchange Web Services
 
 |**Service**|**Configuration file**|**Keys and default values**|**Size**|
 |:-----|:-----|:-----|:-----|
@@ -64,13 +64,13 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
 |Backend|`%ExchangeInstallPath%ClientAccess\exchweb\ews\web.config`|`maxAllowedContentLength="67108864"`|bytes|
 |Backend|`%ExchangeInstallPath%ClientAccess\exchweb\ews\web.config`|14 instances of `maxReceivedMessageSize="67108864"` (for different combinations of http/https bindings and authentication methods)|bytes|
 
- **Comments on EWS limits**
+### Comments on EWS limits
 
 - In the backend `web.config` file, there are two instances of the value `maxReceivedMessageSize="1048576"` for **UMLegacyMessageEncoderSoap11Element** bindings that you don't need to modify.
 
 - _maxRequestLength_ is an ASP.NET setting that's present in both web.config files, but isn't used by EWS, so you don't need to modify it.
 
-**Outlook on the web**
+## Outlook on the web
 
 |**Service**|**Configuration file**|**Keys and default values**|**Size**|
 |:-----|:-----|:-----|:-----|
@@ -81,7 +81,7 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
 |Backend|`%ExchangeInstallPath%ClientAccess\Owa\web.config`|2 instances of `maxReceivedMessageSize="35000000"` (for http and https bindings)|bytes|
 |Backend|`%ExchangeInstallPath%ClientAccess\Owa\web.config`|2 instances of `maxStringContentLength="35000000"` (for http and https bindings)|bytes|
 
- **Comments on Outlook on the web limits**
+### Comments on Outlook on the web limits
 
 - In the backend `web.config` file, there's an instance of the value `maxStringContentLength="102400"` for the **MsOnlineShellService** binding that you don't need to modify.
 
@@ -121,8 +121,8 @@ After you change the value in IIS Manager, a new _maxAllowedContentLength_ key i
    ...maxReceivedMessageSize="67108864"...
    ```
 
-   For example, to allow a Base64 encoded maximum message size of approximately 64 MB, change all instances of `67108864` to `89478486` (64\*4/3\*1048756): 
-    
+   For example, to allow a Base64 encoded maximum message size of approximately 64 MB, change all instances of `67108864` to `89478486` (64\*4/3\*1048756):
+
    ```
    <requestLimits maxAllowedContentLength="89478486" />
    ...maxReceivedMessageSize="89478486"...
@@ -156,7 +156,7 @@ Instead of using Notepad, you can also configure the client-specific message siz
 
 - Pay attention to whether the value is in bytes or kilobytes.
 
- **ActiveSync**
+### ActiveSync
 
 ```
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/Microsoft-Server-ActiveSync/" -section:system.webServer/security/requestFiltering /requestLimits.maxAllowedContentLength:30000000
@@ -166,7 +166,7 @@ Instead of using Notepad, you can also configure the client-specific message siz
 %windir%\system32\inetsrv\appcmd.exe set config "Exchange Back End/Microsoft-Server-ActiveSync/" -section:appSettings /[key='MaxDocumentDataSize'].value:10240000
 ```
 
- **Exchange Web Services**
+### Exchange Web Services
 
 ```
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/ews/" -section:system.webServer/security/requestFiltering /requestLimits.maxAllowedContentLength:67108864
@@ -187,7 +187,7 @@ Instead of using Notepad, you can also configure the client-specific message siz
 %windir%\system32\inetsrv\appcmd.exe set config "Exchange Back End/ews/" -section:system.serviceModel/bindings /webHttpBinding.[name='EWSStreamingNegotiateHttpBinding'].maxReceivedMessageSize:67108864
 ```
 
- **Outlook on the web**
+### Outlook on the web
 
 ```
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/owa/" -section:system.webServer/security/requestFiltering /requestLimits.maxAllowedContentLength:35000000

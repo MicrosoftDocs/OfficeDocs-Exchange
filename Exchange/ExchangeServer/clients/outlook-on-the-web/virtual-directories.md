@@ -282,6 +282,3 @@ Set-OwaVirtualDirectory -Identity "Contoso\owa (Default Web Site)" -ActionForUnk
 ```
 
 For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](http://technet.microsoft.com/library/7fadcc2e-6339-48b1-b15c-c89e45d4e430.aspx).
-
-
-

@@ -108,6 +108,3 @@ To verify that you've successfully recovered the DAG member, do the following:
   ```
 
     All of the replication health tests should pass successfully, and the status of databases and their content indexes should be healthy.
-
-
-

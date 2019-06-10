@@ -44,9 +44,9 @@ As you plan for this third-party email coexistence, consider the Azure Active Di
 
 - A subscription to Microsoft 365 (must be an enterprise subscription).
 
-- The on-premises organization is running Active Directory with the Microsoft Exchange 2013 or later schema updates.
+- The on-premises organization is running Active Directory with the Microsoft Exchange 2016 or later schema updates.
 
-- The Exchange Management Shell and the Exchange Server Active Directory schema are required for managing email-related users. To meet these requirements, you need install the Exchange 2013 Client Access and Mailbox server roles on a server in your on-premises organization.
+- The Exchange Management Shell and the Exchange Server Active Directory schema are required for managing email-related users. To meet these requirements, install the Exchange 2016 Mailbox server role on a server in the on-premises organization.
 
 - Every recipient object from the third-party system needs to have corresponding user object in local Active Directory. The users will need mail-enabled as part of the coexistence process.
 

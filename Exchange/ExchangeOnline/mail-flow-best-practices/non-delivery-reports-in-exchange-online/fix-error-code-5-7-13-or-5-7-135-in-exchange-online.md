@@ -55,7 +55,7 @@ To open the Exchange admin center (EAC), see [Exchange admin center in Exchange 
 
 Instead of allowing all external senders to send messages to this public folder, you can use the public folder's allowed senders list to selectively allow messages from all internal senders and the specified external senders.
 
-**Notes**: 
+**Notes**:
 
 - To add an external sender to a public folder's allowed senders list, you must first create a [mail contact](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-contacts) or a [mail user](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-mail-users) to represent the external sender in your organization.
 

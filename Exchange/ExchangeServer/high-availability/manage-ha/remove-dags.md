@@ -63,6 +63,3 @@ To verify that you've successfully removed the DAG, do one of the following:
   ```
 
     If the DAG was successfully deleted, the preceding command will produce an error message indicating the object could not be found.
-
-
-

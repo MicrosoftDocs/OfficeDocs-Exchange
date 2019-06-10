@@ -101,6 +101,3 @@ A. Bcc and expanded distribution group recipients information is visible to Comp
  **Q. What happens if a member of a distribution group is hidden from the organization's global address list (GAL)?**
 
 A. There's no impact. If recipients are hidden from the GAL, they're still included in the list of recipients for the expanded distribution group.
-
-
-

@@ -156,6 +156,3 @@ Although you'll need to move the existing queue database to preserve any undeliv
 2. Verify the transaction log files Trn.log, Trntmp.log, Trnres00001.jrs, Trnres00002.jrs, and Temp.edb files exist in the new location.
 
 3. Verify there are no queue database or transaction log files in the old location.
-
-
-

@@ -20,17 +20,17 @@ _**Applies to:** Exchange Server 2013_
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 10 minutes
+- Estimated time to complete each procedure: 10 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic, and the "Anti-spam features" section in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic, and the "Anti-spam features" section in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
 
-  - You can only use the Shell to perform this procedure.
+- You can only use the Shell to perform this procedure.
 
-  - By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
+- By default, anti-spam features aren't enabled in the Transport service on a Mailbox server. Typically, you only enable the anti-spam features on a Mailbox server if your Exchange organization doesn't do any prior anti-spam filtering before accepting incoming messages. For more information, see [Enable anti-spam functionality on Mailbox servers](enable-anti-spam-functionality-on-mailbox-servers-exchange-2013-help.md).
 
-  - Be mindful of the network and replication traffic that may be generated when you run the **Update-SafeList** cmdlet. Running the command on multiple mailboxes where safelists are heavily used may generate a significant amount of traffic. We recommend that if you run the command on multiple mailboxes, you should run the command during off-peak, non-business hours.
+- Be mindful of the network and replication traffic that may be generated when you run the **Update-SafeList** cmdlet. Running the command on multiple mailboxes where safelists are heavily used may generate a significant amount of traffic. We recommend that if you run the command on multiple mailboxes, you should run the command during off-peak, non-business hours.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -42,7 +42,7 @@ You can configure the maximum number of safe senders and blocked senders a user 
 To configure the maximum number of safe senders and blocked senders, run the following command:
 
 ```powershell
-    Set-Mailbox <MailboxIdentity> -MaxSafeSenders <Integer> -MaxBlockedSenders <Integer>
+Set-Mailbox <MailboxIdentity> -MaxSafeSenders <Integer> -MaxBlockedSenders <Integer>
 ```
 
 This example configures the mailbox john@contoso.com to have a maximum of 2,000 safe senders and 200 blocked senders.
@@ -58,7 +58,7 @@ To verify that you have successfully configured the mailbox safelist collection 
 1. Run the following command:
 
     ```powershell
-        Get-Mailbox <Identity> | Format-List Name,Max*Senders
+    Get-Mailbox <Identity> | Format-List Name,Max*Senders
     ```
 
 2. Verify the values displayed match the values you configured.
@@ -101,11 +101,11 @@ You can view the user objects in the Active Lightweight Directory Services (AD 
 
 There are three safelist collection attributes for each user object:
 
-  - **msExchSafeRecipientsHash**: This attribute stores the hash of the Safe Recipients List collection for the user.
+- **msExchSafeRecipientsHash**: This attribute stores the hash of the Safe Recipients List collection for the user.
 
-  - **msExchSafeSendersHash**: This attribute stores the hash of the Safe Senders List collection for the user.
+- **msExchSafeSendersHash**: This attribute stores the hash of the Safe Senders List collection for the user.
 
-  - **msExchBlockedSendersHash**: This attribute stores the hash of the Blocked Senders List collection for the user.
+- **msExchBlockedSendersHash**: This attribute stores the hash of the Blocked Senders List collection for the user.
 
 If a hexadecimal string, such as `0xac 0xbd 0x03 0xca`, is present on the attribute, the user object was updated. If the attribute has a value of `<Not Set>`, the attribute wasn't updated.
 

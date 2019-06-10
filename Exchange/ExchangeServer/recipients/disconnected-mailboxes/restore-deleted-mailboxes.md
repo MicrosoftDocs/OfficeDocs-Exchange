@@ -90,7 +90,7 @@ The following procedure shows how to connect a deleted user mailbox to a user ac
 Use the **Connect-Mailbox** cmdlet in the Exchange Management Shell to connect a deleted mailbox to a user account that isn't mail enabled. You have to specify the type of mailbox that you're connecting. The following examples show the syntax for reconnecting user, linked, room, equipment, and shared mailboxes. In all examples, the optional _Alias_ parameter is used to specify the email alias, which is the portion of the email address on the left side of the at (@) symbol. If you don't include the _Alias_ parameter, the value specified in the _User_ or _LinkedMasterAccount_ parameter is used to create the alias for the email address for the reconnected mailbox.
 
 > [!NOTE]
->  As previously stated, when you connect linked, resource, or shared mailboxes, the Active Directory user account that you're linking the mailbox to must be disabled.
+> As previously stated, when you connect linked, resource, or shared mailboxes, the Active Directory user account that you're linking the mailbox to must be disabled.
 
 This example connects a deleted user mailbox to a user account that isn't mail enabled. The _Identity_ parameter specifies the display name of the deleted mailbox retained in the mailbox database named MBXDB01. The _User_ parameter specifies the Active Directory user account to connect the mailbox to.
 
@@ -190,4 +190,3 @@ For more information, see:
 - [Get-MailboxRestoreRequest](http://technet.microsoft.com/library/6e2a5296-7820-4266-a96f-609588390a18.aspx)
 
 - [Get-MailboxRestoreRequestStatistics](http://technet.microsoft.com/library/b28d5835-1f8f-4cd9-8f72-9d592adef3d9.aspx)
-

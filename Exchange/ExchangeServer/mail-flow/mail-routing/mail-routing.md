@@ -189,6 +189,3 @@ Typically, when you install an Edge Transport server in your perimeter network, 
 In organizations that have Exchange servers in multiple Active Directory sites, outbound mail from internal recipients to external recipients is first routed to the subscribed Active Directory site. Transport servers in the target Active Directory site are the delivery group. The routing destination is the intra-organization Send connector in the Transport service on any of the Mailbox servers in the subscribed Active Directory site. The *intra-organization Send connector* is special Send connector that exists in the Transport service on every Mailbox server. This Send connector is implicitly created, invisible, requires no management, and is used to relay messages between Exchange servers.
 
 For more information about how mail is routed to and from Edge Transport servers, see [Mail flow and the transport pipeline](../../mail-flow/mail-flow.md).
-
-
-

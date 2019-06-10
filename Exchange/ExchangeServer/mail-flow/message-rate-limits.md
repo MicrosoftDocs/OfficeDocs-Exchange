@@ -106,6 +106,3 @@ For more information, see the following topics:
 - [Change User Throttling Settings for Specific Users](http://technet.microsoft.com/library/c5f834d6-189d-485e-9800-5e0066815ecf.aspx)
 
 - [Change User Throttling Settings for All Users in Your Organization](http://technet.microsoft.com/library/c45cacfc-768d-4605-9bb0-53e30273fe4d.aspx)
-
-
-

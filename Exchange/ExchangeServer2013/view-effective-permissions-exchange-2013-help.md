@@ -31,13 +31,13 @@ Looking for other management tasks related to managing permissions? Check out [P
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" or "Role assignment policy" entries in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Role groups" or "Role assignment policy" entries in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - The procedures in this topic can only be performed in the Shell. You can't use the Exchange Administration Center (EAC) to view effective permissions.
+- The procedures in this topic can only be performed in the Shell. You can't use the Exchange Administration Center (EAC) to view effective permissions.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -65,13 +65,13 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 To find a specific user that's been granted permissions by a management role, you must use the **Get-ManagementRoleAssignment** cmdlet to retrieve a list of all effective users, and then pipe the output of the cmdlet to the **Where** cmdlet. The **Where** cmdlet filters the output and returns only the user you specified. Use the following syntax.
 
 ```powershell
-    Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "<name of user>"}
+Get-ManagementRoleAssignment -Role <role name> -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "<name of user>"}
 ```
 
 This example finds the user David Strome on the Journaling role.
 
 ```powershell
-    Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "David Strome"}
+Get-ManagementRoleAssignment -Role Journaling -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "David Strome"}
 ```
 
 If you want to change what properties are returned in the list or export the list to a .csv file, see Use the Shell to customize output and display it later in this topic.
@@ -83,7 +83,7 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 To know every role that a user receives permissions from, you must use the **Get-ManagementRoleAssignment** cmdlet to retrieve all effective users on all management roles and then pipe the output of the cmdlet to the **Where** cmdlet. The **Where** cmdlet filters the output and returns only the role assignments that grant the user permissions.
 
 ```powershell
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "<name of user>"}
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "<name of user>"}
 ```
 
 This example finds all the role assignments that grant permissions to the user Kim Akers.
@@ -100,27 +100,27 @@ For detailed syntax and parameter information, see [Get-ManagementRoleAssignment
 
 The default output of the **Get-ManagementRoleAssignment** cmdlet might not have the information you want. The output of the cmdlet contains many more properties that you can access. The following are some of the properties that could be useful:
 
-  - **EffectiveUserName**: Name of the user.
+- **EffectiveUserName**: Name of the user.
 
-  - **Role**: Role that's granting the permissions.
+- **Role**: Role that's granting the permissions.
 
-  - **RoleAssigneeName**: Role group, assignment policy, or USG that's assigned to the role and contains the user in the `EffectiveUserName` property.
+- **RoleAssigneeName**: Role group, assignment policy, or USG that's assigned to the role and contains the user in the `EffectiveUserName` property.
 
-  - **RoleAssigneeType**: Indicates whether the role assignment is to a role group, assignment policy, USG, or user.
+- **RoleAssigneeType**: Indicates whether the role assignment is to a role group, assignment policy, USG, or user.
 
-  - **AssignmentMethod**: Indicates whether the assignment between the role and the role assignee is direct or indirect.
+- **AssignmentMethod**: Indicates whether the assignment between the role and the role assignee is direct or indirect.
 
-  - **CustomRecipientWriteScope**: Indicates the custom recipient write scope, if any, that was applied to the role assignment when it was created. The scope specified in this property overrides the implicit recipient write scope specified in the `RecipientWriteScope` property.
+- **CustomRecipientWriteScope**: Indicates the custom recipient write scope, if any, that was applied to the role assignment when it was created. The scope specified in this property overrides the implicit recipient write scope specified in the `RecipientWriteScope` property.
 
-  - **CustomConfigWriteScope**: Indicates the custom configuration write scope, if any, that was applied to the role assignment when it was created. The scope specified in this property overrides the implicit configuration write scope specified in the `ConfigWriteScope` property.
+- **CustomConfigWriteScope**: Indicates the custom configuration write scope, if any, that was applied to the role assignment when it was created. The scope specified in this property overrides the implicit configuration write scope specified in the `ConfigWriteScope` property.
 
-  - **RecipientReadScope**: Indicates the implicit recipient read scope that's applied to the role.
+- **RecipientReadScope**: Indicates the implicit recipient read scope that's applied to the role.
 
-  - **RecipientWriteScope**: Indicates the implicit recipient write scope that's applied to the role.
+- **RecipientWriteScope**: Indicates the implicit recipient write scope that's applied to the role.
 
-  - **ConfigReadScope**: Indicates the implicit configuration read scope that's applied to the role.
+- **ConfigReadScope**: Indicates the implicit configuration read scope that's applied to the role.
 
-  - **ConfigWriteScope**: Indicates the implicit configuration write scope that's applied to the role.
+- **ConfigWriteScope**: Indicates the implicit configuration write scope that's applied to the role.
 
 To select the properties you want to display in your list, you use commands similar to those used in the Use the Shell to list all effective users, Use the Shell to find a specific user on a role, and Use the Shell to find a specific user on all roles sections. The difference is that you pipe the results of those commands to the **Format-Table** or **Select-Object** cmdlets. The **Format-Table** cmdlet is useful to output the list of results to your screen. The **Select-Object** cmdlet is useful to output the list of your results to a .csv file.
 
@@ -132,24 +132,24 @@ For more information about the **Format-Table** and **Select-Object** cmdlets, s
 
 1. Choose the information you want to see and find the associated command from one of the following procedures:
 
-      - Use the Shell to list all effective users
+   - Use the Shell to list all effective users
 
-      - Use the Shell to find a specific user a role
+   - Use the Shell to find a specific user a role
 
-      - Use the Shell to find a specific user on all roles
+   - Use the Shell to find a specific user on all roles
 
 2. Choose the properties you want to see in your list.
 
 3. Use the following syntax to view the list.
 
-    ```powershell
-        <command to retrieve list > | Format-Table <property 1>, <property 2>, <property ...>
-    ```
+   ```powershell
+   <command to retrieve list > | Format-Table <property 1>, <property 2>, <property ...>
+   ```
 
 This example finds the user David Strome on all roles, and displays the `EffectiveUserName`, `Role`, `CustomRecipientWriteScope`, and `CustomConfigWriteScope` properties.
 
 ```powershell
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "David Strome"} | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "David Strome"} | Format-Table EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope
 ```
 
 For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd351024\(v=exchg.150\)).
@@ -160,9 +160,9 @@ To export a list to a .csv file, you need to pipe the results of the **Get-Manag
 
 1. Choose the information you want to see and find the associated command from one of the following procedures:
 
-      - Use the Shell to list all effective users
+   - Use the Shell to list all effective users
 
-      - Use the Shell to find a specific user a role
+   - Use the Shell to find a specific user a role
 
       - Use the Shell to find a specific user on all roles
 
@@ -170,14 +170,14 @@ To export a list to a .csv file, you need to pipe the results of the **Get-Manag
 
 3. Use the following syntax to export the list to a .csv file.
 
-    ```powershell
-        <command to retrieve list > | Select-Object <property 1>, <property 2>, <property ...> | Export-CSV <filename>
-    ```
+   ```powershell
+   <command to retrieve list > | Select-Object <property 1>, <property 2>, <property ...> | Export-CSV <filename>
+   ```
 
 This example finds the user David Strome on all roles, and displays the `EffectiveUserName`, `Role`, `CustomRecipientWriteScope`, and `CustomConfigWriteScope` properties.
 
 ```powershell
-    Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "David Strome"} | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
+Get-ManagementRoleAssignment -GetEffectiveUsers | Where {$_.EffectiveUserName -Eq "David Strome"} | Select-Object EffectiveUserName, Role, CustomRecipientWriteScope, CustomConfigWriteScope | Export-CSV c:\output.csv
 ```
 
 You can now view the .csv file in a viewer of your choice.

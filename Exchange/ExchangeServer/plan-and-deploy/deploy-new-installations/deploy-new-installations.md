@@ -34,4 +34,3 @@ The following topics provide information about deploying new installations of Ex
 [Exchange dev/test environment in Azure](create-azure-test-environments.md)
 
 After you've completed your installation, see [Exchange post-installation tasks](../../plan-and-deploy/post-installation-tasks/post-installation-tasks.md).
-

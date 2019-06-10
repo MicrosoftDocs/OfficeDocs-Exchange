@@ -357,4 +357,3 @@ After you create or modify an address list or GAL, you need to update the member
 If the address list contains a large number of recipients (our recommendation is more than 3000), you should use the Exchange Management Shell to update the address list (not the Exchange admin center). For more information, see [Update address lists](../address-lists/address-list-procedures.md#update-address-lists).
 
 To update a GAL, you always need to use the Exchange Management Shell. For more information, see [Use the Exchange Management Shell to update global address lists](../address-lists/address-list-procedures.md#use-the-exchange-management-shell-to-update-global-address-lists).
-

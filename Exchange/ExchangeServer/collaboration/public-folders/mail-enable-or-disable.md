@@ -103,6 +103,3 @@ Add-PublicFolderClientPermission "\Customer Feedback" -AccessRights CreateItems 
 ```
 
 For detailed syntax and parameter information, see [Add-PublicFolderClientPermission](http://technet.microsoft.com/library/d68ad7a9-daa0-4e6d-b819-5cca891c8fd9.aspx).
-
-
-

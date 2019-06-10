@@ -27,31 +27,31 @@ For additional management tasks related to federation, see [Federation procedure
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes.
+- Estimated time to complete: 15 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Calendar and Sharing Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-  - The following are required for sharing policies between federated Exchange organizations:
+- The following are required for sharing policies between federated Exchange organizations:
 
-      - An Exchange 2013 Client Access server exists in each Exchange organization. Sharing policies are also supported between Exchange organizations where one organization has Exchange 2013 Client Access servers and the other one organization has Exchange 2010 SP3 or later Client Access servers.
+  - An Exchange 2013 Client Access server exists in each Exchange organization. Sharing policies are also supported between Exchange organizations where one organization has Exchange 2013 Client Access servers and the other one organization has Exchange 2010 SP3 or later Client Access servers.
 
-      - Each Exchange organization has created a federation trust with the Azure AD authentication system. For details, see [Configure a federation trust](configure-a-federation-trust-exchange-2013-help.md).
+  - Each Exchange organization has created a federation trust with the Azure AD authentication system. For details, see [Configure a federation trust](configure-a-federation-trust-exchange-2013-help.md).
 
-      - Each Exchange organization has configured a federated organization identifier. Domains used for generating users' e-mail addresses have been added to the organization identifiers.
+  - Each Exchange organization has configured a federated organization identifier. Domains used for generating users' e-mail addresses have been added to the organization identifiers.
 
-      - User mailboxes are located on Exchange 2013 Mailbox servers or Exchange 2010 Mailbox servers in each Exchange organization.
+  - User mailboxes are located on Exchange 2013 Mailbox servers or Exchange 2010 Mailbox servers in each Exchange organization.
 
-      - Only Outlook 2010 or later and Outlook Web App users can create sharing invitations.
+  - Only Outlook 2010 or later and Outlook Web App users can create sharing invitations.
 
-  - The following are required for sharing policies with non-federated Exchange organizations or individuals:
+- The following are required for sharing policies with non-federated Exchange organizations or individuals:
 
-      - An Exchange 2013 Client Access server exists in the Exchange organization that's sharing user's calendar information.
+  - An Exchange 2013 Client Access server exists in the Exchange organization that's sharing user's calendar information.
 
-      - User mailboxes are located on Exchange 2013 Mailbox servers in the Exchange organization that's sharing user's calendar information.
+  - User mailboxes are located on Exchange 2013 Mailbox servers in the Exchange organization that's sharing user's calendar information.
 
-      - The Exchange 2013 Client Access server must be enabled for Outlook Web App access.
+  - The Exchange 2013 Client Access server must be enabled for Outlook Web App access.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## Use the EAC to create a sharing policy
 
@@ -101,44 +101,45 @@ You can edit the default sharing policy to allow all of your users to share full
 
 ## Use the Shell to create a sharing policy
 
-  - This example creates the sharing policy Contoso for the external federated domain contoso.com. This policy allows users in the contoso.com domain to see your user's detailed calendar availability (free/busy) information. By default, this policy is enabled.
+- This example creates the sharing policy Contoso for the external federated domain contoso.com. This policy allows users in the contoso.com domain to see your user's detailed calendar availability (free/busy) information. By default, this policy is enabled.
 
-    ```powershell
-    New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
-    ```
+  ```powershell
+  New-SharingPolicy -Name "Contoso" -Domains contoso.com: CalendarSharingFreeBusyDetail
+  ```
 
-  - This example creates the sharing policy ContosoWoodgrove for two different federated domains (contoso.com and woodgrovebank.com) with different sharing actions configured for each domain. The policy is disabled.
+- This example creates the sharing policy ContosoWoodgrove for two different federated domains (contoso.com and woodgrovebank.com) with different sharing actions configured for each domain. The policy is disabled.
 
-    ```powershell
-        New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
-    ```
+  ```powershell
+  New-SharingPolicy -Name "ContosoWoodgrove" -Domains 'contoso.com: CalendarSharingFreeBusySimple', 'woodgrovebank.com: CalendarSharingFreeBusyDetail -Enabled $false
+  ```
 
-  - This example creates the sharing policy Anonymous for an Exchange organization with the Client Access server CAS01 and the Mailbox server MAIL01 with the sharing action configured for limited calendar availability information. This policy allows users in your Exchange organization to invite users with Internet access to view their calendar availability information by sending them a link. The policy is enabled.
+- This example creates the sharing policy Anonymous for an Exchange organization with the Client Access server CAS01 and the Mailbox server MAIL01 with the sharing action configured for limited calendar availability information. This policy allows users in your Exchange organization to invite users with Internet access to view their calendar availability information by sending them a link. The policy is enabled.
 
-    1. Set the Web proxy URL for MAIL01.
+  1. Set the Web proxy URL for MAIL01.
 
-        ```powershell
-        Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
-        ```
+     ```powershell
+     Set-ExchangeServer -Identity "Mail01" -InternetWebProxy "<Webproxy URL>"
+     ```
 
-    2. Enable the publishing virtual directory on CAS01.
+  2. Enable the publishing virtual directory on CAS01.
 
-        ```powershell
-        Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
-        ```
+     ```powershell
+     Set-OwaVirtualDirectory -Identity "CAS01" -ExternalURL "<URL for CAS01>" -CalendarPublishingEnabled $true
+     ```
 
-    3. Create the sharing policy Anonymous and configure limited calendar information sharing.
+  3. Create the sharing policy Anonymous and configure limited calendar information sharing.
 
-        ```powershell
-        New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
-        ```
+     ```powershell
+     New-SharingPolicy -Name "Anonymous" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
+     ```
+
 For detailed syntax and parameter information, see the following topics:
 
-  - [New-SharingPolicy](https://technet.microsoft.com/en-us/library/dd298186\(v=exchg.150\))
+- [New-SharingPolicy](https://technet.microsoft.com/en-us/library/dd298186\(v=exchg.150\))
 
-  - [Set-ExchangeServer](https://technet.microsoft.com/en-us/library/bb123716\(v=exchg.150\))
+- [Set-ExchangeServer](https://technet.microsoft.com/en-us/library/bb123716\(v=exchg.150\))
 
-  - [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\))
+- [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\))
 
 ## How do you know this worked?
 

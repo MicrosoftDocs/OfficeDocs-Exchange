@@ -140,6 +140,3 @@ To verify that you've successfully configured the DAG, do the following:
 [Get-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/ea64d731-55ae-4a39-9eec-a72aa36d6dad.aspx)
 
 [Set-DatabaseAvailabilityGroup](http://technet.microsoft.com/library/4353c3ab-75b7-485e-89ae-d4b09b44b646.aspx)
-
-
-

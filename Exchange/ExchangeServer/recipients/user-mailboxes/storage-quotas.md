@@ -97,6 +97,3 @@ In the Exchange Management Shell, replace \<Identity\> with the name, email addr
 ```
 Get-Mailbox <Identity> | Format-List IssueWarningQuota,ProhibitSendQuota,ProhibitSendReceiveQuota,UseDatabaseQuotaDefaults
 ```
-
-
-

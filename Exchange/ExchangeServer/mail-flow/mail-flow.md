@@ -194,6 +194,3 @@ The components of the Transport service on Edge Transport servers are identical 
 - **Categorizer**: On an Edge Transport server, categorization is a short process in which the message is put directly into a delivery queue for delivery to internal or external recipients.
 
 - **SMTP Send**: When an Edge Transport server is subscribed to an internal Active Directory site, two Send connectors are automatically created and configured. One named "EdgeSync - \<Active Directory site name\> to Internet" is responsible for sending outbound mail to Internet recipients; the other named "EdgeSync - Inbound to \<Active Directory site name\>" is responsible for sending inbound mail from the Internet to internal recipients. Inbound mail is sent to the Front End Transport service on an available Mailbox server in the subscribed Active Directory site.
-
-
-

@@ -163,7 +163,7 @@ To establish the VPN gateway on the Azure side, follow the instructions in the [
 
 #### Export virtual network configuration settings
 
-The Azure management portal doesn't currently allow you to configure a multi-site VPN. For this configuration, you need to export the virtual network configuration settings to an XML file and then modify that file. Follow the instructions at[Export Virtual Network Settings to a Network Configuration File](https://msdn.microsoft.com/library/azure/dn133804.aspx) to export your settings.
+The Azure management portal doesn't currently allow you to configure a multi-site VPN. For this configuration, you need to export the virtual network configuration settings to an XML file and then modify that file. Follow the instructions at[Export Virtual Network Settings to a Network Configuration File](https://docs.microsoft.com/azure/virtual-network/virtual-networks-using-network-configuration-file) to export your settings.
 
 #### Modify the network configuration settings for the multi-site VPN
 
@@ -340,6 +340,3 @@ At this point, you have configured your DAG to use the file server on Azure as y
   ```
 
 4. Lastly, verify that the share is successfully created on the file server by reviewing the folder in File Explorer and the shares in Server Manager.
-
-
-

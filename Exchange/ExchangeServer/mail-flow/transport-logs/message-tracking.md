@@ -212,6 +212,3 @@ DELIVER    STOREDRIVER chris@contoso.com {michelle@contoso.com} test
 <a name="Security"> </a>
 
 No message content is stored in the message tracking log. By default, the subject line of an email message is stored in the message tracking log. You might need to disable subject logging to comply with increased security or privacy requirements. For instructions on how to disable subject logging, see [Configure message tracking](configure-message-tracking.md).
-
-
-

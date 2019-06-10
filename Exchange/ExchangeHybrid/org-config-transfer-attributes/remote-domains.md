@@ -18,8 +18,7 @@ Exchange Online to help simplify your hybrid deployment"
 
 # Remote Domains attributes
 
-The following attributes of Remote Domains are copied from an on-premises Exchange organization to Exchange Online 
-when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
+The following attributes of Remote Domains are copied from an on-premises Exchange organization to Exchange Online when the **Organization Configuration Transfer** option is selected in the Hybrid Configuration Wizard.
 
 |**RemoteDomains**|**Available In**|
 |:-----|:-----|

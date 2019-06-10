@@ -106,6 +106,3 @@ When you're done reviewing the report, click **Close**. Delivery reports aren't 
 <a name="viewreport"> </a>
 
 If your search was successful, messages that fit the search criteria are listed in the **Search results** pane. To view the delivery information for a specific message, select it and then click **Details** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). If no messages are displayed in the **Search results** pane, change the search criteria and then re-run the search.
-
-
-

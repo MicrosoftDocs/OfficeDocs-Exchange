@@ -22,9 +22,9 @@ The default theme is found in \\Client Access\\OWA\\prem\\*version*\\resources\\
 
 By default, multiple themes are installed when you install Exchange Server 2013, as follows:
 
-  - CSS (.css) files define colors, gradients, and fonts.
+- CSS (.css) files define colors, gradients, and fonts.
 
-  - Image (.png) files provide the icons and other graphic elements. If you edit any of the icons, don't change their size. If you change the size of any graphic elements, test your changes to verify that the elements still fit together correctly.
+- Image (.png) files provide the icons and other graphic elements. If you edit any of the icons, don't change their size. If you change the size of any graphic elements, test your changes to verify that the elements still fit together correctly.
 
 These files are stored on the Client Access server in the installation directory in \\Client Access\\OWA\\prem\\*\<version\>*\\resources\\themes. Each theme is stored in a subdirectory of themes. You can create additional themes by copying an existing theme and modifying the copy.
 
@@ -38,21 +38,21 @@ After you create a theme, you may also want to [Customize the Outlook Web App si
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 60 minutes.
+- Estimated time to complete this task: 60 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App virtual directories" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App virtual directories" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - You need local server administrator access to perform these procedures.
+- You need local server administrator access to perform these procedures.
 
-  - You'll need a text editor to change the default colors, and a graphics editor to change the images. If you must match a specific color and you can't find a match for it at [Color Table](https://go.microsoft.com/fwlink/p/?linkid=280679), you can use an image editing tool to sample a color and determine its HTML RGB value.
+- You'll need a text editor to change the default colors, and a graphics editor to change the images. If you must match a specific color and you can't find a match for it at [Color Table](https://go.microsoft.com/fwlink/p/?linkid=280679), you can use an image editing tool to sample a color and determine its HTML RGB value.
 
-  - As a best practice, we recommend that you use the following guidelines any time that you change or create an Outlook Web App theme:
+- As a best practice, we recommend that you use the following guidelines any time that you change or create an Outlook Web App theme:
 
-      - If you decide to edit an existing theme, make backup copies of the original files before you start editing them.
+  - If you decide to edit an existing theme, make backup copies of the original files before you start editing them.
 
-      - Do not delete the folder \\Client Access\\OWA\\prem\\*version*\\resources\\themes\\base or any of the files in it.
+  - Do not delete the folder \\Client Access\\OWA\\prem\\*version*\\resources\\themes\\base or any of the files in it.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -97,9 +97,9 @@ To change the sort order of the new theme by using the themeinfo.xml file, do th
 
 Now that you've copied over the files and have named your theme, you can customize it. The following elements can be customized in an Outlook Web App theme:
 
-  - Image files, which define the header area and icons.
+- Image files, which define the header area and icons.
 
-  - CSS files, which define fonts and colors.
+- CSS files, which define fonts and colors.
 
 ## Image files
 
@@ -110,23 +110,23 @@ Theme images are stored in two folders in \\themes*\\\<theme name\>*\\images\\. 
 
 To customize the theme, you can use an image editing tool to open and modify the following images:
 
-  - Headerbgmain.png
+- Headerbgmain.png
 
-      - This is the main header image. We recommend that the image doesn't exceed the header height of 30 pixels. The default theme doesn't use a background image, so this image is transparent. For an example of a theme that has a custom background image, see the image in the **Blueprint** theme folder.
+  This is the main header image. We recommend that the image doesn't exceed the header height of 30 pixels. The default theme doesn't use a background image, so this image is transparent. For an example of a theme that has a custom background image, see the image in the **Blueprint** theme folder.
 
-  - Headerbgright.png
+- Headerbgright.png
 
-      - This is used as a tiling image behind the header. The default theme doesn't use a tiling background image, so this image is transparent. For an example of a theme that has a custom tiling background image, see the image in the **Blueprint** theme folder.
+  This is used as a tiling image behind the header. The default theme doesn't use a tiling background image, so this image is transparent. For an example of a theme that has a custom tiling background image, see the image in the **Blueprint** theme folder.
 
-  - sprite1.mouse.png
+- sprite1.mouse.png
 
-      - This contains most of the images used in a theme. You can change the color of the images to match your theme, and also change the default Outlook Web App text logo.
+  This contains most of the images used in a theme. You can change the color of the images to match your theme, and also change the default Outlook Web App text logo.
 
-      - To avoid any issues, don't change the size of any individual icons in the sprite, and make sure that it's saved as a transparent .png file.
+  To avoid any issues, don't change the size of any individual icons in the sprite, and make sure that it's saved as a transparent .png file.
 
-  - themepreview.png
+- themepreview.png
 
-      - This image will be used to represent the theme in the **Change theme** panel in the Settings menu in Outlook Web App.
+  This image will be used to represent the theme in the **Change theme** panel in the Settings menu in Outlook Web App.
 
 ## Colors and fonts
 
@@ -134,13 +134,13 @@ Cascading style sheet (.css) files define the colors and fonts used in a theme a
 
 Start by modifying the \\*\<theme name\>*\\images\\0 folder. There are four colors used throughout each theme that can be customized.
 
-  - BrandColor: \#0072C6
+- BrandColor: \#0072C6
 
-  - NavBarHoverColor: \#4C9CD7
+- NavBarHoverColor: \#4C9CD7
 
-  - UnreadColor: \#2A8DD4
+- UnreadColor: \#2A8DD4
 
-  - FocusColor: \#DFEDFA
+- FocusColor: \#DFEDFA
 
 You can use a text editor like Notepad to search for and replace all the instances of these values with the colors of your theme in the following two files: owa2styles.mouseCSS and owa2styles2.mouseCSS. This has to be done in every folder in your new theme that contains those .css files.
 
@@ -155,7 +155,7 @@ To force all users to use the default theme, you must disable theme selection in
 This example sets the default theme for Outlook Web App, where the server name is `fourthcoffee`, the virtual directory name is `owa`, the website name is `default web site`, and the theme is in the folder named `Custom`.
 
 ```powershell
-    set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom
+set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom
 ```
 
 For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\)).
@@ -165,13 +165,13 @@ For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](htt
 This example disables theme selection in Outlook Web App, where the server name is `fourthcoffee`, the virtual directory name is `owa`, and the website name is `default web site`.
 
 ```powershell
-    set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -themeselectionenabled $false
+set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -themeselectionenabled $false
 ```
 
 You can also complete both commands at the same time as shown in the following example:
 
 ```powershell
-    set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom -themeselectionenabled $false
+set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom -themeselectionenabled $false
 ```
 
 For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/en-us/library/bb123515\(v=exchg.150\)).

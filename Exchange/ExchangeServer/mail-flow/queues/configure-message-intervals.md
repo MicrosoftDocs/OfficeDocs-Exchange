@@ -293,6 +293,3 @@ To verify that you've configured the message expiration timeout interval, do any
   ```
   Get-TransportService | Format-List Name,MessageExpirationTimeout
   ```
-
-
-

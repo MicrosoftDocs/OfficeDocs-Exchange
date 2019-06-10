@@ -64,37 +64,37 @@ The following figure illustrates the relationship between the linked user accoun
 
 5. Complete the following boxes on the **Select linked master account** page.
 
-  - **Linked domain controller**: Select a domain controller in the account forest. Exchange will connect to this domain controller to retrieve the list of user accounts in the account forest so that you can select the linked master account.
+   - **Linked domain controller**: Select a domain controller in the account forest. Exchange will connect to this domain controller to retrieve the list of user accounts in the account forest so that you can select the linked master account.
 
-  - **Linked master account**: Click **Browse**, select a user account in the account forest, and then click **OK**. The new linked mailbox will be associated with this account.
+   - **Linked master account**: Click **Browse**, select a user account in the account forest, and then click **OK**. The new linked mailbox will be associated with this account.
 
 6. Click **Next** and complete the following boxes on the **Enter general information** page.
 
-  - **\* Name**: Use this box to type a name for the user. This is the name used as the display name in the EAC and your organization's address book, and the name that's listed in Active Directory. This name is required.
+   - **\* Name**: Use this box to type a name for the user. This is the name used as the display name in the EAC and your organization's address book, and the name that's listed in Active Directory. This name is required.
 
-  - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
+   - **Organizational unit**: You can select an organizational unit (OU) other than the default (which is the recipient scope). If the recipient scope is set to the forest, the default value is set to the Users container in the Active Directory domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
 
-    To select a different OU, click **Browse**. The dialog box displays all OUs in the Exchange forest that are within the specified scope. Select the OU you want, and then click **OK**.
+     To select a different OU, click **Browse**. The dialog box displays all OUs in the Exchange forest that are within the specified scope. Select the OU you want, and then click **OK**.
 
-  - **\* User logon name**: Use this box to type the user logon name, which is required to create a linked mailbox. Type the user name here. This name will be used in the left portion of the email address for the linked mailbox if you don't specify an alias.
+   - **\* User logon name**: Use this box to type the user logon name, which is required to create a linked mailbox. Type the user name here. This name will be used in the left portion of the email address for the linked mailbox if you don't specify an alias.
 
-    > [!NOTE]
-    > Because the user account that is created in the Exchange forest is disabled when you create a linked mailbox, the user doesn't use the user logon name to sign in to the linked mailbox. They sign in using their credentials from the account forest.
+     > [!NOTE]
+     > Because the user account that is created in the Exchange forest is disabled when you create a linked mailbox, the user doesn't use the user logon name to sign in to the linked mailbox. They sign in using their credentials from the account forest.
 
 7. Click **More options** to configure the following boxes. Otherwise, skip to Step 8 to save the new linked mailbox.
 
-  - **Alias**: Type the alias, which specifies the email alias for the linked mailbox. The user's alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
+   - **Alias**: Type the alias, which specifies the email alias for the linked mailbox. The user's alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
 
-    > [!NOTE]
-    > If you leave this box blank, the value from the user name portion of the **User Logon Name** is used for the email alias.
+     > [!NOTE]
+     > If you leave this box blank, the value from the user name portion of the **User Logon Name** is used for the email alias.
 
-  - **First name**, **Initials**, **Last name**
+   - **First name**, **Initials**, **Last name**
 
-  - **Mailbox database**: Use this option to specify a mailbox database instead of allowing Exchange to choose a database for you. Click **Browse** to open the **Select Mailbox Database** dialog box. This dialog box lists all the mailbox databases in your Exchange organization. By default, the mailbox databases are sorted by name. You can also click the title of the corresponding column to sort the databases by server name or version. Select the mailbox database you want to use, and then click **OK**.
+   - **Mailbox database**: Use this option to specify a mailbox database instead of allowing Exchange to choose a database for you. Click **Browse** to open the **Select Mailbox Database** dialog box. This dialog box lists all the mailbox databases in your Exchange organization. By default, the mailbox databases are sorted by name. You can also click the title of the corresponding column to sort the databases by server name or version. Select the mailbox database you want to use, and then click **OK**.
 
-  - **Address book policy**: Use this option to specify an address book policy (ABP) for the linked mailbox. An ABP contains a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to users, an ABP provides them with access to a customized GAL in Outlook and Outlook on the web (formerly known as Outlook Web App). To learn more, see [Address book policies in Exchange Server](../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
+   - **Address book policy**: Use this option to specify an address book policy (ABP) for the linked mailbox. An ABP contains a global address list (GAL), an offline address book (OAB), a room list, and a set of address lists. When assigned to users, an ABP provides them with access to a customized GAL in Outlook and Outlook on the web (formerly known as Outlook Web App). To learn more, see [Address book policies in Exchange Server](../email-addresses-and-address-books/address-book-policies/address-book-policies.md).
 
-    In the drop-down list, select the policy that you want associated with this mailbox.
+     In the drop-down list, select the policy that you want associated with this mailbox.
 
 8. When you're finished, click **Save** to create the new linked mailbox.
 
@@ -317,7 +317,7 @@ Use the **Member Of** section to view a list of the distribution groups or secur
 Use the **MailTip** section to add a MailTip to alert users of potential issues if they send a message to this recipient. A MailTip is text that's displayed in the InfoBar when a recipient is added to the To, Cc, or Bcc lines of a new email message.
 
 > [!NOTE]
->  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
+> MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
 #### Mailbox Delegation
 
@@ -376,4 +376,3 @@ To verify that you have successfully changed properties for a linked mailbox, do
   ```
   Get-Mailbox "Ayla Kol" | Format-List LinkedMasterAccount
   ```
-

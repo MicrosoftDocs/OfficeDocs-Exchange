@@ -129,4 +129,3 @@ Welcome to Microsoft Exchange Server 2016! This topic contains important informa
 
 - Configure your firewall or external MX DNS record to send mail to an Exchange 2016 Mailbox server. You might need to configure your firewall to allow TCP port 25 to connect to the new Internet-facing server.
 ::: moniker-end
-

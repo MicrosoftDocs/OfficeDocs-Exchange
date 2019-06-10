@@ -130,13 +130,13 @@ To bypass the warning that MRM features aren't supported for e-mail clients runn
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 1 minute.
+- Estimated time to complete: 1 minute.
 
-  - You can't use the Exchange admin center (EAC) to perform these procedures. You must use the Shell.
+- You can't use the Exchange admin center (EAC) to perform these procedures. You must use the Shell.
 
-  - Procedures in this topic require specific permissions. See each procedure for its permissions information.
+- Procedures in this topic require specific permissions. See each procedure for its permissions information.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 
@@ -168,7 +168,7 @@ This example blocks Outlook clients prior to version 12.0.0 from accessing the m
 > The values used with the <EM>BlockedClientVersions</EM> parameter are examples. You can determine the correct client software versions by parsing the RPC Client Access log files located at <CODE>%ExchangeInstallPath%Logging\RPC Client Access</CODE>.
 
 ```powershell
-    Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
+Set-RpcClientAccess -Server CAS01 -BlockedClientVersions "0.0.0-5.65535.65535;7.0.0;8.02.4-11.65535.65535"
 ```
 
 For detailed syntax and parameter definition, see [Set-RpcClientAccess](https://technet.microsoft.com/en-us/library/dd351072\(v=exchg.150\)).

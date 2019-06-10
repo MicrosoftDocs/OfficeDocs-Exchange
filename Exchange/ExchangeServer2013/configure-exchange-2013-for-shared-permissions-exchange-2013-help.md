@@ -22,43 +22,43 @@ For more information about shared and split permissions, see [Understanding spli
 
 You can configure your Exchange 2013 organization for shared permissions if you've previously set your organization for split permissions. The procedure to switch to shared permissions is different depending on whether you're currently using Role Based Access Control (RBAC) split permissions or Active Directory split permissions. Choose the procedure that follows that's applicable to your current configuration. If the following are true, your organization is using Active Directory split permissions:
 
-  - The Microsoft Exchange Protected Groups organizational unit (OU) exists.
+- The Microsoft Exchange Protected Groups organizational unit (OU) exists.
 
-  - The Exchange Windows Permissions security group is located in the Microsoft Exchange Protected Groups OU.
+- The Exchange Windows Permissions security group is located in the Microsoft Exchange Protected Groups OU.
 
-  - The Exchange Trusted Subsystem security group is a member of the Exchange Windows Permissions security group.
+- The Exchange Trusted Subsystem security group is a member of the Exchange Windows Permissions security group.
 
-  - There are no regular management role assignments to the Mail Recipient Creation role or Security Group Creation and Membership role.
+- There are no regular management role assignments to the Mail Recipient Creation role or Security Group Creation and Membership role.
 
 If you've never configured your organization for split permissions, you don't need to perform this procedure. Exchange 2013 is configured for shared permissions by default.
 
 For more information about management role groups, management roles, and regular and delegating management role assignments, see the following topics:
 
-  - [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md)
+- [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md)
 
-  - [Understanding management role groups](understanding-management-role-groups-exchange-2013-help.md)
+- [Understanding management role groups](understanding-management-role-groups-exchange-2013-help.md)
 
-  - [Understanding management roles](understanding-management-roles-exchange-2013-help.md)
+- [Understanding management roles](understanding-management-roles-exchange-2013-help.md)
 
-  - [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md)
+- [Understanding management role assignments](understanding-management-role-assignments-exchange-2013-help.md)
 
 Looking for other management tasks related to permissions? Check out [Advanced permissions](advanced-permissions-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - Procedures in this topic require specific permissions. See each procedure for its permissions information.
+- Procedures in this topic require specific permissions. See each procedure for its permissions information.
 
-  - You must use Windows PowerShell, the Windows Command Shell, or both, to perform these procedures. For more information, see each procedure.
+- You must use Windows PowerShell, the Windows Command Shell, or both, to perform these procedures. For more information, see each procedure.
 
-  - The Exchange 2013 organization must currently be configured for RBAC or Active Directory split permissions.
+- The Exchange 2013 organization must currently be configured for RBAC or Active Directory split permissions.
 
-  - If you have Microsoft Exchange Server 2010 servers in your organization, the permissions model you select will also be applied to those servers.
+- If you have Microsoft Exchange Server 2010 servers in your organization, the permissions model you select will also be applied to those servers.
 
-  - You must have permissions to delegate the Mail Recipient Creation management role and the Security Group Creation and Membership management role to the Organization Management management role group or another role group that's assigned the Mail Recipients role.
+- You must have permissions to delegate the Mail Recipient Creation management role and the Security Group Creation and Membership management role to the Organization Management management role group or another role group that's assigned the Mail Recipients role.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -109,15 +109,15 @@ To remove Exchange-related split permissions from Active Directory administrator
 
 1. Remove the regular and delegating role assignments that assign the Mail Recipient Creation role to the role group or universal security group (USG) that contains the Active Directory administrators as members using the following command. This command uses the Active Directory Administrators role group as an example. The *WhatIf* switch lets you see what role assignments will be removed. Remove the *WhatIf* switch, and run the command again to remove the role assignments.
 
-    ```powershell
-    Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where {$_.RoleAssigneeName -EQ "Active Directory Administrators"} | Remove-ManagementRoleAssignment -WhatIf
-    ```
+   ```powershell
+   Get-ManagementRoleAssignment -Role "Mail Recipient Creation" | Where {$_.RoleAssigneeName -EQ "Active Directory Administrators"} | Remove-ManagementRoleAssignment -WhatIf
+   ```
 
 2. Remove the regular and delegating role assignments that assign the Security Group Creation and Membership role to the role group or USG that contains the Active Directory administrators as members using the following command. This command uses the Active Directory Administrators role group as an example. The *WhatIf* switch lets you see what role assignments will be removed. Remove the *WhatIf* switch, and run the command again to remove the role assignments.
 
-    ```powershell
-    Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where {$_.RoleAssigneeName -EQ "Active Directory Administrators"} | Remove-ManagementRoleAssignment -WhatIf
-    ```
+   ```powershell
+   Get-ManagementRoleAssignment -Role "Security Group Creation and Membership" | Where {$_.RoleAssigneeName -EQ "Active Directory Administrators"} | Remove-ManagementRoleAssignment -WhatIf
+   ```
 
 3. Optional. If you want to remove all Exchange permissions from the Active Directory administrators, you can remove the role group or USG in which they're members. For more information about how to remove a role group, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
@@ -136,21 +136,21 @@ To switch from Active Directory split permissions to shared permissions, do the 
 
 1. From a Windows command shell, run the following command from the Exchange 2013 installation media to disable Active Directory split permissions.
 
-    ```powershell
-    setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
-    ```
+   ```powershell
+   setup.exe /PrepareAD /ActiveDirectorySplitPermissions:false
+   ```
 
 2. From the Exchange Management Shell, run the following commands to add regular role assignments between the Mail Recipient Creation role and Security Group Creation and Management role and the Organization Management and Recipient Management role groups.
 
-    ```powershell
-    New-ManagementRoleAssignment "Mail Recipient Creation_Organization Management" -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
-    New-ManagementRoleAssignment "Security Group Creation and Membership_Org Management" -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
-    New-ManagementRoleAssignment "Mail Recipient Creation_Recipient Management" -Role "Mail Recipient Creation" -SecurityGroup "Recipient Management"
-    ```
+   ```powershell
+   New-ManagementRoleAssignment "Mail Recipient Creation_Organization Management" -Role "Mail Recipient Creation" -SecurityGroup "Organization Management"
+   New-ManagementRoleAssignment "Security Group Creation and Membership_Org Management" -Role "Security Group Creation and Membership" -SecurityGroup "Organization Management"
+   New-ManagementRoleAssignment "Mail Recipient Creation_Recipient Management" -Role "Mail Recipient Creation" -SecurityGroup "Recipient Management"
+   ```
 
 3. Restart the Exchange 2013 servers in your organization.
 
-    > [!NOTE]
-    > If you have Exchange 2010 servers in your organization, you also need to restart those servers.
+   > [!NOTE]
+   > If you have Exchange 2010 servers in your organization, you also need to restart those servers.
 
 For detailed syntax and parameter information, see [New-ManagementRoleAssignment](https://technet.microsoft.com/en-us/library/dd335193\(v=exchg.150\)).

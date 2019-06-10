@@ -162,6 +162,3 @@ This example verifies EdgeSync results for the user kate@contoso.com.
 ```
 Test-EdgeSynchronization -VerifyRecipient kate@contoso.com
 ```
-
-
-

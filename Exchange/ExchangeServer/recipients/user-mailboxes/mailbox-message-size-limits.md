@@ -84,6 +84,3 @@ Run the following command in the Exchange Management Shell.
 ```
 Get-Mailbox -Identity <Identity> | Format-List MaxSendSize,MaxReceiveSize
 ```
-
-
-

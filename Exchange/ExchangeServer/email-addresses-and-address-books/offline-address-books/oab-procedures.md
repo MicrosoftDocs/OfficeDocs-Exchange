@@ -418,6 +418,3 @@ To verify that you've successfully assigned an OAB to a mailbox, replace _\<Mail
 ```
 Get-Mailbox -Identity "<MailboxIdentity>" | Format-Table -Auto Name,OfflineAddressBook
 ```
-
-
-

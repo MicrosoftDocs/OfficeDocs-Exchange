@@ -44,7 +44,7 @@ You'll need to choose how to route inbound and outbound mail when you plan and c
 
     If you don't want to expose your domain-joined internal Exchange 2013 servers directly to the Internet, you can deploy Exchange 2013 Edge Transport servers or Exchange 2010 SP3 Edge Transport servers in your perimeter network. For more information about adding an Edge Transport server to your hybrid deployment, see [Edge Transport servers in Exchange 2013/Exchange 2007 hybrid deployments](edge-transport-serverrs.md).
 
-Regardless of how you route messages to and from the Internet, all messages sent between the on-premises and Exchange Online organizations are sent using secure transport. For more information, see [Trusted communication](../transport-options.md#trust) later in this topic.
+Regardless of how you route messages to and from the Internet, all messages sent between the on-premises and Exchange Online organizations are sent using secure transport. For more information, see [Trusted communication](#trusted-communication) later in this topic.
 
 To learn more about how these options affect message routing in your organization, see [Transport routing in Exchange 2013/Exchange 2007 hybrid deployments](transport-routing.md).
 
@@ -57,7 +57,6 @@ An EOP company contains several of the mail transport settings that can be confi
 When you configure a hybrid deployment with the Hybrid Configuration wizard, all transport settings are automatically configured in your on-premises organization and in the EOP company included in your Exchange Online organization. The Hybrid Configuration wizard configures all inbound and outbound connectors and other settings in this EOP company to secure messages sent between the on-premises and Exchange Online organizations and route messages to the right destination. If you want to configure custom transport settings for your Exchange Online organization, you'll configure them in this EOP company also.
 
 ## Trusted communication
-<a name="trust"> </a>
 
 To help protect recipients in both the on-premises and Exchange Online organizations, and to help ensure that messages sent between the organizations aren't intercepted and read, transport between the on-premises organization and EOP is configured to use forced TLS. TLS transport uses Secure Sockets Layer (SSL) certificates provided by a trusted third-party certificate authority (CA). Messages between EOP and the Exchange Online organization also use TLS.
 

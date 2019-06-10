@@ -21,7 +21,7 @@ manager: dansimp
 
  **Summary**: How organizations in the Office 365 U.S. Government Community Cloud (GCC) can enable Outlook for iOS and Android for their Exchange Online users.
 
-Outlook for iOS and Android is fully architected in the Microsoft Cloud and meets the security and compliance requirements needs of all United States Government customers when the mailboxes reside in Exchange Online. 
+Outlook for iOS and Android is fully architected in the Microsoft Cloud and meets the security and compliance requirements needs of all United States Government customers when the mailboxes reside in Exchange Online.
 
 For customers with Exchange Online mailboxes operating in the Government Community Cloud (GCC Moderate, GCC High or Department of Defense), Outlook for iOS and Android leverages the [native Microsoft sync technology](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android). This architecture is FedRAMP-compliant (defined by NIST Special Publication 800-145) and approved, and meets GCC High and DoD requirements DISA SRG Level 4 (GCC-High) and Level 5 (DoD), Defense Federal Acquisition Regulations Supplement (DFARS), and International Traffic in Arms Regulations (ITAR), which have been approved by a third-party assessment organization and are FISMA compliant based on the NIST 800-53 rev 4.
 
@@ -82,15 +82,15 @@ By default, certain services and features of Outlook for iOS and Android are dis
 Executing the below Exchange Online cmdlet will enable GCC Moderate customers using Outlook for iOS and Android access to features and services that are not FedRAMP compliant:
 
  ```
-  Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false
+ Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $false
  ```
 
 At any time, access to these features can be revoked by resetting the parameter back to the default value:
 
  ```
-  Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $true
+ Set-OrganizationConfig -OutlookMobileGCCRestrictionsEnabled $true
  ```
 
-Changing this setting typically takes affect within 48 hours. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization will be affected. 
+Changing this setting typically takes affect within 48 hours. As this is an tenant-based change, all Outlook for iOS and Android users in the GCC organization will be affected.
 
-For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig?view=exchange-ps). 
+For more information on the cmdlet, please see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig?view=exchange-ps).

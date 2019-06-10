@@ -28,19 +28,19 @@ Looking for other management tasks related to roles? Check out [Advanced permiss
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes
+- Estimated time to complete each procedure: 5 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Management roles" entry in the [Role management permissions](role-management-permissions-exchange-2013-help.md) topic.
 
-  - You must use the Shell to perform these procedures.
+- You must use the Shell to perform these procedures.
 
-  - The ability to create unscoped roles isn't included in any management role group by default. You must first assign the Unscoped Role Management role to a user, or to a USG or role group of which the user is a member, before the user is able to create a role group. For more information about adding a role to a user, USG, or role group, see the following topics:
+- The ability to create unscoped roles isn't included in any management role group by default. You must first assign the Unscoped Role Management role to a user, or to a USG or role group of which the user is a member, before the user is able to create a role group. For more information about adding a role to a user, USG, or role group, see the following topics:
 
-      - [Manage role groups](manage-role-groups-exchange-2013-help.md)
+  - [Manage role groups](manage-role-groups-exchange-2013-help.md)
 
-      - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
+  - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -80,13 +80,13 @@ The script must reside in the `RemoteScripts` directory in the Microsoft Exchang
 After you copy the script to the appropriate Exchange 2013 servers and you decide what script parameters should be used, create the role entry using the following syntax.
 
 ```powershell
-    Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
+Add-ManagementRoleEntry <unscoped top-level role name>\<script filename> -Parameters <parameter 1, parameter 2, parameter...> -Type Script -UnscopedTopLevel
 ```
 
 This example adds the BulkProvisionUsers.ps1 script to the IT Scripts role with the *Name* and *Location* parameters.
 
 ```powershell
-    Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
+Add-ManagementRoleEntry "IT Scripts\BulkProvisionUsers.ps1" -Parameters Name, Location -Type Script -UnscopedTopLevel
 ```
 
 > [!NOTE]
@@ -103,13 +103,13 @@ If you add non-Exchange cmdlets to the new role, the cmdlets must be installed o
 After you install the Windows PowerShell snap-in that contains the cmdlets on the appropriate Exchange 2013 servers and you decide what cmdlet parameters should be used, create the role entry using the following syntax.
 
 ```powershell
-    Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
+Add-ManagementRoleEntry <unscoped top-level role name>\<cmdlet name> -PSSnapinName <snap-in name> -Parameters <parameter 1, parameter 2, parameter...> -Type Cmdlet -UnscopedTopLevel
 ```
 
 This example adds the **Set-WidgetConfiguration** cmdlet in the Contoso.Admin.Cmdlets snap-in to the Widget Cmdlets role with the *Database* and *Size* parameters.
 
 ```powershell
-    Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
+Add-ManagementRoleEntry "Widget Cmdlets\Set-WidgetConfiguration" -PSSnapinName Contoso.Admin.Cmdlets -Parameters Database, Size -Type Cmdlet -UnscopedTopLevel
 ```
 
 > [!NOTE]
@@ -124,9 +124,9 @@ The final step when you create and configure a role is to assign it to a role as
 
 You can assign the new role to a role group, user, or USG. For more information, see the following topics:
 
-  - [Manage role groups](manage-role-groups-exchange-2013-help.md)
+- [Manage role groups](manage-role-groups-exchange-2013-help.md)
 
-  - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
+- [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
 
 ## Create an unscoped role based on another unscoped role
 
@@ -144,7 +144,7 @@ New, unscoped child roles can be based on existing unscoped roles. When you crea
 Use the following syntax to create the new role.
 
 ```powershell
-    New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
+New-ManagementRole -Parent <existing unscoped role to copy> -Name <name of new unscoped role>
 ```
 
 This example copies the IT Global Scripts role and its management role entries to the Diagnostic IT Scripts role.
@@ -163,11 +163,11 @@ You can't add role entries or parameters on role entries unless they exist in th
 
 When you change a role entry on a role, you can do one of the following:
 
-  - Remove a single, entire role entry.
+- Remove a single, entire role entry.
 
-  - Remove multiple, entire role entries.
+- Remove multiple, entire role entries.
 
-  - Remove parameters from a role entry.
+- Remove parameters from a role entry.
 
 To remove role entries from your new role, see [Remove a role entry from a role](remove-a-role-entry-from-a-role-exchange-2013-help.md).
 
@@ -180,6 +180,6 @@ The final step when you create and configure a role is to assign it to a role as
 
 You can assign the new role to a role group, user, or USG. For more information, see the following topics:
 
-  - [Manage role groups](manage-role-groups-exchange-2013-help.md)
+- [Manage role groups](manage-role-groups-exchange-2013-help.md)
 
-  - [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)
+- [Add a role to a user or USG](add-a-role-to-a-user-or-usg-exchange-2013-help.md)

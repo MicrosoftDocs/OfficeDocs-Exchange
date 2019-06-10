@@ -236,6 +236,3 @@ To verify that you have successfully removed the mailbox database, do the follow
 - From the EAC, select **Servers** \> **Databases**.
 
 - Verify that the mailbox database has been removed.
-
-
-

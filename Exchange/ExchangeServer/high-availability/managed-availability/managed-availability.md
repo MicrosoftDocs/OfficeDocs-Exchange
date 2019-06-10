@@ -219,6 +219,3 @@ There are 12 cmdlets used for managed availability, which are described in the f
 |[Remove-GlobalMonitoringOverride](http://technet.microsoft.com/library/8f8f902a-a279-484f-a25a-1986706c9dc2.aspx)|Used to remove a global override.|
 |[Set-ServerComponentState](http://technet.microsoft.com/library/bf0a92ce-9bcf-476e-b92b-8279c141f361.aspx)|Used to configure the state of one or more server components.|
 |[Get-ServerComponentState](http://technet.microsoft.com/library/da7214fe-c641-4c6a-a479-df95a4136929.aspx)|Used to view the state of one or more server components.|
-
-
-

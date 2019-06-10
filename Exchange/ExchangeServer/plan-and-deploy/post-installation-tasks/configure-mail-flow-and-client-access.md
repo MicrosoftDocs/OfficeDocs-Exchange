@@ -331,4 +331,3 @@ To verify that you've configured mail flow and external client access, do the fo
 3. In the external recipient's mailbox, reply to the message you just sent from the Exchange mailbox. Verify the Exchange mailbox receives the message.
 
 4. Go to https://owa.contoso.com/owa and verify that there are no certificate warnings.
-

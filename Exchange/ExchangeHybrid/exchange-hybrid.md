@@ -228,7 +228,7 @@ The following list provides you with definitions of the core components associat
 
  **hybrid configuration engine**
 
-> The Hybrid Configuration Engine (HCE) runs the core actions necessary for configuring and updating a hybrid deployment. The HCE compares the state of the _HybridConfiguration_ Active Directory object with current on-premises Exchange and Exchange Online configuration settings and then executes tasks to match the deployment configuration settings to the parameters defined in the _HybridConfiguration_ Active Directory object. For more information, see [Hybrid Configuration Engine](hybrid-configuration-wizard.md#BKMK_RecommendedToolsAndServices).
+> The Hybrid Configuration Engine (HCE) runs the core actions necessary for configuring and updating a hybrid deployment. The HCE compares the state of the _HybridConfiguration_ Active Directory object with current on-premises Exchange and Exchange Online configuration settings and then executes tasks to match the deployment configuration settings to the parameters defined in the _HybridConfiguration_ Active Directory object. For more information, see [Hybrid Configuration Engine](hybrid-configuration-wizard.md#hybrid-configuration-engine).
 
  **hybrid configuration wizard (HCW)**
 

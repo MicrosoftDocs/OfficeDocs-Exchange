@@ -41,6 +41,3 @@ The configuration and management tasks that are documented for Outlook on the we
 |[Create a theme for Outlook on the web in Exchange Server](themes.md)|Outlook on the web comes with built-in themes that define the colors and icons that are used in Outlook on the web, but you can also create your own themes.|
 |[Customize the Outlook on the web sign-in, language selection, and error pages in Exchange Server](customize-outlook-on-the-web.md)|Customize key pages in Outlook on the web.|
 |[Use AD FS claims-based authentication with Outlook on the web](ad-fs-claims-based-auth.md)|Centralize Outlook on the web authentication by using Active Directory Federation Services.|
-
-
-

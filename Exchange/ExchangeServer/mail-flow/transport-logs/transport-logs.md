@@ -190,6 +190,3 @@ Routing table logging periodically records snapshots of the routing table that E
   - `MSRoutingConfig` files for the Mailbox Transport Submission service.
 
 - **Transport service on Edge Transport servers**: `%ExchangeInstallPath%TransportRoles\Logs\Edge\Routing`
-
-
-

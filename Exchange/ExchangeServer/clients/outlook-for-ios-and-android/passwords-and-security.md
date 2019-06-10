@@ -106,4 +106,3 @@ You can read about how our data is currently protected at the [Azure Trust Cente
 ### Is there a way to prevent the use of Basic authentication for on-premises mailboxes with Outlook for iOS and Android?
 
 Yes, you can deploy hybrid Modern Authentication. For more information, see [Using hybrid Modern Authentication with Outlook for iOS and Android](use-hybrid-modern-auth.md).
-

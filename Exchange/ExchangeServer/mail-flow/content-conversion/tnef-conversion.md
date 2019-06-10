@@ -108,6 +108,3 @@ The TNEF conversion options for messages sent to external recipients are describ
 The setting at a higher level overrides the setting at a lower level. The TNEF setting on the remote domain overrides the TNEF setting on the mail contact or mail user, or the setting in Outlook. For example, suppose you send a Rich Text message in Outlook, but the recipient is in a domain where the remote domain setting specifically doesn't allow TNEF messages. The message received by the recipient will be plain text or HTML, but not TNEF.
 
  **Note**: Exchange never sends Summary Transport Neutral Encoding Format (STNEF) messages to external recipients. Only TNEF messages can be sent to recipients outside the Exchange organization.
-
-
-

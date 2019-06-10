@@ -26,15 +26,15 @@ In Exchange 2013, OAuth configuration with partner applications such as SharePoi
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes.
+- Estimated time to complete: 5 minutes.
 
-  - The partner application must publish an auth metadata document for Exchange 2013 to establish a direct trust to this application and accept authentication requests.
+- The partner application must publish an auth metadata document for Exchange 2013 to establish a direct trust to this application and accept authentication requests.
 
-  - Examples in this topic use the following default location of the `\Scripts` directory: `C:\Program Files\Microsoft\Exchange Server\V15\Scripts`.
+- Examples in this topic use the following default location of the `\Scripts` directory: `C:\Program Files\Microsoft\Exchange Server\V15\Scripts`.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Partner applications - configure" entry in the [Sharing and collaboration permissions](sharing-and-collaboration-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Partner applications - configure" entry in the [Sharing and collaboration permissions](sharing-and-collaboration-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -48,15 +48,15 @@ After configuring OAuth authentication from Exchange, the partner application ca
 This example configures OAuth authentication for SharePoint 2013.
 
 ```powershell
-    Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
-    Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://sharepoint.contoso.com/_layouts/15/metadata/json/1 -ApplicationType SharePoint
+Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
+Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://sharepoint.contoso.com/_layouts/15/metadata/json/1 -ApplicationType SharePoint
 ```
 
 This example configures OAuth authentication for Lync Server 2013.
 
 ```powershell
-    Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
-    Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://lync.contoso.com/metadata/json/1 -ApplicationType Lync
+Cd C:\Program Files\Microsoft\Exchange Server\V15\Scripts
+Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl https://lync.contoso.com/metadata/json/1 -ApplicationType Lync
 ```
 
 ## How do you know this worked?
@@ -65,6 +65,6 @@ To verify that you have successfully configured an enterprise partner applicatio
 
 ## More information
 
-  - In hybrid deployments, you can use OAuth authentication between your on-premises Exchange 2013 organization and the Exchange Online organization. For more information, see [Using OAuth authentication to support eDiscovery in an Exchange hybrid deployment](using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help.md).
+- In hybrid deployments, you can use OAuth authentication between your on-premises Exchange 2013 organization and the Exchange Online organization. For more information, see [Using OAuth authentication to support eDiscovery in an Exchange hybrid deployment](using-oauth-authentication-to-support-ediscovery-in-an-exchange-hybrid-deployment-exchange-2013-help.md).
 
-  - In on-premises deployments, you can configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so administrators and compliance officers can use the eDiscovery Center in SharePoint 2013 to search Exchange 2013 mailboxes. For more information, see [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).
+- In on-premises deployments, you can configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so administrators and compliance officers can use the eDiscovery Center in SharePoint 2013 to search Exchange 2013 mailboxes. For more information, see [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).

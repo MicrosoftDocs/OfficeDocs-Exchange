@@ -44,12 +44,12 @@ For information about another type of resource mailbox, a room mailbox, see [Cre
 
 3. Use the options on the page to specify the settings for the new resource mailbox.
 
-  - **\* Equipment name**: Use this box to type a name for the equipment mailbox. This is the name that's listed in the resource mailbox list in the EAC and in your organization's address book. This name is required and it can't exceed 64 characters.
+   - **\* Equipment name**: Use this box to type a name for the equipment mailbox. This is the name that's listed in the resource mailbox list in the EAC and in your organization's address book. This name is required and it can't exceed 64 characters.
 
-    > [!TIP]
-    > Although there are other fields that describe the details of the room, for example, Capacity, consider summarizing the most important details in the equipment name using a consistent naming convention. Why? So users can easily see the details when they select the equipment from the address book in a meeting request.
+   > [!TIP]
+   > Although there are other fields that describe the details of the room, for example, Capacity, consider summarizing the most important details in the equipment name using a consistent naming convention. Why? So users can easily see the details when they select the equipment from the address book in a meeting request.
 
-  - **\* Email address**: An equipment mailbox has an email address to receive booking requests. The email address consists of an alias on the left side of the @ symbol, which must be unique in the forest, and your domain name on the right. The email address is required.
+   - **\* Email address**: An equipment mailbox has an email address to receive booking requests. The email address consists of an alias on the left side of the @ symbol, which must be unique in the forest, and your domain name on the right. The email address is required.
 
 4. When you're finished, click **Save** to create the equipment mailbox.
 
@@ -99,17 +99,17 @@ After you create an equipment mailbox, you can make changes and set additional p
 
 3. On the equipment mailbox properties page, click one of the following sections to view or change properties.
 
-  - [General](#general)
+   - [General](#general)
 
-  - [Delegates](#delegates)
+   - [Delegates](#delegates)
 
-  - [Booking Options](#booking-options)
+   - [Booking Options](#booking-options)
 
-  - [Contact Information](#contact-information)
+   - [Contact Information](#contact-information)
 
-  - [Email Address](#email-address)
+   - [Email Address](#email-address)
 
-  - [MailTip](#mailtip)
+   - [MailTip](#mailtip)
 
 #### General
 <a name="General"> </a>
@@ -199,11 +199,11 @@ Use the **Email Address** section to view or change the email addresses associat
 
   - **Custom address type**: Click this button and type one of the supported non-SMTP email address types in the **\* Email address** box.
 
-     **Notes**:
+    **Notes**:
 
     - With the exception of X.400 addresses, Exchange doesn't validate custom addresses for correct formatting. You must make sure that the custom address you specify complies with the format requirements for that address type.
 
-     - When you add a new email address, you have the option to make it the primary SMTP address.
+    - When you add a new email address, you have the option to make it the primary SMTP address.
 
 - **Automatically update email addresses based on the email address policy applied to this recipient**: Select this check box to have the recipient's email addresses automatically updated based on changes made to email address policies in your organization.
 
@@ -213,7 +213,7 @@ Use the **Email Address** section to view or change the email addresses associat
 Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a booking request to the equipment mailbox. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
 > [!NOTE]
->  MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
+> MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
 ### Use the Exchange Management Shell to change equipment mailbox properties
 
@@ -270,6 +270,3 @@ To verify that you've successfully changed properties for an equipment mailbox, 
   ```
   Get-Mailbox -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'EquipmentMailbox')} | Get-CalendarProcessing | Format-List Identity,ScheduleOnlyDuringWorkHours
   ```
-
-
-

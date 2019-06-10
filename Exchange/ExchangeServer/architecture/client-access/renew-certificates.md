@@ -155,6 +155,3 @@ To verify that you have successfully renewed an Exchange self-signed certificate
 ```
 Get-ExchangeCertificate | where {$_.Status -eq "Valid" -and $_.IsSelfSigned -eq $true} | Format-List FriendlyName,Subject,CertificateDomains,Thumbprint,NotBefore,NotAfter
 ```
-
-
-

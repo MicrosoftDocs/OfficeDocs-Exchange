@@ -22,17 +22,17 @@ This topic shows you how to configure server-to-server authentication between Ex
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 30 minutes.
+- Estimated time to complete this task: 30 minutes.
 
-  - Procedures in this topic require specific permissions. See each procedure for its permissions information.
+- Procedures in this topic require specific permissions. See each procedure for its permissions information.
 
-  - It's supported to install Exchange 2013 and SharePoint 2013 in different domains or forests. A Windows trust relationship between Exchange and SharePoint forests isn't required, because in that circumstance, Exchange and SharePoint will rely on the OAuth 2.0 protocol to trust one another.
+- It's supported to install Exchange 2013 and SharePoint 2013 in different domains or forests. A Windows trust relationship between Exchange and SharePoint forests isn't required, because in that circumstance, Exchange and SharePoint will rely on the OAuth 2.0 protocol to trust one another.
 
-  - The SharePoint 2013 site must be configured to use Secure Sockets Layer (SSL).
+- The SharePoint 2013 site must be configured to use Secure Sockets Layer (SSL).
 
-  - The [Exchange Web Services Managed API](https://go.microsoft.com/fwlink/?linkid=257726) must be installed on every server that is running SharePoint 2013. Reset Internet Information Server (IIS) after installation.
+- The [Exchange Web Services Managed API](https://go.microsoft.com/fwlink/?linkid=257726) must be installed on every server that is running SharePoint 2013. Reset Internet Information Server (IIS) after installation.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -44,7 +44,7 @@ This topic shows you how to configure server-to-server authentication between Ex
 Run the following command to create Exchange 2013 as a trusted security token issuer in SharePoint 2013.
 
 ```powershell
-    New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
+New-SPTrustedSecurityTokenIssuer -Name Exchange -MetadataEndPoint https://<Exchange Server Name or FQDN>/autodiscover/metadata/json/1
 ```
 
 ## Step 2: Configure server-to-server authentication for SharePoint 2013 on a server running Exchange 2013
@@ -54,8 +54,8 @@ Perform this step on an Exchange 2013 server. You need to be assigned permission
 Run this command to configure the SharePoint partner application.
 
 ```powershell
-    cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
-    .\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
+cd c:\'Program Files'\Microsoft\'Exchange Server'\V15\Scripts
+.\Configure-EnterprisePartnerApplication.ps1 -AuthMetadataUrl <path to SharePoint AuthMetadataUrl> -ApplicationType SharePoint
 ```
 
 ## Step 3: Add authorized users to the Discovery Management role group

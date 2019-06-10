@@ -28,23 +28,23 @@ For additional management tasks related to Federation, see [Federation procedure
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 30 minutes.
+- Estimated time to complete: 30 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the *Federation and certificates* permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the *Federation and certificates* permissions entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - You will need to add a TXT record to your public DNS for each new federated domain added to the federation trust. Review the requirements for adding a TXT record with the organization that hosts your public DNS records.
+- You will need to add a TXT record to your public DNS for each new federated domain added to the federation trust. Review the requirements for adding a TXT record with the organization that hosts your public DNS records.
 
-  - For the purposes of this topic, an existing federation trust was configured with the following settings:
+- For the purposes of this topic, an existing federation trust was configured with the following settings:
 
-      - **Contoso.com** is the primary shared domain for the federation trust. (This domain will not be changed.)
+  - **Contoso.com** is the primary shared domain for the federation trust. (This domain will not be changed.)
 
-      - The federated domains **service.contoso.com** and **sales.contoso.com** are included in the existing federation trust.
+  - The federated domains **service.contoso.com** and **sales.contoso.com** are included in the existing federation trust.
 
-      - **Marketing.contoso.com** is an accepted domain in the Exchange organization.
+  - **Marketing.contoso.com** is an accepted domain in the Exchange organization.
 
-  - This topic also covers other federation management tasks, such as viewing and managing certificates used for the federation trust and viewing federation trust parameter information in the Shell.
+- This topic also covers other federation management tasks, such as viewing and managing certificates used for the federation trust and viewing federation trust parameter information in the Shell.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 ## Use the EAC to manage a federation trust
 
@@ -98,7 +98,7 @@ Run the following Shell commands to manage other aspects of a federation trust:
     This example displays the previous, current, and next certificates used by the federation trust "Azure AD authentication".
 
     ```powershell
-        Get-FederationTrust "Azure AD authentication" | Select Org*certificate
+    Get-FederationTrust "Azure AD authentication" | Select Org*certificate
     ```
 
 3. **Check federation certificates status**
@@ -138,13 +138,13 @@ Run the following Shell commands to manage other aspects of a federation trust:
 
 For detailed syntax and parameter information, see the following topics:
 
-  - [Get-FederatedOrganizationIdentifier](https://technet.microsoft.com/en-us/library/dd298149\(v=exchg.150\))
+- [Get-FederatedOrganizationIdentifier](https://technet.microsoft.com/en-us/library/dd298149\(v=exchg.150\))
 
-  - [Get-FederationTrust](https://technet.microsoft.com/en-us/library/dd351262\(v=exchg.150\))
+- [Get-FederationTrust](https://technet.microsoft.com/en-us/library/dd351262\(v=exchg.150\))
 
-  - [Test-FederationTrustCertificate](https://technet.microsoft.com/en-us/library/dd335228\(v=exchg.150\))
+- [Test-FederationTrustCertificate](https://technet.microsoft.com/en-us/library/dd335228\(v=exchg.150\))
 
-  - [Set-FederationTrust](https://technet.microsoft.com/en-us/library/dd298034\(v=exchg.150\))
+- [Set-FederationTrust](https://technet.microsoft.com/en-us/library/dd298034\(v=exchg.150\))
 
 ## How do you know this worked?
 

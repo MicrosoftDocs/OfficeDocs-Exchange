@@ -71,15 +71,15 @@ However, there are client-specific message size limits you can configure for Out
 </tbody>
 </table>
 
-**Comments on ActiveSync limits**
+#### Comments on ActiveSync limits
 
 By default, there is no *maxAllowedContentLength* key in the `web.config` files for ActiveSync. However, the maximum message size for ActiveSync is affected by the **maxAllowedContentLength** value that is applied to all web sites on the server. The default value is 30000000 bytes (30 MB). To see these values for ActiveSync on Client Access Servers and Mailbox servers in IIS Manager, perform the following steps:
 
 1. Do one of the following steps:
 
-      - On Client Access servers, open **IIS Manager**, navigate to **Sites** \> **Default Web Site** and select **Microsoft-Server-ActiveSync**.
+   - On Client Access servers, open **IIS Manager**, navigate to **Sites** \> **Default Web Site** and select **Microsoft-Server-ActiveSync**.
 
-      - On Mailbox servers, open **IIS Manager**, navigate to **Sites** \> **Exchange Back End** and select **Microsoft-Server-ActiveSync**.
+   - On Mailbox servers, open **IIS Manager**, navigate to **Sites** \> **Exchange Back End** and select **Microsoft-Server-ActiveSync**.
 
 2. Verify **Features View** is selected, and double-click **Configuration Editor** in the **Management** section.
 
@@ -130,15 +130,15 @@ To change the maximum message size for ActiveSync clients, you need to change th
 </tbody>
 </table>
 
-**Comments on Exchange Web Services limits**
+#### Comments on Exchange Web Services limits
 
-  - There are 14 separate instances of the value `maxReceivedMessageSize="67108864"` that correspond to different combinations of bindings (http and https) and authentication methods.
+- There are 14 separate instances of the value `maxReceivedMessageSize="67108864"` that correspond to different combinations of bindings (http and https) and authentication methods.
 
-  - To change the maximum message size for Exchange Web Services clients, you need to change the value of *maxAllowedContentLength* in both `web.config` files, and all 14 instances of `maxReceivedMessageSize="67108864"` in the `web.config` file on Mailbox servers.
+- To change the maximum message size for Exchange Web Services clients, you need to change the value of *maxAllowedContentLength* in both `web.config` files, and all 14 instances of `maxReceivedMessageSize="67108864"` in the `web.config` file on Mailbox servers.
 
-  - In the `web.config` file on Mailbox servers, there are also two instances of the value `maxReceivedMessageSize="1048576"` for **UMLegacyMessageEncoderSoap11Element** bindings that you don't need to modify.
+- In the `web.config` file on Mailbox servers, there are also two instances of the value `maxReceivedMessageSize="1048576"` for **UMLegacyMessageEncoderSoap11Element** bindings that you don't need to modify.
 
-  - *maxRequestLength* is an ASP.NET setting that's present in both web.config files, but is not used by Exchange Web Services, so you don't need to modify it.
+- *maxRequestLength* is an ASP.NET setting that's present in both web.config files, but is not used by Exchange Web Services, so you don't need to modify it.
 
 ### Outlook Web App
 
@@ -197,29 +197,29 @@ To change the maximum message size for ActiveSync clients, you need to change th
 </tbody>
 </table>
 
-**Comments on Outlook Web App limits**
+#### Comments on Outlook Web App limits
 
-  - In the `web.config` file on Mailbox servers, there are two separate instances of the values `maxReceivedMessageSize="35000000"` and `maxStringContentLength="35000000"` that correspond to http and https bindings.
+- In the `web.config` file on Mailbox servers, there are two separate instances of the values `maxReceivedMessageSize="35000000"` and `maxStringContentLength="35000000"` that correspond to http and https bindings.
 
-  - To change the maximum message size for Outlook Web App clients, you need to change all of these values in both files, including both instances of *maxReceivedMessageSize* and *maxStringContentLength* in the `web.config` file on Mailbox servers.
+- To change the maximum message size for Outlook Web App clients, you need to change all of these values in both files, including both instances of *maxReceivedMessageSize* and *maxStringContentLength* in the `web.config` file on Mailbox servers.
 
-  - In the `web.config` file on Mailbox servers, there is also an instance of the value `maxStringContentLength="102400"` for the **MsOnlineShellService** binding that you don't need to modify.
+- In the `web.config` file on Mailbox servers, there is also an instance of the value `maxStringContentLength="102400"` for the **MsOnlineShellService** binding that you don't need to modify.
 
 For all message size limits, you need to set values that are larger than the actual sizes you want enforced. This increase in values is necessary to account for the inevitable message size increase that occurs after the message attachments and any other binary data are Base64 encoded. Base64 encoding increases the size of the message by approximately 33%, so the values you specify for any message size limits are approximately 33% larger than the actual usable message sizes. For example, if you specify a maximum message size value of 64 MB, you can expect a realistic maximum message size value of approximately 48 MB.
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 15 minutes
+- Estimated time to complete: 15 minutes
 
-  - Exchange permissions don't apply to the procedures in this topic. These procedures are performed in the operating system of the Exchange Server.
+- Exchange permissions don't apply to the procedures in this topic. These procedures are performed in the operating system of the Exchange Server.
 
-  - Changes you save to the Web.config configuration file are applied after you restart IIS.
+- Changes you save to the Web.config configuration file are applied after you restart IIS.
 
-  - To allow for a 33% increase in size due to Base64 encoding, multiply your desired new maximum size value in megabytes by 4/3. To convert the value into kilobytes, multiply by 1024. To convert the value into bytes, multiply by 1048756 (1024\*1024). Note that the size increase caused by Base64 encoding could be greater than 33%, and depends on several factors, for example, the attachment file size, type, compression, and the email client used to compose and send the message.
+- To allow for a 33% increase in size due to Base64 encoding, multiply your desired new maximum size value in megabytes by 4/3. To convert the value into kilobytes, multiply by 1024. To convert the value into bytes, multiply by 1048756 (1024\*1024). Note that the size increase caused by Base64 encoding could be greater than 33%, and depends on several factors, for example, the attachment file size, type, compression, and the email client used to compose and send the message.
 
-  - Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
+- Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

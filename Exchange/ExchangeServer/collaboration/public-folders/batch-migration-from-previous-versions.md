@@ -477,4 +477,3 @@ If you run into issues with the migration and need to reactivate your Exchange 2
    ```
    Set-OrganizationConfig -PublicFolderMigrationComplete $false
    ```
-

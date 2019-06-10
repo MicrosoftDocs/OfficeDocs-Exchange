@@ -152,37 +152,35 @@ Looking for management tasks related to Administrator audit logs? See [Manage ad
 
 The following is an example of a typical audit log entry. Based on the information in log entry, we know the following occurred:
 
-  - On 10/18/2012 at 3:48 P.M. Pacific Daylight Time (UTC-7), the user `Administrator` ran the cmdlet **Set-Mailbox**.
+- On 10/18/2012 at 3:48 P.M. Pacific Daylight Time (UTC-7), the user `Administrator` ran the cmdlet **Set-Mailbox**.
 
-  - The two following parameters were provided when the **Set-Mailbox** cmdlet was run:
+- The two following parameters were provided when the **Set-Mailbox** cmdlet was run:
 
-      - *Identity* with a value of `david`
+  - *Identity* with a value of `david`
 
-      - *ProhibitSendReceiveQuota* with a value of `10GB`
+  - *ProhibitSendReceiveQuota* with a value of `10GB`
 
-  - The two following properties on the object `david` were modified:
+- The two following properties on the object `david` were modified:
 
-    > [!NOTE]
-    > The modified properties are saved to the audit log because the <EM>LogLevel</EM> parameter on the <CODE>Set-AdminAuditLogConfig</CODE> cmdlet was set to <CODE>Verbose</CODE> in this example.
+  > [!NOTE]
+  > The modified properties are saved to the audit log because the <EM>LogLevel</EM> parameter on the <CODE>Set-AdminAuditLogConfig</CODE> cmdlet was set to <CODE>Verbose</CODE> in this example.
 
-      - *ProhibitSendReceiveQuota* with a new value of `10GB`, which replaced the old value of `35GB`
+  - *ProhibitSendReceiveQuota* with a new value of `10GB`, which replaced the old value of `35GB`
 
-  - The operation completed successfully without any errors.
-
-<!-- end list -->
+- The operation completed successfully without any errors.
 
 ```XML
-    <?xml version="1.0" encoding="utf-8"?>
-    <SearchResults>
+<?xml version="1.0" encoding="utf-8"?>
+<SearchResults>
 
-      <Event Caller="corp.e15a.contoso.com/Users/Administrator" Cmdlet="Set-Mailbox" ObjectModified="corp.e15a.contoso.com/Users/david" RunDate="2012-10-18T15:48:15-07:00" Succeeded="true" Error="None" OriginatingServer="WIN8MBX (15.00.0516.032)">
-        <CmdletParameters>
-          <Parameter Name="Identity" Value="david" />
-          <Parameter Name="ProhibitSendReceiveQuota" Value="10 GB (10,737,418,240 bytes)" />
-        </CmdletParameters>
-        <ModifiedProperties>
-          <Property Name="ProhibitSendReceiveQuota" OldValue="35 GB (37,580,963,840 bytes)" NewValue="10 GB (10,737,418,240 bytes)" />
-        </ModifiedProperties>
-      </Event>
-    </SearchResults>
+  <Event Caller="corp.e15a.contoso.com/Users/Administrator" Cmdlet="Set-Mailbox" ObjectModified="corp.e15a.contoso.com/Users/david" RunDate="2012-10-18T15:48:15-07:00" Succeeded="true" Error="None" OriginatingServer="WIN8MBX (15.00.0516.032)">
+    <CmdletParameters>
+      <Parameter Name="Identity" Value="david" />
+      <Parameter Name="ProhibitSendReceiveQuota" Value="10 GB (10,737,418,240 bytes)" />
+    </CmdletParameters>
+    <ModifiedProperties>
+      <Property Name="ProhibitSendReceiveQuota" OldValue="35 GB (37,580,963,840 bytes)" NewValue="10 GB (10,737,418,240 bytes)" />
+    </ModifiedProperties>
+  </Event>
+</SearchResults>
 ```

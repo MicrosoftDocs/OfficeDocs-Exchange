@@ -16,27 +16,27 @@ mtps_version: v=EXCHG.150
 
 This topic explains how to update the self-signed federation certificate that's used in a federation trust:
 
-  - If the federation certificate hasn't expired, follow the steps in the Update a working federation certificate section.
+- If the federation certificate hasn't expired, follow the steps in the Update a working federation certificate section.
 
-  - If the federation certificate has already expired, follow the steps in the Replace an expired federation certificate section.
+- If the federation certificate has already expired, follow the steps in the Replace an expired federation certificate section.
 
 For more information about federation trusts and federation, see [Federation](federation-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 10 minutes.
+- Estimated time to complete: 10 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Federation and certificates" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Federation and certificates" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - The procedures in this topic use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/en-us/library/dd638134\(v=exchg.150\)).
+- The procedures in this topic use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/en-us/library/dd638134\(v=exchg.150\)).
 
-  - To see if your existing federation certificate has expired, run the following command in the Exchange Management Shell:
+- To see if your existing federation certificate has expired, run the following command in the Exchange Management Shell:
 
-    ```powershell
-        Get-ExchangeCertificate -Thumbprint (Get-FederationTrust).OrgCertificate.Thumbprint | Format-Table -Auto Thumbprint,NotAfter
-    ```
+  ```powershell
+  Get-ExchangeCertificate -Thumbprint (Get-FederationTrust).OrgCertificate.Thumbprint | Format-Table -Auto Thumbprint,NotAfter
+  ```
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!WARNING]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -139,17 +139,17 @@ For detailed syntax and parameter information, see [Set-FederationTrust](https:/
 
 To verify that you've successfully updated the existing federation trust with a new federation certificate, use these steps:
 
-  - In the Exchange Management Shell, run the following command to verify that the new certificate is being used:
+- In the Exchange Management Shell, run the following command to verify that the new certificate is being used:
 
-    ```powershell
-        Get-FederationTrust | Format-List *priv*
-    ```
+  ```powershell
+  Get-FederationTrust | Format-List *priv*
+  ```
 
-      - The **OrgPrivCertificate** property should contain the thumbprint of the new federation certificate.
+  - The **OrgPrivCertificate** property should contain the thumbprint of the new federation certificate.
 
-      - The **OrgPrevPrivCertificate** property should contain the thumbprint of the old (replaced) federation certificate.
+  - The **OrgPrevPrivCertificate** property should contain the thumbprint of the old (replaced) federation certificate.
 
-  - In the Exchange Management Shell, replace *\<user's email address\>* with the email address of a user in your org, and run the following command to verify that the federation trust is working:
+- In the Exchange Management Shell, replace *\<user's email address\>* with the email address of a user in your org, and run the following command to verify that the federation trust is working:
 
     ```powershell
     Test-FederationTrust -UserIdentity <user's email address>

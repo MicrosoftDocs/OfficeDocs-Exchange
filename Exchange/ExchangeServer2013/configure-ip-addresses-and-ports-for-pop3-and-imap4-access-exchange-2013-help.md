@@ -25,11 +25,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 5 minutes.
+- Estimated time to complete each procedure: 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 settings" and "IMAP4 settings" entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "POP3 settings" and "IMAP4 settings" entries in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -48,11 +48,11 @@ For additional information related to POP3 and IMAP4, see [POP3 and IMAP4 in Exc
 
 5. On the **Add IP address** page, under **IP address**, choose one of the following:
 
-      - **All available IPv4 addresses**: Use all available IPv4 IP addresses for a server.
+   - **All available IPv4 addresses**: Use all available IPv4 IP addresses for a server.
 
-      - **All available IPv6 addresses**: Use all available IPv6 IP addresses for a server.
+   - **All available IPv6 addresses**: Use all available IPv6 IP addresses for a server.
 
-      - **Specify an IP address**: Use a specific IP address.
+   - **Specify an IP address**: Use a specific IP address.
 
 6. Under **Port**, enter a port number, or accept the default port.
 
@@ -84,9 +84,9 @@ Do the following to verify that you have changed POP3 IP address and port settin
 
 1. Run the following command in the Shell.
 
-    ```powershell
-    Get-PopSettings | format-list
-    ```
+   ```powershell
+   Get-PopSettings | format-list
+   ```
 
 2. Verify the *UnencryptedOrTLSBindings* and *SSLBindings* settings are correct.
 
@@ -104,11 +104,11 @@ Do the following to verify that you have changed POP3 IP address and port settin
 
 5. On the **Add IP address** page, under **IP address**, choose one of the following:
 
-      - **All available IPv4 addresses**: Use all available IPv4 IP addresses for a server.
+   - **All available IPv4 addresses**: Use all available IPv4 IP addresses for a server.
 
-      - **All available IPv6 addresses**: Use all available IPv6 IP addresses for a server.
+   - **All available IPv6 addresses**: Use all available IPv6 IP addresses for a server.
 
-      - **Specify an IP address**: Use a specific IP address.
+   - **Specify an IP address**: Use a specific IP address.
 
 6. Under **Port**, enter a port number, or accept the default port.
 
@@ -127,7 +127,7 @@ Set-ImapSettings -SSLBindings: IPaddress:Port
 This example sets the IP address and port for communicating with Exchange by using IMAP4 with no encryption or TLS encryption.
 
 ```powershell
-    Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port
+Set-ImapSettings -UnencryptedOrTLSBindings IPaddress:Port
 ```
 
 After you've set the IP address and port settings for IMAP4, you must restart the IMAP4 service for the settings to take effect. For information about how to restart the IMAP4 service, see [Start and stop the IMAP4 services](start-and-stop-the-imap4-services-exchange-2013-help.md).
@@ -140,9 +140,9 @@ Do the following to verify that you have changed IMAP4 IP address and port setti
 
 1. Run the following command in the Shell.
 
-    ```powershell
-    Get-ImapSettings | format-list
-    ```
+   ```powershell
+   Get-ImapSettings | format-list
+   ```
 
 2. Verify the *UnencryptedOrTLSBindings* and *SSLBindings* settings are correct.
 

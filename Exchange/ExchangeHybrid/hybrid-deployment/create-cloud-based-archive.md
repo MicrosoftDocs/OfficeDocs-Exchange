@@ -151,8 +151,6 @@ Before directory synchronization provisions the cloud-based archive, the _Archiv
 
 After directory synchronization provisions the cloud-based archive, the _ArchiveStatus_ property is set to `Active` and the _ArchiveState_ property is set to `HostedProvisioned`. At this point, the user will be able to access their cloud-based archive mailbox in Outlook or Outlook on the web.
 
-[Return to top](create-cloud-based-archive.md#top)
-
 ## (Optional) Run directory synchronization
 
 As previously explained, the cloud-base archive mailbox is created by the process of directory synchronization. By default, your on-premises Active Directory is synchronized with Azure AD in Office 365 once every 30 minutes. You can see when the last time directory synchronization occurred by going to **Health** \> **Directory sync status** in the Office 365 admin center.
@@ -164,5 +162,3 @@ Start-ADSyncSyncCycle -PolicyType Delta
 ```
 
 For more information, see [Azure AD Connect sync: Scheduler](https://go.microsoft.com/fwlink/p/?linkid=836813).
-
-[Return to top](create-cloud-based-archive.md#top)

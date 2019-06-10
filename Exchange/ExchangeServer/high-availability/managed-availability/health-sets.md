@@ -105,6 +105,3 @@ Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table 
 ```
 
 For detailed syntax and parameter information, see [Get-ServerHealth](http://technet.microsoft.com/library/ca9cff3a-ecda-422d-abd7-b7d8da71a6c7.aspx).
-
-
-

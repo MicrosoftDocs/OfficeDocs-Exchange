@@ -244,6 +244,3 @@ To verify that you have successfully used the Exchange Management Shell to confi
   ```
 
 2. Open the location of the protocol log in Windows Explorer or File Explorer to verify that the log files exist, that data is being written to the files, and that the files are being recycled based on the maximum file size and maximum directory size values that you configured.
-
-
-

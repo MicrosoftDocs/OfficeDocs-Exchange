@@ -166,6 +166,3 @@ To verify that you have applied the retention policy, do the following:
   ```
 
 2. Log on to the mailbox using Outlook or Outlook on the web and verify that messages are deleted or moved to an archive in accordance with the policy configuration.
-
-
-

@@ -92,6 +92,3 @@ The Mailbox Replication Service Proxy (MRS Proxy) facilitates cross-forest mailb
 - For both onboarding and offboarding remote move migrations in hybrid deployments, you need to enable the MRS Proxy endpoint in the Client Access services on Mailbox servers in the on-premises Exchange organization.
 
 For more information, see [Enable the MRS Proxy endpoint for remote moves](../architecture/mailbox-servers/mrs-proxy-endpoint.md).
-
-
-

@@ -72,6 +72,3 @@ The Front End Transport service on a Mailbox server (part of the Client Access s
 - A shadow copy of the message is made by the Transport service on a different Mailbox server within the transport high availability boundary (DAG or Active Directory site).
 
 Only after both the primary message and shadow message are successfully created, the end of data SMTP command is sent back to the sending SMTP server through the Front End Transport service.
-
-
-

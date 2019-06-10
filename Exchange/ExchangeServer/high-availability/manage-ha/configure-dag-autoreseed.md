@@ -267,6 +267,3 @@ To verify that you've configured AutoReseed for a DAG, do the following:
   ```
   Dir c:\ExchangeVolumes /s
   ```
-
-
-

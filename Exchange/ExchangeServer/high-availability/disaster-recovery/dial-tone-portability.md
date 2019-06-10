@@ -48,6 +48,3 @@ All three options follow the same basic steps:
     To get the data from the dial tone database into the restored database, you merge the data using the [New-MailboxRestoreRequest](http://technet.microsoft.com/library/0b67defd-3c6c-4470-acfa-7f22a6c1d2bd.aspx) cmdlet.
 
 For detailed steps about how to perform a dial tone recovery, see [Perform a dial tone recovery](dial-tone-recovery.md).
-
-
-

@@ -302,6 +302,3 @@ The log files are stored at `%ExchangeInstallPath%Logging\Resolver`.
 
 > [!NOTE]
 > Any customized Exchange or Internet Information Server (IIS) settings that you made in Exchange XML application configuration files on the Exchange server (for example, web.config files or the EdgeTransport.exe.config file) **will be overwritten** when you install an Exchange CU. Be sure save this information so you can easily re-apply the settings after the install. After you install the Exchange CU, you need to re-configure these settings.
-
-
-

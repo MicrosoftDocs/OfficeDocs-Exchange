@@ -189,6 +189,3 @@ Users who are assigned the View-Only Management role group can view the configur
 |Text messaging notification settings|[Recipient Management](http://technet.microsoft.com/library/669d602e-68e3-41f9-a455-b942d212d130.aspx)|
 |Text messaging settings|[Recipient Management](http://technet.microsoft.com/library/669d602e-68e3-41f9-a455-b942d212d130.aspx)|
 |Text messaging user settings|[Recipient Management](http://technet.microsoft.com/library/669d602e-68e3-41f9-a455-b942d212d130.aspx)|
-
-
-

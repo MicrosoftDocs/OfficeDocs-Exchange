@@ -52,6 +52,3 @@ This article contains factors to consider before you deploy public folders in yo
 - You must use Outlook 2010 or later to access public folders on Exchange servers.
 
 - Retention policies aren't supported for public folder mailboxes.
-
-
-

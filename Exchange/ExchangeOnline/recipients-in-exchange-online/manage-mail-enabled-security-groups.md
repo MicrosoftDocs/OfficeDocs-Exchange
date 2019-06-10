@@ -257,6 +257,5 @@ To verify that you've successfully changed properties for a security group, do t
 - In Exchange Online PowerShell, use the **Get-DistributionGroup** cmdlet to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple groups. In the example above where all security groups were hidden from the address book, run the following command to verify the new value.
 
   ```
-  Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')} |
-   fl Name,HiddenFromAddressListsEnabled
+  Get-DistributionGroup -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'MailUniversalSecurityGroup')} | Format-List Name,HiddenFromAddressListsEnabled
   ```

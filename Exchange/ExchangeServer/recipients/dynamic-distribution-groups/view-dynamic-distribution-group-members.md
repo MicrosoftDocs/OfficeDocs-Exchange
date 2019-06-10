@@ -46,6 +46,3 @@ Get-Recipient -RecipientPreviewFilter $FTE.RecipientFilter -OrganizationalUnit $
 ```
 
 For detailed syntax and parameter information, see [Get-DynamicDistributionGroup](http://technet.microsoft.com/library/d97ee738-dfa1-464b-855a-4242e8065473.aspx) and [Get-Recipient](http://technet.microsoft.com/library/2ce6250f-0ad3-4b29-870c-e1d6e1e154bc.aspx).
-
-
-

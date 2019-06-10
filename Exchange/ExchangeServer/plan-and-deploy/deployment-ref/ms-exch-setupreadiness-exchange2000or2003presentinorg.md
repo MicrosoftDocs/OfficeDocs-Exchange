@@ -54,4 +54,3 @@ When upgrading to Exchange 2010 or later, you can use the Exchange Deployment As
 - [Exchange 2013 Deployment Assistant](https://go.microsoft.com/fwlink/p/?LinkId=277105)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

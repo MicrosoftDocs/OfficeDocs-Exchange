@@ -18,39 +18,39 @@ _**Applies to:** Exchange Server 2013_
 
 This topic provides the steps for installing the necessary Windows Server 2012 R2, Windows Server 2012 and Windows Server 2008 R2 with Service Pack 1 (SP1) operating system prerequisites for the Microsoft Exchange 2013 Mailbox, Client Access, and Edge Transport server roles. It also provides the prerequisites required to install the Exchange 2013 management tools on Windows 8, Windows 8.1, and Windows 7 client computers.
 
-  - What do you need to know before you begin?
+- What do you need to know before you begin?
 
-  - Active Directory preparation
+- Active Directory preparation
 
-  - Windows Server 2012 R2 and Windows Server 2012 prerequisites
+- Windows Server 2012 R2 and Windows Server 2012 prerequisites
 
-      - Mailbox or Client Access server roles
+  - Mailbox or Client Access server roles
 
-      - Edge Transport server role
+  - Edge Transport server role
 
-  - Windows Server 2008 R2 SP1 prerequisites
+- Windows Server 2008 R2 SP1 prerequisites
 
-      - Mailbox or Client Access server roles
+  - Mailbox or Client Access server roles
 
-      - Edge Transport server role
+  - Edge Transport server role
 
-  - Windows 7 prerequisites (admin tools only)
+- Windows 7 prerequisites (admin tools only)
 
-  - Windows 8 and Windows 8.1 prerequisites (admin tools only)
+- Windows 8 and Windows 8.1 prerequisites (admin tools only)
 
 ## What do you need to know before you begin?
 
-  - The information in this topic is applicable to Service Pack 1 and later versions of Exchange 2013.
+- The information in this topic is applicable to Service Pack 1 and later versions of Exchange 2013.
 
-  - The Edge Transport server role is available starting with Exchange 2013 SP1.
+- The Edge Transport server role is available starting with Exchange 2013 SP1.
 
-  - Make sure that the functional level of your forest is at least Windows Server 2003, and that the schema master is running Windows Server 2003 with Service Pack 2 or later. For more information about the Windows functional level, see [Managing Domains and Forests](https://go.microsoft.com/fwlink/p/?linkid=137037).
+- Make sure that the functional level of your forest is at least Windows Server 2003, and that the schema master is running Windows Server 2003 with Service Pack 2 or later. For more information about the Windows functional level, see [Managing Domains and Forests](https://go.microsoft.com/fwlink/p/?linkid=137037).
 
-  - The full installation option of Windows Server 2012 R2, Windows Server 2012 and Windows Server 2008 R2 SP1 must be used for all servers running Exchange 2013 server roles or management tools.
+- The full installation option of Windows Server 2012 R2, Windows Server 2012 and Windows Server 2008 R2 SP1 must be used for all servers running Exchange 2013 server roles or management tools.
 
-  - You must first join the computer to the appropriate internal Active Directory forest and domain.
+- You must first join the computer to the appropriate internal Active Directory forest and domain.
 
-  - Some prerequisites require you to reboot the server to complete installation.
+- Some prerequisites require you to reboot the server to complete installation.
 
   - Install the latest Windows updates on your computer. For more information, see [Deployment security checklist](deployment-security-checklist-exchange-2013-help.md).
 
@@ -76,17 +76,17 @@ After you've installed the software listed above, complete the following steps t
 
 2. Install the Remote Tools Administration Pack.
 
-      - On a Windows Server 2012 R2 or Windows Server 2012 computer, run the following command.
+   - On a Windows Server 2012 R2 or Windows Server 2012 computer, run the following command.
 
-        ```powershell
-        Install-WindowsFeature RSAT-ADDS
-        ```
+     ```powershell
+     Install-WindowsFeature RSAT-ADDS
+     ```
 
-      - On a Windows Server 2008 R2 SP1 computer, run the following command.
+   - On a Windows Server 2008 R2 SP1 computer, run the following command.
 
-        ```powershell
-        Add-WindowsFeature RSAT-ADDS
-        ```
+     ```powershell
+     Add-WindowsFeature RSAT-ADDS
+     ```
 
 ## Windows Server 2012 R2 and Windows Server 2012 prerequisites
 
@@ -96,11 +96,11 @@ The prerequisites that are needed to install Exchange 2013 on a Windows Server 2
 
 Follow the instructions in this section to install the prerequisites on Windows Server 2012 R2 or Windows Server 2012 computers where you want to do one of the following:
 
-  - Install only the Mailbox server role on a computer.
+- Install only the Mailbox server role on a computer.
 
-  - Install only the Client Access server role on a computer.
+- Install only the Client Access server role on a computer.
 
-  - Install both the Mailbox and Client Access server roles on the same computer.
+- Install both the Mailbox and Client Access server roles on the same computer.
 
 Do the following to install the required Windows roles and features:
 
@@ -109,7 +109,7 @@ Do the following to install the required Windows roles and features:
 2. Run the following command to install the required Windows components.
 
     ```powershell
-        Install-WindowsFeature AS-HTTP-Activation, Desktop-Experience, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
+    Install-WindowsFeature AS-HTTP-Activation, Desktop-Experience, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, Web-Mgmt-Console, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
     ```
 
 After you've installed the operating system roles and features, install the following software in the order shown:
@@ -166,11 +166,11 @@ The prerequisites that are needed to install Exchange 2013 on a Windows Server 2
 
 Follow the instructions in this section to install the prerequisites on Windows Server 2008 R2 SP1 computers where you want to do one of the following:
 
-  - Install only the Mailbox server role on a computer.
+- Install only the Mailbox server role on a computer.
 
-  - Install only the Client Access server role on a computer.
+- Install only the Client Access server role on a computer.
 
-  - Install both the Mailbox and Client Access server roles on the same computer.
+- Install both the Mailbox and Client Access server roles on the same computer.
 
 Do the following to install the required Windows roles and features:
 
@@ -184,9 +184,9 @@ Do the following to install the required Windows roles and features:
 
 3. Run the following command to install the required Windows components.
 
-    ```powershell
-        Add-WindowsFeature Desktop-Experience, NET-Framework, NET-HTTP-Activation, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Web-Server, WAS-Process-Model, Web-Asp-Net, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, RSAT-ADDS
-    ```
+   ```powershell
+   Add-WindowsFeature Desktop-Experience, NET-Framework, NET-HTTP-Activation, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Web-Server, WAS-Process-Model, Web-Asp-Net, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, RSAT-ADDS
+   ```
 
 After you've installed the operating system roles and features, install the following software in the order shown:
 
@@ -203,8 +203,8 @@ After you've installed the operating system roles and features, install the foll
 
 5. [Visual C++ Redistributable Package for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 
-  > [!NOTE]
-  > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+   > [!NOTE]
+   > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 6. [Microsoft Knowledge Base article KB974405 (Windows Identity Foundation)](http://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
 
@@ -239,8 +239,8 @@ After you've installed the operating system roles and features, install the foll
 
 1. [.NET Framework 4.7.1](https://www.microsoft.com/download/details.aspx?id=56116)
 
-    > [!IMPORTANT]
-    > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
+   > [!IMPORTANT]
+   > Exchange 2013 CU21 <STRONG>require</STRONG> .NET Framework 4.7.1. Upgrade your servers to .NET Framework 4.7.1 before you install Exchange 2013 CU21 or you'll receive an error. If .NET Framework 4.6.2 is installed on your Exchange servers, upgrade your servers to Exchange 2013 CU20 before installing .NET Framework 4.7.1.
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
@@ -248,8 +248,8 @@ After you've installed the operating system roles and features, install the foll
 
 4. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679)
 
-  > [!NOTE]
-  > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+   > [!NOTE]
+   > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 ## Windows 7 prerequisites (admin tools only)
 

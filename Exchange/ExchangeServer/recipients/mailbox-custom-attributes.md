@@ -111,6 +111,3 @@ In this example, Kweku's _ExtensionCustomAttribute1_ values are updated to refle
 ```
 Set-Mailbox -Identity Kweku -ExtensionCustomAttribute1 @{Add="ENGL210"; Remove="ECON202"}
 ```
-
-
-

@@ -74,7 +74,7 @@ The final step in this procedure is to configure the user mailboxes to allow acc
 Enable the Exchange Server 2013 on-premises users to access the legacy public folders. You will point to all of the proxy public folder mailboxes that you created in [Step 1: Make the Exchange 2010 public folders discoverable](https://docs.microsoft.com/en-us/exchange/collaboration-exo/public-folders/set-up-legacy-hybrid-public-folders). Run the following command from an Exchange 2013 server with the CU5 or higher update.
 
 ```powershell
-    Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
+Set-OrganizationConfig -PublicFoldersEnabled Remote -RemotePublicFolderMailboxes ProxyMailbox1,ProxyMailbox2,ProxyMailbox3
 ```
 
 > [!NOTE]
@@ -92,18 +92,18 @@ Log on to Outlook for a user whose mailbox is on an Exchange Server 2013 CU5 or 
 
 4. Make sure the Text E-mail Auto Configuration tool returns the following information in the XML tab:
 
-      - \<PublicFolderInformation\>
+   - \<PublicFolderInformation\>
 
-      - \<SmtpAddress\>\<SMTP Address for public folder mailbox\</SmtpAddress\>
+   - \<SmtpAddress\>\<SMTP Address for public folder mailbox\</SmtpAddress\>
 
-      - \</PublicFolderInformation\>
+   - \</PublicFolderInformation\>
 
 5. In the Outlook client, peform the following tasks:
 
-      - View the public folder hierarchy.
+   - View the public folder hierarchy.
 
-      - Check permissions.
+   - Check permissions.
 
-      - Create and delete public folders.
+   - Create and delete public folders.
 
-      - Post content to and delete content from a public folder.
+   - Post content to and delete content from a public folder.

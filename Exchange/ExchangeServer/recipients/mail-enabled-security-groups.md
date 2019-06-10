@@ -538,4 +538,3 @@ To verify that you've successfully mail-disabled an existing mail-enabled univer
   ```
   Get-Group -Filter {RecipientTypeDetails -eq 'UniversalSecurityGroup'}
   ```
-

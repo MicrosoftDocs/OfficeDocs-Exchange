@@ -40,4 +40,3 @@ If you install Exchange on a domain controller, be aware of the following issues
 Therefore, we recommend that you install Exchange on a member server, not on a domain controller.
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

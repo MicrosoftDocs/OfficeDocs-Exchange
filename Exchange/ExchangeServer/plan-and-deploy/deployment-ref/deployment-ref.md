@@ -32,4 +32,3 @@ manager: dansimp
 [Overview of Exchange services on Exchange servers](services-overview.md)
 
 [Exchange 2019 preferred architecture](preferred-architecture-2019.md)
-

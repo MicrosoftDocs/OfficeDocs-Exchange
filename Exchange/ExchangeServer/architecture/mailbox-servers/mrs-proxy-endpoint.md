@@ -105,6 +105,3 @@ To verify that you've successfully enabled the MRS Proxy endpoint, do any of the
     To run this command successfully, the MRS Proxy endpoint must be enabled.
 
     For detailed syntax and parameter information, see [Test-MigrationServerAvailability](http://technet.microsoft.com/library/a0959dbe-94ae-4f2e-8e2c-e5d5bd5e1521.aspx).
-
-
-

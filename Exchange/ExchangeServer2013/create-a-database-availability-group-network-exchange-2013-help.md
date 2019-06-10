@@ -22,15 +22,15 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 1 minute
+- Estimated time to complete: 1 minute
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Database availability groups" entry in the [High availability and site resilience permissions](high-availability-and-site-resilience-permissions-exchange-2013-help.md) topic.
 
-  - You can create a DAG network only when automatic network configuration has been disabled for a DAG. For detailed steps about how to disable automatic network configuration for a DAG, see [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md).
+- You can create a DAG network only when automatic network configuration has been disabled for a DAG. For detailed steps about how to disable automatic network configuration for a DAG, see [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md).
 
-  - When creating a DAG network, you must assign unique subnets that aren't in use by another DAG network. If you use subnets that are assigned to an existing DAG network, they will be removed from that DAG network and added to the newly created DAG network.
+- When creating a DAG network, you must assign unique subnets that aren't in use by another DAG network. If you use subnets that are assigned to an existing DAG network, they will be removed from that DAG network and added to the newly created DAG network.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -43,11 +43,11 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 
 3. On the **new database availability group network** page, provide the following information:
 
-      - **Database availability group network name**: Use this field to type a name for the network that's unique in the DAG.
+   - **Database availability group network name**: Use this field to type a name for the network that's unique in the DAG.
 
-      - **Description**: Use this field to provide a text description of the DAG network.
+   - **Description**: Use this field to provide a text description of the DAG network.
 
-      - **Subnets**: Use this field to associate one or more subnets with the DAG network. Click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add a subnet, click ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to edit a subnet, and click minus (-) to remove a subnet.
+   - **Subnets**: Use this field to associate one or more subnets with the DAG network. Click ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon") to add a subnet, click ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon") to edit a subnet, and click minus (-) to remove a subnet.
 
 4. Click **Save** to create the DAG network.
 
@@ -56,16 +56,16 @@ Looking for other management tasks related to DAGs? Check out [Managing database
 This example creates the network ReplicationDagNetwork02 with a subnet of 10.0.0.0 and a bitmask of 8 in the DAG DAG1. Replication is enabled for the network, and an optional description of the network is also being added.
 
 ```powershell
-    New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name ReplicationDagNetwork02 -Description "Replication network 2" -Subnets 10.0.0.0/8 -ReplicationEnabled:$True
+New-DatabaseAvailabilityGroupNetwork -DatabaseAvailabilityGroup DAG1 -Name ReplicationDagNetwork02 -Description "Replication network 2" -Subnets 10.0.0.0/8 -ReplicationEnabled:$True
 ```
 
 ## How do you know this worked?
 
 To verify that you've successfully created a DAG network, do one of the following:
 
-  - In the EAC, navigate to **Servers** \> **Database Availability Groups**. Select the appropriate DAG, and the newly created DAG network is displayed in the details pane.
+- In the EAC, navigate to **Servers** \> **Database Availability Groups**. Select the appropriate DAG, and the newly created DAG network is displayed in the details pane.
 
-  - In the Shell, run the following command to verify the DAG network was created and to display DAG network configuration information.
+- In the Shell, run the following command to verify the DAG network was created and to display DAG network configuration information.
 
     ```powershell
     Get-DatabaseAvailabilityGroupNetwork <DAGNetworkName> | Format-List

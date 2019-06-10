@@ -223,6 +223,3 @@ This header field instructs a MIME-enabled email client on how it should display
 - `Inline`: The attachment is displayed in the message body.
 
 - `Attachment`: The attached file appears as a regular attachment separate from the message body. Other parameters are also with this values (for example, `Filename`, `Creation-date`, and `Size`).
-
-
-

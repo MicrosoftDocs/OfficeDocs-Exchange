@@ -242,6 +242,3 @@ After the solution has been deployed, it can be extended further using increment
 - Perform database switchovers as needed. For detailed steps about how to perform a database switchover, see [Activate a mailbox database copy](manage-ha/activate-db-copies.md).
 
 For more information about managing the solution, see [Managing high availability and site resilience](manage-ha/manage-ha.md).
-
-
-

@@ -286,6 +286,3 @@ To remove permissions from a security principal on a Receive connector, use the 
 ```
 Remove-ADPermission -Identity <ReceiveConnector> -User <SecurityPrincipal> -ExtendedRights "<Permission1>","<Permission2>"...
 ```
-
-
-

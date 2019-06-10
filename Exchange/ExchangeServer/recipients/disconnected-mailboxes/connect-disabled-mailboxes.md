@@ -118,6 +118,3 @@ To verify that you've successfully connected a disabled mailbox to a user accoun
   ```
 
     The **UserMailbox** value for the _RecipientType_ property indicates that the user account and the mailbox are connected. You can also run the **Get-Mailbox** cmdlet to verify that the mailbox exists.
-
-
-

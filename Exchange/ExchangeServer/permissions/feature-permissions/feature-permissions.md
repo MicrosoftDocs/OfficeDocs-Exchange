@@ -42,6 +42,3 @@ Permissions in Microsoft Exchange Server are managed using the Role Based Access
 - [Exchange infrastructure and PowerShell permissions](infrastructure-permissions.md)
 
 - [Server health and performance permissions](server-health-permissions.md)
-
-
-

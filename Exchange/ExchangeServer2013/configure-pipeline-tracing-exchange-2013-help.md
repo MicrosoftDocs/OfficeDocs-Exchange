@@ -20,17 +20,17 @@ Pipeline tracing captures copies of email messages as they move through the tran
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this procedure: 15 minutes
+- Estimated time to complete this procedure: 15 minutes
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Transport Service" and "Mailbox Transport Service" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the"Transport Service" and "Mailbox Transport Service" entries in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - You can only use the Shell to perform this procedure.
+- You can only use the Shell to perform this procedure.
 
-  - Pipeline tracing copies the complete contents of email messages that are sent from the sender's email address. To avoid unwanted exposure of confidential information, you need to set appropriate security permissions on the location of the pipeline tracing folder.
+- Pipeline tracing copies the complete contents of email messages that are sent from the sender's email address. To avoid unwanted exposure of confidential information, you need to set appropriate security permissions on the location of the pipeline tracing folder.
 
-  - Don't enable pipeline tracing for long periods of time. Pipeline tracing creates multiple message snapshot files that accumulate quickly. Always monitor available disk space when pipeline tracing is enabled.
+- Don't enable pipeline tracing for long periods of time. Pipeline tracing creates multiple message snapshot files that accumulate quickly. Always monitor available disk space when pipeline tracing is enabled.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

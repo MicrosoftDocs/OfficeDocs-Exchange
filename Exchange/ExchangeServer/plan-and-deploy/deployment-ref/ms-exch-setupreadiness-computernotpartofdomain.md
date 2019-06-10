@@ -24,4 +24,3 @@ Exchange Setup can't continue because it detected that the target server isn't a
 For more information, see [Exchange Server system requirements](../system-requirements.md)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).
-

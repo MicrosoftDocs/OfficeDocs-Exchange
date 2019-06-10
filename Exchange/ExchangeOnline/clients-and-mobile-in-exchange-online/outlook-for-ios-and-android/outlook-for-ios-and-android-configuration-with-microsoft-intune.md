@@ -192,8 +192,9 @@ The following steps will allow you to create an app configuration policy. After 
 7. For **Platform**, choose either **iOS** or **Android**.
 
 8. For **Associated app**, choose **Select the required app**, and then, on the **Targeted apps** blade, choose **Outlook**.
-> [!NOTE]
-> If Outlook is not listed as an available app, then you must add it by following the instructions in [Assign apps to Android work profile devices with Intune](https://docs.microsoft.com/intune/apps-add-android-for-work) and [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios).
+
+   > [!NOTE]
+   > If Outlook is not listed as an available app, then you must add it by following the instructions in [Assign apps to Android work profile devices with Intune](https://docs.microsoft.com/intune/apps-add-android-for-work) and [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios).
 
 9. Click **OK** to return to the **Add app configuration** blade.
 
@@ -212,13 +213,18 @@ The following steps will allow you to create an app configuration policy. After 
 12. If you want to deploy general app configuration settings, configure the desired settings accordingly:
 
     - For **Focused Inbox**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
-    - For **Require Biometrics to access the app**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value. This setting is only available in Outlook for iOS. 
-    > [!IMPORTANT]
-    > If the account will be protected by an Intune App Protection Policy that requires a PIN to access the protected account, then the **Require Biometrics to access the app** setting should be disabled, otherwise the user will be prompted with multiple authentication prompts when accessing the app.
+
+    - For **Require Biometrics to access the app**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value. This setting is only available in Outlook for iOS.
+
+      > [!IMPORTANT]
+      > If the account will be protected by an Intune App Protection Policy that requires a PIN to access the protected account, then the **Require Biometrics to access the app** setting should be disabled, otherwise the user will be prompted with multiple authentication prompts when accessing the app.
 
     - For **Save Contacts**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+
     - For **External recipients MailTip**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
-    - For **Default app signature**, choose from the available options: **Not configured** (default), **On** (app default), **Off**. 
+
+    - For **Default app signature**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
+
     - For **Block external images**, choose from the available options: **Not configured** (default), **On**, **Off** (app default). When selecting **On** or **Off**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
 
 13. When you are done, choose **OK**.
@@ -242,11 +248,14 @@ You assign the settings to groups of users in Azure Active Directory. When a use
 
 4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
 
-
 ## Data protection scenarios
+
 Outlook for iOS and Android supports app configuration policies for the following data protection settings when the app is managed by Intune:
+
 - Managing the use of wearable technology
+
 - Managing mail and calendar reminder notifications on iOS
+
 - Managing the contact fields synchronized to the native contacts app
 
 These settings can be deployed to the app regardless of device enrollment status.

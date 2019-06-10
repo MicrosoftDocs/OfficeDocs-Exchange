@@ -32,17 +32,17 @@ If you don't enter a product key, your server is automatically licensed as a tri
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this procedure: less than 5 minutes.
+- Estimated time to complete this procedure: less than 5 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Product key" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Product key" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-  - If you're licensing an Exchange server that's running the Mailbox server role, you'll need to restart the Microsoft Exchange Information Store service on the server after you enter the product key.
+- If you're licensing an Exchange server that's running the Mailbox server role, you'll need to restart the Microsoft Exchange Information Store service on the server after you enter the product key.
 
-  - If you want to upgrade an Exchange server from a Standard Edition license to an Enterprise Edition license, follow the steps in this topic.
+- If you want to upgrade an Exchange server from a Standard Edition license to an Enterprise Edition license, follow the steps in this topic.
 
-  - If you want to downgrade an Exchange server from an Enterprise Edition license to a Standard Edition license, you need to reinstall Exchange.
+- If you want to downgrade an Exchange server from an Enterprise Edition license to a Standard Edition license, you need to reinstall Exchange.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -103,10 +103,11 @@ To use the Shell to verify that you've successfully licensed the server as Stand
 2. Run the following command to view the licensing status of a specific Exchange server.
 
     ```powershell
-        Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
+    Get-ExchangeServer ExServer01 | Format-Table Edition,*Trial*
     ```
+
 3. (Optional) Run the following command to view the licensing status of all Exchange servers in your organization.
 
     ```powershell
-        Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
+    Get-ExchangeServer | Format-Table Name, Edition, *Trial* -Auto
     ```

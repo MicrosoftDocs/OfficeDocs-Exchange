@@ -24,7 +24,7 @@ Learn how to enable on-premises Exchange users to use Office 365 Groups in a hyb
 Groups is an Office 365 service that enables teams to communicate, schedule meetings, and collaborate on documents more easily. All information shared with a group, from email messages sent to the group, to files stored in the group's OneDrive for Business or SharePoint libraries, is available to any member of a group. If you've configured a hybrid deployment between your on-premises Exchange organization and Office 365, you can make groups created in Office 365 available to your on-premises users by following the steps in this topic.
 
 > [!IMPORTANT]
-> Using Office 365 Groups with on-premises users in an Exchange hybrid deployment is a new feature. Because it's so new, you might run into some issues when you set it up. Be sure to check out the [Known issues](set-up-office-365-groups.md#KnownIssues) section at the end of this topic for fixes to issues you might run into.
+> Using Office 365 Groups with on-premises users in an Exchange hybrid deployment is a new feature. Because it's so new, you might run into some issues when you set it up. Be sure to check out the [Known issues](#known-issues) section at the end of this topic for fixes to issues you might run into.
 
 ## Prerequisites
 

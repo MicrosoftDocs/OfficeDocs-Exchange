@@ -32,40 +32,40 @@ For information about tasks to complete after installation, see [Exchange 2013 p
 
 The following information applies to all Exchange 2013 server roles.
 
-  - Make sure you've read the release notes prior to installing Exchange 2013. For more information, see [Release notes for Exchange 2013](release-notes-for-exchange-2013-exchange-2013-help.md).
+- Make sure you've read the release notes prior to installing Exchange 2013. For more information, see [Release notes for Exchange 2013](release-notes-for-exchange-2013-exchange-2013-help.md).
 
-  - The computer you install Exchange 2013 on must have a supported operating system (such as Windows Server 2008 R2 with Service Pack 1 (SP1), Windows Server 2012 R2, or Windows Server 2012), have enough disk space, and satisfy other requirements. For information about system requirements, see [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
+- The computer you install Exchange 2013 on must have a supported operating system (such as Windows Server 2008 R2 with Service Pack 1 (SP1), Windows Server 2012 R2, or Windows Server 2012), have enough disk space, and satisfy other requirements. For information about system requirements, see [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
 
-  - To run Exchange 2013 setup, you must install Microsoft .NET Framework 4.5, Windows Management Framework, and other required software. To understand the prerequisites for all server roles, see [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md).
+- To run Exchange 2013 setup, you must install Microsoft .NET Framework 4.5, Windows Management Framework, and other required software. To understand the prerequisites for all server roles, see [Exchange 2013 prerequisites](exchange-2013-prerequisites-exchange-2013-help.md).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!WARNING]
 > After you install Exchange on a server, you must not change the server name. Renaming a server after you have installed an Exchange server role is not supported.
 
 The following information applies to the Exchange 2013 Mailbox and Client Access server roles.
 
-  - Estimated time to complete: 60 minutes
+- Estimated time to complete: 60 minutes
 
-  - Each organization requires at a minimum one Client Access server and one Mailbox server in the Active Directory forest. Additionally, each Active Directory site that contains a Mailbox server must also contain at least one Client Access server. If you're separating your server roles, we recommend installing the Mailbox server role first.
+- Each organization requires at a minimum one Client Access server and one Mailbox server in the Active Directory forest. Additionally, each Active Directory site that contains a Mailbox server must also contain at least one Client Access server. If you're separating your server roles, we recommend installing the Mailbox server role first.
 
-  - The computer you install Exchange 2013 on must be a member of an Active Directory domain.
+- The computer you install Exchange 2013 on must be a member of an Active Directory domain.
 
-  - You must ensure the account you use is delegated membership in the Schema Admins group if you haven't previously prepared the Active Directory schema. If you're installing the first Exchange 2013 server in the organization, the account you use must have membership in the Enterprise Admins group. If you've already prepared the schema and aren't installing the first Exchange 2013 server in the organization, the account you use must be a member of the Exchange 2013 Organization Management management role group.
+- You must ensure the account you use is delegated membership in the Schema Admins group if you haven't previously prepared the Active Directory schema. If you're installing the first Exchange 2013 server in the organization, the account you use must have membership in the Enterprise Admins group. If you've already prepared the schema and aren't installing the first Exchange 2013 server in the organization, the account you use must be a member of the Exchange 2013 Organization Management management role group.
 
     Administrators who are members of the Delegated Setup role group can deploy Exchange 2013 servers that have been previously provisioned by a member of the Organization Management role group.
 
 The following information applies to the Exchange 2013 Edge Transport server role.
 
-  - Estimated time to complete: 40 minutes
+- Estimated time to complete: 40 minutes
 
-  - The Edge Transport role is available with Exchange 2013 SP1 or later.
+- The Edge Transport role is available with Exchange 2013 SP1 or later.
 
-  - You need to configure the primary DNS suffix on the computer. For example, if the fully qualified domain name of your computer is edge.contoso.com, the DNS suffix for the computer is contoso.com. For more information, see [Primary DNS Suffix is missing](primary-dns-suffix-is-missing-exchange-2013-help.md).
+- You need to configure the primary DNS suffix on the computer. For example, if the fully qualified domain name of your computer is edge.contoso.com, the DNS suffix for the computer is contoso.com. For more information, see [Primary DNS Suffix is missing](primary-dns-suffix-is-missing-exchange-2013-help.md).
 
-  - Exchange 2007 and Exchange 2010 Hub Transport servers need an update before you can create an EdgeSync Subscription between them and an Exchange 2013 Edge Transport server. If you don't install this update, the EdgeSync Subscription won't work correctly. For more information, see the "Supported coexistence scenarios" section in [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
+- Exchange 2007 and Exchange 2010 Hub Transport servers need an update before you can create an EdgeSync Subscription between them and an Exchange 2013 Edge Transport server. If you don't install this update, the EdgeSync Subscription won't work correctly. For more information, see the "Supported coexistence scenarios" section in [Exchange 2013 system requirements](exchange-2013-system-requirements-exchange-2013-help.md).
 
-  - Make sure the account you use is a member of the local Administrators group on the computer you're installing the Edge Transport role.
+- Make sure the account you use is a member of the local Administrators group on the computer you're installing the Edge Transport role.
 
 ## Use Setup.exe to install Exchange 2013 in unattended mode
 
@@ -82,20 +82,20 @@ The following information applies to the Exchange 2013 Edge Transport server rol
     > If you have User Access Control (UAC) enabled, you must run <CODE>Setup.exe</CODE> from an elevated command prompt.
 
     ```powershell
-        Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
-        [/Roles:<server roles to install>] [/InstallWindowsComponents]
-        [/OrganizationName:<name for the new Exchange organization>]
-        [/TargetDir:<target directory>] [/SourceDir:<source directory>]
-        [/UpdatesDir:<directory from which to install updates>]
-        [/DomainController:<FQDN of domain controller>] [/DisableAMFiltering]
-        [/AnswerFile:<filename>] [/DoNotStartTransport]
-        [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>]
-        [/AddUmLanguagePack:<UM language pack name>]
-        [/RemoveUmLanguagePack:<UM language pack name>]
-        [/NewProvisionedServer:<server>] [/RemoveProvisionedServer:<server>]
-        [/MdbName:<mailbox database name>] [/DbFilePath:<Edb file path>]
-        [/LogFolderPath:<log folder path>] [/ActiveDirectorySplitPermissions:<True | False>]
-        [/TenantOrganizationConfig:<path>]
+    Setup.exe [/Mode:<setup mode>] [/IAcceptExchangeServerLicenseTerms]
+    [/Roles:<server roles to install>] [/InstallWindowsComponents]
+    [/OrganizationName:<name for the new Exchange organization>]
+    [/TargetDir:<target directory>] [/SourceDir:<source directory>]
+    [/UpdatesDir:<directory from which to install updates>]
+    [/DomainController:<FQDN of domain controller>] [/DisableAMFiltering]
+    [/AnswerFile:<filename>] [/DoNotStartTransport]
+    [/EnableErrorReporting] [/CustomerFeedbackEnabled:<True | False>]
+    [/AddUmLanguagePack:<UM language pack name>]
+    [/RemoveUmLanguagePack:<UM language pack name>]
+    [/NewProvisionedServer:<server>] [/RemoveProvisionedServer:<server>]
+    [/MdbName:<mailbox database name>] [/DbFilePath:<Edb file path>]
+    [/LogFolderPath:<log folder path>] [/ActiveDirectorySplitPermissions:<True | False>]
+    [/TenantOrganizationConfig:<path>]
     ```
 
 4. Setup copies the setup files locally to the computer on which you're installing Exchange 2013.
@@ -110,55 +110,55 @@ The following information applies to the Exchange 2013 Edge Transport server rol
 
 The following are examples of using Setup.exe:
 
-  - **Setup.exe /mode:Install /role:ClientAccess,Mailbox /OrganizationName:MyOrg /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /mode:Install /role:ClientAccess,Mailbox /OrganizationName:MyOrg /IAcceptExchangeServerLicenseTerms**
 
     This command creates an Exchange 2013 organization in Active Directory called MyOrg, installs the Client Access server role, Mailbox server role, and the management tools and also accepts the Exchange 2013 licensing terms.
 
-  - **Setup.exe /mode:Install /role:ClientAccess,Mailbox /TargetDir:"C:\\Exchange Server" /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /mode:Install /role:ClientAccess,Mailbox /TargetDir:"C:\\Exchange Server" /IAcceptExchangeServerLicenseTerms**
 
     This command installs the Client Access server role, the Mailbox server role, and the management tools to the "C:\\Exchange Server" directory. This command assumes an Exchange 2013 organization has already been prepared.
 
-  - **Setup.exe /mode:Install /r:CA,MB /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /mode:Install /r:CA,MB /IAcceptExchangeServerLicenseTerms**
 
     This command installs the Client Access server role, the Mailbox server role, and the management tools to the default installation location.
 
-  - **Setup.exe /mode:Install /r:EdgeTransport /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /mode:Install /r:EdgeTransport /IAcceptExchangeServerLicenseTerms**
 
     This command installs the Edge Transport server role and the management tools to the default installation location.
 
-  - **Setup.exe /mode:Install /r:ET /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /mode:Install /r:ET /IAcceptExchangeServerLicenseTerms**
 
     This command installs the Edge Transport server role and the management tools to the default installation location.
 
-  - **Setup.exe /mode:Uninstall /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /mode:Uninstall /IAcceptExchangeServerLicenseTerms**
 
     This command completely removes Exchange 2013 from the server and removes this server's Exchange configuration from Active Directory.
 
-  - **Setup.exe /PrepareAD /on:"My Org" /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /PrepareAD /on:"My Org" /IAcceptExchangeServerLicenseTerms**
 
     This command creates an Exchange organization called My Org and prepares Active Directory for Exchange 2013.
 
-  - **C:\\ExchangeServer\\bin\\Setup.exe /m:Install /r:ClientAccess /SourceDir:d:\\amd64 /IAcceptExchangeServerLicenseTerms**
+- **C:\\ExchangeServer\\bin\\Setup.exe /m:Install /r:ClientAccess /SourceDir:d:\\amd64 /IAcceptExchangeServerLicenseTerms**
 
     This command adds the Client Access server role to an existing Exchange 2013 server using D:\\amd64 as the source directory.
 
-  - **Setup.exe /role:ClientAccess,Mailbox /UpdatesDir:"C:\\ExchangeServer\\New Patches" /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /role:ClientAccess,Mailbox /UpdatesDir:"C:\\ExchangeServer\\New Patches" /IAcceptExchangeServerLicenseTerms**
 
     This command updates ExchangeServer.msi with patches from the specified directory, and then installs the Client Access server role, Mailbox server role, and the management tools. If a language pack bundle is included in this directory, the language pack is also installed.
 
-  - **Setup.exe /mode:Install /role:ClientAccess,Mailbox /DomainController:DC01 /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /mode:Install /role:ClientAccess,Mailbox /DomainController:DC01 /IAcceptExchangeServerLicenseTerms**
 
     This command uses the domain controller DC01 to query and make changes to Active Directory while installing the Client Access server role, Mailbox server role, and the management tools.
 
-  - **Setup.exe /mode:Install /role:ClientAccess /AnswerFile:c:\\ExchangeConfig.txt /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /mode:Install /role:ClientAccess /AnswerFile:c:\\ExchangeConfig.txt /IAcceptExchangeServerLicenseTerms**
 
     This command installs the Client Access server role by using the settings in the ExchangeConfig.txt file.
 
-  - **Setup.exe /rprs:Exchange03 /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /rprs:Exchange03 /IAcceptExchangeServerLicenseTerms**
 
     This command removes the object Exchange03 from Active Directory.
 
-  - **Setup.exe /AddUmLanguagePack:ko-KR /IAcceptExchangeServerLicenseTerms**
+- **Setup.exe /AddUmLanguagePack:ko-KR /IAcceptExchangeServerLicenseTerms**
 
     This command installs the Korean Unified Messaging language pack from the %ExchangeSourceDir%\\ServerRoles\\UnifiedMessaging directory.
 

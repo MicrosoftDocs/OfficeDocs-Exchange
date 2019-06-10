@@ -83,6 +83,3 @@ To verify that a Send connector is configured for outbound proxy, perform either
   ```
 
     Verify the **FrontEndProxyEnabled** value is `True` for the Send connector.
-
-
-

@@ -576,4 +576,3 @@ IBM System Storage DCS3700 40,000 Mailbox Exchange 2010 Mailbox Resiliency Stora
 [Exchange 2010 mailbox server role requirements calculator](http://gallery.technet.microsoft.com/exchange/exchange-2010-mailbox-server-role-)
 
 [Exchange Server Jetstress 2013 Tool](https://www.microsoft.com/en-us/download/details.aspx?id=36849)
-

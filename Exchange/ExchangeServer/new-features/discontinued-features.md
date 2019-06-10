@@ -152,4 +152,3 @@ This section lists the Exchange 2010 features that are no longer available in Ex
 |:-----|:-----|
 |**Update-MailboxDatabaseCopy** <br/> Update Mailbox Database Copy wizard|Content index catalog seeding is no longer possible over the replication network; it can only be done over a MAPI network. This is true even when you use the `-Network` parameter in the **Update-MailboxDatabaseCopy** cmdlet.|
 ::: moniker-end
-

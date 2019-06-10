@@ -158,6 +158,3 @@ Get-GlobalMonitoringOverride
 ```
 
 The removed override should not appear in the list.
-
-
-

@@ -29,13 +29,13 @@ For additional management tasks related to mail flow and clients and devices, se
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this task: 50 minutes
+- Estimated time to complete this task: 50 minutes
 
-  - Procedures in this topic require specific permissions. See each procedure for its permissions information.
+- Procedures in this topic require specific permissions. See each procedure for its permissions information.
 
-  - You might receive certificate warnings when you connect to the Exchange admin center (EAC) website until you configure a secure sockets layer (SSL) certificate on the Client Access server. You'll be shown how to do this later in this topic.
+- You might receive certificate warnings when you connect to the Exchange admin center (EAC) website until you configure a secure sockets layer (SSL) certificate on the Client Access server. You'll be shown how to do this later in this topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!IMPORTANT]
 > Each organization requires at a minimum one Client Access server and one Mailbox server in the Active Directory forest. Additionally, each Active Directory site that contains a Mailbox server must also contain at least one Client Access server. If you're separating your server roles, we recommend installing the Mailbox server role first.
@@ -105,7 +105,7 @@ By default, when you deploy a new Exchange 2013 organization in an Active Direct
 
 To verify that you have successfully created an accepted domain, do the following:
 
-  - In the EAC, verify the new accepted domain appears in **Mail flow** \> **Accepted domains**.
+- In the EAC, verify the new accepted domain appears in **Mail flow** \> **Accepted domains**.
 
 ## Step 3: Configure the default email address policy
 
@@ -562,9 +562,9 @@ Some services, such as Outlook Anywhere and Exchange ActiveSync, require certifi
 
 8. For each service in the list shown, verify that the external or internal server names that users will use to connect to the Exchange server are correct. For example:
 
-      - If you configured your internal and external URLs to be the same, **Outlook Web App (when accessed from the Internet)** and **Outlook Web App (when accessed from the Intranet)** should show owa.contoso.com. **OAB (when accessed from the Internet)** and **OAB (when accessed from the Intranet)** should show mail.contoso.com.
+   - If you configured your internal and external URLs to be the same, **Outlook Web App (when accessed from the Internet)** and **Outlook Web App (when accessed from the Intranet)** should show owa.contoso.com. **OAB (when accessed from the Internet)** and **OAB (when accessed from the Intranet)** should show mail.contoso.com.
 
-      - If you configured the internal URLs to be internal.contoso.com, **Outlook Web App (when accessed from the Internet)** should show owa.contoso.com and **Outlook Web App (when accessed from the Intranet)** should show internal.contoso.com.
+   - If you configured the internal URLs to be internal.contoso.com, **Outlook Web App (when accessed from the Internet)** should show owa.contoso.com and **Outlook Web App (when accessed from the Intranet)** should show internal.contoso.com.
 
     These domains will be used to create the SSL certificate request. Click **Next**.
 
@@ -600,9 +600,9 @@ To verify that you have successfully added a new certificate, do the following:
 
 2. Select the new certificate and then, in the certificate details pane, verify that the following are true:
 
-      - **Status** shows **Valid**
+   - **Status** shows **Valid**
 
-      - **Assigned to services** shows, at minimum, **IIS** and **SMTP**.
+   - **Assigned to services** shows, at minimum, **IIS** and **SMTP**.
 
 ## How do you know this task worked?
 

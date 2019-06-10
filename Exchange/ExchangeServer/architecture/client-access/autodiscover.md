@@ -30,7 +30,7 @@ Exchange 2016 introduced changes to services that were previously handled by the
 - Outlook configures services with only the user name and password.
 
 > [!NOTE]
->  If you are a user looking for help with connecting your Outlook client to your Exchange server, see [Outlook email setup](https://go.microsoft.com/fwlink/p/?linkId=843935).
+> If you are a user looking for help with connecting your Outlook client to your Exchange server, see [Outlook email setup](https://go.microsoft.com/fwlink/p/?linkId=843935).
 
 ## Autodiscover services and Active Directory
 
@@ -214,5 +214,3 @@ In deployments where clients connect to multiple Exchange servers, the Autodisco
 You can run the Exchange ActiveSync Autodiscover and Outlook Autodiscover tests in the Microsoft Remote Connectivity Analyzer. If the user is using a local wireless network to connect to Exchange Online, the user should run both tests to make sure that the local network allows for connections to the ActiveSync endpoints.
 
 You can get help for planning and deploying Autodiscover services as part of your Exchange deployment in [Planning and deployment for Exchange Server](../../plan-and-deploy/plan-and-deploy.md).
-
-

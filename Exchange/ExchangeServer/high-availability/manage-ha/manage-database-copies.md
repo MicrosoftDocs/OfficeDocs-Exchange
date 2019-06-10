@@ -416,6 +416,3 @@ There are several internal checks that will be performed before a passive copy i
 When you perform a database switchover, you also have the option of overriding the mount dial settings configured for the server that hosts the passive database copy being activated. Using the _MountDialOverride_ parameter of the **Move-ActiveMailboxDatabase** cmdlet instructs the target server to override its own mount dial settings and use those specified by the _MountDialOverride_ parameter.
 
 For detailed steps about how to perform a switchover of a database copy, see [Activate a mailbox database copy](activate-db-copies.md).
-
-
-

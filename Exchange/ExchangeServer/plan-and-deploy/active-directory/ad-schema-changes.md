@@ -3093,4 +3093,3 @@ The following table lists the extended rights that are added when you install Ex
 |:-----|:-----|
 |CN=ms-Exch-SMTP-Accept-XProxyFrom,CN=Extended-Rights,\<ConfigurationContainerDN\>|changetype: ntdsSchemaAdd  <br/> displayName: Accept XProxyFrom  <br/> objectClass: controlAccessRight  <br/> rightsGuid: 5bee2b72-50d7-49c7-ba66-39a25daa1e92  <br/> validAccesses: 256|
 ::: moniker-end
-

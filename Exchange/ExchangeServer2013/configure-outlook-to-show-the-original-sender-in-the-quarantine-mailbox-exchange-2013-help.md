@@ -24,15 +24,15 @@ By default, you can't select these fields in Microsoft Outlook. Before you can a
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete this procedure: 15 minutes.
+- Estimated time to complete this procedure: 15 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox access" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox access" entry in the [Mail flow permissions](mail-flow-permissions-exchange-2013-help.md) topic.
 
-  - This procedure requires that you've configured the anti-spam quarantine mailbox. For more information, see [Configure a spam quarantine mailbox](configure-a-spam-quarantine-mailbox-exchange-2013-help.md).
+- This procedure requires that you've configured the anti-spam quarantine mailbox. For more information, see [Configure a spam quarantine mailbox](configure-a-spam-quarantine-mailbox-exchange-2013-help.md).
 
-  - To access the quarantine mailbox, you need to configure an Outlook profile for that mailbox and then open the mailbox using Outlook. For more information about configuring and using multiple Outlook profiles, see [Overview of Outlook e-mail profiles](https://go.microsoft.com/fwlink/p/?linkid=178975).
+- To access the quarantine mailbox, you need to configure an Outlook profile for that mailbox and then open the mailbox using Outlook. For more information about configuring and using multiple Outlook profiles, see [Overview of Outlook e-mail profiles](https://go.microsoft.com/fwlink/p/?linkid=178975).
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -161,11 +161,11 @@ Use one of the following procedures based on the version of Outlook that's insta
 
 10. In the **Show Columns** dialog box, in the **Available Columns** section, select one or more of the following fields and click **Add** after each field you select.
 
-      - **ReceivedRepresentingEmailAddress**: Original sender
+    - **ReceivedRepresentingEmailAddress**: Original sender
 
-      - **DisplayTo**: Original recipient (note that this appears as **To** after you add it)
+    - **DisplayTo**: Original recipient (note that this appears as **To** after you add it)
 
-      - **OriginalScl**: Original SCL
+    - **OriginalScl**: Original SCL
 
     Use the **Move Up** or **Move Down** buttons to position the columns in the view. For best results, position the three new fields after the **Attachment** field, and before the **From** field. When you are finished, click **OK** twice to return to the main Outlook interface.
 
@@ -191,11 +191,11 @@ Use one of the following procedures based on the version of Outlook that's insta
 
 10. In the **Show Fields** dialog box, in the **Available Fields** section, select one or more of the following fields and click **Add** after each field you select.
 
-      - **ReceivedRepresentingEmailAddress**: Original sender
+    - **ReceivedRepresentingEmailAddress**: Original sender
 
-      - **DisplayTo**: Original recipient (note that this appears as **To** after you add it)
+    - **DisplayTo**: Original recipient (note that this appears as **To** after you add it)
 
-      - **OriginalScl**: Original SCL
+    - **OriginalScl**: Original SCL
 
     Use the **Move Up** or **Move Down** buttons to position the columns in the view. For best results, position the three new fields after the **Attachment** field, and before the **From** field. When you are finished, click **OK** twice to return to the main Outlook 2007 interface.
 

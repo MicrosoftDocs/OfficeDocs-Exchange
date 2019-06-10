@@ -27,17 +27,17 @@ For additional management tasks related to IRM, see [Information Rights Manageme
 
 ## What do you need to know before you begin?
 
-  - Estimated time to completion: 1 minute.
+- Estimated time to completion: 1 minute.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Rights protection" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
-  - IRM must be configured in your Exchange 2013 organization. To learn more, see [Enable or Disable IRM for Internal Messages](enable-or-disable-irm-for-internal-messages-exchange-2013-help.md).
+- IRM must be configured in your Exchange 2013 organization. To learn more, see [Enable or Disable IRM for Internal Messages](enable-or-disable-irm-for-internal-messages-exchange-2013-help.md).
 
-  - The Federation mailbox must be added to the Active Directory Rights Management Services (AD RMS) super users group. To learn more, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
+- The Federation mailbox must be added to the Active Directory Rights Management Services (AD RMS) super users group. To learn more, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
 
-  - You can't use the Exchange Administration Center (EAC) to configure IRM for Exchange Search and In-Place eDiscovery. You must use the Shell.
+- You can't use the Exchange Administration Center (EAC) to configure IRM for Exchange Search and In-Place eDiscovery. You must use the Shell.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).

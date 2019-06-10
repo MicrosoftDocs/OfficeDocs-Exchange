@@ -224,6 +224,3 @@ To verify that you've enabled or disabled POP3 or IMAP4 access to a mailbox, use
   ```
   Get-CasMailbox -ResultSize unlimited -Filter {PopEnabled -eq $false -and ImapEnabled -eq $false}
   ```
-
-
-

@@ -83,6 +83,3 @@ If you want users to send mail to the public folder, you can mail-enable the pub
 The public folder will be mail-enabled and the name of the public folder will become the alias of the public folder. If you have multiple recipients with that name, the public folder's alias will be appended with a number. For example, if you have a distribution group named SalesTeam and you create a public folder named SalesTeam and then mail-enable it, the alias of that public folder will be SalesTeam1.
 
 For information about how to use the Exchange Management Shell to mail-enable a public folder, see [Enable-MailPublicFolder](http://technet.microsoft.com/library/6fc7ba9a-62a8-4f41-811f-608363aa1397.aspx).
-
-
-

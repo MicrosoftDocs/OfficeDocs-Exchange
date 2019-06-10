@@ -180,6 +180,3 @@ To verify that you've successfully enabled or disabled Outlook on the web access
   ```
   Get-CasMailbox -ResultSize unlimited -Filter {OWAEnabled -eq $false}
   ```
-
-
-

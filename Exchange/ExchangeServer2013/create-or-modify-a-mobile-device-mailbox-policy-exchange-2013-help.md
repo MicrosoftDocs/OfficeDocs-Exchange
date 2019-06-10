@@ -22,11 +22,11 @@ For additional information related to mobile device mailbox policies, see [Mobil
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete each procedure: 10 minutes.
+- Estimated time to complete each procedure: 10 minutes.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile Device mailbox policy" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile Device mailbox policy" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -62,9 +62,9 @@ You create a new mobile device mailbox policy using the New-MobileDeviceMailboxP
 
 1. In the Shell, run the following command.
 
-    ```powershell
-        New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
-    ```
+   ```powershell
+   New-MobileDeviceMailboxPolicy -Name:"Management" -AllowBluetooth:$true -AllowBrowser:$true -AllowCamera:$true -AllowPOPIMAPEmail:$false -PasswordEnabled:$true -AlphanumericPasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:10 -AllowWiFi:$true -AllowStorageCard:$true -AllowPOPIMAPEmail:$false
+   ```
 
 ## How do you know this worked?
 
@@ -74,9 +74,9 @@ To verify that you've successfully created a mobile device mailbox policy, use o
 
 2. In the Shell, run the following command.
 
-    ```powershell
-        Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
-    ```
+   ```powershell
+   Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+   ```
 
 ## Edit an existing mobile device mailbox policy
 
@@ -106,11 +106,11 @@ You can use the Shell to edit a mobile device mailbox policy.
 > [!WARNING]
 > There are two cmdlets that can be used to edit a mobile device mailbox policy. The Set-ActiveSyncMailboxPolicy cmdlet and the Set-MobileDeviceMailboxPolicy cmdlets perform identical tasks. In a future version of Microsoft Exchange Server, the <STRONG>Set-ActiveSyncMailboxPolicy</STRONG> cmdlet will be removed. We recommend that you update your scripts and procedures to use the <STRONG>Set-MobileDeviceMailboxPolicy</STRONG> cmdlet.
 
-1. In the Shell, run the following command.
+In the Shell, run the following command.
 
-    ```powershell
-        Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
-    ```
+```powershell
+Set-MobileDeviceMailboxPolicy -Identity:Default -DevicePasswordEnabled:$true -AlphanumericDevicePasswordRequired:$true -PasswordRecoveryEnabled:$true -MaxEmailAgeFilter:ThreeDays -AllowWiFi:$false -AllowStorageCard:$true -AllowPOPIMAPEmail:$false -IsDefault:$true -AllowTextMessaging:$true -Confirm:$true
+```
 
 ## How do you know this worked?
 
@@ -120,6 +120,6 @@ To verify that you've successfully edited a mobile device mailbox policy, do one
 
 2. In the Shell, run the following command.
 
-    ```powershell
-        Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
-    ```
+   ```powershell
+   Get-MobileDeviceMailboxPolicy -Identity <PolicyName>
+   ```

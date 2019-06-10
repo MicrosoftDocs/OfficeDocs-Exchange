@@ -209,6 +209,3 @@ Get-Mailbox "Chris Ashton" | Format-List *Archive*
 ```
 
 As previously stated, if you re-enable an archive mailbox within 30 days of disabling it, the user will be able to access the original contents of their archive mailbox. If you re-enable the archive more than 30 days after disabling it, the new archive mailbox will be empty the first time the user accesses it.
-
-
-

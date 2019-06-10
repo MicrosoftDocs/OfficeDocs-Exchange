@@ -252,6 +252,3 @@ If your clients receive errors, you might need to increase the **uploadReadAhead
 ```
 %windir%\system32\inetsrv\appcmd.exe set config "Default Web Site/Microsoft-Server-ActiveSync/" -section:system.webserver/serverRuntime /uploadReadAheadSize:49152
 ```
-
-
-

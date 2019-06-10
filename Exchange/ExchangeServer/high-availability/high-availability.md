@@ -178,6 +178,3 @@ The following table contains links to topics that will help you learn about and 
 |[Managing high availability and site resilience](manage-ha/manage-ha.md)|Learn about DAG management tasks, switchovers and failovers, and maintenance mode.|
 |[Monitor database availability groups](manage-ha/monitor-dags.md)|Learn about the built-in cmdlets and scripts for monitoring DAGs and database copies.|
 |[Backup, restore, and disaster recovery](disaster-recovery/disaster-recovery.md)|Learn about backing up and restoring Exchange databases, recovery databases, and server recovery.|
-
-
-

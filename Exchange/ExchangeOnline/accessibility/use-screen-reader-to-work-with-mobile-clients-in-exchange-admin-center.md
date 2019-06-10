@@ -87,19 +87,19 @@ With Outlook Web App, users can access their Exchange mailbox from almost any we
 8. Press the Tab key. You hear "Mobile devices link, Enable Exchange ActiveSync..
 
    > [!TIP]
-   >If the user is already enabled for Exchange ActiveSync, you hear "Disable Exchange ActiveSync..
+   > If the user is already enabled for Exchange ActiveSync, you hear "Disable Exchange ActiveSync..
 
 9. Press Enter. You hear "Are you sure you want to enable Exchange ActiveSync?" With the focus on the **Yes** button, press Enter.
 
 10. Press the Tab key. You hear "Mobile devices link, Enable OWA for Devices."
 
-   > [!TIP]
-   > If the user is already enabled for Outlook Web App for Devices, you hear "Disable OWA for Devices..
+    > [!TIP]
+    > If the user is already enabled for Outlook Web App for Devices, you hear "Disable OWA for Devices..
 
 11. Press Enter. You hear "Are you sure you want to enable OWA for Devices?" With the focus on the **Yes** button, press Enter.
 
-   > [!TIP]
-   >If you want to enable Exchange ActiveSync and Outlook Web App for additional users, press Ctrl+Shift+F6 to move the focus back to the list of users. Press the Down Arrow key or the Up Arrow key until you hear the name you want, and repeat steps 7 through 11.
+    > [!TIP]
+    > If you want to enable Exchange ActiveSync and Outlook Web App for additional users, press Ctrl+Shift+F6 to move the focus back to the list of users. Press the Down Arrow key or the Up Arrow key until you hear the name you want, and repeat steps 7 through 11.
 
 ### Enable Exchange ActiveSync and Outlook Web App for multiple users at once
 

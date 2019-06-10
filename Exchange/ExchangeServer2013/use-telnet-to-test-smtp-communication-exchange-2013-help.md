@@ -20,23 +20,23 @@ This topic explains how to use Telnet to test Simple Mail Transfer Protocol (SMT
 
 Here are the scenarios where you may want to use Telnet to test SMTP communication to or from the transport servers that exist in your Microsoft Exchange organization:
 
-  - Connect to your organization's Internet-facing Exchange server from a host that is located outside your perimeter network and send a test message.
+- Connect to your organization's Internet-facing Exchange server from a host that is located outside your perimeter network and send a test message.
 
-  - Connect to a remote messaging server from your organization's Internet-facing Exchange server and send a test message.
+- Connect to a remote messaging server from your organization's Internet-facing Exchange server and send a test message.
 
 The procedure in this topic shows you how to use Telnet Client, which is a component that is included with Microsoft Windows. Third-party Telnet clients may require a syntax that is different from that of the Windows Telnet component.
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 30 minutes
+- Estimated time to complete: 30 minutes
 
-  - Exchange permissions don't apply to the procedures in this topic. These procedures are performed in the operating system of the Exchange Server or a client computer.
+- Exchange permissions don't apply to the procedures in this topic. These procedures are performed in the operating system of the Exchange Server or a client computer.
 
-  - The procedures in this topic are best used to connect to and from Internet-facing servers that allow anonymous connections. Message transmission between internal Exchange servers is encrypted and authenticated. To use Telnet to connect to the Hub Transport service on a Mailbox server, you'll need to create a Receive connector that's configured to allow anonymous access or Basic authentication to receive messages. If the connector allows Basic authentication, you need a utility to convert the text strings that are used for the username and password into the Base64 format. Because the user name and password are easily discernible when Basic authentication is used, we don't recommend Basic authentication without encryption.
+- The procedures in this topic are best used to connect to and from Internet-facing servers that allow anonymous connections. Message transmission between internal Exchange servers is encrypted and authenticated. To use Telnet to connect to the Hub Transport service on a Mailbox server, you'll need to create a Receive connector that's configured to allow anonymous access or Basic authentication to receive messages. If the connector allows Basic authentication, you need a utility to convert the text strings that are used for the username and password into the Base64 format. Because the user name and password are easily discernible when Basic authentication is used, we don't recommend Basic authentication without encryption.
 
-  - If you connect to a remote messaging server, consider performing the procedures in this topic on your Internet-facing Exchange server. This will help to avoid rejection of the test message by remote messaging servers that are configured to validate the source IP address, the corresponding domain name system (DNS) domain name, and the reverse lookup IP address of any Internet host that tries to send a message to the server.
+- If you connect to a remote messaging server, consider performing the procedures in this topic on your Internet-facing Exchange server. This will help to avoid rejection of the test message by remote messaging servers that are configured to validate the source IP address, the corresponding domain name system (DNS) domain name, and the reverse lookup IP address of any Internet host that tries to send a message to the server.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -65,10 +65,10 @@ To connect to a destination SMTP server by using Telnet on port 25, you must use
     The output of the command will resemble the following:
 
     ```powershell
-        fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
-        fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
-        mail1.fabrikam.com internet address = 192.168.1.10
-        mail2 fabrikam.com internet address = 192.168.1.20
+    fabrikam.com mx preference=10, mail exchanger = mail1.fabrikam.com
+    fabrikam.com mx preference=20, mail exchanger = mail2.fabrikam.com
+    mail1.fabrikam.com internet address = 192.168.1.10
+    mail2 fabrikam.com internet address = 192.168.1.20
     ```
 
     You can use any of the host names or IP addresses that are associated with the MX records as the destination SMTP server. A lower value of preference indicates a preferred SMTP server. You can use multiple MX records and different values of preference for load balancing and fault tolerance.
@@ -82,17 +82,17 @@ To connect to a destination SMTP server by using Telnet on port 25, you must use
 
 In this example, the following values are used:
 
-  - **Destination SMTP server**: mail1.fabrikam.com
+- **Destination SMTP server**: mail1.fabrikam.com
 
-  - **Source domain**: contoso.com
+- **Source domain**: contoso.com
 
-  - **Sender's e-mail address**: chris@contoso.com
+- **Sender's e-mail address**: chris@contoso.com
 
-  - **Recipient's e-mail address**: kate@fabrikam.com
+- **Recipient's e-mail address**: kate@fabrikam.com
 
-  - **Message subject**: Test from Contoso
+- **Message subject**: Test from Contoso
 
-  - **Message body**: This is a test message
+- **Message body**: This is a test message
 
 > [!NOTE]
 > <UL>
@@ -150,13 +150,13 @@ In this example, the following values are used:
 
 This section provides information about responses that may be provided to the following commands, which were used in the previous example:
 
-  - Open mail1.fabrikam.com 25
+- Open mail1.fabrikam.com 25
 
-  - EHLO contoso.com
+- EHLO contoso.com
 
-  - MAIL FROM:chris@contoso.com
+- MAIL FROM:chris@contoso.com
 
-  - RCPT TO:kate@fabrikam.com NOTIFY=success,failure
+- RCPT TO:kate@fabrikam.com NOTIFY=success,failure
 
     > [!NOTE]
     > The 3-digit SMTP response codes that are defined in RFC 2821 are the same for all SMTP messaging servers. The text descriptions may differ slightly for some SMTP messaging servers.
@@ -169,15 +169,15 @@ This section provides information about responses that may be provided to the fo
 
 **Possible Reasons for Failure**
 
-  - The destination SMTP service is unavailable.
+- The destination SMTP service is unavailable.
 
-  - There are restrictions on the destination firewall.
+- There are restrictions on the destination firewall.
 
-  - There are restrictions on the source firewall.
+- There are restrictions on the source firewall.
 
-  - An incorrect FQDN or IP address for the destination SMTP server was specified.
+- An incorrect FQDN or IP address for the destination SMTP server was specified.
 
-  - An incorrect port number was specified.
+- An incorrect port number was specified.
 
 ## EHLO contoso.com
 

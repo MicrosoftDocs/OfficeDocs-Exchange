@@ -20,15 +20,15 @@ Microsoft Exchange Server 2013 administrators can manually download anti-malwar
 
 ## What do you need to know before you begin?
 
-  - Estimated time to complete: 5 minutes
+- Estimated time to complete: 5 minutes
 
-  - You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/en-us/library/dd638134\(v=exchg.150\)).
+- You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/en-us/library/dd638134\(v=exchg.150\)).
 
-  - To download updates, your computer must be able to access the Internet and be able to establish a connection on TCP port 80 (HTTP). If your organization uses a proxy server for Internet access, see the Use the Shell to configure proxy server settings for anti-malware updates section in this topic.
+- To download updates, your computer must be able to access the Internet and be able to establish a connection on TCP port 80 (HTTP). If your organization uses a proxy server for Internet access, see the Use the Shell to configure proxy server settings for anti-malware updates section in this topic.
 
-  - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-malware" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Anti-malware" entry in the [Anti-spam and anti-malware permissions](anti-spam-and-anti-malware-permissions-exchange-2013-help.md) topic.
 
-  - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
@@ -38,13 +38,13 @@ Microsoft Exchange Server 2013 administrators can manually download anti-malwar
 To download engine and definition updates, run the following command:
 
 ```powershell
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity <FQDN of server>
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity <FQDN of server>
 ```
 
 This example manually downloads the engine and definition updates on the Exchange server named mailbox01.contoso.com:
 
 ```powershell
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com
 ```
 
 Optionally, you can use the *EngineUpdatePath* parameter to download updates from somewhere other than the default location of `http://forefrontdl.microsoft.com/server/scanengineupdate`. You can use this parameter to specify an alternate HTTP address or a UNC path. If you specify a UNC path, the network service must have access to the path.
@@ -52,7 +52,7 @@ Optionally, you can use the *EngineUpdatePath* parameter to download updates fro
 This example manually downloads engine and definition updates on the Exchange server named mailbox01.contoso.com from the UNC path `\\FileServer01\Data\MalwareUpdates`:
 
 ```powershell
-    & $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com -EngineUpdatePath \\FileServer01\Data\MalwareUpdates
+& $env:ExchangeInstallPath\Scripts\Update-MalwareFilteringServer.ps1 -Identity mailbox01.contoso.com -EngineUpdatePath \\FileServer01\Data\MalwareUpdates
 ```
 
 ## How do you know this worked?
@@ -96,7 +96,7 @@ To configure the proxy server settings for anti-malware updates, perform the fol
 2. Use the **Get-ProxySettings** and **Set-ProxySettings** cmdlets to view and configure the proxy server settings that are used to download anti-malware updates. The **Set-ProxySettings** cmdlet uses the following syntax:
 
     ```powershell
-        Set-ProxySettings -Enabled <$true | $false> -Server <Name or IP address of proxy server> -Port <TCP port of proxy server>
+    Set-ProxySettings -Enabled <$true | $false> -Server <Name or IP address of proxy server> -Port <TCP port of proxy server>
     ```
 
     For example, to configure anti-malware updates to use the proxy server at address 172.17.17.10 on TCP port 80, run the following command.

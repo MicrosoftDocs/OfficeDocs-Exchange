@@ -255,4 +255,3 @@ To verify that you've successfully created a Send connector to send outgoing mes
    ```
    Get-SendConnector -Identity "To Edge" | Format-List Usage,AddressSpaces,DSNRoutingEnabled,SmartHosts,SourceTransportServers,SmartHostAuthMechanism
    ```
-

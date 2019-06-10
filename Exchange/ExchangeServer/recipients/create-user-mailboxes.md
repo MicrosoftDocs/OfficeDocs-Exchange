@@ -216,6 +216,3 @@ To verify that you've successfully created a mailbox for an existing user, use e
   ```
   Get-Mailbox -Identity <Name> | Format-List Name,DisplayName,Alias,PrimarySmtpAddress,Database
   ```
-
-
-

@@ -23,30 +23,6 @@ One of the biggest advantages to SSL offloading is having the ability to more ea
 > [!WARNING]
 > When you use Internet Information Services (IIS) Manager, the Exchange Management Shell, or a command-line interface to configure SSL offloading, notice that there is a <STRONG>Default Web Site</STRONG> and an <STRONG>Exchange Back End</STRONG> site. For SSL offloading, only configure the <STRONG>Default Web Site</STRONG> and don't make any changes to the <STRONG>Exchange Back End</STRONG> site.
 
-**Contents**
-
-Configuring SSL offloading for Outlook Web App
-
-Configuring SSL offloading for the Exchange Admin Center (EAC)
-
-Configuring SSL offloading for Outlook Anywhere
-
-Configuring SSL offloading for the Offline Address Book (OAB)
-
-Configuring SSL offloading for Exchange ActiveSync (EAS)
-
-Configuring SSL offloading for Exchange Web Services (EWS)
-
-Configuring SSL offloading for the Autodiscover service
-
-Configuring SSL offloading for the Mailbox Replication Proxy Service (MRSProxy)
-
-Configuring SSL offloading for Outlook clients (MAPI virtual directory)
-
-Using a Shell script to enable SSL offloading for all protocols and services
-
-Configuring coexistence with Exchange 2007 and Exchange 2010
-
 ## What do you need to know before you begin?
 
 - Install all of the required Client Access and Mailbox servers in your organization.
@@ -418,13 +394,13 @@ iisreset /noforce
 ```powershell
 Set-OutlookAnywhere -Identity MyServer\Rpc* -Externalhostname MyServer.mail.contoso.com -ExternalClientsRequireSsl $True -ExternalClientAuthenticationMethod Basic
 Set-OutlookAnywhere -Identity MyServer\Rpc* -SSLOffloading $true
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Autodiscover" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
-    &$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
+&$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/owa" /section:access /sslFlags:None /commit:APPHOST
+&$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/ecp" /section:access /sslFlags:None /commit:APPHOST
+&$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/EWS" /section:access /sslFlags:None /commit:APPHOST
+&$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Autodiscover" /section:access /sslFlags:None /commit:APPHOST
+&$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/Microsoft-Server-ActiveSync" /section:access /sslFlags:None /commit:APPHOST
+&$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/OAB" /section:access /sslFlags:None /commit:APPHOST
+&$env:systemroot\system32\inetsrv\appcmd set config "Default Web Site/MAPI" /section:access /sslFlags:None /commit:APPHOST
 ```
 
 ```powershell
