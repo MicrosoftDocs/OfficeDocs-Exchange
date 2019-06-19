@@ -37,6 +37,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Exchange Server 2019 CU2](https://support.microsoft.com/kb/4488401)|June 18, 2019|15.2.397.3|15.02.0397.003|
 |[Exchange Server 2019 CU1](https://support.microsoft.com/kb/4471391)|February 12, 2019|15.2.330.5|15.02.0330.005|
 |[Exchange Server 2019 RTM](https://go.microsoft.com/fwlink/p/?linkId=195442)|October 22, 2018|15.2.221.12|15.02.0221.012|
 |Exchange Server 2019 Preview|July 24, 2018|15.2.196.0|15.02.0196.000|
@@ -53,6 +54,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Exchange Server 2016 CU13](https://support.microsoft.com/kb/4488406)|June 18, 2019|15.1.1779.2|15.01.1779.002|
 |[Exchange Server 2016 CU12](https://www.microsoft.com/download/details.aspx?id=57827)|February 12, 2019|15.1.1713.5|15.01.1713.005|
 |[Exchange Server 2016 CU11](https://www.microsoft.com/download/details.aspx?id=57388)|October 16, 2018|15.1.1591.10|15.01.1591.010|
 |[Exchange Server 2016 CU10](https://go.microsoft.com/fwlink/p/?LinkId=2002912)|June 19, 2018|15.1.1531.3|15.01.1531.003|
@@ -80,6 +82,7 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Exchange Server 2013 CU23](https://support.microsoft.com/kb/4489622)|June 18, 2019|15.0.1497.2|15.00.1497.002|
 |[Exchange Server 2013 CU22](https://www.microsoft.com/download/details.aspx?id=57826)|February 12, 2019|15.0.1473.3|15.00.1473.003|
 |[Exchange Server 2013 CU21](https://go.microsoft.com/fwlink/p/?LinkId=2003011)|June 19, 2018|15.0.1395.4|15.00.1395.004|
 |Exchange Server 2013 CU20|March 20, 2018|15.0.1367.3|15.00.1367.003|
