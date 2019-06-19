@@ -201,25 +201,28 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 ### Exchange 2019
 
-|**.NET Framework**|**Exchange 2019**|
-|:-----|:-----|
-|.NET Framework 4.7.2|X|
+|**.NET Framework**|**CU2**|**RTM, CU1**|
+|:-----|:-----|:-----|
+|.NET Framework 4.8|X||
+|.NET Framework 4.7.2|X|X|
 
 ### Exchange 2016
 
-|**.NET Framework**|**CU11, CU12**|**CU10**|**CU8, CU9**|**CU5, CU6, CU7**|
-|:-----|:-----|:-----|:-----|:-----|
-|.NET Framework 4.7.2|X||||
-|.NET Framework 4.7.1|X|X|X||
-|.NET Framework 4.6.2|||X|X|
+|**.NET Framework**|**CU13**|**CU11, CU12**|**CU10**|**CU8, CU9**|**CU5, CU6, CU7**|
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|.NET Framework 4.8|X|||||
+|.NET Framework 4.7.2|X|X||||
+|.NET Framework 4.7.1||X|X|X||
+|.NET Framework 4.6.2||||X|X|
 
 ### Exchange 2013
 
-|**.NET Framework**|**CU21 or later**|**CU19, CU20**|**CU16, CU17, CU18**|
-|:-----|:-----|:-----|:-----|
-|.NET Framework 4.7.2|X|||
-|.NET Framework 4.7.1|X|X||
-|.NET Framework 4.6.2||X|X|
+|**.NET Framework**|**CU23**|**CU21, CU22**|**CU19, CU20**|**CU16, CU17, CU18**|
+|:-----|:-----|:-----|:-----|:-----|
+|.NET Framework 4.8|X||||
+|.NET Framework 4.7.2|X|X|||
+|.NET Framework 4.7.1||X|X||
+|.NET Framework 4.6.2|||X|X|
 
 ### Exchange 2010 SP3
 
