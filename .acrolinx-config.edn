@@ -1,2 +1,3 @@
+
 {:allowed-branchname-matches ["master" "release-.*"]
  :allowed-filename-matches ["Exchange/ExchangeHybrid/" "Exchange/ExchangeOnline/" "Outlook/"]}
