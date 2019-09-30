@@ -534,7 +534,7 @@ For detailed syntax and parameter information, see the following topics:
 6. Proceed to unlock the public folders:
 
     ```
-    Get-Mailbox -ResultSize unlimited | %{Set-Mailbox $_.UserPrincipalName -PublicFolder -IsExcludedFromServingHierarchy $False}
+    Get-Mailbox -PublicFolder -ResultSize unlimited | %{Set-Mailbox $_.UserPrincipalName -PublicFolder -IsExcludedFromServingHierarchy $False}
     ```
 
 ## How do I know this worked?
