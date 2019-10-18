@@ -221,13 +221,17 @@ For detailed syntax and parameter information, see the following topics:
    ```
    Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
    ```
-
+   We removed this cmdlet from EXO:
+   https://github.com/MicrosoftDocs/office-docs-powershell/commit/1a21420245d7bf959e267f85982b2607ac746bfc#diff-19a8289cf7ef5682c247a45d5b97d6d3
+    
    The following example removes any existing public folder serial migration requests.
 
    ```
    Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
    ```
-
+   We removed this cmdlet from EXO:
+   https://github.com/MicrosoftDocs/office-docs-powershell/commit/1a21420245d7bf959e267f85982b2607ac746bfc#diff-19a8289cf7ef5682c247a45d5b97d6d3
+ 
    The following example will discover any existing batch migration requests.
 
    ```
