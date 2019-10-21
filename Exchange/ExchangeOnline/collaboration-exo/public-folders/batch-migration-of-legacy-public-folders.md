@@ -216,19 +216,7 @@ For detailed syntax and parameter information, see the following topics:
    > [!IMPORTANT]
    > Before removing a migration request, it is important to understand why there was an existing one. Running the following commands will determine when a previous request was made and help you diagnose any problems that may have occurred. You may need to communicate with other administrators in your organization to determine why the change was made.
 
-   The following example will discover any existing serial migration requests.
-
-   ```
-   Get-PublicFolderMigrationRequest | Get-PublicFolderMigrationRequestStatistics -IncludeReport | Format-List
-   ```
-
-   The following example removes any existing public folder serial migration requests.
-
-   ```
-   Get-PublicFolderMigrationRequest | Remove-PublicFolderMigrationRequest
-   ```
-
-   The following example will discover any existing batch migration requests.
+The following example will discover any existing batch migration requests.
 
    ```
    $batch = Get-MigrationBatch | ?{$_.MigrationType.ToString() -eq "PublicFolder"}
@@ -278,10 +266,6 @@ Get-Mailbox -PublicFolder:$true | Where-Object {$_.ExchangeGuid -eq $hierarchyMa
 For detailed syntax and parameter information, see the following topics:
 
 - [Get-MigrationBatch](https://technet.microsoft.com/library/3a4d27c4-712b-40e8-b5a8-a4f1b8e5a3c6.aspx)
-
-- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
-
-- [Remove-PublicFolderMigrationRequest](https://technet.microsoft.com/library/2f884fb1-2b00-428c-994a-66b8d82deea4.aspx)
 
 - [Get-Mailbox](https://technet.microsoft.com/library/8a5a6eb9-4a75-47f9-ae3b-a3ba251cf9a8.aspx)
 
@@ -453,9 +437,9 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Get-PublicFolderDatabase](https://technet.microsoft.com/library/e2c9e769-ddfb-4981-906f-085834bc790f.aspx)
 
-- [Get-PublicFolderMigrationRequest](https://technet.microsoft.com/library/df474db6-7408-4aac-b703-424c9f36560e.aspx)
+- [Get-PublicFolderMailboxMigrationRequest](https://docs.microsoft.com/en-us/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequest?view=exchange-ps)
 
-- [Get-PublicFolderMigrationRequestStatistics](https://technet.microsoft.com/library/bfbcc746-b259-471b-97a4-0cf87f3cb2a6.aspx)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/en-us/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequeststatistics?view=exchange-ps)
 
 ## Step 6: Lock down the public folders on the legacy Exchange server for final migration (downtime required)
 
