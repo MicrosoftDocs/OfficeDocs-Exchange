@@ -483,7 +483,7 @@ To enable emails to mail-enabled public folders on-premises, perform the followi
 1. Run the following command in your on-premises environment, to take a backup of the emails in the queue that were sent to your mail-enabled public folders. This backup can be used in scenarios where email delivery to mail-enabled public folders failed for any reason:
 
    ```
-   Get-TransportService | Get-Message -ResultSize Unlimited| ?{$_.Recipients -like "*PF.InTransit*"} | ForEach {suspend-message $_.Identity -Confirm:$false;$Temp="C:\MEPFQ\"+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp;Resume-message $_.Identity -Confirm:$false}
+   $Server=Get-TransportService;ForEach ($t in $server) {Get-Message -Server $t -ResultSize Unlimited| ?{$_.Recipients -like "*PF.InTransit*"} | ForEach-Object {Suspend-Message $_.Identity -Confirm:$False; $Temp="C:\ExportFolder\"+$_.InternetMessageID+".eml"; $Temp=$Temp.Replace("<","_"); $Temp=$Temp.Replace(">","_"); Export-Message $_.Identity | AssembleMessage -Path $Temp;Resume-message $_.Identity -Confirm:$false}}
    ```
 
 2. In your on-premises environment, run the following script to make sure all emails to mail-enabled public folders are correctly routed to Exchange Online. The script will stamp mail-enabled public folders with an `ExternalEmailAddress` that points them to their Exchange Online counterparts:
