@@ -70,6 +70,12 @@ No. Public folders are great for Outlook integration, simple sharing scenarios, 
 
 The currently supported Outlook clients for [Exchange Server](../../plan-and-deploy/system-requirements.md) can access public folders. However, users with mailboxes on Exchange 2016 servers can't connect to Exchange 2010 public folders using Exchange Web Services (EWS) clients (for example, Outlook 2016 for Mac). We recommend that you migrate Exchange 2010 public folders to Exchange 2016 to maintain access for those users.
 
+## Can public folders be accessed using smart phone or mobile phones?
+
+Public folder access works from Outlook for Windows desktop and Outlook for Mac. However, smart phone client apps like Outlook for Android or Outlook for IOS do not offer support to connecting to public folders. 
+
+If you would like to have functionality similar to public folders and have content accessible on mobile devices, consult Learn about Office 365 Groups for a better alternative.
+
 ## Are there any limitations in the clients?
 
 Outlook on the web (formerly known as Outlook Web App) is supported, but with some limitations. You can add and remove public folders to your Favorites (if they are Mail, Post, Calendar, or Contact public folders) and perform item level operations, such as creating, editing, deleting posts, and replying to posts. But, you can't do the following in Outlook on the web:
