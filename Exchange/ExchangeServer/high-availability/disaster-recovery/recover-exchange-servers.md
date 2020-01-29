@@ -48,7 +48,7 @@ Looking for other management tasks related to backing up and restoring data? Che
 
    4. Find the **msExchInstallPath** attribute. This attribute stores the current installation path.
 
-- You can recover a server using the latest available Cumulative Update (CU). Only the last two CUs are available for download. For more information, see [Updates for Exchange Server](../../new-features/updates.md).
+- You can recover a server using the latest available Cumulative Update (CU), in case you do not have the installable media for CU that was installed on the server to be recovered. Only the last two CUs are available for download. For more information, see [Updates for Exchange Server](../../new-features/updates.md).
 
 - The target server must use the same version of Windows Server as the lost server. For example, you can't recover a lost Exchange 2016 server that was running Windows 2012 R2 on a new server that's running Windows 2016, or vice-versa.
 
