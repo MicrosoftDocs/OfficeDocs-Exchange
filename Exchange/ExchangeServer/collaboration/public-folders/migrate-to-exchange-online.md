@@ -67,6 +67,8 @@ The scripts and files you're downloading are:
 
 - `ssv.ps1`:  Source Side Validation script scans the public folders at source and reports issues found along with actions required to fix the issues. You'll run this script on the Exchange server on-premises.
 
+Download the source side validation script from https://www.microsoft.com/download/confirmation.aspx?id=100414
+
 - `Sync-ModernMailPublicFolders.ps1` This script synchronizes mail-enabled public folder objects between your Exchange on-premises environment and Office 365. You'll run this script on an on-premises Exchange server.
 
 - `SyncModernMailPublicFolders.strings.psd1` This support file is used by the Sync-ModernMailPublicFolders.ps1 script and should be downloaded to the same location.
