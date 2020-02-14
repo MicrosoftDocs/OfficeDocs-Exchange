@@ -27,15 +27,15 @@ description: "Admins can learn about the requirements and capabilities of the BP
 
 # About the Office 365 Best Practices Analyzer for Exchange Server
 
-The Office 365 Best Practices Analyzer is an automated tool that evaluates the health and readiness of your on-premises Exchange environment. You can run the Office 365 Best Practices Analyzer on your Exchange server at any time to assess the state of your Exchange configuration.
+The Office 365 Best Practices Analyzer is an automated tool that evaluates the health and readiness of your on-premises Exchange environment. You can run the Office 365 Best Practices Analyzer on your Exchange Server 2013 at any time to assess the state of your Exchange configuration.
 
 ## Overview
 
 You can use the Office 365 Best Practices Analyzer in the following environments:
 
-- On-premises Exchange server only (Exchange 2013 or later)
+- On-premises Exchange server only (Exchange 2013)
 
-- Hybrid configuration (with Exchange 2013 or later)
+- Hybrid configuration (with Exchange 2013)
 
 You'll need an Office 365 or Azure Active Directory account to install and use the tool. After you've installed and run the tool, you won't be required to sign-in to the Microsoft 365 admin center to re-run the checks (although you might be prompted to sign-in again).
 
@@ -43,7 +43,7 @@ You'll need an Office 365 or Azure Active Directory account to install and use t
 
 To run the the Office 365 Best Practices Analyzer on your Exchange server, you'll need to meet the following requirements. We'll automatically verify that you're ready to run the checks when you download the tool.
 
-- Exchange Server 2013 or later.
+- Exchange Server 2013.
 
 - Internet Explorer 9.0 or later.
 
@@ -64,4 +64,4 @@ Step 4: Learn more about any warnings or failures.|1. On the **Best practices sc
 
 ## Next steps
 
-After fixing any reported problems, you can run the Office 365 Best Practices Analyzer again from your Exchange server.
+After fixing any reported problems, you can run the Office 365 Best Practices Analyzer again from your Exchange server 2013.
