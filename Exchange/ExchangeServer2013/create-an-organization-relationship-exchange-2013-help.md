@@ -81,7 +81,7 @@ New-OrganizationRelationship -Name "Contoso" -DomainNames "contoso.com","northam
 This example attempts to automatically discover configuration information from the external Exchange organization Contoso.com by using the domain names provided in the **Get-FederationInformation** cmdlet. If you use this method to create your organization relationship, you must first make sure that you've created an organization identifier by using the **Set-FederatedOrganizationIdentifier** cmdlet.
 
 ```powershell
-Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -LimitedDetails
+Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
 ```
 
 For detailed syntax and parameter information, see [Get-FederationInformation](https://technet.microsoft.com/library/dd351221\(v=exchg.150\)) and [New-OrganizationRelationship](https://technet.microsoft.com/library/ee332357\(v=exchg.150\)).
@@ -99,7 +99,7 @@ This example creates an organization relationship with Fourth Coffee. In this ex
 - The requesting organization receives only free/busy information with the time.
 
 ```powershell
-New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel -AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
+New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
 ```
 
 For detailed syntax and parameter information, see [New-OrganizationRelationship](https://technet.microsoft.com/library/ee332357\(v=exchg.150\)).
