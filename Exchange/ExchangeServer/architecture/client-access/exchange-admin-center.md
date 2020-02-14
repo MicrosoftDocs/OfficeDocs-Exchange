@@ -184,7 +184,9 @@ The feature pane is the first level of navigation for most of the tasks that you
 
 - **Hybrid**: Set up and configure a Hybrid organization.
 
-- **Tools**: Check your Exchange server with the Office 365 Best Practices Analyzer. For more information, see [About the Office 365 Best Practices Analyzer for Exchange Server](https://go.microsoft.com/p/?linkid=9839202).
+- **Tools**: Check your Exchange server with the Office 365 Best Practices Analyzer. For more information about the Beta version for Exchange Server 2013, see [About the Office 365 Best Practices Analyzer for Exchange Server](https://techcommunity.microsoft.com/t5/exchange-team-blog/beta-of-microsoft-office-365-best-practices-analyzer-for/ba-p/591294).
+
+Note: Tools is only available for Exchange Server 2013. For Exchange Server 2016 and Exchange Server 2019, Tools has been deprecated.  
 
 ### 3: Tabs
 
