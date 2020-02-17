@@ -334,8 +334,14 @@ A number of commands now need to be run both in your Exchange Server on-premises
    ```PowerShell
    $Source_Credential = Get-Credential <source_domain>\<PublicFolder_Administrator_Account>
    ```
+   
+3. In Exchange online Powershell, Pass the Internet routable FQDN into the variable '$Source_RemoteServer'. The migration request that you run in Exchange Online will use this remoteserver to copy the public folder content over to Exchange Online.
+ 
+   ```PowerShell
+   $Source_RemoteServer = "<MRS proxy endpoint server>"
+   ```
 
-3. On your on-premises Exchange server, open the Exchange Management Shell and find the GUID of the primary hierarchy mailbox with the following command:
+4. On your on-premises Exchange server, open the Exchange Management Shell and find the GUID of the primary hierarchy mailbox with the following command:
 
    ```PowerShell
    (Get-OrganizationConfig).RootPublicFolderMailbox.HierarchyMailboxGuid.GUID 
@@ -345,7 +351,7 @@ A number of commands now need to be run both in your Exchange Server on-premises
 
    > 91edc6dd-478a-497c-8731-b0b793f5a986
 
-4. In Exchange Online PowerShell, run the following commands to create the public folder migration endpoint and the public folder migration request:
+5. In Exchange Online PowerShell, run the following commands to create the public folder migration endpoint and the public folder migration request:
 
    ```PowerShell
    [byte[]]$bytes = Get-Content -Encoding Byte <folder_mapping.csv>
@@ -364,7 +370,7 @@ A number of commands now need to be run both in your Exchange Server on-premises
    > New-MigrationBatch -Name PublicFolderMigration -CSVData $bytes -SourceEndpoint $PfEndpoint.Identity -AutoStart -NotificationEmails <email addresses for migration notifications>
    > ```
 
-5. Finally, start the migration using the following command in Exchange Online PowerShell:
+6. Finally, start the migration using the following command in Exchange Online PowerShell:
 
    ```PowerShell
    Start-MigrationBatch PublicFolderMigration
