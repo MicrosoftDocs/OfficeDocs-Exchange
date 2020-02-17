@@ -321,6 +321,7 @@ Here's a comparison of each configuration option and the features they support.
 |Relay to internet via Office 365|Yes|No. Direct delivery only.|Yes|
 |Bypasses antispam|Yes, if the mail is destined for one of your Office 365 mailboxes.|No. Suspicious emails might be filtered. We recommend a custom Sender Policy Framework (SPF) record.|No. Suspicious emails might be filtered. We recommend a custom SPF record.|
 |Supports mail sent from applications hosted by a third party|Yes|Yes. We recommend updating your SPF record to allow the third party to send as your domain. |No|
+|Saves to Sent Items folder|Yes|No|No
 |**Requirements**|
 |Open network port|Port 587 or port 25|Port 25|Port 25|
 |Device or application server must support TLS|Required|Optional|Optional|
