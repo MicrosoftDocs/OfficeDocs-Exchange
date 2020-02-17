@@ -104,6 +104,81 @@ Use the **Booking Options** section to view or change the settings for the booki
 
 There's also a box on this page that you can use to write a message that will be sent to users who send booking requests to reserve the room.
 
+## Change the resource scheduling settings
+
+An Admin or user with full access to the resource mailbox can make changes to the resource scheduling settings.
+
+1. Log in to [Outlook Web App](outlook.office365.com), Click on **Your name** on the top right corner.
+
+2. Click **Open another mailbox** and find the meeting room resource in question and Click **Open**.
+
+3. Go to **settings** and click **Calendar**.
+
+4. Navigate to **Resource scheduling**.
+
+5. Configure the Scheduling Options and Scheduling Permissions using the tables in the following two sections, to assist with option selections.
+
+6. Click **Save** once you have finished making your changes.
+
+
+## Scheduling Options
+
+- **Automatically process meeting requests and cancellations**
+
+Enables or disables all options below as well as the options under Scheduling Permissions. If not checked the owner must manage every request manually. By default, this is not checked.
+
+- **Disable reminders**
+
+Enables or disables reminders for events in this calendar. This applies only to the resource; the organizer and attendees will still receive reminders if they have elected to do so.
+
+- **Maximum number of days in advance resources can be booked**
+
+Limits how far in advance an event can be scheduled. The default is 180 days.
+
+- **Always decline if the end date is beyond this limit**
+
+Requests beyond the maximum number of days specified will be automatically declined. Valid values are between 0 (today) and 1080 (about three years).
+
+- **Limit meeting duration and Maximum allowed minutes**
+
+Limits the amount of time for which a room can be scheduled within a single day. Unchecking the box will mean a meeting has no limit. Checking the box allows for a limit between 0 to 1440.
+
+- **Allow scheduling only during working hours**
+
+If checked, an event can only be scheduled during the hours specified under Calendar Work Week in the Calendar tab. Events outside of working hours will be automatically declined.
+
+- **Allow repeating meetings**
+
+Allows booking of the resource room at a regular interval; the event can be set to repeat over a specified duration of time (also called recurring).
+
+- **Allow conflicts**
+
+Allow or prevent conflicting meeting requests (Double Booking). If repeating meetings are allowed as well, this setting will only apply to repeating meetings. When the resource is invited, it will need to be entered into the Attendees field as opposed to being chosen with the Add Rooms button.
+
+- **Allow up to this number of individual conflicts**
+
+This setting specifies the maximum number of conflicts that are allowed for new repeating meeting requests. When set to 0, a recurring event will fail to schedule if one or more conflicting appointments already appear. If the number is greater than 0, a recurring event is allowed that many conflicts before being denied.
+
+- **Allow up to this percentage of individual conflicts**
+
+This setting specifies the maximum percentage of meeting conflicts that are allowed for new repeating meeting requests. The same idea as with the individual conflicts field applies, but in this instance, a percentage of conflicts allowed is specified.
+
+ 
+## Scheduling Permissions
+
+- **These users can schedule automatically if the resource is available**
+
+By default, everyone can schedule this resource without the manual approval of the resource owner. If Select users and groups are selected, only the users and groups specified can schedule automatically. All other users or groups will receive a decline message. If Select users and groups are selected but no users or groups identified, this option will be ignored.
+
+- **These users can submit a request for owner approval if the resource is available**
+
+If everyone is selected, then all requests must receive manual approval by the resource owner. If Select users and groups are selected, only the specified users and groups require manual approval by the resource owner. Select users and groups are selected and left blank by default so that all requests are approved automatically.
+
+- **These users can schedule automatically if the resource is available and can submit a request for owner approval if the resource is unavailable**
+
+When everyone is selected (default) any request during an open time frame will be automatically approved. If the room is booked at the requested time, a form is submitted to the resource owner for manual approval. If Select users and groups are selected, only those specified will have the option to have the request manually approved; all others will have a conflicting request denied without the option of manual approval by the resource owner.
+
+
 ## Change other room mailbox properties
 
 After you create a room mailbox, you can make changes and set additional properties by using the Exchange admin center or the Exchange Management Shell.
