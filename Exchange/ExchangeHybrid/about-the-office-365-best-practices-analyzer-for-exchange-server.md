@@ -1,5 +1,5 @@
 ---
-title: "About the Office 365 Best Practices Analyzer for Exchange Server"
+title: "About the Office 365 Best Practices Analyzer for Exchange Server 2013"
 ms.author: v-mapenn
 author: mattpennathe3rd
 ms.reviewer: 
@@ -25,17 +25,17 @@ ms.assetid: c137e46e-c05d-4bdc-b968-67fe5ae68765
 description: "Admins can learn about the requirements and capabilities of the BPA for Exchange Server"
 ---
 
-# About the Office 365 Best Practices Analyzer for Exchange Server
+# About the Office 365 Best Practices Analyzer for Exchange Server 2013
 
-The Office 365 Best Practices Analyzer is an automated tool that evaluates the health and readiness of your on-premises Exchange environment. You can run the Office 365 Best Practices Analyzer on your Exchange Server 2013 at any time to assess the state of your Exchange configuration.
+The Office 365 Best Practices Analyzer is an automated tool that evaluates the health and readiness of your on-premises Exchange environment. You can run the Office 365 Best Practices Analyzer on Exchange Server 2013 at any time to assess the state of your Exchange configuration.
 
 ## Overview
 
 You can use the Office 365 Best Practices Analyzer in the following environments:
 
-- On-premises Exchange server only (Exchange 2013)
+- Exchange 2013 (not supported in Exchange Server 2016 or Exchange Server 2019)
 
-- Hybrid configuration (with Exchange 2013)
+- Hybrid configuration with Exchange 2013 (not supported with Exchange 2016 or Exchange 2019)
 
 You'll need an Office 365 or Azure Active Directory account to install and use the tool. After you've installed and run the tool, you won't be required to sign-in to the Microsoft 365 admin center to re-run the checks (although you might be prompted to sign-in again).
 
@@ -43,9 +43,9 @@ You'll need an Office 365 or Azure Active Directory account to install and use t
 
 To run the the Office 365 Best Practices Analyzer on your Exchange server, you'll need to meet the following requirements. We'll automatically verify that you're ready to run the checks when you download the tool.
 
-- Exchange Server 2013.
+- Exchange 2013
 
-- Internet Explorer 9.0 or later.
+- Internet Explorer 9.0 or later
 
 - The Windows Management Framework (WMF) version 3.0 or later (includes Windows PowerShell and Windows Remote Management or WinRM). Windows Server 2012 or later already has the required version of the WMF. Note that installing a separate, downloadable version of the WMF isn't supported on Exchange 2013 or later servers.
 
@@ -64,4 +64,4 @@ Step 4: Learn more about any warnings or failures.|1. On the **Best practices sc
 
 ## Next steps
 
-After fixing any reported problems, you can run the Office 365 Best Practices Analyzer again from your Exchange server 2013.
+After fixing any reported problems, you can run the Office 365 Best Practices Analyzer again from your Exchange 2013 server.
