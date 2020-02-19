@@ -31,7 +31,7 @@ Or, let's say you want to block personal email address domains. You can set up a
 
 - This list works independently from SPO allow/block list. You would need to set-up Allow/Block list for SPO if you want to restrict individual file sharing of Group connected site.
 
-- This list doesn't apply to already added guest members, this will be enforced for all the guests added after the list is set-up. However, you can remove them through the script.
+- This list doesn't apply to already added guest members. This will be enforced for all the guests added after the list is set-up.
 
 ## Install the preview version of the Azure Active Directory Module for Windows PowerShell
 

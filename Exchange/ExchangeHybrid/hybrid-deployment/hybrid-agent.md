@@ -147,7 +147,7 @@ You must run the HCW from the computer where you want the agent installed. After
    > [!NOTE]
    > If you don't complete this step before you run the HCW, the HCW will enable MRS proxy. However, we recommend that you complete this step before you run the HCW to ensure the IIS cache has time to clear before HCW validates the endpoint.
 
-3. Go to **Programs and Features** in Conrol Panel and verify that a previous version of the Microsoft Office 365 Hybrid Configuration wizard is not already installed. If it is, uninstall it.
+3. Go to **Programs and Features** in Control Panel and verify that a previous version of the Microsoft Office 365 Hybrid Configuration wizard is not already installed. If it is, uninstall it.
 
 4. Install .NET Framework version 4.6.2 on the computer where the HCW is being run. You might need to install a later version of .NET Framework depending on the version of Exchange you have installed. Alternatively, if this version isn't installed, the HCW prompts you to install it or upgrade the version already installed on your computer.
 
@@ -278,7 +278,7 @@ You can repeat this step on each computer where you would like an additional Hyb
 
 ### Option 2: Get status via the Hybrid Management PowerShell Module
 
-With each installation of the Hybrid Agent, the HCW install the Hybrid Management PowerShell module in \\Program Files\\Microsoft Hybrid Service\\ on the computer where the agent is installed. By default, this module is not imported and so you will need to import it before you can use it. This module also requires the Azure module for PowerShell if not already installed. First install [the PackageManagement modules](https://go.microsoft.com/fwlink/?LinkID=746217) and then see [this topic](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azure-ps) for the Azure PowerShell module installation instruction.
+With each installation of the Hybrid Agent, the HCW install the Hybrid Management PowerShell module in \\Program Files\\Microsoft Hybrid Service\\ on the computer where the agent is installed. By default, this module is not imported and so you will need to import it before you can use it. This module also requires the Azure module for PowerShell if not already installed. First install [the PackageManagement modules](https://www.powershellgallery.com/packages/PackageManagement/) and then see [this topic](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azure-ps) for the Azure PowerShell module installation instruction.
 
 To import the Hybrid Management module, run the following from a Windows PowerShell prompt as Administrator:
 
@@ -297,7 +297,7 @@ The output of the command looks like this:
 ![Get-HybridAgent results](../media/get-hybridagent-output.png)
 
 > [!NOTE]
-> The 'id' value in the results is the agent identity and not your unique tenant guid assigned to the route.
+> The **id** value in the results is the agent identity and not your unique tenant guid assigned to the route.
 
 ## Direct your Hybrid Agent(s) to the load balancer instead of a specific server
 
@@ -371,7 +371,8 @@ After a successful deployment of the Hybrid Agent and hybrid configuration, you 
 
 2. Add the object **Microsoft AD App Proxy Connector** and the **\# requests** counter to your view.
 
-![The Hybrid Agent in Performance Monitor](../media/d67d36919447785a56ab2b3759e12e74.png)
+    ![The Hybrid Agent in Performance Monitor](../media/d67d36919447785a56ab2b3759e12e74.png)
+    
 
 ### Migration
 

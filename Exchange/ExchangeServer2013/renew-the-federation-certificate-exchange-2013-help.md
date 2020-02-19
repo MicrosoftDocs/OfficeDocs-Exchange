@@ -46,9 +46,6 @@ For more information about federation trusts and federation, see [Federation](fe
 
 If the federation certificate hasn't expired, you can update the existing federation trust with a new federation certificate.
 
-> [!NOTE]
-> The Graphical User Interface/Wizard can be used as an alternative to update the Microsoft Teams certificate automatically.
-
 ## Step 1: Create a new federation certificate
 
 Run the following command in the Exchange Management Shell to create a new federation certificate:
