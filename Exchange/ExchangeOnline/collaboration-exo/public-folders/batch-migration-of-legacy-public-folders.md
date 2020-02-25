@@ -142,7 +142,7 @@ Add an additional step here suggesting to run Source Side Validation script at m
    In Exchange 2010, to locate public folders that have a backslash in the name, run the following command:
 
    ```PowerShell
-   Get-PublicFolderStatistics -ResultSize Unlimited | Where {($_.Name -like "*\*") -or ($_.Name -like "*/*") } | Format-List Name,Identity
+   Get-PublicFolderMailboxMigrationRequestStatistics -ResultSize Unlimited | Where {($_.Name -like "*\*") -or ($_.Name -like "*/*") } | Format-List Name,Identity
    ```
 
 2. If any public folders are returned, you can rename them by running the following command:
@@ -179,7 +179,7 @@ Add an additional step here suggesting to run Source Side Validation script at m
    Run the following command to take a snapshot of public folder statistics such as item count, size, and owner.
 
    ```PowerShell
-   Get-PublicFolderStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
+   Get-PublicFolderMailboxMigrationRequestStatistics -ResultSize Unlimited | Export-CliXML C:\PFMigration\Legacy_PFStatistics.xml
    ```
 
    Run the following command to take a snapshot of the permissions.
@@ -215,7 +215,7 @@ For detailed syntax and parameter information, see the following topics:
 
 - [Set-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-publicfolder)
 
-- [get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics)
+- [Get-PublicFolderMailboxMigrationRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-publicfoldermailboxmigrationrequeststatistics)
 
 - [Get-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderclientpermission)
 
@@ -559,7 +559,7 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 2. In Exchange Online PowerShell, run the following command to take a snapshot of the public folder statistics such as item count, size, and owner.
 
    ```PowerShell
-   Get-PublicFolderStatistics | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
+   Get-PublicFolderMailboxMigrationRequestStatistics | Export-CliXML C:\PFMigration\Cloud_PFStatistics.xml
    ```
 
 3. In Exchange Online PowerShell, run the following command to take a snapshot of the permissions.
