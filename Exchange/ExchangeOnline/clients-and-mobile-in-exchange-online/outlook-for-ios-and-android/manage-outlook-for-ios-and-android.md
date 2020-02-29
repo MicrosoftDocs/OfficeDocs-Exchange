@@ -116,4 +116,4 @@ Exchange administrators can initiate a remote device wipe against Outlook for iO
 > [!NOTE]
 > On Outlook for iOS and Android the following sentences are true:
 > * Supports the "Wipe Data" throught remote wipe command
-> * Does not support "Account Only Remote Wipe Device" command.
+> * It does not support the "Account Only Remote Wipe Device" command.
