@@ -30,7 +30,7 @@ In Exchange Server 2013 or later, we changed the way we deliver hotfixes and ser
 
 |**Servicing release model**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013**|**Exchange 2010**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Cumulative updates (CUs)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||
+|Cumulative updates (CUs)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||
 |Update rollups (RUs)||||![check mark](../media/check-mark.png)|
 |Security hotfixes delivered separately|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||
 
