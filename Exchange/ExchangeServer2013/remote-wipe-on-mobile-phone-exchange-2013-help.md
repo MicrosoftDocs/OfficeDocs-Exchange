@@ -21,6 +21,12 @@ Your users carry sensitive corporate information in their pockets every day. If 
 > [!NOTE]
 > This topic also provides instructions for how to use Microsoft Outlook Web App to perform a remote wipe on a phone. The user must be signed in to Outlook Web App to perform a remote wipe.
 
+> [!CAUTION]
+>
+> The commands in this article are designed to destroy data. Exercise caution when using them.
+>
+> The remote wipe procedures described below will completely wipe all data from the user's device, including photos, personal files, and so on. If you wish to wipe only the user's Outlook data, you must use Exchange ActiveSync v16.1 or later, which is not supported on Exchange Server 2013. See [Managing devices for Outlook for iOS and Android for Exchange Server](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android\manage-devices.md) for more information on how this works in Exchange Server 2016 and later.
+
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 5 minutes.

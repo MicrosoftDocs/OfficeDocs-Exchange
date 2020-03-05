@@ -53,9 +53,6 @@ The SHCW can download and install the agent MSI automatically. Using this method
 
   - Be a member of the local Administrators group on the computer where you're installing the Hybrid Agent.
 
-> [!NOTE]
-> The account you use to connect to your Office 365 tenant must be a Global Administrator.
-
 ## Port and protocol requirements
 
 - Outbound ports HTTPS (TCP) 443 and 80 must be open between the computer that has the Hybrid Agent installed and the Internet, as shown here: [https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-enable](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-enable).

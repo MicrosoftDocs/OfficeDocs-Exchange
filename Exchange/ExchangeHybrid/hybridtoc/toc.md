@@ -16,7 +16,6 @@
 ## [Single sign-on](../single-sign-on.md)
 ## [ActiveSync settings](../activesync-settings.md)
 ## [Performance best practices](../performance-best-practices.md)
-## [About the Best Practices Analyzer (BPA)](../about-the-office-365-best-practices-analyzer-for-exchange-server.md)
 ## [Decommission on-premises Exchange](../decommission-on-premises-exchange.md)
 ## [Hybrid Deployment](../hybrid-deployment/hybrid-deployment.md)
 ### [Hybrid agent](../hybrid-deployment/hybrid-agent.md)

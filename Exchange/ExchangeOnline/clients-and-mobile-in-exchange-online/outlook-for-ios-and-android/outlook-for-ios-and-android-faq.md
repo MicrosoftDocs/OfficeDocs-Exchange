@@ -68,7 +68,7 @@ Yes, Outlook for iOS and Android supports certificate-based authentication for m
 
 - [Certificate-based authentication on Android](https://go.microsoft.com/fwlink/p/?linkid=849808)
 
-### Q: What does background synchronization enable? I notice that when I launch the app with it enabled, I still have to wait for messages to download, even after I've received new mail notifications for them; and sometimes, I get reminders for appointments that had been cancelled.
+### Q: What does background synchronization enable? I notice that when I launch the app with it enabled, I still have to wait for messages to download, even after I've received new mail notifications for them; and sometimes, I get reminders for appointments that had been canceled.
 
 Background synchronization enables new message notifications, calendar reminders, badge count updates, and background synchronization of mailbox and calendar information for Outlook for iOS and Android.
 
@@ -100,7 +100,7 @@ If the mobile operating system prevents background synchronization, users will e
 
 - New mail notifications will continue to be delivered, however, upon launching the app, the new messages will have to be downloaded.
 
-- Calendar reminders will fire for appointments that have been cancelled because the app was unable to download and process the meeting cancellation.
+- Calendar reminders will fire for appointments that have been canceled because the app was unable to download and process the meeting cancellation.
 
 > [!NOTE]
 > Apple allows its native Mail and Calendar apps to do background refreshes without any restrictions. Therefore, users may notice a difference in the background synchronization experience between the apps. However, this also results in improved battery life and less data consumption with Outlook for iOS.
@@ -385,10 +385,7 @@ If you do not have organization chart data exposed in the app, consult with your
 
 ### Q: How much of my mailbox data is synchronized with Outlook for iOS and Android?
 
-Outlook for iOS and Android synchronizes 500 items per folder, with up to 1000 items per folder if the user taps **Load more conversations**. The app periodically trims the items per folder down to 500, in order to ensure optimal app performance.
-
-> [!NOTE]
-> Microsoft sync technology has recently been changed to sync 500 items by default. Outlook for Android supports this. Outlook for iOS will support this in a future update.
+For initial folder synchronization, Outlook for iOS synchronizes 100 items per folder while Outlook for Android synchronizes 500 items per folder, with up to 1000 items per folder if the user taps **Load more conversations**. The app periodically trims the items per folder down to the default number, in order to ensure optimal app performance.
 
 ### Q: Why are tasks and notes not available with Outlook for iOS and Android?
 

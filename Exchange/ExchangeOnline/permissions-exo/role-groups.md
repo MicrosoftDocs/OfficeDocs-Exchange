@@ -219,7 +219,7 @@ To verify that you've successfully copied a role group, do either of the followi
 
 1. In the EAC, go to **Permissions** \> **Admin Roles**, select the role group you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
 
-The same options are available when you modify role groups as when you [create role groups]([Use the EAC to create role groups](#use-the-eac-to-create-role-groups)). You can:
+The same options are available when you modify role groups as when you [Use the EAC to create role groups](#use-the-eac-to-create-role-groups). You can:
 
 - Change the name and description.
 

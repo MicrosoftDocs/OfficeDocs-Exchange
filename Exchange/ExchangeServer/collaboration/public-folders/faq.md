@@ -135,7 +135,9 @@ Starting in Exchange 2013, public folder permissions are managed by using role-b
 
 ## Does mailbox audit logging work against public folders?
 
-No. Not at this time.
+No. Not at this time. 
+
+If you would like to have functionality similar to public folders with audit logging, consult [Learn about Office 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
 
 ## What are the limits on public folders? What are the recommendations?
 
