@@ -403,3 +403,76 @@ To configure your servers that are running Client Access services to stop using 
    ```
 
 2. Although you don't have to do this immediately, you should eventually restart all client computers to clear the Kerberos ticket cache from the computer.
+
+
+## Configure using gMSA Accounts
+
+Now Let's try to add a gMSA account to manage the infrastructure
+
+### Create ASA Account
+
+Create gMSA account and allow servers in the AD-group "Exchange Servers" access to it. The account name will be "exchangeASA"
+
+    ```Powershell
+    New-ADServiceAccount -DNSHostName "mail.contoso.com" -Name "exchangeASA" -KerberosEncryptionType AES128,AES256 -PrincipalsAllowedToRetrieveManagedPassword (Get-ADGroup -Identity "Exchange Servers") -SamAccountName "exchangeASA" -Description "Service account for Exchange servers to allow Kerberos authentication"
+    ```
+
+### Set gMSA account on servers
+
+    Create Credentials Objects with Blank password
+
+    ```Powershell
+    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList "contoso\exchangeASA$",(new-object System.Security.SecureString)
+    ```
+    
+    Get CAS servers and clear old ASA credentials
+  
+    ```Powershell
+    Get-ClientAccessService | Set-ClientAccessService -RemoveAlternateServiceAccountCredentials -CleanUpInvalidAlternateServiceAccountCredentials -Verbose
+    ```
+
+    Get CAS servers and add gMSA as ASA credential
+    ```Powershell
+    Get-ClientAccessService | Set-ClientAccessService -AlternateServiceAccountCredential $Credential -Verbose
+    ```
+
+    Verify ASA credential deployment
+    ```Powershell
+    Get-ClientAccessService -IncludeAlternateServiceAccountCredentialStatus | Format-List Name, AlternateServiceAccountConfiguration
+    ```
+
+    Set internal Auth method to "Negotiate" as this supports both NTLM and Kerberos
+    ```Powershell
+    Get-OutlookAnywhere | Set-OutlookAnywhere -InternalClientAuthenticationMethod Negotiate
+    ```
+
+     Pre-check if the SPN are in use (checks all AD-objects)
+    ```Powershell
+    ADObject -Filter '(servicePrincipalName -like "http/mail.contoso.com") -or (servicePrincipalName -like "http/autodiscover.contoso.com")' -Properties servicePrincipalName | Select-Object Name,servicePrincipalName
+    ```
+
+    Set SPN
+    ```Powershell
+    Set-ADServiceAccount -Identity "exchangeASA" -ServicePrincipalNames "http/mail.contoso.com","http/autodiscover.contoso.com"
+    ```
+
+    Check afterwards that SPN are assigned
+    ```Powershell
+    Get-ADServiceAccount -Identity "exchangeASA" -Properties servicePrincipalName | Select-Object Name,servicePrincipalName
+    ```
+
+    Restart Client Access Service webpool and Service
+
+    ```Powershell
+    Foreach ($CASExchangeHost in (Get-ClientAccessService).name){
+        Invoke-Command -ComputerName $CASExchangeHost -ScriptBlock {
+            Restart-WebAppPool -Name MSExchangeAutodiscoverAppPool 
+            Restart-Service MSExchangeServiceHost -Force
+        } 
+    }
+    ```
+
+
+# Create Credentials object with blank password
+Note that this is not meant to run as a single script and has no error checks.
+They are just working notes.
