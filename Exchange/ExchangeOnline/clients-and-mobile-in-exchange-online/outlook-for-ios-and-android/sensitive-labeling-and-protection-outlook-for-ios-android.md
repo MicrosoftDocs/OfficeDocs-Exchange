@@ -32,7 +32,7 @@ Sensitivity labeling and S/MIME in Outlook for iOS and Android are supported wit
 ## Understanding Sensitivity Labeling
 Sensitivity labeling enables organizations to classify and protect sensitive content. For more information, see [Overview of sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels). 
 
-From a classification perspective, a sensitivity label is applied to a message and is retained throughout the message’s lifecycle (assuming the label is not removed). In addition, sensitivity labels can be configured to mark content by adding a header or footer to the message body. 
+From a classification perspective, a sensitivity label is applied to a message and is retained throughout the message's lifecycle (assuming the label is not removed). In addition, sensitivity labels can be configured to mark content by adding a header or footer to the message body. 
 
 Sensitivity labels can also be configured to protect messages with access restrictions or encryption. Access restrictions include ensuring only users within the organization can open the message, restricting editing rights, preventing forwarding, printing, or copying the contents of the message. Encryption provides at-rest encryption and ensures only authorized users can decrypt the message. 
 
@@ -92,21 +92,18 @@ Ensure S/MIME has been properly configured in Exchange Online by following the s
 
 2. Publishing the certificate revocation list to the Internet.
 
-In both certificate delivery solutions, it is expected that the certificate’s trusted root chain is available and discoverable within Exchange Online. Trust verification is performed on all digital certificates. Exchange Online validates the certificate by validating each certificate in the certificate chain until it reaches a trusted root certificate. In most cases, this is done by obtaining the intermediate certificates through the authority information access path in the certificate until a trusted root certificate is located. Intermediate certificates can also be included with digitally signed e-mail messages. If Exchange Online locates a trusted root certificate and can query the certificate revocation list for the certificate authority, the digital certificate's chain for that digital certificate is considered valid and trusted and can be used. If Exchange Online fails to locate a trusted root certificate or fails to contact the certificate revocation list for the certificate authority, that certificate is considered invalid and not trusted.
+In both certificate delivery solutions, it is expected that the certificate's trusted root chain is available and discoverable within Exchange Online. Trust verification is performed on all digital certificates. Exchange Online validates the certificate by validating each certificate in the certificate chain until it reaches a trusted root certificate. In most cases, this is done by obtaining the intermediate certificates through the authority information access path in the certificate until a trusted root certificate is located. Intermediate certificates can also be included with digitally signed e-mail messages. If Exchange Online locates a trusted root certificate and can query the certificate revocation list for the certificate authority, the digital certificate's chain for that digital certificate is considered valid and trusted and can be used. If Exchange Online fails to locate a trusted root certificate or fails to contact the certificate revocation list for the certificate authority, that certificate is considered invalid and not trusted.
 
-Outlook for iOS and Android leverages the user’s primary SMTP address for mail flow activities which is configured during account profile setup. The S/MIME certificate used by Outlook for iOS and Android is calculated by comparing the user’s primary SMTP address as defined in the account profile with the certificate’s subject value or the subject alternative name value; if these do not match, then Outlook for iOS and Android will report that a certificate is not available (see Figure 7) and not allow the user to sign and/or encrypt messages.
+Outlook for iOS and Android leverages the user's primary SMTP address for mail flow activities, which is configured during account profile setup. The S/MIME certificate used by Outlook for iOS and Android is calculated by comparing the user's primary SMTP address as defined in the account profile with the certificate's subject value or the subject alternative name value; if these do not match, then Outlook for iOS and Android will report that a certificate is not available (see Figure 7) and will not allow the user to sign and/or encrypt messages.
 
 > [!IMPORTANT]
-> Outlook for iOS and Android S/MIME functionality requires that a user have both signing and encrypting capabilities which can be delivered with a single certificate or with separate signing and encryption certificates.
+> Outlook for iOS and Android S/MIME functionality requires that a user have both signing and encrypting capabilities, which can be delivered with a single certificate or with separate signing and encryption certificates.
 
 ### Manual Certificate Delivery
 
-Outlook for iOS and Outlook for Android both support manual certificate delivery, which is when the certificate is emailed to the user and the user taps on the certificate attachment within the app to initiate the certificate’s installation. The following image shows how manual certificate delivery works in iOS.
+Outlook for iOS and Outlook for Android both support manual certificate delivery, which is when the certificate is emailed to the user and the user taps on the certificate attachment within the app to initiate the certificate's installation. The following image shows how manual certificate delivery works in iOS.
 
-![Screen shots showing manual certificate installation on iOS.](../../media/sensitive-manual-certificate.png)
-
-> [!IMPORTANT]
-> If your organization has deployed an Intune App Protection Policy with the setting "Send org data to other apps" configured with "Policy managed apps" or "None", then your Intune administrator needs to add "com.android.certinstaller" as an exempt app. Configuring this exemption allows the user to install the certificate into the Android KeyStore. For more information, see [How to create exceptions to the Intune App Protection Policy (APP) data transfer policy](https://docs.microsoft.com/intune/apps/app-protection-policies-exception).
+![Screenshots showing manual certificate installation on iOS.](../../media/sensitive-manual-certificate.png)
 
 A user can export their own certificate and mail it to themselves using Outlook. For more information, see [Exporting a digital certificate](https://support.office.com/article/f3574266-2f9e-4f15-ab21-5989f4cf0c9b).
 
@@ -140,7 +137,7 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
 6. Click **Configuration settings** to add configuration settings. 
     - Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 7. Click **S/MIME** to display the **Outlook S/MIME settings**.
-    ![Screen shot showing Outlook S/MIME settings.](../../media/app-configuration-policies-outlook-smime-01.png)
+    ![Screenshot showing Outlook S/MIME settings.](../../media/app-configuration-policies-outlook-smime-01.png)
 8. Set **Enable S/MIME** to **Yes**.
 9. Set **Deploy S/MIME certificates from Intune** to **Yes**.
 10. Under **Signing certificates** next to **Certificate profile type**, choose one of the following options:
@@ -159,7 +156,7 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
        - **Email** – Sends an email to the end user informing them that they need to launch Company Portal to retrieve their S/MIME certificates. If the user is on their enrolled iOS device when they click the link in the email, they will be redirected to the Company Portal to retrieve their certificates.
     
     End-users will see an experience similar to the following for automated certificate delivery:
-    ![Screen shot showing Outlook S/MIME settings.](../../media/all-in-one-certificate-delivery.png)
+    ![Screenshot showing Outlook S/MIME settings.](../../media/all-in-one-certificate-delivery.png)
 13. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
 
 ### Enabling S/MIME in the client
@@ -168,11 +165,11 @@ S/MIME must be enabled for Outlook for iOS and Android to view or create S/MIME-
 
 End users will need to enable S/MIME functionality manually by accessing their account settings, tapping Security, and tapping the S/MIME control, which is off by default. The Outlook for iOS S/MIME security setting looks like the following:
 
-![Screen shots showing Outlook for iOS S/MIME security settings.](../../media/sensitive-s-mime-setting.png)
+![Screenshots showing Outlook for iOS S/MIME security settings.](../../media/sensitive-s-mime-setting.png)
 
 When the S/MIME setting is enabled, Outlook for iOS and Android will automatically disable the **Organize By Thread** setting. This is because S/MIME encryption becomes more complex as a conversation thread grows. By removing the threaded conversation view, Outlook for iOS and Android reduces the opportunity for issues with certificates across recipients during signing and encryption. As this is an app-level setting, this change affects all accounts added to the app. This threaded conversation dialog is rendered in iOS as follows:
 
-![Screen shot showing the OUtlook for iOS threaded conversation dialog.](../../media/sensitive-ios-threaded-con.png)
+![Screenshot showing the OUtlook for iOS threaded conversation dialog.](../../media/sensitive-ios-threaded-con.png)
 
 ## Using S/MIME in Outlook for iOS and Android
 
@@ -180,26 +177,26 @@ After the certificates have been deployed and S/MIME has been enabled in the app
 
 ### Consumption
 
-In the message view, users can view messages that are S/MIME signed or encrypted. In addition, users can tap the S/MIME status bar to view more information about the message’s S/MIME status. The following screen shots show examples of how S/MIME messages are consumed in Android.
+In the message view, users can view messages that are S/MIME signed or encrypted. In addition, users can tap the S/MIME status bar to view more information about the message's S/MIME status. The following screenshots show examples of how S/MIME messages are consumed in Android.
 
 > [!IMPORTANT]
-> In order to read an encrypted message, the recipient’s private certificate key must be available on the device.
+> In order to read an encrypted message, the recipient's private certificate key must be available on the device.
 
-![Screen shots of S/MIME usage in iOS.](../../media/sensitive-ios-s-mime.png)
+![Screenshots of S/MIME usage in iOS.](../../media/sensitive-ios-s-mime.png)
 
-Users can install a sender’s public certificate key by tapping the S/MIME status bar. The certificate will be installed on the user’s device, specifically in the Microsoft publisher [keychain in iOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) or the system [KeyStore in Android](https://source.android.com/security/reports/Google_Android_Enterprise_Security_Whitepaper_2018.pdf). The Android version appears similar to the following:
+Users can install a sender's public certificate key by tapping the S/MIME status bar. The certificate will be installed on the user's device, specifically in the Microsoft publisher [keychain in iOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) or the system [KeyStore in Android](https://source.android.com/security/reports/Google_Android_Enterprise_Security_Whitepaper_2018.pdf). The Android version appears similar to the following:
 
-![Screen shots of Outlook for Android public key installation](../../media/sensitive-android-key-install.png)
+![Screenshots of Outlook for Android public key installation](../../media/sensitive-android-key-install.png)
 
 If there are certificate errors, Outlook for iOS and Android will warn the user. The user can tap the S/MIME status bar notification to view more information about the certificate error, such as in the following example.
 
-![Screen shot of Outlook for iOS cert error on received message.](../../media/sensitive-cert-error-message.png)
+![Screenshot of Outlook for iOS cert error on received message.](../../media/sensitive-cert-error-message.png)
 
 ### Composition
 
 Before a user can send a signed and/or encrypted message, Outlook for iOS and Android performs a validity check on the certificate to ensure it's valid for signing or encryption operations. If the certificate is near expiration, Outlook for iOS and Android will alert the user to obtain a new certificate when the user attempts to sign or encrypt a message, beginning 30 days before expiration.
 
-![Screen shots showing warnings about certificate expiration.](../../media/sensitive-android-cert-warning.png)
+![Screenshots showing warnings about certificate expiration.](../../media/sensitive-android-cert-warning.png)
 
 When composing an email in Outlook for iOS and Android, the sender can choose to encrypt and/or sign the message. By tapping on the **ellipses** and then **Sign and Encrypt**, the various S/MIME options are presented. Selecting an S/MIME option enables the respective encoding on the email as soon as the message is saved or sent, assuming the sender has a valid certificate.
 
@@ -207,12 +204,12 @@ When composing an email in Outlook for iOS and Android, the sender can choose to
 > Outlook for iOS and Android only supports sending clear-signed messages.
 
 > [!IMPORTANT]
-> In order to compose an encrypted message, the target recipient’s public certificate key must be available either in the Global Address List or stored on the local device. In order to compose a signed message, the sender’s private certificate key must be available on the device.
+> In order to compose an encrypted message, the target recipient's public certificate key must be available either in the Global Address List or stored on the local device. In order to compose a signed message, the sender's private certificate key must be available on the device.
 
 Here is how S/MIME options appear in Outlook for Android:
 
-![Screen shots of Outlook for Android S/MIME options.](../../media/sensitive-android-smime-options.png)
+![Screenshots of Outlook for Android S/MIME options.](../../media/sensitive-android-smime-options.png)
 
-Outlook for iOS and Android will evaluate all recipients prior to sending an encrypted message and confirm that a valid public certificate key exists for each recipient. The Global Address List (GAL) is checked first; if a certificate for the recipient does not exist in the GAL, Outlook queries the Microsoft publisher keychain in iOS or the system KeyStore in Android to locate the recipient’s public certificate key. For recipients without a public certificate key (or an invalid key), Outlook will prompt for their removal. The message will not be sent without encryption to any recipient unless the encryption option is disabled by the sender during composition.
+Outlook for iOS and Android will evaluate all recipients prior to sending an encrypted message and confirm that a valid public certificate key exists for each recipient. The Global Address List (GAL) is checked first; if a certificate for the recipient does not exist in the GAL, Outlook queries the Microsoft publisher keychain in iOS or the system KeyStore in Android to locate the recipient's public certificate key. For recipients without a public certificate key (or an invalid key), Outlook will prompt for their removal. The message will not be sent without encryption to any recipient unless the encryption option is disabled by the sender during composition.
 
-![Screen shot of Outlook for iOS warning about recipient certificates.](../../media/sensitive-ios-no-cert-warning.png)
+![Screenshot of Outlook for iOS warning about recipient certificates.](../../media/sensitive-ios-no-cert-warning.png)

@@ -31,9 +31,25 @@ Your users carry sensitive corporate information in their pockets every day. If 
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mobile devices" entry in the [Clients and mobile devices permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic.
 
-- This procedure will clear all data on the mobile phone, including installed applications, photos, and personal information.
-
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
+
+> [!NOTE]
+> Prior to EAS v16.1, remote wipe would perform a device-level wipe, restoring the device to factory conditions. With EAS v16.1 and later, EAS also supports account-only remote wipe. In order for this to work, the client must support the EAS v16.1 protocol. If the client doesn’t support v16.1, the wipe will fail and an error will be given.
+
+> [!CAUTION]
+> Exchange ActiveSync v16.1 supports two different remote wipe processes: A **Wipe Data** remote wipe and also an **Account Only Remote Wipe Device** remote wipe. There are important differences between how Outlook responds and how native mail apps on iOS and Android respond to these different wipe commands.
+>
+> Outlook for iOS and Outlook for Android support only the **Wipe Data** command, which wipes only data within Outlook. The Outlook app will reset and all Outlook email, calendar, contacts, and file data will be removed, but no other data is wiped from the device. The **Account Only Remote Wipe Device** command is therefore redundant and is not supported by Outlook for iOS or Android.
+>
+> However, if a native iOS or Android mail app is connected to Exchange and receives a **Wipe Data** command from Exchange ActiveSync, all data on the device will be wiped, including photos, personal files, and so on.
+>
+> If a native iOS or Android mail app is connected to Exchange and receives an **Account Only Remote Wipe Device** command from Exchange ActiveSync, only the native mail app's Exchange ActiveSync mail, calendar, and account data are wiped.
+>
+> These commands are designed to destroy data. Exercise caution when using them.
+
+After the remote wipe command is requested by the administrator, the wipe happens within seconds of the Outlook app's next connection to Exchange.
+
+Since Outlook for iOS and Android appears as a single mobile device association under a user's mobile devices in Exchange, a remote wipe command will remove data and delete sync relationships from all devices running Outlook (iPhone, iPad, Android) associated with that user.
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
@@ -46,7 +62,7 @@ You can use the EAC to wipe a user's phone or cancel a remote wipe that has not 
 
 2. Select the user, and under **Mobile Devices**, choose **View details**.
 
-3. On the **Mobile Device Details** page, select the lost mobile device, and then select **Wipe Data**.
+3. On the **Mobile Device Details** page, select the lost mobile device, and then select **Wipe Data** (or **Account Only Remote Wipe Device** if desired).
 
 4. Select **Save**.
 
@@ -60,15 +76,39 @@ The following command wipes the device named WM_TonySmith and sends a confirmati
 Clear-MobileDevice -Identity WM_TonySmith -NotificationEmailAddresses "admin@contoso.com"
 ```
 
+If the device connects to Exchange using a mail app other than Outlook, you can use the following command to wipe only the mail app's Exchange ActiveSync mail, calendar, and account data and leave all other data on the device intact:
+
+```PowerShell
+Clear-MobileDevice -AccountOnly -Identity WM_TonySmith -NotificationEmailAddresses "admin@contoso.com"
+```
+
+The **-AccountOnly** switch has no effect on Outlook devices because an account-only remote wipe is the only type of wipe that is supported by Outlook. See [Clear-MobileDevice](https://docs.microsoft.com/powershell/module/exchange/devices/clear-mobiledevice) for more information.
+
 ## Use Outlook on the web to wipe a user's phone
 
-Your users can wipe their own phone using Outlook on the web.
+Your users can use Outlook on the web to wipe their own phones.
 
-1. In Outlook on the web, select **Settings \> Phone \> Mobile devices**.
+1. In Outlook on the web, select the **Settings** icon.
 
-2. Select the mobile phone.
+2. Under **Your app settings**, select **Mail**.
 
-3. Click or tap the **Wipe Device** icon.
+3. Under **Options**, click to expand **General** if necessary, and then select **Mobile devices**.
+
+4. Select the mobile phone.
+
+5. Click or tap the **Wipe Device** icon (or the **Account Only Remote Wipe Device** icon if desired).
+
+## Use the New Outlook on the web to wipe a user's phone
+
+1. In Outlook on the web, select the **Settings** icon.
+
+2. Click on **View All Outlook settings**.
+
+3. Click **General**,  and then select **Mobile devices**.
+
+4. Select the mobile phone.
+
+5. Click or tap the **Wipe Device** icon (or the **Account Only Remote Wipe Device** icon if desired).
 
 ## How do you know this worked?
 
