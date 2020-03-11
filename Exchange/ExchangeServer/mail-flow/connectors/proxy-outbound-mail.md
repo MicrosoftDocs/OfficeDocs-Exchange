@@ -28,7 +28,7 @@ However, you can configure a Send connector to relay or *proxy* outbound mail th
 
 By default, all inbound mail enters your Exchange organization through the Front End Transport service, and the Front End Transport service proxies inbound mail to the Transport service. For more information, see [Mail flow and the transport pipeline](../../mail-flow/mail-flow.md).
 
-When you configure a Send connector to proxy outbound mail through the Front End Transport service, the Receive connector named "Outbound Proxy Frontend _\<Mailbox server name\>_" in the Front End Transport service listens for these outbound messages from the Transport service, and then the Front End Transport service sends the messages to the Internet. This configuration can consolidate and simplify mail flow by having inbound and outbound mail enter and leave your organization from the same place.
+When you configure a Send connector to proxy outbound mail through the Front End Transport service, the Receive connector named "Outbound Proxy Frontend _\<Mailbox server name\>_" in the Front End Transport service listens for these outbound messages from the Transport service, and then the Front End Transport service sends the messages to the internet.
 
 ## What do you need to know before you begin?
 

@@ -161,7 +161,7 @@ To verify that you have successfully configured the required Send connectors and
 
 ```PowerShell
 Get-SendConnector | Format-List Name,Usage,AddressSpaces,SourceTransportServers,DSNRoutingEnabled,SmartHosts,SmartHostAuthMechanism; Get-ReceiveConnector | Format-List Name,Usage,AuthMechanism,Bindings,RemoteIPRanges
-```PowerShell
+```
 
 ## Mailbox server procedures
 

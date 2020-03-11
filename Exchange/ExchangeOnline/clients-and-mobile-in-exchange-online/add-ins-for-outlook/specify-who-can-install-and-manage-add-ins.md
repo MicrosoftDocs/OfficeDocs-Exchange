@@ -22,21 +22,29 @@ You can specify which administrators in your organization have permissions to in
 
 This is done by assigning or removing management roles specific to add-ins. There are five built-in roles you can use.
 
-Administrative roles
+## Administrative roles
 
 - **Org Marketplace Apps**: Enables an administrator to install and manage add-ins that are available from the Office Store for their organization.
 
 - **Org Custom Apps**: Enables an administrator to install and manage custom add-ins for their organization.
 
-User roles
+By default, all administrators who are in the **Organization Management** role group have both of the above administrative roles enabled.
+
+## User roles
 
 - **My Marketplace Apps**: Enables a user to install and manage Office Store add-ins for their own use.
 
 - **My Custom Apps**: Enables a user to install and manage custom add-ins for their own use.
 
-- **My ReadWriteMailbox Apps**: Enables a user to install and manage add-ins that request the ReadWriteMailbox permission level in their manifest.
+- **My ReadWriteMailbox Apps**: Enables a user to install and manage add-ins that request the `ReadWriteMailbox` permission level in their manifest.
 
-By default, all administrators who have the **Organization Management** role group have both of the above administrative roles enabled. Also by default, end users have the above user roles enabled.
+ By default, all end users have all of the above user roles enabled.
+
+> [!NOTE]
+>
+> If you are testing Outlook add-ins and none are showing up, then as a first troubleshooting step, use the **Get-OrganizationConfig** PowerShell cmdlet to query the *AppsForOfficeEnabled* parameter. If the query returns a value of False, set this parameter to True using the **Set-OrganizationConfig** cmdlet and then add-ins should appear as expected.
+>
+> We do not recommend that the *AppsForOfficeEnabled* parameter be set to False. A value of False will override all of the above Administrative and User role settings and prevent any new apps from being activated by any user in the organization.
 
 For information about add-ins, see [Add-ins for Outlook](add-ins-for-outlook.md).
 

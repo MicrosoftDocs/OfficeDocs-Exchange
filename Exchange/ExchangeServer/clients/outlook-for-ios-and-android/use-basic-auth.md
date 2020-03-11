@@ -69,13 +69,11 @@ Microsoft recommends that the on-premises endpoints for AutoDiscover and ActiveS
 ## Client features that aren't supported
 The following features are not support for on-premises mailboxes using basic authentication with Outlook for iOS and Android:
 
-- Rights protected messages
-
 - Draft folder and Draft messages synchronization
 
 - Shared calendar access and Delegate calendar access
 
-- Shared mailbox data access
+- Shared and delegate mailbox data access
 
 - Cortana Time to Leave
 
@@ -98,3 +96,5 @@ The following features are not support for on-premises mailboxes using basic aut
 - Sensitivity labeling
 
 - Discover Feed
+
+- Privacy settings

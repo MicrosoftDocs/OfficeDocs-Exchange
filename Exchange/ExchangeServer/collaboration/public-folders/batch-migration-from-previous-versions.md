@@ -434,11 +434,11 @@ If you run into issues with the migration and need to reactivate your Exchange 2
 2. On the Exchange 2016 server, run the following commands to remove the public folder mailboxes.
 
    ```PowerShell
-   Get-Mailbox -PublicFolder | Where {$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+   Get-Mailbox -PublicFolder | Where {$_.IsRootPublicFolderMailbox -eq $false} | Remove-Mailbox -PublicFolder -Force -Permanent $true -Confirm:$false
    ```
 
    ```PowerShell
-   Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Confirm:$false
+   Get-Mailbox -PublicFolder | Remove-Mailbox -PublicFolder -Force -Permanent $true -Confirm:$false
    ```
 
 3. On the Exchange 2010 server, run the following command to set the `PublicFolderMigrationComplete` property value to `False`.

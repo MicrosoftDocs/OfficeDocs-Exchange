@@ -145,6 +145,11 @@
         "source_path": "Exchange/ExchangeOnline/mail-flow-best-practices/how-to-configure-iis-for-relay-with-office-365.md",
         "redirect_url": "https://docs.microsoft.com/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3",
         "redirect_document_id": false
-      }
+      },
+      {
+        "source_path": "Exchange/ExchangeServer/policy-and-compliance/smime.md",
+        "redirect_url": "https://docs.microsoft.com/Exchange/policy-and-compliance/smime/smime",
+        "redirect_document_id": true
+      }      
     ]
 }
