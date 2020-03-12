@@ -473,6 +473,6 @@ Create gMSA account and allow servers in the AD-group "Exchange Servers" access 
     ```
 
 
-# Create Credentials object with blank password
+# Create credentials object with blank password
 Note that this is not meant to run as a single script and has no error checks.
 They are just working notes.
