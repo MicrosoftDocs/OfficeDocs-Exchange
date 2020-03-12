@@ -425,7 +425,7 @@ Create gMSA account and allow servers in the AD-group "Exchange Servers" access 
     $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList "contoso\exchangeASA$",(new-object System.Security.SecureString)
     ```
     
-    Get CAS servers and clear old ASA credentials
+    Get CAS servers and clear old ASA credentials.
   
     ```Powershell
     Get-ClientAccessService | Set-ClientAccessService -RemoveAlternateServiceAccountCredentials -CleanUpInvalidAlternateServiceAccountCredentials -Verbose
