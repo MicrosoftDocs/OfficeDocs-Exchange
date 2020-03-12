@@ -451,7 +451,7 @@ Create gMSA account and allow servers in the AD-group "Exchange Servers" access 
     ADObject -Filter '(servicePrincipalName -like "http/mail.contoso.com") -or (servicePrincipalName -like "http/autodiscover.contoso.com")' -Properties servicePrincipalName | Select-Object Name,servicePrincipalName
     ```
 
-    Set SPN
+    Set SPN.
     ```Powershell
     Set-ADServiceAccount -Identity "exchangeASA" -ServicePrincipalNames "http/mail.contoso.com","http/autodiscover.contoso.com"
     ```
