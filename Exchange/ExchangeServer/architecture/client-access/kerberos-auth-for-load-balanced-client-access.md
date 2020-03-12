@@ -419,7 +419,7 @@ Create gMSA account and allow servers in the AD-group "Exchange Servers" access 
 
 ### Set gMSA account on servers
 
-    Create Credentials Objects with Blank password
+    Create credentials objects with blank password.
 
     ```Powershell
     $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList "contoso\exchangeASA$",(new-object System.Security.SecureString)
