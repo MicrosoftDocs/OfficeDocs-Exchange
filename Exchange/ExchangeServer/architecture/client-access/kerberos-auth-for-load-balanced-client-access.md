@@ -461,7 +461,7 @@ Create gMSA account and allow servers in the AD-group "Exchange Servers" access 
     Get-ADServiceAccount -Identity "exchangeASA" -Properties servicePrincipalName | Select-Object Name,servicePrincipalName
     ```
 
-    Restart Client Access Service webpool and Service
+    Restart Client Access Service webpool and Service.
 
     ```Powershell
     Foreach ($CASExchangeHost in (Get-ClientAccessService).name){
