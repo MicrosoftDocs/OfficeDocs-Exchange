@@ -446,7 +446,7 @@ Create gMSA account and allow servers in the AD-group "Exchange Servers" access 
     Get-OutlookAnywhere | Set-OutlookAnywhere -InternalClientAuthenticationMethod Negotiate
     ```
 
-     Pre-check if the SPN are in use (checks all AD-objects)
+     Pre-check if the SPN are in use (checks all AD-objects).
     ```Powershell
     ADObject -Filter '(servicePrincipalName -like "http/mail.contoso.com") -or (servicePrincipalName -like "http/autodiscover.contoso.com")' -Properties servicePrincipalName | Select-Object Name,servicePrincipalName
     ```
