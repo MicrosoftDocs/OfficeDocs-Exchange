@@ -431,7 +431,7 @@ Create gMSA account and allow servers in the AD-group "Exchange Servers" access 
     Get-ClientAccessService | Set-ClientAccessService -RemoveAlternateServiceAccountCredentials -CleanUpInvalidAlternateServiceAccountCredentials -Verbose
     ```
 
-    Get CAS servers and add gMSA as ASA credential
+    Get CAS servers and add gMSA as ASA credential.
     ```Powershell
     Get-ClientAccessService | Set-ClientAccessService -AlternateServiceAccountCredential $Credential -Verbose
     ```
