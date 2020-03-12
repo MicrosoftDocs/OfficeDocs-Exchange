@@ -411,7 +411,7 @@ You can now add a gMSA account to manage the infrastructure.
 
 ### Create ASA Account
 
-Create gMSA account and allow servers in the AD-group "Exchange Servers" access to it. The account name will be "exchangeASA"
+Create a gMSA account and allow servers in the AD-group "Exchange Servers" access to it. The account name will be "exchangeASA".
 
     ```Powershell
     New-ADServiceAccount -DNSHostName "mail.contoso.com" -Name "exchangeASA" -KerberosEncryptionType AES128,AES256 -PrincipalsAllowedToRetrieveManagedPassword (Get-ADGroup -Identity "Exchange Servers") -SamAccountName "exchangeASA" -Description "Service account for Exchange servers to allow Kerberos authentication"
