@@ -68,7 +68,7 @@ If a message is sent to a valid email address in Office 365, the message continu
 
 **Notes**:
 
-- Until all of your valid recipients have been added to Exchange Online and replicated through the system, you should leave the accepted domain configured as **Internal relay**, specialy if you have Mail-Enabled Public Folders in the environment.
+- Until all of your valid recipients have been added to Exchange Online and replicated through the system, you should leave the accepted domain configured as **Internal relay**, especially if you have mail-enabled public folders in the environment.
 - You only do the change to **Authoritative**, once all the Public Folders and users are migrated to Exchange Online. DBEB is designed to allow any SMTP address that has been added to the service (except for mail-enabled public folders). There might be infrequent instances where recipient addresses that do not exist in your Office 365 organization are allowed to relay through the service.
 - For more information about DBEB and mail-enabled public folders, see [Office 365 Directory Based Edge Blocking support for on-premises Mail Enabled Public Folders](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Office-365-Directory-Based-Edge-Blocking-support-for-on-premises/ba-p/606740).
 
