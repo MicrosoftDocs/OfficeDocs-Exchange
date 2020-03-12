@@ -441,7 +441,7 @@ Create gMSA account and allow servers in the AD-group "Exchange Servers" access 
     Get-ClientAccessService -IncludeAlternateServiceAccountCredentialStatus | Format-List Name, AlternateServiceAccountConfiguration
     ```
 
-    Set internal Auth method to "Negotiate" as this supports both NTLM and Kerberos
+    Set internal Auth method to "Negotiate", as this supports both NTLM and Kerberos.
     ```Powershell
     Get-OutlookAnywhere | Set-OutlookAnywhere -InternalClientAuthenticationMethod Negotiate
     ```
