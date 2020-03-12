@@ -407,7 +407,7 @@ To configure your servers that are running Client Access services to stop using 
 
 ## Configure using gMSA Accounts
 
-Now Let's try to add a gMSA account to manage the infrastructure
+You can now add a gMSA account to manage the infrastructure.
 
 ### Create ASA Account
 
