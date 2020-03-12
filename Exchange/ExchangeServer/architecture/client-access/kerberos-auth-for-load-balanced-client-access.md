@@ -436,7 +436,7 @@ Create gMSA account and allow servers in the AD-group "Exchange Servers" access 
     Get-ClientAccessService | Set-ClientAccessService -AlternateServiceAccountCredential $Credential -Verbose
     ```
 
-    Verify ASA credential deployment
+    Verify ASA credential deployment.
     ```Powershell
     Get-ClientAccessService -IncludeAlternateServiceAccountCredentialStatus | Format-List Name, AlternateServiceAccountConfiguration
     ```
