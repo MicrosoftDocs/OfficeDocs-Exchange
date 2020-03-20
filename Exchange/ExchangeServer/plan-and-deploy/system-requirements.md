@@ -106,7 +106,7 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 |**Exchange 2019 version**|**.NET Framework 4.8**|**.NET Framework 4.7.2**|
 |:-----|:-----|:-----|
-|CU4|Supported||
+|CU4, CU5|Supported||
 |CU2, CU3|Supported|Supported|
 |RTM, CU1||Supported|
 
@@ -227,7 +227,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 
 |**Exchange 2016 version**|**.NET Framework 4.8**|**.NET Framework 4.7.2**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|CU15|Supported||||
+|CU15, CU16|Supported||||
 |CU13, CU14|Supported|Supported|||
 |CU11, CU12||Supported|Supported||
 |CU10|||Supported||

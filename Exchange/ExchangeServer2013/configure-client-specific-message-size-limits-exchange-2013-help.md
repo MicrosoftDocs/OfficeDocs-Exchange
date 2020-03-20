@@ -216,7 +216,7 @@ For all message size limits, you need to set values that are larger than the act
 
 - Changes you save to the Web.config configuration file are applied after you restart IIS.
 
-- To allow for a 33% increase in size due to Base64 encoding, multiply your desired new maximum size value in megabytes by 4/3. To convert the value into kilobytes, multiply by 1024. To convert the value into bytes, multiply by 1048756 (1024\*1024). Note that the size increase caused by Base64 encoding could be greater than 33%, and depends on several factors, for example, the attachment file size, type, compression, and the email client used to compose and send the message.
+- To allow for a 33% increase in size due to Base64 encoding, multiply your desired new maximum size value in megabytes by 4/3. To convert the value into kilobytes, multiply by 1024. To convert the value into bytes, multiply by 1048576 (1024\*1024). Note that the size increase caused by Base64 encoding could be greater than 33%, and depends on several factors, for example, the attachment file size, type, compression, and the email client used to compose and send the message.
 
 - Any customized per-server settings you make in Exchange XML application configuration files, for example, web.config files on Client Access servers or the EdgeTransport.exe.config file on Mailbox servers, will be overwritten when you install an Exchange Cumulative Update (CU). Make sure that you save this information so you can easily re-configure your server after the install. You must re-configure these settings after you install an Exchange CU.
 
@@ -241,7 +241,7 @@ For all message size limits, you need to set values that are larger than the act
    ...maxReceivedMessageSize="67108864"...
    ```
 
-   For example, to allow a Base64 encoded maximum message size of approximately 64 MB, change all instances of `67108864` to `89478486` (64\*4/3\*1048756):
+   For example, to allow a Base64 encoded maximum message size of approximately 64 MB, change all instances of `67108864` to `89478486` (64\*4/3\*1048576):
 
    ```powershell
    <requestLimits maxAllowedContentLength="89478486" />

@@ -89,7 +89,7 @@ The following diagram gives you a conceptual overview of what you're environment
 
 #### Requirements for SMTP AUTH client submission
 
-- **Authentication**: You must be able to configure a user name and password to send email on the device.
+- **Authentication**: You must be able to configure a user name and password to send email on the device. Note that you cannot use [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which disable basic authentication and are designed to protect your users from compromise. If at all possble, we recommend using Option 2 or 3 below.
 
 - **Mailbox**: You must have a licensed Office 365 mailbox to send email from.
 

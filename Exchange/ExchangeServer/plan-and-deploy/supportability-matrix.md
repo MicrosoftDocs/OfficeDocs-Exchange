@@ -211,14 +211,14 @@ The following tables identify the versions of the Microsoft .NET Framework that 
 
 ### Exchange 2019
 
-|**.NET Framework version**|**CU4**|**CU3, CU2**|**CU1, RTM**|
+|**.NET Framework version**|**CU5, CU4**|**CU3, CU2**|**CU1, RTM**|
 |:-----|:-----:|:-----:|:-----:|
 |4.8|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||
 |4.7.2||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
 
 ### Exchange 2016
 
-|**.NET Framework version**|**CU15**|**CU14, CU13**|**CU12, CU11**|**CU10**|**CU9, CU8**|**CU7, CU6, CU5**|**CU4, CU3**|**CU2**|**CU1, RTM**|
+|**.NET Framework version**|**CU16, CU15**|**CU14, CU13**|**CU12, CU11**|**CU10**|**CU9, CU8**|**CU7, CU6, CU5**|**CU4, CU3**|**CU2**|**CU1, RTM**|
 |:-----|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |4.8|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)||||||||
 |4.7.2||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||||||

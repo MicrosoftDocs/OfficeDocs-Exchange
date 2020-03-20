@@ -290,6 +290,9 @@ For this scenario, the Receive connector listens for connections on port 25, but
 
      > [!CAUTION]
      > Be very careful using the authentication mechanism **Externally secured** with the permission group **Exchange servers**. This combination allows the remote IP addresses specified in the **Remote network settings** section on the **Scoping** tab to anonymously relay messages through the Exchange server. For more information, see [Allow anonymous relay on Exchange servers](allow-anonymous-relay.md).
+     
+     > [!WARNING]
+     > When using the authentication mechanism **Basic authentication** or **Offer basic authentication only after starting TLS** without the permission group **Anonymous users** as an authenticated relay connector, the routing of mail will always try to select the authenticated user or the organization's arbitration mailbox active mailbox server. 
 
    When you're finished, click **Save**.
 

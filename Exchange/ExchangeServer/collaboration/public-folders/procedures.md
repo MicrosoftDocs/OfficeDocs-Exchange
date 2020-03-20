@@ -32,7 +32,7 @@ Use one or more of the procedures listed below to get your public folder infrast
 
 [Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md)
 
-[Configure legacy public folders where user mailboxes are on Exchange 2016 servers](hhttps://docs.microsoft.com/exchange/configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help)
+[Configure legacy public folders where user mailboxes are on Exchange 2016 servers](https://docs.microsoft.com/exchange/configure-legacy-public-folders-where-user-mailboxes-are-on-exchange-2013-servers-exchange-2013-help)
 
 [Create a public folder mailbox](create-public-folder-mailboxes.md)
 

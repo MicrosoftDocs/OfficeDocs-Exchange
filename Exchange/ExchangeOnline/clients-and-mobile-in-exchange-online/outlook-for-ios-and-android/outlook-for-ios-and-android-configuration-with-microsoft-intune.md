@@ -199,7 +199,7 @@ The workflow for enabling Save Contacts is the same for new accounts and existin
 
 ## S/MIME scenarios
 
-On enrolled devices, Outlook for iOS supports automated certificate delivery and app configuration settings that enables or disables S/MIME in the app and whether the user can adjust the setting. For more information on how to deploy these settings via Microsoft Endpoint Manager, see [Sensitivity labeling and protection in Outlook for iOS and Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android). For more information on the configuration keys, see [Configuration keys](#configuration-keys).
+On enrolled devices, Outlook for iOS supports automated certificate delivery. Outlook for iOS also supports app configuration settings that enables or disables S/MIME in the app and whether the user can adjust the setting. For more information on how to deploy these settings via Microsoft Endpoint Manager, see [Sensitivity labeling and protection in Outlook for iOS and Android](sensitive-labeling-and-protection-outlook-for-ios-android.md). For more information on the configuration keys, see [Configuration keys](#configuration-keys).
 
 ## Data protection scenarios
 
@@ -480,12 +480,12 @@ Outlook for iOS and Android offers administrators the ability to customize the d
 
 ### S/MIME settings
 
-Outlook for iOS offers administrators the ability to customize the default S/MIME configuration on enrolled devices.
+Outlook for iOS offers administrators the ability to customize the default S/MIME configuration in Outlook for iOS and Android.
 
 |**Key**|**Value**|**Device Enrollment Type**|
 |:-----|:-----|:-----|
-|com.microsoft.outlook.Mail.SMIMEEnabled|This key specifies whether the app enables S/MIME. Use of S/MIME requires certificates available to Outlook for iOS and Android. Setting the value to true will enable S/MIME support in the app. This key is only supported with Outlook for iOS.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
-|com.microsoft.outlook.Mail.SMIMEEnabled.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user. This key is only supported with Outlook for iOS.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices|
+|com.microsoft.outlook.Mail.SMIMEEnabled|This key specifies whether the app enables S/MIME. Use of S/MIME requires certificates available to Outlook for iOS and Android. Setting the value to true will enable S/MIME support in the app.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: false <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
+|com.microsoft.outlook.Mail.SMIMEEnabled.UserChangeAllowed|This key specifies whether the S/MIME setting can be changed by the end user.<br/><br/> **Value type**: Boolean <br/><br/> **Accepted values**: true, false <br/><br/> **Default if not specified**: true <br/><br/> **Required**: No <br/><br/> **Example**: false|Managed Devices, Managed Apps|
 
 ### Data protection settings
 

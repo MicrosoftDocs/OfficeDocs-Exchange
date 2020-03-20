@@ -70,10 +70,10 @@ The settings for each network adapter in each node are detailed in the following
 |MBX2 (MAPI)|192.168.1.5|255.255.255.0|192.168.1.1|
 |MBX3 (MAPI)|192.168.2.4|255.255.255.0|192.168.2.1|
 |MBX4 (MAPI)|192.168.2.5|255.255.255.0|192.168.2.1|
-|MBX1 (Replication)|10.0.1.4|255.255.0.0|None|
-|MBX2 (Replication)|10.0.1.5|255.255.0.0|None|
-|MBX3 (Replication)|10.0.2.4|255.255.0.0|None|
-|MBX4 (Replication)|10.0.2.5|255.255.0.0|None|
+|MBX1 (Replication)|10.0.1.4|255.255.255.0|None|
+|MBX2 (Replication)|10.0.1.5|255.255.255.0|None|
+|MBX3 (Replication)|10.0.2.4|255.255.255.0|None|
+|MBX4 (Replication)|10.0.2.5|255.255.255.0|None|
 
 As shown in the preceding table, adapters used for Replication networks don't use default gateways. To provide network connectivity between each of the Replication network adapters, Contoso uses persistent static routes, which they configure by using the Netsh.exe tool.
 

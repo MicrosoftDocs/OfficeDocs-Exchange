@@ -77,9 +77,9 @@ The following procedure shows how to connect a disabled user mailbox. You can al
 
     Exchange will reconnect the disabled mailbox to the corresponding user account.
 
-## Use the Exchange Management Shell to connect a disabled mailbox
+## Use the Exchange Management Shell to connect a disabled mailbox or personal archive
 
-Use the **Connect-Mailbox** cmdlet in the Exchange Management Shell to connect a user account to a disabled mailbox. You have to specify the type of mailbox that you're connecting. The following examples show the syntax for reconnecting user, linked, and shared mailboxes.
+Use the **Connect-Mailbox** cmdlet in the Exchange Management Shell to connect a user account to a disabled mailbox. You have to specify the type of mailbox that you're connecting. The following examples show the syntax for reconnecting user, linked, shared, and archive mailboxes.
 
 This example connects a user mailbox. The _Identity_ parameter specifies the disconnected mailbox in the Exchange database. The _User_ parameter specifies the Active Directory user account to reconnect the mailbox to.
 
@@ -101,6 +101,21 @@ Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database
 
 > [!NOTE]
 > If you don't include the _Alias_ parameter when you run the **Connect-Mailbox** cmdlet, the value specified in the _User_ or _LinkedMasterAccount_ parameter is used to create the email address alias for the reconnected mailbox.
+
+This example connects a personal archive to the primary mailbox using the mailbox GUID stored in mailbox database DB01.
+
+```PowerShell
+Connect-Mailbox -Identity "95352f8b-e5aa-496f-ac7f-ce93357d7b0c" -Archive -User "Megan Bown" -Database "DB01"
+```
+
+If you do not know the name of the personal archive, you can view it in the Exchange Management Shell by running the following command. This example returns all personal archive mailboxes in mailbox database DB01.
+
+```PowerShell
+Get-MailboxDatabase "DB01" | Get-MailboxStatistics | Where {($_.DisconnectDate -ne $null) -and ($_.IsArchiveMailbox -eq $true)} | Format-Table DisplayName,MailboxGuid -AutoSize
+```
+
+> [!NOTE]
+> You can connect a personal archive mailbox to any primary mailbox you wish, even if it is not the original owner's mailbox. Use the _AllowLegacyDNMismatch_ parameter to allow the connection of the archive mailbox to a different primary mailbox.
 
 For detailed syntax and parameter information, see [Connect-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/connect-mailbox).
 

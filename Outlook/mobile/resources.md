@@ -34,7 +34,7 @@ Deploy Outlook for iOS and Android and Microsoft 365 Security, Compliance, and I
 
 ### TEI study shows Outlook mobile cost savings
 
-Microsoft commissioned Forrester® to do study about the cost of deploying Outlook for iOS and Android in enterprises. The [Forrester Total Economic Impact™ (TEI)](media/forrester-tei.pdf) provides an analysis of the cost savings and business benefits of Outlook mobile as described by four large enterprise companies.  
+Microsoft commissioned Forrester&reg; to do study about the cost of deploying Outlook for iOS and Android in enterprises. The [Forrester Total Economic Impact&trade; (TEI)](media/forrester-tei-infographic.pdf) provides an analysis of the cost savings and business benefits of Outlook mobile as described by four large enterprise companies.  
 
 ## Outlook mobile Customer Adoption Pack
 

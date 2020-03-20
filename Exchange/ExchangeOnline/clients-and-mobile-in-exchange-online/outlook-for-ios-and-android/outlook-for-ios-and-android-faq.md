@@ -181,7 +181,11 @@ For tenants that have not been migrated to the native Microsoft sync technology,
 
 Yes, Outlook for iOS and Android supports shared mailboxes when the user mailbox and shared mailbox are located in Exchange Online and using the native Microsoft sync technology.
 
-A shared mailbox is a special mailbox type that is created using the -Shared parameter. Access to the shared mailbox by a user is obtained via permissions and not through the use of alternate credentials. For more information, please see [Shared mailboxes in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes).
+A shared mailbox is a special mailbox type that is created using the -Shared parameter. Access to the shared mailbox by a user is obtained via permissions and not through the use of alternate credentials. For more information, please see [Shared mailboxes in Exchange Online](../../collaboration-exo/shared-mailboxes.md).
+
+### Q: Does Outlook for iOS and Android support delegate mailboxes?
+
+Yes, Outlook for iOS and Android has extended the shared mailbox capability to now allow users to add another person's mailbox when the user has been granted FullAccess permissions to the other person's mailbox. Granting SendAs or Send on Behalf of permissions also allows the user to send messages as the other person's mailbox. For more information permission assignment, please see [Manage permissions for recipients in Exchange Online](../../recipients-in-exchange-online/manage-permissions-for-recipients.md).
 
 ### Q: Does Outlook for iOS and Android support contact management functionality? What about integration with the operating system features?
 
