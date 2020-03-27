@@ -105,6 +105,8 @@ The following conditions can be used in mail flow rules to inspect different pro
 
 - To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
+- While checking attachment size using Transport Rule, individual attachment size is checked and not cumulative size. For example, if attachement that's larger than or equal to 10 MB is rejected using a Transport Rule, users will still be able to send three 5 MB attachments and it will be allowed. 
+
 ### Supported executable file types for mail flow rule inspection
 
 The mail flow rules use true type detection to inspect file properties rather than merely the file extensions. This helps to prevent malicious hackers from being able to bypass your rule by renaming a file extension. The following table lists the executable file types supported by these conditions. If a file is found that is not listed here, the `AttachmentIsUnsupported` condition is triggered.
