@@ -18,7 +18,7 @@ manager: serdars
 
 # Updates for Exchange Server
 
-Exchange follows a quarterly delivery model to release Cumulative Updates (CUs) that address customer-reported issues and to possibly add new functionality and/or features. Critical product updates (packages that address a Microsoft-released security bulletin or contain a change in time zone definitions) are released as needed on a monthly basis for the most recently released CU and the preceding CU.
+Exchange follows a quarterly delivery model to release Cumulative Updates (CUs) that address customer-reported issues and to possibly add new functionality and/or features. When in Mainstream Support, Critical product updates, which are packages that address a Microsoft-released security bulletin or contain a change in time zone definitions, are released as needed on a monthly basis for the most recently released CU and the immediately previous CU.  When in Extended Support, Critical product updates are released as needed on a monthly basis for only the most recently released CU.
 
 Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
 
