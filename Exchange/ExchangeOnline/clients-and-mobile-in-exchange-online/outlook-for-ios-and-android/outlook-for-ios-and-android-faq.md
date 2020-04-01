@@ -185,7 +185,7 @@ A shared mailbox is a special mailbox type that is created using the -Shared par
 
 ### Q: Does Outlook for iOS and Android support delegate mailboxes?
 
-Yes, Outlook for iOS and Android has extended the shared mailbox capability to now allow users to add another person's mailbox when the user has been granted FullAccess permissions to the other person's mailbox. Granting SendAs or Send on Behalf of permissions also allows the user to send messages as the other person's mailbox. For more information permission assignment, please see [Manage permissions for recipients in Exchange Online](../../recipients-in-exchange-online/manage-permissions-for-recipients.md).
+Yes, Outlook for iOS and Android has extended the shared mailbox capability to now allow users to add another person's mailbox when the user has been granted FullAccess permissions to the other person's mailbox. Granting SendAs or Send on Behalf of permissions also allows the user to send messages as the other person's mailbox. For more information on permission assignment, please see [Manage permissions for recipients in Exchange Online](../../recipients-in-exchange-online/manage-permissions-for-recipients.md).
 
 ### Q: Does Outlook for iOS and Android support contact management functionality? What about integration with the operating system features?
 

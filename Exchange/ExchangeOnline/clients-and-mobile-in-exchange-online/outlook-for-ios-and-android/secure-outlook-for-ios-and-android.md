@@ -70,7 +70,7 @@ The richest and broadest protection capabilities for Office 365 data are availab
 
 ### Block all email apps except Outlook for iOS and Android using conditional access
 
-When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. To do this, you will need several conditional access policies, with each policy targeting all potential users. Details on creating these polices can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+When an organization decides to standardize how users access Exchange data, using Outlook for iOS and Android as the only email app for end users, they can configure a conditional access policy that blocks other mobile access methods. To do this, you will need several conditional access policies, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
 1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Office 365" in [Scenario 1: Office 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
@@ -92,21 +92,25 @@ When an organization decides to standardize how users access Exchange data, usin
 
 ### Protect corporate data in Outlook for iOS and Android using Intune app protection policies
 
+App Protection Policies (APP) define which apps are allowed and the actions they can take with your organization's data. The choices available in APP enable organizations to tailor the protection to their specific needs. For some, it may not be obvious which policy settings are required to implement a complete scenario. To help organizations prioritize mobile client endpoint hardening, Microsoft has introduced taxonomy for its APP data protection framework for iOS and Android mobile app management. 
+
+The APP data protection framework is organized into three distinct configuration levels, with each level building off the previous level: 
+
+- **Enterprise basic data protection** (Level 1) ensures that apps are protected with a PIN and encrypted and performs selective wipe operations. For Android devices, this level validates Android device attestation. This is an entry level configuration that provides similar data protection control in Exchange Online mailbox policies and introduces IT and the user population to APP. 
+- **Enterprise enhanced data protection** (Level 2) introduces APP data leakage prevention mechanisms and minimum OS requirements. This is the configuration that is applicable to most mobile users accessing work or school data. 
+- **Enterprise high data protection** (Level 3) introduces advanced data protection mechanisms, enhanced PIN configuration, and APP Mobile Threat Defense. This configuration is desirable for users that are accessing high risk data. 
+
+To see the specific recommendations for each configuration level and the minimum apps that must be protected, review [Data protection framework using app protection policies](https://docs.microsoft.com/mem/intune/apps/app-protection-framework). 
+
 Regardless of whether the device is enrolled in an MDM solution, an Intune app protection policy needs to be created for both iOS and Android apps, using the steps in [How to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies). These policies, at a minimum, must meet the following conditions:
 
-1. They include all Microsoft mobile applications, such as Word, Excel, or PowerPoint, as this will ensure that users can access and manipulate corporate data within any Microsoft app in a secure fashion.
+1. They include all Microsoft mobile applications, such as Edge, OneDrive, Office, or Teams, as this will ensure that users can access and manipulate work or school data within any Microsoft app in a secure fashion.
 
-2. They mimic the security features that Exchange provides for mobile devices, including:
+2. They are assigned to all users. This ensures that all users are protected, regardless of whether they use Outlook for iOS or Android.
 
-   - Requiring a PIN for access (which includes Select Type, PIN length, Allow Simple PIN, Allow fingerprint)
+3. Determine which framework level meets your requirements. Most organizations should implement the settings defined in **Enterprise enhanced data protection** (Level 2) as that enables data protection and access requirements controls. 
 
-   - Encrypting app data
-
-   - Blocking managed apps from running on "jailbroken" and rooted devices
-
-3. They are assigned to all users. This ensures that all users are protected, regardless of whether they use Outlook for iOS or Android.
-
-In addition to the above minimum policy requirements, you should consider deploying advanced protection policy settings like **Restrict cut, copy and paste with other apps** to further prevent corporate data leakage. For more information on the available settings, see [Android app protection policy settings in Microsoft Intune](https://docs.microsoft.com/intune/app-protection-policy-settings-android) and [iOS app protection policy settings](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
+For more information on the available settings, see [Android app protection policy settings in Microsoft Intune](https://docs.microsoft.com/intune/app-protection-policy-settings-android) and [iOS app protection policy settings](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
 > [!IMPORTANT]
 > To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](https://docs.microsoft.com/intune/app-protection-enabled-apps-android).
@@ -215,8 +219,8 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
    New-ActiveSyncDeviceAccessRule -Characteristic DeviceType -QueryString "HTCOne" -AccessLevel Block
    ```
 
-> [!NOTE]
-> The QueryString parameter does not accept wildcards or partial matches.
+   > [!NOTE]
+   > The **-QueryString** parameter does not accept wildcards or partial matches.
 
 **Additional resources**:
 

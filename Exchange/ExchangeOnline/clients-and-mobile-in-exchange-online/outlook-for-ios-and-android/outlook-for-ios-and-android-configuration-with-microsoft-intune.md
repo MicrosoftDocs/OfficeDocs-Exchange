@@ -423,7 +423,8 @@ The newly created configuration policy is displayed on the **App configuration**
 ## Configuration keys
 The following sections outline the app configuration keys and their supported values. Configuration keys identified with the **Managed apps** device enrollment type are delivered through the App Protection Policy channel. Configuration keys identified with the **Managed devices** device enrollment type are delivered through the MDM OS channel. If a configuration key is listed with both device enrollment types, the key can be delivered through either channel; for more information see [General app configuration scenarios](#general-app-configuration-scenarios).
 
-If the **Managed devices** device enrollment type configuration keys are deployed with third-party MDM provider, then the following additional key must also be delivered:
+### iOS devices and third-party MDM
+If the **Managed devices** device enrollment type configuration keys are deployed with a third-party MDM provider, then the following additional key must also be delivered for iOS devices:
 
    **key** = IntuneMAMUPN, **value** = <username@company.com>
 
