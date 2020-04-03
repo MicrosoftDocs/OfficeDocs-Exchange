@@ -55,7 +55,7 @@ For more information about how admins can recover deleted items in Exchange Onli
 
 ## How do users backup Outlook data?
 
-Exchange Online does not provide a way to perform traditional backup of mailboxes (as this implies the ability to restore a mailbox to a state the mailbox was in when backup was taken). The best way to provide additional storage for user emails is with Exchange Online Archiving. Using Outlook to backup data into PST files aren't recommended due to the loss of discoverability and control of the content.
+Exchange Online does not provide a way to perform a traditional backup of mailboxes (as this implies the ability to restore a mailbox to a state the mailbox was in when the backup was taken). The best way to provide additional storage for user emails is with Exchange Online Archiving. Using Outlook to backup data into PST files aren't recommended due to the loss of discoverability and control of the content.
 
 For more information about Exchange Online Archiving, see:
 
