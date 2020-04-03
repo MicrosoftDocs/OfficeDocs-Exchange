@@ -98,8 +98,8 @@ Certain services and features of Outlook for iOS and Android are not available f
 
 - **Location services**: Bing location services are not available with GCC accounts. Features that rely on location services, like Cortana Time To Leave, are also unavailable.
 
-- **Favorites**: Favorite folders, groups, and people are not available with GCC accounts.
+- **Favorites**: Favorite groups and people are not available with GCC accounts.
 
-- **Privacy settings**: Privacy settings cannot be configured through the Office cloud policy service. 
+- **Privacy settings**: Privacy settings cannot be configured through the Office cloud policy service.
 
-- **Play My Emails**: Play My Emails is not available for GCC accounts. 
+- **Play My Emails**: Play My Emails is not available for GCC accounts.

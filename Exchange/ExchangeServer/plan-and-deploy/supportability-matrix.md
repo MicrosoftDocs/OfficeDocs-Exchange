@@ -156,7 +156,7 @@ The following table identifies the Web browsers supported for the use of S/MIME 
 
 |**Browser**|**Exchange 2019**|**Exchange 2016**|**Exchange 2013 SP1 and later**|**Exchange 2010 SP3**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Microsoft Edge|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|||
+|Microsoft Edge|![check mark](../media/check-mark.png)||||
 |Internet Explorer 11|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
 |Internet Explorer 10|||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|
 |Internet Explorer 9|||![check mark](../media/check-mark.png)|![check mark](../media/check-mark.png)|

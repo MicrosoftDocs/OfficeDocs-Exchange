@@ -280,9 +280,9 @@ The following steps allow you to create an app configuration policy. After the c
 > [!IMPORTANT]
 > When deploying app configuration policies to managed devices, issues can occur when multiple policies have different values for the same configuration key and are targeted for the same app and user. This is due to the lack of a conflict resolution mechanism for resolving the differing values. You can prevent this by ensuring that only a single app configuration policy for managed devices is defined and targeted for the same app and user.
 
-#### Create a managed devices app configuration policy for Outlook for iOS and Android
+### Create a managed devices app configuration policy for Outlook for iOS and Android
 
-1. Sign into [Microsoft Endpoint Manager](https://devicemanagement.microsoft.com).
+1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
 2. Select **Apps** and then select **App configuration policies**.
 
@@ -359,9 +359,9 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 > [!NOTE]
 > Microsoft Endpoint Manager managed apps will check-in with an interval of 30 minutes for Intune App Configuration Policy status, when deployed in conjunction with an Intune App Protection Policy. If an Intune App Protection Policy isn't assigned to the user, then the Intune App Configuration Policy check-in interval is set to 720 minutes.
 
-#### Create a managed apps app configuration policy for Outlook for iOS and Android
+### Create a managed apps app configuration policy for Outlook for iOS and Android
 
-1. Sign into [Microsoft Endpoint Manager](https://devicemanagement.microsoft.com).
+1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
 2. Select **Apps** and then select **App configuration policies**.
 
