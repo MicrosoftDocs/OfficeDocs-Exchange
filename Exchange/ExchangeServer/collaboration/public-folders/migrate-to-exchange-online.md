@@ -206,7 +206,7 @@ In Exchange Management Shell (on-premises) perform the following steps:
 
    3. On the **Connect to Azure AD** screen, enter the appropriate credentials, and then click **Next**. Once connected, keep clicking **Next** until you're on the **Optional Features** screen.
 
-   4. Make sure that **Exchange Mail Public Folders** is not selected. If it isn't selected, you can continue to the next section, *Prerequisite steps in Exchange Online*. If it is selected, click to clear the check box, and then click **Next**.
+   4. Make sure that **Exchange Mail Public Folders** is not selected. If it isn't selected, you can go back in the wizard as long as you can so that you don't make any changes, and then continue to the next section, *Prerequisite steps in Exchange Online*. If it is selected, click to clear the check box, and then click **Next**.
 
       > [!NOTE]
       > If you don't see **Exchange Mail Public Folders** as an option on the **Optional Features** screen, you can exit Microsoft Azure Active Directory Connect and proceed to the next section, *Prerequisite steps in Exchange Online*.
