@@ -58,6 +58,9 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 - Before you begin, please read this article in its entirety. For some steps there is downtime required. During this downtime, public folders will not be accessible by anyone.
 
+    > [!NOTE]
+    > Especially, read the Known issues section at the end of this article.
+
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
