@@ -35,7 +35,7 @@ This article explains how you can send email from devices and business applicati
 - You have a line-of-business (LOB) application that manages appointments, and you want to email reminders to clients of their appointment time.
 
 > [!NOTE]
-> Beginning November 1st, 2019, Office 365 is slowly turning off the TLS cipher algorithm 3DES. If you are using devices or applications that only support 3DES, TLS will start failing. As TLS is mandatory for the SMTP AUTH client submission (also known as Authenticated SMTP or SMTP AUTH for short), you may experience emails no longer sending. You will need to upgrade or update all of your devices and applications to use the new TLS version and ciphers.
+> Microsoft is constantly taking steps to further secure our service and customers. Some of those changes include disabling SMTP AUTH client submission by default. In order to use this protocol, you may need to ensure that [Security Defaults](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-default) are turned off and [SMTP AUTH is enabled](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) for the mailbox being used.
 
 ## Option 1 (recommended): Authenticate your device or application directly with an Office 365 mailbox, and send mail using SMTP AUTH client submission
 
