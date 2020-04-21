@@ -325,7 +325,7 @@ By default, after you install the Mailbox server, the server will send voice mai
 
 There are Unified Messaging Voice Mail Preview partners that offer enhanced transcription support for the Voice Mail Preview feature. These partners employ people to correct voice mail transcriptions that were created using ASR. Each Voice Mail Preview partner must meet a set of requirements to be certified to interoperate with Unified Messaging.
 
-If you find that the voice mail previews sent to your users aren't accurate enough, you can contact one of the certified Voice Mail Preview partners listed on the [Microsoft Pinpoint for Unified Messaging](https://go.microsoft.com/fwlink/p/?linkid=261951) page and sign up with them at an additional cost.
+If you find that the voice mail previews sent to your users aren't accurate enough, you can contact one of the certified Voice Mail Preview partners listed on the [Microsoft Solution Providers](https://www.microsoft.com/solution-providers) website and sign up with them at an additional cost.
 
 You can download the UM language packs from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=266542). For details, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
 

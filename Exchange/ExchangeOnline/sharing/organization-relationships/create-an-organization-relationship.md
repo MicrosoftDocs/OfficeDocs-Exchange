@@ -61,6 +61,10 @@ Set up an organization relationship to share calendar information with an extern
 
 7. Click **save** to create the organization relationship.
 
+> [!NOTE]
+>
+> Cross-tenant configurations do not support personal contacts for free/busy lookup. Contacts must be included in the global address list for free/busy lookup to work.
+
 ## Use Exchange Online PowerShell to create an organization relationship
 <a name="BKMK_Shell"> </a>
 

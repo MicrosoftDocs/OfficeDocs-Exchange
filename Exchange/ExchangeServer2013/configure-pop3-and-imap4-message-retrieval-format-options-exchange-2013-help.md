@@ -67,7 +67,7 @@ After you've set the message retrieval format settings for POP3, you must restar
 This example sets the message retrieval format option to text only for all POP3 users on server CAS01.
 
 ```powershell
-Set-PopSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+Set-PopSettings -Server CAS01 -MessageRetrievalMimeFormat TextOnly
 ```
 
 You can choose from the following settings. You can specify the value for the *MessageRetrievalMimeFormat* parameter by using a numerical value or a text string.
@@ -164,7 +164,7 @@ After you've set the message retrieval format settings for IMAP4, you must resta
 This example sets the message retrieval format option to text only for all IMAP4 users on server CAS01.
 
 ```powershell
-Set-ImapSettings -Identity CAS01 -MessageRetrievalMimeFormat TextOnly
+Set-ImapSettings -Server CAS01 -MessageRetrievalMimeFormat TextOnly
 ```
 
 You can choose from the following settings. You can specify the value for the *MessageRetrievalMimeFormat* parameter by using a numerical value or a text string.

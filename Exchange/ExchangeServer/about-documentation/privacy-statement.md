@@ -22,7 +22,7 @@ Microsoft is committed to protecting your privacy, while delivering software tha
 
 Exchange 2016 and Exchange 2019 deliver email, calendaring, contact management, and other online collaboration functionalities on your PC's, mobile phones, and web browsers.
 
-This privacy statement addresses the deployment and use of Exchange 2016 and Exchange 2019 in an enterprise network environment. If you use Exchange Server technologies as a service operated by Microsoft or a third party, please refer to the service-specific privacy and security policies provided by Microsoft or the third party service provider.
+This privacy statement addresses the deployment and use of Exchange 2016 and Exchange 2019 in an enterprise network environment. If you use Exchange Server technologies as a service operated by Microsoft or a third party, please refer to the service-specific privacy and security policies provided by Microsoft or the third-party service provider.
 
 IT administrators of Exchange 2016 and Exchange 2019 may choose to enable or disable certain Internet-enabled features in Exchange, or to deploy other privacy impacting technologies, based on legal or compliance considerations or internal policies. You should direct privacy-related requests related to the entity that's providing your access to Exchange 2016 or Exchange 2019. Microsoft is not responsible for the privacy practices of its customers or other third parties.
 

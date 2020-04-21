@@ -1,5 +1,5 @@
 ---
-localization_priority: Normal
+localization_priority: High
 description: 'Summary: Learn about build numbers and release dates for current and past versions of Exchange Server.'
 ms.topic: overview
 author: mattpennathe3rd
@@ -24,7 +24,8 @@ This topic is organized in sections that correspond to the major releases of Exc
 
 Download links for the latest CU, RU, and SP for Exchange Server 2019, Exchange Server 2016, Exchange Server 2013, Exchange Server 2010, and Exchange Server 2007 are included.
 
-**Note**: In the following sections, RTM stands for release to manufacturing (the first version of the product).
+> [!NOTE]
+> In the following sections, RTM stands for release to manufacturing (the first version of the product).
 
 ## Exchange Server 2019
 
@@ -200,7 +201,8 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 
 The tables in this section provide build numbers and general release dates for each version of Microsoft Exchange Server 2007.
 
-**Note**: The version information for Exchange Server 2007 SP1 is displayed correctly in the Exchange Management Console, in the Exchange Management Shell, and in the **About Exchange Server 2007 Help** dialog box. However, after you apply Exchange 2007 SP1 to an Edge Transport server that's running the RTM version of Exchange 2007, the version information for the Edge Transport server isn't updated in the Exchange Management Console unless the Edge Transport server is resubscribed to the Active Directory site. This is because the Edge Transport server doesn't directly update Active Directory by using any configuration information. Instead, the version information for Edge Transport servers is recorded in Active Directory during the creation of an Edge Subscription.
+> [!NOTE]
+> The version information for Exchange Server 2007 SP1 is displayed correctly in the Exchange Management Console, in the Exchange Management Shell, and in the **About Exchange Server 2007 Help** dialog box. However, after you apply Exchange 2007 SP1 to an Edge Transport server that's running the RTM version of Exchange 2007, the version information for the Edge Transport server isn't updated in the Exchange Management Console unless the Edge Transport server is resubscribed to the Active Directory site. This is because the Edge Transport server doesn't directly update Active Directory by using any configuration information. Instead, the version information for Edge Transport servers is recorded in Active Directory during the creation of an Edge Subscription.
 
 To view the build number of an Exchange 2007 server, run the following command in the Exchange Management Shell:
 

@@ -56,8 +56,6 @@ For more information about deploying Exchange 2019, see [Planning and deployment
 
 - **Calendar - Remove-CalendarEvents cmdlet**: Enables administrators to cancel meetings that were organized by a user that has left the company. Previously, conference rooms or meeting attendees would have these defunct meetings permanently on their calendars.
 
-- **Assign delegate permission via PowerShell**: Updates to the Add-FolderPermissions cmdlet so administrators can assign delegate permissions.
-
 - **Email address internationalization (EAI)**: Email addresses that contain non-English characters can now be routed and delivered natively.
 
 ## What's new when upgrading from Exchange 2013 to Exchange 2019?
@@ -187,20 +185,20 @@ Exchange 2019 includes the following improvements to In-Place Archiving, retenti
 
     In Exchange 2019, Compliance Search is only available by using the Exchange Management Shell. For information about using the Compliance Search cmdlets, see the following topics:
 
-  - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)
+    - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)
 
-  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
+    - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
 
-  - [Remove-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-compliancesearch)
+    - [Remove-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-compliancesearch)
 
-  - [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
+    - [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
 
-  - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
+    - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
 
-  - [Stop-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-compliancesearch)
+    - [Stop-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-compliancesearch)
 
-    > [!NOTE]
-    > To have access to the Compliance Search cmdlets, an administrator or eDiscovery manager must be assigned the Mailbox Search management role or be a member of the Discovery Management role group.
+   > [!NOTE]
+   > To have access to the Compliance Search cmdlets, an administrator or eDiscovery manager must be assigned the Mailbox Search management role or be a member of the Discovery Management role group.
 
 For more information, see [Messaging policy and compliance in Exchange Server](../policy-and-compliance/policy-and-compliance.md).
 

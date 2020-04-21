@@ -22,8 +22,6 @@ If you prevent fax messages from being received on a dial plan, all users who ar
 > [!NOTE]
 > You can use the EAC to configure fax settings on a UM mailbox policy. However, you must use the Shell to configure fax settings on dial plans or for individual users.
 
-For more information about fax partners, see [Microsoft PinPoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238).
-
 For additional management tasks related to faxing, see [Faxing procedures](faxing-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?

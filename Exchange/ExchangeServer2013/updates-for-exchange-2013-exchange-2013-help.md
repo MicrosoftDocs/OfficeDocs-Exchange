@@ -19,9 +19,11 @@ _**Applies to:** Exchange Server 2013_
 
 Learn how the update process for Microsoft Exchange Server 2013 has changed. This article also provides links to information about the features and improvements that were included in current, and previous, releases of Exchange 2013.
 
-With Microsoft Exchange Server 2013, we changed the way we deliver hotfixes and service packs. Instead of the priority-driven hotfix release and rollup update model used by previous versions of Microsoft Exchange, Exchange 2013 now follows a scheduled delivery model. In this model, cumulative updates (CU), which address customer-reported issues and may include new functionality and/or features, are released quarterly. Critical product updates, which are packages that address a Microsoft-released security bulletin or contain a change in time zone definitions, are released as needed on a monthly basis for the most recently released CU and the immediately previous CU.
+With Microsoft Exchange Server 2013, we changed the way we deliver hotfixes and service packs. Instead of the priority-driven hotfix release and rollup update model used by previous versions of Microsoft Exchange, Exchange 2013 now follows a quarterly delivery model to release Cumulative Updates (CUs) that address issues reported by customers. CUs sometimes also add new features and functionality.
 
-To get the latest version of Exchange 2013, download and install [Microsoft Exchange Server 2013 Cumulative Update 23](https://www.microsoft.com/downloads/details.aspx?FamilyID=4706d685-777d-4761-81a2-5736f38c21f8). Because each CU is a full installation of Exchange and includes updates and changes from all previous CU's, you don't need to install any previous CU's or service packs first.
+Critical product updates are packages that address a Microsoft-released security bulletin or that contain a change in time zone definitions. When in Mainstream Support, critical product updates are released as needed on a monthly basis for the most recently released CU and for the immediately previous CU. When in Extended Support, critical product updates are released as needed on a monthly basis for only the most recently released CU.
+
+To get the latest version of Exchange 2013, download and install [Microsoft Exchange Server 2013 Cumulative Update 23](https://www.microsoft.com/downloads/details.aspx?FamilyID=4706d685-777d-4761-81a2-5736f38c21f8). Because each CU is a full installation of Exchange and includes updates and changes from all previous CUs, you don't need to install any previous CUs or service packs first.
 
 For more information about updates as they relate to Exchange 2013, including an extensive FAQ, see [Servicing Exchange 2013](https://go.microsoft.com/fwlink/p/?linkid=282528) and "Servicing Model Update" in [Released: Exchange Server 2013 Cumulative Update 2](https://go.microsoft.com/fwlink/p/?linkid=313613).
 
@@ -96,7 +98,7 @@ Exchange 2013 SP1 provides an expanded set of standard DLP sensitive information
 
 Deploying and configuring Active Directory Federation Services (AD FS) using claims means multifactor authentication can be used with Exchange 2013 SP1 including supporting smartcard and certificate-based authentication in Outlook Web App. In a nutshell, to implement AD FS to support multifactor authentication:
 
-- Install and configure Windows Server 2012 R2 AD FS (this is the most current version of AD FS and contains additional support for multifactor authentication). To learn more about setting up AD FS, see [Active Directory Federation Services (AD FS) Overview](https://technet.microsoft.com/library/hh831502)
+- Install and configure Windows Server 2012 R2 AD FS (this is the most current version of AD FS and contains additional support for multifactor authentication). To learn more about setting up AD FS, see [Active Directory Federation Services (AD FS) Overview](https://technet.microsoft.com/library/hh831502).
 
 - Create relying party trusts and the required AD FS claims.
 
@@ -108,7 +110,7 @@ Deploying and configuring Active Directory Federation Services (AD FS) using cla
 
 - Restart Internet Information Services on each Client Access server to load the configuration.
 
-For details, see [Using AD FS claims-based authentication with Outlook Web App and EAC](using-ad-fs-claims-based-authentication-with-outlook-web-app-and-eac-exchange-2013-help.md)
+For details, see [Using AD FS claims-based authentication with Outlook Web App and EAC](using-ad-fs-claims-based-authentication-with-outlook-web-app-and-eac-exchange-2013-help.md).
 
 ### SSL Offloading support
 
@@ -132,7 +134,7 @@ SSL offloading is supported with following protocols and services:
 
 - MAPI virtual directory for Outlook clients
 
-If you have multiple Client Access servers, each Client Access server in your organization must be configured identically. You need to perform the required steps for each protocol or service on every Client Access server in your on-premises organization. For details, see [Configuring SSL offloading in Exchange 2013](configuring-ssl-offloading-in-exchange-2013-exchange-2013-help.md)
+If you have multiple Client Access servers, each Client Access server in your organization must be configured identically. You need to perform the required steps for each protocol or service on every Client Access server in your on-premises organization. For details, see [Configuring SSL offloading in Exchange 2013](configuring-ssl-offloading-in-exchange-2013-exchange-2013-help.md).
 
 ### Public Attachment Handling in Exchange Online
 
@@ -156,7 +158,7 @@ Information workers in Exchange on-premises organizations need to collaborate wi
 
 - Exchange hybrid deployment features, such as shared free/busy calendar information, MailTips, and Message Tracking.
 
-- Exchange In-place eDiscovery
+- Exchange In-place eDiscovery.
 
 For more information, see [Configure OAuth authentication between Exchange and Exchange Online organizations](configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md).
 
@@ -164,7 +166,7 @@ For more information, see [Configure OAuth authentication between Exchange and E
 
 New in Exchange 2013 SP1, hybrid deployments are now supported in organizations with multiple Active Directory forests. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple Active Directory forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren't classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
 
-For more information, see [Hybrid deployments with multiple Active Directory forests](https://technet.microsoft.com/library/jj873754\(v=exchg.150\)).
+For more information, see [Hybrid deployments with multiple forests](../ExchangeHybrid/hybrid-deployment/hybrid-with-multiple-forests.md).
 
 ### Database Availability Group without an Administrative Access Point
 

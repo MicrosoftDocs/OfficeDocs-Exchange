@@ -20,7 +20,7 @@ manager: serdars
 
 # Upgrade Exchange to the latest Cumulative Update
 
-If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgrade the Exchange servers to the latest Cumulative Update (CU). Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previous CU's or Exchange 2016 RTM or Exchange 2019 RTM first. For more information about the latest available Exchange CUs, see [Updates for Exchange Server](../new-features/updates.md).
+If you have Exchange Server 2016 or Exchange Server 2019 installed, you can upgrade the Exchange servers to the latest Cumulative Update (CU). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM or Exchange 2019 RTM first. For more information about the latest available Exchange CUs, see [Updates for Exchange Server](../new-features/updates.md).
 
 > [!CAUTION]
 > After you upgrade Exchange to a newer CU, you can't uninstall the new version to revert to the previous version. Uninstalling the new version completely removes Exchange from the server.

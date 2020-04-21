@@ -1,5 +1,5 @@
 ---
-title: "Exchange Server Hybrid Deployments"
+title: "Exchange Server hybrid deployments"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
@@ -133,7 +133,7 @@ Now that you're a little more familiar with what a hybrid deployment is, you nee
 Active Directory synchronization between the on-premises and Office 365 organizations, which is performed every three hours by a server running Azure Active Directory Connect, is a requirement for configuring a hybrid deployment. Directory synchronization enables recipients in either organization to see each other in the global address list. It also synchronizes usernames and passwords which enables users to log in with the same credentials in both your on-premises organization and in Office 365.
 
 > [!NOTE]
-> If you choose to configure Azure AD Connect with AD FS, usernames and passwords of on-premises users will still be synchronized to Office 365 by default. However, users will authenticate with your on-premises Active Directory via AD FS as their primary method of authentication. In the event AD FS can't connect to your on-premises Active Directory for any reason, clients will attempt to fall back and authenticate against usernames and passwords synchronized to Office 365.
+> If you choose to configure Azure AD Connect with AD FS, usernames and passwords of on-premises users will still be synchronized to Office 365 by default. However, users will authenticate with your on-premises Active Directory via AD FS as their primary method of authentication. If you wish to configure AD FS to fall back and authenticate against usernames and passwords that you have synchronized to Office 365 in the event AD FS can't connect to your on-premises Active Directory, see [Setting up PHS as backup for AD FS in Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/tutorial-phs-backup).
 
 All customers of Azure Active Directory and Office 365 have a default limit of 50,000 objects (users, mail-enabled contacts, and groups) that determines how many objects you can create in your Office 365 organization. After you verify your first domain, this limit is automatically increased to 500,000 objects for Azure Active Directory Free, or an unlimited number of objects for Azure Active Directory Basic or Premium. For more information, see [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
@@ -267,7 +267,7 @@ The following table contains links to topics that will help you learn about and 
 |[Shared free/busy in Exchange hybrid deployments](shared-free-busy.md)|Learn more about calendar free/busy sharing between on-premises and Exchange Online organizations in a hybrid deployment.|
 |[Server roles in Exchange hybrid deployments](server-roles.md)|Learn more about how the Exchange server roles function in a hybrid deployment.|
 |[IRM in Exchange hybrid deployments](irm.md)|Learn more about how Information Rights Management functions in a hybrid deployment.|
-|[Permissions in Exchange hybrid deployments](permissions.md)|Learn more about how a hybrid deployment uses Role Based Access Control (RBAC) to control permissions.|
+|[Permissions in Exchange hybrid deployments](permissions.md)|Learn more about how a hybrid deployment uses Role-Based Access Control (RBAC) to control permissions.|
 |[Edge Transport servers with hybrid deployments](edge-transport-servers.md)|Learn more about Exchange Edge Transport servers and how they are deployed and operate in a hybrid deployment.|
 |[Single sign-on with hybrid deployments](single-sign-on.md)|Learn more about how single sign-on using password synchronization and AD FS function in a hybrid deployment.|
 |[Hybrid Deployment procedures](hybrid-deployment/hybrid-deployment.md)|Explore procedures for creating and modifying hybrid deployments for your Exchange on-premises and Exchange Online organizations.|

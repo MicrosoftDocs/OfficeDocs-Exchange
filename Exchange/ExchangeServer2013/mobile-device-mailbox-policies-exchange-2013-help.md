@@ -20,24 +20,24 @@ _**Applies to:** Exchange Server 2013_
 In Microsoft Exchange Server 2013, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. After you deploy Exchange ActiveSync in your Exchange 2013 organization, you can create new mobile device mailbox policies or modify existing policies. When you install Exchange 2013, a default mobile device mailbox policy is created. All users are automatically assigned this default mobile device mailbox policy.
 
 > [!IMPORTANT]
-> Windows Phone 7 mobile phones only support a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see Windows Phone 7 Synchronization.
+> Windows Phone 7 mobile phones support only a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see [Windows Phone 7 synchronization](#windows-phone-7-synchronization).
 
-> [!WARNING]
-> The iOS7 fingerprint reader is not supported as a device password. If you enable the fingerprint reader to secure your iOS7 device, you will still need to create and enter a password if your mobile device mailbox policies require a password.
+> [!NOTE]
+> Apple Touch ID and Face ID are not supported as a substitute for a device password. If you enable Touch ID or Face ID to secure your iOS device, you must still create and enter a password if your mobile device mailbox policies require a password.
 
 ## Overview of mobile device mailbox policies
 
 You can use mobile device mailbox policies to manage many different settings. These include the following:
 
-  - Require a password
+  - Require a password.
 
-  - Specify the minimum password length
+  - Specify the minimum password length.
 
-  - Require a number or special character in the password
+  - Require a number or special character in the password.
 
-  - Designate how long a device can be inactive before requiring the user to re-enter a password
+  - Designate how long a device can be inactive before requiring the user to re-enter a password.
 
-  - Wipe a device after a specific number of failed password attempts
+  - Wipe a device after a specific number of failed password attempts.
 
 For more information about all the settings you can configure, see Mobile device policy settings.
 

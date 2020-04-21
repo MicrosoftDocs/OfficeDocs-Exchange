@@ -60,16 +60,16 @@ After you set connection limits, you must restart the POP3 services. For informa
 
 ## Use the Shell to set POP3 connection limits for a server, an IP address, or a user
 
-This example sets the connection limit for a server.
+This example sets the connection limit for a server named CAS01.
 
 ```powershell
-Set-PopSettings -Identity CAS01 -MaxConnections Value
+Set-PopSettings -Server CAS01 -MaxConnections Value
 ```
 
-This example sets the connection limit for an IP address.
+This example sets the connection limit for an IP address to a server named CAS01.
 
 ```powershell
-Set-PopSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+Set-PopSettings -Server CAS01 -MaxConnectionsFromSingleIP Value
 ```
 
 This example sets the connection limit for a user.

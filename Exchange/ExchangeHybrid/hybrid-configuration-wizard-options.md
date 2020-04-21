@@ -45,9 +45,9 @@ Hybrid Configuration Wizard (HCW) has changed a lot since it was released as par
 |TCP Port 25 Inbound to Exchange on-premises|No|No|Yes|No|Yes|
 |TCP Port 25 Outbound to Exchange Online Protection|No|No|Yes|No|Yes|
 |TCP Port 80 Outbound for Certificate Revocation Check|Yes|Yes|Yes|Yes|Yes|
-|3rd Party Certificate Required- Autodiscover/Transport/EWS for Exchange On-Premises, Exchange Server 2013/2016/2019|Yes|Yes|Yes|Yes for Autodiscover if needed, No for Hybrid Agent|Yes for Autodiscover and Transport if needed, No for Hybrid Agent|
-|Exchange Server Edge 2013/2016/2019 with Edge Sync and Edge 3rd Party Certificate for Transport Option, TCP Port 25 in/out at network egress|No|No|Yes|No|Yes|
-|Exchange Server Edge 2013/2016/2019 without Edge Sync and Edge 3rd Party Certificate for Transport Option, TCP Port 25 in/out at network egress|No|No|No|No|No|
+|Third-Party Certificate Required- Autodiscover/Transport/EWS for Exchange On-Premises, Exchange Server 2013/2016/2019|Yes|Yes|Yes|Yes for Autodiscover if needed, No for Hybrid Agent|Yes for Autodiscover and Transport if needed, No for Hybrid Agent|
+|Exchange Server Edge 2013/2016/2019 with Edge Sync and Edge Third-Party Certificate for Transport Option, TCP Port 25 in/out at network egress|No|No|Yes|No|Yes|
+|Exchange Server Edge 2013/2016/2019 without Edge Sync and Edge Third-Party Certificate for Transport Option, TCP Port 25 in/out at network egress|No|No|No|No|No|
 
 > [!NOTE]
 > Depending on the your topology and configuration, you may still need to publish Autodiscover records in external DNS or open TCP Port 25 inbound and outbound to your Exchange environments for other reasons, such as Exchange Active Sync Clients using the legacy mail client in Android or iOS (although we highly recommend Microsoft Outlook for iOS and Android as the mobile messaging application). Another reason might be using a feature like Exchange Server Hybrid Modern Authentication. Make sure to review the limitations of the hybrid agent and modern hybrid topology covered in the article [Microsoft Hybrid Agent](hybrid-deployment/hybrid-agent.md).

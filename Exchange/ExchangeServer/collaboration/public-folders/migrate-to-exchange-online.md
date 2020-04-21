@@ -56,7 +56,7 @@ For instructions on migrating Exchange Server 2010 public folders to Exchange On
 
 - We recommend that you don't use Outlook's PST export feature to migrate public folders to Office 365 or Exchange Online. Public folder mailbox growth in Exchange Online is managed using an auto-split feature that splits the public folder mailbox when it exceeds size quotas. Auto-split can't handle the sudden growth of public folder mailboxes when you use PST export to migrate your public folders, and you may have to wait for up to two weeks for auto-split to move the data from the primary mailbox. We recommend that instead you use the cmdlet-based instructions in this article to migrate your public folders. If you still decide to migrate public folders using PST export, see [Migrate Public Folders to Office 365 by using Outlook PST export](#migrate-public-folders-to-office-365-by-using-outlook-pst-export)  later in this article.
 
-- Before you begin, please read this article in its entirety. For some steps there is downtime required. During this downtime, public folders will not be accessible by anyone.
+- Before you begin, please read this article in its entirety. For some steps there is downtime required. During this downtime, public folders will not be accessible by anyone. Please also review the list of [known issues](#known-issues).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
@@ -265,7 +265,7 @@ In Exchange Online PowerShell, do the following steps:
 
 Use the previously downloaded scripts to generate the .csv files that will be used in the migration.
 
-1. From the Exchange Management Shell (on premises), run the `Export-ModernPublicFolderStatistics.ps1` script to create the folder name-to-folder size mapping file. You must have local administrator permissions to run this script. The resulting file will contain three columns: **FolderName**, **FolderSize**, and **DeletedItemSize**. The values for the **FolderSize** and **DeletedItemSize** columns will be displayed in bytes. For example, **\PublicFolder01,10240, 100** means the public folder in the root of your hierarchy named PublicFolder01 is 10240 bytes, or 10.240 MB, in size, and there are 100 bytes of recoverable items in it.
+1. From the Exchange Management Shell (on-premises), run the `Export-ModernPublicFolderStatistics.ps1` script to create the folder name-to-folder size mapping file. You must have local administrator permissions to run this script. The resulting file will contain three columns: **FolderName**, **FolderSize**, and **DeletedItemSize**. The values for the **FolderSize** and **DeletedItemSize** columns will be displayed in bytes. For example, **\PublicFolder01,10240, 100** means the public folder in the root of your hierarchy named PublicFolder01 is 10240 bytes (10 KB) in size and there are 100 bytes of recoverable items in it.
 
    ```PowerShell
    .\Export-ModernPublicFolderStatistics.ps1 <Folder-to-size map path>
@@ -365,7 +365,7 @@ A number of commands now need to be run both in your Exchange Server on-premises
 
    Separate multiple email addresses with commas.
 
-   > [!Note]
+   > [!NOTE]
    > If you receive an error that states, `A parameter cannot be found that matches parameter name 'SourcePfPrimaryMailboxGuid'`, then instead use the following command to create the migration batch:
    >
    > ```PowerShell

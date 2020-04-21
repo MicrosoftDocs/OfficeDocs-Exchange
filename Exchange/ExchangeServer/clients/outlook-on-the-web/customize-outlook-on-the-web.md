@@ -86,8 +86,8 @@ You can edit the existing image files, or replace the files with new files that 
 |**Image**|**File name**|**Location**|**Dimensions (width x height in pixels)**|**Bit depth**|
 |:-----|:-----|:-----|:-----|:-----|
 |1|favicon.ico|`%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|16 x 16|32|
-|2|olk_logo_white.png|`%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|128 x 108|32|
-|3|owa_text_blue.png|`%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|300 x 76|32|
+|2|olk_logo_white.png|`%ExchangeInstallPath%ClientAccess\Owa\prem\<ExchangeVersion>\resources\images\0`|128 x 108|32|
+|3|owa_text_blue.png|`%ExchangeInstallPath%ClientAccess\Owa\prem\<ExchangeVersion>\resources\images\0`|300 x 76|32|
 |4|Sign_in_arrow.png (for left-to-right languages) <br/><br/> Sign_in_arrow_rtl.png (for right-to-left languages)|`%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|22 x 22|32|
 |5|olk_logo_white_cropped.png|`%ExchangeInstallPath%FrontEnd\HttpProxy\owa\auth\<ExchangeVersion>\themes\resources`|265 x 310|32|
 |6|office_logo_white_small.png|`%ExchangeInstallPath%ClientAccess\Owa\prem\<ExchangeVersion>\resources\images\0` (for left-to-right languages) <br/><br/> `%ExchangeInstallPath%ClientAccess\Owa\prem\<ExchangeVersion>\resources\images\rtl`(for right-to-left languages)|81 x 26|8|

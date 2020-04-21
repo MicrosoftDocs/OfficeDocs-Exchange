@@ -280,9 +280,9 @@ The following steps allow you to create an app configuration policy. After the c
 > [!IMPORTANT]
 > When deploying app configuration policies to managed devices, issues can occur when multiple policies have different values for the same configuration key and are targeted for the same app and user. This is due to the lack of a conflict resolution mechanism for resolving the differing values. You can prevent this by ensuring that only a single app configuration policy for managed devices is defined and targeted for the same app and user.
 
-#### Create a managed devices app configuration policy for Outlook for iOS and Android
+### Create a managed devices app configuration policy for Outlook for iOS and Android
 
-1. Sign into [Microsoft Endpoint Manager](https://devicemanagement.microsoft.com).
+1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
 2. Select **Apps** and then select **App configuration policies**.
 
@@ -359,9 +359,9 @@ If you are using Microsoft Endpoint Manager as your mobile app management provid
 > [!NOTE]
 > Microsoft Endpoint Manager managed apps will check-in with an interval of 30 minutes for Intune App Configuration Policy status, when deployed in conjunction with an Intune App Protection Policy. If an Intune App Protection Policy isn't assigned to the user, then the Intune App Configuration Policy check-in interval is set to 720 minutes.
 
-#### Create a managed apps app configuration policy for Outlook for iOS and Android
+### Create a managed apps app configuration policy for Outlook for iOS and Android
 
-1. Sign into [Microsoft Endpoint Manager](https://devicemanagement.microsoft.com).
+1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
 
 2. Select **Apps** and then select **App configuration policies**.
 
@@ -423,7 +423,8 @@ The newly created configuration policy is displayed on the **App configuration**
 ## Configuration keys
 The following sections outline the app configuration keys and their supported values. Configuration keys identified with the **Managed apps** device enrollment type are delivered through the App Protection Policy channel. Configuration keys identified with the **Managed devices** device enrollment type are delivered through the MDM OS channel. If a configuration key is listed with both device enrollment types, the key can be delivered through either channel; for more information see [General app configuration scenarios](#general-app-configuration-scenarios).
 
-If the **Managed devices** device enrollment type configuration keys are deployed with third-party MDM provider, then the following additional key must also be delivered:
+### iOS devices and third-party MDM
+If the **Managed devices** device enrollment type configuration keys are deployed with a third-party MDM provider, then the following additional key must also be delivered for iOS devices:
 
    **key** = IntuneMAMUPN, **value** = <username@company.com>
 

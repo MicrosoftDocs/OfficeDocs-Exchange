@@ -8,14 +8,14 @@ ms.assetid: 15073ce1-0917-403b-8839-02a2ebc96e16
 ms.reviewer:
 f1.keywords:
 - NOCSH
-title: Feature permissions in Exchange Online, permissions Exchange Online, Exchange Online management roles, Exchange Online management permissions, Exchange Online admin permissions, Exchange online features
+title: Feature permissions in Exchange Online
 ms.collection:
 - exchange-online
 - M365-email-calendar
 audience: ITPro
 ms.service: exchange-online
 manager: serdars
-
+ms.custom: seo-marvel-apr2020
 ---
 
 # Feature permissions in Exchange Online

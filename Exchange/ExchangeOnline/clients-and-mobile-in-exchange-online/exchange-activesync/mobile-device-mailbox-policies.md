@@ -36,9 +36,32 @@ You can use mobile device mailbox policies to manage many different settings. Th
 
 - Wipe a device after a specific number of failed password attempts
 
-## Managing Exchange ActiveSync mailbox policies
+## Managing mobile device mailbox policies
 
 Mobile device mailbox policies can be created in the Exchange admin center (EAC) or Exchange Online PowerShell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using Exchange Online PowerShell.
+
+## Mobile device password settings and Android
+Android 9.0 and earlier versions utilize Android's device admin functionality to manage device password settings defined in a mobile device mailbox policy.
+
+With Android 10.0 and later, Android has removed device admin functionality. Instead, apps that require a screen lock query the device's (or the work profile's) screen lock complexity. Apps that require a stronger screen lock direct the user to the system screen lock settings, allowing the user to update the security settings to become compliant. At no time is the app aware of the user's password; the app is only aware of the password complexity level. Android supports the following four password complexity levels:
+
+|Password complexity level |Password requirements  |
+|---------|---------|
+|None     |No password requirements are configured         |
+|Low     |Password can be a pattern or a PIN with either repeating (4444) or ordered (1234, 4321, 2468) sequences         |
+|Medium     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 4 characters <br/>- Alphabetic passwords with a minimum length of 4 characters<br/>- Alphanumeric passwords with a minimum length of 4 characters        |
+|High     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 8 characters<br/>- Alphabetic passwords with a minimum length of 6 characters<br/>- Alphanumeric passwords with a minimum length of 6 characters         |
+
+From the perspective of an Exchange mobile device mailbox policy, Android's password complexity levels are mapped to the following policy settings:
+
+|Mobile device mailbox policy setting  |Android password complexity level  |
+|---------|---------|
+|Password enabled = false     | None        |
+|Allow simple password = true<br/>Min password length < 4      |Low         |
+|Allow simple password = true<br/>Min password length < 6      |Medium         |
+|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length < 6      |Medium         |
+|Allow simple password = true<br/>Min password length > 6      |High         |
+|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length >= 6      |High         |
 
 ## Mobile device mailbox policy settings
 

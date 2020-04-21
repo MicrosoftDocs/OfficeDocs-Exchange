@@ -25,12 +25,11 @@ manager: serdars
 
 # What happened to delivery reports in Office 365?
 
-Delivery reports was a feature in Office 365 that allowed users and administrators to discover and view delivery information about mail messages.
-
-> [!IMPORTANT]
-> The feature delivery reports for administrators has been replaced by **Message Trace**.
+Delivery reports in Office 365 allowed users and administrators to discover and view delivery information about mail messages. Delivery reports for users have been discontinued and there is currently no direct replacement. Delivery reports for administrators have been replaced by the **Message Trace** feature.
 
 For more information, see these topics:
+
+- [Using Message Trace](https://support.office.com/article/bbf5a330-e83f-43d1-9d51-cfd17d576dd8.aspx)
 
 - [Trace an email message](https://go.microsoft.com/fwlink/p/?linkid=282262)
 
@@ -38,12 +37,8 @@ For more information, see these topics:
 
 - [Run a Message trace and view the results in Exchange admin center](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results)
 
-- [Using Message Trace](https://support.office.com/article/bbf5a330-e83f-43d1-9d51-cfd17d576dd8.aspx)
-
-Currently, there's no direct replacement for delivery reports for users, so the delivery report links in Outlook and Outlook on the web don't go anywhere.
-
-**Notes**:
-
-- Delivery reports for users and administrators is still available in on-premises Exchange environments. For more information, see [Track messages with delivery reports](https://go.microsoft.com/fwlink/p/?linkid=282265).
-
-- Read receipts and delivery notifications aren't related to delivery reports, and are still available in Office 365. For more information, see [Add and request read receipts and delivery notifications](https://support.office.com/article/a34bf70a-4c2c-4461-b2a1-12e4a7a92141.aspx).
+> [!NOTE]
+>
+> - Delivery reports for users and administrators is still available in on-premises Exchange environments. For more information, see [Track messages with delivery reports](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/track-messages-with-delivery-reports).
+>
+> - Read receipts and delivery notifications are separate from delivery reports and are still available in Office 365. For more information, see [Add and request read receipts and delivery notifications](https://support.office.com/article/a34bf70a-4c2c-4461-b2a1-12e4a7a92141.aspx).

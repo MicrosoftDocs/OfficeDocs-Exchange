@@ -39,7 +39,7 @@ Exchange ActiveSync is a Microsoft Exchange synchronization protocol that's opti
 > Exchange ActiveSync does not support shared mailboxes or delegate access.
 
 > [!IMPORTANT]
-> Windows Phone 7 mobile phones support only a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see Windows Phone 7 Synchronization.
+> Windows Phone 7 mobile phones support only a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see [Windows Phone 7 synchronization](#windows-phone-7-synchronization).
 
 ## Features in Exchange ActiveSync
 
@@ -109,8 +109,8 @@ In addition to the ability to configure security options for communications betw
 
 - **Device password policies**: Exchange ActiveSync lets you configure several options for device passwords.
 
-    > [!WARNING]
-    > The iOS7 fingerprint reader technology cannot be used as a device password. If you choose to use the iOS7 fingerprint reader, you'll still need to create and enter a device password if the mobile device mailbox policy for your organization requires a device password.
+    > [!NOTE]
+    > Apple Touch ID and Face ID are not supported as a substitute for a device password. If you enable Touch ID or Face ID to secure your iOS device, you must still create and enter a password if your mobile device mailbox policies require a password.
 
     The device password options include the following:
 

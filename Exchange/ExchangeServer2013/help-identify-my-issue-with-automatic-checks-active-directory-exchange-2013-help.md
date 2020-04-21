@@ -46,8 +46,8 @@ If you already have an Office 365 user account, select **Sign In**. You don't ne
 <td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="even">
-<td><p>3rd Party Tools</p></td>
-<td><p>I'm not sure what 3rd party integrations/applications I have installed in my messaging environment.</p></td>
+<td><p>Third-Party Tools</p></td>
+<td><p>I'm not sure what third-party integrations/applications I have installed in my messaging environment.</p></td>
 <td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 <tr class="odd">

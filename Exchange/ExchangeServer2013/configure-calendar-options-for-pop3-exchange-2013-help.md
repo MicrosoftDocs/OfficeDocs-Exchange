@@ -34,16 +34,16 @@ For additional information related to POP3, see [POP3 and IMAP4 in Exchange Serv
 
 ## Use the Shell to set the calendar options for POP3
 
-This example enables POP3 users to use the iCalendar standard, a standard for exchanging calendar information.
+This example enables POP3 users who connect to a server named CAS01 to use the iCalendar standard, a standard for exchanging calendar information.
 
 ```powershell
-Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+Set-PopSettings -Server CAS01 -CalendarItemRetrievalOption iCalendar
 ```
 
 This example enables POP3 users to access calendar information from an internal server.
 
 ```powershell
-Set-PopSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl
+Set-PopSettings -Server CAS01 -CalendarItemRetrievalOption IntranetUrl
 ```
 
 This example enables POP3 users to access calendar information from the Internet on an external server.

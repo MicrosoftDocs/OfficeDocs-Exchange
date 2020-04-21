@@ -27,7 +27,9 @@ If a message is sent to a valid email address in Office 365, the message continu
 **If all recipients for your domain are in Exchange Online, DBEB is already in effect, and you don't need to do anything**. If you're migrating from another email system to Exchange Online, you can use the procedure in this topic to enable DBEB for the domain before the migration.
 
 > [!NOTE]
-> In hybrid environments, in order for DBEB to work, email for the domain must be routed to Office 365 first (the MX record for the domain must point to Office 365).
+> - In hybrid environments, in order for DBEB to work, the MX record for the domain must point to Office 365 so that email for the domain is routed to Office 365 first.
+>
+> - There are additional considerations when using DBEB with mail-enabled public folders. DBEB is not supported for mail-enabled public folders hosted in Exchange Online. DBEB is only supported for mail-enabled public folders hosted on-premises. For more information about DBEB and mail-enabled public folders, see [Office 365 Directory Based Edge Blocking support for on-premises Mail Enabled Public Folders](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Office-365-Directory-Based-Edge-Blocking-support-for-on-premises/ba-p/606740).
 
 ## What do you need to know before you begin?
 
@@ -42,7 +44,7 @@ If a message is sent to a valid email address in Office 365, the message continu
 
 ## Configure DBEB
 
-1. Verify that your accepted domain in Exchange Online is to **Internal relay**:
+1. Verify that your accepted domain in Exchange Online is set to **Internal relay**:
 
    1. In the EAC, go to **Mail flow** \> **Accepted domains**.
 
@@ -66,11 +68,7 @@ If a message is sent to a valid email address in Office 365, the message continu
 
 4. Choose **Save** to save your changes, and confirm that you want to enable DBEB.
 
-**Notes**:
-
-- Until all of your valid recipients have been added to Exchange Online and replicated through the system, you should leave the accepted domain configured as **Internal relay**. Once the domain type has been changed to **Authoritative**, DBEB is designed to allow any SMTP address that has been added to the service (except for mail-enabled public folders). There might be infrequent instances where recipient addresses that do not exist in your Office 365 organization are allowed to relay through the service.
-
-- For more information about DBEB and mail-enabled public folders, see [Office 365 Directory Based Edge Blocking support for on-premises Mail Enabled Public Folders](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Office-365-Directory-Based-Edge-Blocking-support-for-on-premises/ba-p/606740).
-
 > [!NOTE]
-> In hybrid environments dynamic distribution groups do not sync to AAD and are therefore blocked by DBEB. As a work around, you can create a mail contact with the same external email address of the blocked dynamic distribution group.
+> - In hybrid environments, dynamic distribution groups do not sync to AAD and are therefore blocked by DBEB. As a work around, you can create a mail contact with the same external email address of the blocked dynamic distribution group.
+>
+> - Until all of your valid recipients have been added to Exchange Online and replicated through the system, you should leave the accepted domain configured as **Internal relay**. Once the domain type has been changed to **Authoritative**, DBEB is designed to allow any SMTP address that has been added to the service (except for mail-enabled public folders). There might be infrequent instances where recipient addresses that do not exist in your Office 365 organization are allowed to relay through the service.

@@ -13,7 +13,7 @@ f1.keywords:
 mtps_version: v=EXCHG.150
 ---
 
-# Help Identify My Issues with Automatic Checks - 3rd Party Tools
+# Help Identify My Issues with Automatic Checks - Third-party tools
 
 _**Applies to:** Exchange Server 2013_
 
@@ -25,7 +25,7 @@ You'll be asked to sign-in on a new page.  If you already have an Office 365 us
 
 We'll check to see if you have the necessary pre-requisites on your Windows 7 x64 or Windows Server 2008 R2 computer automatically.
 
-## 3rd Party Tools Check
+## Third-party tools check
 
 <table>
 <colgroup>
@@ -40,8 +40,8 @@ We'll check to see if you have the necessary pre-requisites on your Windows 7 x6
 <td><p>Check</p></td>
 </tr>
 <tr class="even">
-<td><p>3rd Party Tools</p></td>
-<td><p>Im not sure what 3rd party integrations/applications I have installed in my messaging environment</p></td>
+<td><p>Third-party Tools</p></td>
+<td><p>Im not sure what third-party integrations/applications I have installed in my messaging environment</p></td>
 <td><p><a href="https://aka.ms/SaRA-Download_ExRCA">Microsoft Support and Recovery Assistant for Office 365</a></p></td>
 </tr>
 </tbody>

@@ -39,4 +39,4 @@ As previously explained, undeliverable journal reports are queued on Microsoft d
 
 ![Select an alternative journaling mailbox to receive NDRs for undeliverable journal reports](../../media/23408455-a7d2-454b-8375-45be81563c36.png)
 
-The original journal report is an attachment in the NDR. When the journaling mailbox for a undelivered journal report becomes available again, you can use the **Resend this message** feature in Outlook on the NDRs in the alternate journaling mailbox to send the unaltered delivery report to the journaling mailbox.
+The original journal report is an attachment in the NDR. When the journaling mailbox for a undelivered journal report becomes available again, you can use the **Send Again** feature in Outlook on the NDRs in the alternate journaling mailbox to send the unaltered delivery report to the journaling mailbox.

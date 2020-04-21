@@ -38,7 +38,7 @@ The scenario in this article is based on two fictional companies - Contoso.com a
 |**Custom email domain:**|contoso.com|fabrikam.com|
 |**Office 365 initial domain:**|contoso.onmicrosoft.com|fabrikam.onmicrosoft.com|
 
-## Scenario: Migrate using a third party migration tool
+## Scenario: Migrate using a third-party migration tool
 
 This scenario assumes that user, group and other objects from the Fabrikam Company will be manually created in Office 365, imported into the portal via script, or merged into the Contoso Active Directory through Active Directory Domain Services (AD DS) consolidation.
 
@@ -48,7 +48,7 @@ When complete, all Fabrikam accounts will exist in the Contoso.com Office 365 te
 
 ### Planning: Two weeks before you migrate
 
-If using a third party migration tool to migrate your users, purchase the needed licenses for your migration.
+If using a third-party migration tool to migrate your users, purchase the needed licenses for your migration.
 
 #### Client considerations
 
@@ -131,7 +131,7 @@ These are the steps you'll need the day you perform the migration.
 
 #### MX record change - Stop inbound mail flow
 
-Change your primary MX record from Office 365 to domain that is not reachable, i.e. "unreachable.example.com". Internet mail servers attempting to deliver new mail will queue the mail and attempt redelivery for 24 hours. Using this method, some email may return a non-delivery report (NDR) depending on the server attempting to deliver the email. If this is a problem use an MX record backup service. There are many third party services that will queue your email for days or weeks. Once your migration is complete, these services will deliver the queued mail to your new Office 365 tenant.
+Change your primary MX record from Office 365 to domain that is not reachable, i.e. "unreachable.example.com". Internet mail servers attempting to deliver new mail will queue the mail and attempt redelivery for 24 hours. Using this method, some email may return a non-delivery report (NDR) depending on the server attempting to deliver the email. If this is a problem use an MX record backup service. There are many third-party services that will queue your email for days or weeks. Once your migration is complete, these services will deliver the queued mail to your new Office 365 tenant.
 
 > [!TIP]
 > If your TTL is short, for example, five minutes, this step can be done at the end of the work day to cause less disruption. If you have a larger TTL, you must change the MX record ahead of time to allow the TTL to expire. Example, a four hour TTL must be changed before 2 PM if you plan to begin migrations at 6 PM.
@@ -186,7 +186,7 @@ To minimize downtime and user inconvenience, determine the best method for migra
 
 - Migration for more than 500 users: Use a multi-pass approach where you migrate contacts, calendars and only 1 week of email for all users, then on succeeding days or weeks, do multiple passes to fill in the mailboxes with older email data.
 
-Start your mail migration via the third party migration tool.
+Start your mail migration via the third-party migration tool.
 
 1. Monitor migration progress with the tools provided by the vendor. Send out periodic progress reports during migration to management and migration team.
 

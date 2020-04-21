@@ -20,8 +20,8 @@ manager: serdars
 
 In Exchange Server, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. After you deploy Exchange ActiveSync in your Exchange Server organization, you can create new mobile device mailbox policies or modify existing policies. When you install Exchange Server, a default mobile device mailbox policy is created. All users are automatically assigned this default mobile device mailbox policy.
 
-> [!CAUTION]
-> The iOS fingerprint reader is not supported as a device password. If you enable the fingerprint reader to secure your iOS device, you will still need to create and enter a password if your mobile device mailbox policies require a password.
+> [!NOTE]
+> Apple Touch ID and Face ID are not supported as a substitute for a device password. If you enable Touch ID or Face ID to secure your iOS device, you must still create and enter a password if your mobile device mailbox policies require a password.
 
 ## Overview of mobile device mailbox policies
 
@@ -39,18 +39,18 @@ You can use mobile device mailbox policies to manage many different settings. Th
 
 For more information about all the settings you can configure, see Mobile device policy settings.
 
-## Exchange ActiveSync mailbox policies
+## Exchange mobile device mailbox policies
 
 Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your Exchange mailbox. Exchange ActiveSync is enabled by default when you install Exchange Server.
 
 > [!IMPORTANT]
-> Most Windows mobile phones support a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see the next section in this topic..
+> Most Windows mobile phones support only a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see [Windows Phone synchronization](#windows-phone-synchronization).
 
 You can create mobile device mailbox policies in the Exchange admin center (EAC) or the Exchange Management Shell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using the Exchange Management Shell.
 
 ## Windows Phone synchronization
 
-If you have Windows mobile phones in your organization, these phones will experience synchronization problems unless certain Exchange ActiveSync mailbox policy properties are configured. To allow Windowsmobile phones to synchronize with an Exchange mailbox, either set the **AllowNonProvisionableDevices** property to True or only configure the following Exchange ActiveSync mailbox policy properties:
+If you have Windows mobile phones in your organization, these phones will experience synchronization problems unless certain Exchange ActiveSync mailbox policy properties are configured. To allow Windows mobile phones to synchronize with an Exchange mailbox, either set the **AllowNonProvisionableDevices** property to True or only configure the following Exchange ActiveSync mailbox policy properties:
 
 - AllowSimplePassword
 
@@ -75,6 +75,30 @@ If you have Windows mobile phones in your organization, these phones will experi
 - PasswordHistory
 
 - PasswordRequired
+
+## Mobile device password settings and Android
+
+Android 9.0 and earlier versions utilize Android's device admin functionality to manage device password settings defined in a mobile device mailbox policy.
+
+With Android 10.0 and later, Android has removed device admin functionality. Instead, apps that require a screen lock query the device's (or the work profile's) screen lock complexity. Apps that require a stronger screen lock direct the user to the system screen lock settings, allowing the user to update the security settings to become compliant. At no time is the app aware of the user's password; the app is only aware of the password complexity level. Android supports the following four password complexity levels:
+
+|Password complexity level |Password requirements  |
+|---------|---------|
+|None     |No password requirements are configured         |
+|Low     |Password can be a pattern or a PIN with either repeating (4444) or ordered (1234, 4321, 2468) sequences         |
+|Medium     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 4 characters <br/>- Alphabetic passwords with a minimum length of 4 characters<br/>- Alphanumeric passwords with a minimum length of 4 characters        |
+|High     |Passwords that meet one of the following criteria:<br/><br/>- PIN with no repeating (4444) or ordered (1234, 4321, 2468) sequences with a minimum length of 8 characters<br/>- Alphabetic passwords with a minimum length of 6 characters<br/>- Alphanumeric passwords with a minimum length of 6 characters         |
+
+From the perspective of an Exchange mobile device mailbox policy, Android's password complexity levels are mapped to the following policy settings:
+
+|Mobile device mailbox policy setting  |Android password complexity level  |
+|---------|---------|
+|Password enabled = false     | None        |
+|Allow simple password = true<br/>Min password length < 4      |Low         |
+|Allow simple password = true<br/>Min password length < 6      |Medium         |
+|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length < 6      |Medium         |
+|Allow simple password = true<br/>Min password length > 6      |High         |
+|Allow simple password = false<br/>Alphanumeric password required = true<br/>Min password length >= 6      |High         |
 
 ## Mobile device mailbox policy settings
 
@@ -116,7 +140,7 @@ The following table summarizes the settings you can specify using mobile device 
 |Max email HTML body truncation size|This setting specifies the maximum size at which HTML email messages are truncated when synchronized to the mobile device. The value is in kilobytes (KB).|
 |Max inactivity time lock|This value specifies the length of time that the mobile device can be inactive before a password is required to reactivate it. You can enter any interval between 30 seconds and 1 hour. The default value is 15 minutes.|
 |Max password failed attempts|This setting specifies the number of attempts a user can make to enter the correct password for the mobile device. You can enter any number from 4 through 16. The default value is 8.|
-|Min password complex characters|This setting specifies the number of character sets that are required in the password of the mobile device. The character sets are: <br/> • Lower case letters. <br/> • Upper case letters. <br/> • Digits 0 through 9. <br/> • Special characters (for example, exclamation marks). <br/> You can enter any number from 1 through 4. The default value is 1. <br/> For Windows Phone 8 devices, this setting specifies the number of character sets that are required in the password. For example, the value 3 requires at least one character from any three of the character sets.  <br/> For Windows Phone 10 devices, this setting specifies the following password complexity requirements: <br/> 1: Digits only. <br/> 2: Digits and lower case letters. <br/> 3: Digits, lower case letters, and upper case letters. <br/> 4: Digits, lower case letters, upper case letters, and special characters.|
+|Min password complex characters|This setting specifies the number of character sets that are required in the password of the mobile device. The character sets are: <br/> * Lower case letters. <br/> * Upper case letters. <br/> * Digits 0 through 9. <br/> * Special characters (for example, exclamation marks). <br/> You can enter any number from 1 through 4. The default value is 1. <br/> For Windows Phone 8 devices, this setting specifies the number of character sets that are required in the password. For example, the value 3 requires at least one character from any three of the character sets.  <br/> For Windows Phone 10 devices, this setting specifies the following password complexity requirements: <br/> 1: Digits only. <br/> 2: Digits and lower case letters. <br/> 3: Digits, lower case letters, and upper case letters. <br/> 4: Digits, lower case letters, upper case letters, and special characters.|
 |Min password length|This setting specifies the minimum number of characters in the mobile device password. You can enter any number from 1 through 16. The default value is 4.|
 |Password enabled|This setting enables the mobile device password.|
 |Password expiration|This setting enables the administrator to configure a length of time after which a mobile device password must be changed.|

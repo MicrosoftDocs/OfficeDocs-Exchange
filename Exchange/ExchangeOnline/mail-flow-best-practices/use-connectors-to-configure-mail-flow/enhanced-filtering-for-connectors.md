@@ -46,7 +46,7 @@ In this example, the source of the incoming messages is somewhere on the interne
 When the message comes into Office 365, Exchange Online Protection (EOP) believes that the third-party filter is the source of the message. This isn't a limitation of Office 365; it's simply how SMTP works.
 
 > [!IMPORTANT]
-> Do not put another scanning service or host after Exchange Online Protection (EOP). Once EOP scans a message, be careful not to break the chain of trust by routing mail through any non-Exchange server that is not part of your cloud or on-premises organization; when the message eventually arrives at the destination mailbox, the headers from the first scanning verdict might no longer be accurate. [Centralized Mail Transport](https://docs.microsoft.com/exchange/transport-options) should not be used to introduce non-Exchange servers into the mail flow path.  
+> Do not put another scanning service or host _after_ Exchange Online Protection (EOP). Once EOP scans a message, be careful not to break the chain of trust by routing mail through any non-Exchange server that is not part of your cloud or on-premises organization; when the message eventually arrives at the destination mailbox, the headers from the first scanning verdict might no longer be accurate. [Centralized Mail Transport](https://docs.microsoft.com/exchange/transport-options) should not be used to introduce non-Exchange servers into the mail flow path.  
 
 ## What happens when you enable Enhanced Filtering for Connectors?
 
@@ -54,17 +54,21 @@ In complex routing scenarios where you must point your MX record to something ot
 
 Using the previous example, you would configure the IP address of the third-party filter in Enhanced Filtering for Connectors, and Office 365 will take care of the rest. The following table describes what connections look like before and after your enable Enhanced Filtering for Connector:
 
+||||
+|---|---|---|
 ||**Before Enhanced Filtering is enabled**|**After Enhanced Filtering is enabled**|
-|:-----|:-----|:-----|
 |**Email domain authentication**|[Implicit](https://docs.microsoft.com/office365/securitycompliance/anti-spoofing-protection#stopping-spoofing-with-implicit-email-authentication) using anti-spoof protection technology.|Explicit, based on the source domain's SPF, DKIM, and DMARC records in DNS.|
-|**X-MS-Exchange-ExternalOriginalInternetSender**|Not available|This is stamped if skiplisting was successful, enabled on the connector, and recipient match happens. The value of this field contains information about the true source address.|
-|**X-MS-Exchange-SkipListedInternetSender**|Not available|This is stamped if skiplisting was successful and enabled on the connector. The value of this field contains information about the true source address. This header is used primarily for reporting purposes and to help understand WhatIf scenarios.|
+|**X-MS-Exchange-ExternalOriginalInternetSender**|Not available|This is stamped if skip listing was successful, enabled on the connector, and recipient match happens. The value of this field contains information about the true source address.|
+|**X-MS-Exchange-SkipListedInternetSender**|Not available|This is stamped if skip listing was successful and enabled on the connector. The value of this field contains information about the true source address. This header is used primarily for reporting purposes and to help understand WhatIf scenarios.|
+|
 
 ## Procedures for Enhanced Filtering for Connectors
 
 ### What do you need to know before you begin?
 
 - You apply Enhanced Filtering for Connectors individually on each inbound connector.
+
+- You need to include all of the trusted IP addresses that are associated with the on-premises hosts or the third-party filters that send email into your Office 365 organization, including any intermediate hops with public IP addresses. To get these IP addresses, consult the documentation or support that's provided with the service.
 
 - To open the Office 365 Security & Compliance Center, see [Go to the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/go-to-the-securitycompliance-center).
 
@@ -77,7 +81,7 @@ Using the previous example, you would configure the IP address of the third-part
 1. Open the Security and Compliance Center, expand **Threat Management**, choose **Policy**, and then choose **Enhanced Filtering**.
 
    > [!TIP]
-   > To go directly to the **Enhanced Filtering** page in the Security & Compliance Center, use this URL: [https://protection.office.com/skiplisting](https://protection.office.com/skiplisting)
+   > To go directly to the **Enhanced Filtering** page in the Security & Compliance Center, use this URL: [https://protection.office.com/skip listing](https://protection.office.com/skiplisting)
 
 2. Select the inbound connector that you want to configure.
 
@@ -85,7 +89,7 @@ Using the previous example, you would configure the IP address of the third-part
 
    - **IP addresses to skip**: Choose one of the following values:
 
-     - **Automatically detect and skip the last IP address**: Whe recommend this option if you have only one message source to skip.
+     - **Automatically detect and skip the last IP address**: We recommend this option if you have only one message source to skip.
 
      - **Skip these IP addresses that are associated with the connector**: Select this option to configure a list of IP addresses to skip.
 

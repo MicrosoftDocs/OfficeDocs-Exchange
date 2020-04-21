@@ -27,6 +27,9 @@ All Exchange servers that run Client Access services that share the same namespa
 > [!IMPORTANT]
 > Exchange 2010 and Exchange 2016 can't share the same ASA credential. If your ASA credential was created for Exchange 2010, you have to create a new one for Exchange 2016. <br/><br/> While CNAME records are supported for shared namespaces, Microsoft recommends using A records. This ensures that the client correctly issues a Kerberos ticket request based on the shared name, and not the server FQDN.
 
+> [!NOTE]
+> Group Managed Service Accounts (gMSA) are not supported in on-premises Exchange Server environments and thus cannot be used in this scenario.
+
 When you set up the ASA credential, keep these guidelines in mind:
 
 - **Account type**: We recommend that you create a computer account instead of a user account. A computer account doesn't allow interactive logon and may have simpler security policies than a user account. If you create a computer account, the password doesn't expire, but we recommend you update the password periodically anyway. You can use local group policy to specify a maximum age for the computer account and scripts to periodically delete computer accounts that do not meet current policies. Your local security policy also determines when you have to change the password. Although we recommend you use a computer account, you can create a user account.

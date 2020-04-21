@@ -39,7 +39,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 ## Step 1: Sign up with a partner service
 
-To find the list of certified partners and detailed instructions for how to sign up, see [Voice Mail Preview advisor](voice-mail-preview-advisor-exchange-2013-help.md) or see the [Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?LinkId=281966) website. After you've signed up, the Voice Mail Preview partner will provide you a partner ID and the SMTP address to use to forward the voice messages.
+To find the list of certified partners and detailed instructions for how to sign up, see [Voice Mail Preview advisor](voice-mail-preview-advisor-exchange-2013-help.md) or see the [Microsoft Solution Providers](https://www.microsoft.com/solution-providers) website. After you've signed up, the Voice Mail Preview partner will provide you a partner ID and the SMTP address to use to forward the voice messages.
 
 In Step 2, you'll apply the Partner ID and SMTP address you acquired in Step 1 to the required UM mailbox policies.
 

@@ -63,13 +63,13 @@ After you set connection limits, you must restart the IMAP4 services. For inform
 This example sets the connection limit for a server.
 
 ```powershell
-Set-ImapSettings -Identity CAS01 -MaxConnections Value
+Set-ImapSettings -Server CAS01 -MaxConnections Value
 ```
 
 This example sets the connection limit for an IP address.
 
 ```powershell
-Set-ImapSettings -Identity CAS01 -MaxConnectionsFromSingleIP Value
+Set-ImapSettings -Server CAS01 -MaxConnectionsFromSingleIP Value
 ```
 
 This example sets the connection limit for a user.

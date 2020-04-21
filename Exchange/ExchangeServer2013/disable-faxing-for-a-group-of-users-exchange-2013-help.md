@@ -17,8 +17,6 @@ _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
 You can disable inbound faxes for users associated with a Unified Messaging (UM) mailbox policy. By default, when you enable users for Unified Messaging, users can't receive fax messages until you specify the URI for the fax partner server , deploy a fax partner server for your organization, and enable faxing on a UM mailbox policy. If the option to allow incoming faxes is disabled on the UM dial plan, the users linked with the UM mailbox policy still won't be able to receive faxes. Similarly, if the option to allow incoming faxes is disabled on an individual user, that user won't be able to receive faxes.
 
-For more information about fax partners, see [Microsoft PinPoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238).
-
 For additional management tasks related to faxing, see [Faxing procedures](faxing-procedures-exchange-2013-help.md).
 
 ## What do you need to know before you begin?

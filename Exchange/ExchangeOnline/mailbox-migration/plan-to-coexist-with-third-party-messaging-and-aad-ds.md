@@ -101,7 +101,7 @@ The following steps outline the process for implementing third-party messaging c
 
 You need to subscribe to Microsoft 365 to create a service tenant that is used in the deployment with your on-premises email system. Microsoft 365 provides you with an Exchange Online organization in the cloud.
 
-When you subscribe, be sure to verify the primary SMTP domain in your organization with Microsoft 365. The process of verifying a domain proves that you own the domain. The verified domain is also the domain that the Azure Active Directory Sync tool uses to provision objects in the cloud. Then add the mail routing domain representing the third party system.
+When you subscribe, be sure to verify the primary SMTP domain in your organization with Microsoft 365. The process of verifying a domain proves that you own the domain. The verified domain is also the domain that the Azure Active Directory Sync tool uses to provision objects in the cloud. Then add the mail routing domain representing the third-party system.
 
 Learn more at [Sign up for Microsoft 365](https://products.office.com/business/enterprise-productivity-tools).
 
@@ -113,7 +113,7 @@ Learn more at [Sign up for Microsoft 365](https://products.office.com/business/
 
 3. Prepare a server to support the [installation of an Exchange 2016 Mailbox Server](https://docs.microsoft.com/Exchange/plan-and-deploy/deploy-new-installations/install-mailbox-role?view=exchserver-2016).
 
-4. [Configure the Accepted Domains](https://docs.microsoft.com/Exchange/plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access?view=exchserver-2016#step-2-add-additional-accepted-domains) to match the existing SMTP address domains from the third party system.
+4. [Configure the Accepted Domains](https://docs.microsoft.com/Exchange/plan-and-deploy/post-installation-tasks/configure-mail-flow-and-client-access?view=exchserver-2016#step-2-add-additional-accepted-domains) to match the existing SMTP address domains from the third-party system.
 
 5. Configure a mail routing domain to share the namespace. Typically, a subdomain like domino.contoso.com is a common choice.
 

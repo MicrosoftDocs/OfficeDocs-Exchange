@@ -23,7 +23,7 @@ By default, when you enable a user for UM in an on-premises or hybrid deployment
 
 There are Voice Mail Preview partners that offer enhanced transcription support and services for the Voice Mail Preview feature. These partners employ people to correct voice mail transcriptions that were created using ASR. Each Voice Mail Preview partner must meet a set of requirements to be certified to interoperate with Exchange UM.
 
-If you determine that the voice mail previews sent to your users aren't accurate enough, you can contact one of the certified Voice Mail Preview partners listed at [Microsoft Pinpoint](https://go.microsoft.com/fwlink/p/?LinkId=281966) and sign up with them at an additional cost.
+If you determine that the voice mail previews sent to your users aren't accurate enough, you can contact one of the certified Voice Mail Preview partners listed at [Microsoft Solution Providers](https://www.microsoft.com/solution-providers) and sign up with them at an additional cost.
 
 ## Overview
 
@@ -54,7 +54,7 @@ To become certified as a Voice Mail Preview partner that interoperates with Exch
 
 ## Voice Mail Preview partners certified for Exchange Unified Messaging
 
-If you've already deployed Unified Messaging in your organization and you're looking for a certified Voice Mail Preview partner to provide transcription support services, see [Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?LinkId=281966). These software vendors have been certified as interoperable with Exchange UM.
+If you've already deployed Unified Messaging in your organization and you're looking for a certified Voice Mail Preview partner to provide transcription support services, see [Microsoft Solution Providers](https://www.microsoft.com/solution-providers). These software vendors have been certified as interoperable with Exchange UM.
 
 ## Configuring Voice Mail Preview partners
 

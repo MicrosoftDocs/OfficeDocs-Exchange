@@ -24,10 +24,6 @@ Microsoft Unified Messaging (UM) relies on certified fax partner solutions for e
 
 To become a fax partner certified for interoperability with Exchange UM, the partner must implement the requirements contained in the Fax Partner Interoperability Specification and the fax solution must be certified by an independent certification vendor. For more information about certifying a fax product to work with Exchange Unified Messaging, submit a request to [Fax Partners for Unified Messaging](mailto:fax-part@microsoft.com).
 
-## Fax partner solutions certified as interoperable with Unified Messaging
-
-If you've already deployed Exchange Unified Messaging and are looking for a fax partner that can enable incoming faxes for your organization, see [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/p/?linkId=190238). These software vendors have been certified as interoperable with Exchange Server and include certified software solutions for Unified Messaging.
-
 ## VoIP, media gateway, and IP PBX support
 
 Correctly configuring VoIP gateways for your organization is a difficult deployment task that must be completed to successfully deploy Exchange Unified Messaging with incoming faxing. To help answer questions and get the most up-to-date VoIP gateway configuration information, see [Telephony advisor for Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md). [Configuration notes for supported VoIP gateways, IP PBXs, and PBXs](configuration-notes-for-voip-gateways-exchange-2013-help.md) provides VoIP gateway configuration notes and files that you must have to correctly configure your organization's VoIP gateways, IP PBXs, and SBCs to work with Exchange Unified Messaging.

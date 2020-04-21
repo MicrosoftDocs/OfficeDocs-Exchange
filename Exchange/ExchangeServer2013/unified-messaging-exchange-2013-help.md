@@ -125,7 +125,7 @@ Exchange 2013 Unified Messaging offers administrators:
 
 - **Incoming fax support**: Exchange 2013 provides built-in incoming fax support for users who have a UM-enabled mailbox. They can receive fax messages via calls placed to their extension number.
 
-    Customers who require a fax solution will have to deploy a fax partner solution. Fax partner solutions are available from several fax partners. The fax partner solutions are designed to be tightly integrated with Exchange and enable UM-enabled users to receive incoming fax messages. You can find a fax partner solution by visiting [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/?linkid=190238).
+    Customers who require a fax solution will have to deploy a fax partner solution. Fax partner solutions are available from several fax partners. The fax partner solutions are designed to be tightly integrated with Exchange and enable UM-enabled users to receive incoming fax messages.
 
 - **Support for multiple languages**:    All available language packs contain the Text-to-Speech (TTS) engine and the prerecorded prompts for a specified language and ASR support. However, only some language packs contain support for Voice Mail Preview. The US English (en-US) language pack is included on the installation media and additional UM language packs can be downloaded from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=266542).
 

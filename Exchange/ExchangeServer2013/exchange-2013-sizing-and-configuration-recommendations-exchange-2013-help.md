@@ -196,7 +196,7 @@ If you need to get a full kernel dump, then use Microsoft Knowledge Base article
 
 Cached mode is recommended. To understand the benefit of using cached mode, see [Choose between Cached Exchange Mode and Online Mode for Outlook 2013](https://go.microsoft.com/fwlink/p/?linkid=524045).
 
-It is important to note that performance can be affected by both server add-ins and Outlook third party add-ins. When using online mode, clients can expect some performance issues from third party add-ins, high item counts, restricted views, the number of users accessing the mailbox, among other factors. Legacy clients can experience more impact by high item counts and performance than Outlook 2013 will.
+It is important to note that performance can be affected by both server add-ins and Outlook third-party add-ins. When using online mode, clients can expect some performance issues from third-party add-ins, high item counts, restricted views, the number of users accessing the mailbox, among other factors. Legacy clients can experience more impact by high item counts and performance than Outlook 2013 will.
 
 If the primary reason that an organization has Outlook configured in online mode is for security concerns, consider using BitLocker instead.
 
@@ -204,9 +204,9 @@ Outlook 2013 offers a new "Sync Slider" feature to minimize the download time an
 
 Check monthly for Outlook clients updates that are supported in your environment.
 
-## Third Party Software
+## Third-party software
 
-As a best practice, uninstall or disable third party software while troubleshooting Exchange performance. The following list contains the types of third party software that Microsoft support has most often seen affecting Exchange 2013 performance.
+As a best practice, uninstall or disable third-party software while troubleshooting Exchange performance. The following list contains the types of third-party software that Microsoft support has most often seen affecting Exchange 2013 performance.
 
   - Anti-virus solutions
 

@@ -34,10 +34,13 @@ This article explains how you can send email from devices and business applicati
 
 - You have a line-of-business (LOB) application that manages appointments, and you want to email reminders to clients of their appointment time.
 
-> [!NOTE]
-> Beginning November 1st, 2019, Office 365 is slowly turning off the TLS cipher algorithm 3DES. If you are using devices or applications that only support 3DES, TLS will start failing. As TLS is mandatory for the SMTP AUTH client submission (also known as Authenticated SMTP or SMTP AUTH for short), you may experience emails no longer sending. You will need to upgrade or update all of your devices and applications to use the new TLS version and ciphers.
-
 ## Option 1 (recommended): Authenticate your device or application directly with an Office 365 mailbox, and send mail using SMTP AUTH client submission
+
+> [!NOTE]
+>
+> This option is not compatible with [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA). If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
+>
+> You must also verify that SMTP AUTH is enabled for the mailbox being used. See [Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online](../clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission.md) for more information.
 
 This option supports most usage scenarios and it's the easiest to set up. Choose this option when:
 
@@ -47,7 +50,7 @@ This option supports most usage scenarios and it's the easiest to set up. Choose
 
 To configure your device or application, connect directly to Office 365 using the SMTP AUTH client submission endpoint **smtp.office365.com**.
 
-Each device/application must be able to authenticate with Office 365. The email address of the account that's used to authenticate with Office 365 will appear as the sender of messages from the device/application.
+Each device or application must be able to authenticate with Office 365. The email address of the account that's used to authenticate with Office 365 will appear as the sender of messages from the device or application.
 
 ### How to set up SMTP AUTH client submission
 
@@ -59,8 +62,6 @@ Enter the following settings directly on your device or in the application **as 
 |Port|Port 587 (recommended) or port 25|
 |TLS/StartTLS|Enabled|
 |Username/email address and password|Enter the sign in credentials of the hosted mailbox being used|
-
-For more information, expand the following sections.
 
 #### TLS and other encryption options
 
@@ -89,7 +90,7 @@ The following diagram gives you a conceptual overview of what you're environment
 
 #### Requirements for SMTP AUTH client submission
 
-- **Authentication**: You must be able to configure a user name and password to send email on the device. Note that you cannot use [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which disable basic authentication and are designed to protect your users from compromise. If at all possble, we recommend using Option 2 or 3 below.
+- **Authentication**: You must be able to configure a user name and password to send email on the device. Note that you cannot use [Microsoft Security Defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) or multi-factor authentication (MFA), which disable basic authentication and are designed to protect your users from compromise. If your environment uses Microsoft Security Defaults or MFA, we recommend using Option 2 or 3 below.
 
 - **Mailbox**: You must have a licensed Office 365 mailbox to send email from.
 
@@ -109,6 +110,8 @@ You can only send from one email address unless your device can store login cred
 ## Option 2: Send mail directly from your printer or application to Office 365 (direct send)
 
 Choose this option when:
+
+- Your environment uses Microsoft Security Defaults or multi-factor authentication (MFA).
 
 - SMTP client submission (Option 1) is not compatible with your business needs or with your device.
 
@@ -211,11 +214,13 @@ Direct send has higher sending limits than SMTP client submission. Senders are n
 
 This option is more difficult to implement than the others. Only choose this option when:
 
+- Your environment uses Microsoft Security Defaults or multi-factor authentication (MFA).
+
 - SMTP client submission (Option 1) is not compatible with your business needs or with your device
 
 - You can't use direct send (Option 2) because you must send email to external recipients.
 
-SMTP relay lets Office 365 relay emails on your behalf by using a connector that's configured with your public IP address or TLS a certificate. Setting up a connector makes this a more complicated option.
+SMTP relay lets Office 365 relay emails on your behalf by using a connector that's configured with your public IP address or a TLS certificate. Setting up a connector makes this a more complicated option.
 
 ### Settings for Office 365 SMTP relay
 
@@ -300,7 +305,7 @@ In the following diagram, the application or device in your organization's netwo
 
 - **Port**: Port 25 is required and must not be blocked on your network or by your ISP.
 
-- **Licensing**: SMTP relay doesn't use a specific Office 365 mailbox to send email. This is why it's important that only licensed users send email from devices or applications configured for SMTP relay. If you have senders using devices or LOB applications who don't have an Office 365 mailbox license, obtain and assign an Exchange Online Protection license to each unlicensed sender. This is the least expensive license that allows you to send email via Office 365.
+- **Licensing**: SMTP relay doesn't use a specific Office 365 mailbox to send email. This means that users must have their own licenses if they send email from devices or applications that are configured for SMTP relay. If you have senders who use a device or LOB application and those senders do not have Office 365 mailbox licenses, obtain and assign an Exchange Online Protection license to each unlicensed sender. This is the least expensive license that allows you to send email via Office 365.
 
 ### Limitations of Office 365 SMTP relay
 

@@ -37,13 +37,13 @@ For additional information related to IMAP4, see [POP3 and IMAP4 in Exchange Ser
 This example enables IMAP4 users to use the iCalendar standard, a standard for exchanging calendar information.
 
 ```powershell
-Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption iCalendar
+Set-ImapSettings -Server CAS01 -CalendarItemRetrievalOption iCalendar
 ```
 
 This example enables IMAP4 users to access calendar information from an internal server.
 
 ```powershell
-Set-ImapSettings -Identity CAS01 -CalendarItemRetrievalOption IntranetUrl
+Set-ImapSettings -Server CAS01 -CalendarItemRetrievalOption IntranetUrl
 ```
 
 This example enables IMAP4 users to access calendar information from the Internet on an external server.

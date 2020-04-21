@@ -1,5 +1,5 @@
 ---
-title: "Hybrid Deployment procedures"
+title: "Hybrid deployment procedures"
 ms.author: v-mapenn
 author: mattpennathe3rd
 manager: serdars
@@ -18,13 +18,15 @@ ms.reviewer:
 description: "Configuring and managing hybrid deployments are easier than ever with the latest improvements to the Hybrid Configuration wizard. Whether you want to connect your Exchange on-premises and Exchange Online organizations for long-term coexistence or as part of a cloud migration strategy, configuring a hybrid deployment is the first step for your Exchange organization."
 ---
 
-# Hybrid Deployment procedures
+# Hybrid deployment procedures
 
 Configuring and managing hybrid deployments are easier than ever with the latest improvements to the Hybrid Configuration wizard. Whether you want to connect your Exchange on-premises and Exchange Online organizations for long-term coexistence or as part of a cloud migration strategy, configuring a hybrid deployment is the first step for your Exchange organization.
 
 Select a topic below to get started:
 
 [Create a hybrid deployment with the Hybrid Configuration wizard](deploy-hybrid.md)
+
+[Hybrid deployments with multiple forests](hybrid-with-multiple-forests.md)
 
 [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](move-mailboxes.md)
 

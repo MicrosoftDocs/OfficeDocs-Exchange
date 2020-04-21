@@ -22,7 +22,7 @@ Increasingly, organizations are purchasing, installing, and maintaining the hard
 For an organization to own and maintain their telephony network, they must buy the required telephony hardware components. They must also consider the day-to-day maintenance of the telephony equipment and the training required for their staff to support their telephony system. This topic discusses the different types of telephony business or organizational systems and the telephony hardware components they require. The topic also gives examples of the different types of telephony configurations.
 
 > [!IMPORTANT]
-> We recommend that all customers who plan to deploy Microsoft Exchange 2013 Unified Messaging obtain the help of a UM specialist. This will help ensure a smooth upgrade from a legacy voice mail system. Rolling out a new UM deployment or performing an upgrade of an existing voice mail system requires significant knowledge about PBXs, IP PBXs, and Unified Messaging. For more information about who to contact, see the <A href="https://go.microsoft.com/fwlink/p/?linkid=261951">Microsoft PinPoint</A>website.
+> We recommend that all customers who plan to deploy Microsoft Exchange 2013 Unified Messaging obtain the help of a UM specialist. This will help ensure a smooth upgrade from a legacy voice mail system. Rolling out a new UM deployment or performing an upgrade of an existing voice mail system requires significant knowledge about PBXs, IP PBXs, and Unified Messaging. For more information about who to contact, see the [Microsoft Solution Providers](https://www.microsoft.com/solution-providers) website.
 
 ## Overview of telephony systems
 

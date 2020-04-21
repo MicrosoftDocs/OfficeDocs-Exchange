@@ -138,7 +138,7 @@ This example adds the IP address range 172.17.17.27/16 to the existing Client Ac
 Set-ClientAccessRule -Identity "Allow EAC" -AnyOfClientIPAddressesOrRanges @{Add="172.17.17.27/16"}
 ```
 
-For detailed syntax and parameter information, see [Set-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-clutter).
+For detailed syntax and parameter information, see [Set-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/client-access/set-clientaccessrule).
 
 ### How do you know this worked?
 

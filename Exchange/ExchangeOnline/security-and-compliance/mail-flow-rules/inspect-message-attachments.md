@@ -47,7 +47,7 @@ Exchange Online admins can create mail flow rules in the Exchange admin center (
 
 ## Inspect the content within attachments
 
-You can use the mail flow rule conditions in the following table to examine the content of attachments to messages. For these conditions, only the first one megabyte (MB) of text extracted from an attachment is inspected. Note that the 1 MB limit refers to the extracted text, not the file size of the attachment. For example, a 2 MB file may contain less than 1 MB of text, so all of the text would be inspected.
+You can use the mail flow rule conditions in the following table to examine the content of message attachments. For these conditions, only the first one megabyte (MB) of text extracted from an attachment is inspected. Note that the 1 MB limit refers to the extracted text, not the file size of the attachment. For example, a 2 MB file may contain less than 1 MB of text, so all of the text would be inspected.
 
 In order to start using these conditions when inspecting messages, you need to add them to a mail flow rule. Learn about creating or changing rules at [Manage mail flow rules in Exchange Online](manage-mail-flow-rules.md).
 
@@ -57,13 +57,13 @@ In order to start using these conditions when inspecting messages, you need to a
 |**Any attachment's content matches** <br/> **Any attachment** \> **content matches these text patterns**|_AttachmentMatchesPatterns_|This condition matches messages with supported file type attachments that contain a text pattern that matches a specified regular expression.|
 |**Any attachment's content can't be inspected** <br/> **Any attachment** \> **content can't be inspected**|_AttachmentIsUnsupported_|Mail flow rules only can inspect the content of supported file types. If the mail flow rule encounters an attachment that isn't supported, the _AttachmentIsUnsupported_ condition is triggered. The supported file types are described in the next section.|
 
-**Notes**:
-
-- The conditions names in Exchange Online PowerShell are parameters names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
-
-- Learn more about property types for these conditions at [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
-
-- To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+> [!NOTE]
+>
+> - The condition names in Exchange Online PowerShell are parameter names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+> 
+> - Learn more about property types for these conditions at [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
+> 
+> - To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
 ### Supported file types for mail flow rule content inspection
 
@@ -91,19 +91,19 @@ The following conditions can be used in mail flow rules to inspect different pro
 |:-----|:-----|:-----|
 |**Any attachment's file name matches** <br/><br/> **Any attachment** \> **file name matches these text patterns**|_AttachmentNameMatchesPatterns_|This condition matches messages with attachments whose file name contains the characters you specify.|
 |**Any attachment's file extension matches** <br/><br/> **Any attachment** \> **file extension includes these words**|_AttachmentExtensionMatchesWords_|This condition matches messages with attachments whose file name extension matches what you specify.|
-|**Any attachment is greater than or equal to** <br/><br/> **Any attachment** \> **size is greater than or equal to**|_AttachmentSizeOver_|This condition matches messages with attachments when those attachments are greater than or equal to the size you specify.|
+|**Any attachment is greater than or equal to** <br/><br/> **Any attachment** \> **size is greater than or equal to**|_AttachmentSizeOver_|This condition matches messages with attachments when those attachments are greater than or equal to the size you specify.<br/><br/>**Note:** This condition refers to the sizes of individual attachments, not the cumulative size. For example, if you set a rule to reject any attachment that is 10MB or greater, a single attachment with a size of 15MB will be rejected, but a message with three 5 MB attachments will be allowed.  |
 |**The message didn't complete scanning** <br/><br/> **Any attachment** \> **didn't complete scanning**|_AttachmentProcessingLimitExceeded_|This condition matches messages when an attachment is not inspected by the mail flow rules agent.|
 |**Any attachment has executable content** <br/><br/> **Any attachment** \> **has executable content**|_AttachmentHasExecutableContent_|This condition matches messages that contain executable files as attachments. The supported file types are listed here.|
 |**Any attachment is password protected** <br/><br/> **Any attachment** \> **is password protected**|_AttachmentIsPasswordProtected_|This condition matches messages with attachments that are protected by a password. Password detection only works for Office documents and .zip files.|
 |**Any attachment has these properties, including any of these words** <br/><br/> **Any attachment** \> **has these properties, including any of these words**|_AttachmentPropertyContainsWords_|This condition matches messages where the specified property of the attached Office document contains specified words. A property and its possible values are separated with a colon. Multiple values are separated with a comma. Multiple property/value pairs are also separated with a comma.|
 
- **Notes**:
-
-- The conditions names in Exchange Online PowerShell are parameters names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
-
-- Learn more about property types for these conditions at [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
-
-- To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+> [!NOTE]
+> 
+> - The condition names in Exchange Online PowerShell are parameter names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+> 
+> - Learn more about property types for these conditions at [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
+> 
+> - To learn how to connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
 ### Supported executable file types for mail flow rule inspection
 

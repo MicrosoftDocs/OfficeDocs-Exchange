@@ -440,7 +440,7 @@ To begin maintenance procedures on a DAG member, including flushing the transpor
 5. To run the StartDagServerMaintenance.ps1 script, run the following command:
 
    ```powershell
-   .\StartDagServerMaintenance.ps1 -ServerName <ServerName> -MoveComment Maintenance
+   .\StartDagServerMaintenance.ps1 -ServerName <ServerName> -MoveComment Maintenance -PauseClusterNode
    ```
 
    For the value of the _MoveComment_ parameter, you can make any notation you want. The above example uses "Maintenance."

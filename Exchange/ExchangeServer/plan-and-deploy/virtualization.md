@@ -67,7 +67,7 @@ For deployments of Exchange 2016 or Exchange 2019:
 
 - It's possible that guest virtual machines may be prevented from directly communicating with Fibre Channel or SCSI host bus adapters (HBAs) installed in the host machine. In this event, you must configure the adapters in the host machine's operating system and present the logical unit numbers (LUNs) to guest virtual machines as either a virtual disk or a pass-through disk.
 
-- The only supported way to send emails to external domains from Azure compute resources is via an SMTP relay (also known as an SMTP smart host). The Azure compute resource sends the email to the SMTP relay and then the SMTP relay provider delivers the email to the external domain. Microsoft Exchange Online Protection is one provider of an SMTP relay, but there are a number of third party providers as well. For more information, see the Microsoft Azure Support Team Blog post [Sending E-mail from Azure Compute Resource to External Domains](https://go.microsoft.com/fwlink/p/?LinkId=799723).
+- The only supported way to send emails to external domains from Azure compute resources is via an SMTP relay (also known as an SMTP smart host). The Azure compute resource sends the email to the SMTP relay and then the SMTP relay provider delivers the email to the external domain. Microsoft Exchange Online Protection is one provider of an SMTP relay, but there are a number of third-party providers as well. For more information, see the Microsoft Azure Support Team Blog post [Sending E-mail from Azure Compute Resource to External Domains](https://go.microsoft.com/fwlink/p/?LinkId=799723).
 
 ## Host machine storage requirements
 
@@ -103,7 +103,7 @@ The following are answers to some frequently asked questions about host-based fa
 
 - **Does Microsoft support third-party migration technology?**
 
-    Microsoft can't make support statements for the integration of third party hypervisor products using these technologies with Exchange, because these technologies aren't part of the Server Virtualization Validation Program (SVVP). The SVVP covers the other aspects of Microsoft support for third-party hypervisors. You need to ensure that your hypervisor vendor supports the combination of their migration and clustering technology with Exchange. If your hypervisor vendor supports their migration technology with Exchange, Microsoft supports Exchange with their migration technology.
+    Microsoft can't make support statements for the integration of third-party hypervisor products using these technologies with Exchange, because these technologies aren't part of the Server Virtualization Validation Program (SVVP). The SVVP covers the other aspects of Microsoft support for third-party hypervisors. You need to ensure that your hypervisor vendor supports the combination of their migration and clustering technology with Exchange. If your hypervisor vendor supports their migration technology with Exchange, Microsoft supports Exchange with their migration technology.
 
 - **How does Microsoft define host-based failover clustering?**
 

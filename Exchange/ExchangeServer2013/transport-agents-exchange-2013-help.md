@@ -41,11 +41,11 @@ When complied against libraries in the SDK, the resulting assemblies are registe
 
 The following list explains the requirements for using transport agents in Exchange 2013.
 
-- The Transport service on Mailbox servers and Edge Transport servers fully supports all the predefined classes in the SDK, and therefore any third party transport agents written for the Hub Transport or Edge Transport server roles in Microsoft Exchange Server 2010 should work in the Transport service in Exchange 2013.
+- The Transport service on Mailbox servers and Edge Transport servers fully supports all the predefined classes in the SDK, and therefore any third-party transport agents written for the Hub Transport or Edge Transport server roles in Microsoft Exchange Server 2010 should work in the Transport service in Exchange 2013.
 
-- The Front End Transport service only supports the **SmtpReceiveAgent** class in the SDK, and third party agents can't operate on the **OnEndOfData** SMTP event.
+- The Front End Transport service only supports the **SmtpReceiveAgent** class in the SDK, and third-party agents can't operate on the **OnEndOfData** SMTP event.
 
-- The Mailbox Transport service doesn't support the SDK at all, so you can't use any third party agents in the Mailbox Transport service.
+- The Mailbox Transport service doesn't support the SDK at all, so you can't use any third-party agents in the Mailbox Transport service.
 
 Support for legacy transport agents based on versions of the .NET Framework prior to version 4.0 isn't enabled by default, but you can enable it. For instructions, see [Enable support for legacy transport agents](enable-support-for-legacy-transport-agents-exchange-2013-help.md).
 

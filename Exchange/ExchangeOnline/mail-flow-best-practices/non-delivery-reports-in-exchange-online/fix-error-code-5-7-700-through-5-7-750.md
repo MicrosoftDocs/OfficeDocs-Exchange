@@ -50,17 +50,23 @@ Common causes are compromised on-premises servers or compromised admin accounts 
 
 To remove this block, you need to understand and explain the cause to a support agent, as well as correct the underlying problem.
 
+In rare cases, this could also happen if you renew your subscription after it has already expired. It takes time for the service to sync the new subscription information (typically, no more than one day), but your organization could be blocked from sending email in the meantime. The best way to prevent this is to make sure your subscription does not expire.
+
 ### 5.7.708 Access denied, traffic not accepted from this IP
 
 If you must send email from these low reputation IP addresses before you can purchase licenses, contact support to request an exception until you're able to purchase licenses.
 
 ### 5.7.750 Client blocked from sending from unregistered domain
 
+In most cases, the connectors are set up correctly, but email is being sent from unregistered (also known as unprovisioned) domains. Office 365 allows a reasonable amount of email from unregistered domains, but you should configure every domain that you use to send email as an accepted domain.
+
 To fix this error, you can:
 
 - **Most common solution**: Add and validate all domains in Office 365 that you use to send email messages. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain).
 
 - Use a certificate-based outbound connector where the certificate's domain is an accepted and validated domain in Office 365. For more information, see [Configure mail flow using connectors in Office 365](../use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
+
+- Look for unusual connectors and compromised accounts. Attackers will often create new inbound connectors in your Office 365 organization to send spam. For mre information, see [Validate connectors in Office 365](../use-connectors-to-configure-mail-flow/validate-connectors.md), and [Responding to a compromised email account in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).
 
 ## Still need help with error codes 5.7.700 through 5.7.750?
 

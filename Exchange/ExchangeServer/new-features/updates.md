@@ -18,7 +18,9 @@ manager: serdars
 
 # Updates for Exchange Server
 
-Exchange follows a quarterly delivery model to release Cumulative Updates (CUs) that address customer-reported issues and to possibly add new functionality and/or features. Critical product updates (packages that address a Microsoft-released security bulletin or contain a change in time zone definitions) are released as needed on a monthly basis for the most recently released CU and the preceding CU.
+Exchange follows a quarterly delivery model to release Cumulative Updates (CUs) that address issues reported by customers. CUs sometimes also add new features and functionality.
+
+Critical product updates are packages that address a Microsoft-released security bulletin or that contain a change in time zone definitions. When in Mainstream Support, critical product updates are released as needed on a monthly basis for the most recently released CU and for the immediately previous CU. When in Extended Support, critical product updates are released as needed on a monthly basis for only the most recently released CU.
 
 Each CU is a full installation of Exchange that includes all updates and changes from previous CUs. When installing a new Exchange server using the latest released CU, you don't need to install Exchange RTM or any previously released CU.
 
@@ -37,7 +39,7 @@ For information about the new features you'll get when you upgrade to Exchange 2
 
 ::: moniker range="exchserver-2016"
 
-To get the latest version of Exchange 2016, download and install [Cumulative Update 16 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?familyID=6f83a0e2-a1a3-4d46-882b-68de870db3f3). Because each CU is a full installation of Exchange that includes updates and changes from all previous CU's, you don't need to install any previous CU's or Exchange 2016 RTM first.
+To get the latest version of Exchange 2016, download and install [Cumulative Update 16 for Exchange Server 2016](https://www.microsoft.com/download/details.aspx?familyID=6f83a0e2-a1a3-4d46-882b-68de870db3f3). Because each CU is a full installation of Exchange that includes updates and changes from all previous CUs, you don't need to install any previous CUs or Exchange 2016 RTM first.
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2016 CUs.
 
