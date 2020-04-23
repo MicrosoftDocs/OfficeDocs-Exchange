@@ -334,6 +334,10 @@ Here's a comparison of each configuration option and the features they support.
 |**Limitations**|
 |Throttling limits|10,000 recipients per day. 30 messages per minute.|Standard throttling is in place to protect Office 365.|Reasonable limits are imposed. The service can't be used to send spam or bulk mail. For more information about reasonable limits, see [Higher Risk Delivery Pool for Outbound Messages](https://go.microsoft.com/fwlink/p/?linkid=830829).|
 
+##Configure a certificate-based connector to relay email through Office 365
+
+If your devices or applications are capable of using a certificate for mailflow, you can configure relay through Office 365 by verifying the subject name on the certificate that the sending device or application uses. The Common-Name (CN) or Subject Alternate Name (SAN) in the certificate should contains a domain name that you have registered in Office 365. Also, you have to create a certificate-based connector in Office 365 that has the same domain name mentioned to accept and relay emails coming from these devices, applications or any other On-premises server. For more details about this method please refer to- https://docs.microsoft.com/en-us/exchange/troubleshoot/connectors/office-365-notice
+
 ## Use your own email server to send email from multifunction devices and applications
 
 If you happen to have an on-premises email server, you should seriously consider using that server for SMTP relay instead of Office 365. A local email server that you have physical access to is much easier to configure for SMTP relay by devices and applications on your local network. The details about how to do this depend on your on-premises email server. For Exchange Server, see the following topics:
