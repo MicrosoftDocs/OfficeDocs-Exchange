@@ -64,14 +64,17 @@ Before you start, make sure that you've done the following:
 
 8. When the wizard is complete, click **Exit** on the **Configuration complete** page.
 
-9. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD\_**. Make note of this account's name. You can also use a PowerShell cmdlet to [Determine your AD DS Connector Account](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-configure-ad-ds-connector-account#determine-your-ad-ds-connector-account)
+9. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with  **MSOL\_**. Make note of this account's name. You can also use a PowerShell cmdlet to [Determine your AD DS Connector Account](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-configure-ad-ds-connector-account#determine-your-ad-ds-connector-account).
 
-10. Open the Windows PowerShell on the Azure Active Directory Connect server, and run the following commands.
+10. Make note of the target Active Directory domain name for group writeback, e.g., contoso.com.
+
+11. Open the Windows PowerShell on the Azure Active Directory Connect server, and run the following commands.
 
     ```PowerShell
-    $AzureADConnectSWritebackAccountDN = <AAD_ account DN>
+    $AzureADConnectSWritebackAccountDN = <MSOL_ SamAccountName>
+    $ADConnectorAccountDomain = "<Active Directory FQDN>"
     Import-Module "C:\Program Files\Microsoft Azure Active Directory Connect\AdSyncConfig\AdSyncConfig.psm1"
-    Set-ADSyncUnifiedGroupWritebackPermissions -ADConnectorAccountName $AzureADConnectSWritebackAccountDN
+    Set-ADSyncUnifiedGroupWritebackPermissions -ADConnectorAccountName $AzureADConnectSWritebackAccountDN -ADConnectorAccountDomain $ADConnectorAccountDomain
     ```
 
 ## Configure a group domain
