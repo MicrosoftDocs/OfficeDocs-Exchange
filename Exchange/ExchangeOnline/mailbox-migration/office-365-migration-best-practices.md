@@ -89,9 +89,9 @@ To help you plan your migration, the following tables present guidelines about w
    |**Mailbox size (GB)**|**50th percentile duration (days)**|**90th percentile duration (days)**|
    |:-----|:-----|:-----|
    |\< 1|1|7|
-   |1 - 10|1|10|
-   |10 - 50|3|30|
-   |50 - 100|15|45|
+   |1 - 9|1|10|
+   |10 - 49|3|30|
+   |50 - 99|15|45|
    |100 - 200|30|60|
    |\> 200|Not supported|Not supported|
 
