@@ -28,7 +28,7 @@ To download the Hybrid Configuration wizard go to [https://aka.ms/HybridWizard](
 
 Q: What versions of Exchange support the new Hybrid Configuration wizard?
 
-> A: You can use a combination of one or more of the following: <br/> • Exchange 2010 SP3 (latest RU strongly recommended) <br/>• Exchange 2013 CU1 or later <br/>• Exchange 2016 and Exchange 2019 <br/><br/> **Important note**: To remain in a supported hybrid configuration, you need to make sure you are running the latest available released CU for your Exchange version. Cumulative updates are released on a quarterly cadence. If you are unable to upgrade to the latest available CU, the previous CU is also supported. <br/><br/> For role specific requirements and prerequisites, see [Prerequisites for hybrid deployment](hybrid-deployment-prerequisites.md#prerequisites-for-hybrid-deployment).
+> A: You can use a combination of one or more of the following: <br/> • Exchange 2010 SP3 (latest UR strongly recommended) <br/>• Exchange 2013 CU1 or later <br/>• Exchange 2016 and Exchange 2019 <br/><br/> **Important note**: To remain in a supported hybrid configuration, you need to make sure you are running the latest available released CU for your Exchange version. Cumulative updates are released on a quarterly cadence. If you are unable to upgrade to the latest available CU, the previous CU is also supported. <br/><br/> For role specific requirements and prerequisites, see [Prerequisites for hybrid deployment](hybrid-deployment-prerequisites.md#prerequisites-for-hybrid-deployment).
 
 
 Q: Will this Hybrid Configuration wizard work with Exchange 2007?
