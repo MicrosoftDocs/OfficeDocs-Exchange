@@ -118,9 +118,9 @@ To learn more about custom prompts for UM, see:
 
 - [Import and export custom greetings, announcements, menus, and prompts](import-and-export-custom-greetings-announcements-menus-and-prompts-exchange-2013-help.md)
 
-- [Import-UMPrompt](https://technet.microsoft.com/library/dd876899\(v=exchg.150\))
+- [Import-UMPrompt](https://docs.microsoft.com/powershell/module/exchange/Import-UMPrompt)
 
-- [Export-UMPrompt](https://technet.microsoft.com/library/dd876882\(v=exchg.150\))
+- [Export-UMPrompt](https://docs.microsoft.com/powershell/module/exchange/Export-UMPrompt)
 
 - [UM languages, prompts, and greetings](um-languages-prompts-and-greetings-exchange-2013-help.md)
 
@@ -484,9 +484,9 @@ A move request is the process of moving a mailbox from one mailbox database to a
 
 - [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md)
 
-- [New-MoveRequest](https://technet.microsoft.com/library/dd351123\(v=exchg.150\))
+- [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/New-MoveRequest)
 
-- [New-MigrationBatch](https://technet.microsoft.com/library/jj219166\(v=exchg.150\))
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/New-MigrationBatch)
 
 - [Managing Move Requests](https://go.microsoft.com/fwlink/p/?linkid=296352)
 

@@ -28,7 +28,7 @@ By default, a public folder inherits the settings of its parent folder, includin
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](https://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](sharing-and-collaboration-permissions-exchange-2013-help.md) topic.
 
 - You can't create a public folder unless you've first created a public folder mailbox. For more information about how to create a public folder mailbox, see [Create a public folder mailbox](create-public-folder-mailbox-exchange-2013-help.md).
 
@@ -64,7 +64,7 @@ New-PublicFolder -Name Reports -Path \Marketing\2013
 > [!IMPORTANT]
 > Don't use a backslash (\) in the name when creating a public folder.
 
-For detailed syntax and parameter information, see [New-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/new-publicfolder).
+For detailed syntax and parameter information, see [New-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/new-publicfolder).
 
 ## How do you know this worked?
 

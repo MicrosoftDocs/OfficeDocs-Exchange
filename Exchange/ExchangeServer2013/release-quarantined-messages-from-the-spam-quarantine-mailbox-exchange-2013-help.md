@@ -29,7 +29,7 @@ Spam quarantine is a feature of the Content Filter agent that reduces the risk o
 
 - This procedure requires that you've configured the anti-spam quarantine mailbox. For more information, see [Configure a spam quarantine mailbox](configure-a-spam-quarantine-mailbox-exchange-2013-help.md).
 
-- To access the quarantine mailbox, you need to configure an Outlook profile for that mailbox and then open the mailbox using Outlook. For more information about configuring and using multiple Outlook profiles, see [Overview of Outlook e-mail profiles](https://go.microsoft.com/fwlink/p/?linkid=178975).
+- To access the quarantine mailbox, you need to configure an Outlook profile for that mailbox and then open the mailbox using Outlook. For more information about configuring and using multiple Outlook profiles, see [Overview of Outlook e-mail profiles](https://support.office.com/article/f544c1ba-3352-4b3b-be0b-8d42a540459d).
 
 - To make it easier to locate the message you want to recover, you can create a custom Outlook form and modify the default view to expose the original sender address in the list of messages. For detailed steps, see [Configure Outlook to show the original sender in the quarantine mailbox](configure-outlook-to-show-the-original-sender-in-the-quarantine-mailbox-exchange-2013-help.md).
 

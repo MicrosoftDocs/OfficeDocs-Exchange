@@ -22,7 +22,7 @@ Unified Messaging (UM) and Microsoft Lync Server can be deployed together to pro
 > [!TIP]
 > Microsoft Office Communications Server 2007 R2 can also be deployed together with Unified Messaging. In this topic, "Microsoft Lync Server" refers to Microsoft Lync Server 2010 or Microsoft Lync Server 2013.
 
-Looking for more information about Microsoft Lync Server? See [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
+Looking for more information about Microsoft Lync Server? See [Microsoft Lync Server](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013).
 
 ## Deploying Exchange UM and Lync Server overview
 
@@ -110,7 +110,7 @@ The following table shows the certificate requirements for installing and config
 
 After you install the required servers in your organization, there's a recommended sequence of steps that you must perform in your Exchange Unified Messaging and Lync Server deployments to correctly deploy Enterprise Voice for your users.
 
-For details about Microsoft Lync Server, see [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
+For details about Microsoft Lync Server, see [Microsoft Lync Server](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013).
 
 You must complete the following steps to configure Unified Messaging to work with the Enterprise Voice features in Lync Server:
 
@@ -202,4 +202,4 @@ After you configure the Lync Server and the Unified Messaging servers, you must 
 
 ## For more information
 
-For more information about how to perform the tasks that must be completed for Microsoft Lync Server, see [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
+For more information about how to perform the tasks that must be completed for Microsoft Lync Server, see [Microsoft Lync Server](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013).

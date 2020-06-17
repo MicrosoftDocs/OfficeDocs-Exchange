@@ -215,7 +215,7 @@ System mailboxes are created by Exchange in the root domain of the Active Direct
 </tbody>
 </table>
 
-If you want to decommission the last Mailbox server in your Exchange organization, you should first disable these system mailboxes by using the [Disable-Mailbox](https://technet.microsoft.com/library/aa997210\(v=exchg.150\)) cmdlet. When you decommission a Mailbox server that contains these system mailboxes, you should move the system mailboxes to another Mailbox server to make sure that you don't lose functionality.
+If you want to decommission the last Mailbox server in your Exchange organization, you should first disable these system mailboxes by using the [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Disable-Mailbox) cmdlet. When you decommission a Mailbox server that contains these system mailboxes, you should move the system mailboxes to another Mailbox server to make sure that you don't lose functionality.
 
 ## Planning for mailboxes
 
@@ -230,14 +230,14 @@ Distribution groups are mail-enabled Active Directory group objects that are pri
 
 Exchange supports the following types of distribution groups:
 
-  - **Distribution groups**: These are Active Directory universal distribution group objects that are mail-enabled. They can be used only to distribute messages to a group of recipients.
+- **Distribution groups**: These are Active Directory universal distribution group objects that are mail-enabled. They can be used only to distribute messages to a group of recipients.
 
-  - **Mail-enabled security groups**: These are Active Directory universal security group objects that are mail-enabled. They can be used to assign access permissions to resources in Active Directory and can also be used to distribute messages.
+- **Mail-enabled security groups**: These are Active Directory universal security group objects that are mail-enabled. They can be used to assign access permissions to resources in Active Directory and can also be used to distribute messages.
 
-  - **Mail-enabled non-universal groups**: These are Active Directory global or local group objects that are mail-enabled. You can create or mail-enable only universal distribution groups. You may have mail-enabled groups that were migrated from previous versions of Exchange that aren't universal groups. These groups can still be managed by using the EAC or the Shell.
+- **Mail-enabled non-universal groups**: These are Active Directory global or local group objects that are mail-enabled. You can create or mail-enable only universal distribution groups. You may have mail-enabled groups that were migrated from previous versions of Exchange that aren't universal groups. These groups can still be managed by using the EAC or the Shell.
 
-    > [!NOTE]
-    > To convert a domain-local or a global group to a universal group, you can use the <A href="https://technet.microsoft.com/library/bb123770(v=exchg.150)">Set-Group</A> cmdlet in the Shell.
+  > [!NOTE]
+  > To convert a domain-local or a global group to a universal group, you can use the <A href="https://docs.microsoft.com/powershell/module/exchange/Set-Group">Set-Group</A> cmdlet in the Shell.
 
 ## Dynamic distribution groups
 
@@ -250,15 +250,15 @@ Unlike regular distribution groups, the membership list for dynamic distribution
 
 To help you create recipient filters for dynamic distribution groups, you can use precanned filters. A *precanned filter* is a commonly used filter that you can use to meet a variety of recipient-filtering criteria. You can use these filters to specify the recipient types that you want to include in a dynamic distribution group. In addition, you can also specify a list of conditions that the recipients must meet. You can create precanned conditions based on the following properties:
 
-  - Custom attributes 1-15
+- Custom attributes 1-15
 
-  - State or province
+- State or province
 
-  - Company
+- Company
 
-  - Department
+- Department
 
-  - Recipient container
+- Recipient container
 
 You can also specify conditions based on recipient properties other than those previously listed. To do this, you must use the Shell to create a custom query for the dynamic distribution group. Remember that the filter and condition settings for dynamic distribution groups that have custom recipient filters can be managed only by using the Shell. For an example of how to create a dynamic distribution group by using a custom query, see [Manage dynamic distribution groups](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups).
 
@@ -266,9 +266,9 @@ You can also specify conditions based on recipient properties other than those p
 
 Mail contacts typically contain information about people or organizations that exist outside your Exchange organization. Mail contacts can appear in your organization's shared address book (also called the global address list or GAL) and other address lists, and can be added as members to distribution groups. Each contact has an external email address, and all email messages that are sent to a contact are automatically forwarded to that address. Contacts are ideal for representing people external to your Exchange organization (in the shared address book) who don't need access to any internal resources. The following are mail contact types:
 
-  - **Mail contacts**: These are mail-enabled Active Directory contacts that contain information about people or organizations that exist outside your Exchange organization.
+- **Mail contacts**: These are mail-enabled Active Directory contacts that contain information about people or organizations that exist outside your Exchange organization.
 
-  - **Mail forest contacts**: These represent recipient objects from another forest. These contacts are typically created by directory synchronization. Mail forest contacts are read-only recipient objects that can be updated or removed only by means of synchronization. You can't use Exchange management interfaces to modify or remove a mail forest contact.
+- **Mail forest contacts**: These represent recipient objects from another forest. These contacts are typically created by directory synchronization. Mail forest contacts are read-only recipient objects that can be updated or removed only by means of synchronization. You can't use Exchange management interfaces to modify or remove a mail forest contact.
 
 ## Mail users
 
@@ -291,10 +291,10 @@ You can manage public folders by using either the EAC or the Shell. For more inf
 
 The Microsoft Exchange recipient is a special recipient object that provides a unified and well-known message sender that differentiates system-generated messages from other messages. It replaces the System Administrator sender that was used for system-generated messages in earlier versions of Exchange.
 
-The Microsoft Exchange recipient isn't a typical recipient object, such as a mailbox, mail user, or mail contact, and it isn't managed by using the typical recipient tools. However, you can use the [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443\(v=exchg.150\)) cmdlet in the Shell to configure the Microsoft Exchange recipient.
+The Microsoft Exchange recipient isn't a typical recipient object, such as a mailbox, mail user, or mail contact, and it isn't managed by using the typical recipient tools. However, you can use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet in the Shell to configure the Microsoft Exchange recipient.
 
 > [!NOTE]
-> When system-generated messages are sent to an external sender, the Microsoft Exchange recipient isn't used as the sender of the message. Instead, the email address specified by the <EM>ExternalPostmasterAddress</EM> parameter in the <A href="https://technet.microsoft.com/library/bb124151(v=exchg.150)">Set-TransportConfig</A> cmdlet is used.
+> When system-generated messages are sent to an external sender, the Microsoft Exchange recipient isn't used as the sender of the message. Instead, the email address specified by the <EM>ExternalPostmasterAddress</EM> parameter in the <A href="https://docs.microsoft.com/powershell/module/exchange/Set-TransportConfig">Set-TransportConfig</A> cmdlet is used.
 
 ## Recipients documentation
 
@@ -361,7 +361,7 @@ The following table contains links to topics that will help you learn about and 
 <td><p>Learn how to add information about a recipient by using custom attributes.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/bb124268(v=exchg.150)">Filters in recipient Shell commands</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/exchange/recipient-filters">Filters in recipient Shell commands</a></p></td>
 <td><p>Learn how to use precanned or custom filters with commands to filter a set of recipients.</p></td>
 </tr>
 <tr class="even">

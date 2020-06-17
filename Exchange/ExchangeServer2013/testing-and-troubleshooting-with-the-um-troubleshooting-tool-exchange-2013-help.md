@@ -32,22 +32,22 @@ By default, when you're running the UM Troubleshooting Tool, it uses the credent
 
 The **Test-ExchangeUMCallFlow** cmdlet can be installed on a local Exchange 2010 Unified Messaging server, an Exchange 2013 Mailbox server, or on another 64-bit computer running:
 
-  - The Windows 7 or Windows 8 operating system
+- The Windows 7 or Windows 8 operating system
 
-  - The Windows Server 2008 or Windows Server 2008 R2 operating system
+- The Windows Server 2008 or Windows Server 2008 R2 operating system
 
-  - The Windows Server 2012 or Windows Server 2012 R2 operating system
+- The Windows Server 2012 or Windows Server 2012 R2 operating system
 
 The **Test-ExchangeUMCallFlow** cmdlet requires the following components to be installed on a Windows 7, Windows 8, Windows Server 2008, or Windows Server 2012 64-bit computer before installing the cmdlet:
 
-  - Microsoft .NET Framework 3.5 Service Pack 1 (SP1). To download the service pack, see [Microsoft .NET Framework 3.5 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=152380).
+- Microsoft .NET Framework 3.5 Service Pack 1 (SP1). To download the service pack, see [Microsoft .NET Framework 3.5 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=152380).
 
-  - Microsoft .NET Framework 3.5 Family Update for Windows Vista x64 and Windows Server 2008 x64 updates if the tool will be run on a Windows Vista or Windows Server 2008 computer. To download the update, see [Microsoft .NET Framework 3.5 Family Update for Windows Vista x64, and Windows Server 2008 x64](https://go.microsoft.com/fwlink/p/?linkid=178998).
+- Microsoft .NET Framework 3.5 Family Update for Windows Vista x64 and Windows Server 2008 x64 updates if the tool will be run on a Windows Vista or Windows Server 2008 computer. To download the update, see [Microsoft .NET Framework 3.5 Family Update for Windows Vista x64, and Windows Server 2008 x64](https://go.microsoft.com/fwlink/p/?linkid=178998).
 
-  - Windows Remote Management (WinRM) 2.0 and Windows PowerShell V2 (Windows6.0-KB968930.msu). For more information, see Microsoft Knowledge Base article 968930, [Windows Management Framework core package (Windows PowerShell 2.0 and WinRM 2.0)](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=968930).
+- Windows Remote Management (WinRM) 2.0 and Windows PowerShell V2 (Windows6.0-KB968930.msu). For more information, see Microsoft Knowledge Base article 968930, [Windows Management Framework core package (Windows PowerShell 2.0 and WinRM 2.0)](https://support.microsoft.com/help/968930).
 
-  - Unified Communications Managed AP1 2.0, Core Runtime (64-bit). To download the UcmaRuntimeWebDownloadX64.msi program file, see [Unified Communications Managed API 2.0, Core Runtime (64-bit)](https://go.microsoft.com/fwlink/p/?linkid=198175).
+- Unified Communications Managed AP1 2.0, Core Runtime (64-bit).
 
 The **Test-ExchangeUMCallFlow** cmdlet isn't included on the Exchange 2010 SP1 DVD, the Exchange 2010 SP1-only download, or the Exchange 2013 installation media; however, you can download the cmdlet from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=182625).
 
-For more information about syntax and parameters, see [Test-ExchangeUMCallFlow](https://technet.microsoft.com/library/ff630913\(v=exchg.150\)).
+For more information about syntax and parameters, see [Test-ExchangeUMCallFlow](https://www.microsoft.com/download/details.aspx?id=20839).

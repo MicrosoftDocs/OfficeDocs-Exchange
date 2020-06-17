@@ -31,17 +31,17 @@ For a variety of reasons, such as performing planned maintenance, it may be nece
 
 *Seeding*, also known as *updating*, is the process in which a database, either a blank database or a copy of the production database, is added to the target copy location on another Mailbox server in the same DAG as the active database. This becomes the baseline database for the copy maintained by that server.
 
-Depending on the situation, seeding can be an automatic process or a manual process that you initiate. When a database copy is added, the copy will be automatically seeded, provided that the target server and its storage are properly configured. If you want to manually seed a database copy and don't want automatic seeding to occur when creating the copy, you can use the *SeedingPostponed* parameter when running the [Add-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd298105\(v=exchg.150\)) cmdlet.
+Depending on the situation, seeding can be an automatic process or a manual process that you initiate. When a database copy is added, the copy will be automatically seeded, provided that the target server and its storage are properly configured. If you want to manually seed a database copy and don't want automatic seeding to occur when creating the copy, you can use the *SeedingPostponed* parameter when running the [Add-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Add-MailboxDatabaseCopy) cmdlet.
 
-Database copies rarely need to be reseeded after the initial seeding has occurred. But if reseeding is necessary, or if you want to manually seed a database copy instead of having the system automatically seed the copy, these tasks can be performed by using the Update Mailbox Database Copy wizard in the EAC or by using the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335201\(v=exchg.150\)) cmdlet in the Shell. Before seeding a database copy, you must first suspend the mailbox database copy. For detailed steps about how to seed a database copy, see [Update a mailbox database copy](update-a-mailbox-database-copy-exchange-2013-help.md).
+Database copies rarely need to be reseeded after the initial seeding has occurred. But if reseeding is necessary, or if you want to manually seed a database copy instead of having the system automatically seed the copy, these tasks can be performed by using the Update Mailbox Database Copy wizard in the EAC or by using the [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Update-MailboxDatabaseCopy) cmdlet in the Shell. Before seeding a database copy, you must first suspend the mailbox database copy. For detailed steps about how to seed a database copy, see [Update a mailbox database copy](update-a-mailbox-database-copy-exchange-2013-help.md).
 
-After a manual seed operation has completed, replication for the seeded mailbox database copy is automatically resumed. If you don't want replication to automatically resume, you can use the *ManualResume* parameter when running the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335201\(v=exchg.150\)) cmdlet.
+After a manual seed operation has completed, replication for the seeded mailbox database copy is automatically resumed. If you don't want replication to automatically resume, you can use the *ManualResume* parameter when running the [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Update-MailboxDatabaseCopy) cmdlet.
 
 ## Choosing what to seed
 
 When performing a seed operation, you can choose to seed the mailbox database copy, the content index catalog for the mailbox database copy, or both the database copy and the content index catalog copy.
 
-The default behavior of the Update Mailbox Database Copy wizard and the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335201\(v=exchg.150\)) cmdlet is to seed both the mailbox database copy and the content index catalog copy. To seed just the mailbox database copy without seeding the content index catalog, use the *DatabaseOnly* parameter when running the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335201\(v=exchg.150\)) cmdlet. To seed just the content index catalog copy, use the *CatalogOnly* parameter when running the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335201\(v=exchg.150\)) cmdlet.
+The default behavior of the Update Mailbox Database Copy wizard and the [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Update-MailboxDatabaseCopy) cmdlet is to seed both the mailbox database copy and the content index catalog copy. To seed just the mailbox database copy without seeding the content index catalog, use the *DatabaseOnly* parameter when running the [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Update-MailboxDatabaseCopy) cmdlet. To seed just the content index catalog copy, use the *CatalogOnly* parameter when running the [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Update-MailboxDatabaseCopy) cmdlet.
 
 ## Selecting the seeding source
 
@@ -49,9 +49,9 @@ Any healthy database copy can be used as the seeding source for an additional co
 
 To use a specific copy as a source for seeding when adding a new database copy, you would do the following:
 
-- Use the *SeedingPostponed* parameter when running the [Add-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd298105\(v=exchg.150\)) cmdlet to add the database copy. If the *SeedingPostponed* parameter isn't used, the database copy will be explicitly seeded using the active copy of the database as the source.
+- Use the *SeedingPostponed* parameter when running the [Add-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Add-MailboxDatabaseCopy) cmdlet to add the database copy. If the *SeedingPostponed* parameter isn't used, the database copy will be explicitly seeded using the active copy of the database as the source.
 
-- You can specify the source server you want to use as part of the Update Mailbox Database Copy wizard in the EAC, or you can use the *SourceServer* parameter when running the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335201\(v=exchg.150\)) cmdlet to specify the desired source server for seeding. In the preceding example, you would specify MBX3 as the source server. If the *SourceServer* parameter isn't used, the database copy will be explicitly seeded from the active copy of the database.
+- You can specify the source server you want to use as part of the Update Mailbox Database Copy wizard in the EAC, or you can use the *SourceServer* parameter when running the [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Update-MailboxDatabaseCopy) cmdlet to specify the desired source server for seeding. In the preceding example, you would specify MBX3 as the source server. If the *SourceServer* parameter isn't used, the database copy will be explicitly seeded from the active copy of the database.
 
 ## Seeding and networks
 
@@ -60,7 +60,7 @@ In addition to selecting a specific source server for seeding a mailbox database
 > [!NOTE]
 > Seeding a context index catalog is only possible over a MAPI network. This is true even if you use the <CODE>-Network</CODE> parameter in the Update-MailboxDatabaseCopy cmdlet.
 
-To specify the networks you want to use for seeding, use the *Network* parameter when running the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335201\(v=exchg.150\)) cmdlet and specify the DAG networks that you want to use. If you don't use the *Network* parameter, the system uses the following default behavior for selecting a network to use for the seeding operation:
+To specify the networks you want to use for seeding, use the *Network* parameter when running the [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Update-MailboxDatabaseCopy) cmdlet and specify the DAG networks that you want to use. If you don't use the *Network* parameter, the system uses the following default behavior for selecting a network to use for the seeding operation:
 
 - If the source server and target server are on the same subnet and a replication network has been configured that includes the subnet, the replication network will be used.
 
@@ -68,11 +68,11 @@ To specify the networks you want to use for seeding, use the *Network* parameter
 
 - If the source server and target server are in different datacenters, the client (MAPI) network will be used for seeding.
 
-At the DAG level, DAG networks are configured for encryption and compression. The default settings are to use encryption and compression only for communications on different subnets. If the source and target are on different subnets and the DAG is configured with the default values for *NetworkCompression* and *NetworkEncryption*, you can override these values by using the *NetworkCompressionOverride* and *NetworkEncryptionOverride* parameters, respectively, when running the [Update-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335201\(v=exchg.150\)) cmdlet.
+At the DAG level, DAG networks are configured for encryption and compression. The default settings are to use encryption and compression only for communications on different subnets. If the source and target are on different subnets and the DAG is configured with the default values for *NetworkCompression* and *NetworkEncryption*, you can override these values by using the *NetworkCompressionOverride* and *NetworkEncryptionOverride* parameters, respectively, when running the [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Update-MailboxDatabaseCopy) cmdlet.
 
 ## Seeding process
 
-When you initiate a seeding process by using the [Add-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd298105\(v=exchg.150\)) or [Update-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335201\(v=exchg.150\)) cmdlets, the following tasks are performed:
+When you initiate a seeding process by using the [Add-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Add-MailboxDatabaseCopy) or [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Update-MailboxDatabaseCopy) cmdlets, the following tasks are performed:
 
 1. Database properties from Active Directory are read to validate the specified database and servers, and to verify that the source and target servers are running Exchange 2013, they are both members of the same DAG, and that the specified database isn't a recovery database. The database file paths are also read.
 
@@ -132,7 +132,7 @@ When you initiate a seeding process by using the [Add-MailboxDatabaseCopy](https
 
 ## Configuring database copies
 
-After a database copy is created, you can view and modify its configuration settings when needed. You can view some configuration information by examining the **Properties** page for a database copy in the EAC. You can also use the [Get-MailboxDatabase](https://technet.microsoft.com/library/bb124924\(v=exchg.150\)) and [Set-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd298104\(v=exchg.150\)) cmdlets in the Shell to view and configure database copy settings, such as replay lag time, truncation lag time, and activation preference order. For detailed steps about how to view and configure database copy settings, see [Configure mailbox database copy properties](configure-mailbox-database-copy-properties-exchange-2013-help.md).
+After a database copy is created, you can view and modify its configuration settings when needed. You can view some configuration information by examining the **Properties** page for a database copy in the EAC. You can also use the [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabase) and [Set-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabaseCopy) cmdlets in the Shell to view and configure database copy settings, such as replay lag time, truncation lag time, and activation preference order. For detailed steps about how to view and configure database copy settings, see [Configure mailbox database copy properties](configure-mailbox-database-copy-properties-exchange-2013-help.md).
 
 ## Using replay lag and truncation lag options
 
@@ -278,7 +278,7 @@ There are scenarios in which you may want to create a mailbox database copy and 
 
 - If you are performing maintenance or an upgrade of a server.
 
-In each of the preceding scenarios, you have database copies that you don't want the system to activate automatically. To prevent the system from automatically activating a mailbox database copy, you can configure the copy to be blocked (suspended) for activation. This allows the system to maintain the currency of the database through log shipping and replay, but prevents the system from automatically activating and using the copy. Copies blocked for activation must be manually activated by an administrator. You can configure the database activation policy for an entire server by using the [Set-MailboxServer](https://technet.microsoft.com/library/aa998651\(v=exchg.150\)) cmdlet or an individual database copy by using the [Set-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd298104\(v=exchg.150\)) cmdlet to set the *DatabaseCopyAutoActivationPolicy* parameter to Blocked.
+In each of the preceding scenarios, you have database copies that you don't want the system to activate automatically. To prevent the system from automatically activating a mailbox database copy, you can configure the copy to be blocked (suspended) for activation. This allows the system to maintain the currency of the database through log shipping and replay, but prevents the system from automatically activating and using the copy. Copies blocked for activation must be manually activated by an administrator. You can configure the database activation policy for an entire server by using the [Set-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxServer) cmdlet or an individual database copy by using the [Set-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabaseCopy) cmdlet to set the *DatabaseCopyAutoActivationPolicy* parameter to Blocked.
 
 For more information about configuring database activation policy, see [Configure activation policy for a mailbox database copy](configure-activation-policy-for-a-mailbox-database-copy-exchange-2013-help.md).
 

@@ -36,9 +36,9 @@ One of the biggest advantages to SSL offloading is having the ability to more ea
 
 - To see what permissions you need for Client Access servers, see "Outlook Web App permissions" in [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md).
 
-- You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/library/dd638134\(v=exchg.150\)).
+- You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
-- To use an existing certificate on your Client Access servers and on the device you are terminating the SSL connections with, export the certificate with the private key on a Client Access server and import or install it on the device. For details, see [Export-ExchangeCertificate](https://technet.microsoft.com/library/aa996305\(v=exchg.150\)).
+- To use an existing certificate on your Client Access servers and on the device you are terminating the SSL connections with, export the certificate with the private key on a Client Access server and import or install it on the device. For details, see [Export-ExchangeCertificate](https://docs.microsoft.com/powershell/module/exchange/Export-ExchangeCertificate).
 
 - To use a new certificate, you must use EAC or the Shell to create, import, and enable the new certificate. For details, see [Exchange 2013 certificate management UI](exchange-2013-certificate-management-ui-exchange-2013-help.md).
 

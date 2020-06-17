@@ -39,8 +39,9 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Exchange Server 2019 CU6](https://support.microsoft.com/kb/4556415)|June 16, 2020|15.2.659.4|15.02.0659.004|
 |[Exchange Server 2019 CU5](https://support.microsoft.com/kb/4537677)|March 17, 2020|15.2.595.3|15.02.0595.003|
-|[Exchange Server 2019 CU4](https://support.microsoft.com/kb/4522149)|December 17, 2019|15.2.529.5|15.02.0529.005|
+|[Exchange Server 2019 CU4]|December 17, 2019|15.2.529.5|15.02.0529.005|
 |Exchange Server 2019 CU3|September 17, 2019|15.2.464.5|15.02.0464.005|
 |Exchange Server 2019 CU2|June 18, 2019|15.2.397.3|15.02.0397.003|
 |Exchange Server 2019 CU1|February 12, 2019|15.2.330.5|15.02.0330.005|
@@ -59,8 +60,9 @@ Get-ExchangeServer | Format-List Name,Edition,AdminDisplayVersion
 
 |**Product name**|**Release date**|**Build number (short format)**|**Build number (long format)**|
 |:-----|:-----|:-----|:-----|
+|[Exchange Server 2016 CU17](https://www.microsoft.com/download/details.aspx?familyID=404c2944-345b-410c-a523-6d964779c6f9)|June 16, 2020|15.1.2044.4|15.01.2044.004|
 |[Exchange Server 2016 CU16](https://www.microsoft.com/download/details.aspx?familyID=6f83a0e2-a1a3-4d46-882b-68de870db3f3)|March 17, 2020|15.1.1979.3|15.01.1979.003|
-|[Exchange Server 2016 CU15](https://www.microsoft.com/download/details.aspx?familyID=0d01ba8c-d415-4bc9-b5c7-3bce431d2e3b)|December 17, 2019|15.1.1913.5|15.01.1913.005|
+|[Exchange Server 2016 CU15]|December 17, 2019|15.1.1913.5|15.01.1913.005|
 |Exchange Server 2016 CU14|September 17, 2019|15.1.1847.3|15.01.1847.003|
 |Exchange Server 2016 CU13|June 18, 2019|15.1.1779.2|15.01.1779.002|
 |Exchange Server 2016 CU12|February 12, 2019|15.1.1713.5|15.01.1713.005|
@@ -152,7 +154,7 @@ Get-Command ExSetup | ForEach {$_.FileVersionInfo}
 |Update Rollup 10 for Exchange Server 2010 SP3|June 17, 2015|14.3.248.2|14.03.0248.002|
 |Update Rollup 9 for Exchange Server 2010 SP3|March 17, 2015|14.3.235.1|14.03.0235.001|
 |Update Rollup 8 v2 for Exchange Server 2010 SP3|December 12, 2014|14.3.224.2|14.03.0224.002|
-|Update Rollup 8 v1 for Exchange Server 2010 SP3 ([recalled](https://go.microsoft.com/fwlink/p/?LinkId=518202))|December 9, 2014|14.3.224.1|14.03.0224.001|
+|Update Rollup 8 v1 for Exchange Server 2010 SP3 ([recalled](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-releases-december-2014/ba-p/584630))|December 9, 2014|14.3.224.1|14.03.0224.001|
 |Update Rollup 7 for Exchange Server 2010 SP3|August 26, 2014|14.3.210.2|14.03.0210.002|
 |Update Rollup 6 for Exchange Server 2010 SP3|May 27, 2014|14.3.195.1|14.03.0195.001|
 |Update Rollup 5 for Exchange Server 2010 SP3|February 24, 2014|14.3.181.6|14.03.0181.006|

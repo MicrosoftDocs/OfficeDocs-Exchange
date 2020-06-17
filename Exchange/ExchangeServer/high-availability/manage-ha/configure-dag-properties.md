@@ -134,6 +134,6 @@ To verify that you've successfully configured the DAG, do the following:
 
 [Manage database availability group membership](dag-memberships.md)
 
-[Get-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/get-databaseavailabilitygroup)
+[Get-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/get-databaseavailabilitygroup)
 
-[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroup)
+[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/set-databaseavailabilitygroup)

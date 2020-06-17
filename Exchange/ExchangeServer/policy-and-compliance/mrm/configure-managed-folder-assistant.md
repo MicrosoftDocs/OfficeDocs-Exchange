@@ -26,7 +26,7 @@ You can also force the MFA to immediately process a specified mailbox.
 
 ## What do you need to know before you begin?
 
-- You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - Although the _ManagedFolderAssistantSchedule_ parameter is available in Exchange Server, it doesn't work on Exchange 2016 or Exchange 2019 servers. It's only used for coexistence with previous versions of Exchange.
 
@@ -123,4 +123,4 @@ This example triggers the Managed Folder Assistant to immediately process Morris
 Start-ManagedFolderAssistant -Identity morris.cornejo@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/start-managedfolderassistant).
+For detailed syntax and parameter information, see [Start-ManagedFolderAssistant](https://docs.microsoft.com/powershell/module/exchange/start-managedfolderassistant).

@@ -53,7 +53,7 @@ The following resources provide information about common tasks associated with S
 
 - [System Center Operations Manager community forum](https://go.microsoft.com/fwlink/?linkid=179635)
 
-- [System Center Operations Manager Unleashed blog](https://go.microsoft.com/fwlink/?linkid=246391)
+- [System Center Operations Manager Unleashed blog](https://opsmgrunleashed.wordpress.com/)
 
 - [System Center 2012 - Operations Manager Survival Guide](https://go.microsoft.com/fwlink/?linkid=246383)
 

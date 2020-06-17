@@ -19,10 +19,10 @@ _**Applies to:** Exchange Server 2013_
 
 You can use the automatic checks below to validate your configuration and help you update your environment.
 
-If you already have an Office 365 user account, select Sign In. You don't need an Azure ID account. You might be asked for a user account again when the checks run. If so, your user account is in the format of username@youroffice365login.domain and your password.
+If you already have an user account, select Sign In. You don't need an Azure ID account. You might be asked for a user account again when the checks run. If so, your user account is in the format of username@youroffice365login.domain and your password.
 
 > [!NOTE]
-> If you receive sync warning messages in the Office 365 portal, errors in the synchronization server event logs, or unhealthy directory synchronization notification emails from Microsoft Online Services, you may be having some kind of directory synchronization issue. The <A href="https://aka.ms/dsup">Directory Synchronization Troubleshooter</A> is a Web-based diagnostic tool designed to help identify common types of synchronization failures and prescribe targeted solutions to any issues found. The Directory Synchronization Troubleshooter must be run on the DirSync server.
+> If you receive sync warning messages in the Microsoft 365 admin center, errors in the synchronization server event logs, or unhealthy directory synchronization notification emails from Microsoft Online Services, you may be having some kind of directory synchronization issue. The <A href="https://aka.ms/dsup">Directory Synchronization Troubleshooter</A> is a Web-based diagnostic tool designed to help identify common types of synchronization failures and prescribe targeted solutions to any issues found. The Directory Synchronization Troubleshooter must be run on the DirSync server.
 
 ## Directory Synchronization Checks
 

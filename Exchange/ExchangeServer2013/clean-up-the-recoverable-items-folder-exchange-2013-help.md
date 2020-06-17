@@ -68,7 +68,7 @@ Search-Mailbox -Identity "Gurinder Singh" -SearchDumpsterOnly -TargetMailbox "Di
 > [!NOTE]
 > To delete items from the mailbox without copying them to another mailbox, use the preceding command without the <EM>TargetMailbox</EM> and <EM>TargetFolder</EM> parameters.
 
-For detailed syntax and parameter information, see [Search-Mailbox](https://technet.microsoft.com/library/dd298173\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Search-Mailbox).
 
 ## Use the Shell to clean up the Recoverable Items folder for mailboxes that are placed on hold or have single item recovery enabled
 
@@ -209,25 +209,25 @@ This procedure copies items from Gurinder Singh's Recoverable Items folder to th
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\))
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox)
 
-- [Get-CASMailbox](https://technet.microsoft.com/library/bb124754\(v=exchg.150\))
+- [Get-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/Get-CASMailbox)
 
-- [Get-MailboxFolderStatistics](https://technet.microsoft.com/library/aa996762\(v=exchg.150\))
+- [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxFolderStatistics)
 
-- [Get-MailboxServer](https://technet.microsoft.com/library/bb123539\(v=exchg.150\))
+- [Get-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxServer)
 
-- [Set-CASMailbox](https://technet.microsoft.com/library/bb125264\(v=exchg.150\))
+- [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/Set-CASMailbox)
 
-- [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\))
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox)
 
-- [Set-MailboxServer](https://technet.microsoft.com/library/aa998651\(v=exchg.150\))
+- [Set-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxServer)
 
-- [Search-Mailbox](https://technet.microsoft.com/library/dd298173\(v=exchg.150\))
+- [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Search-Mailbox)
 
 ## How do you know this worked?
 
-To verify that you have successfully cleaned up the Recoverable Items folder of a mailbox, use [Get-MailboxFolderStatistics](https://technet.microsoft.com/library/aa996762\(v=exchg.150\)) cmdlet the check the size of the Recoverable Items folder.
+To verify that you have successfully cleaned up the Recoverable Items folder of a mailbox, use [Get-MailboxFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxFolderStatistics) cmdlet the check the size of the Recoverable Items folder.
 
 This example retrieves the size of the Recoverable Items folder and its subfolders and an item count in the folder and each subfolder.
 

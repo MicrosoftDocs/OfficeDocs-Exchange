@@ -52,7 +52,7 @@ For more information about accepted domains, see [Accepted domains in Exchange S
 
 - You need to create a Send connector to route mail for non-existent recipients in internal or external relay domains. For more information, see [Create a Send connector to route outbound mail through a smart host](../../mail-flow/connectors/outbound-smart-host-routing.md).
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
@@ -93,7 +93,7 @@ New-AcceptedDomain -Name "Contoso Corp" -DomainName contoso.com
 
 **Note**: We didn't need to use the _DomainType_ parameter, because the default value is `Authoritative`.
 
-For detailed syntax and parameter information, see [New-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-accepteddomain).
+For detailed syntax and parameter information, see [New-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/new-accepteddomain).
 
 ### How do you know this worked?
 
@@ -147,7 +147,7 @@ This example enables Recipient Lookup on a Edge Transport server for the interna
 Set-AcceptedDomain -Identity "Fabrikam Corp" -AddressBookEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-accepteddomain).
+For detailed syntax and parameter information, see [Set-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/set-accepteddomain).
 
 ### How do you know this worked?
 
@@ -199,7 +199,7 @@ This example removes the accepted domain named Fabrikam Corp.
 Remove-AcceptedDomain -Identity "Fabrikam Corp"
 ```
 
-For detailed syntax and parameter information, see [remove-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/remove-accepteddomain).
+For detailed syntax and parameter information, see [remove-AcceptedDomain](https://docs.microsoft.com/powershell/module/exchange/remove-accepteddomain).
 
 ### How do you know this worked?
 

@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Enabling journal report decryption allows the Journaling agent to attach a decrypted copy of a rights-protected message to the journal report. Before you enable journal report decryption, you must add the Federated Delivery mailbox to the super users group configured on your [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/library/hh831364.aspx) server.
+Enabling journal report decryption allows the Journaling agent to attach a decrypted copy of a rights-protected message to the journal report. Before you enable journal report decryption, you must add the Federated Delivery mailbox to the super users group configured on your [Active Directory Rights Management Services (AD RMS)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)) server.
 
 For additional management tasks related to Information Rights Management (IRM), see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
@@ -48,7 +48,7 @@ This example enables journal report decryption for the Exchange organization.
 Set-IRMConfiguration -JournalReportDecryptionEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
 
 ## Use the Shell to disable journal report decryption
 
@@ -58,7 +58,7 @@ This example disables journal report decryption for the Exchange organization.
 Set-IRMConfiguration -JournalReportDecryptionEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
 
 ## How do you know this worked?
 

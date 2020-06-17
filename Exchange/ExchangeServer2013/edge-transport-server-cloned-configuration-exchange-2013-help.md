@@ -156,7 +156,7 @@ The settings of the transport configuration object define server-wide email tran
 
 - The **MaxDumpsterSizePerStorageGroup** attribute entry
 
-After the import process is complete, you may also configure the settings by using the **Set-TransportConfig** cmdlet. For more information, see [Set-TransportConfig](https://technet.microsoft.com/library/bb124151\(v=exchg.150\)).
+After the import process is complete, you may also configure the settings by using the **Set-TransportConfig** cmdlet. For more information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/Set-TransportConfig).
 
 The attributes in the following table are associated with the transport configuration object and the default values. You can configure this object on both Mailbox servers and Edge Transport servers. However, many attributes apply only to the Transport service on Exchange 2013 Mailbox servers. Configuring these attributes on an Edge Transport server will have no effect.
 

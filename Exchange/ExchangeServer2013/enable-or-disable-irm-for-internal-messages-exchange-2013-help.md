@@ -45,7 +45,7 @@ This example enables IRM for internal messages for the Exchange organization.
 Set-IRMConfiguration -InternalLicensingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
 
 ## Use the Shell to disable IRM for internal messages
 
@@ -55,8 +55,8 @@ This example disables IRM for internal messages for the Exchange organization.
 Set-IRMConfiguration -InternalLicensingEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
 
 ## How do you know this worked?
 
-To verify that you've enabled or disabled IRM for internal messages, use the [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120\(v=exchg.150\)) cmdlet to check the configuration.
+To verify that you've enabled or disabled IRM for internal messages, use the [Get-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Get-IRMConfiguration) cmdlet to check the configuration.

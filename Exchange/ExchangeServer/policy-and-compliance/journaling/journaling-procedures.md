@@ -28,12 +28,12 @@ This topic shows you how to configure standard journaling (journal messages for 
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Journaling" entry in the [Messaging policy and compliance permissions in Exchange Server](../../permissions/feature-permissions/policy-and-compliance-permissions.md) topic.
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?LinkId=331674).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://support.microsoft.com/help/2829319).
 
 ## Procedures for standard journaling
 
@@ -106,7 +106,7 @@ To verify that you've successfully enabled or disabled journaling on a mailbox d
 
 ## Procedures for premium journaling
 
-Premium journaling uses *journal rules* to record messages based on recipients (all recipients or specified recipients) and scope (internal messages, external messages, or all messages). Premium journaling requires Exchange Enterprise client access licenses (CALs). For more information about CALs, see [Exchange Server Licensing](https://go.microsoft.com/fwlink/p/?linkid=237292).
+Premium journaling uses *journal rules* to record messages based on recipients (all recipients or specified recipients) and scope (internal messages, external messages, or all messages). Premium journaling requires Exchange Enterprise client access licenses (CALs). For more information about CALs, see [Exchange licensing FAQs](https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview).
 
 ### Create journal rules
 
@@ -170,7 +170,7 @@ New-JournalRule -Name "Regulation 123" -JournalEmailAddress "Journal Mailbox" -R
 
  **Note**: To create a journal rule that applies to all recipients, don't use the _Recipient_ parameter.
 
-For detailed syntax and parameter information, see [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule).
+For detailed syntax and parameter information, see [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule).
 
 #### How do you know this worked?
 
@@ -249,7 +249,7 @@ No additional settings are available when you modify a journal rule. They're the
 
     You can't use the **Set-Journal** cmdlet to enable or disable the rule (there's no _Enabled_ parameter). To enable or disable the rule, you use the **Enable-JournalRule** and **Disable-JournalRule** cmdlets as described in the [Enable or disable journal rules](#enable-or-disable-journal-rules) section.
 
-    For detailed syntax and parameter information, see [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-journalrule).
+    For detailed syntax and parameter information, see [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/set-journalrule).
 
 ### Remove journal rules
 
@@ -273,7 +273,7 @@ This example removes the journal rule named Brokerage Journal Rule.
 Remove-JournalRule "Brokerage Journal Rule"
 ```
 
-For detailed syntax and parameter information, see [Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-journalrule).
+For detailed syntax and parameter information, see [Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/remove-journalrule).
 
 #### How do you know this worked?
 

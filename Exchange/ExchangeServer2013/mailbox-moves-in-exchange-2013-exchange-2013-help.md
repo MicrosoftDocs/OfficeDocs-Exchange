@@ -134,6 +134,6 @@ The following table shows the migration endpoint types and values that you can m
 </tbody>
 </table>
 
-For more information about migration endpoints, see the **Migration** user interface in the EAC and [New-MigrationEndpoint](https://technet.microsoft.com/library/jj218611\(v=exchg.150\)).
+For more information about migration endpoints, see the **Migration** user interface in the EAC and [New-MigrationEndpoint](https://docs.microsoft.com/powershell/module/exchange/New-MigrationEndpoint).
 
 For more information about managing new and existing moves, see [Manage on-premises moves](manage-on-premises-moves-exchange-2013-help.md).

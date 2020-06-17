@@ -28,9 +28,9 @@ In a hybrid deployment, your users can be in Exchange Online, on-premises, or bo
 > [!NOTE]
 > If you have Exchange 2010 public folders, see [Configure legacy on-premises public folders for a hybrid deployment](set-up-legacy-hybrid-public-folders.md).
 
-This article describes how to enable your Exchange Online/Office 365 users to access public folders in Exchange 2013. To enable on-premises Exchange 2013 users to access public folders in Exchange Online, see [Configure Exchange Online public folders for a hybrid deployment](set-up-exo-hybrid-public-folders.md).
+This article describes how to enable your Exchange Online, Microsoft 365, or Office 365 users to access public folders in Exchange 2013. To enable on-premises Exchange 2013 users to access public folders in Exchange Online, Microsoft 365, or Office 365, see [Configure Exchange Online public folders for a hybrid deployment](set-up-exo-hybrid-public-folders.md).
 
-An Exchange Online/Office 365 user must be represented by a MailUser object in the Exchange on-premises environment in order to access Exchange 2013 public folders. This MailUser object must also be local to the target Exchange 2013 public folder hierarchy. If you have Office 365 users who aren't currently represented on-premises by MailUser objects, refer to Microsoft Knowledge Base article 3106618 ["Exchange Online users can't access legacy on-premises public folders"](https://go.microsoft.com/fwlink/p/?LinkID=699451) to create matching on-premises entities.
+An Exchange Online, Microsoft 365, or Office 365 user must be represented by a MailUser object in the Exchange on-premises environment in order to access Exchange 2013 public folders. This MailUser object must also be local to the target Exchange 2013 public folder hierarchy. If you have Exchange Online, Microsoft 365, or Office 365 users who aren't currently represented on-premises by MailUser objects, refer to the Microsoft Knowledge Base article [KB3106618](https://support.microsoft.com/help/3106618) to create matching on-premises entities.
 
 ## What do you need to know before you begin?
 
@@ -64,7 +64,7 @@ An Exchange Online/Office 365 user must be represented by a MailUser object in t
 The Directory Synchronization service doesn't synchronize mail-enabled public folders. Running the following script will synchronize the mail-enabled public folders across premises and Office 365. Special permissions assigned to mail-enabled public folders will need to be recreated in the cloud since cross-premise permission are not supported in Hybrid Deployment scenarios. For more information, see [Exchange hybrid deployment documentation](../exchange-hybrid.md#exchange-hybrid-deployment-documentation).
 
 > [!NOTE]
-> Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be visible in the Exchange admin center. Instead, use the [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-mailpublicfolder) cmdlet. To recreate SendAs permissions in the cloud, use the [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-recipientpermission) cmdlet.
+> Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be visible in the Exchange admin center. Instead, use the [Get-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/get-mailpublicfolder) cmdlet. To recreate SendAs permissions in the cloud, use the [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission) cmdlet.
 
 On the Exchange 2013 server, run the following command to synchronize mail-enabled public folders from your local on-premises Active Directory to O365.
 
@@ -72,7 +72,7 @@ On the Exchange 2013 server, run the following command to synchronize mail-enabl
 .\Sync-MailPublicFolders.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv
 ```
 
-Where `Credential` is your Office 365 user name and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format.
+Where `Credential` is your Microsoft 365 or Office 365 username and password, and `CsvSummaryFile` is the path to where you would like to log synchronization operations and errors, in .csv format.
 
 > [!NOTE]
 > Before running the script, we recommend that you first simulate the actions that the script would take in your environment by running it as described above with the `-WhatIf` switch. <br/> We also recommend that you run this script daily to synchronize your mail-enabled public folders.

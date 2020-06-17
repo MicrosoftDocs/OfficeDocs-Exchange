@@ -56,7 +56,7 @@ Microsoft is committed to helping protect the security of your information. We u
 
  **What This Feature Does**: Microsoft Error Reporting provides a service that allows you to report problems you may be having to Microsoft and to receive information that may help you avoid or solve such problems.
 
- **Information Collected, Processed, or Transmitted**: For information about the information collected, processed, or transmitted by Microsoft Error Reporting, see [Privacy Statement for the Microsoft Error Reporting Service](https://go.microsoft.com/fwlink/p/?linkid=85028).
+ **Information Collected, Processed, or Transmitted**: For information about the information collected, processed, or transmitted by Microsoft Error Reporting, see [Privacy Statement for the Microsoft Error Reporting Service](https://privacy.microsoft.com/microsoft-error-reporting-privacy-statement).
 
  **Use of Information**: The error reporting data that you submit may be used to solve customer problems and to improve Microsoft software and services.
 
@@ -90,7 +90,7 @@ In rare cases, such as problems that are especially difficult to solve, Microsof
 
  **What This Feature Does**: If you choose to participate, the Customer Experience Improvement Program (CEIP) collects basic information about your hardware configuration and how you use Microsoft software and services in order to identify trends and usage patterns. CEIP also collects the type and number of errors you encounter, software and hardware performance, and the speed of services. Microsoft does not collect your name, address, or other contact information.
 
- **Information Collected, Processed, or Transmitted**: CEIP information is automatically sent to Microsoft when the feature is turned on. For more information about the information collected, processed, or transmitted by CEIP, see the [Privacy Statement for the Microsoft Customer Experience Improvement Program](https://go.microsoft.com/fwlink/p/?linkid=84784).
+ **Information Collected, Processed, or Transmitted**: CEIP information is automatically sent to Microsoft when the feature is turned on. For more information about the information collected, processed, or transmitted by CEIP, see the [Privacy Statement for the Microsoft Customer Experience Improvement Program](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj618322(v=ws.11)).
 
  **Use of Information**: Microsoft uses this information to improve the quality, reliability, and performance of Microsoft software and services.
 
@@ -100,7 +100,7 @@ In rare cases, such as problems that are especially difficult to solve, Microsof
 
  **What This Feature Does**: the Bing Maps extension will appear in Outlook and Outlook on the web (formerly known as Outlook Web App) when Exchange 2016 or Exchange 2019 detects the presence of an address in the body of an email and allow you to query the Bing Maps service for a map of the location.
 
- **Information Collected, Processed, or Transmitted**: when you click on the Bing Maps extension from the user interface, the information that Exchange determines to be an address will be passed to the Bing Maps service, which will perform a query based on the address and return a map for it. For more information on Bing's privacy practices, see the Bing section in [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/p/?linkid=787081).
+ **Information Collected, Processed, or Transmitted**: when you click on the Bing Maps extension from the user interface, the information that Exchange determines to be an address will be passed to the Bing Maps service, which will perform a query based on the address and return a map for it. For more information on Bing's privacy practices, see the Bing section in [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
  **Use of Information**: The address information is used to display the map for the address.
 

@@ -53,7 +53,7 @@ Retention tags are classified into the following three types based on who can ap
 |**Type of retention tag**|**Applied...**|**Applied by...**|**Available actions...**|**Details**|
 |:-----|:-----|:-----|:-----|:-----|
 |Default policy tag (DPT)|Automatically to entire mailbox  <br/> A DPT applies to *untagged* items, which are mailbox items that don't have a retention tag applied directly or by inheritance from the folder.|Administrator|Move to archive  <br/> Delete and allow recovery  <br/> Permanently delete|Users can't change DPTs applied to a mailbox.|
-|Retention policy tag (RPT)|Automatically to a default folder  <br/> Default folders are folders created automatically in all mailboxes, for example: **Inbox**, **Deleted Items**, and **Sent Items**. See the list of supported default folders in [Default folders that support Retention Policy Tags](https://technet.microsoft.com/library/d2e2064f-4102-4018-b688-504d09da6d39.aspx).|Administrator|Delete and allow recovery  <br/> Permanently delete|Users can't change the RPT applied to a default folder.|
+|Retention policy tag (RPT)|Automatically to a default folder  <br/> Default folders are folders created automatically in all mailboxes, for example: **Inbox**, **Deleted Items**, and **Sent Items**. See the list of supported default folders in [Default folders that support Retention Policy Tags](https://docs.microsoft.com/Exchange/default-folders-exchange-2013-help).|Administrator|Delete and allow recovery  <br/> Permanently delete|Users can't change the RPT applied to a default folder.|
 |Personal tag|Manually to items and folders  <br/> Users can automate tagging by using Inbox rules to either move a message to a folder that has a particular tag or to apply a personal tag to the message.|Users|Move to archive  <br/> Delete and allow recovery  <br/> Permanently delete|Personal tags allow your users to determine how long an item should be retained. For example, the mailbox can have a DPT to delete items in seven years, but a user can create an exception for items such as newsletters and automated notifications by applying a personal tag to delete them in three days.|
 
 ### More about personal tags
@@ -122,7 +122,7 @@ Exchange Setup creates the retention policy **Default MRM Policy**. The policy i
 
 You can modify tags included in the Default MRM Policy, for example by changing the retention age or retention action, disable a tag or modify the policy by adding or removing tags from it. The updated policy is applied to mailboxes the next time they're processed by the [Managed Folder Assistant](retention-tags-and-retention-policies.md#MFA).
 
-For more details, including a list of retention tags linked to the policy, see [Default Retention Policy](https://technet.microsoft.com/library/bcf31b2d-463b-4623-b488-c8ac40f14f62.aspx).
+For more details, including a list of retention tags linked to the policy, see [Default Retention Policy](https://docs.microsoft.com/Exchange/default-retention-policy-exchange-2013-help).
 
 ## Managed Folder Assistant
 <a name="MFA"> </a>
@@ -133,7 +133,7 @@ The Managed Folder Assistant applies the retention policy by inspecting items in
 
 The Managed Folder Assistant is a throttle-based assistant. Throttle-based assistants are always running and don't need to be scheduled. The system resources they can consume are throttled. You can configure the Managed Folder Assistant to process all mailboxes on a Mailbox server within a certain period (known as a *work cycle*). Additionally, at a specified interval (known as the *work cycle checkpoint*), the assistant refreshes the list of mailboxes to be processed. During the refresh, the assistant adds newly created or moved mailboxes to the queue. It also reprioritizes existing mailboxes that haven't been processed successfully due to failures and moves them higher in the queue so they can be processed during the same work cycle.
 
-You can also use the [Start-ManagedFolderAssistant](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/start-managedfolderassistant) cmdlet to manually trigger the assistant to process a specified mailbox. To learn more, see [Configure and run the Managed Folder Assistant in Exchange Server](configure-managed-folder-assistant.md).
+You can also use the [Start-ManagedFolderAssistant](https://docs.microsoft.com/powershell/module/exchange/start-managedfolderassistant) cmdlet to manually trigger the assistant to process a specified mailbox. To learn more, see [Configure and run the Managed Folder Assistant in Exchange Server](configure-managed-folder-assistant.md).
 
 > [!NOTE]
 > The Managed Folder Assistant doesn't take any action on messages that aren't subject to retention, specified by disabling the retention tag. You can also disable a retention tag to temporarily suspend items with that tag from being processed.
@@ -175,5 +175,3 @@ When users are temporarily away from work and don't have access to their email, 
 During long absences from work, users may accrue a large amount of email. Depending on the volume of email and the length of absence, it may take these users several weeks to sort through their messages. In these cases, consider the additional time it may take the users to catch up on their mail before removing them from retention hold.
 
 If your organization has never implemented MRM, and your users aren't familiar with its features, you can also use retention holds during the initial *warm up and training* phase of your MRM deployment. You can create and deploy retention policies and educate users about the policies without the risk of having items moved or deleted before users can tag them. A few days before the warm up and training period ends, you should remind users of the warm-up deadline. After the deadline, you can remove the retention hold from user mailboxes, allowing the Managed Folder Assistant to process mailbox items and take the specified retention action.
-
-For details about how to place a mailbox on retention hold, see [Place a Mailbox on Retention Hold](https://technet.microsoft.com/library/2baac4a7-3402-4142-bfb3-1649a950e677.aspx).

@@ -80,10 +80,10 @@ Here's a summary of the certificates that we'll be using in this scenario:
 |**Common name (CN) in the certificate (in the Subject, Subject Alternative Name, or a wildcard certificate match)**|**Type**|**Required on servers**|**Comments**|
 |:-----|:-----|:-----|:-----|
 |`adfs.contoso.com`|Issued by a CA|AD FS server <br/><br/> Web Application Proxy server|This is the host name that's visible to clients, so clients need to trust the issuer of this certificate.|
-|`ADFS Signing - adfs.contoso.com`|Self-signed|AD FS server <br/><br/> Exchange servers <br/><br/> Web Application Proxy server|The default self-signed certificate is automatically copied over during the configuration of the optional Web Application Proxy server, but you'll need to manually import it into the Trusted Root Certificate store on all Exchange servers in your organization. <br/><br/> By default, the self-signed token-signing certificates are valid for one year. The AD FS server is configured to automatically renew (replace) its self-signed certificates before they expire, but you'll need to re-import the certificate on the Exchange servers. <br/><br/> You can increase the default certificate expiration period by running this command in Windows PowerShell on the AD FS server: `Set-AdfsProperties -CertificateDuration <Days>` (the default value is 365). For more information, see [Set-AdfsProperties](https://go.microsoft.com/fwlink/p/?linkid=838466). <br/><br/> To export the certificate from the AD FS Management console, select **Service** \> **Certificates** \> right-click on the token-signing certificate \> select **View Certificate** \> click the **Details** tab \> click **Copy to File**.|
+|`ADFS Signing - adfs.contoso.com`|Self-signed|AD FS server <br/><br/> Exchange servers <br/><br/> Web Application Proxy server|The default self-signed certificate is automatically copied over during the configuration of the optional Web Application Proxy server, but you'll need to manually import it into the Trusted Root Certificate store on all Exchange servers in your organization. <br/><br/> By default, the self-signed token-signing certificates are valid for one year. The AD FS server is configured to automatically renew (replace) its self-signed certificates before they expire, but you'll need to re-import the certificate on the Exchange servers. <br/><br/> You can increase the default certificate expiration period by running this command in Windows PowerShell on the AD FS server: `Set-AdfsProperties -CertificateDuration <Days>` (the default value is 365). For more information, see [Set-AdfsProperties](https://docs.microsoft.com/powershell/module/adfs/set-adfsproperties). <br/><br/> To export the certificate from the AD FS Management console, select **Service** \> **Certificates** \> right-click on the token-signing certificate \> select **View Certificate** \> click the **Details** tab \> click **Copy to File**.|
 | `mail.contoso.com`|Issued by a CA|Exchange servers <br/><br/> Web Application Proxy server|This is the typical certificate that's used to encrypt external client connections to Outlook on the web (and likely other Exchange IIS services). For more information, see [Certificate requirements for Exchange services](../../architecture/client-access/certificates.md#certificate-requirements-for-exchange-services).|
 
-For more information, see the "Certificate requirements" section in [Review the requirements for deploying AD FS](https://go.microsoft.com/fwlink/p/?LinkId=392699).
+For more information, see the "Certificate requirements" section in [AD FS Requirements](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements).
 
 > [!NOTE]
 > Secure Sockets Layer (SSL) is being replaced by Transport Layer Security (TLS) as the protocol that's used to encrypt data sent between computer systems. They're so closely related that the terms "SSL" and "TLS" (without versions) are often used interchangeably. Because of this similarity, references to "SSL" in Exchange topics, the Exchange admin center, and the Exchange Management Shell have often been used to encompass both the SSL and TLS protocols. Typically, "SSL" refers to the actual SSL protocol only when a version is also provided (for example, SSL 3.0). To find out why you should disable the SSL protocol and switch to TLS, check out [Protecting you against the SSL 3.0 vulnerability](https://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
@@ -278,7 +278,7 @@ Install-AdfsFarm -CertificateThumbprint 5AE82C737900B29C2BAC3AB6D8C44D249EE05609
 
 - The escape character (```) is required for the `$` in the **SamAccountName**.
 
-For details and syntax, see [Install-AdfsFarm](https://go.microsoft.com/fwlink/p/?LinkId=392704).
+For details and syntax, see [Install-AdfsFarm](https://docs.microsoft.com/powershell/module/adfs/install-adfsfarm).
 
 ### Step 3c: Test the AD FS server
 
@@ -768,7 +768,7 @@ To use Windows PowerShell to publish the relying party trusts, follow these step
 
 ## Step 6: Configure the Exchange organization to use AD FS authentication
 
-To configure the Exchange organization to use AD FS authentication, you need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+To configure the Exchange organization to use AD FS authentication, you need to use the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 1. Run the following command to find the thumbprint value of the imported AD FS token signing certificate:
 
@@ -868,7 +868,7 @@ To test the AD FS claims for Outlook on the web:
 
 2. If you get a certificate error in the web browser, just continue on to the Outlook on the web site. You should be redirected to the AD FS sign-in page or the AD FS prompt for credentials.
 
-3. Type your user name (domain\user) and password, and then click **Sign in**.
+3. Type your username (domain\user) and password, and then click **Sign in**.
 
 4. Outlook on the web will load in the window.
 
@@ -878,7 +878,7 @@ To test the AD FS claims for EAC:
 
 2. If you get a certificate error in the web browser, just continue on to the EAC web site. You should be redirected to the AD FS sign-in page or the AD FS prompt for credentials.
 
-3. Type your user name (domain\user) and password, and then click **Sign in**.
+3. Type your username (domain\user) and password, and then click **Sign in**.
 
 4. EAC will load in the window.
 
@@ -896,7 +896,7 @@ Deploying and configuring AD FS for claims-based authentication allows Outlook o
 
 For example, a password and a security code that's sent to a mobile phone, or a PIN and a fingerprint.
 
-For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/p/?LinkId=392707) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/p/?LinkId=392708).
+For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-risk-with-additional-multi-factor-authentication-for-sensitive-applications) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/p/?LinkId=392708).
 
 On the AD FS server, the federation service functions as a security token service, and provides the security tokens that are used with claims. The federation service issues tokens based on the credentials that are presented. After the account store verifies a user's credentials, the claims for the user are generated according to the rules of the trust policy and then added to a security token that is issued to the client. For more information about claims, see [Understanding Claims](https://go.microsoft.com/fwlink/p/?LinkId=392709).
 

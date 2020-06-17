@@ -79,7 +79,7 @@ One way to test is to sign in as both the sender and recipient of a test message
 
 - If you don't have access to multiple accounts in your organization, you can test in an [Office 365 trial account](https://go.microsoft.com/fwlink/p/?LinkId=402791) or create a few temporary fake users in your organization.
 
-- Because a web browser typically doesn't let you have simultaneous open sessions on the same computer signed in to multiple accounts, you can use [Internet Explorer InPrivate Browsing](https://go.microsoft.com/fwlink/p/?LinkId=402784), or a different computer, device, or web browser for each user.
+- Because a web browser typically doesn't let you have simultaneous open sessions on the same computer signed in to multiple accounts, you can use [Internet Explorer InPrivate Browsing](https://support.microsoft.com/help/4026200), or a different computer, device, or web browser for each user.
 
 ### Look at the message trace
 
@@ -141,7 +141,7 @@ To view a rules report, in the Microsoft 365 admin center, select **Reports**.
 
 ![Report showing rule usage](../../media/TA_EX_RuleReport.png)
 
-To learn more, see [View mail protection reports](https://go.microsoft.com/fwlink/p/?LinkId=402958).
+To learn more, see [View mail protection reports](../../monitoring/use-mail-protection-reports.md).
 
 ## Need more help?
 
@@ -149,6 +149,4 @@ To learn more, see [View mail protection reports](https://go.microsoft.com/fwlin
 
 [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md)
 
-[Mail flow rules (transport rules) in Exchange Online Protection](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
-
-[Mail flow rules (transport rules) in Exchange Server](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
+[Mail flow rules (transport rules) in Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0)

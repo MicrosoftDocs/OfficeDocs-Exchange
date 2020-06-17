@@ -35,8 +35,8 @@ In Exchange 2013, the most common Outlook Web App management tasks can be accomp
 
 ## Accessing Outlook Web App
 
-You and your users can sign into Outlook Web App using a URL like this: **https://\<domain name\>/OWA** or **https://mail.\<domain name\>/OWA**
+You and your users can sign into Outlook Web App using a URL like this: `https://<domain name>/OWA` or `https://mail.<domain name>/OWA`.
 
-If, for example, your organization's domain is contoso.com, then use https://contoso.com/OWA or https://mail.contoso.com/OWA. Learn more about accessing Outlook Web App [here](https://support.microsoft.com/kb/2897680). To change the sign-in URL to something different or to force redirection to SSL, see [Simplify the Outlook Web App URL](simplify-the-outlook-web-app-url-exchange-2013-help.md).
+If, for example, your organization's domain is contoso.com, then use <https://contoso.com/OWA> or <https://mail.contoso.com/OWA>. Learn more about accessing Outlook Web App [here](https://docs.microsoft.com/exchange/troubleshoot/client-connectivity/set-up-web-access). To change the sign-in URL to something different or to force redirection to SSL, see [Simplify the Outlook Web App URL](simplify-the-outlook-web-app-url-exchange-2013-help.md).
 
-If you're using Exchange Online or Office 365 for email, you and your users access Outlook Web App at **outlook.office365.com/owa** or [click here](https://go.microsoft.com/fwlink/p/?linkid=402333). Learn more at [Sign in to Outlook Web App](https://go.microsoft.com/fwlink/p/?linkid=511341) and [Where to sign in to Office 365](https://go.microsoft.com/fwlink/p/?linkid=522691).
+If you're using Exchange Online or Microsoft 365 or Office 365 for email, you and your users access Outlook on the web at **outlook.office365.com/owa** or in the [Microsoft 365 admin center](https://admin.microsoft.com). Learn more at [How to sign in to Outlook on the web](https://support.office.com/en-us/article/763fab4d-0138-4814-b450-37fc286bcb79) and [Where to sign in to Microsoft 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).

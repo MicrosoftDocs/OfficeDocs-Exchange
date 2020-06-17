@@ -89,7 +89,7 @@ While we support stretching an Active Directory site across multiple datacenters
 
 1. Transport site resilience via [Shadow redundancy in Exchange Server](../../mail-flow/transport-high-availability/shadow-redundancy.md) and [Safety Net in Exchange Server](../../mail-flow/transport-high-availability/safety-net.md) can only be achieved when the DAG has members located in more than one Active Directory site.
 
-2. Active Directory has [published guidance](https://technet.microsoft.com/library/cc770917(v=WS.10).aspx) that states that subnets should be placed in different Active Directory sites when the round trip latency is greater than 10ms between the subnets.
+2. Active Directory has [published guidance](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/designing-the-site-topology) that states that subnets should be placed in different Active Directory sites when the round trip latency is greater than 10ms between the subnets.
 
 ## Server design
 
@@ -173,7 +173,7 @@ Whether Traditional or Solid-State, all disks that houses an Exchange data are f
 Set-DatabaseAvailabilityGroup -Identity <DAGIdentity> -FileSystem ReFS
 ```
 
-[BitLocker](https://technet.microsoft.com/library/dn306081.aspx) is used to encrypt each disk, thereby providing data encryption at rest and mitigating concerns around data theft or disk replacement.  For more information, see [Enabling BitLocker on Exchange Servers](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Enabling-BitLocker-on-Exchange-Servers/ba-p/603965).
+[BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server) is used to encrypt each disk, thereby providing data encryption at rest and mitigating concerns around data theft or disk replacement. For more information, see [Enabling BitLocker on Exchange Servers](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/Enabling-BitLocker-on-Exchange-Servers/ba-p/603965).
 
 ## Database availability group design
 

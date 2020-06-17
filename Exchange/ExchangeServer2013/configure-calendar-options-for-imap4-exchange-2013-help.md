@@ -60,7 +60,7 @@ Set-Imap4Settings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://Owa
 
 After you've specified the calendar options for IMAP4, you must restart the IMAP4 services. For information about how to restart the IMAP4 services, see [Start and stop the IMAP4 services](start-and-stop-the-imap4-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-ImapSettings](https://technet.microsoft.com/library/aa998252\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-ImapSettings](https://docs.microsoft.com/powershell/module/exchange/Set-ImapSettings).
 
 ## How do you know this worked?
 

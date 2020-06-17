@@ -22,7 +22,7 @@ With the Microsoft Exchange Server 2013 management tools, you can configure and 
 > [!NOTE]
 > You don't need to perform this procedure to use the Exchange admin center (EAC) remotely. The EAC is a web-based console that's hosted on computers running the Exchange 2013 Client Access server role. For more information about accessing the EAC remotely, see <A href="exchange-admin-center-in-exchange-2013-exchange-2013-help.md">Exchange admin center in Exchange 2013</A>.
 
-For more information about managing Exchange 2013, see [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md) and [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/library/bb123778\(v=exchg.150\)).
+For more information about managing Exchange 2013, see [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md) and [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-management-shell).
 
 ## What do you need to know before you begin?
 

@@ -35,7 +35,7 @@ For additional management tasks related to mail flow and clients and devices, se
 
 - You might receive certificate warnings when you connect to the Exchange admin center (EAC) website until you configure a secure sockets layer (SSL) certificate on the Mailbox server. You'll be shown how to do this later in this topic.
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
@@ -63,7 +63,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 If you added an accepted domain in the previous step and you want that domain to be added to every recipient in the organization, you need to update the default email address policy. For instructions, see [Modify email address policies](../../email-addresses-and-address-books/email-address-policies/eap-procedures.md#modify-email-address-policies) and [Apply email address policies to recipients](../../email-addresses-and-address-books/email-address-policies/eap-procedures.md#apply-email-address-policies-to-recipients).
 
 > [!NOTE]
-> We recommend that you configure a user principal name (UPN) that matches the primary email address of each user. If you don't provide a UPN that matches the email address of a user, the user will be required to manually provide their domain\user name or UPN in addition to their email address. If their UPN matches their email address, Outlook on the web (formerly known as Outlook on the web), ActiveSync, and Outlook will automatically match their email address to their UPN.
+> We recommend that you configure a user principal name (UPN) that matches the primary email address of each user. If you don't provide a UPN that matches the email address of a user, the user will be required to manually provide their domain\username or UPN in addition to their email address. If their UPN matches their email address, Outlook on the web (formerly known as Outlook on the web), ActiveSync, and Outlook will automatically match their email address to their UPN.
 
 ## Step 4: Configure external URLs
 
@@ -160,7 +160,7 @@ The procedure below lets you choose whether you want users to use the same URL o
 
 Regardless of your decision, you need to configure a private DNS zone for the address space you choose. For more information about administering DNS zones, see [Administering DNS Server](https://go.microsoft.com/fwlink/p/?LinkID=190631).
 
-For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](https://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx).
+For more information about internal and external URLs on virtual directories, see [Default settings for Exchange virtual directories](../../clients/default-virtual-directory-settings.md) [Virtual Directory Management](https://docs.microsoft.com/exchange/virtual-directory-management-exchange-2013-help).
 
 ### Configure internal and external URLs to be the same
 

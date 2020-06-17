@@ -25,11 +25,7 @@ Use audit logging to troubleshoot configuration issues by tracking specific chan
 
 On the **Compliance Management** \> **Auditing** page in the Exchange admin center (EAC), you can search for and export entries from the administrator audit log and the mailbox audit log.
 
-- **Export the administrator audit log**: Any action performed by an administrator that's based on a Shell cmdlet and doesn't begin with the verbs **Get**, **Search**, or **Test** is logged in the administrator audit log. Audit log entries include the cmdlet that was run, the parameter and values used with the cmdlet, and when the operation was successful. You can search for and export entries from the administrator audit log. When you export your search results, Microsoft Exchange saves them in an XML file and attaches it to an email message. For more information, see:
-
-  - [Search the role group changes or administrator audit logs](search-role-group-changes-exchange-2013-help.md)
-
-  - [View and Export the Datacenter Admin Audit Log](https://technet.microsoft.com/library/31892014-c921-45fd-9775-7a1ef40e3517.aspx)
+- **Export the administrator audit log**: Any action performed by an administrator that's based on a Shell cmdlet and doesn't begin with the verbs **Get**, **Search**, or **Test** is logged in the administrator audit log. Audit log entries include the cmdlet that was run, the parameter and values used with the cmdlet, and when the operation was successful. You can search for and export entries from the administrator audit log. When you export your search results, Microsoft Exchange saves them in an XML file and attaches it to an email message. For more information, see [Search the role group changes or administrator audit logs](search-role-group-changes-exchange-2013-help.md).
 
     > [!NOTE]
     > By default, admin audit log entries are kept for 90 days. When an entry is older than 90 days, it's deleted. This setting can't be changed in a cloud-based organization. However, it can be changed in an on-premises Exchange organization by using the **Set-AdminAuditLog** cmdlet.
@@ -60,7 +56,7 @@ When you run any of the following reports on the **Auditing** page in the EAC, t
 
   - [View the administrator audit log](view-administrator-audit-log-exchange-2013-help.md)
 
-  - [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)
+  - [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md)
 
 ## Configure audit logging
 
@@ -83,7 +79,7 @@ $UserMailboxes = Get-mailbox -Filter "RecipientTypeDetails -eq 'UserMailbox'"
 $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 ```
 
-For more information about configuring which actions are logged, see [Enable or disable mailbox audit logging for a mailbox](https://technet.microsoft.com/library/c4bbfd52-6196-49c7-8c31-777fbbee11f2.aspx).
+For more information about configuring which actions are logged, see [Enable or disable mailbox audit logging for a mailbox](enable-or-disable-mailbox-audit-logging-for-a-mailbox-exchange-2013-help.md).
 
 ### Give users access to Auditing reports
 

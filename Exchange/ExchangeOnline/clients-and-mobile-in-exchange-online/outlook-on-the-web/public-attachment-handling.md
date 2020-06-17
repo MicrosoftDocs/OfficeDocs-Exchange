@@ -24,7 +24,7 @@ As an admin, you can set up both private and public attachment handling in Outlo
 
 ## How can I control public attachment handling?
 
-Although there are both private (internal network) and public (external network) settings to control attachments using Outlook on the web mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook on the web from a computer on a public network such as at a coffee shop or library. To set up the ability to enforce attachment handling from external networks for an entire organization in Exchange Online, first use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) cmdlet, set the _PublicComputersDetectionEnabled_ parameter to `$true`, configure the correct Outlook on the web mailbox policy either by using the Exchange admin center (EAC) or the [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy) cmdlet and create claim rules in AD FS. Enabling this setting the on the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) cmdlet and creating the claim rules will enable Exchange Online to tell if a user is signing in to Outlook on the web from a private and public network or computer.
+Although there are both private (internal network) and public (external network) settings to control attachments using Outlook on the web mailbox policies, admins require more consistent and reliable attachment handling when a user signs in to Outlook on the web from a computer on a public network such as at a coffee shop or library. To set up the ability to enforce attachment handling from external networks for an entire organization in Exchange Online, first use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) cmdlet, set the _PublicComputersDetectionEnabled_ parameter to `$true`, configure the correct Outlook on the web mailbox policy either by using the Exchange admin center (EAC) or the [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy) cmdlet and create claim rules in AD FS. Enabling this setting the on the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) cmdlet and creating the claim rules will enable Exchange Online to tell if a user is signing in to Outlook on the web from a private and public network or computer.
 
 The Outlook on the web mailbox policy parameters in the following table should be set to `$true` to enable an admin to control attachment handling for public computers and networks.
 
@@ -48,9 +48,9 @@ The Outlook on the web mailbox policy parameters in the following table should b
 
 - Set up and configure single sign on using AD FS:
 
-  - [Checklist: Use AD FS to implement and manage single sign-on](https://go.microsoft.com/fwlink/p/?LinkId=281821)
+  - [Checklist: Use AD FS to implement and manage single sign-on](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/checklist--implementing-a-federated-web-sso-design)
 
-  - [Setting Up Single Sign On with Office 365 using AD FS 2.0](https://go.microsoft.com/fwlink/p/?LinkId=329949 )
+  - [Set up ADFS for Office 365 for Single Sign-On](https://docs.microsoft.com/office365/troubleshoot/active-directory/set-up-adfs-for-single-sign-on)
 
   - [Configure single sign on](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso)
 

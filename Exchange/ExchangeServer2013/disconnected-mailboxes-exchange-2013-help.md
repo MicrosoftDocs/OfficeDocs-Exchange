@@ -66,7 +66,7 @@ Here are scenarios in which you may want to connect or restore a disabled mailbo
 
 - You disabled a mailbox and now want to reconnect the mailbox to the same Active Directory user account.
 
-- You deleted a mailbox by using the EAC or the [Remove-Mailbox](https://technet.microsoft.com/library/aa995948\(v=exchg.150\)) cmdlet and now want to reconnect the mailbox to a different Active Directory user account.
+- You deleted a mailbox by using the EAC or the [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Remove-Mailbox) cmdlet and now want to reconnect the mailbox to a different Active Directory user account.
 
 - You deleted a mailbox and now want to restore the mailbox to an existing mailbox. For example, if a user whose mailbox was deleted has a new mailbox, you can restore the user's disabled mailbox to their new mailbox.
 

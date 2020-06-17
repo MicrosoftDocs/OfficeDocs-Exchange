@@ -73,5 +73,3 @@ Users can control the following settings:
   For more information about Outlook settings, see [Change the message format in Outlook](https://go.microsoft.com/fwlink/p/?LinkID=397890).
 
 - **Outlook on the web settings**: You can set the default message format for all messages. You can override the default message format as you compose a specific message.
-
-  For more information on Outlook on the web settings, see [Create and respond to messages in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkID=399384).

@@ -28,7 +28,7 @@ The installation of Exchange Server 2016 or later can't continue because Setup f
 The upgrade path that you need to follow depends on your current version of Exchange. The upgrade paths are described in the following table:
 
 >[!NOTE]
->When you need to upgrade to an interim version of Exchange, you need to migrate all mailboxes, public folders and other components onto the interim version of Exchange before you decomission and remove the earlier Exchange servers.
+>When you need to upgrade to an interim version of Exchange, you need to migrate all mailboxes, public folders and other components onto the interim version of Exchange before you decommission and remove the earlier Exchange servers.
 
 ::: moniker range="exchserver-2019"
 |**Current Exchange version**|**Latest Exchange version for coexistence**|**Upgrade path summary**|
@@ -42,16 +42,12 @@ The upgrade path that you need to follow depends on your current version of Exch
 ::: moniker range="exchserver-2016"
 |**Current Exchange version**|**Latest Exchange version for coexistence**|**Upgrade path summary**|
 |:-----|:-----|:-----|
-|Exchange 2000|Exchange 2007|• Exchange 2000 \> Exchange 2007 \> Exchange 2013 \> Exchange 2016.|
-|Exchange 2003|Exchange 2010|• Exchange 2003 \> Exchange 2010 \> Exchange 2016.|
-|Exchange 2007|Exchange 2013|• Exchange 2007 \> Exchange 2013 \> Exchange 2016.|
-|Exchange 2010|Exchange 2016|• Exchange 2010 \> Exchange 2016.|
+|Exchange 2000|Exchange 2007|Exchange 2000 \> Exchange 2007 \> Exchange 2013 \> Exchange 2016.|
+|Exchange 2003|Exchange 2010|Exchange 2003 \> Exchange 2010 \> Exchange 2016.|
+|Exchange 2007|Exchange 2013|Exchange 2007 \> Exchange 2013 \> Exchange 2016.|
+|Exchange 2010|Exchange 2016|Exchange 2010 \> Exchange 2016.|
 ::: moniker-end
 
-When upgrading to Exchange 2010 or later, you can use the Exchange Deployment Assistant to help complete your deployment. For more information, see the following links:
-
-- [Exchange 2010 Deployment Assistant](https://go.microsoft.com/fwlink/p/?LinkId=171086)
-
-- [Exchange 2013 Deployment Assistant](https://go.microsoft.com/fwlink/p/?LinkId=277105)
+When upgrading to Exchange 2013 or later, you can use the Exchange Deployment Assistant to help complete your deployment. For more information, see [Exchange Deployment Assistant](https://assistants.microsoft.com/).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

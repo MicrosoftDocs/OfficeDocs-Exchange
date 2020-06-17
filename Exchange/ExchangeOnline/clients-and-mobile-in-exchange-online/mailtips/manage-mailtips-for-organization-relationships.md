@@ -32,7 +32,7 @@ You use the **Set-OrganizationRelationship** cmdlet to configure these settings.
 
 - Estimated time to complete each procedure: 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "MailTips" entry in the [Mail flow permissions](https://technet.microsoft.com/library/f49f4fb5-af75-43cb-900f-c5f7b8cfa143.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "MailTips" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - You can only use Exchange Online PowerShell to perform this procedure.
 
@@ -55,7 +55,7 @@ This example configures the organizational relationship to prevent MailTips from
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-organizationrelationship).
+For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/set-organizationrelationship).
 
 ## Use Exchange Online PowerShell to configure which MailTips are returned to the remote organization
 
@@ -80,7 +80,7 @@ This example configures the organizational relationship so that no MailTips are 
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessLevel None
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-organizationrelationship).
+For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/set-organizationrelationship).
 
 ## Use Exchange Online PowerShell to configure a specific group of users for whom recipient-specific MailTips are returned
 
@@ -98,4 +98,4 @@ You can specify a MailTips access group on the organizational relationship. Afte
 Set-OrganizationRelationship "Contoso Online" -MailTipsAccessScope ShareMailTips@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-organizationrelationship).
+For detailed syntax and parameter information, see [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/set-organizationrelationship).

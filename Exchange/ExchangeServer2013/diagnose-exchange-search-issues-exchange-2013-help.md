@@ -27,11 +27,11 @@ Looking for management tasks related to managing Exchange Search? See [Exchange 
 
 Step 5 of the procedure in this topic describes running the **Test-ExchangeSearch** cmdlet to help diagnose Exchange Search issues. You can use the **Test-ExchangeSearch** cmdlet to test Exchange Search functionality for a Mailbox server, a mailbox database, or a specific mailbox. The cmdlet delivers a test message to the specified mailbox (or to a database's system mailbox if a mailbox isn't specified), and then performs a search to determine whether the message is indexed, including the time taken to index it. Under normal conditions, Exchange Search indexes a message within about 10 seconds of the message being created or delivered to a mailbox. The test message is automatically deleted after the test.
 
-For detailed syntax and parameter information, see [Test-ExchangeSearch](https://technet.microsoft.com/library/bb124733\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Test-ExchangeSearch](https://docs.microsoft.com/powershell/module/exchange/Test-ExchangeSearch).
 
 ## Retrieving unsearchable Items
 
-You can use the [Get-FailedContentIndexDocuments](https://technet.microsoft.com/library/dd351154\(v=exchg.150\)) cmdlet to retrieve a list of unsearchable mailbox items that couldn't be successfully indexed by Exchange Search. You can run the cmdlet against a Mailbox server, a mailbox database, or a specific mailbox. The cmdlet returns details about each item that couldn't be searched. There are several reasons why a mailbox item can't be searched; for example, an email message might contain an attachment file type that can't be indexed for search or because a search filter isn't installed or is disabled. If a search filter for that file type is available, you can install it on your Exchange servers.
+You can use the [Get-FailedContentIndexDocuments](https://docs.microsoft.com/powershell/module/exchange/Get-FailedContentIndexDocuments) cmdlet to retrieve a list of unsearchable mailbox items that couldn't be successfully indexed by Exchange Search. You can run the cmdlet against a Mailbox server, a mailbox database, or a specific mailbox. The cmdlet returns details about each item that couldn't be searched. There are several reasons why a mailbox item can't be searched; for example, an email message might contain an attachment file type that can't be indexed for search or because a search filter isn't installed or is disabled. If a search filter for that file type is available, you can install it on your Exchange servers.
 
 > [!IMPORTANT]
 > Search filters provided by Microsoft are tested and supported by Microsoft. We recommend that you test any third-party search filters in a test environment before installing them on Exchange servers in a production environment.
@@ -58,7 +58,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     Get-MailboxDatabase | Format-Table Name,IndexEnabled
     ```
 
-    For detailed syntax and parameter information, see [Get-MailboxDatabase](https://technet.microsoft.com/library/bb124924\(v=exchg.150\)).
+    For detailed syntax and parameter information, see [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabase).
 
 3. **Check mailbox database crawl state**: Has the Exchange database been crawled? If yes, go to Step 4. If no, use Reliability and Performance Monitor to check the **Crawler: Mailboxes Remaining** counter of the **MSExchange Search Indexes** performance object. Perform the following steps:
 
@@ -88,7 +88,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     Get-MailboxDatabaseCopyStatus -Server $env:ComputerName | Format-Table Name,Status,ContentIndex* -Auto
     ```
 
-    For detailed syntax and parameter information, see [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/library/dd298044\(v=exchg.150\)).
+    For detailed syntax and parameter information, see [Get-MailboxDatabaseCopyStatus](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabaseCopyStatus).
 
 5. **Run the Test-ExchangeSearch cmdlet**: If the mailbox database has already been crawled, you can run the **Test-ExchangeSearch** cmdlet for the mailbox database or for a specific mailbox.
 
@@ -96,7 +96,7 @@ You need to be assigned permissions before you can perform this procedure or pro
     Test-ExchangeSearch -Identity AlanBrewer@contoso.com
     ```
 
-    For detailed syntax and parameter information, see [Test-ExchangeSearch](https://technet.microsoft.com/library/bb124733\(v=exchg.150\)).
+    For detailed syntax and parameter information, see [Test-ExchangeSearch](https://docs.microsoft.com/powershell/module/exchange/Test-ExchangeSearch).
 
 6. **Check the Application event log**: Using Event Viewer or the Shell, check the Application event log for search-related error messages. Check for following event sources.
 

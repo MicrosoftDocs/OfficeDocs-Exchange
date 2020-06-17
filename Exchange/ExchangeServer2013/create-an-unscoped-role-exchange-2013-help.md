@@ -68,7 +68,7 @@ New-ManagementRole "IT Scripts" -UnscopedTopLevel
 
 After it's created, the role is empty until you add scripts or non-Exchange cmdlets to it.
 
-For detailed syntax and parameter information, see [New-ManagementRole](https://technet.microsoft.com/library/dd298073\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRole).
 
 ## Step 2a: Add script management role entries
 
@@ -154,7 +154,7 @@ This example copies the IT Global Scripts role and its management role entries t
 New-ManagementRole -Parent "IT Global Scripts" -Name "Diagnostic IT Scripts"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRole](https://technet.microsoft.com/library/dd298073\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRole).
 
 ## Step 2: Change the role's management role entries
 

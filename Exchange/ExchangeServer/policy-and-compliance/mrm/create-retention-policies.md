@@ -148,7 +148,7 @@ This example creates the retention policy RetentionPolicy-Corp and uses the _Ret
 New-RetentionPolicy "RetentionPolicy-Corp" -RetentionPolicyTagLinks "DPT-Corp-Delete","DPT-Corp-Move","DPT-Corp-Voicemail","RPT-Corp-JunkMail","Never Delete"
 ```
 
-For detailed syntax and parameter information, see [New-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentionpolicy).
+For detailed syntax and parameter information, see [New-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentionpolicy).
 
 ## Step 3: Apply a retention policy to mailbox users
 

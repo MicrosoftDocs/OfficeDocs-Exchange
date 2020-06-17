@@ -29,6 +29,6 @@ Download and install the 64-bit update from the following URL, and then click **
 > [!NOTE]
 > If this update requires a reboot to complete installation, you'll need to exit Exchange 2016 Setup, reboot, and then start Setup again.
 
-Microsoft Knowledge Base article KB2884597, [Virtual Disk Service or applications that use the Virtual Disk Service crash or freeze in Windows Server 2012](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2884597).
+Microsoft Knowledge Base article KB2884597, [Virtual Disk Service or applications that use the Virtual Disk Service crash or freeze in Windows Server 2012](https://support.microsoft.com/help/2884597).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

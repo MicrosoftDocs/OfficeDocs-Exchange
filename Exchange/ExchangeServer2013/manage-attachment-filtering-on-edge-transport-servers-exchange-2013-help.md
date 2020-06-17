@@ -204,7 +204,7 @@ This example makes the following changes to the attachment filtering configurati
 Set-AttachmentFilterListConfig -Action Reject -RejectResponse "This message contains a prohibited attachment. Your message can't be delivered. Please resend the message without the attachment."
 ```
 
-For more information, see [Set-AttachmentFilterListConfig](https://technet.microsoft.com/library/bb123483\(v=exchg.150\)).
+For more information, see [Set-AttachmentFilterListConfig](https://docs.microsoft.com/powershell/module/exchange/Set-AttachmentFilterListConfig).
 
 ## How do you know this worked?
 

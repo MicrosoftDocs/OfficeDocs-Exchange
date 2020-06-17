@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 7dcf7a8b-e00e-49f8-bf8d-74aba79c5a6a
 description: "Learn how to fix email issues for error code 5.4.1 in Exchange Online (the destination email server doesn't accept email from the sender's domain)."
 ---
@@ -52,11 +53,11 @@ If external senders receive this NDR when they send email to recipients in your 
 
 - **Verify only one MX record is configured for your domain**: We don't support using more than one MX record for domains enrolled in Exchange Online.
 
-- **Test your MX record**: Use the **Verify MX Record and Outbound Connector Test** at **Office 365** \> **Mail Flow Configuration** in the [Microsoft Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkID=390941).
+- **Test your MX record**: Use the **Outbound SMTP EMail** test in the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365).
 
 ### Domain configuration issues
 
-1. Open the Office 365 portal at [https://portal.office.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 2. Click **Domains** and verify your domain appears in the list as **Active**.
 
@@ -64,7 +65,7 @@ If external senders receive this NDR when they send email to recipients in your 
 
 If you control of the DNS records for your Office 365 domain, you can also check the status of the domain in the Exchange admin center (EAC) by following these steps:
 
-1. In the Office 365 portal, click **Admin** \> **Exchange**.
+1. In the Microsoft 365 admin center, click **Admin** \> **Exchange**.
 
 2. Click **Mail flow** \> **Accepted domains**.
 
@@ -80,15 +81,15 @@ If your domain is part of a hybrid deployment between on-premises Exchange and E
 
 - Verify the configuration of the Send connectors and Receive connectors in your on-premises Exchange organization that are used for hybrid. These connectors are configured automatically by the Hybrid Configuration Wizard, and the wizard might need to be run again by your Exchange administrator.
 
-For more information, see Microsoft Knowledge Base article [KB2827473](https://go.microsoft.com/fwlink/p/?LinkId=328236).
+For more information, see [this topic](https://docs.microsoft.com/office365/troubleshoot/antispam/relay-access-denied-ndr).
 
-For more information about transport routing in hybrid deployments, see [Transport Routing in Exchange 2013 Hybrid Deployments](https://technet.microsoft.com/library/jj659050.aspx).
+For more information about transport routing in hybrid deployments, see [Transport Routing in Exchange Hybrid Deployments](https://docs.microsoft.com/exchange/transport-routing).
 
 ### Service issues in Exchange Online
 
 A service issue in Office 365 might be causing the problem. To check the status of Office 365, do the following steps:
 
-1. Open the Office 365 portal at [https://portal.office.com](https://go.microsoft.com/fwlink/p/?LinkID=402333).
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 2. Click **Service health** to see an overview of any issues.
 
@@ -114,7 +115,7 @@ The Exchange Online non-delivery report (NDR) notification for this specific err
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

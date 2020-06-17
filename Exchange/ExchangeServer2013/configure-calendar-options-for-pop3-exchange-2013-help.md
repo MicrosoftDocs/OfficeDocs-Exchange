@@ -60,7 +60,7 @@ Set-PopSettings -CalendarItemRetrievalOption Custom -OwaServerUrl "https://OwaSe
 
 After you've specified the calendar options for POP3, you must restart the POP3 services. For information about how to restart the POP3 services, see [Start and stop the POP3 services](start-and-stop-the-pop3-services-exchange-2013-help.md).
 
-For more information about syntax and parameters, see [Set-PopSettings](https://technet.microsoft.com/library/aa997154\(v=exchg.150\)).
+For more information about syntax and parameters, see [Set-PopSettings](https://docs.microsoft.com/powershell/module/exchange/Set-PopSettings).
 
 ## How do you know this worked?
 

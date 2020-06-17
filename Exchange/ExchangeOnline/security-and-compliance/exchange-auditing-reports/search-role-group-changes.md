@@ -20,9 +20,7 @@ manager: serdars
 
 # Search the role group changes or administrator audit logs in Exchange Online
 
-You can search the administrator audit logs to discover who made changes to the organization and recipient configuration. This can be helpful when you're trying to track the cause of unexpected behavior, to identify a malicious administrator, or to verify that compliance requirements are being met. For more information about administrator audit logging, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx).
-
-If you want to search the mailbox audit log, see [Mailbox Audit Logging](https://technet.microsoft.com/library/29b67d58-eef9-4ad4-863f-562405ea8794.aspx).
+You can search the administrator audit logs to discover who made changes to the organization and recipient configuration. This can be helpful when you're trying to track the cause of unexpected behavior, to identify a malicious administrator, or to verify that compliance requirements are being met. For more information about administrator audit logging, see [View the administrator audit log](view-administrator-audit-log.md).
 
 > [!TIP]
 > In Exchange Online, you can use the EAC to view entries in the administrator audit log. For more information, see [View the administrator audit log](view-administrator-audit-log.md).
@@ -31,9 +29,9 @@ If you want to search the mailbox audit log, see [Mailbox Audit Logging](https:/
 
 - Estimated time to complete each procedure: less than 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -41,7 +39,6 @@ If you want to search the mailbox audit log, see [Mailbox Audit Logging](https:/
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
 ## Use the EAC to run the management role group changes report
-<a name="EACRGReport"> </a>
 
 If you want to know what changes to management role group membership have been made to role groups in your organization, you can use the Administrator Role Group report in the Exchange admin center (EAC). Using the Administrator Role Group report, you can view a list of role groups that have changed during a specified date range. You can also select the specific role groups you want to view changes for.
 
@@ -56,7 +53,6 @@ If you want to know what changes to management role group membership have been m
 If any changes are found using the criteria you specified, a list of changes will be displayed in the results pane. Clicking a role group displays the changes to the role group in the details pane.
 
 ## Use the EAC to export the administrator audit log
-<a name="EACAdminReport"> </a>
 
 If you want to create an XML file that contains changes made to your organization, you can use the Export Administrator Audit Log report in the EAC. Using the Export Administrator Audit Log report, you can specify a date range to search for audit log entries that contain changes made by users you specify. The XML file is then sent to a recipient as an email attachment. The maximum size of the XML file is 10 megabytes (MB).
 
@@ -74,9 +70,8 @@ If you want to create an XML file that contains changes made to your organizatio
 If any log entries are found using the criteria you specified, an XML file will be created and sent as an email attachment to the recipient you specified.
 
 ## Use Exchange Online PowerShell to search for audit log entries
-<a name="SearchAdminAuditLog"> </a>
 
-You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in Exchange Online PowerShell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports.
+You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Search-AdminAuditLog cmdlet](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in Exchange Online PowerShell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports.
 
 If you want to send audit log search results in an email attachment to a recipient, see the [Use Exchange Online PowerShell to search for audit log entries and send results to a recipient](#use-exchange-online-powershell-to-search-for-audit-log-entries-and-send-results-to-a-recipient) section later in this topic.
 
@@ -117,15 +112,15 @@ This example searches for changes made to a specific mailbox. This is useful if 
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
 ```
 
-If your searches return many log entries, we recommend that you use the procedure provided in **Use Exchange Online PowerShell to search for audit log entries and send results to a recipient** later in this topic. The procedure in that section sends an XML file as an email attachment to the recipients you specify, enabling you to more easily extract the data you're interested in.
+If your searches return many log entries, we recommend that you use the procedure provided in [Use Exchange Online PowerShell to search for audit log entries and send results to a recipient](#use-exchange-online-powershell-to-search-for-audit-log-entries-and-send-results-to-a-recipient) later in this topic. The procedure in that section sends an XML file as an email attachment to the recipients you specify, enabling you to more easily extract the data you're interested in.
 
-For detailed syntax and parameter information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+For detailed syntax and parameter information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ### View details of audit log entries
 
-The **Search-AdminAuditLog** cmdlet returns the fields described in the "Audit log contents section of [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Of the fields returned by the cmdlet, two fields, **CmdletParameters** and **ModifiedProperties**, contain additional information that isn't viewable by default.
+The **Search-AdminAuditLog** cmdlet returns the fields described in [Audit log contents](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents). Of the fields returned by the cmdlet, two fields, **CmdletParameters** and **ModifiedProperties**, contain additional information that isn't viewable by default.
 
-To view the contents of the **CmdletParameters** and **ModifiedProperties** fields, use the following steps. Or, you can use the procedure in **Use Exchange Online PowerShell to search for audit log entries and send results to a recipient** later in this topic to create an XML file.
+To view the contents of the **CmdletParameters** and **ModifiedProperties** fields, use the following steps. Or, you can use the procedure in [Use Exchange Online PowerShell to search for audit log entries and send results to a recipient](#use-exchange-online-powershell-to-search-for-audit-log-entries-and-send-results-to-a-recipient) later in this topic to create an XML file.
 
 This procedure uses the following concepts:
 
@@ -155,9 +150,8 @@ This procedure uses the following concepts:
 4. To view the contents of the **CmdletParameters** or **ModifiedParameters** fields in another log entry, change the array element index.
 
 ## Use Exchange Online PowerShell to search for audit log entries and send results to a recipient
-<a name="NewAdminAuditLogSearch"> </a>
 
-You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify, and then send those results to a recipient you specify as an XML file attachment. The results are sent to the recipient within 15 minutes. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx).
+You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify, and then send those results to a recipient you specify as an XML file attachment. The results are sent to the recipient within 15 minutes. For a list of search criteria, see [Search-AdminAuditLog cmdlet criteria](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet).
 
 > [!NOTE]
 > By default, Outlook on the web doesn't allow you to open XML attachments. You can either configure Outlook on the web to allow XML attachments to be viewed, or you can use another email client to view the attachment (for example, Microsoft Outlook). For information about how to configure Outlook on the web to allow you to view XML attachments, see [View or configure Outlook on the web mailbox policy properties in Exchange Online](../../clients-and-mobile-in-exchange-online/outlook-on-the-web/configure-outlook-web-app-mailbox-policy-properties.md).
@@ -189,6 +183,6 @@ New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohi
 > [!NOTE]
 > The report that the **New-AdminAuditLogSearch** cmdlet generates can be a maximum of 10 MB in size. If the search you perform returns a report larger than 10 MB, change the search criteria you specified. For example, reduce the size of the date range and run multiple reports, each with a portion of the original date range.
 
-For more information about the format of the XML file, see [Administrator Audit Log Structure](https://technet.microsoft.com/library/87e259c9-c884-4d53-bd78-d13f2300d73e.aspx).
+For more information about the format of the XML file, see [Administrator audit log structure](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/log-structure).
 
-For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-adminauditlogsearch).
+For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-adminauditlogsearch).

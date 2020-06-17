@@ -46,7 +46,7 @@ When you're deploying Unified Messaging, you have multiple options depending on 
 
   - Continuity of the user experience across multiple devices.
 
-For more information about Lync Server, see [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?linkid=265752).
+For more information about Lync Server, see [Microsoft Lync Server](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013).
 
 ## Deployment steps
 

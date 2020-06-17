@@ -84,7 +84,7 @@ This example attempts to automatically discover configuration information from t
 Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
 ```
 
-For detailed syntax and parameter information, see [Get-FederationInformation](https://technet.microsoft.com/library/dd351221\(v=exchg.150\)) and [New-OrganizationRelationship](https://technet.microsoft.com/library/ee332357\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-FederationInformation](https://docs.microsoft.com/powershell/module/exchange/Get-FederationInformation) and [New-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/New-OrganizationRelationship).
 
 This example creates an organization relationship with Fourth Coffee. In this example, the connection settings with the external Exchange organization are provided. The following conditions apply:
 
@@ -102,7 +102,7 @@ This example creates an organization relationship with Fourth Coffee. In this ex
 New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
 ```
 
-For detailed syntax and parameter information, see [New-OrganizationRelationship](https://technet.microsoft.com/library/ee332357\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/New-OrganizationRelationship).
 
 ## How do you know this worked?
 

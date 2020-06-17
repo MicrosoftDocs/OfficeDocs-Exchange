@@ -47,10 +47,10 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 3. Choose **Route mail through smart hosts**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add smart host** window, specify the IP address, such as 192.168.100.1, or the fully qualified domain name (FQDN), such as contoso.com. Click **Save**.
 
-   For **Smart host authentication**, choose the type of authentication required by the smart host. If you choose **Basic authentication**, you must provide a user name and password.
+   For **Smart host authentication**, choose the type of authentication required by the smart host. If you choose **Basic authentication**, you must provide a username and password.
 
    > [!NOTE]
-   > If you choose Basic authentication, we recommend that you use an encrypted connection because the user name and password are sent in clear text.
+   > If you choose Basic authentication, we recommend that you use an encrypted connection because the username and password are sent in clear text.
 
 4. Under **Address space**, click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **Add domain** window, make sure SMTP is listed as the **Type**. For **Fully Qualified Domain Name (FQDN)**, enter \* to specify that this send connector applies to messages sent to any domain. Click **Save**.
 

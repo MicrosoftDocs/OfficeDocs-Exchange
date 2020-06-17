@@ -214,7 +214,7 @@ The steps to assign a second IP address to the existing network adapter are desc
 
 #### Step 2d: Use the Exchange Management Shell to create new EAC and Outlook on the web virtual directories for the new web site
 
-To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 Replace _\<Server\>_ with the name of your server, and run the following commands to create the new EAC and Outlook on the web virtual directories for the new web site.
 

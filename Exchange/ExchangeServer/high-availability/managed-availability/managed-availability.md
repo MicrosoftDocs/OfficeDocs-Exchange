@@ -208,15 +208,15 @@ There are 12 cmdlets used for managed availability, which are described in the f
 
 |**Cmdlet**|**Description**|
 |:-----|:-----|
-|[Get-ServerHealth](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-serverhealth)|Used to get raw server health information, such as health sets and their current state (healthy or unhealthy), health set monitors, server components, target resources for probes, and timestamps related to probe or monitor start or stop times, and state transition times.|
-|[Get-HealthReport](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-healthreport)|Used to get a summary health view that includes health sets and their current state.|
-|[Get-MonitoringItemIdentity](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-monitoringitemidentity)|Used to view the probes, monitors, and responders associated with a specific health set.|
-|[Get-MonitoringItemHelp](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-monitoringitemhelp)|Used to view descriptions about some of the properties of probes, monitors, and responders.|
-|[Add-ServerMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/add-servermonitoringoverride)|Used to create a local, server-specific override of a probe, monitor, or responder.|
-|[Get-ServerMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-servermonitoringoverride)|Used to view a list of local overrides on the specified server.|
-|[Remove-ServerMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/remove-servermonitoringoverride)|Used to remove a local override from a specific server.|
-|[Add-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/add-globalmonitoringoverride)|Used to create a global override for a group of servers.|
-|[Get-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-globalmonitoringoverride)|Used to view a list of global overrides configured in the organization.|
-|[Remove-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/remove-globalmonitoringoverride)|Used to remove a global override.|
-|[Set-ServerComponentState](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/set-servercomponentstate)|Used to configure the state of one or more server components.|
-|[Get-ServerComponentState](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-servercomponentstate)|Used to view the state of one or more server components.|
+|[Get-ServerHealth](https://docs.microsoft.com/powershell/module/exchange/get-serverhealth)|Used to get raw server health information, such as health sets and their current state (healthy or unhealthy), health set monitors, server components, target resources for probes, and timestamps related to probe or monitor start or stop times, and state transition times.|
+|[Get-HealthReport](https://docs.microsoft.com/powershell/module/exchange/get-healthreport)|Used to get a summary health view that includes health sets and their current state.|
+|[Get-MonitoringItemIdentity](https://docs.microsoft.com/powershell/module/exchange/get-monitoringitemidentity)|Used to view the probes, monitors, and responders associated with a specific health set.|
+|[Get-MonitoringItemHelp](https://docs.microsoft.com/powershell/module/exchange/get-monitoringitemhelp)|Used to view descriptions about some of the properties of probes, monitors, and responders.|
+|[Add-ServerMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/add-servermonitoringoverride)|Used to create a local, server-specific override of a probe, monitor, or responder.|
+|[Get-ServerMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/get-servermonitoringoverride)|Used to view a list of local overrides on the specified server.|
+|[Remove-ServerMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/remove-servermonitoringoverride)|Used to remove a local override from a specific server.|
+|[Add-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/add-globalmonitoringoverride)|Used to create a global override for a group of servers.|
+|[Get-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/get-globalmonitoringoverride)|Used to view a list of global overrides configured in the organization.|
+|[Remove-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/remove-globalmonitoringoverride)|Used to remove a global override.|
+|[Set-ServerComponentState](https://docs.microsoft.com/powershell/module/exchange/set-servercomponentstate)|Used to configure the state of one or more server components.|
+|[Get-ServerComponentState](https://docs.microsoft.com/powershell/module/exchange/get-servercomponentstate)|Used to view the state of one or more server components.|

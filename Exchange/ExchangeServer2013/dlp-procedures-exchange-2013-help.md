@@ -37,5 +37,3 @@ You can begin using a data loss prevention (DLP) solution in your messaging envi
 [Manage policy tips](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/manage-policy-tips)
 
 [Create incident reports for DLP policy detections](create-incident-reports-for-dlp-policy-detections-exchange-2013-help.md)
-
-[Learn more about modes for DLP policies and rules](https://technet.microsoft.com/library/jj156481\(v=exchg.150\))

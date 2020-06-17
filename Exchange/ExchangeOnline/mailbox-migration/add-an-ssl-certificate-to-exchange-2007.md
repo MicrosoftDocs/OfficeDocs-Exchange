@@ -107,4 +107,4 @@ After you receive the certificate from the CA, use the [Import-ExchangeCertifica
 ## See also
 <a name="BK_import"> </a>
 
-[Blog article on adding an SSL to Exchange Server 2007](https://go.microsoft.com/fwlink/p/?LinkId=615759)
+[Blog article on adding an SSL to Exchange Server 2007](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-2007-autodiscover-and-certificates/ba-p/593753)

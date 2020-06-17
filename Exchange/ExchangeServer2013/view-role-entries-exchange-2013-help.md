@@ -37,7 +37,7 @@ Looking for other management tasks related to role entries? Check out [Advanced 
 
   - [Working with command output](working-with-command-output-exchange-2013-help.md)
 
-  - [Structured data](https://technet.microsoft.com/library/aa996386\(v=exchg.150\))
+  - [Structured data](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_objects)
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -48,7 +48,7 @@ Looking for other management tasks related to role entries? Check out [Advanced 
 
 You can use the **Get-ManagementRoleEntry** cmdlet to retrieve a list of role entries. When you use the **Get-ManagementRoleEntry** cmdlet, you must specify a value that contains both the role name that contains the role entries you want to list and also the cmdlet name of the role entry you want to list. By combining the role name and cmdlet name with the wildcard character (\*), you can return specific or broad lists of role entries.
 
-For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/library/dd335210\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleEntry).
 
 ## View a list of all role entries on a role
 
@@ -64,7 +64,7 @@ This examples retrieves all the role entries on the `Recipient Administrators` r
 Get-ManagementRole "Recipient Administrators\*"
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/library/dd335210\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleEntry).
 
 ## View a list of roles that contain a specific role entry
 
@@ -80,7 +80,7 @@ This example retrieves all the roles that contain the **Set-Mailbox** role entry
 Get-ManagementRoleEntry *\Set-Mailbox
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/library/dd335210\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleEntry).
 
 ## View a targeted list of roles that contain similar role entries
 
@@ -96,7 +96,7 @@ This example returns a list of role entries that contain the string `Mailbox` th
 Get-ManagementRoleEntry "*Tier 1*\*Mailbox*"
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/library/dd335210\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleEntry).
 
 ## View a single role entry
 
@@ -114,7 +114,7 @@ Get-ManagementRoleEntry "Recipient Administrators\Set-Mailbox" | Format-List
 
 If the role entry you view has too many parameters to list using the **Format-List** cmdlet, see "View the parameters on a single role entry" later in this topic.
 
-For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/library/dd335210\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleEntry).
 
 ## View the parameters on a single role entry
 
@@ -132,4 +132,4 @@ This example retrieves the parameters on the **Set-Mailbox** role entry on the M
 (Get-ManagementRoleEntry "Mail Recipients\Set-Mailbox").Parameters
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://technet.microsoft.com/library/dd335210\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleEntry).

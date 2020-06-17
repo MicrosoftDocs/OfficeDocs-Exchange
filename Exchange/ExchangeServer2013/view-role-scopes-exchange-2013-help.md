@@ -58,7 +58,7 @@ This example retrieves the details of the Seattle Servers scope.
 Get-ManagementScope "Seattle Servers" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementScope).
 
 ## List all scopes
 
@@ -70,7 +70,7 @@ Get-ManagementScope
 
 This cmdlet retrieves both exclusive and regular scopes. If you only want to return exclusive scopes or regular scopes, see "List all exclusive or regular scopes only" later in this topic.
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementScope).
 
 ## List all orphaned scopes
 
@@ -82,7 +82,7 @@ This examples retrieves a list of orphaned scopes.
 Get-ManagementScope -Orphan
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementScope).
 
 ## List all exclusive or regular scopes only
 
@@ -104,4 +104,4 @@ This example returns a list of regular scopes only.
 Get-ManagementScope -Exclusive $false
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementScope](https://technet.microsoft.com/library/dd298180\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementScope).

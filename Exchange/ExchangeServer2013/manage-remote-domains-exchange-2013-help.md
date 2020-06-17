@@ -70,7 +70,7 @@ To verify that you have successfully created a remote domain, do the following:
 
 ## Use the Shell to configure a remote domain
 
-You configure the settings in the remote domain entry using the **Set-RemoteDomain** cmdlet. There are many different settings that relate to automatic replies, message format and encoding, and other message settings. For more information, see [Set-RemoteDomain](https://technet.microsoft.com/library/aa997857\(v=exchg.150\)).
+You configure the settings in the remote domain entry using the **Set-RemoteDomain** cmdlet. There are many different settings that relate to automatic replies, message format and encoding, and other message settings. For more information, see [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/Set-RemoteDomain).
 
 To configure remote domains for specific scenarios, see the following topics:
 

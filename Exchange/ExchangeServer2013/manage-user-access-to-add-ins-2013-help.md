@@ -31,9 +31,9 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-2
 
 - For more information about the EAC, see [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md).
 
-- To learn how to connect to the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to connect to the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Add-ins for Outlook" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Add-ins for Outlook" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -94,7 +94,7 @@ If you want the add-in to be required for your users, replace _\<AppId\>_ with t
 Set-App -Identity <AppId> -OrganizationApp -Enabled $true -DefaultStateForUser AlwaysEnabled
 ```
 
-For detailed syntax and parameters, see [Set-App](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-app).
+For detailed syntax and parameters, see [Set-App](https://docs.microsoft.com/powershell/module/exchange/set-app).
 
 ### How do you know this worked?
 
@@ -122,7 +122,7 @@ $a = Get-DistributionGroupMember Marketing
 Set-App -Identity ac83a9d5-5af2-446f-956a-c583adc94d5e -OrganizationApp -ProvidedTo SpecificUsers -UserList $a.Identity -DefaultStateForUser Enabled
 ```
 
-For detailed syntax and parameters, see [Set-App](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-app).
+For detailed syntax and parameters, see [Set-App](https://docs.microsoft.com/powershell/module/exchange/set-app).
 
 ### How do you know this worked?
 

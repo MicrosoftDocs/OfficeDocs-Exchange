@@ -92,7 +92,7 @@ Users, including mailbox-enabled users, aren't enabled for Unified Messaging by 
 
 If a user doesn't have DTMF map values defined for their account, callers won't be able to contact the user when they press a telephone key from a UM auto attendant menu or perform a directory search. Also, UM-enabled users won't be able to send messages or transfer calls to users who don't have a DTMF map unless they can use Automatic Speech Recognition (ASR). To enable callers to transfer calls or contact users who aren't UM-enabled by using the telephone keypad, you need to create the necessary values for the DTMF map for those users. You can use the **Set-User** cmdlet with the _-CreateDtmfMap_ parameter to create and update a single user's DTMF map or update a DTMF map for a user if the name of the user was changed after a DTMF map was created. Optionally, you can create a PowerShell script by using this cmdlet to update the DTMF map values for multiple users.
 
-For more information about the **Set-User** cmdlet, see [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user).
+For more information about the **Set-User** cmdlet, see [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user).
 
 ## DTMF maps for users who are enabled for Unified Messaging
 <a name="dtmfmapusersenabled"> </a>

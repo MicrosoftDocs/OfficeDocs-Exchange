@@ -21,9 +21,9 @@ For In-Place eDiscovery, the only property on a user mailbox that you can use to
 
 To learn more about management scopes, see:
 
-- [Understanding management role scopes](https://technet.microsoft.com/library/24ed4a38-438a-4223-9f9c-5d4dea4b046b.aspx)
+- [Understanding management role scopes](understanding-management-role-scopes-exchange-2013-help.md)
 
-- [Understanding management role scope filters](https://technet.microsoft.com/library/6acc2922-ee9c-41f1-8a0f-10a541e8c273.aspx)
+- [Understanding management role scope filters](understanding-management-role-scope-filters-exchange-2013-help.md)
 
 ## What do you need to know before you begin?
 

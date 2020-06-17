@@ -37,6 +37,6 @@ To resolve this issue, do one or more of the following:
 
     Use the */DomainController* parameter to specify the domain controller to use to read from and write to Active Directory during setup. You can use NetBIOS or the fully qualified domain name (FQDN) format.
 
-To obtain the latest service pack for Windows Server 2003, see the "Windows Server TechCenter" ([https://go.microsoft.com/fwlink/?LinkId=45315](https://go.microsoft.com/fwlink/?linkid=45315)).
+To obtain the latest service pack for Windows Server 2003, see [KB889100](https://support.microsoft.com/help/889100).
 
 For more information about Exchange Server 2007 Setup parameters, see "How to Install Exchange 2007 in Unattended Mode" ([https://go.microsoft.com/fwlink/?LinkId=86476](https://go.microsoft.com/fwlink/?linkid=86476)) in the Exchange Server 2007 product documentation.

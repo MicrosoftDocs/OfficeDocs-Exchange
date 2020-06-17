@@ -26,7 +26,7 @@ In Exchange Online, actions performed by Microsoft and delegated administrators 
 
 - Estimated time to complete: This will vary based on whether you view or export entries from the admin audit log. See each procedure for its estimated time to complete.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - When you export the admin audit log, Microsoft Exchange attaches the audit log, which is an XML file, to an email message that is sent to the specified recipients. However, Outlook on the web (formerly known as Outlook Web App) blocks XML attachments by default. If you want to use Outlook on the web to access these audit logs, you have to configure Outlook on the web to allow XML attachments. Run the following command to allow XML attachments in Outlook on the web.
 
@@ -79,7 +79,7 @@ This command returns entries in the administrator audit log for cmdlets run by e
 Search-AdminAuditLog -ExternalAccess $true -StartDate 09/17/2013 -EndDate 10/02/2013
 ```
 
-For more information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+For more information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ## Use Exchange Online PowerShell to export the admin audit log
 

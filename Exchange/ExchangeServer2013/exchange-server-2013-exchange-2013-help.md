@@ -21,8 +21,6 @@ Welcome to Microsoft Exchange Server 2013\! We know you're eager to get started,
 
 - If you want a quick overview of what's new in Exchange 2013, check out [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
 
-- If you want to learn more about Exchange 2013, check out the [Exchange Server 2013 TechCenter](https://go.microsoft.com/fwlink/?linkid=266622).
-
 - If you need more help or want to share ideas, the [Exchange Server forums](https://go.microsoft.com/fwlink/p/?linkid=60612) are a great place to start.
 
 - To get started with Exchange 2013, head for [Planning and deployment](planning-and-deployment-for-exchange-2013-installation-instructions.md). It lays out the recommended sequence for preparing for and then installing Exchange 2013 and includes the following important topics:
@@ -81,7 +79,7 @@ The Help content for Exchange 2013 consists of the following top-level categorie
 
 - [High availability and site resilience](high-availability-and-site-resilience-exchange-2013-help.md)
 
-- [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/library/bb123778\(v=exchg.150\))
+- [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-management-shell)
 
 - [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md)
 
@@ -90,7 +88,7 @@ The Help content for Exchange 2013 consists of the following top-level categorie
 - [About Exchange documentation](https://docs.microsoft.com/exchange/about-exchange-documentation)
 
 > [!NOTE]
-> Check out our other Exchange content:<BR><A href="https://technet.microsoft.com/library/jj200580(v=exchg.150)">Exchange Online</A><BR><A href="https://technet.microsoft.com/library/jj200581(v=exchg.150)">Exchange Server Hybrid Deployments</A><BR><A href="https://technet.microsoft.com/library/jj723137(v=exchg.150)">Exchange Online Protection</A>
+> Check out our other Exchange content:<BR><A href="https://docs.microsoft.com/exchange/exchange-online">Exchange Online</A><BR><A href="https://docs.microsoft.com/exchange/exchange-hybrid">Exchange Server Hybrid Deployments</A><BR><A href="https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview">Exchange Online Protection</A>
 
 ## Tell us what you think
 

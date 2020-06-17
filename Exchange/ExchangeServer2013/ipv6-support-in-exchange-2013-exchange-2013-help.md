@@ -21,7 +21,7 @@ Internet Protocol version 6 (IPv6) is the most recent version of the Internet Pr
 
 In Microsoft Exchange Server 2013, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2013 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses.
 
-This topic discusses IPv6 addressing in Exchange 2013. For additional background information about IPv6, see [IPv6](https://go.microsoft.com/fwlink/p/?linkid=92582).
+This topic discusses IPv6 addressing in Exchange 2013. For additional background information about IPv6, see [Internet Protocol Version 6 (IPv6) Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379473(v=ws.10)).
 
 ## IPv6 support in Exchange 2013 components
 
@@ -115,7 +115,7 @@ Exchange 2013 servers fully support IPv6 networks. Therefore, even if you aren't
 
 IPv6 support in Exchange 2013 requires IPv4 to be installed and enabled on all Exchange 2013 servers. Uninstalling IPv4 from your Exchange 2013 servers isn't supported.
 
-To learn more about IPv6 support in Microsoft Windows, see [IPv6 for Microsoft Windows: Frequently Asked Questions](https://go.microsoft.com/fwlink/p/?linkid=147465).
+To learn more about IPv6 support in Microsoft Windows, see [Internet Protocol Version 6 (IPv6) Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-8.1-and-8/hh831730(v=ws.11)).
 
 ## IPv6 address basics
 

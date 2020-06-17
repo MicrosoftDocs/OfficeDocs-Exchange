@@ -77,4 +77,4 @@ To support the Sender ID infrastructure, you must update your Internet-facing DN
 
 ## Specifying recipients and sender domains to exclude from Sender ID filtering
 
-You may want to exclude specific recipients and sender domains from Sender ID filtering. To do this, you specify the recipients and sender domains using the **Set-SenderIdConfig** cmdlet in the Exchange Management Shell. For more information, see [Set-SenderIdConfig](https://technet.microsoft.com/library/aa998859\(v=exchg.150\)).
+You may want to exclude specific recipients and sender domains from Sender ID filtering. To do this, you specify the recipients and sender domains using the **Set-SenderIdConfig** cmdlet in the Exchange Management Shell. For more information, see [Set-SenderIdConfig](https://docs.microsoft.com/powershell/module/exchange/Set-SenderIdConfig).

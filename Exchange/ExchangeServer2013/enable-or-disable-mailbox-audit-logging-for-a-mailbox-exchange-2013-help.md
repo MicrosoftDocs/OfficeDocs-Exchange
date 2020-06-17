@@ -63,7 +63,7 @@ This example disables mailbox audit logging for Ben Smith's mailbox.
 Set-Mailbox -Identity "Ben Smith" -AuditEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox).
 
 ## Use the Shell to configure mailbox audit logging settings for administrator, delegate, and owner access
 
@@ -87,11 +87,11 @@ This example specifies that the `HardDelete` action performed by the mailbox own
 Set-Mailbox -Identity "Ben Smith" -AuditOwner HardDelete -AuditEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox).
 
 ## How do you know this worked?
 
-To verify that you have successfully enabled mailbox audit logging for a mailbox and specified the correct logging settings for administrator, delegate, or owner access, use the [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)) cmdlet to retrieve the mailbox audit logging settings for that mailbox.
+To verify that you have successfully enabled mailbox audit logging for a mailbox and specified the correct logging settings for administrator, delegate, or owner access, use the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox) cmdlet to retrieve the mailbox audit logging settings for that mailbox.
 
 This example retrieves Ben Smith's mailbox settings and pipes the specified audit settings, including the audit log age limit, to the **Format-List** cmdlet.
 

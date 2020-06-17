@@ -27,4 +27,4 @@ Exchange 2010 setup requires that a failed server role uninstall be successfully
 
 To address this issue, uninstall the failed server role(s), and then rerun setup.
 
-For more information about how to remove a server role, see the Exchange 2007 product documentation topic, "How to Remove Exchange 2007 Server Roles" (<https://go.microsoft.com/fwlink/?linkid=86649>).
+For more information about how to remove a server role, see the Exchange 2007 product documentation topic, [How to Remove Exchange 2007 Server Roles](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb124115(v=exchg.80)).

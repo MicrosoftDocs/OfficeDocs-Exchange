@@ -24,7 +24,7 @@ ms.service: exchange-online
 To complete administrative tasks in the Exchange admin center (EAC) in Exchange Online, you need the appropriate administrative permissions, which are grouped and assigned by role. By using a screen reader and keyboard shortcuts, you can identify your admin role, in addition to the role you must be assigned to complete particular tasks.
 
 > [!NOTE]
-> To learn how to open the EAC, refer to [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md). To learn more admin role groups, go to [Understanding management role groups](https://go.microsoft.com/fwlink/p/?LinkId=798789).
+> To learn how to open the EAC, refer to [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md). To learn more admin role groups, go to [Manage role groups in Exchange Online](../permissions-exo/role-groups.md).
 
 1. In the EAC, to move the focus to **Dashboard**, which is the first link in the navigation pane, press Ctrl+F6 twice. You hear "Dashboard, Primary navigation link..
 

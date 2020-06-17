@@ -16,6 +16,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: 51356082-9fef-4639-a18a-fc7c5beae0c8
 description: "Learn how to fix email issues for error code 451 4.7.500-699 (ASxxx) in Exchange Online (IP throttling)."
 ---
@@ -50,20 +51,20 @@ If the problem continues, send the bounce message to your email admin for assist
 
 To remove throttling for these messages, you need to configure a connector:
 
-1. If you're trying to relay outbound email from your on-premises email server through Office 365, you need to configure a connector from your email server to Office 365. For more information, see [Set up connectors to route mail between Office 365 and your own email servers](https://go.microsoft.com/fwlink/p/?LinkId=785273).
+1. If you're trying to relay outbound email from your on-premises email server through Office 365, you need to configure a connector from your email server to Office 365. For more information, see [Set up connectors to route mail between Office 365 and your own email servers](../use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail.md).
 
-2. If inbound email to your Office 365 organization is first routed through a third-party service, appliance, or device, you need to [set up a connector to apply security restrictions](https://go.microsoft.com/fwlink/p/?LinkId=785272).
+2. If inbound email to your Microsoft 365 or Office 365 organization is first routed through a third-party service, appliance, or device, you need to [set up a connector to apply security restrictions](../use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner.md).
 
-After you set up a connector, you can [validate your connectors in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=785240).
+After you set up a connector, you can [validate your connectors in Office 365](../use-connectors-to-configure-mail-flow/validate-connectors.md).
 
 > [!NOTE]
-> We don't recommend sending more than test messages from your initial onmicrosoft.com domain. Email from onmicrosoft.com domains is limited and filtered to prevent spam. In typical production environments, you need to [add a custom domain](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611.aspx) and then send your regular volume of email messages. For more information on domains, check out this [Domains FAQ](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a.aspx).
+> We don't recommend sending more than test messages from your initial onmicrosoft.com domain. Email from onmicrosoft.com domains is limited and filtered to prevent spam. In typical production environments, you need to [add a custom domain](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) and then send your regular volume of email messages. For more information on domains, check out this [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
 
 ## Still need help with error code 451 4.7.500-699 (ASxxx)?
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

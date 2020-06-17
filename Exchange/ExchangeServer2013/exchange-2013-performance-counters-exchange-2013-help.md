@@ -212,7 +212,7 @@ The following tables displays acceptable thresholds and information about common
 
 ## Netlogon Counters
 
-The following tables displays acceptable thresholds and information about common counters for monitoring NTLM authentication issues and MaxConcurrentAPI issues. See Microsoft Knowledge Base article 2688798 [How to do performance tuning for NTLM authentication by using the MaxConcurrentAPI setting](https://go.microsoft.com/fwlink/p/?linkid=389728) for more information.
+The following tables displays acceptable thresholds and information about common counters for monitoring NTLM authentication issues and MaxConcurrentAPI issues. See the Microsoft Knowledge Base article [KB2688798](https://support.microsoft.com/help/2688798) for more information.
 
 <table>
 <colgroup>
@@ -229,7 +229,7 @@ The following tables displays acceptable thresholds and information about common
 <tr class="even">
 <td><p>\Netlogon\Semaphore Waiters</p></td>
 <td><p>The number of the thread that is waiting to obtain the semaphore.</p></td>
-<td><p>See Microsoft Knowledge Base article 2688798 <a href="https://go.microsoft.com/fwlink/p/?linkid=389728">How to do performance tuning for NTLM authentication by using the MaxConcurrentAPI setting</a></p></td>
+<td><p>See the Microsoft Knowledge Base article <a href="https://support.microsoft.com/help/2688798">KB2688798</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>\Netlogon\Semaphore Holders</p></td>

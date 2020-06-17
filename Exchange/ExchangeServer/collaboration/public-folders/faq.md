@@ -16,25 +16,33 @@ manager: serdars
 
 ---
 
-# FAQ: Public folders
+# FAQ about public folder migration
+
+This article contains frequently asked questions about public folder migrations.
+
+## FAQs and more information
 
 To learn more about public folders, see [Public folders](public-folders.md).
 
-## FAQ about public folder migration
+For more information on public folder migrations, see:
 
-This section contains frequently asked questions about public folder migration. For more information, see [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md), [Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders), or [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md).
+- [Use batch migration to migrate Exchange 2010 public folders to Exchange 2016](batch-migration-from-previous-versions.md)
+- [Migrate public folders from Exchange 2013 to Exchange 2016 or Exchange 2019](migrate-from-exchange-2013.md)
+- [Use batch migration to migrate legacy public folders to Microsoft 365, Office 365, or Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/batch-migration-of-legacy-public-folders)
+- [Use batch migration to migrate Exchange Server public folders to Exchange Online](migrate-to-exchange-online.md)
+- [Use batch migration to migrate Exchange Server public folders to Microsoft 365 Groups](batch-migration-to-office-365-groups.md)
 
 ### What are the supported public folder migration scenarios?
 
 The following list details the available options for migrating public folders to Exchange or Exchange Online.
 
-- Exchange 2010 public folders (SP3 RU8 or later) can be migrated to Exchange 2016 or Exchange Online.
+- Exchange 2010 public folders (SP3 RU8 or later) can be migrated to Exchange 2016, Exchange Online, or Microsoft 365 groups.
 
-- Exchange 2013 public folders (CU15 or later) can be migrated to Exchange 2016, Exchange 2019, or Exchange Online.
+- Exchange 2013 public folders (CU15 or later) can be migrated to Exchange 2016, Exchange 2019, Exchange Online, or Microsoft 365 groups.
 
-- Exchange 2016 public folders (CU4 or later) can be migrated to Exchange Online.
+- Exchange 2016 public folders (CU4 or later) can be migrated to Exchange Online or Microsoft 365 groups.
 
-- Exchange 2019 public folders can be migrated to Exchange Online.
+- Exchange 2019 public folders can be migrated to Exchange Online or Microsoft 365 groups.
 
 Currently only migrations to Exchange 2016 or Exchange 2019 in the same Active Directory forest are supported. Cross-forest migrations will be supported in the future.
 
@@ -76,7 +84,7 @@ The currently supported Outlook clients for [Exchange Server](../../plan-and-dep
 
 Public folder access works from Outlook for Windows desktop and Outlook for Mac. However, smart phone client apps including Outlook for Android or Outlook for iOS do not support connecting to public folders.
 
-If you would like to have functionality similar to public folders with content accessible on mobile devices, consult [Learn about Office 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
+If you would like to have functionality similar to public folders with content accessible on mobile devices, consult [Learn about Microsoft 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
 
 ## Are there any limitations in the clients?
 
@@ -109,7 +117,7 @@ Run the following command:
 Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 ```
 
-For detailed syntax and parameter information, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/get-organizationconfig).
+For detailed syntax and parameter information, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig).
 
 ## How can I create content mailboxes for public folders using Exchange Management Shell cmdlets?
 
@@ -127,17 +135,17 @@ There's no longer a database-level setting. Instead, Exchange has a mailbox-leve
 
 ## How are public folder metric tools being used in Exchange?
 
-You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics) cmdlets to get public folder metrics data. This same solution hase been available since Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
+You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderitemstatistics) cmdlets to get public folder metrics data. This same solution hase been available since Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
 
 ## Can public folders distinguish between internal versus third-party access to public folders?
 
-Starting in Exchange 2013, public folder permissions are managed by using role-based access control (RBAC); access control lists (ACLs) no longer used. You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderstatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-publicfolderitemstatistics) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](https://technet.microsoft.com/library/fd268867-2ae5-441b-8103-7a7583eb2bbe.aspx).
+Starting in Exchange 2013, public folder permissions are managed by using role-based access control (RBAC); access control lists (ACLs) no longer used. You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderstatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/get-publicfolderitemstatistics) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help).
 
 ## Does mailbox audit logging work against public folders?
 
 No. Not at this time. 
 
-If you would like to have functionality similar to public folders with audit logging, consult [Learn about Office 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
+If you would like to have functionality similar to public folders with audit logging, consult [Learn about Microsoft 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) for an alternative.
 
 ## What are the limits on public folders? What are the recommendations?
 
@@ -153,7 +161,7 @@ Just like in previous versions of Exchange, you can set retention limits on item
 
 ## Can you specify which users can use a specific public folder mailbox?
 
-In Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013 or later, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) cmdlet with the _DefaultPublicFolderMailbox_ parameter. For example:
+In Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013 or later, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) cmdlet with the _DefaultPublicFolderMailbox_ parameter. For example:
 
 ```PowerShell
 Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"

@@ -138,5 +138,3 @@ As an Outlook Voice Access user, when you dial in to an Outlook Voice Access num
 ## For more information
 
 [Setting up Outlook Voice Access](set-up-outlook-voice-access.md)
-
-[Set Up Client Voice Mail Features](https://technet.microsoft.com/library/5e661cfd-d34e-4caa-91a5-967bbecb75eb.aspx)

@@ -60,7 +60,7 @@ For additional management tasks related to managing certificates for Unified Mes
 
 ## Use the Shell to export a certificate
 
-This example exports the certificate with the Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC to a file after it prompts you for a user name and password.
+This example exports the certificate with the Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC to a file after it prompts you for a username and password.
 
 ```powershell
 $file = Export-ExchangeCertificate -Thumbprint A36DE2B9B62980A717EBD0C3052F5F0B08FBFFCC -BinaryEncoded:$true -Password (Get-Credential).password
@@ -72,7 +72,7 @@ This example does the following:
 
 2. Uses the **Export-ExchangeCertificate** cmdlet to set the password for the certificate.
 
-3. Outputs the certificate to a file after you input the user name and password.
+3. Outputs the certificate to a file after you input the username and password.
 
    ```powershell
    $file = Get-ExchangeCertificate -DomainName umcorp.northwindtraders.com | Export-ExchangeCertificate -BinaryEncoded:$true -Password (Get-Credential).password
@@ -92,7 +92,7 @@ This example does the following:
 
 ## Use the Shell to import a certificate
 
-This example imports a certificate from the d:\\certificates\\exchange\\SelfSignedUMCert.pfx certificate file after you enter a user name and password.
+This example imports a certificate from the d:\\certificates\\exchange\\SelfSignedUMCert.pfx certificate file after you enter a username and password.
 
 ```powershell
 Import-ExchangeCertificate -FileData ([Byte[]]$(Get-Content -Path d:\certificates\exchange\SelfSignedUMCert.pfx -Encoding Byte -ReadCount 0)) -Password:(Get-Credential).password

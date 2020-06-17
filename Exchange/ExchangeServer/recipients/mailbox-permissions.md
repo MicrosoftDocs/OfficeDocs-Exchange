@@ -39,7 +39,7 @@ The permissions that you can assign to delegates for mailboxes and groups in Exc
 
 - You need to be assigned permissions before you can perform the procedures in this topic. To see what permissions you need, see the "Recipient provisioning permissions" entry in the [Recipients Permissions](../permissions/feature-permissions/recipient-permissions.md) topic.
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - Procedures in this topic require specific permissions. See each procedure for its permissions information.
 
@@ -116,13 +116,13 @@ You use the **Add-MailboxPermission** and **Remove-MailboxPermission** cmdlets t
 Add-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All [-AutoMapping $false]
 ```
 
-For more information, see [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-mailboxpermission).
+For more information, see [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/add-mailboxpermission).
 
 ```PowerShell
 Remove-MailboxPermission -Identity <MailboxIdentity> -User <DelegateIdentity> -AccessRights FullAccess -InheritanceType All
 ```
 
-For more information, see [Remove-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailboxpermission).
+For more information, see [Remove-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxpermission).
 
 This example assigns the delegate Raymond Sam the Full Access permission to the mailbox of Terry Adams.
 
@@ -160,7 +160,7 @@ To verify that you've successfully assigned or removed the Full Access permissio
    Get-MailboxPermission <MailboxIdentity> | where {$_.AccessRights -like 'Full*'} | Format-Table -Auto User,Deny,IsInherited,AccessRights
    ```
 
-   For more information, see [Get-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxpermission).
+   For more information, see [Get-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/get-mailboxpermission).
 
 ## Use the Exchange Management Shell to assign the Send As permission to mailboxes and groups
 
@@ -170,7 +170,7 @@ You use the **Add-AdPermission** and **Remove-AdPermission** cmdlets to manage t
 <Add-AdPermission | Remove-AdPermission> -Identity <MailboxOrGroupNameOrDN> -User <DelegateIdentity> [-AccessRights ExtendedRight] -ExtendedRights "Send As"
 ```
 
-For more information, see [Add-AdPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/add-adpermission) and [Remove-AdPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/remove-adpermission).
+For more information, see [Add-AdPermission](https://docs.microsoft.com/powershell/module/exchange/add-adpermission) and [Remove-AdPermission](https://docs.microsoft.com/powershell/module/exchange/remove-adpermission).
 
  **Notes**:
 
@@ -212,7 +212,7 @@ To verify that you've successfully assigned or removed the Send As permission fo
    Get-ADPermission -Identity <MailboxOrGroupNameOrDN> | where {$_.ExtendedRights -like 'Send*'} | Format-Table -Auto User,Deny,ExtendedRights
    ```
 
-   For more information, see [Get-AdPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/get-adpermission).
+   For more information, see [Get-AdPermission](https://docs.microsoft.com/powershell/module/exchange/get-adpermission).
 
 ## Use the Exchange Management Shell to assign the Send on Behalf permission to mailboxes and groups
 

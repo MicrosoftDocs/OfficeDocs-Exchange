@@ -37,7 +37,7 @@ To allow the affected users to connect to their mailboxes by using Outlook on th
 
   - The endpoint for the cloud mailboxes is external (it's not in the domain that users expect).
 
-  - The endpoint requires the domain in the URL (to distinguish between Office 365 business and outlook.com consumer offerings).
+  - The endpoint requires the domain in the URL (to distinguish between Microsoft 365 Apps for business and outlook.com consumer offerings).
 
   - The endpoint causes users to see certificate mismatch warnings.
 
@@ -62,7 +62,7 @@ To eliminate these issues for users with cloud mailboxes, perform the following 
    ```
 
    > [!NOTE]
-   > • Use http, not https. <br/>• The trailing value /owa is required in the organization relationship, but users don't need to enter /owa in the URL. <br/>• You can use the [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-organizationrelationship) cmdlet to find the organization relationship name.
+   > • Use http, not https. <br/>• The trailing value /owa is required in the organization relationship, but users don't need to enter /owa in the URL. <br/>• You can use the [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/get-organizationrelationship) cmdlet to find the organization relationship name.
 
 ## Multiple authentication prompts
 
@@ -84,4 +84,4 @@ The authentication prompt experience that users can expect is described in the f
 |With or without identity federation|Not domain joined (internal or external)|Double prompt|
 
 > [!NOTE]
-> Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in the topic [https://go.microsoft.com/fwlink/p/?linkid=834460](https://go.microsoft.com/fwlink/p/?linkid=834460), and that AD FS is configured per the general Office 365 guidance.
+> Identity federation requires that the AD FS endpoint is configured in the Intranet Zone of Internet Explorer as described in [KB2535227}(https://support.microsoft.com/help/2535227), and that AD FS is configured per the general Office 365 guidance.

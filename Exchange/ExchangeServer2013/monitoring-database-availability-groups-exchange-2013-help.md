@@ -21,7 +21,7 @@ You can use the details in this topic for monitoring the health and status of ma
 
 ## Get-MailboxDatabaseCopyStatus cmdlet
 
-You can use the [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/library/dd298044\(v=exchg.150\)) cmdlet to view status information about mailbox database copies. This cmdlet enables you to view information about all copies of a particular database, information about a specific copy of a database on a specific server, or information about all database copies on a server. The following table describes possible values for the copy status of a mailbox database copy.
+You can use the [Get-MailboxDatabaseCopyStatus](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabaseCopyStatus) cmdlet to view status information about mailbox database copies. This cmdlet enables you to view information about all copies of a particular database, information about a specific copy of a database on a specific server, or information about all database copies on a server. The following table describes possible values for the copy status of a mailbox database copy.
 
 ### Database copy status
 
@@ -128,11 +128,11 @@ This example returns the status for all database copies on the local Mailbox ser
 Get-MailboxDatabaseCopyStatus -Local | Format-List
 ```
 
-For more information about using the **Get-MailboxDatabaseCopyStatus** cmdlet, see [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/library/dd298044\(v=exchg.150\)).
+For more information about using the **Get-MailboxDatabaseCopyStatus** cmdlet, see [Get-MailboxDatabaseCopyStatus](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabaseCopyStatus).
 
 ## Test-ReplicationHealth cmdlet
 
-You can use the [Test-ReplicationHealth](https://technet.microsoft.com/library/bb691314\(v=exchg.150\)) cmdlet to view continuous replication status information about mailbox database copies. This cmdlet can be used to check all aspects of the replication and replay status to provide a complete overview of a specific Mailbox server in a DAG.
+You can use the [Test-ReplicationHealth](https://docs.microsoft.com/powershell/module/exchange/Test-ReplicationHealth) cmdlet to view continuous replication status information about mailbox database copies. This cmdlet can be used to check all aspects of the replication and replay status to provide a complete overview of a specific Mailbox server in a DAG.
 
 The **Test-ReplicationHealth** cmdlet is designed for the proactive monitoring of continuous replication and the continuous replication pipeline, the availability of Active Manager, and the health and status of the underlying cluster service, quorum, and network components. It can be run locally on or remotely against any Mailbox server in a DAG. The **Test-ReplicationHealth** cmdlet performs the tests listed in the following table.
 

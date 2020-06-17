@@ -22,11 +22,7 @@ manager: serdars
 
 Your organization might require that certain types of messages be blocked or rejected in order to meet legal or compliance requirements, or to implement specific business needs. This article discusses examples of common scenarios for blocking all attachments which you can set up using mail flow rules (also known mail flow rules) in Exchange Online.
 
-For additional examples showing how to block specific attachments, see:
-
-- [Using mail flow rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx) (Exchange Server)
-
-- [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md) (Exchange Online, Exchange Online Protection)
+For additional examples showing how to block specific attachments, see [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md).
 
 The malware filter includes a Common Attachment Types Filter. In the Exchange admin center (EAC), go to **Protection**, then click **New** ( ![Add Icon](../../media/ITPro_EAC_AddIcon.gif)) to add filters. In the Exchange Online portal, browse to **Protection**, and then select **Malware Filter**.
 
@@ -111,6 +107,4 @@ If you have a malware outbreak, you might want to apply a rule with a time limit
 
 [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md)
 
-[Mail flow rules (Exchange Server)](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
-
-[Mail flow rules (Exchange Online Protection)](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
+[Mail flow rules (Exchange Online Protection)](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-rules-transport-rules-0)

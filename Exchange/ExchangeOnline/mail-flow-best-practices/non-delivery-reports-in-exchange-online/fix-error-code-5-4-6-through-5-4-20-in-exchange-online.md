@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 81212ae4-4c36-4e8f-9546-e58b70cfd74b
 description: "Learn how to fix email issues for error code 5.4.6, 5.4.14, or other error codes related to mail routing loops in Exchange Online."
 ---
@@ -58,7 +59,7 @@ This error can happen when the MX record for your hybrid domain points to Exchan
 
 To fix the problem, configure a dedicated outbound connector that uses smart host routing and that has your on-premises hybrid server configured as a smart host. The easiest way to fix the problem is to re-run the Hybrid Configuration Wizard in your on-premises Exchange organization. Or, you can verify the configuration of the connector that's used for hybrid by following these steps:
 
-1. Open the Microsoft 365 portal at [https://portal.office.com](https://go.microsoft.com/fwlink/p/?LinkID=402333), and then click **Admin** \> **Exchange**.
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin centers** \> **Exchange** (you might need to click **...show all** first).
 
 2. In the Exchange admin center (EAC), click **Mail Flow** \> **Connectors**. In the **Outbound connectors** section, select the connector that's used for hybrid, and then click **Edit**.
 
@@ -66,7 +67,7 @@ To fix the problem, configure a dedicated outbound connector that uses smart hos
 
 #### You route all outgoing mail from Exchange Online through your on-premises hybrid server
 
-This configuration is controlled by the value of the _RouteAllMessagesViaOnPremises_ parameter on the outbound connector that's used for hybrid. When the value of this parameter is `$true`, you're routing all outgoing mail from Exchange Online through your on-premises hybrid server. You can verify this value by replacing \<Connector Name\> with your value and running the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell):
+This configuration is controlled by the value of the _RouteAllMessagesViaOnPremises_ parameter on the outbound connector that's used for hybrid. When the value of this parameter is `$true`, you're routing all outgoing mail from Exchange Online through your on-premises hybrid server. You can verify this value by replacing \<Connector Name\> with your value and running the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell):
 
 ```powershell
 Get-OutboundConnector -Identity "<Connector Name>" | Format-List Name,RouteAllMessagesViaOnPremises
@@ -80,7 +81,7 @@ In this configuration, the error is caused by either of the following issues on 
 
 To fix the problem, configure a dedicated inbound connector that has the **Connector Type** value *On-premises** and that's not scoped to any accepted domains. The easiest way to fix the problem is to re-run the Hybrid Configuration Wizard in the on-premises Exchange organization. Or, you can verify the configuration of the Inbound connector that's used for hybrid by following these steps:
 
-1. Open the Office 365 portal at [https://portal.office.com](https://go.microsoft.com/fwlink/p/?LinkID=402333), and then click **Admin** \> **Exchange**.
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin centers** \> **Exchange** (you might need to click **...show all** first).
 
 2. In the EAC, click **Mail Flow** \> **Connectors**. In the **Inbound connectors** section, select the connector that's used for hybrid, and then click **Edit** ![Edit icon](../../media/6f22ff21-4c94-4b91-a490-173a853c06e3.gif). Verify the following information:
 
@@ -110,7 +111,7 @@ Here are some of the error codes that are related to mail routing loops or a bad
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)]( https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

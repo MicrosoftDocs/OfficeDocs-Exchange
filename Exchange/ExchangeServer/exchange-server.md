@@ -59,7 +59,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
         </a>
     </li>
     <li>
-        <a href="https://go.microsoft.com/fwlink/p/?linkId=836274">
+        <a href="/Exchange/new-features/build-numbers-and-release-dates">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -134,7 +134,7 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
 
 ---
 <h2>Exchange Server Deployment Assistant</h2>
-<p>Have you heard about the Exchange Server Deployment Assistant? This free online tool helps you quickly deploy Exchange in your organization by asking you a few questions and creating a customized deployment checklist just for you. Try out the <a href="https://go.microsoft.com/fwlink/?linkid=626978">Exchange Server Deployment Assistant</a>.</p>
+<p>Have you heard about the Exchange Server Deployment Assistant? This free online tool helps you quickly deploy Exchange in your organization by asking you a few questions and creating a customized deployment checklist just for you. Try out the <a href="https://assistants.microsoft.com/">Exchange Server Deployment Assistant</a>.</p>
 
 <h2>Planning and deployment</h2>
 <ul class="panelContent cardsW">
@@ -180,4 +180,4 @@ Welcome to Microsoft Exchange Server! Here's some fundamental and essential info
 </ul>
 
 
-<p>Looking for information on prior versions of Exchange Server? Documentation for <a href="https://technet.microsoft.com/library/bb124558(EXCHG.141).aspx">Exchange Server 2010</a> and <a href="https://technet.microsoft.com/library/bb124558(v=exchg.150).aspx">Exchange Server 2013</a> is also available on TechNet.
+<p>Looking for information on prior versions of Exchange Server? Documentation for <a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124558(v=exchg.141)">Exchange Server 2010</a> and <a href="https://docs.microsoft.com/Exchange/exchange-server-2013-exchange-2013-help">Exchange Server 2013</a> is also available.

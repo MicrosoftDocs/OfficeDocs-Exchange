@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-These procedures show you how to remove a copy of a mailbox database. You can't use these procedures to remove the last copy of a mailbox database. For detailed steps about how to remove the last copy of a mailbox database, see [Remove a mailbox database](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md) or [Remove-MailboxDatabase](https://technet.microsoft.com/library/aa997931\(v=exchg.150\)).
+These procedures show you how to remove a copy of a mailbox database. You can't use these procedures to remove the last copy of a mailbox database. For detailed steps about how to remove the last copy of a mailbox database, see [Remove a mailbox database](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md) or [Remove-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Remove-MailboxDatabase).
 
 Looking for other management tasks related to mailbox database copies? Check out [Managing mailbox database copies](managing-mailbox-database-copies-exchange-2013-help.md).
 

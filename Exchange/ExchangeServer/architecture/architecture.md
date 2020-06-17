@@ -59,7 +59,7 @@ Exchange uses Mailbox servers and Edge Transport servers. These server roles are
   > [!NOTE]
   > Unified Messaging is not available in Exchange 2019.
 
-- You manage Mailbox servers by using the Exchange admin center (EAC) and the Exchange Management Shell. For more information, see [Exchange admin center in Exchange Server](client-access/exchange-admin-center.md) and [Exchange Server PowerShell (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell).
+- You manage Mailbox servers by using the Exchange admin center (EAC) and the Exchange Management Shell. For more information, see [Exchange admin center in Exchange Server](client-access/exchange-admin-center.md) and [Exchange Server PowerShell (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-management-shell).
 
 ### Edge Transport servers
 
@@ -69,7 +69,7 @@ Exchange uses Mailbox servers and Edge Transport servers. These server roles are
 
 - Edge Transport servers provide antispam and mail flow rules as mail enters and leaves your Exchange organization. For more information, see [Antispam protection in Exchange Server](../antispam-and-antimalware/antispam-protection/antispam-protection.md)
 
-- You manage Edge Transport servers by using the Exchange Management Shell. For more information, see [Exchange Server PowerShell (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell).
+- You manage Edge Transport servers by using the Exchange Management Shell. For more information, see [Exchange Server PowerShell (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-management-shell).
 
 For more information about Edge Transport servers, see [Edge Transport servers](edge-transport-servers/edge-transport-servers.md).
 

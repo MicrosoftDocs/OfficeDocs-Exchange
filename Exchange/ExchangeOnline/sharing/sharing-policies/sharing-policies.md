@@ -34,7 +34,7 @@ After you create a new sharing policy, you have to apply that policy to mailboxe
 
 Users share their calendar by sending an email invitation to the external user. Outlook 2010 or later or Outlook on the web (formerly known as Outlook Web App) users can send this type of invitation. The calendar can be opened through a URL link, or can be accessed as an additional calendar folder if the external user has Outlook 2010 or later or is using Outlook on the web.
 
-These topics will help you learn how to manage sharing policies for your Office 365 organization:
+These topics will help you learn how to manage sharing policies for your Microsoft 365 or Office 365 organization:
 
 [Create a sharing policy in Exchange Online](create-a-sharing-policy.md)
 

@@ -25,10 +25,10 @@ manager: serdars
 Facebook contact synchronization lets people set up a connection between their Facebook account and their Office 365 account by using Outlook on the web (formerly known as Outlook Web App). After they set up a Facebook connection, all their Facebook friends are listed as contacts in People in Office 365. They can then interact with their Facebook friends as they do with their other contacts. Facebook contact sync is turned on by default if the feature is available in your region.
 
 > [!TIP]
-> As an administrator, you probably want to keep Facebook contact sync turned on if your organization uses Facebook for business purposes, such as networking and marketing. Turn it off if you don't want your users to download their Facebook friends as contacts in Outlook on the web. For information about how people set up Facebook contact sync, see [Add Facebook friends as contacts](https://go.microsoft.com/fwlink/p/?LinkId=280217).
-
-> [!NOTE]
-> The features that are available to your Office 365 organization are determined by the service plan for your account. Some features aren't available to mailboxes or organizations in specific regions.
+> 
+> - As an administrator, you probably want to keep Facebook contact sync turned on if your organization uses Facebook for business purposes, such as networking and marketing. Turn it off if you don't want your users to download their Facebook friends as contacts in Outlook on the web. For information about how people set up Facebook contact sync, see [Manage Facebook contact sync in your organization](manage-facebook-contact-sync.md).
+> 
+> - The features that are available to your Microsoft 365 or Office 365 organization are determined by the service plan for your account. Some features aren't available to mailboxes or organizations in specific regions.
 
 ## Turn Facebook contact sync on or off
 

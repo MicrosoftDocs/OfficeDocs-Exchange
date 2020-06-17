@@ -45,7 +45,7 @@ You can also create user mailboxes for existing users that have an Active Direct
 3. On the **New user mailbox** page, in the **Alias** box, type the user's alias, which specifies the email alias for the user. The user's alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
 
     > [!NOTE]
-    > If you leave this box blank, the value from the user name portion of the <STRONG>User logon name</STRONG> is used for the email alias.
+    > If you leave this box blank, the value from the username portion of the <STRONG>User logon name</STRONG> is used for the email alias.
 
 4. Select one of the following options:
 
@@ -74,10 +74,10 @@ You can also create user mailboxes for existing users that have an Active Direct
 
         To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the desired OU, and then click **OK**.
 
-   - **\* User logon name**    Use this box to type the name that the user will use to sign in to the mailbox and to log on to the domain. The user logon name consists of a user name on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name in which the user account resides. Note that you can't use an apostrophe (') or a quotation mark (") in the user logon name because these characters aren't supported.
+   - **\* User logon name**    Use this box to type the name that the user will use to sign in to the mailbox and to log on to the domain. The user logon name consists of a username on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name in which the user account resides. Note that you can't use an apostrophe (') or a quotation mark (") in the user logon name because these characters aren't supported.
 
         > [!NOTE]
-        > If the value for the user name is different than the value used in the <STRONG>Alias</STRONG> box, then the user's email address and the user logon name will be different.
+        > If the value for the username is different than the value used in the <STRONG>Alias</STRONG> box, then the user's email address and the user logon name will be different.
 
    - **\* New Password**: Use this box to type the password that the user must use to sign in to his or her mailbox.
 
@@ -126,7 +126,7 @@ This example creates a new user account and mailbox for Pilar Pinilla with the f
 New-Mailbox -Alias pilarp -Name "Pilar Pinilla" -FirstName Pilar -LastName Pinilla -DisplayName "Pilar Pinilla" -UserPrincipalName pilarp@contoso.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
 ```
 
-For syntax and parameter information, see [New-Mailbox](https://technet.microsoft.com/library/aa997663\(v=exchg.150\)).
+For syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/New-Mailbox).
 
 ## How do you know this worked?
 
@@ -153,7 +153,7 @@ You can also create user mailboxes for existing users that have an Active Direct
 3. On the **New user mailbox** page, in the **Alias** box, type the user's alias, which specifies the email alias for the user. The user's alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
 
     > [!NOTE]
-    > If you leave this box blank, the value from the user name portion of the <STRONG>User logon name</STRONG> is used for the email alias.
+    > If you leave this box blank, the value from the username portion of the <STRONG>User logon name</STRONG> is used for the email alias.
 
 4. Click **Existing user**.
 
@@ -196,7 +196,7 @@ For example, the following command mailbox-enables users who aren't already mail
 Get-User -RecipientTypeDetails User -Filter "UserPrincipalName -ne `$Null" | Enable-Mailbox
 ```
 
-For syntax and parameter information, see [Enable-Mailbox](https://technet.microsoft.com/library/aa998251\(v=exchg.150\)) and [Get-User](https://technet.microsoft.com/library/aa996896\(v=exchg.150\)).
+For syntax and parameter information, see [Enable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Enable-Mailbox) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/Get-User).
 
 For more information about pipelining, see [about_Pipelines](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines).
 

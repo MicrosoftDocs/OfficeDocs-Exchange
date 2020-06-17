@@ -50,7 +50,7 @@ Read more about Receive connectors in Exchange Server see, [Receive connectors](
 
 - The Exchange admin center (EAC) procedures are only available on Mailbox servers. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
 
-- The Exchange Management Shell procedures are available on Mailbox servers and Edge Transport servers. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- The Exchange Management Shell procedures are available on Mailbox servers and Edge Transport servers. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Receive connectors" entry in the [Mail flow permissions](../../permissions/feature-permissions/mail-flow-permissions.md) topic.
 
@@ -132,7 +132,7 @@ New-ReceiveConnector -Name "Internet Receive Connector" -TransportRole Frontend 
 
 **Note**: To run this command on an Edge Transport server, omit the _TransportRole_ parameter.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-receiveconnector).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/new-receiveconnector).
 
 ### How do you know this worked?
 
@@ -214,7 +214,7 @@ New-ReceiveConnector -Name "Fabrikam.com TLS" -TransportRole Frontend -Partner -
 
  **Note**: To run this command on an Edge Transport server, omit the _TransportRole_ parameter.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-receiveconnector).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/new-receiveconnector).
 
 ### How do you know this worked?
 
@@ -320,7 +320,7 @@ New-ReceiveConnector -Name "Inbound From Service" -TransportRole Frontend -Custo
 
 **Note**: To run this command on an Edge Transport server, omit the _TransportRole_ parameter.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-receiveconnector).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/new-receiveconnector).
 
 ### How do you know this worked?
 
@@ -358,7 +358,7 @@ New-ReceiveConnector -Name "Inbound From Organization" -Internal -RemoteIPRanges
 
 **Note**: If your Edge Transport server uses different network adapters for internal and external networks, be sure to use the _Bindings_ parameter on the **Set-ReceiveConnector** cmdlet after you create the connector to specify the correct local IP address for the connector.
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-receiveconnector).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/new-receiveconnector).
 
 ### How do you know this worked?
 

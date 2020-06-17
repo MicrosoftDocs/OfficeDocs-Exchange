@@ -22,7 +22,7 @@ You can use the RollAlternateServiceAccountPassword.ps1 script in Exchange Serve
 > [!NOTE]
 > The Exchange Management Shell doesn't load scripts automatically. You need to precede all scripts with **.\\** For example, to run the RollAlternateServiceAccountPassword.ps1 script, type `.\RollAlternateServiceAccountPassword.ps1`. <br/><br/> This script is provided in English only.
 
-For more information about how to use and write scripts, see [Scripting with the Exchange Management Shell](https://technet.microsoft.com/library/bb123798\(v=exchg.150\)).
+For more information about how to use and write scripts, see [Scripting with the Exchange Management Shell](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_scripts).
 
 ## Syntax
 

@@ -64,11 +64,7 @@ The path you need to follow to install Exchange 2013 in your organization depend
 </tbody>
 </table>
 
-When upgrading to Exchange 2010 or Exchange 2013, you can use the Exchange Deployment Assistant to help you complete your deployment. For more information, see the following links:
-
-  - [Exchange 2010 Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=171086)
-
-  - [Exchange 2013 Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=277105)
+When upgrading to Exchange 2013 or later, you can use the Exchange Deployment Assistant to help complete your deployment. For more information, see [Exchange Deployment Assistant](https://assistants.microsoft.com/).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 

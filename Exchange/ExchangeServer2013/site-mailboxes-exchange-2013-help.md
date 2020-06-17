@@ -23,7 +23,7 @@ The *site mailbox* is a new concept in Microsoft Exchange 2013 that attempts to 
 
 Site mailboxes require Exchange 2013 and SharePoint Server 2013 integration and configuration. For more information about how to configure your Exchange 2013 organization to work with your SharePoint Server 2013 organization, see the following topics:
 
-- [Configure site mailboxes in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?linkid=258264).
+- [Configure site mailboxes in SharePoint Server 2013](https://docs.microsoft.com/SharePoint/administration/configure-site-mailboxes-in-sharepoint).
 
 - [Integration with SharePoint and Lync](integration-with-sharepoint-and-lync-exchange-2013-help.md)
 
@@ -92,7 +92,7 @@ Site mailboxes don't support retention at the item-level. Retention works on a p
 Using the eDiscovery Console in SharePoint, site mailboxes can be part of the In-Place eDiscovery scope as you can do keyword searches against user mailboxes or site mailboxes. In addition, you can put a site mailbox on legal hold. For more info, see [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
 
 > [!NOTE]
-> To place a site mailbox on legal hold in Office 365, it must be assigned an Exchange Online (Plan 2) license. If a site mailbox is assigned an Exchange Online (Plan 1) license, you would have to assign it a separate Exchange Online Archiving license to place it on hold.
+> To place a site mailbox on legal hold in Microsoft 365 or Office 365, it must be assigned an Exchange Online (Plan 2) license. If a site mailbox is assigned an Exchange Online (Plan 1) license, you would have to assign it a separate Exchange Online Archiving license to place it on hold.
 
 ## Backup and restore
 

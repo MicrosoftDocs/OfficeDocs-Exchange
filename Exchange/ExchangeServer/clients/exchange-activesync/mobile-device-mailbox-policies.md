@@ -20,9 +20,6 @@ manager: serdars
 
 In Exchange Server, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. After you deploy Exchange ActiveSync in your Exchange Server organization, you can create new mobile device mailbox policies or modify existing policies. When you install Exchange Server, a default mobile device mailbox policy is created. All users are automatically assigned this default mobile device mailbox policy.
 
-> [!NOTE]
-> Apple Touch ID and Face ID are not supported as a substitute for a device password. If you enable Touch ID or Face ID to secure your iOS device, you must still create and enter a password if your mobile device mailbox policies require a password.
-
 ## Overview of mobile device mailbox policies
 
 You can use mobile device mailbox policies to manage many different settings. These include the following:
@@ -43,38 +40,11 @@ For more information about all the settings you can configure, see Mobile device
 
 Exchange ActiveSync is a client protocol that lets you synchronize a mobile device with your Exchange mailbox. Exchange ActiveSync is enabled by default when you install Exchange Server.
 
-> [!IMPORTANT]
-> Most Windows mobile phones support only a subset of all Exchange ActiveSync mailbox policy settings. For a complete list, see [Windows Phone synchronization](#windows-phone-synchronization).
-
 You can create mobile device mailbox policies in the Exchange admin center (EAC) or the Exchange Management Shell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using the Exchange Management Shell.
 
-## Windows Phone synchronization
+## Mobile device password settings and biometrics
 
-If you have Windows mobile phones in your organization, these phones will experience synchronization problems unless certain Exchange ActiveSync mailbox policy properties are configured. To allow Windows mobile phones to synchronize with an Exchange mailbox, either set the **AllowNonProvisionableDevices** property to True or only configure the following Exchange ActiveSync mailbox policy properties:
-
-- AllowSimplePassword
-
-- BlockInternetSharing
-
-- BlockRemoteDesktop
-
-- DisableDesktopSync
-
-- DisableIrDA
-
-- DisableRemovableStorage
-
-- DeviceWipeThreshold
-
-- MinPasswordLength
-
-- IdleTimeoutFrequencyValue
-
-- PasswordExpiration
-
-- PasswordHistory
-
-- PasswordRequired
+Many mobile devices support biometrics such as Apple Touch ID or Face ID. Exchange mobile device mailbox policies do not control whether biometrics can be used instead of typing the device PIN. Mobile device mailbox policies can be configured to require a device PIN, but then the users control whether they use biometrics after complying with the device PIN requirement.
 
 ## Mobile device password settings and Android
 

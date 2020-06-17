@@ -205,51 +205,51 @@ There are 12 cmdlets used for managed availability, which are described in the f
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/jj218703(v=exchg.150)">Get-ServerHealth</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Get-ServerHealth">Get-ServerHealth</a></p></td>
 <td><p>Used to get raw server health information, such as health sets and their current state (healthy or unhealthy), health set monitors, server components, target resources for probes, and timestamps related to probe or monitor start or stop times, and state transition times.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/jj218724(v=exchg.150)">Get-HealthReport</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Get-HealthReport">Get-HealthReport</a></p></td>
 <td><p>Used to get a summary health view that includes health sets and their current state.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/jj218668(v=exchg.150)">Get-MonitoringItemIdentity</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Get-MonitoringItemIdentity">Get-MonitoringItemIdentity</a></p></td>
 <td><p>Used to view the probes, monitors, and responders associated with a specific health set.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/jj218642(v=exchg.150)">Get-MonitoringItemHelp</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Get-MonitoringItemHelp">Get-MonitoringItemHelp</a></p></td>
 <td><p>Used to view descriptions about some of the properties of probes, monitors, and responders.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/jj218628(v=exchg.150)">Add-ServerMonitoringOverride</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Add-ServerMonitoringOverride">Add-ServerMonitoringOverride</a></p></td>
 <td><p>Used to create a local, server-specific override of a probe, monitor, or responder.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/jj218664(v=exchg.150)">Get-ServerMonitoringOverride</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Get-ServerMonitoringOverride">Get-ServerMonitoringOverride</a></p></td>
 <td><p>Used to view a list of local overrides on the specified server.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/dn482411(v=exchg.150)">Remove-ServerMonitoringOverride</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Remove-ServerMonitoringOverride">Remove-ServerMonitoringOverride</a></p></td>
 <td><p>Used to remove a local override from a specific server.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/jj218683(v=exchg.150)">Add-GlobalMonitoringOverride</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Add-GlobalMonitoringOverride">Add-GlobalMonitoringOverride</a></p></td>
 <td><p>Used to create a global override for a group of servers.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/jj218627(v=exchg.150)">Get-GlobalMonitoringOverride</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Get-GlobalMonitoringOverride">Get-GlobalMonitoringOverride</a></p></td>
 <td><p>Used to view a list of global overrides configured in the organization.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/jj218675(v=exchg.150)">Remove-GlobalMonitoringOverride</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Remove-GlobalMonitoringOverride">Remove-GlobalMonitoringOverride</a></p></td>
 <td><p>Used to remove a global override.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/jj218699(v=exchg.150)">Set-ServerComponentState</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Set-ServerComponentState">Set-ServerComponentState</a></p></td>
 <td><p>Used to configure the state of one or more server components.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/jj218713(v=exchg.150)">Get-ServerComponentState</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Get-ServerComponentState">Get-ServerComponentState</a></p></td>
 <td><p>Used to view the state of one or more server components.</p></td>
 </tr>
 </tbody>

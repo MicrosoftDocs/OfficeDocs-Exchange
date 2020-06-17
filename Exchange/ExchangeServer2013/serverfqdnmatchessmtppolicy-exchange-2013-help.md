@@ -35,7 +35,7 @@ To resolve this issue, rename the local computer or remove or rename the recipie
 
 2. On the **Computer Name** tab, click **Change**.
 
-3. Under **Computer name**, type a new name for the computer, and then click **OK**. You will be prompted to provide a user name and user password to rename the computer in the domain.
+3. Under **Computer name**, type a new name for the computer, and then click **OK**. You will be prompted to provide a username and user password to rename the computer in the domain.
 
 4. Click **OK** to close the **System Properties** dialog box. You will be prompted to restart your computer to apply your changes.
 
@@ -51,5 +51,3 @@ To resolve this issue, rename the local computer or remove or rename the recipie
 3. Double-click the policy that you want to change.
 
 4. Click the **E-Mail Addresses** tab, and then change the appropriate SMTP address
-
-For more information about Recipient Policy naming issues, see Microsoft Knowledge Base article 288175, "XCON: Recipient Policy Cannot Match the FQDN of Any Server in the Organization, 5.4.8 NDRs" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=288175](https://go.microsoft.com/fwlink/?linkid=3052&kbid=288175)).

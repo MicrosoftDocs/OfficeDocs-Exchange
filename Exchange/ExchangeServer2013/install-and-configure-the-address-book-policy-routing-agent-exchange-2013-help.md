@@ -21,7 +21,7 @@ The Address Book Policy Routing agent is a Transport agent that runs on the Mail
 
 For additional management tasks related to ABPs, see [Address book policy procedures](address-book-policy-procedures-exchange-2013-help.md).
 
-Looking for the Exchange Online version of this topic? See [Turn on address book policy routing](https://technet.microsoft.com/library/jj891095\(v=exchg.150\)).
+Looking for the Exchange Online version of this topic? See [Turn on address book policy routing](https://docs.microsoft.com/Exchange/address-books/address-book-policies/turn-on-address-book-policy-routing).
 
 ## What do you need to know before you begin?
 
@@ -48,7 +48,7 @@ Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microso
 
 You'll get a warning that the Transport service needs to be restarted for your changes to take effect, but perform Step 2 first so you only have to restart the Transport service once.
 
-For detailed syntax and parameter information, see [Install-TransportAgent](https://technet.microsoft.com/library/aa997998\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Install-TransportAgent](https://docs.microsoft.com/powershell/module/exchange/Install-TransportAgent).
 
 ## Step 2: Enable the Transport Routing agent
 
@@ -60,7 +60,7 @@ After the ABP Routing agent is installed, you need to enable it by running the f
 Enable-TransportAgent "ABP Routing Agent"
 ```
 
-For detailed syntax and parameter information, see [Enable-TransportAgent](https://technet.microsoft.com/library/bb124921\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Enable-TransportAgent](https://docs.microsoft.com/powershell/module/exchange/Enable-TransportAgent).
 
 ## Step 3: Restart the Transport service and verify the ABP Routing agent is installed and enabled
 
@@ -80,7 +80,7 @@ You need to be assigned permissions before you can perform this procedure or pro
 
     If the ABP Routing agent is listed, the agent has been correctly installed.
 
-For detailed syntax and parameter information, see [Get-TransportAgent](https://technet.microsoft.com/library/bb123536\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-TransportAgent](https://docs.microsoft.com/powershell/module/exchange/Get-TransportAgent).
 
 ## Step 4: Enable the ABP Routing agent
 
@@ -92,4 +92,4 @@ The final step in this process is to enable ABP routing for the organization. Ru
 Set-TransportConfig -AddressBookPolicyRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-TransportConfig](https://technet.microsoft.com/library/bb124151\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/Set-TransportConfig).

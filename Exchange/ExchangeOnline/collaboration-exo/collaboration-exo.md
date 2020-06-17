@@ -40,7 +40,7 @@ To learn more, see [Public folders in Office 365 and Exchange Online](public-fol
 
 A shared mailbox is a mailbox that multiple designated users can access to read and send email messages and to share a common calendar. Shared mailboxes can provide a generic email address (such as info@contoso.com or sales@contoso.com) that customers can use to inquire about your company. If the shared mailbox has the Send As permission assigned when a delegated user responds to the email message, it can appear as though the mailbox (for example, sales@contoso.com) is responding, not the actual user.
 
-To learn more, see [Shared Mailboxes](https://technet.microsoft.com/library/1d71c01b-e261-408e-a633-1d1c9d00032a.aspx).
+To learn more, see [Shared mailboxes in Exchange Online](shared-mailboxes.md).
 
 ## Groups
 <a name="Groups"> </a>

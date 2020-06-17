@@ -60,4 +60,4 @@ This example performs a server switchover of the Mailbox server MBX4. When the c
 Move-ActiveMailboxDatabase -Server MBX4 -ActivateOnServer MBX5
 ```
 
-For detailed syntax and parameter information, see [Move-ActiveMailboxDatabase](https://technet.microsoft.com/library/dd298068\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Move-ActiveMailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Move-ActiveMailboxDatabase).

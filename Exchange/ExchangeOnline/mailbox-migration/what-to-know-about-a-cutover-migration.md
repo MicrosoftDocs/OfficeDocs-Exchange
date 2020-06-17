@@ -49,14 +49,14 @@ Setting up an email cutover migration to Office 365 requires careful planning. B
 
 - A maximum of 2,000 mailboxes can be migrated to Office 365 by using a cutover Exchange migration. However, it is recommended that you only migrate 150 mailboxes.
 
-- The primary domain name used for your on-premises Exchange organization must be an accepted as a domain owned by you in your Office 365 organization.
+- The primary domain name used for your on-premises Exchange organization must be an accepted as a domain owned by you in your Microsoft 365 or Office 365 organization.
 
 - After the migration is complete, each user who has an on-premises Exchange mailbox also will be a new user in Office 365. But you'll still have to assign licenses to users whose mailboxes are migrated.
 
 ## Impact to users
 <a name="Impacttousers"> </a>
 
-After your on-premises and Office 365 organizations are set up for a cutover migration, post-setup tasks could impact your users.
+After your on-premises and Microsoft 365 or Office 365 organizations are set up for a cutover migration, post-setup tasks could impact your users.
 
 - **Administrators or users must configure desktop computers**: Make sure that desktop computers are updated and set up for use with Office 365. These actions allow users to use local user credentials to sign in to Office 365 from desktop applications. Users with permission to install applications can update and set up their own desktops. Or updates can be installed for them. After updates are made, users can send email from Outlook 2013, Outlook 2010, or Outlook 2007.
 
@@ -105,4 +105,4 @@ If you're ready to begin a cutover migration, go to [Perform a cutover migration
 
 [Ways to migrate email to Office 365](mailbox-migration.md)
 
-[Use PowerShell to perform a cutover migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615253)
+[Use PowerShell to perform a cutover migration to Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-a-cutover-migration-to-office-365)

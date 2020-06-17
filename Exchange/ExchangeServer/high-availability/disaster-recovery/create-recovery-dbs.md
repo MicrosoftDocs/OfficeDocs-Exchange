@@ -20,7 +20,7 @@ manager: serdars
 
 # Create a recovery database
 
-You can use the Exchange Management Shell to create a recovery database, a special kind of mailbox database that's used to mount and extract data from the restored database as part of a recovery operation. After you create a recovery database, you can move a recovered or restored mailbox database into the recovery database, and then use the [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailboxrestorerequest) cmdlet to extract data from the recovered database. After extraction, the data can then be exported to a folder or merged into an existing mailbox. Using recovery databases, you can recover data from a backup or copy of a database without disrupting user access to current data.
+You can use the Exchange Management Shell to create a recovery database, a special kind of mailbox database that's used to mount and extract data from the restored database as part of a recovery operation. After you create a recovery database, you can move a recovered or restored mailbox database into the recovery database, and then use the [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/new-mailboxrestorerequest) cmdlet to extract data from the recovered database. After extraction, the data can then be exported to a folder or merged into an existing mailbox. Using recovery databases, you can recover data from a backup or copy of a database without disrupting user access to current data.
 
 Looking for other management tasks related to recovery databases? Check out [Recovery databases](recovery-databases.md).
 
@@ -49,7 +49,7 @@ This example creates the recovery database RDB2 on the Mailbox server MBX1 using
 New-MailboxDatabase -Recovery -Name RDB2 -Server MBX1 -EdbFilePath "C:\Recovery\RDB2\RDB2.EDB" -LogFolderPath "C:\Recovery\RDB2"
 ```
 
-For detailed syntax and parameter information, see [New-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/new-mailboxdatabase).
+For detailed syntax and parameter information, see [New-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/new-mailboxdatabase).
 
 ## How do you know this worked?
 

@@ -21,7 +21,7 @@ manager: serdars
 Add-ins for Outlook are applications that extend the usefulness of Outlook clients by adding information or tools that your users can use without having to leave Outlook. Add-ins are built by third-party developers and can be installed either from a file or URL or from the Office Store. By default, all users can install add-ins. Exchange Online admins can control whether users can install add-ins for Office.
 
 > [!TIP]
-> For information about add-ins for Outlook from an end-user perspective, check out the Help topic [Installed add-ins](https://go.microsoft.com/fwlink/p/?LinkId=282387) at Office.com. That topic provides an overview of the add-ins and also shows you some of the add-ins for Outlook that might be installed by default.
+> For information about add-ins for Outlook from an end-user perspective, check out [Installed add-ins](https://support.microsoft.com/office/a61762b7-7a82-47bd-b14e-bbc15eaeb70f). The topic provides an overview of the add-ins and also shows you some of the add-ins for Outlook that might be installed by default.
 
 ## Office Store add-ins and custom add-ins
 

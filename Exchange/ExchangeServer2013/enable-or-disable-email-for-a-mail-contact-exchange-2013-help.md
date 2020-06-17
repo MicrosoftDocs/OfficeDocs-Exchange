@@ -58,7 +58,7 @@ This example disables email for the mail contact Neil Black.
 Disable-MailContact -Identity "Neil Black"
 ```
 
-For detailed syntax and parameter information, see [Disable-MailContact](https://technet.microsoft.com/library/aa997465\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Disable-MailContact](https://docs.microsoft.com/powershell/module/exchange/Disable-MailContact).
 
 ## How do you know this worked?
 

@@ -25,9 +25,9 @@ First, some background. Every computer that is on the Internet has a Domain Name
 
 A computer running Windows in an Active Directory domain has both a DNS domain name and a NetBIOS domain name, as follows:
 
-  - **DNS domain name**: The DNS domain name consists of one or more subdomains separated by a dot (**.**) and is terminated by a top-level domain name. For example, in the DNS domain name corp.contoso.com, the subdomains are corp and contoso and the top-level domain name is com.
+- **DNS domain name**: The DNS domain name consists of one or more subdomains separated by a dot (**.**) and is terminated by a top-level domain name. For example, in the DNS domain name corp.contoso.com, the subdomains are corp and contoso and the top-level domain name is com.
 
-  - **NetBIOS domain name**: Typically, the NetBIOS domain name is the subdomain of the DNS domain name. For example, if the DNS domain name is contoso.com, the NetBIOS domain name is contoso. If the DNS domain name is corp.contoso.com, the NetBIOS domain name is corp.
+- **NetBIOS domain name**: Typically, the NetBIOS domain name is the subdomain of the DNS domain name. For example, if the DNS domain name is contoso.com, the NetBIOS domain name is contoso. If the DNS domain name is corp.contoso.com, the NetBIOS domain name is corp.
 
 > [!NOTE]
 > To find DNS and NetBIOS information for computers running Windows Server 2008, see View DNS and NetBIOS name-related information of a computer running Windows Server 2008.
@@ -48,11 +48,11 @@ A disjoint namespace scenario is one in which the primary DNS suffix of a comput
 
 Exchange 2013 supports the following three scenarios for deploying Exchange in a domain that has a disjoint namespace:
 
-  - **Primary DNS suffix and DNS domain name are different**: The primary DNS suffix of the domain controller isn't the same as the DNS domain name. Computers that are members of the domain can be either disjoint or not disjoint.
+- **Primary DNS suffix and DNS domain name are different**: The primary DNS suffix of the domain controller isn't the same as the DNS domain name. Computers that are members of the domain can be either disjoint or not disjoint.
 
-  - **Member computer is disjoint**: A member computer in an Active Directory domain is disjoint, even though the domain controller is not disjoint.
+- **Member computer is disjoint**: A member computer in an Active Directory domain is disjoint, even though the domain controller is not disjoint.
 
-  - **NetBIOS name of domain controller differs from subdomain of its DNS domain name**: The NetBIOS domain name of the domain controller isn't the same as the subdomain of the DNS domain name of that domain controller.
+- **NetBIOS name of domain controller differs from subdomain of its DNS domain name**: The NetBIOS domain name of the domain controller isn't the same as the subdomain of the DNS domain name of that domain controller.
 
 These scenarios are detailed in the following sections.
 
@@ -77,15 +77,9 @@ In this scenario, the NetBIOS domain name of the domain controller isn't the sam
 
 ## Allow Exchange 2013 servers to access domain controllers that are disjoint
 
-To allow Exchange 2013 servers to access domain controllers that are disjoint, you must modify the **msDS-AllowedDNSSuffixes** Active Directory attribute on the domain object container. You must add both of the DNS suffixes to the attribute. For detailed steps about how to modify the attribute, see [The computer's primary DNS suffix does not match the FQDN of the domain where it resides](https://go.microsoft.com/fwlink/p/?linkid=98848).
+To allow Exchange 2013 servers to access domain controllers that are disjoint, you must modify the **msDS-AllowedDNSSuffixes** Active Directory attribute on the domain object container. You must add both of the DNS suffixes to the attribute. For detailed steps about how to modify the attribute, see [The computer's primary DNS suffix does not match the FQDN of the domain where it resides](https://docs.microsoft.com/previous-versions/office/exchange-server-analyzer/aa998420(v=exchg.80)).
 
-In addition, to make sure that the DNS suffix search list contains all DNS namespaces that are deployed within the organization, you must configure the search list for each computer in the domain that is disjoint. The list of namespaces should include not only the primary DNS suffix of the domain controller and the DNS domain name, but also any additional namespaces for other servers with which Exchange may interoperate (such as monitoring servers or servers for third-party applications). You can do this by setting Group Policy for the domain. For more information about Group Policy, see the following topics:
-
-  - [Group Policy Frequently Asked Questions (FAQ)](https://go.microsoft.com/fwlink/p/?linkid=100128)
-
-  - [New group policies for DNS in Windows Server 2003](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=294785)
-
-  - [Group Policy](https://go.microsoft.com/fwlink/p/?linkid=268043)
+In addition, to make sure that the DNS suffix search list contains all DNS namespaces that are deployed within the organization, you must configure the search list for each computer in the domain that is disjoint. The list of namespaces should include not only the primary DNS suffix of the domain controller and the DNS domain name, but also any additional namespaces for other servers with which Exchange may interoperate (such as monitoring servers or servers for third-party applications). You can do this by setting Group Policy for the domain. For more information about Group Policy, see [Group Policy Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831791(v=ws.11)).
 
 For detailed steps about how to configure the DNS suffix search list Group Policy, see [Configure the DNS suffix search list for a disjoint namespace](configure-the-dns-suffix-search-list-for-a-disjoint-namespace-exchange-2013-help.md).
 

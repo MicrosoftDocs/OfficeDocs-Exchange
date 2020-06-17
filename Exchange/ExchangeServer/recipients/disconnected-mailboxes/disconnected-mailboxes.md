@@ -67,7 +67,7 @@ Here are scenarios in which you may want to connect or restore a disabled mailbo
 
 - You disabled a mailbox and now want to reconnect the mailbox to the same Active Directory user account.
 
-- You deleted a mailbox by using the EAC or the [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailbox) cmdlet and now want to reconnect the mailbox to a different Active Directory user account.
+- You deleted a mailbox by using the EAC or the [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/remove-mailbox) cmdlet and now want to reconnect the mailbox to a different Active Directory user account.
 
 - You deleted a mailbox and now want to restore the mailbox to an existing mailbox. For example, if a user whose mailbox was deleted has a new mailbox, you can restore the user's disabled mailbox to their new mailbox.
 
@@ -116,7 +116,7 @@ You can perform two operations on a soft-deleted mailbox:
 
 The procedures for restoring and permanently deleting a soft-deleted mailbox are similar to those for a disabled mailbox. For more information, see the following topics:
 
-- [Restore a Soft-Deleted Mailbox](https://technet.microsoft.com/library/4f3f5ce4-9d12-4ed8-9f70-d8a6aa8a1b2e.aspx)
+- [Connect or restore a deleted mailbox](restore-deleted-mailboxes.md)
 
 - [Permanently delete a mailbox](permanently-delete-mailboxes.md)
 
@@ -141,6 +141,5 @@ The following table contains links to topics that will help you manage disconnec
 |[Disable or delete a mailbox in Exchange Server](disable-or-delete-mailboxes.md)|Learn how to disable or delete mailboxes.|
 |[Connect a disabled mailbox](connect-disabled-mailboxes.md)|Learn how to connect a disabled mailbox to an existing user account.|
 |[Connect or restore a deleted mailbox](restore-deleted-mailboxes.md)|Learn how to connect a deleted mailbox to a user account or restore the contents of a deleted mailbox to an existing mailbox.|
-|[Connect or Restore a Soft-Deleted Mailbox](https://technet.microsoft.com/library/4f3f5ce4-9d12-4ed8-9f70-d8a6aa8a1b2e.aspx)|Learn how to connect a soft-deleted mailbox to a user account or restore a soft-deleted mailbox to an existing mailbox.|
 |[Manage Mailbox Restore Requests](https://docs.microsoft.com/exchange/manage-mailbox-restore-requests-exchange-2013-help)|Learn how to manage mailbox restore requests using the Exchange Management Shell.|
 |[Permanently delete a mailbox](permanently-delete-mailboxes.md)|Learn how to permanently delete a mailbox.|

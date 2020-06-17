@@ -39,7 +39,7 @@ The supported coexistence scenarios between Exchange 2019 and earlier versions o
 
 ## Supported hybrid deployment scenarios for Exchange 2019
 
-Exchange 2019 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://docs.microsoft.com/Exchange/hybrid-deployment-prerequisites).
+Exchange 2019 supports hybrid deployments with Office 365 organizations that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid deployment prerequisites](https://docs.microsoft.com/Exchange/hybrid-deployment-prerequisites).
 
 ## Network and directory server requirements for Exchange 2019
 
@@ -50,7 +50,7 @@ The requirements for the network and the directory servers in your Exchange 2019
 |Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <br/>• Windows Server 2019 Standard or Datacenter <br/>• Windows Server 2016 Standard or Datacenter <br/>• Windows Server 2012 R2 Standard or Datacenter|
 |Active Directory forest|The Active Directory forest functional level is **Windows Server 2012 R2** or higher.|
 |Active Directory site|The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. Furthermore, you can't install the Exchange server and then remove the domain controller from the Active Directory site.|
-|DNS namespace|Exchange 2019 supports the following DNS namespaces:  <br/> • Contiguous  <br/> • Noncontiguous  <br/> • Single label domains  <br/> • Disjoint  <br/> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2269838).|
+|DNS namespace|Exchange 2019 supports the following DNS namespaces:  <br/> • Contiguous  <br/> • Noncontiguous  <br/> • Single label domains  <br/> • Disjoint  <br/> For more information about DNS namespaces that are supported by Exchange, see [KB2269838](https://support.microsoft.com/help/2269838).|
 |IPv6|Exchange 2013 and later support IPv6 only when IPv4 is also installed and enabled on the Exchange server. <br/> If you deploy Exchange in this configuration, and your network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://docs.microsoft.com/exchange/ipv6-support-in-exchange-2013-exchange-2013-help).|
 
 ## Directory server architecture for Exchange 2019
@@ -106,13 +106,13 @@ We strongly recommend that you use the latest version of the .NET Framework that
 
 |**Exchange 2019 version**|**.NET Framework 4.8**|**.NET Framework 4.7.2**|
 |:-----|:-----|:-----|
-|CU4, CU5|Supported||
+|CU4, CU5, CU6|Supported||
 |CU2, CU3|Supported|Supported|
 |RTM, CU1||Supported|
 
 ## Supported clients (with latest updates) in Exchange 2019
 
-- Office 365 ProPlus
+- Microsoft 365 Apps for enterprise
 
 - Outlook 2019
 
@@ -150,7 +150,7 @@ The following table lists the scenarios in which coexistence between Exchange 20
 
 ## Supported hybrid deployment scenarios for Exchange 2016
 
-Exchange 2016 supports hybrid deployments with Office 365 tenants that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
+Exchange 2016 supports hybrid deployments with Office 365 organizations that have been upgraded to the latest version of Office 365. For more information about specific hybrid deployments, see [Hybrid Deployment Prerequisites](https://docs.microsoft.com/exchange/hybrid-deployment-prerequisites).
 
 ## Network and directory server requirements for Exchange 2016
 
@@ -161,15 +161,15 @@ The following table lists the requirements for the network and the directory ser
 |Domain controllers|All domain controllers in the forest need to be running one of the following versions of Windows Server: <br/>• Windows Server 2019 Standard or Datacenter <br/>• Windows Server 2016 Standard or Datacenter <br/>• Windows Server 2012 R2 Standard or Datacenter <br/>• Windows Server 2012 Standard or Datacenter <br/>• Windows Server 2008 R2 Standard or Enterprise <br/>• Windows Server 2008 R2 Datacenter RTM or later|
 |Active Directory forest|The Active Directory forest functional level is Windows Server 2008 R2 or higher.|
 |Active Directory site|• The Active Directory site where you install the Exchange Server must contain at least one writeable domain controller that's also a global catalog server, or the installation will fail. <br/>• You can't install the Exchange server and then remove the domain controller from the Active Directory site.|
-|DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <br/>• Contiguous <br/>• Noncontiguous <br/>• Single label domains <br/>• Disjoint <br/> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=2269838).|
-|IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://technet.microsoft.com/library/33543023-eb9a-4102-b990-84a818a52814.aspx).|
+|DNS namespace support|Exchange 2016 supports the following domain name system (DNS) namespaces: <br/>• Contiguous <br/>• Noncontiguous <br/>• Single label domains <br/>• Disjoint <br/> For more information about DNS namespaces supported by Exchange, see Microsoft Knowledge Base article 2269838, [Microsoft Exchange compatibility with Single Label Domains, Disjoined Namespaces, and Discontiguous Namespaces](https://support.microsoft.com/help/2269838).|
+|IPv6 support|In Exchange 2016, IPv6 is supported only when IPv4 is also installed and enabled. If Exchange 2016 is deployed in this configuration, and the network supports IPv4 and IPv6, all Exchange servers can send data to and receive data from devices, servers, and clients that use IPv6 addresses. For more information, see [IPv6 Support in Exchange 2013](https://docs.microsoft.com/exchange/ipv6-support-in-exchange-2013-exchange-2013-help).|
 
 ## Directory server architecture for Exchange 2016
 
 The use of 64-bit Active Directory domain controllers increases directory service performance for Exchange 2016.
 
 > [!NOTE]
-> In multi-domain environments, on Windows Server 2008 domain controllers that have the Active Directory language locale set to Japanese (ja-jp), your servers may not receive some attributes that are stored on an object during inbound replication. For more information, see [KB949189](https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=949189).
+> In multi-domain environments, on Windows Server 2008 domain controllers that have the Active Directory language locale set to Japanese (ja-jp), your servers may not receive some attributes that are stored on an object during inbound replication. For more information, see [KB949189](https://www.microsoft.com/download/details.aspx?id=1050).
 
 ### Installing Exchange 2016 on directory servers
 
@@ -227,7 +227,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 
 |**Exchange 2016 version**|**.NET Framework 4.8**|**.NET Framework 4.7.2**|**.NET Framework 4.7.1**|**.NET Framework 4.6.2**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|CU15, CU16|Supported||||
+|CU15, CU16, CU17|Supported||||
 |CU13, CU14|Supported|Supported|||
 |CU11, CU12||Supported|Supported||
 |CU10|||Supported||
@@ -238,7 +238,7 @@ We strongly recommend that you use the latest version of .NET Framework that's s
 
 ## Supported clients (with latest updates) in Exchange 2016
 
-- Office 365 ProPlus
+- Microsoft 365 Apps for enterprise
 
 - Outlook 2019
 

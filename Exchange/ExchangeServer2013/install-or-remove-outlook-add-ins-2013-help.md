@@ -28,11 +28,11 @@ For additional management tasks, see [Add-ins for Outlook](add-ins-for-outlook-2
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Apps for Outlook" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Apps for Outlook" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 - For more information about the EAC, see [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md).
 
-- To learn how to connect to the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to connect to the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You can assign administrators permission to install and manage add-ins for your organization. You can also assign users permission to install and manage add-ins for their own use. For more information, see [Specify the administrators and users who can install and manage add-ins for Outlook](specify-who-can-install-and-manage-add-ins-2013-help.md).
 
@@ -79,7 +79,7 @@ New-App -OrganizationApp -FileData <File location for add-in manifest file>
 > [!TIP]
 > When you use the Exchange Management Shell to install an add-in for your organization, you can install the add-in and configure settings for it at the same time.
 
-For syntax and parameters, see [New-App](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-app).
+For syntax and parameters, see [New-App](https://docs.microsoft.com/powershell/module/exchange/new-app).
 
 ## Remove an add-in for Outlook
 
@@ -106,7 +106,7 @@ Run the following command to remove the custom add-in Finance Test Add-in from t
 Remove-App -OrganizationApp -Identity <GUID for Finance Test Add-in>
 ```
 
-For syntax and parameters, see [Remove-App](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-app).
+For syntax and parameters, see [Remove-App](https://docs.microsoft.com/powershell/module/exchange/remove-app).
 
 ## How do you know this worked?
 

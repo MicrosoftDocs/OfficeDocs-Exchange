@@ -35,7 +35,7 @@ Exchange administrators can create transport rules by going to **Exchange admin 
 
 ![Dialog box to select attachment-related rules](images/JJ674307.2ae4a179-bfd2-4a0e-abe1-53ed4e9e3368(EXCHG.150).jpg "Dialog box to select attachment-related rules")
 
-For more information about transport rules, including the full range of conditions and actions that you can choose, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md). Exchange Online Protection (EOP) and hybrid customers can benefit from the transport rules best practices provided in [Best practices for configuring EOP](https://technet.microsoft.com/library/jj723164\(v=exchg.150\)). If you're ready to start creating rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
+For more information about transport rules, including the full range of conditions and actions that you can choose, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md). Exchange Online Protection (EOP) and hybrid customers can benefit from the transport rules best practices provided in [Best practices for configuring EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop). If you're ready to start creating rules, see [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md).
 
 ## Inspect the content within attachments
 
@@ -70,7 +70,7 @@ You can use the transport rule conditions in the following table to examine the 
 
 The Exchange Management Shell names for the conditions listed here are parameters that require the `TransportRule` cmdlet.
 
-- Learn more about the cmdlet at [New-TransportRule](https://technet.microsoft.com/library/bb125138\(v=exchg.150\)).
+- Learn more about the cmdlet at [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
 
 - Learn more about property types for these conditions at [Conditions and Condition Properties for a Mailbox Server](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
@@ -205,7 +205,7 @@ The following transport rule conditions inspect the properties of a file that is
 
 The Exchange Management Shell names for the conditions listed here are parameters that require the `TransportRule` cmdlet.
 
-- Learn more about the cmdlet at [New-TransportRule](https://technet.microsoft.com/library/bb125138\(v=exchg.150\)).
+- Learn more about the cmdlet at [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
 
 - Learn more about property types for these conditions at [Conditions and Condition Properties for a Mailbox Server](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
@@ -308,10 +308,8 @@ DLP policies and attachment-related conditions can help you enforce your busines
 
 ## For more information
 
-[Data loss prevention](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
+[Data loss prevention in Exchange 2013](data-loss-prevention-exchange-2013-help.md)
 
 [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)
 
 [Transport rule conditions (predicates)](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
-
-[Use transport rules to inspect message attachments](https://technet.microsoft.com/library/jj919236\(v=exchg.150\)) in Exchange Online

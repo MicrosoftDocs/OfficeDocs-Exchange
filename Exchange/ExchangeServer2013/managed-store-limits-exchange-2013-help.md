@@ -164,7 +164,7 @@ The following section, "Configure Session Limits," describes how to modify these
 You can modify the default session limits.
 
 > [!NOTE]
-> If you want to modify the session limits, you need to modify them on all Mailbox servers within any database availability groups (DAGs). If you don't make the same changes on all servers, the results will be inconsistent. To increase the session limit on Client Access server, the <CODE>RCAMaxConcurrency</CODE> value must be increased on the throttling policy. For more information, see <A href="https://technet.microsoft.com/library/dd298094(v=exchg.150)">Set-ThrottlingPolicy</A>.
+> If you want to modify the session limits, you need to modify them on all Mailbox servers within any database availability groups (DAGs). If you don't make the same changes on all servers, the results will be inconsistent. To increase the session limit on Client Access server, the <CODE>RCAMaxConcurrency</CODE> value must be increased on the throttling policy. For more information, see <A href="https://docs.microsoft.com/powershell/module/exchange/Set-ThrottlingPolicy">Set-ThrottlingPolicy</A>.
 
 > [!WARNING]
 > Incorrectly editing the registry can cause serious problems that may require you to reinstall your operating system. Problems resulting from editing the registry incorrectly may not be able to be resolved. Before editing the registry, back up any valuable data.
@@ -315,7 +315,7 @@ You can limit the maximum number of resources that a MAPI client can use simulta
 
 ## Item Size Limits
 
-Item size limits are the limits placed on items within a user's mailbox. They are configurable by using the *MaxSendSize* and *MaxReceiveSize* parameters on the [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)) cmdlet.
+Item size limits are the limits placed on items within a user's mailbox. They are configurable by using the *MaxSendSize* and *MaxReceiveSize* parameters on the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox) cmdlet.
 
 <table>
 <colgroup>

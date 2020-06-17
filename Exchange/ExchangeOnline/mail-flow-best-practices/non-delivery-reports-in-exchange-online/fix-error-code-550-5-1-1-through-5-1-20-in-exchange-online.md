@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 79e91ade-5c83-405b-a37d-d99c7d069b13
 description: "Learn how to fix email issues for error code 5.1.1 through 5.1.20 in Exchange Online (the recipient doesn't exist or your Auto-Complete list entry for the recipient is bad)."
 ---
@@ -102,7 +103,7 @@ Check your recent messages in the **Sent Items** folder for strange or unknown m
 
 If you believe that your account has been compromised, follow these steps:
 
-- Reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your Office 365 account has been compromised](https://go.microsoft.com/fwlink/p/?linkid=861995).
+- Reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your Office 365 account has been compromised](https://docs.microsoft.com/office365/troubleshoot/sign-In/determine-account-is-compromised).
 
 - Notify your email admin. Your admin will need to unblock your account before you can send email again.
 
@@ -114,31 +115,21 @@ Typically, if a message can't be delivered, the recipient's email system will us
 
 Check your recent messages in the **Sent Items** folder for strange or unknown messages (messages that you didn't send). If you don't see any suspicious messages, it's likely that the NDR you received is backscatter. If you've already changed your password and run an anti-malware scan, you can ignore these backscatter NDRs.
 
-To learn more, see [Backscatter messages and EOP](https://technet.microsoft.com/library/dn499795.aspx).
+To learn more, see [Backscatter in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/backscatter-messages-and-eop).
 
 ## I'm an email admin. What can I do to fix this?
 
 If the steps in the previous section don't solve the issue for the sender, the solution might be related to the way the user's Office 365 account is set up. If you have a hybrid topology, the solution might also be related to the on-premises mail transfer agent. It might also be a problem with the recipient's domain configuration. Here are 4 solutions you can try. You might not need to try all of them to get the message sent successfully.
 
-### Solution 1: Check the Office 365 Message Center for configuration problems or service-wide issues
+### Solution 1: Check the Microsoft 365 admin center for configuration problems or service-wide issues
 
-For Office 365 accounts, the Office 365 portal provides a central source for a variety of tools, notifications, and information that you can use to troubleshoot this and other issues.
+For Microsoft 365 or Office 365 accounts, the Microsoft 365 admin center provides a central source for a variety of tools, notifications, and information that you can use to troubleshoot this and other issues.
 
-Log in to an administrator account on the Office 365 portal at [https://portal.office.com](https://portal.office.com), and from the **Dashboard**, do the following:
+Open the [Microsoft 365 admin center](https://admin.microsoft.com), and from the **Home** page, do the following items:
 
 1. Check the **Message Center** to see if your organization has a known configuration issue.
 
-   1. Choose **Message center**.
-
-   2. Select **View all**.
-
-   3. Select **Prevent or fix issues**, and perform any relevant suggested actions.
-
-2. Check if there's a current service issue in Office 365 affecting the user's account.
-
-   1. Choose **Service health** to see an overview of any issues.
-
-   2. Select **View all** to get more details about all known issues.
+2. Go to **Health** \> **Service health** to see if there's a current service issue in Office 365 affecting the user's account.
 
 3. Check the sender and recipient domains for incorrect or stale mail exchange (MX) resource records by running the [Mailflow Troubleshooter](https://docs.microsoft.com/exchange/mail-flow-best-practices/troubleshoot-mail-flow) tool that is within Office 365.
 
@@ -169,13 +160,13 @@ This NDR might be caused by a forwarded (unintended) recipient that's configured
 
 - A mail flow rule (also known as a transport rule) configured by an email admin that copies or forwards messages sent to the recipient to another invalid recipient.
 
-For more information, see [Configure email forwarding for a mailbox](https://technet.microsoft.com/library/dd351134.aspx).
+For more information, see [Configure email forwarding for a mailbox](../../recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding.md).
 
 ## Still need help with error code 5.1.1 to 5.1.20?
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

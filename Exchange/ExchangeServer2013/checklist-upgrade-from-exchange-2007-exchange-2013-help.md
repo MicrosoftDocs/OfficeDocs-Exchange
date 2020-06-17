@@ -76,7 +76,7 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 <tr class="odd">
 <td><p></p></td>
 <td><p>6. Create legacy Exchange hostname</p></td>
-<td><p><a href="https://technet.microsoft.com/library/dn130105(v=exchg.150)">Create a legacy Exchange host name</a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn130105(v=exchg.150)">Create a legacy Exchange host name</a></p></td>
 </tr>
 <tr class="even">
 <td> </td>
@@ -146,12 +146,12 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 <tr class="odd">
 <td><p></p></td>
 <td><p>16. Configure Exchange 2007 URLs</p></td>
-<td><p><a href="https://technet.microsoft.com/library/dn282262(v=exchg.150)">Configure Exchange 2007 external URLs</a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn282262(v=exchg.150)">Configure Exchange 2007 external URLs</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>17. Configure DNS records</p></td>
-<td><p><a href="https://technet.microsoft.com/library/dn283988(v=exchg.150)">Configure DNS records for Exchange 2007 multiple-server install</a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn283988(v=exchg.150)">Configure DNS records for Exchange 2007 multiple-server install</a></p></td>
 </tr>
 <tr class="odd">
 <td> </td>
@@ -167,7 +167,7 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 
 </td>
 <td><p><a href="public-folders-exchange-2013-help.md">Public folders</a></p>
-<p><a href="https://technet.microsoft.com/library/jj150486(v=exchg.150)">Use serial migration to migrate public folders to Exchange 2013 from previous versions</a></p></td>
+<p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj150486(v=exchg.150)">Use serial migration to migrate public folders to Exchange 2013 from previous versions</a></p></td>
 </tr>
 <tr class="odd">
 <td> </td>

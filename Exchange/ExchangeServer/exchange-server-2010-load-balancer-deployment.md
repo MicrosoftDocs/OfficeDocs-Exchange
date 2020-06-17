@@ -92,7 +92,7 @@ Listed below are software load balancers that have been tested by the vendor and
 
 ## Featured resources
 
-[Exchange Server Deployment Assistant](https://docs.microsoft.com/exchange/exchange-deployment-assistant)
+[Exchange Server Deployment Assistant](https://assistants.microsoft.com/)
 
 [Experience Exchange Server 2010 through virtual labs](https://technet.microsoft.com/virtuallabs?id=y/gsi96hjlm)
 
@@ -104,6 +104,6 @@ Listed below are software load balancers that have been tested by the vendor and
 
 ## Additional resources
 
-[Understanding load balancing in Exchange 2010](https://technet.microsoft.com/library/ff625247(exchg.141))
+[Understanding load balancing in Exchange 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff625247(v=exchg.141))
 
 [Load balancing requirements of Exchange protocols](https://technet.microsoft.com/library/ff625248(exchg.141))

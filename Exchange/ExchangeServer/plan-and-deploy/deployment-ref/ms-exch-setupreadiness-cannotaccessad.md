@@ -28,10 +28,10 @@ For more information about Active Directory troubleshooting and configuration fo
 
 - [Prepare Active Directory and domains](../../plan-and-deploy/prepare-ad-and-domains.md)
 
-- [Troubleshooting Active Directory Domain Services](https://go.microsoft.com/fwlink/p/?LinkId=272144)
+- [Troubleshooting Active Directory Domain Services](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/ad-ds-troubleshooting)
 
 - [Configuring a Computer for Troubleshooting](https://go.microsoft.com/fwlink/p/?LinkId=272141)
 
-- [Troubleshooting Active Directory Replication Problems](https://go.microsoft.com/fwlink/p/?LinkId=272142)
+- [Troubleshooting Active Directory Replication Problems](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/troubleshoot/troubleshooting-active-directory-replication-problems)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

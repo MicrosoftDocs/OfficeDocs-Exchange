@@ -50,7 +50,7 @@ This example removes the Seattle Server Administrators role.
 Remove-ManagementRole "Seattle Server Administrators"
 ```
 
-For detailed syntax and parameter information, see [Remove-ManagementRole](https://technet.microsoft.com/library/dd351170\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/Remove-ManagementRole).
 
 ## Remove a management role with child roles
 
@@ -73,7 +73,7 @@ After you confirm that only the roles you want to remove will be removed, run th
 Remove-ManagementRole "London Administrators" -Recurse
 ```
 
-For detailed syntax and parameter information, see [Remove-ManagementRole](https://technet.microsoft.com/library/dd351170\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/Remove-ManagementRole).
 
 ## Remove an unscoped management role
 
@@ -85,4 +85,4 @@ Remove-ManagementRole "Custom IT Scripts" -Recurse -UnScopedTopLevel
 
 As with removing other roles, you should use the *WhatIf* switch to verify that you're removing the correct roles.
 
-For detailed syntax and parameter information, see [Remove-ManagementRole](https://technet.microsoft.com/library/dd351170\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/Remove-ManagementRole).

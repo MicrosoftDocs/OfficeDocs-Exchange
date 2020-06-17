@@ -23,7 +23,7 @@ Enabling Information Rights Management (IRM) on Client Access servers enables th
 
 - IRM in Microsoft Exchange ActiveSync
 
-When IRM is enabled on Client Access servers, Outlook Web App users can IRM-protect messages by applying an [Active Directory Rights Management Services (AD RMS)](https://technet.microsoft.com/library/hh831364.aspx) template created on your AD RMS cluster. Outlook Web App users can also view IRM-protected messages and supported attachments. Before you enable IRM on Client Access servers, you must add the Federation mailbox to the super users group on the AD RMS cluster.
+When IRM is enabled on Client Access servers, Outlook Web App users can IRM-protect messages by applying an [Active Directory Rights Management Services (AD RMS)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831364(v=ws.11)) template created on your AD RMS cluster. Outlook Web App users can also view IRM-protected messages and supported attachments. Before you enable IRM on Client Access servers, you must add the Federation mailbox to the super users group on the AD RMS cluster.
 
 > [!IMPORTANT]
 > Members of the super users group are granted an owner use license when they request a license from the AD&nbsp;RMS cluster. This allows them to decrypt all RMS-protected content by that cluster.
@@ -62,7 +62,7 @@ This example enables IRM on a Client Access server for an Exchange organization.
 Set-IRMConfiguration -ClientAccessServerEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
 
 ## Use the Shell to disable IRM on Client Access servers
 
@@ -72,7 +72,7 @@ This example disables IRM on a Client Access server for an Exchange organization
 Set-IRMConfiguration -ClientAccessServerEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
 
 ## How do you know this worked?
 

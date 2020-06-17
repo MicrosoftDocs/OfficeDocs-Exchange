@@ -61,7 +61,7 @@ This example sets the maximum size for sent messages to 25 MB and the maximum s
 Set-Mailbox "Debra Garcia" -MaxSendSize 25mb -MaxReceiveSize 35mb
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox).
 
 ## How do you know this worked?
 

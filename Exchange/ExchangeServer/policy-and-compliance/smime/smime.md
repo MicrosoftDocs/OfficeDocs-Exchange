@@ -58,7 +58,7 @@ Setting up S/MIME with Outlook on the web involves these key steps:
 
 2. [Set up Virtual Certificate Collection to Validate S/MIME](https://docs.microsoft.com/Exchange/set-up-virtual-certificate-collection-to-validate-s-mime)
 
-For information about how to send an S/MIME encrypted message in Outlook on the web, see [Encrypt messages by using S/MIME in Outlook on the web](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).
+For information about how to send an S/MIME encrypted message in Outlook on the web, see [Encrypt messages by using S/MIME in Outlook on the web](https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480).
 
 ## Related message encryption technologies
 

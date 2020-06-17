@@ -24,7 +24,7 @@ In Exchange Server 2013, we moved public folders from a traditional database arc
 The following table lists the limits for public folders in on-premises Exchange Server 2013. Unless the limits are specifically stated as recommended, the values listed in this table are the supported limits for public folders.
 
 > [!IMPORTANT]
-> Looking for Exchange Online limits for Office 365? See <A href="https://go.microsoft.com/fwlink/?linkid=391188">Exchange Online Limits</A>.
+> Looking for Exchange Online limits for Office 365? See <A href="https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits">Exchange Online Limits</A>.
 
 <table>
 <colgroup>
@@ -54,17 +54,17 @@ The following table lists the limits for public folders in on-premises Exchange 
 <td><p>Sub-folders under the parent folder</p></td>
 <td><p>10,000</p></td>
 <td><p>While you can create more than 1,000 sub-folders under a parent folder, we don't recommend that you do so.</p>
-<p><em>FolderHierarchyChildrenCountReceiveQuota</em> parameter on the <a href="https://technet.microsoft.com/library/bb123981(v=exchg.150)">Set-Mailbox</a> cmdlet.</p></td>
+<p><em>FolderHierarchyChildrenCountReceiveQuota</em> parameter on the <a href="https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox">Set-Mailbox</a> cmdlet.</p></td>
 </tr>
 <tr class="even">
 <td><p>Folder depth</p></td>
 <td><p>300</p></td>
-<td><p>The folder depth is the number levels of nested folders that can exist in one branch of a public folder tree. <em>FolderHierarchyDepthRecieveQuota</em> parameter on the <a href="https://technet.microsoft.com/library/bb123981(v=exchg.150)">Set-Mailbox</a> cmdlet.</p></td>
+<td><p>The folder depth is the number levels of nested folders that can exist in one branch of a public folder tree. <em>FolderHierarchyDepthRecieveQuota</em> parameter on the <a href="https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox">Set-Mailbox</a> cmdlet.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Maximum messages per public folder</p></td>
 <td><p>1 million</p></td>
-<td><p><em>MailboxMessagesPerFolderCountRecieveQuota</em> parameter on the <a href="https://technet.microsoft.com/library/bb123981(v=exchg.150)">Set-Mailbox</a> cmdlet.</p></td>
+<td><p><em>MailboxMessagesPerFolderCountRecieveQuota</em> parameter on the <a href="https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox)">Set-Mailbox</a> cmdlet.</p></td>
 </tr>
 <tr class="even">
 <td><p>Maximum individual public folder size</p></td>

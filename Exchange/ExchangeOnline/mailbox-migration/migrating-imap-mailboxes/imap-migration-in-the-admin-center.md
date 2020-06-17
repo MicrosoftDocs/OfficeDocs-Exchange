@@ -33,7 +33,7 @@ After you've added your users to Office 365, you can use Internet Message Access
 In the Microsoft 365 admin center, go to **Setup** \> **Data migration** to start migrating IMAP enabled emails. The email migrations page is pre-configured for migrations from Gmail, Outlook, Hotmail and Yahoo. You can also enter your own IMAP server name and connection parameters to migrate from an email service that is not listed.
 
 > [!IMPORTANT]
-> Before you can use an IMAP migration for your users, they must have been first added to your Office 365 tenant. For instructions, see [Add users to Office 365 for business](https://support.office.com/article/435ccec3-09dd-4587-9ebd-2f3cad6bc2bc.aspx).
+> Before you can use an IMAP migration for your users, they must have been first added to your Office 365 organization. For instructions, see [Add users to Office 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
 
 Before you migrate, read [What you need to know about migrating your IMAP mailboxes to Office 365](migrating-imap-mailboxes.md).
 
@@ -43,7 +43,7 @@ To migrate Exchange mail to Office 365, see [Use express migration to migrate Ex
 
 ## Migrate IMAP mailboxes to Office 365
 
-1. Sign into the [About the Microsoft 365 admin center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
+1. Sign into the [About the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center).
 
 2. Navigate to **Setup** \> **Data migration**.
 
@@ -105,7 +105,7 @@ To migrate Exchange mail to Office 365, see [Use express migration to migrate Ex
 
     When you're done, choose **Close Connection**. This also allows you to start a new migration if you want to migrate emails from other providers as well.
 
-7. If you are migrating from Google apps where you own the domain, you need to go [Create DNS records at Google Domains for Office 365](https://support.office.com/article/0db29490-2612-48bc-9b77-1862e7a41a8c) after you have completed email migration so that the mail will be sent to Office 365 mailboxes instead of Google apps. If you are migrating from another IMAP provider where you own the domain, [check these instructions](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) to find your domain provider.
+7. If you are migrating from Google apps where you own the domain, you need to go [Create DNS records at Google Domains for Office 365](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-google-domains) after you have completed email migration so that the mail will be sent to Office 365 mailboxes instead of Google apps. If you are migrating from another IMAP provider where you own the domain, [check these instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) to find your domain provider.
 
    If you have migrated as a part of the setup experience, you can return to the setup. The setup steps will guide you through updating the DNS records.
 

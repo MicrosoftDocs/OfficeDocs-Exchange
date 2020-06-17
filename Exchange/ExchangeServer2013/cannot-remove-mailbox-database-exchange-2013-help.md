@@ -23,11 +23,11 @@ Exchange 2013 Setup determines whether all mailbox databases have been removed f
 
 To resolve this issue, move any mailboxes on the server to another Exchange server or, if the mailboxes and the data contained within them are no longer required, disable the mailboxes. Then run Exchange 2013 Setup again.
 
-  - For more information about how to identify a mailbox in the database, see [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)).
+  - For more information about how to identify a mailbox in the database, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox).
 
   - For more information about how to move a mailbox, see [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md).
 
-  - For more information about how to disable a mailbox, see [Disable-Mailbox](https://technet.microsoft.com/library/aa997210\(v=exchg.150\)).
+  - For more information about how to disable a mailbox, see [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Disable-Mailbox).
 
   - For more information about how to remove a mailbox database, see [Manage mailbox databases in Exchange 2013](manage-mailbox-databases-in-exchange-2013-exchange-2013-help.md).
 

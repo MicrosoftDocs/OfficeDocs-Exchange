@@ -24,20 +24,14 @@ manager: serdars
 
 As an Exchange Online or Exchange Online Protection (EOP) admin, you probably want to keep an eye on your organization's mail flow, how much spam and malware is being detected, or how often your rules and policies are being matched. By using mail protection reports, you'll get a quick summary of the messages that Office 365 has delivered or rejected based on spam or malware characteristics, rules, or data loss prevention (DLP) policies.
 
-You can choose to either schedule mail protection reports to be sent to your inbox automatically, or you can view them any time in the Office 365 Security & Compliance Center.
+You can choose to either schedule mail protection reports to be sent to your inbox automatically, or you can view them any time in the Microsoft 365 Security Center.
 
-To get started customizing and downloading reports, see the following resources:
-
-- [Set up and download a custom report in the Security & Compliance Center](https://support.office.com/article/1a7be622-f6a5-4ce1-a343-f249475334f6)
-
-- [Download existing reports in the Security & Compliance Center](https://support.office.com/article/1372da29-f3ab-49d7-8c02-eb9305bb5fd8)
-
-- [Manage schedules for multiple reports in the Security & Compliance Center](https://support.office.com/article/3384c6f1-ffc0-4120-a211-1991aca51663)
+To get started customizing and downloading reports, see [View reports for Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).
 
 ## Related topics
 
-[Smart reports and insights in the Security & Compliance Center](https://support.office.com/article/e3e95f68-36e9-4256-bcca-78fe7fe5ea5d)
+[Smart reports and insights in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
 
-[View email security reports in the Security & Compliance Center](https://support.office.com/article/3a137e28-1174-42d5-99af-f18868b43e86)
+[View email security reports in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-email-security-reports)
 
 [Mail flow insights in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-insights-v2)

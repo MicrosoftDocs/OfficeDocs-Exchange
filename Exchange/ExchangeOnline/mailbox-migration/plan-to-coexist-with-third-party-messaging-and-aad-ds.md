@@ -129,7 +129,7 @@ Learn more at [Sign up for Microsoft 365](https://products.office.com/business/
 
 After you've updated your Active Directory with the Exchange schema, you can now *mail-enable* existing users in your Active Directory. In the context of this scenario, mail-enabled users represent the users (that have mailboxes) in your on-premises messaging system that you want to represent in the cloud address book.
 
-Using the Exchange Management Shell, run [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Enable-MailUser) for each user that you want to be displayed in the cloud address book and who has a mailbox in your on-premises messaging organization.
+Using the Exchange Management Shell, run [Enable-MailUser](https://docs.microsoft.com/powershell/module/exchange/Enable-MailUser) for each user that you want to be displayed in the cloud address book and who has a mailbox in your on-premises messaging organization.
 
 The **Enable-MailUser** cmdlet only takes the *ExternalEmailAddress* parameter. This is also referred to as the *target address* of the mail-enabled user object. This parameter updates the target SMTP address for the mail-enabled user, which enables cross-premises mail flow.
 
@@ -147,13 +147,13 @@ Here's an example of an **Enable-MailUser** command:
 Enable-MailUser -Identity "Gabriela Laureano" -ExternalEmailAddress glaureano@domino.contoso.com -PrimarySMTPAddress glaureano@contoso.com
 ```
 
-To learn more about how to install, configure, and run Exchange Management Shell, see [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell).
+To learn more about how to install, configure, and run Exchange Management Shell, see [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-management-shell).
 
 If you need to create or modify users in your on-premises Active Directory, see the following topics:
 
-- **Create new users**: [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-mailuser)
+- **Create new users**: [New-MailUser](https://docs.microsoft.com/powershell/module/exchange/new-mailuser)
 
-- **Modify existing users**: [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser)
+- **Modify existing users**: [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
 
 ## Step 5: Install and Configure Azure Active Directory Connect to synchronize mail-enabled users into Azure Active Directory (Microsoft 365)
 
@@ -189,7 +189,7 @@ This section provides links to more information about migrating mailboxes from y
 
 As previously stated, the majority of messaging migration tools that are included with Microsoft 365 are designed to work with Exchange Server. However, Microsoft 365 also includes the [IMAP migration tool](migrating-imap-mailboxes/imap-migration-in-the-admin-center.md) for generic email data migration.
 
-For organizations that use Outlook as an email client, you can also use the [PST Capture tool](https://go.microsoft.com/fwlink/p/?linkid=246929) to migrate messaging data to the cloud.
+For organizations that use Outlook as an email client, you can also use the [PST Capture tool](https://docs.microsoft.com/microsoft-365/compliance/find-copy-and-delete-pst-files-in-your-organization) to migrate messaging data to the cloud.
 
 For other messaging migration solutions, you might need to work with a third-party solution provider.
 

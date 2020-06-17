@@ -31,7 +31,7 @@ If you've *permanently* deleted an item in Microsoft Outlook or Outlook on the w
 
 - If you want to place a mailbox on [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md) so the retention limit is ignored, make sure the mailbox has an Exchange Online (Plan 2) user license.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" section in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - You can only use Exchange Online PowerShell to perform this procedure. To learn how to use Windows PowerShell to connect to Exchange Online, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
@@ -56,7 +56,7 @@ Set-Mailbox -Identity "Emily Maier" -RetainDeletedItemsFor 30
 Get-Mailbox -ResultSize unlimited -Filter "RecipientTypeDetails -eq 'UserMailbox'" | Set-Mailbox -RetainDeletedItemsFor 30
 ```
 
-Need more details about using these commands? See Exchange Online PowerShell Help topic [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+Need more details about using these commands? See Exchange Online PowerShell Help topic [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 > [!TIP]
 > Need to keep deleted items for longer than 30 days? To do this, place the mailbox on In-Place Hold or Litigation Hold. This works because when a mailbox is placed on hold, deleted items are kept and retention settings for deleted items are ignored. See [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md).
@@ -95,4 +95,4 @@ Additional help:
 
 - If a user purges a deleted item, you can recover it before the deleted item retention period expires. For details, see [Recover deleted messages in a user's mailbox](recover-deleted-messages.md).
 
-- To learn more about deleted item retention, the Recoverable Items folder, In-Place Hold, and Litigation Hold, see [Understanding Recoverable Items](https://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
+- To learn more about deleted item retention, the Recoverable Items folder, In-Place Hold, and Litigation Hold, see [Recoverable Items folder in Exchange Online](../../security-and-compliance/recoverable-items-folder/recoverable-items-folder.md).

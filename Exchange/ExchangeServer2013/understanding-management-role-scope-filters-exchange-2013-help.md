@@ -23,17 +23,17 @@ To use management role scope filters, you must be familiar with management role 
 
 Filtered custom scopes in Microsoft Exchange Server 2013 are created by using the **New-ManagementScope** cmdlet. The two types of filtered scopes, recipient and configuration (which consists of server and database scopes), are divided into regular scopes and exclusive scopes. The following list shows which parameter on the **New-ManagementScope** cmdlet to use to create each type of filtered scope:
 
-  - **Recipient regular filtered scope**: To create this type of filtered scope, use the *RecipientRestrictionFilter* parameter.
+- **Recipient regular filtered scope**: To create this type of filtered scope, use the *RecipientRestrictionFilter* parameter.
 
-  - **Recipient exclusive filtered scope**: To create this type of filtered scope, use the *RecipientRestrictionFilter* parameter along with the *Exclusive* switch.
+- **Recipient exclusive filtered scope**: To create this type of filtered scope, use the *RecipientRestrictionFilter* parameter along with the *Exclusive* switch.
 
-  - **Server-based configuration regular filtered scope**: To create this type of filtered scope, use the *ServerRestrictionFilter* parameter.
+- **Server-based configuration regular filtered scope**: To create this type of filtered scope, use the *ServerRestrictionFilter* parameter.
 
-  - **Server-based configuration exclusive filtered scope**: To create this type of filtered scope, use the *ServerRestrictionFilter* parameter along with the *Exclusive* switch.
+- **Server-based configuration exclusive filtered scope**: To create this type of filtered scope, use the *ServerRestrictionFilter* parameter along with the *Exclusive* switch.
 
-  - **Database-based configuration regular filtered scope**: To create this type of filtered scope, use the *DatabaseRestrictionFilter* parameter.
+- **Database-based configuration regular filtered scope**: To create this type of filtered scope, use the *DatabaseRestrictionFilter* parameter.
 
-  - **Database-based configuration exclusive filtered scope**: To create this type of filtered scope, use the *DatabaseRestrictionFilter* parameter along with the *Exclusive* switch.
+- **Database-based configuration exclusive filtered scope**: To create this type of filtered scope, use the *DatabaseRestrictionFilter* parameter along with the *Exclusive* switch.
 
 When you create a filtered custom scope, the scope attempts to match the filter with any objects accessible within the implicit read scope of the management role. If an object is found, it's included in the results returned by the filter, and the object is made available to the management role by the custom scope. A filter can't return results that are outside of the implicit read scope of the management role.
 
@@ -45,39 +45,39 @@ To create a management scope using the filterable properties included in this to
 
 Both recipient and configuration filters use the same syntax to create a filter query. All filter queries must have, at minimum, the following components:
 
-  - **Opening bracket**: The opening brace ({) indicates the start of the filter query.
+- **Opening bracket**: The opening brace ({) indicates the start of the filter query.
 
-  - **Property to examine**: The property is the value on an object that you want to test. For example, this can be the city or department on a recipient object, an Active Directory site name or server name on a server configuration object, or a database name on a database configuration object.
+- **Property to examine**: The property is the value on an object that you want to test. For example, this can be the city or department on a recipient object, an Active Directory site name or server name on a server configuration object, or a database name on a database configuration object.
 
-  - **Comparison operator**: The comparison operator directs how the query should evaluate the value that you specify against the value that's stored in the property. For example, comparison operators can be **Eq**, which means equal to; **Ne**, which means not equal to; **Like**, which means similar to, and so on. For a full list of operators that you can use in the Exchange Management Shell, see [Comparison operators](https://technet.microsoft.com/library/bb125229\(v=exchg.150\)).
+- **Comparison operator**: The comparison operator directs how the query should evaluate the value that you specify against the value that's stored in the property. For example, comparison operators can be **Eq**, which means equal to; **Ne**, which means not equal to; **Like**, which means similar to, and so on. For a full list of operators that you can use in the Exchange Management Shell, see [Comparison operators](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_comparison_operators).
 
-  - **Value to compare**: The value you specify in the filter query will be compared to the value that's stored in the property you specified. The value you specify must be enclosed in quotation marks ("). If you want to specify a partial string, you can enclose the string you provide in wildcard characters (\*) and use a comparison operator that supports wildcard characters, such as **Like**. Any string that contains the partial string will match the filter query.
+- **Value to compare**: The value you specify in the filter query will be compared to the value that's stored in the property you specified. The value you specify must be enclosed in quotation marks ("). If you want to specify a partial string, you can enclose the string you provide in wildcard characters (\*) and use a comparison operator that supports wildcard characters, such as **Like**. Any string that contains the partial string will match the filter query.
 
-  - **Closing bracket**: The closing brace (}) indicates the end of the filter query.
+- **Closing bracket**: The closing brace (}) indicates the end of the filter query.
 
 The following components are optional and enable you to create more complex filter queries:
 
-  - **Parentheses**: As in mathematics, parentheses, ( ), in a filter query enable you to force the order in which an operation occurs. Innermost parentheses are evaluated first and the filter query works outward to the outermost parentheses.
+- **Parentheses**: As in mathematics, parentheses, ( ), in a filter query enable you to force the order in which an operation occurs. Innermost parentheses are evaluated first and the filter query works outward to the outermost parentheses.
 
-  - **Logical operators**: Logical operators tie together one or more comparison operations and require the filter query to evaluate the entire statement. For example, logical operators include **And**, **Or**, and **Not**.
+- **Logical operators**: Logical operators tie together one or more comparison operations and require the filter query to evaluate the entire statement. For example, logical operators include **And**, **Or**, and **Not**.
 
 When put together, a simple query looks like `{ City -Eq "Vancouver" }`. This filter matches any recipient where the value in the property **City** equals the string "Vancouver".
 
-Another, more complex, query is `{ ((City -Eq "Vancouver") -And (Department -Eq "Sales")) -Or (Title -Like "*Manager*") }`. The filter query is evaluated in the following order:
+Another, more complex, query is `{((City -Eq "Vancouver") -And (Department -Eq "Sales")) -Or (Title -Like "*Manager*")}`. The filter query is evaluated in the following order:
 
 1. The properties **City** and **Department** are evaluated. Each is set to either `True` or `False`, depending on the values stored in each property.
 
 2. The results of the **City** and **Department** statements are then evaluated. If both are `True`, the entire **And** statement becomes `True`. If one or both are `False`, the entire **And** statement becomes `False`. The following applies:
 
-      - If the **And** statement evaluates as `True`, the entire filter query becomes `True` because the **Or** operator indicates that one side of the query, or the other, must be `True`. The object is exposed to the role assignment.
+   - If the **And** statement evaluates as `True`, the entire filter query becomes `True` because the **Or** operator indicates that one side of the query, or the other, must be `True`. The object is exposed to the role assignment.
 
-      - If the **And** statement is `False`, the filter query continues on to evaluate the **Title** property.
+   - If the **And** statement is `False`, the filter query continues on to evaluate the **Title** property.
 
 3. The **Title** property is then evaluated. It's set to `True` or `False`, depending on the value that's stored in the **Title** property. The following applies:
 
-      - If the **Title** property evaluates as `True`, the entire filter query becomes `True` because the **Or** operator indicates that one side of the query, or the other, must be `True`. The object is exposed to the role assignment.
+   - If the **Title** property evaluates as `True`, the entire filter query becomes `True` because the **Or** operator indicates that one side of the query, or the other, must be `True`. The object is exposed to the role assignment.
 
-      - If the **Title** property evaluates as `False`, the entire filter query evaluates as `False`, and the object isn't exposed to the role assignment.
+   - If the **Title** property evaluates as `False`, the entire filter query evaluates as `False`, and the object isn't exposed to the role assignment.
 
 The following table shows an example with values, which indicates when the complex query would evaluate as `True`, and when it would evaluate as `False`.
 
@@ -127,110 +127,110 @@ The following table shows an example with values, which indicates when the compl
 
 ## Filterable recipient properties
 
-You can use almost any property on a recipient object when you create a recipient filter. For a list of filterable recipient properties, see [Filterable properties for the -RecipientFilter parameter](https://technet.microsoft.com/library/bb738157\(v=exchg.150\)). Although this topic discusses the properties that can be used with the *RecipientFilter* parameter on other cmdlets, most of these properties also work with the *RecipientRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
+You can use almost any property on a recipient object when you create a recipient filter. For a list of filterable recipient properties, see [Filterable properties for the -RecipientFilter parameter](https://docs.microsoft.com/powershell/exchange/recipientfilter-properties). Although this topic discusses the properties that can be used with the *RecipientFilter* parameter on other cmdlets, most of these properties also work with the *RecipientRestrictionFilter* parameter on the **New-ManagementScope** cmdlet.
 
 ## Filterable server properties
 
 You can use the following server properties when you create a management scope with the *ServerRestrictionFilter* parameter:
 
-  - **CurrentServerRole**
+- **CurrentServerRole**
 
-  - **CustomerFeedbackEnabled**
+- **CustomerFeedbackEnabled**
 
-  - **DataPath**
+- **DataPath**
 
-  - **DistinguishedName**
+- **DistinguishedName**
 
-  - **ExchangeLegacyDN**
+- **ExchangeLegacyDN**
 
-  - **ExchangeLegacyServerRole**
+- **ExchangeLegacyServerRole**
 
-  - **ExchangeVersion**
+- **ExchangeVersion**
 
-  - **Fqdn**
+- **Fqdn**
 
-  - **Guid**
+- **Guid**
 
-  - **InternetWebProxy**
+- **InternetWebProxy**
 
-  - **Name**
+- **Name**
 
-  - **NetworkAddress**
+- **NetworkAddress**
 
-  - **ObjectCategory**
+- **ObjectCategory**
 
-  - **ObjectClass**
+- **ObjectClass**
 
-  - **ProductID**
+- **ProductID**
 
-  - **ServerRole**
+- **ServerRole**
 
-  - **ServerSite**
+- **ServerSite**
 
-  - **WhenChanged**
+- **WhenChanged**
 
-  - **WhenChangedUTC**
+- **WhenChangedUTC**
 
-  - **WhenCreated**
+- **WhenCreated**
 
-  - **WhenCreatedUTC**
+- **WhenCreatedUTC**
 
 ## Filterable database properties
 
 You can use the following database properties when you create a management scope with the *DatabaseRestrictionFilter* parameter:
 
-  - **AdminDisplayName**
+- **AdminDisplayName**
 
-  - **AllowFileRestore**
+- **AllowFileRestore**
 
-  - **BackgroundDatabaseMaintenance**
+- **BackgroundDatabaseMaintenance**
 
-  - **CircularLoggingEnabled**
+- **CircularLoggingEnabled**
 
-  - **DatabaseCreated**
+- **DatabaseCreated**
 
-  - **DeletedItemRetention**
+- **DeletedItemRetention**
 
-  - **Description**
+- **Description**
 
-  - **DistinguishedName**
+- **DistinguishedName**
 
-  - **EdbFilePath**
+- **EdbFilePath**
 
-  - **EventHistoryRetentionPeriod**
+- **EventHistoryRetentionPeriod**
 
-  - **ExchangeLegacyDN**
+- **ExchangeLegacyDN**
 
-  - **ExchangeVersion**
+- **ExchangeVersion**
 
-  - **Guid**
+- **Guid**
 
-  - **IssueWarningQuota**
+- **IssueWarningQuota**
 
-  - **LogFilePrefix**
+- **LogFilePrefix**
 
-  - **LogFileSize**
+- **LogFileSize**
 
-  - **LogFolderPath**
+- **LogFolderPath**
 
-  - **MasterServerOrAvailabilityGroup**
+- **MasterServerOrAvailabilityGroup**
 
-  - **MountAtStartup**
+- **MountAtStartup**
 
-  - **Name**
+- **Name**
 
-  - **ObjectCategory**
+- **ObjectCategory**
 
-  - **ObjectClass**
+- **ObjectClass**
 
-  - **RetainDeletedItemsUntilBackup**
+- **RetainDeletedItemsUntilBackup**
 
-  - **Server**
+- **Server**
 
-  - **WhenChanged**
+- **WhenChanged**
 
-  - **WhenChangedUTC**
+- **WhenChangedUTC**
 
-  - **WhenCreated**
+- **WhenCreated**
 
-  - **WhenCreatedUTC**
+- **WhenCreatedUTC**

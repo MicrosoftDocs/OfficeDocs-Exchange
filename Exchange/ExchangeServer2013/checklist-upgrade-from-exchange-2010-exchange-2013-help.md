@@ -140,7 +140,7 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 <tr class="even">
 <td><p> </p></td>
 <td><p>15. Configure DNS records</p></td>
-<td><p><a href="https://technet.microsoft.com/library/dn307232(v=exchg.150)">Configure DNS records for Exchange 2010 multiple-server install</a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/dn307232(v=exchg.150)">Configure DNS records for Exchange 2010 multiple-server install</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>
@@ -151,7 +151,7 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 <td><p> </p></td>
 <td><p>17. Move public folder data from Exchange 2013 to Exchange 2013</p></td>
 <td><p><a href="public-folders-exchange-2013-help.md">Public folders</a></p>
-<p><a href="https://technet.microsoft.com/library/jj150486(v=exchg.150)">Use serial migration to migrate public folders to Exchange 2013 from previous versions</a></p></td>
+<p><a href="https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj150486(v=exchg.150)">Use serial migration to migrate public folders to Exchange 2013 from previous versions</a></p></td>
 </tr>
 <tr class="odd">
 <td><p> </p></td>

@@ -49,7 +49,7 @@ For information on how to create and define sensitivity labels, as well as, publ
 
 ## Using Sensitivity Labeling with Outlook for iOS and Android
 
-For information on the end user experience, see [Apply sensitivity labels to your documents and email within Office](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9). 
+For information on the end user experience, see [Apply sensitivity labels to your documents and email within Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 ## Understanding S/MIME
 
@@ -82,9 +82,6 @@ In order to leverage S/MIME in Outlook for iOS and Android, the Exchange Online 
 
 2. Automated certificate delivery
 
-> [!NOTE]
-> Outlook for Android will support automated certificate delivery in a future release. For more information, see the [Microsoft 365 Roadmap](https://aka.ms/m365roadmap).
-
 ### S/MIME Prerequisites
 Ensure S/MIME has been properly configured in Exchange Online by following the steps outlined in [S/MIME for message signing and encryption in Exchange Online](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption). Specifically, this includes:
 
@@ -96,58 +93,64 @@ In both certificate delivery solutions, it is expected that the certificate's tr
 
 Outlook for iOS and Android leverages the user's primary SMTP address for mail flow activities, which is configured during account profile setup. The S/MIME certificate used by Outlook for iOS and Android is calculated by comparing the user's primary SMTP address as defined in the account profile with the certificate's subject value or the subject alternative name value; if these do not match, then Outlook for iOS and Android will report that a certificate is not available (see Figure 7) and will not allow the user to sign and/or encrypt messages.
 
-> [!IMPORTANT]
-> Outlook for iOS and Android S/MIME functionality requires that a user have both signing and encrypting capabilities, which can be delivered with a single certificate or with separate signing and encryption certificates.
-
 ### Manual Certificate Delivery
 
 Outlook for iOS and Outlook for Android both support manual certificate delivery, which is when the certificate is emailed to the user and the user taps on the certificate attachment within the app to initiate the certificate's installation. The following image shows how manual certificate delivery works in iOS.
 
 ![Screenshots showing manual certificate installation on iOS.](../../media/sensitive-manual-certificate.png)
 
-A user can export their own certificate and mail it to themselves using Outlook. For more information, see [Exporting a digital certificate](https://support.office.com/article/f3574266-2f9e-4f15-ab21-5989f4cf0c9b).
+A user can export their own certificate and mail it to themselves using Outlook. For more information, see [Exporting a digital certificate](https://support.microsoft.com/office/f3574266-2f9e-4f15-ab21-5989f4cf0c9b).
 
 > [!IMPORTANT]
 > When exporting the certificate, ensure that the exported certificate is password-protected with a strong password.
 
 ### Automated Certificate Delivery
 > [!IMPORTANT]
-> Outlook for iOS only supports automated certificate delivery when Microsoft Endpoint Manager is the enrollment provider. This is due to the iOS keychain architecture. iOS offers a system keychain and publisher keychains. iOS prevents third-party apps from accessing the system keychain (only first-party apps and the Safari webview controller can access the system keychain). In order to deliver  certificates that can be accessed by Outlook for iOS, the certificates must reside in the Microsoft publisher keychain to which Outlook for iOS has access. Only Microsoft published apps, like the Company Portal, can place certificates into the Microsoft publisher keychain.
+> Outlook for iOS and Android only supports automated certificate delivery when Microsoft Endpoint Manager is the enrollment provider. 
+>
+> For Outlook for iOS, this is due to the iOS keychain architecture. iOS offers a system keychain and publisher keychains. iOS prevents third-party apps from accessing the system keychain (only first-party apps and the Safari webview controller can access the system keychain). In order to deliver certificates that can be accessed by Outlook for iOS, the certificates must reside in the Microsoft publisher keychain to which Outlook for iOS has access. Only Microsoft published apps, like the Company Portal, can place certificates into the Microsoft publisher keychain.
+>
+> Outlook for Android relies on Endpoint Manager to deliver and approve the S/MIME certificates. Automatic certificate delivery is supported with Android device administrator and Android Enterprise work profile enrolled devices.
 
-With Endpoint Manager, organizations can import encryption certificate histories from any Certification Authority. Endpoint Manager will then automatically deliver those certificates to any device that the user enrolls. Generally, Simple Certificate Enrollment Protocol (SCEP) is used for signing certificates. With SCEP, the private key is generated and stored on the enrolled device and a unique certificate is delivered to each device that a user enrolls, which can be used for non-repudiation. Lastly, Endpoint Manager supports derived credentials for customers who need support for the NIST 800-157 standard. On iOS, the Company Portal is used to retrieve signing and encryption certificates from Intune.
+With Endpoint Manager, organizations can import encryption certificate histories from any Certification Authority. Endpoint Manager will then automatically deliver those certificates to any device that the user enrolls. Generally, Simple Certificate Enrollment Protocol (SCEP) is used for signing certificates. With SCEP, the private key is generated and stored on the enrolled device and a unique certificate is delivered to each device that a user enrolls, which can be used for non-repudiation. Lastly, Endpoint Manager supports derived credentials for customers who need support for the NIST 800-157 standard. The Company Portal is used to retrieve signing and encryption certificates from Intune.
 
-In order to deliver certificates to Outlook for iOS, the following prerequisites must be completed:
+In order to deliver certificates to Outlook for iOS and Android, the following prerequisites must be completed:
 
 - Deploy trusted root certificates via Endpoint Manager. For more information, see [Create trusted certificate profiles](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles).
 - Encryption certificates must be imported into Endpoint Manager. For more information, see [Configure and use imported PKCS certificates with Intune](https://docs.microsoft.com/intune/protect/certificates-imported-pfx-configure).
 - Install and Configure the PFX Connector for Microsoft Intune. For more information, see [Download, install, and configure the PFX Certificate Connector for Microsoft Intune](https://docs.microsoft.com/intune/protect/certificates-imported-pfx-configure#download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune).
 - Devices must be MDM enrolled to receive trusted root and S/MIME certificates automatically from Endpoint Manager.
 
+#### Outlook for iOS Automated Certificate Delivery
+
 Use the following steps to create and configure the Outlook for iOS S/MIME policy in Endpoint Manager. These settings provide automated delivery of the signing and encryption certificates.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and select **Apps** > **Apps configuration policies** > **Add**.
-2. Enter the **Name** and **Description** of the configuration policy.
-3. Select **Managed devices** as the **Device enrollment type**.
-4. Select **iOS/iPadOS** as the **Platform**.
-5. For **Associated app**, choose **Select the required app**, and then, on the **Targeted apps** blade, choose **Outlook**.
+1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
+2. Select **Apps** and then select **App configuration policies**.
+3. On the **App Configuration policies** blade, choose **Add** and select **Managed devices** to start the app configuration policy creation flow.
+4. On the **Basics** section, enter a **Name**, and optional **Description** for the app configuration settings.
+5. For **Platform**, choose **iOS/iPadOS**.
+6. For **Targeted app**, choose **Select app**, and then, on the **Associated app** blade, choose **Microsoft Outlook**. Click **OK**.
 
    > [!NOTE]
    > If Outlook is not listed as an available app, then you must add it by following the instructions in [Assign apps to Android work profile devices with Intune](https://docs.microsoft.com/intune/apps-add-android-for-work) and [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios).
 
-6. Click **Configuration settings** to add configuration settings. 
-    - Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
-7. Click **S/MIME** to display the **Outlook S/MIME settings**.
+7. Click **Configuration settings** to add configuration settings. 
+
+    Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+
+8. Click **S/MIME** to display the **Outlook S/MIME settings**.
     ![Screenshot showing Outlook S/MIME settings.](../../media/app-configuration-policies-outlook-smime-01.png)
-8. Set **Enable S/MIME** to **Yes**.
-9. Set **Deploy S/MIME certificates from Intune** to **Yes**.
-10. Under **Signing certificates** next to **Certificate profile type**, choose one of the following options:
-    - **SCEP** – Creates a certificate that is unique for the device and user that can be used by Microsoft Outlook for signing. For related information, see [Configure infrastructure to support SCEP with Intune](https://docs.microsoft.com/intune/protect/certificates-scep-configure) and [Create a SCEP certificate profile](https://docs.microsoft.com/intune/protect/certificates-profile-scep#create-a-scep-certificate-profile). 
-    - **PKCS imported certificates** – Uses a certificate that is unique to the user, but may be shared across devices and has been imported to Endpoint Manager by the administrator on behalf of the user. The certificate is delivered to any device that a user enrolls. Endpoint Manager will automatically pick the imported certificate that supports signing to deliver to the device the corresponds to the enrolled user.
+9. Set **Enable S/MIME** to **Yes**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+10. Set **Deploy S/MIME certificates from Intune** to **Yes**.
+11. Under **Signing certificates** next to **Certificate profile type**, choose one of the following options:
+    - **SCEP** – Creates a certificate that is unique for the device and user that can be used by Microsoft Outlook for signing. For information on what is required to use SCEP certificate profiles, see [Configure infrastructure to support SCEP with Intune](https://docs.microsoft.com/intune/protect/certificates-scep-configure). 
+    - **PKCS imported certificates** – Uses a certificate that is unique to the user, but may be shared across devices and has been imported to Endpoint Manager by the administrator on behalf of the user. The certificate is delivered to any device that a user enrolls. Endpoint Manager will automatically pick the imported certificate that supports signing to deliver to the device the corresponds to the enrolled user. For information on what is required to use PKCS imported certificates, see [Configure and use PKCS certificates with Intune](https://docs.microsoft.com/mem/intune/protect/certficates-pfx-configure).
     - **Derived credentials** – Uses a certificate that is already on the device that can be used for signing. The certificate must be retrieved on the device using the derived credentials flows in Intune.
-11. Under **Encryption certificates** next to **Certificate profile type**, choose one of the following options:
+12. Under **Encryption certificates** next to **Certificate profile type**, choose one of the following options:
     - **PKCS imported certificates** – Delivers any encryption certificates that have been imported to Endpoint Manager by the administrator across any device a user enrolls Endpoint Manager will automatically pick the imported certificate or certificates that support encryption to deliver to the device that corresponds to the enrolled user.
     - **Derived credentials** – Uses a certificate that is already on the device that can be used for signing. The certificate must be retrieved on the device using the derived credentials flows in Intune.
-12. Next to **End-user notifications**, choose how to notify end users to retrieve the certificates by selecting **Company Portal** or **Email**.
+13. Next to **End-user notifications**, choose how to notify end users to retrieve the certificates by selecting **Company Portal** or **Email**.
 
     On iOS, users must use the Company Portal app to retrieve their S/MIME certificates. Endpoint Manager will inform the user that they need to launch the Company Portal to retrieve their S/MIME certificates via the Notifications section of Company Portal, a push notification, and/or an email. Clicking one of the notifications will take the user to a landing page that informs them of progress retrieving the certificates. Once the certificates are retrieved, the user can use S/MIME from within Microsoft Outlook for iOS to sign and encrypt email.
     
@@ -157,7 +160,30 @@ Use the following steps to create and configure the Outlook for iOS S/MIME polic
     
     End-users will see an experience similar to the following for automated certificate delivery:
     ![Screenshot showing Outlook S/MIME settings.](../../media/all-in-one-certificate-delivery.png)
-13. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
+14. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
+
+#### Outlook for Android Automated Certificate Delivery
+
+Use the following steps to create and configure the Outlook for iOS and Android S/MIME policy in Endpoint Manager. These settings provide automated delivery of the signing and encryption certificates.
+
+1. Sign into [Microsoft Endpoint Manager](https://endpoint.microsoft.com).
+2. Create a [SCEP certificate profile](https://docs.microsoft.com/mem/intune/protect/certificates-profile-scep) or [PKCS certificate profile](https://docs.microsoft.com/mem/intune/protect/certificates-imported-pfx-configure#create-a-pkcs-imported-certificate-profile) and assign it to your mobile users.
+3. Select **Apps** and then select **App configuration policies**.
+4. On the **App Configuration policies** blade, choose **Add** and select **Managed devices** to start the app configuration policy creation flow.
+5. On the **Basics** section, enter a **Name**, and optional **Description** for the app configuration settings.
+6. For **Platform**, choose **Android Enterprise** and for **Profile Type**, choose **Work Profile**.
+7. For **Targeted app**, choose **Select app**, and then, on the **Associated app** blade, choose **Microsoft Outlook**. Click **OK**.
+
+   > [!NOTE]
+   > If Outlook is not listed as an available app, then you must add it by following the instructions in [Assign apps to Android work profile devices with Intune](https://docs.microsoft.com/intune/apps-add-android-for-work) and [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios).
+
+8. Click **Configuration settings** to add configuration settings. 
+
+    Select **Use configuration designer** next to **Configuration settings format** and accept or modify the default settings. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+
+9. Click **S/MIME** to display the **Outlook S/MIME settings**.
+10. Set **Enable S/MIME** to **Yes**. When selecting **Yes** or **No**, administrators can choose to allow the user to change the app setting's value. Select **Yes** (app default) to allow the user to change the setting or choose **No** if you want to prevent the user from changing the setting's value.
+11. Select **Assignments** to assign the app configuration policy to the Azure AD groups. For more information, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-deploy).
 
 ### Enabling S/MIME in the client
 

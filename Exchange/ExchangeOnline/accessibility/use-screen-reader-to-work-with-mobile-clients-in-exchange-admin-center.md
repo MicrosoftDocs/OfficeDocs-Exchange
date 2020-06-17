@@ -21,31 +21,31 @@ ms.service: exchange-online
 
 # Use a screen reader to work with mobile clients in the Exchange admin center in Exchange Online
 
-You can use your screen reader in the Exchange admin center (EAC) to enable the use of mobile devices for users of Exchange Online, who can then access information in their Office 365 mailboxes through mobile phones and tablets. [Learn more about clients and mobile in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=799148).
+You can use your screen reader in the Exchange admin center (EAC) to enable the use of mobile devices for users of Exchange Online, who can then access information in their Office 365 mailboxes through mobile phones and tablets. [Learn more about clients and mobile in Exchange Online](../clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online.md).
 
 ## Get started
 
-Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Office 365 subscription and admin role to work in the EAC. Then, open the EAC and get started.
+Navigate with Internet Explorer and keyboard shortcuts, and make sure that you have the appropriate Office 365 or Microsoft 365 subscription plan and admin role to work in the EAC. Then, open the EAC and get started.
 
 ### Use your browser and keyboard to navigate in the EAC
 
 Exchange Online, which includes the EAC, is a web-based application, so the keyboard shortcuts and navigation may be different from those in Exchange 2016. [Accessibility in the Exchange admin center](accessibility-in-exchange-admin-center.md).
 
-For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://go.microsoft.com/fwlink/p/?LinkID=787614).
+For best results when working in the EAC in Exchange Online, use Internet Explorer as your browser. [Learn more about Internet Explorer keyboard shortcuts](https://support.microsoft.com/help/17456/).
 
-Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://go.microsoft.com/fwlink/p/?LinkID=317550).
+Many tasks in the EAC require the use of pop-up windows so, in your browser, be sure to [enable pop-up windows for Office 365](https://support.microsoft.com/help/17479).
 
-### Confirm your Office 365 subscription plan
+### Confirm your Office 365 or Microsoft 365 subscription plan
 
-Exchange Online is included in Office 365 business and enterprise subscription plans. But capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
+Exchange Online is included in several different subscription plans. But capabilities may differ by plan. If your EAC doesn't include a function described in this article, your plan might not include it.
 
-For more information about the Exchange Online capabilities in your subscription plan, go to [What Office 365 business product or license do I have?](https://go.microsoft.com/fwlink/p/?LinkID=797552
-) and [Exchange Online Service Description.](https://go.microsoft.com/fwlink/p/?LinkID=797553
+For more information about the Exchange Online capabilities in your subscription plan, go to [What Microsoft 365 Apps for business product or license do I have?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd
+) and [Exchange Online Service Description.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description
 ).
 
 ### Open the EAC, and confirm your admin role
 
-To complete the tasks covered in this topic, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your Office 365 global administrator has assigned you to the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=797868) and [Records Management](https://go.microsoft.com/fwlink/p/?LinkId=798797) admin role groups. [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
+To complete the tasks covered in this topic, [Use a screen reader to open the Exchange admin center](use-screen-reader-to-open-exchange-admin-center.md) and check that your global administrator has assigned you to the Organization Management and Records Management admin role groups. [Use a screen reader to identify your admin role in the Exchange admin center](use-screen-reader-to-identify-admin-role-in-exchange-admin-center.md).
 
 ## Configure mobile device mailbox policies and access
 
@@ -59,15 +59,15 @@ You can use the EAC to create mobile device mailbox policies that apply a common
 
 - Device encryption is not required.
 
-To view, edit, or create a mobile device mailbox policy, on the EAC primary navigation pane, select the **mobile** link and then, on the menu bar, select the **mobile device mailbox policies** link. Learn more about the options you can set for [mobile device mailbox policies](https://go.microsoft.com/fwlink/p/?LinkId=799148).
+To view, edit, or create a mobile device mailbox policy, on the EAC primary navigation pane, select the **mobile** link and then, on the menu bar, select the **mobile device mailbox policies** link. Learn more about the options you can set for [mobile device mailbox policies](../clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online.md).
 
 You can also specify Exchange ActiveSync access settings, maintain a list of quarantined mobile devices, and set up device access rules. To do this, on the EAC primary navigation pane, select the **mobile** link and then, on the menu bar, select the **mobile device access** link.
 
 ## Enable Exchange ActiveSync and Outlook on the web for users
 
-Exchange ActiveSync is an Exchange synchronization protocol which allows mobile phones to access your organization's Exchange server. With Exchange ActiveSync, recipients can use their mobile devices to access their email, calendar, contacts, and tasks. They can also continue to access this information while working offline. Learn more about [Exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=799149).
+Exchange ActiveSync is an Exchange synchronization protocol which allows mobile phones to access your organization's Exchange server. With Exchange ActiveSync, recipients can use their mobile devices to access their email, calendar, contacts, and tasks. They can also continue to access this information while working offline. Learn more about [Exchange ActiveSync](../clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync.md).
 
-With Outlook on the web (formerly known as Outlook Web App), users can access their Exchange mailbox from almost any web browser, including from a browser on their mobile devices. [Learn more about Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=799150).
+With Outlook on the web (formerly known as Outlook Web App), users can access their Exchange mailbox from almost any web browser, including from a browser on their mobile devices. [Learn more about Outlook on the web](../clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-on-the-web.md).
 
 ### Enable Exchange ActiveSync and Outlook on the web for an individual user
 

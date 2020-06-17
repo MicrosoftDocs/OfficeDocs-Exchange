@@ -46,7 +46,7 @@ To implement specific messaging policies by using mail flow rules, see these top
 
 - [Common message approval scenarios](common-message-approval-scenarios.md)
 
-- [Define rules to encrypt or decrypt email messages](https://go.microsoft.com/fwlink/p/?Linkid=402846)
+- [Define rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email))
 
 ## Mail flow rule components
 
@@ -105,9 +105,9 @@ There are several types of messages that pass through an organization. The follo
 |**Type of message**|**Can a rule be applied?**|
 |:-----|:-----|
 |**Regular messages**: Messages that contain a single rich text format (RTF), HTML, or plain text message body or a multipart or alternative set of message bodies.|Yes|
-|**Office 365 Message Encryption**: Messages encrypted by Office 365 Message Encryption in Office 365. For more information, see [Office 365 Message Encryption](https://go.microsoft.com/fwlink/p/?LinkId=392525).|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> For a rule to inspect or modify the contents of an encrypted message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://go.microsoft.com/fwlink/p/?linkid=848060). <br/><br/> You can also create a rule that automatically decrypts encrypted messages. For more information, see [Define rules to encrypt or decrypt email messages](https://go.microsoft.com/fwlink/p/?Linkid=402846).|
+|**Office 365 Message Encryption**: Messages encrypted by Office 365 Message Encryption in Office 365. For more information, see [Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> For a rule to inspect or modify the contents of an encrypted message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://docs.microsoft.com/exchange/enable-or-disable-transport-decryption-exchange-2013-help). <br/><br/> You can also create a rule that automatically decrypts encrypted messages. For more information, see [Define rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).|
 |**S/MIME encrypted messages**|Rules can only access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> Rules with conditions that require inspection of the message's content, or actions that modify the message's content can't be processed.|
-|**RMS protected messages**: Messages that had an Active Directory Rights Management Services (AD RMS) or Azure Rights Management (RMS) policy applied.|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> For a rule to inspect or modify the contents of an RMS protected message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://go.microsoft.com/fwlink/p/?linkid=848060).|
+|**RMS protected messages**: Messages that had an Active Directory Rights Management Services (AD RMS) or Azure Rights Management (RMS) policy applied.|Rules can always access envelope headers and process messages based on conditions that inspect those headers. <br/><br/> For a rule to inspect or modify the contents of an RMS protected message, you need to verify that transport decryption is enabled (Mandatory or Optional; the default is Optional). For more information, see [Enable or disable transport decryption](https://docs.microsoft.com/exchange/enable-or-disable-transport-decryption-exchange-2013-help).|
 |**Clear-signed messages**: Messages that have been signed but not encrypted.|Yes|
 |**Anonymous messages**: Messages sent by anonymous senders.|Yes|
 |**Read reports**: Reports that are generated in response to read receipt requests by senders. Read reports have a message class of `IPM.Note*.MdnRead` or `IPM.Note*.MdnNotRead`.|Yes|
@@ -126,10 +126,10 @@ There are several types of messages that pass through an organization. The follo
 
 [Use mail flow rules to inspect message attachments in Office 365](inspect-message-attachments.md)
 
-[Organization-wide Disclaimers, Signatures, Footers, or Headers](https://technet.microsoft.com/library/e45e33c9-e53b-427c-ada5-70901bc399b8.aspx)
+[Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md)
 
 [Manage message approval](manage-message-approval.md)
 
 [Mail flow rule procedures in Exchange Online](mail-flow-rule-procedures.md)
 
-[Transport and Inbox rule limits](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[Journal, transport, and inbox rule limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

@@ -43,7 +43,7 @@ Here are a few items to be aware of:
 
 - You must synchronize accounts between your on-premises Active Directory domain and Office 365 by using Azure Active Directory sync for a staged migration to work.
 
-- The primary domain name used for your on-premises Exchange organization must be a domain verified to your Office 365 organization.
+- The primary domain name used for your on-premises Exchange organization must be a domain verified to your Microsoft 365 or Office 365 organization.
 
 - You can migrate only user mailboxes and resource mailboxes. Other recipient types, such as distribution groups, contacts, and mail-enabled users are migrated to Office 365 through the process of directory synchronization.
 
@@ -81,7 +81,7 @@ Here's a description of the staged migration shown in the illustration.
 
    - Verifies that directory synchronization is enabled.
 
-   - Checks that a mail-enabled user exists in the Office 365 organization for each user listed in the CSV file. Mail-enabled users are created in Office 365 as a result of the directory synchronization process.
+   - Checks that a mail-enabled user exists in the Microsoft 365 or Office 365 organization for each user listed in the CSV file. Mail-enabled users are created in Office 365 as a result of the directory synchronization process.
 
    - Converts the Office 365 mail-enabled user to an Exchange Online mailbox for each user in the migration batch.
 
@@ -111,11 +111,11 @@ Here's a description of the staged migration shown in the illustration.
 
 12. The administrator, to complete the transition to Exchange Online and Office 365, performs post-configuration tasks such as:
 
-    - Assign licenses to Office 365 users.
+    - Assign licenses to Microsoft 365 or Office 365 users.
 
-    - Configure the MX record to point to your Office 365 organization so that email is delivered directly to Exchange Online mailboxes.
+    - Configure the MX record to point to your Microsoft 365 or Office 365 organization so that email is delivered directly to Exchange Online mailboxes.
 
-    - Create an Autodiscover Domain Name System (DNS) record for your Office 365 organization.
+    - Create an Autodiscover Domain Name System (DNS) record for your Microsoft 365 or Office 365 organization.
 
     See how-to steps in [Route your email directly to Office 365](perform-a-staged-migration/perform-a-staged-migration.md#route-your-email-directly-to-office-365) and [Complete post migration tasks](perform-a-staged-migration/perform-a-staged-migration.md#complete-post-migration-tasks).
 
@@ -154,4 +154,4 @@ If you're ready to begin a staged email migration, you can use the steps given i
 
 [Ways to migrate email to Office 365](mailbox-migration.md)
 
-[Use PowerShell to perform a staged migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615255)
+[Use PowerShell to perform a staged migration to Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-a-staged-migration-to-office-365)

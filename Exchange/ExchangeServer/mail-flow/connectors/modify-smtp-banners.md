@@ -36,7 +36,7 @@ Here are some reasons that you might want to modify the default SMTP banner:
 
 - Estimated time to complete: 5 minutes
 
-- You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- You can only use PowerShell to perform this procedure. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - The replacement SMTP banner text string must always start with `220` (the default "Service ready" SMTP response code is 220).
 

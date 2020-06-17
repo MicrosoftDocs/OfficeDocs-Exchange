@@ -137,6 +137,6 @@ If you need the Gmail connection for a brief time only, for example for an IMAP 
 
 ## Related Topics
 
-[Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e)
+[Migrate email and contacts to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin)
 
 [Ways to migrate multiple email accounts to Office 365](../mailbox-migration.md)

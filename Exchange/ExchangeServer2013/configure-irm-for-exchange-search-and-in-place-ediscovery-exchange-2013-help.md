@@ -54,7 +54,7 @@ This example configures IRM to allow Exchange Search to index IRM-protected mess
 Set-IRMConfiguration -SearchEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
 
 ## Use the Shell to configure IRM for In-Place eDiscovery
 
@@ -67,7 +67,7 @@ This example enables members of the Discovery Management role group to access IR
 Set-IRMConfiguration -EDiscoverySuperUserEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration).
 
 ## How do you know this worked?
 

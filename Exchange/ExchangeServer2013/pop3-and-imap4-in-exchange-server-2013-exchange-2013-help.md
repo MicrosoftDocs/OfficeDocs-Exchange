@@ -38,7 +38,7 @@ The POP3 and IMAP4 protocols have the following benefits and limitations:
 POP3 and IMAP4 email applications don't use POP3 and IMAP4 to send messages to the email server; they rely on the SMTP protocol to send messages. The connector for receiving email submissions from client applications that use POP3 or IMAP4 is created automatically when you install Exchange. For more information about connectors, see [Receive connectors](receive-connectors-exchange-2013-help.md).
 
 > [!NOTE]
-> Each time a user uses a POP or IMAP based email program to open their Office 365 email, they may experience a delay of several seconds. The delay is caused by a proxy server, which introduces an additional hop for authentication. The proxy server first looks up the assigned pod server (Client Access server), and then authenticates against that.
+> Each time a user uses a POP or IMAP based email program to open their Microsoft 365 or Office 365 email, they may experience a delay of several seconds. The delay is caused by a proxy server, which introduces an additional hop for authentication. The proxy server first looks up the assigned pod server (Client Access server), and then authenticates against that.
 
 ## POP3 and IMAP4 cross-site connectivity
 

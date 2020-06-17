@@ -91,12 +91,7 @@ In addition to the ability to configure security options for communications betw
 
 - **Remote wipe**: If a mobile device is lost, stolen, or otherwise compromised, you can issue a remote wipe command from the Exchange Server computer or from any Web browser by using Outlook Web App. This command erases all data from the mobile device.
 
-- **Device password policies**: Exchange ActiveSync lets you configure several options for device passwords.
-
-    > [!NOTE]
-    > Apple Touch ID and Face ID are not supported as a substitute for a device password. If you enable Touch ID or Face ID to secure your iOS device, you must still create and enter a password if your mobile device mailbox policies require a password.
-
-    The device password options include the following:
+- **Device password policies**: Exchange ActiveSync lets you configure several options for device passwords. The device password options include the following:
 
   - **Minimum password length (characters)**: This option specifies the length of the password for the mobile device. The default length is 4 characters, but as many as 18 can be included.
 

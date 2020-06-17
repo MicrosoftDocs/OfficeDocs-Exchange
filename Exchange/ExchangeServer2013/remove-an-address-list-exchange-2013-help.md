@@ -52,7 +52,7 @@ Remove-AddressList -Identity "Sales Department"
 
 Type **Y** to confirm that you want to remove this address list, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-AddressList](https://technet.microsoft.com/library/bb124342\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-AddressList](https://docs.microsoft.com/powershell/module/exchange/Remove-AddressList).
 
 ## Use the Shell to remove an address list that contains child address lists
 
@@ -64,4 +64,4 @@ Remove-AddressList -Identity Departments -Recursive
 
 Type **Y** to confirm that you want to remove the parent address list and its child address lists, and then press ENTER.
 
-For detailed syntax and parameter information, see [Remove-AddressList](https://technet.microsoft.com/library/bb124342\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-AddressList](https://docs.microsoft.com/powershell/module/exchange/Remove-AddressList).

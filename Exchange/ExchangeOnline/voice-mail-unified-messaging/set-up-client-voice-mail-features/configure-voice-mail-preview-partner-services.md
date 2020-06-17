@@ -29,7 +29,7 @@ For additional management tasks related to UM mailbox policies, see [UM mailbox 
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Unified Messaging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
 
@@ -75,6 +75,6 @@ If you want to configure the Voice Mail Preview partner service for some, but no
 
 - [Assign a UM mailbox policy](../../voice-mail-unified-messaging/set-up-voice-mail/assign-um-mailbox-policy.md)
 
-- [Set-UMMailbox](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-ummailbox)
+- [Set-UMMailbox](https://docs.microsoft.com/powershell/module/exchange/set-ummailbox)
 
 For more information about the Voice Mail Preview partner program, see [Voice Mail Preview advisor](voice-mail-preview-advisor.md).

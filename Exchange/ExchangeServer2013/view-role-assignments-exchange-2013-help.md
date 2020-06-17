@@ -48,7 +48,7 @@ You can view a list of all role assignments configured in your organization by r
 Get-ManagementRoleAssignment "Tier 1*"
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment).
 
 ## View the details of a specific role assignment
 
@@ -64,7 +64,7 @@ This example retrieves the details of the Help Desk Assignment role assignment.
 Get-ManagementRoleAssignment "Help Desk Assignment" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment).
 
 ## View the list of role assignments assigned to a specific role assignee
 
@@ -80,7 +80,7 @@ This example retrieves all of the role assignments associated with the Server Ma
 Get-ManagementRoleAssignment -RoleAssignee "Server Management"
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment).
 
 ## View the role assignments associated with a specific role
 
@@ -98,7 +98,7 @@ This example retrieves all of the role assignments associated with the Mail Reci
 Get-ManagementRoleAssignment -Role "Mail Recipients"
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment).
 
 ## View a list of role assignments that use a specific predefined scope
 
@@ -114,7 +114,7 @@ This example retrieves all of the role assignments that use the Organization pre
 Get-ManagementRoleAssignment -RecipientWriteScope Organization
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment).
 
 ## View a list of role assignments that have been scoped to a specific OU
 
@@ -130,7 +130,7 @@ This example retrieves all of the role assignments that have been scoped to the 
 Get-ManagementRoleAssignment -RecipientOrganizationalUnitScope "contoso.com/North America/Engineering/Users"
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment).
 
 ## View a list of assignments that use a specific custom scope
 
@@ -158,7 +158,7 @@ This example retrieves all of the role assignments that use the Seattle AD Site 
 Get-ManagementRoleAssignment -ExclusiveConfigWriteScope "Seattle AD Site"
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment).
 
 ## View a list of exclusive or regular scopes
 
@@ -180,7 +180,7 @@ This example retrieves a list of regular scopes without any exclusive scopes.
 Get-ManagementRoleAssignment -Exclusive $False
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment).
 
 ## View who can modify a specific recipient or server
 
@@ -198,7 +198,7 @@ You can combine the *WritableRecipient* and *WritableServer* parameters with oth
 Get-ManagementRoleAssignment -WritableServer EX02 -RoleAssignee "Server Management" -GetEffectiveUsers
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment).
 
 ## View the users who receive permissions from an assignment via a role group or USG
 
@@ -216,7 +216,7 @@ Get-ManagementRoleAssignment "Help Desk Assignment" -GetEffectiveUsers
 
 You can also combine the *GetEffectiveUsers* switch with several other parameters on the **Get-ManagementRoleAssignment** cmdlet to expand the role groups and USGs that the role assignments are assigned to. For an example of how the *GetEffectiveUsers* switch is used with other parameters, see "View who can modify a specific recipient or server" earlier in this topic.
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment).
 
 ## View a list of role assignments that are enabled or disabled
 
@@ -232,4 +232,4 @@ This example retrieves a list of role assignments that are disabled.
 Get-ManagementRoleAssignment -Enabled $False
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://technet.microsoft.com/library/dd351024\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRoleAssignment).

@@ -41,7 +41,7 @@ For information about when to configure remote domains, descriptions of the avai
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
-- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../../exchange-admin-center.md). To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -112,7 +112,7 @@ This example creates a remote domain for messages sent to the contoso.com domain
 New-RemoteDomain -Name "Contoso and subdomains" -DomainName *.contoso.com
 ```
 
-For detailed syntax and parameter information, see [New-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-remotedomain).
+For detailed syntax and parameter information, see [New-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/new-remotedomain).
 
 #### Step 2: Configure the remote domain settings
 
@@ -170,7 +170,7 @@ This example specifies using the Unicode character set for non-MIME messages sen
 Set-RemoteDomain -Identity Contoso -NonMimeCharacterSet utf-8
 ```
 
-For detailed syntax and parameter information, see [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-remotedomain).
+For detailed syntax and parameter information, see [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/set-remotedomain).
 
 ### How do you know this worked?
 
@@ -216,7 +216,7 @@ This example removes the remote domain named Contoso.
 Remove-RemoteDomain -Identity Contoso
 ```
 
-For detailed syntax and parameter information, see [Remove-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/remove-remotedomain).
+For detailed syntax and parameter information, see [Remove-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/remove-remotedomain).
 
 ### How do you know this worked?
 

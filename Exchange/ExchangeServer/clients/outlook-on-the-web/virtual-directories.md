@@ -24,7 +24,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
 - Estimated time to complete each procedure: 10 minutes.
 
-- For more information about the EAC, see .[Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- For more information about the EAC, see .[Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - Secure Sockets Layer (SSL) is being replaced by Transport Layer Security (TLS) as the protocol that's used to encrypt data sent between computer systems. They're so closely related that the terms "SSL" and "TLS" (without versions) are often used interchangeably. Because of this similarity, references to "SSL" in Exchange topics, the Exchange admin center, and the Exchange Management Shell have often been used to encompass both the SSL and TLS protocols. Typically, "SSL" refers to the actual SSL protocol only when a version is also provided (for example, SSL 3.0). To find out why you should disable the SSL protocol and switch to TLS, check out [Protecting you against the SSL 3.0 vulnerability](https://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
 
@@ -89,7 +89,7 @@ You can use the Exchange admin center (EAC) or the Exchange Management Shell to 
 
        - **User principal name (UPN)** For example, vbarrios@contoso.com. Note that if the UPN doesn't match the email address, users can't access Outlook on the web by using this method.
 
-       - **User name only** For example, VBarrios. This setting requires you to configure the default domain that's used with all user names. Click **Browse** in the **Logon Domain** property to select the default Active Directory domain. If the user isn't a member of the specified domain, they're required to enter the domain and user name when they sign in.
+       - **Username only** For example, VBarrios. This setting requires you to configure the default domain that's used with all user names. Click **Browse** in the **Logon Domain** property to select the default Active Directory domain. If the user isn't a member of the specified domain, they're required to enter the domain and username when they sign in.
 
        ![The Authentication tab in the properties of the Outlook on the web virtual directory in the EAC.](../../media/044c1a98-8109-4745-9827-f256303fcd46.png)
 
@@ -249,7 +249,7 @@ Get-OWAVirtualDirectory -Identity "Mailbox01\owa (Default Web Site)" | Format-Li
 
  **Note**: Not every setting is applicable to Exchange 2016 or Exchange 2019 (for example, **SpellCheckerEnabled**).
 
-For detailed syntax and parameter information, see [Get-OWAVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/get-owavirtualdirectory).
+For detailed syntax and parameter information, see [Get-OWAVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/get-owavirtualdirectory).
 
 ## Use the Exchange Management Shell to configure Outlook on the web virtual directory settings
 
@@ -276,4 +276,4 @@ This example enables configures direct file access in Outlook on the web to bloc
 Set-OwaVirtualDirectory -Identity "Contoso\owa (Default Web Site)" -ActionForUnknownFileAndMIMETypes Block
 ```
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-owavirtualdirectory).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-owavirtualdirectory).

@@ -55,7 +55,7 @@ This example copies the Mail Recipients role and its management role entries to 
 New-ManagementRole -Parent "Mail Recipients" -Name "Seattle Mail Recipients"
 ```
 
-For detailed syntax and parameter information, see [New-ManagementRole](https://technet.microsoft.com/library/dd298073\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRole).
 
 ## Step 2: Change the new role's management role entries
 

@@ -44,7 +44,7 @@ For a complete list of all the conditions and exceptions that are available for 
 
 Sometimes it takes two rules to do what you want. Mail flow rules are processed in order, so multiple rules can apply to the same message. For example, if one of the actions is to block the message, and you also have another action you'd like to apply, such as copying the message to the sender's manager or changing the subject for the notification message, you would need two rules. The first rule could copy the message to the sender's manager and change the subject, and the second rule could block the message.
 
-If you use two rules like this, be sure that the conditions are identical. To see examples, look at example 3 in [Common message approval scenarios in Exchange Online](common-message-approval-scenarios.md), example 3 in [Common attachment blocking scenarios for mail flow rules in Exchange Online](common-attachment-blocking-scenarios.md), and [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](disclaimers-signatures-footers-or-headers.md).
+If you use two rules like this, be sure that the conditions are identical. To see examples, look at example 3 in [Common message approval scenarios in Exchange Online](common-message-approval-scenarios.md), and example 3 in [Common attachment blocking scenarios for mail flow rules in Exchange Online](common-attachment-blocking-scenarios.md).
 
 ## Don't repeat an action on every email in a conversation
 
@@ -71,4 +71,4 @@ The text file can contain regular expressions for patterns. These expressions ar
 
 For an example that shows a text file with regular expressions and the Exchange module Windows PowerShell commands to use, see [Use mail flow rules to route email based on a list of words, phrases, or patterns in Exchange Online](use-rules-to-route-email.md).
 
-To learn how to specify patterns using regular expressions, see [Regular Expression Reference](https://go.microsoft.com/fwlink/p/?LinkId=532394).
+To learn how to specify patterns using regular expressions, see [Regular Expression Reference](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference).

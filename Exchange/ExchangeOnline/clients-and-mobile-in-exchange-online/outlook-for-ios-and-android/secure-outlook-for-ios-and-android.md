@@ -26,7 +26,7 @@ Protecting company or organizational data on users' mobile devices is extremely 
 
 1. **Recommended**: If your organization has an Enterprise Mobility + Security subscription, or has separately obtained licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Enterprise Mobility + Security suite to protect corporate data with Outlook for iOS and Android](#leveraging-enterprise-mobility--security-suite-to-protect-corporate-data-with-outlook-for-ios-and-android) to protect corporate data with Outlook for iOS and Android.
 
-2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Mobile Device Management for Office 365](#leveraging-mobile-device-management-for-office-365), and use the Mobile Device Management (MDM) for Office 365 capabilities that are included in your Office 365 subscription.
+2. If your organization doesn't have an Enterprise Mobility + Security subscription or licensing for Microsoft Intune and Azure Active Directory Premium, follow the steps in [Leveraging Mobile Device Management for Office 365](#leveraging-mobile-device-management-for-office-365), and use the Mobile Device Management (MDM) for Office 365 capabilities that are included in your Office 365 or Microsoft 365 subscription.
 
 3. Follow the steps in [Leveraging Exchange Online mobile device policies](#leveraging-exchange-online-mobile-device-policies) to implement basic Exchange mobile device mailbox and device access policies.
 
@@ -53,7 +53,7 @@ Once the app is installed, users can follow these steps to add their corporate e
 
 - [Set up email in the Outlook for Android app](https://support.office.com/article/886db551-8dfa-4fd5-b835-f8e532091872)
 
-- [Optimizing the Outlook mobile app for your iOS or Android phone](https://support.office.com/article/de075b19-b73c-4d8a-841b-459982c7e890)
+- [Optimizing the Outlook mobile app for your iOS or Android phone](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890)
 
 > [!IMPORTANT]
 > To leverage app-based conditional access policies, the Microsoft Authenticator app must be installed on iOS devices. For Android devices, the Intune Company Portal app is required. For more information, see [App-based Conditional Access with Intune](https://docs.microsoft.com/intune/app-based-conditional-access-intune).
@@ -113,7 +113,7 @@ Regardless of whether the device is enrolled in an MDM solution, an Intune app p
 For more information on the available settings, see [Android app protection policy settings in Microsoft Intune](https://docs.microsoft.com/intune/app-protection-policy-settings-android) and [iOS app protection policy settings](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
 > [!IMPORTANT]
-> To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](https://docs.microsoft.com/intune/app-protection-enabled-apps-android).
+> To apply Intune app protection policies against apps on Android devices that are not enrolled in Intune, the user must also install the Intune Company Portal. For more information, see [What to expect when your Android app is managed by app protection policies](https://docs.microsoft.com/mem/intune/fundamentals/end-user-mam-apps-android).
 
 ## Leveraging Mobile Device Management for Office 365
 
@@ -121,7 +121,7 @@ If you don't plan to leverage the Enterprise Mobility + Security suite, you can 
 
 Because this is a device management solution, there is no native capability to control which apps can be used even after a device is enrolled. If you want to limit access to Outlook for iOS and Android, you will need to obtain Azure Active Directory Premium licenses and leverage the conditional access policies discussed in [Block all email apps except Outlook for iOS and Android using conditional access](#block-all-email-apps-except-outlook-for-ios-and-android-using-conditional-access).
 
-An Office 365 global admin must complete the following steps to activate and set up MDM for Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/article/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
+An global admin must complete the following steps to activate and set up MDM for Office 365. See [Set up Mobile Device Management (MDM) in Office 365](https://support.microsoft.com/office/dd892318-bc44-4eb1-af00-9db5430be3cd) for complete steps. In summary, these steps include:
 
 1. Activating MDM for Office 365 by following steps in the Security & Compliance Center.
 
@@ -224,11 +224,11 @@ Alternatively, you can block native Exchange ActiveSync apps on specific Android
 
 **Additional resources**:
 
-- [New-ActiveSyncDeviceAccessRule](https://docs.microsoft.com/powershell/module/exchange/devices/New-ActiveSyncDeviceAccessRule)
+- [New-ActiveSyncDeviceAccessRule](https://docs.microsoft.com/powershell/module/exchange/New-ActiveSyncDeviceAccessRule)
 
-- [Get-MobileDevice](https://docs.microsoft.com/powershell/module/exchange/devices/Get-MobileDevice)
+- [Get-MobileDevice](https://docs.microsoft.com/powershell/module/exchange/Get-MobileDevice)
 
-- [Set-ActiveSyncOrganizationSettings](https://docs.microsoft.com/powershell/module/exchange/devices/Set-ActiveSyncOrganizationSettings)
+- [Set-ActiveSyncOrganizationSettings](https://docs.microsoft.com/powershell/module/exchange/Set-ActiveSyncOrganizationSettings)
 
 ## Blocking Outlook for iOS and Android
 

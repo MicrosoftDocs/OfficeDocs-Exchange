@@ -40,4 +40,4 @@ For additional management tasks related to mailbox audit logging, see [Mailbox a
 
 ## Use the Shell to search the mailbox audit log for a mailbox
 
-For examples of how to use the Shell to search the mailbox audit log for a mailbox, see [Examples](https://technet.microsoft.com/ff522360\(exchg.150\)#examples) in [Search-MailboxAuditLog](https://technet.microsoft.com/library/ff522360\(v=exchg.150\)).
+For examples of how to use the Shell to search the mailbox audit log for a mailbox, see [Examples](https://docs.microsoft.com/powershell/module/exchange/Search-MailboxAuditLog#examples) in [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/Search-MailboxAuditLog).

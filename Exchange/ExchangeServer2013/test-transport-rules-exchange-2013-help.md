@@ -72,7 +72,7 @@ To test a rule, you can either send enough test messages to confirm that what yo
 
 One way to test is to sign in as both the sender and recipient of a test message.
 
-Because a web browser typically doesn't let you have simultaneous open sessions on the same computer signed in to multiple accounts, you can use [Internet Explorer InPrivate Browsing](https://go.microsoft.com/fwlink/p/?LinkId=402784), or a different computer, device, or web browser for each user.
+Because a web browser typically doesn't let you have simultaneous open sessions on the same computer signed in to multiple accounts, you can use [Internet Explorer InPrivate Browsing](https://support.microsoft.com/help/4026200), or a different computer, device, or web browser for each user.
 
 ## Step 3: When you're done testing, set the rule to enforce
 
@@ -113,4 +113,4 @@ Here are some common problems and resolutions:
 
 [Manage transport rules in Exchange 2013](manage-transport-rules-exchange-2013-help.md)
 
-[Transport Rules](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
+[Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md)

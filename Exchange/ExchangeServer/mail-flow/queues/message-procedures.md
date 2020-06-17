@@ -52,7 +52,7 @@ For information about exporting messages from queues, see [Export messages from 
 
     When the shortcut appears in the results, you can select it.
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For more information about using filters and identity values in the Exchange Management Shell, see [Find queues and messages in queues in the Exchange Management Shell](queues-and-messages-in-powershell.md).
 
@@ -105,7 +105,7 @@ This example removes the message with the message ID 3 from the Unreachable queu
 Remove-Message -Identity Mailbox01\Unreachable\3 -WithNDR $true
 ```
 
-For more information, see [Remove-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/remove-message)
+For more information, see [Remove-Message](https://docs.microsoft.com/powershell/module/exchange/remove-message)
 
 ### How do you know this worked?
 
@@ -125,7 +125,7 @@ To verify that you have successfully removed messages from queues, use either of
   Get-Message -Queue <QueueIdentity>
   ```
 
-    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-message).
+    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/get-message).
 
 ## Suspend messages in queues
 <a name="Suspend"> </a>
@@ -176,7 +176,7 @@ This example suspends all messages in all queues on the local server.
 Get-Queue | Get-Message | Suspend-Message
 ```
 
-For more information, see [Suspend-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/suspend-message).
+For more information, see [Suspend-Message](https://docs.microsoft.com/powershell/module/exchange/suspend-message).
 
 ### How do you know this worked?
 
@@ -196,7 +196,7 @@ To verify that you have successfully suspended messages in queues, use either of
   Get-Message -Queue <QueueIdentity>
   ```
 
-    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-message).
+    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/get-message).
 
 ## Resume messages in queues
 <a name="Resume"> </a>
@@ -263,7 +263,7 @@ To verify that you have successfully resumed messages in queues, use either of t
   Get-Message -Queue <QueueIdentity>
   ```
 
-    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-message).
+    For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/get-message).
 
 If you can't find the messages in any queues on the server, this likely indicates the message was successfully delivered to the next hop.
 
@@ -296,7 +296,7 @@ This example redirects messages from all delivery queues on the server named Mai
 Redirect-Message -Server Mailbox01 -Target Mailbox02.contoso.com
 ```
 
-For more information, see [Redirect-Message](https://docs.microsoft.com/powershell/module/exchange/mail-flow/redirect-message).
+For more information, see [Redirect-Message](https://docs.microsoft.com/powershell/module/exchange/redirect-message).
 
 ### How do you know this worked?
 

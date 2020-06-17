@@ -61,7 +61,7 @@ This example resumes the copy of the database DB1 on the server MBX2 for activat
 Resume-MailboxDatabaseCopy -Identity DB1\MBX2
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/suspend-mailboxdatabasecopy) or [Resume-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/resume-mailboxdatabasecopy).
+For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/suspend-mailboxdatabasecopy) or [Resume-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/resume-mailboxdatabasecopy).
 
 ## Use the Exchange Management Shell to configure the activation policy for a server
 <a name="UseEMC"> </a>
@@ -84,7 +84,7 @@ This example configures the database copies on server MBX4 as unblocked for acti
 Set-MailboxServer -Identity MBX4 -DatabaseCopyAutoActivationPolicy Unrestricted
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/suspend-mailboxdatabasecopy), [Resume-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/resume-mailboxdatabasecopy), or [Set-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxserver).
+For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/suspend-mailboxdatabasecopy), [Resume-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/resume-mailboxdatabasecopy), or [Set-MailboxServer](https://docs.microsoft.com/powershell/module/exchange/set-mailboxserver).
 
 ## How do you know this worked?
 <a name="UseEMC"> </a>

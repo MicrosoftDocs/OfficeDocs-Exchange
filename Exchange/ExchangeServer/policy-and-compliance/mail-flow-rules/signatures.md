@@ -22,10 +22,9 @@ You can add an email disclaimer, legal disclaimer, disclosure statement, signatu
 
 To create a disclaimer, you create a mail flow rule (also known as transport rule) with an action that adds the specified text to email messages. You can configure the rule to apply the disclaimer to all messages (no conditions), or you can define conditions that determine when the disclaimer is added (for example, when the sender is a member of a specific group, when the message includes specific words or text patterns, or outgoing messages only). You can also define exceptions that prevent the disclaimer from being added to messages (for example, messages from specific senders, messages sent to specific recipients, or messages that already contain the disclaimer). To apply multiple disclaimers to the same message, you need to use multiple rules. For more information about mail flow rules, see [Mail flow rules in Exchange Server](mail-flow-rules.md).
 
-Looking for procedures? See [Configure a Disclaimer or Other Email Header or Footer](https://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx).
+Looking for procedures? See [Procedures for mail flow rules in Exchange Server](mail-flow-rule-procedures.md).
 
 ## Examples
-<a name="Examples"> </a>
 
  **Note**: The examples in this topic are not intended for use as-is. Modify them for your needs.
 
@@ -38,7 +37,6 @@ Looking for procedures? See [Configure a Disclaimer or Other Email Header or Foo
 |Advertisement|Click here for March specials|
 
 ## Location for your disclaimer
-<a name="Examples"> </a>
 
 You can choose whether to insert the disclaimer at the beginning of the message (prepend), or at the end of the message (append).
 
@@ -47,7 +45,6 @@ In the EAC, you select the action **Append the disclaimer** or **Apply a disclai
 In the Exchange Management Shell, you use the _ApplyHtmlDisclaimerTextLocation_ parameter with the value `Append` (default) or `Prepend`.
 
 ## Format your disclaimer
-<a name="FormatDisclaimer"> </a>
 
 Here's the formatting that you can use in your disclaimer text.
 
@@ -77,7 +74,6 @@ Here's an example of an HTML disclaimer that includes a signature, an `IMG` tag,
 ```
 
 ## Fallback options for disclaimer rules
-<a name="FallbackOptions"> </a>
 
 Exchange can't modify the content of some messages (for example, encrypted messages). For rules that add disclaimers to messages, you need to specify what to do if the disclaimer can't be added. This is known as the *fallback option* for the disclaimer rule. The available fallback options are:
 
@@ -94,7 +90,6 @@ Exchange can't modify the content of some messages (for example, encrypted messa
 In the EAC, you select the fallback option in the rule action. In the Exchange Management Shell, you use the _ApplyHtmlDisclaimerFallbackAction_ parameter.
 
 ## Scope your disclaimer
-<a name="Scoping"> </a>
 
 As you work on your disclaimers, consider which messages they should apply to. For example, you might want different disclaimers for internal and external messages, or for messages sent by users in specific departments. To make sure only the first message in a conversation gets a disclaimer, add an exception that prevents the disclaimer text from being applied to the same messages over and over again.
 
@@ -111,12 +106,5 @@ Here are some examples of the conditions and exceptions you can use.
 For a complete list of conditions and exceptions that you can use to target the disclaimer, see [Mail flow rule conditions and exceptions (predicates) in Exchange Server](conditions-and-exceptions.md).
 
 ## For more information
-<a name="MoreInfo"> </a>
 
-[Configure a Disclaimer or Other Email Header or Footer](https://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
-
-[Mail flow rules in Exchange Server](mail-flow-rules.md) (Exchange 2016 and Exchange 2019)
-
-[Mail flow rules (transport rules) in Exchange Online](https://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx)
-
-[Mail flow rules (transport rules) in Exchange Online Protection](https://technet.microsoft.com/library/9c2cf227-eff7-48ef-87fb-487186e47363.aspx)
+[Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](https://docs.microsoft.com/Exchange/organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help)

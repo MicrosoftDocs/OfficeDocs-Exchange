@@ -27,7 +27,7 @@ A multivalued property is a property that can contain more than one value. For e
 
 Because the **BlockedRecipients** property can accept more than one value, it's called a multivalued property. This topic explains how to use the Exchange Management Shell to add values to and remove values from a multivalued property on an object.
 
-For more information about objects, see [Structured data](https://technet.microsoft.com/library/aa996386\(v=exchg.150\)). For more information about the Shell, see [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/library/bb123778\(v=exchg.150\)).
+For more information about objects, see [Structured data](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_objects). For more information about the Shell, see [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-management-shell).
 
 ## Modifying a multivalued property vs. modifying a property that accepts only a single value
 

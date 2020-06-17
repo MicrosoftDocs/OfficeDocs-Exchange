@@ -29,7 +29,7 @@ The agent install and the configuration of Hybrid via the Hybrid Configuration w
 
 The Hybrid Agent has multiple methods of installation with different requirements. In all cases, the core computer requirements are the same:
 
-- Windows Server 2012 R2 or 2016 with .NET Framework 4.6.2 (or later, as supported by the Exchange version you are installing on).
+- Windows Server 2012 R2, 2016, or 2019 with .NET Framework 4.6.2 (or later, as supported by the Exchange version you are installing on).
 
   - TLS 1.2 enabled.
 
@@ -60,7 +60,7 @@ The SHCW can download and install the agent MSI automatically. Using this method
 - Ports HTTPS (TCP) 443, 80, 5985 and 5986 must be open between the computer that has the Hybrid Agent installed on the CAS that's selected in the Hybrid Configuration wizard.
 
 > [!IMPORTANT]
-> All Client Access Servers must be able to reach outbound to Office 365 endpoints via HTTPS (TCP) 443, because free/busy request from on-premises users to Office 365 users do not traverse the Hybrid Agent. These requests still require your Exchange servers have outbound connectivity to Office 365 end points. Office 365 URLs and IP address ranges describes the required (and hybrid) ports and IPs outbound from on-prem to the service here: [https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+> All Client Access Servers must be able to reach outbound to Microsoft 365 or Office 365 endpoints via HTTPS (TCP) 443, because free/busy request from on-premises users to Microsoft 365 or Office 365 users do not traverse the Hybrid Agent. These requests still require that your Exchange servers have outbound connectivity to Microsoft 365 or Office 365 end points. Microsoft 365 and Office 365 URLs and IP address ranges describes the required (and hybrid) ports and IPs outbound from on-prem to the service here: [https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 ### Proxy server considerations
 
@@ -83,9 +83,7 @@ The hybrid wizard automatically handles the free/busy information that's require
 
 If you need to configure free/busy sharing with a third-party company, go to the **Organization** tab in the Exchange admin center and configure individual or organization sharing between the two systems (Exchange online/Exchange on-premises or Exchange on-premises/Exchange on-premises).
 
-If you encounter any problems or need to troubleshoot, see [How to troubleshoot free/busy issues in a hybrid deployment of on-premises Exchange Server and Exchange Online in Office 365](https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem).
-
-
+If you encounter any problems or need to troubleshoot, see [How to troubleshoot free/busy issues in a hybrid deployment of on-premises Exchange Server and Exchange Online in Microsoft 365 or Office 365](https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem).
 
 ## Constraints
 
@@ -95,14 +93,14 @@ Keep the following issues in mind before you install the Hybrid Agent:
 
 - Team's Calendaring features that require access to on premises mailboxes are not supported with the Hybrid Agent. You will need to leverage the Classic Exchange Hybrid Topology and publish AutoDiscover and EWS to support these features.
 
-- Message Tracking and Multi-mailbox search do not traverse the Hybrid Agent. These Hybrid features require the classic connectivity model where Exchange Web Services (EWS) and Autodiscover are published on-premises and are externally available to Office 365.
+- Message Tracking and Multi-mailbox search do not traverse the Hybrid Agent. These Hybrid features require the classic connectivity model where Exchange Web Services (EWS) and Autodiscover are published on-premises and are externally available to Microsoft 365 and Office 365.
 
 - The Hybrid Agent registers the internal fully qualified domain name (FQDN) of the CAS server selected when running Hybrid Configuration wizard in the Azure Hybrid proxy infrastructure. If the registered CAS is offline, free/busy look ups from your tenant to on-premises and mailbox migrations to/from your tenant won't work. If the selected CAS is permanently offline, a new CAS server must be registered. Run the Hybrid Configuration wizard again to register a new CAS server.
 
 - The Hybrid Agent supports a single migration endpoint with the service default limits. Multiple migration endpoints utilizing your custom endpoint/URL is not supported.
 
 > [!NOTE]
-> SMTP doesn't traverse the Hybrid Agent and still requires a public certificate for mail flow between Office 365 and your on-premises organization. SMTP traffic is out of scope for the Hybrid Agent.
+> SMTP doesn't traverse the Hybrid Agent and still requires a public certificate for mail flow between Microsoft 365 or Office 365 and your on-premises organization. SMTP traffic is out of scope for the Hybrid Agent.
 
 ## Running Setup
 
@@ -135,7 +133,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
       ![Sample output of Test-HybridConnectivity](../media/test-hybridconnectivity-results.png)
 
-2. To allow installation of the Hybrid Agent and perform mailbox migrations to and from your Office 365 tenant, enable the Mailbox Replication service (MRS) proxy on the EWS virtual directory by running the following command:
+2. To allow installation of the Hybrid Agent and perform mailbox migrations to and from your Office 365 organization, enable the Mailbox Replication service (MRS) proxy on the EWS virtual directory by running the following command:
 
    ```PowerShell
    Set-WebServicesVirtualDirectory -Identity "EWS (Default Web Site)" -MRSProxyEnabled $true
@@ -154,7 +152,7 @@ You must run the HCW from the computer where you want the agent installed. After
 
 2. Select the Exchange server where you want to run traditional hybrid setup. Either select the default server provided by the HCW or specify a specific server in the second radio button. Select **Next**.
 
-3. Enter your on-premises Exchange credentials and your Office 365 Global Administrator credentials. Click **Next**.
+3. Enter your on-premises Exchange credentials and your Microsoft 365 or Office 365 Global Administrator credentials. Click **Next**.
 
 4. Wait while the HCW gathers information and configuration about your environments. When it's completed, click **Next**.
 
@@ -172,20 +170,20 @@ You must run the HCW from the computer where you want the agent installed. After
 
    1. Download the agent install package.
 
-   2. Installation of the agent on the local computer (note: this prompts for your Office 365 Global Administrator credentials again).
+   2. Installation of the agent on the local computer (note: this prompts for your Microsoft 365 or Office 365 Global Administrator credentials again).
 
    3. Registration of the agent in Azure, including creation of the URL used to proxy requests. The URL has the format: `uniqueGUID.resource.mailboxmigration.his.msappproxy.net`.
 
-   4. Testing migration viability from your Office 365 tenant to your on-premises Exchange organization via the agent.
+   4. Testing migration viability from your Office 365 organization to your on-premises Exchange organization via the agent.
 
    > [!NOTE]
    > The Hybrid Agent installation process could take up to 10 minutes to complete.
 
    The remaining HCW inputs and actions are the same as a Classic Hybrid deployment.
 
-During the update phase, the HCW creates a migration endpoint with the custom URL created in step 8.3 above. It will also set the `TargetSharingEPR` value on the Organization Relationship and/or the IntraOrganization Connector object on the Office 365 side to this value. The new URL is used to send requests from your Office 365 tenant to your on-premises Exchange organization for free/busy and migrations.
+During the update phase, the HCW creates a migration endpoint with the custom URL created in step 8.3 above. It will also set the `TargetSharingEPR` value on the Organization Relationship and/or the IntraOrganization Connector object on the Microsoft 365 or Office 365 side to this value. The new URL is used to send requests from your Office 365 organization to your on-premises Exchange organization for free/busy and migrations.
 
-You can view the specific values configured for each of these by running **Get-MigrationEndpoint** and **Get-OrganizationRelationship** from an [Exchange Online PowerShell connection](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) to your Office 365 tenant.
+You can view the specific values configured for each of these by running **Get-MigrationEndpoint** and **Get-OrganizationRelationship** from an [Exchange Online PowerShell connection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) to your Office 365 organization.
 
 The following example shows the output that you might see when you run the **Get-MigrationEndpoint** and **Get-OrganizationRelationship** cmdlets:
 
@@ -213,7 +211,7 @@ Additional Hybrid Agents can be installed for redundancy, simply download the la
 
 2. Select a desired server to execute against, select **Next**.
 
-3. Provide credentials to sign into your Office 365 tenant, select **Next**.
+3. Provide credentials to sign into your Office 365 organization, select **Next**.
 
 4. The HCW will gather configuration information, select **Next** when complete.
 
@@ -259,7 +257,7 @@ You can repeat this step on each computer where you would like an additional Hyb
 
 2. Select a server in your Exchange organization and select **Next**.
 
-3. Provide credentials to sign into your Office 365 tenant and select **Next**.
+3. Provide credentials to sign into your Office 365 organization and select **Next**.
 
 4. The HCW will gather configuration information. Select **Next** when it's complete.
 
@@ -373,7 +371,7 @@ After a successful deployment of the Hybrid Agent and hybrid configuration, you 
 
 ### Migration
 
-1. Open an [Exchange Online PowerShell connection](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) to your Office 365 tenant.
+1. Open an [Exchange Online PowerShell connection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) to your Office 365 organization.
 
 2. Replace \<your customguid\> with the unique endpoint GUID value as described in [Direct your Hybrid Agent(s) to the load balancer instead of a specific server](#direct-your-hybrid-agents-to-the-load-balancer-instead-of-a-specific-server) and run the following command:
 
@@ -385,14 +383,14 @@ After a successful deployment of the Hybrid Agent and hybrid configuration, you 
 
 After the test returns the success result, switch back to **Performance Monitor** and confirm that the number of requests has increased.
 
-Performing a test mailbox move from your on-premises Exchange organization to your Office 365 tenant is also an option.
+Performing a test mailbox move from your on-premises Exchange organization to your Office 365 organization is also an option.
 
 > [!NOTE]
 > If this test fails try running Update-HybridApplication and point it to a single Exchange Server instead of a load balancer.
 
 ### Free/Busy
 
-To perform the same validation for free/busy information, log into an Office 365 mailbox in your tenant, create a test meeting invite, and send it to an on-premises mailbox.
+To perform the same validation for free/busy information, log in to a Microsoft 365 or Office 365 mailbox in your tenant, create a test meeting invite, and send it to an on-premises mailbox.
 
 ## Uninstall the Hybrid Agent
 

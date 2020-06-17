@@ -6,5 +6,5 @@
 
 Exchange/ExchangeServer/*  @chrisda @AndreaBarr @msdmaguire @MattPennaThe3rd
 Exchange/ExchangeOnline/* @msdmaguire @AndreaBarr @MattPennaThe3rd
-Exchange/ExchangeHybrid/* @dstrome @AndreaBarr @msdmaguire @MattPennaThe3rd
+Exchange/ExchangeHybrid/* @AndreaBarr @msdmaguire @MattPennaThe3rd
 Outlook/* @AndreaBarr

@@ -46,11 +46,11 @@ Most customers who need a hybrid mail flow setup should allow Office 365 to perf
 
 #### Best practices
 
-1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add users and domains](https://go.microsoft.com/fwlink/p/?LinkId=708999).
+1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
-2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=524030).
+2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://go.microsoft.com/fwlink/p/?LinkID=534835).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **MX record**: Point your MX record to Office 365 in the following format: \<domainKey\>-com.mail.protection.outlook.com
 
@@ -58,13 +58,13 @@ Most customers who need a hybrid mail flow setup should allow Office 365 to perf
 
    - **SPF record**: This should list Office 365 as a valid sender, plus any IP addresses from your on-premises servers that connect to EOP, and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is131.107.21.231, the SPF record for contoso.com should be:
 
-     ```
+     ```text
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
      ```
 
      Alternatively, depending on the third-party's requirements, you might need to include the domain from the third-party, as shown in the following example:
 
-     ```
+     ```text
      v=spf1 include:spf.protection.outlook.com include:third_party_cloud_service.com -all
      ```
 
@@ -105,11 +105,11 @@ If you have business or regulatory reasons for filtering mail in your on-premise
 
 #### Best practices
 
-1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add users and domains](https://go.microsoft.com/fwlink/p/?LinkId=708999).
+1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
-2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [Move all users' mailboxes to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=524030).
+2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://go.microsoft.com/fwlink/p/?LinkID=534835).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **MX record**: Point your MX record to Office 365 in the following format: \<domainKey\>-com.mail.protection.outlook.com
 
@@ -117,7 +117,7 @@ If you have business or regulatory reasons for filtering mail in your on-premise
 
    - **SPF record**: This should list Office 365 as a valid sender, plus any IP addresses from your on-premises servers that connect to EOP, and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is131.107.21.231, the SPF record for contoso.com should be:
 
-     ```
+     ```text
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
      ```
 
@@ -127,7 +127,7 @@ If you have business or regulatory reasons for filtering mail in your on-premise
 
    - Mail that comes from Exchange Online and is destined for the internet is first sent to your on-premises servers, then comes back to Exchange Online, and is then delivered to the internet. Line 4 represents this path in the scenario 2 diagram.
 
-   - To achieve this configuration, create connectors via the [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) or via cmdlets, and enable CMT. For details about CMT, see [Transport Options in Exchange Hybrid Deployments](https://technet.microsoft.com/library/da605a78-5429-4de8-8b04-bc4c45a41ba1.aspx).
+   - To achieve this configuration, create connectors via the [Hybrid Configuration Wizard](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) or via cmdlets, and enable CMT. For details about CMT, see [Transport Options in Exchange Hybrid Deployments](https://docs.microsoft.com/exchange/transport-options).
 
 You don't need connectors in the following scenarios unless one of your partners has special requirements, such as enforcing TLS with a bank.
 
@@ -149,15 +149,15 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 If the MX record for your domain needs to point to your on-premises IP address, use the following best practices:
 
-1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add users and domains](https://go.microsoft.com/fwlink/p/?LinkId=708999).
+1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365s](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
-2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=524030).
+2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://go.microsoft.com/fwlink/p/?LinkID=534835).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **SPF record**: This should list Office 365 as a valid sender. It should also include any IP addresses from your on-premises servers that connect to EOP and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is131.107.21.231, the SPF record for contoso.com should be:
 
-     ```
+     ```text
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
      ```
 
@@ -181,11 +181,11 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 If the MX record for your domain needs to point to your on-premises IP address, use the following best practices:
 
-1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add users and domains](https://go.microsoft.com/fwlink/p/?LinkId=708999).
+1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
-2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=524030).
+2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://go.microsoft.com/fwlink/p/?LinkID=534835).) The following DNS records control mail flow:
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **MX record**: Point your MX record to your on-premises server in the following format: mail.\<domainKey\>.com
 
@@ -193,7 +193,7 @@ If the MX record for your domain needs to point to your on-premises IP address, 
 
    - **SPF record**: This should list Office 365 as a valid sender. It should also include any IP addresses from your on-premises servers that connect to EOP and any third parties that send email on behalf of your organization. For example, if your organization's email server's internet-facing IP address is 131.107.21.231, the SPF record for contoso.com should be:
 
-     ```
+     ```text
      v=spf1 ip4:131.107.21.231 include:spf.protection.outlook.com -all
      ```
 

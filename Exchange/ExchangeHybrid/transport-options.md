@@ -25,7 +25,7 @@ In hybrid deployments, you can have mailboxes that reside in your on-premises Ex
 For hybrid transport configuration to work with the Hybrid Configuration wizard, the on-premises SMTP endpoint that accepts connections from Exchange Online must be a Mailbox server (Exchange 2016 and newer), Client Access server (Exchange 2013), Hub Transport server (Exchange 2010 and older), or an Edge Transport server (Exchange 2010 and newer).
 
 > [!IMPORTANT]
-> Don't place any servers, services, or devices between your on-premises Exchange servers and Office 365 that process or modify SMTP traffic. Secure mail flow between your on-premises Exchange organization and Office 365 depends on information contained in messages sent between the organization. Firewalls that allow SMTP traffic on TCP port 25 through without modification are supported. If a server, service, or device processes a message sent between your on-premises Exchange organization and Office 365, this information is removed. If this happens, the message will no longer be considered internal to your organization and will be subject to anti-spam filtering, transport and journal rules, and other policies that may not apply to it.
+> Don't place any servers, services, or devices that process or modify SMTP traffic between your on-premises Exchange servers and Microsoft 365 or Office 365. Secure mail flow between your on-premises Exchange organization and Microsoft 365 and Office 365 depends on information contained in messages sent between the organization. Firewalls that allow SMTP traffic on TCP port 25 through without modification are supported. If a server, service, or device processes a message sent between your on-premises Exchange organization and Microsoft 365 or Office 365, this information is removed. If this happens, the message will no longer be considered internal to your organization and will be subject to anti-spam filtering, transport and journal rules, and other policies that may not apply to it.
 
 Inbound messages sent to recipients in both organizations from external Internet senders follow a common inbound route. Outbound messages sent from the organizations to external Internet recipients can either follow a common outbound route or can be sent via independent routes.
 
@@ -33,7 +33,7 @@ You'll need to choose how to route inbound and outbound mail when you plan and c
 
 - Do you want to route inbound Internet mail for both your on-premises and Exchange Online mailboxes through Exchange Online or through your on-premises organization?
 
-    The route that inbound messages for both organizations take depends on various factors, such as where the majority of your mailboxes are located, whether you want to protect your on-premises organization using Office 365's anti-malware and anti-spam scanning, where your compliance infrastructure is configured, and so on.
+    The route that inbound messages for both organizations take depends on various factors, such as where the majority of your mailboxes are located, whether you want to protect your on-premises organization using Microsoft 365 and Office 365's anti-malware and anti-spam scanning, where your compliance infrastructure is configured, and so on.
 
 - Do you want to route outbound mail to external recipients from your Exchange Online organization through your on-premises organization (centralized mail transport), or do you want to route it directly to the Internet?
 
@@ -52,7 +52,7 @@ To learn more about how these options affect message routing in your organizatio
 
 ## Exchange Online Protection in hybrid deployments
 
-EOP is an online service provided by Microsoft that's used by many companies to protect their on-premises organizations from viruses, spam, phishing scams, and policy violations. In Office 365, EOP is used to protect Exchange Online organizations from the same threats. When you sign up for Office 365, an EOP company is automatically created that's tied to your Exchange Online organization.
+EOP is an online service provided by Microsoft that's used by many companies to protect their on-premises organizations from viruses, spam, phishing scams, and policy violations. In Microsoft 365 and Office 365, EOP is used to protect Exchange Online organizations from the same threats. When you sign up for Microsoft 365 or Office 365, an EOP company is automatically created that's tied to your Exchange Online organization.
 
 An EOP company contains several of the mail transport settings that can be configured for your Exchange Online organization. You can specify which SMTP domains must come from specific IP addresses, require a TLS and a Secure Sockets Layer (SSL) certificate, bypass anti-spam filtering or compliance policies, and more. EOP is the front door to your Exchange Online organization. All messages, regardless of their origin, must pass through EOP before they reach mailboxes in your Exchange Online organization. And, all messages sent from your Exchange Online organization must go through EOP before they reach the Internet.
 

@@ -52,7 +52,7 @@ Establish cross-forest mail flow using Basic authentication.
 
 3. Choose **Route mail through smart hosts**, and then click **Add** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon"). In the **add smart host** window, specify the IP address of the target server in the second forest, such as 64.4.6.100. Click **save** and then **next**.
 
-    For **Smart host authentication**, choose **Basic authentication** and provide a user name and password. Here you can choose **Offer basic authentication only after starting TLS** for secure communication over TLS.
+    For **Smart host authentication**, choose **Basic authentication** and provide a username and password. Here you can choose **Offer basic authentication only after starting TLS** for secure communication over TLS.
 
     > [!NOTE]
     > If you use Basic authentication over TLS, the target server must be configured to use an X.509 certificate.

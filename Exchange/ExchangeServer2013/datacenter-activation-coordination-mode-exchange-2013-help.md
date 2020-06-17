@@ -37,28 +37,28 @@ But when you recover from a primary datacenter power outage where the servers ar
 
 DAGs with two members have inherent limitations that prevent the DACP bit alone from fully protecting against application-level split brain syndrome. For DAGs with only two members, DAC mode also uses the boot time of the DAG's witness server to determine whether it can mount databases on startup. The boot time of the witness server is compared to the time when the DACP bit was set to 1.
 
-  - If the time the DACP bit was set is earlier than the boot time of the witness server, the system assumes that the DAG member and witness server were rebooted at the same time (perhaps because of power loss in the primary datacenter), and the DAG member isn't permitted to mount databases.
+- If the time the DACP bit was set is earlier than the boot time of the witness server, the system assumes that the DAG member and witness server were rebooted at the same time (perhaps because of power loss in the primary datacenter), and the DAG member isn't permitted to mount databases.
 
-  - If the time that the DACP bit was set is more recent than the boot time of the witness server, the system assumes that the DAG member was rebooted for some other reason (perhaps a scheduled outage in which maintenance was performed or perhaps a system crash or power loss isolated to the DAG member), and the DAG member is permitted to mount databases.
+- If the time that the DACP bit was set is more recent than the boot time of the witness server, the system assumes that the DAG member was rebooted for some other reason (perhaps a scheduled outage in which maintenance was performed or perhaps a system crash or power loss isolated to the DAG member), and the DAG member is permitted to mount databases.
 
 > [!IMPORTANT]
-> Because the witness server's boot time is used to determine whether a DAG member can mount its active databases on startup, you should never restart the witness server and the sole DAG member at the same time. Doing so may leave the DAG member in a state where it can't mount databases on startup. If this happens, you must run the <A href="https://technet.microsoft.com/library/dd351169(v=exchg.150)">Restore-DatabaseAvailabilityGroup</A> cmdlet on the DAG. This resets the DACP bit and permits the DAG member to mount databases.
+> Because the witness server's boot time is used to determine whether a DAG member can mount its active databases on startup, you should never restart the witness server and the sole DAG member at the same time. Doing so may leave the DAG member in a state where it can't mount databases on startup. If this happens, you must run the <A href="https://docs.microsoft.com/powershell/module/exchange/Restore-DatabaseAvailabilityGroup">Restore-DatabaseAvailabilityGroup</A> cmdlet on the DAG. This resets the DACP bit and permits the DAG member to mount databases.
 
 ## Other benefits of DAC mode
 
 In addition to preventing split brain syndrome at the application level, DAC mode also enables the use of the built-in site resilience cmdlets used to perform datacenter switchovers. These include the following:
 
-  - [Stop-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd335133\(v=exchg.150\))
+  - [Stop-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/Stop-DatabaseAvailabilityGroup)
 
-  - [Restore-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd351169\(v=exchg.150\))
+  - [Restore-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/Restore-DatabaseAvailabilityGroup)
 
-  - [Start-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd335076\(v=exchg.150\))
+  - [Start-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/Start-DatabaseAvailabilityGroup)
 
 Performing a datacenter switchover for DAGs that aren't in DAC mode involves using a combination of Exchange tools and cluster management tools. For more information, see [Datacenter Switchovers](datacenter-switchovers-exchange-2013-help.md).
 
 ## Enabling DAC mode
 
-DAC mode can be enabled only by using the Exchange Management Shell. Specifically, you can use the [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd297934\(v=exchg.150\)) cmdlet to enable DAC mode, as illustrated in the following example.
+DAC mode can be enabled only by using the Exchange Management Shell. Specifically, you can use the [Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/Set-DatabaseAvailabilityGroup) cmdlet to enable DAC mode, as illustrated in the following example.
 
 ```powershell
 Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
@@ -66,4 +66,4 @@ Set-DatabaseAvailabilityGroup -Identity DAG2 -DatacenterActivationMode DagOnly
 
 In the preceding example, DAG2 is enabled for DAC mode.
 
-For more information about enabling DAC mode, see [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md) and [Set-DatabaseAvailabilityGroup](https://technet.microsoft.com/library/dd297934\(v=exchg.150\)).
+For more information about enabling DAC mode, see [Configure database availability group properties](configure-database-availability-group-properties-exchange-2013-help.md) and [Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/Set-DatabaseAvailabilityGroup).

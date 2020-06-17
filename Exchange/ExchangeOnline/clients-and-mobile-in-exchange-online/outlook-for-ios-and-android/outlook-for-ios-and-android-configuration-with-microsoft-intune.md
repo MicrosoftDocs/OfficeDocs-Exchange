@@ -199,7 +199,7 @@ The workflow for enabling Save Contacts is the same for new accounts and existin
 
 ## S/MIME scenarios
 
-On enrolled devices, Outlook for iOS supports automated certificate delivery. Outlook for iOS also supports app configuration settings that enables or disables S/MIME in the app and whether the user can adjust the setting. For more information on how to deploy these settings via Microsoft Endpoint Manager, see [Sensitivity labeling and protection in Outlook for iOS and Android](sensitive-labeling-and-protection-outlook-for-ios-android.md). For more information on the configuration keys, see [Configuration keys](#configuration-keys).
+On enrolled devices, Outlook for iOS and Android supports automated certificate delivery. Outlook for iOS and Android also supports app configuration settings that enable or disable S/MIME in the app, as well as the user's ability to change the setting. For more information on how to deploy these settings via Microsoft Endpoint Manager, see [Understanding S/MIME](sensitive-labeling-and-protection-outlook-for-ios-android.md#understanding-smime). For more information on the configuration keys, see [Configuration keys](#configuration-keys).
 
 ## Data protection scenarios
 
@@ -290,18 +290,20 @@ The following steps allow you to create an app configuration policy. After the c
 
 4. On the **Basics** section, enter a **Name**, and optional **Description** for the app configuration settings.
 
-5. For **Platform**, choose either **iOS/iPadOS** or **Android**.
+5. For **Platform**, choose either **iOS/iPadOS** or **Android Enterprise**.
 
-6. For **Targeted app**, choose **Select app**, and then, on the **Associated app** blade, choose **Microsoft Outlook**. Click **OK**.
+6. If Android Enterprise is selected as the platform, for **Profile Type**, choose **Work Profile and Device Owner Profile**.
+
+7. For **Targeted app**, choose **Select app**, and then, on the **Associated app** blade, choose **Microsoft Outlook**. Click **OK**.
 
    > [!NOTE]
    > If Outlook is not listed as an available app, then you must add it by following the instructions in [Assign apps to Android work profile devices with Intune](https://docs.microsoft.com/intune/apps-add-android-for-work) and [Add iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios).
 
-7. Click **Next** to complete the basic settings of the app configuration policy.
+8. Click **Next** to complete the basic settings of the app configuration policy.
 
-8. On the **Settings** section, select **Use configuration designer** for the **Configuration settings format**.
+9. On the **Settings** section, select **Use configuration designer** for the **Configuration settings format**.
 
-9. If you want to deploy account setup configuration, select **Yes** for **Configure email account** **settings** and configure appropriately:
+10. If you want to deploy account setup configuration, select **Yes** for **Configure email account** **settings** and configure appropriately:
 
       > [!NOTE]
       > If an App Protection Policy is targeted to the users, the recommendation is to deploy the general app configuration settings in a **Managed Apps** device enrollment model instead of using **Managed devices**. This ensures the App Configuration Policy is deployed to both enrolled devices and unenrolled devices. 
@@ -314,7 +316,7 @@ The following steps allow you to create an app configuration policy. After the c
 
     - If you want to configure Outlook for iOS and Android such that only the work or school account can be used, select **Require** for **Allow only work or** **school** **accounts**. Please note that this configuration will only allow a single corporate account to be added to Outlook for iOS and Android.
 
-10. If you want to deploy general app configuration settings, configure the desired settings accordingly:
+11. If you want to deploy general app configuration settings, configure the desired settings accordingly:
 
     - For **Focused Inbox**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
@@ -339,13 +341,13 @@ The following steps allow you to create an app configuration policy. After the c
 
     - For **Play My Emails**, choose from the available options: **Not configured** (default), **On** (app default), **Off**.
 
-11. When you are finished selecting settings, choose **Next**.
+12. When you are finished selecting settings, choose **Next**.
 
-12. On the **Assignments** section, choose **Select groups to include**. Select the Azure AD group to which you want to assign the app configuration policy, and then choose **Select**.
+13. On the **Assignments** section, choose **Select groups to include**. Select the Azure AD group to which you want to assign the app configuration policy, and then choose **Select**.
 
-13. When you are finished with assignments, choose **Next**.
+14. When you are finished with assignments, choose **Next**.
 
-14. On the **Review + Create** section, review the settings configured and choose **Create**.
+15. On the **Review + Create** section, review the settings configured and choose **Create**.
 
 The newly created configuration policy is displayed on the **App configuration** blade.
 
@@ -440,7 +442,7 @@ The exact syntax of the key/value pair may differ based on the third-party MDM p
 
 ### Account setup configuration
 
-Outlook for iOS and Android offers administrators the ability to "push" account configurations to their Office 365 users. For more information on account setup configuration, see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management).
+Outlook for iOS and Android offers administrators the ability to "push" account configurations to their Microsoft 365 and Office 365 users. For more information on account setup configuration, see [Account setup with modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management).
 
 |**Key**|**Value**|**Device Enrollment Type**|
 |:-----|:-----|:-----|

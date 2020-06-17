@@ -56,7 +56,7 @@ To set up Office Online Server, you will need the following:
 
 - [Microsoft .NET Framework 4.5.2](https://www.microsoft.com/download/details.aspx?id=42643)
 
-- [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+- [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48145)
 
 - [Visual C++ Redistributable Packages for Visual Studio 2013](https://www.microsoft.com/download/details.aspx?id=40784)
 

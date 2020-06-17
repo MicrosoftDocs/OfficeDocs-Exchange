@@ -29,13 +29,11 @@ Delivery reports in Office 365 allowed users and administrators to discover and 
 
 For more information, see these topics:
 
-- [Using Message Trace](https://support.office.com/article/bbf5a330-e83f-43d1-9d51-cfd17d576dd8.aspx)
+- [Trace an email message](trace-an-email-message/trace-an-email-message.md)
 
-- [Trace an email message](https://go.microsoft.com/fwlink/p/?linkid=282262)
+- [Message Trace in Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc)
 
-- [Message Trace in Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/message-trace-scc?redirectSourcePath=%252farticle%252f3e64f99d-ac33-4aba-91c5-9cb4ca476803)
-
-- [Run a Message trace and view the results in Exchange admin center](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/run-a-message-trace-and-view-results)
+- [Run a message trace and view the results in the Exchange admin center](trace-an-email-message/run-a-message-trace-and-view-results.md)
 
 > [!NOTE]
 >

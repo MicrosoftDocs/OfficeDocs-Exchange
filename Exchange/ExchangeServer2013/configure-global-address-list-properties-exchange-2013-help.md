@@ -21,7 +21,7 @@ This topic explains how to modify the settings of a global address list (GAL).
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address lists" entry in the [Email address and address book permissions](email-address-and-address-book-permissions-exchange-2013-help.md) topic.
 
 - You can't edit the settings of the default GAL.
 
@@ -49,4 +49,4 @@ This example changes the recipients who will be included in the Fourth Coffee gl
 Set-GlobalAddressList -Identity Fourth Coffee -RecipientFilter "Company -eq 'Fourth Coffee'"
 ```
 
-For detailed syntax and parameter information, see [Set-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-globaladdresslist).
+For detailed syntax and parameter information, see [Set-GlobalAddressList](https://docs.microsoft.com/powershell/module/exchange/set-globaladdresslist).

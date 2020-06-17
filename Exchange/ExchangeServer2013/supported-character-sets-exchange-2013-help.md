@@ -19,7 +19,7 @@ The following character sets can be specified for messages sent to remote domain
 
 - In the Exchange admin center (EAC), on the **Remote domain** settings page, select the name from the **MIME character set** and **Non-MIME character set** drop-down lists.
 
-- In the Shell, use the value in the Name column in the following table for the _CharacterSet_ parameter or _NonMimeCharacterSet_ parameter in the [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-remotedomain) cmdlet.
+- In the Shell, use the value in the Name column in the following table for the _CharacterSet_ parameter or _NonMimeCharacterSet_ parameter in the [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/set-remotedomain) cmdlet.
 
 **Supported character sets for remote domain configuration**
 

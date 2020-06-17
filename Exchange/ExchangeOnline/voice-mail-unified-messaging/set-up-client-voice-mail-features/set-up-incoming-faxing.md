@@ -20,7 +20,7 @@ manager: serdars
 
 Microsoft Exchange Unified Messaging (UM) relies on certified fax partner solutions for enhanced fax features such as outbound fax or fax routing. By default, Exchange Online isn't configured to allow incoming faxes to be delivered to a user that's enabled for UM. Instead, an Exchange Online redirects incoming fax calls to a certified fax partner solution. The fax partner's server receives the fax data and then sends it to the user's mailbox in an email message with the fax included as a .tif attachment.
 
-For more information about fax partners, see [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238).
+For more information about fax partners, see [Microsoft solution providers](https://www.microsoft.com/solution-providers/).
 
 ## Deploying and configuring faxing
 <a name="deployandconfigure"> </a>
@@ -50,7 +50,7 @@ Before you can set up faxing for your organization, you need to successfully con
 ### Step 2: Configure fax partner servers
 <a name="step2configurefax"> </a>
 
-Next, you need to enable incoming faxing and configure the fax partner's URI on each UM mailbox policy that you require in your organization. To successfully deploy incoming faxing, you must integrate a certified fax partner solution with Exchange Unified Messaging. For details, see [Fax advisor for Exchange UM](fax-advisor-for-exchange-um.md). For a list of certified fax partners, see [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238)
+Next, you need to enable incoming faxing and configure the fax partner's URI on each UM mailbox policy that you require in your organization. To successfully deploy incoming faxing, you must integrate a certified fax partner solution with Exchange Unified Messaging. For details, see [Fax advisor for Exchange UM](fax-advisor-for-exchange-um.md). For a list of certified fax partners, see [Microsoft solution providers](https://www.microsoft.com/solution-providers/)
 
 > [!NOTE]
 > Because the fax partner server is external to your organization, firewall ports must be configured to allow the T.38 protocol ports that enable faxing over an IP-based network. By default, the T.38 protocol uses TCP port 6004. It can also use User Datagram Protocol (UDP) port 6044, but this will be defined by the hardware manufacturer. The firewall ports must be configured to allow fax data that uses the TCP or UDP ports or port ranges defined by the manufacturer.

@@ -50,7 +50,7 @@ Interested in scenarios where this procedure is used? See the following topics:
 
 6. Click the **Finish** button to create your connector.
 
-Once you have created the Receive connector, it appears in the Receive connector list. If you would like to see an example of how to create a Receive connector with a cmdlet, see [New-ReceiveConnector](https://technet.microsoft.com/library/bb125139\(v=exchg.150\)).
+Once you have created the Receive connector, it appears in the Receive connector list. If you would like to see an example of how to create a Receive connector with a cmdlet, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/New-ReceiveConnector).
 
 ## How do you know this worked?
 

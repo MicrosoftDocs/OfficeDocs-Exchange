@@ -45,7 +45,7 @@ The URL of the EAC is controlled by the Internet Information Services (IIS) virt
 
     **Note**: External users who connect to Outlook on the web (formerly known as Outlook Web App) also need access to the EAC to access their own **Options** page. You can disable external administrator access to the EAC while still allowing users to access their **Options** page in Outlook on the web. For more information, see [Turn off access to the Exchange admin center](disable-exchange-admin-center-access.md).
 
-The easiest way to find the internal and external URL values for the EAC (without using **Servers** \> **Virtual directories** in the EAC itself) is by using the **Get-EcpVirtualDirectory** cmdlet in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+The easiest way to find the internal and external URL values for the EAC (without using **Servers** \> **Virtual directories** in the EAC itself) is by using the **Get-EcpVirtualDirectory** cmdlet in the Exchange Management Shell. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 These examples show you how to find the internal and external URL values for the EAC virtual directories in your organization:
 
@@ -67,7 +67,7 @@ These examples show you how to find the internal and external URL values for the
   Get-EcpVirtualDirectory -Identity "Mailbox01\ecp (Default Web Site)" | Format-List *Url
   ```
 
-For more information, see [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/get-ecpvirtualdirectory).
+For more information, see [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/get-ecpvirtualdirectory).
 
 In Exchange 2016, if you're in a coexistence environment with Exchange 2010, the location of your mailbox controls the default behavior for opening the EAC or ECP:
 
@@ -140,7 +140,7 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Accepted domains in Exchange Server](../../mail-flow/accepted-domains/accepted-domains.md)
 
-  - [Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx)
+  - [Remote Domains](https://docs.microsoft.com/exchange/remote-domains-exchange-2013-help)
 
   - [Email address policies in Exchange Server](../../email-addresses-and-address-books/email-address-policies/email-address-policies.md)
 
@@ -158,9 +158,9 @@ The feature pane is the first level of navigation for most of the tasks that you
 
 - **Unified Messaging**: Manage UM dial plans and UM IP gateways. (UM is not available in Exchange 2019.) For more information, see the following topics:
 
-  - [UM Dial Plans](https://technet.microsoft.com/library/ed7afc03-94af-4b23-8745-6a61f203c149.aspx)
+  - [UM Dial Plans](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-dial-plans)
 
-  - [UM IP Gateways](https://technet.microsoft.com/library/991d77e0-3995-44ab-bedf-52ff7a0301ab.aspx)
+  - [UM IP Gateways](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/um-ip-gateways)
 
 - **Servers**: View and manage server-specific settings, databases, database availability groups (DAGs), virtual directories, and certificates. For more information, see the following topics:
 
@@ -178,13 +178,11 @@ The feature pane is the first level of navigation for most of the tasks that you
 
   - [Manage database availability groups](../../high-availability/manage-ha/manage-dags.md)
 
-  - [Virtual Directory Management](https://technet.microsoft.com/library/1af30fd5-621c-4acb-b6df-d8fa64d719ba.aspx)
+  - [Virtual Directory Management](https://docs.microsoft.com/exchange/virtual-directory-management-exchange-2013-help)
 
   - [Certificate procedures in Exchange Server](certificate-procedures.md)
 
 - **Hybrid**: Set up and configure a Hybrid organization.
-
-- **Tools**: Check your Exchange server with the Office 365 Best Practices Analyzer. For more information, see [About the Office 365 Best Practices Analyzer for Exchange Server](https://go.microsoft.com/p/?linkid=9839202).
 
 ### 3: Tabs
 
@@ -199,7 +197,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 |![Add icon](../../media/ITPro_EAC_AddIcon.png)|Add, New|Create a new object.  <br/>  Some of these icons have an associated down arrow you can click to show additional objects you can create. For example, in **Recipients** \> **Mailboxes**, clicking the down arrow displays **User mailbox** and **Linked mailbox** as additional options.|
 |![Edit icon](../../media/ITPro_EAC_EditIcon.png)|Edit|Edit an object.|
 |![Delete icon](../../media/ITPro_EAC_DeleteIcon.png)|Delete|Delete an object. Some delete icons have a down arrow you can click to show additional options.|
-|![Search icon](../../media/ITPro_EAC_.png)|Search|Open a search box so you can enter text for an object that you want to find you want to find in a long list of objects. Check out [Advanced search](https://technet.microsoft.com/library/cf4251f9-e4ec-44d7-97c2-c5cdd67ce60c.aspx) for more search options.|
+|![Search icon](../../media/ITPro_EAC_.png)|Search|Open a search box so you can enter text for an object that you want to find you want to find in a long list of objects.|
 |![Refresh icon](../../media/ITPro_EAC_RefreshIcon.png)|Refresh|Refresh the list view.|
 |![More Options icon](../../media/ITPro_EAC_MoreOptionsIcon.png)|More options|View more actions you can perform for that tab's objects.  <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Disable**, **Add/Remove columns**, **Export data to a CSV file**, **Connect a mailbox**, and **Advanced search**.|
 |![Up Arrow Icon](../../media/ITPro_EAC_UpArrowIcon.png)           <br/> ![Down Arrow Icon](../../media/ITPro_EAC_DownArrowIcon.png)|Up arrow and down arrow|Move an object up or down in the list, when the order is important.  <br/> For example, in **Mail flow** \> **Email address policies** click the up arrow to move the policy higher in the list, which increases the priority of the policy by specifying which policy is applied first.  <br/> You can also use these arrows to navigate the public folder hierarchy and to move rules up or down in the list view.|
@@ -257,7 +255,7 @@ The levels of support for operating system and browser combinations that you can
 
   - **Supported**: All functionality and features are supported and have been fully tested.
 
-  - **Unsupported**: The browser and operating system combination isn't supported, **or** hasn't been tested. For more information about supported versions of Internet Explorer on Windows, see [Internet Explorer Support Announcement](https://go.microsoft.com/fwlink/p/?LinkId=823717).
+  - **Unsupported**: The browser and operating system combination isn't supported, **or** hasn't been tested. For more information about supported versions of Internet Explorer on Windows, see [Internet Explorer Support Announcement](https://docs.microsoft.com/lifecycle/announcements/internet-explorer-dotnet-framework-support).
 
   - **n/a**: The browser and operating system combination isn't possible. For example, an older browser on a newer operating system, or vice-versa.
 

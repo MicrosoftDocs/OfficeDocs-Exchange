@@ -21,11 +21,11 @@ manager: serdars
 # Run a message trace and view the results in the Exchange admin center
 
 > [!NOTE]
-> Message trace is available in the Office 365 Security & Compliance Center. For more information, see [Message trace in the Office 365 Security & Compliance Center](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803).
+> Message trace is available in the Microsoft 365 Security Center. For more information, see [Message trace in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/message-trace-scc).
 
 As an administrator, you can find out what happened to an email message by running a message trace in the Exchange admin center (EAC). After running the message trace, you can view the results in a list, and then view the details about a specific message. Message trace data is available for the past 90 days. If a message is more than 7 days old, you can only view the results in a downloadable .CSV file.
 
-For a video walkthrough of message trace and other mail flow troubleshooting tools, see [Find and fix email delivery issues as an Office 365 for business admin](https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6).
+For a video walkthrough of message trace and other mail flow troubleshooting tools, see [Find and fix email delivery issues as an Office 365 for business admin](https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues).
 
 
 ## What do you need to know before you begin?
@@ -39,7 +39,7 @@ For a video walkthrough of message trace and other mail flow troubleshooting too
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). If you're an Office 365 for business admin, you can [contact Office 365 for business support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). If you're an Office 365 for business admin, you can [contact Office 365 for business support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
 
 
 ## Run a message trace
@@ -238,13 +238,13 @@ A string beginning with S:SFA is an entry from the spam filter agent and provide
 |SFV=SPM|The message was marked as spam by the content filter.|
 |SFV=BLK|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
 |SFV=SKS|The message was marked as spam prior to being processed by the content filter. This includes messages where the message matched a mail flow rule to automatically mark it as spam and bypass all additional filtering.|
-|SCL=\<*number*\>|For more information about the different SCL values and what they mean, see [Spam Confidence Levels](https://technet.microsoft.com/library/34681000-0022-4b92-b38a-e32b3ed96bf6.aspx).|
-|PCL=\<*number*\>|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam Confidence Levels](https://technet.microsoft.com/library/34681000-0022-4b92-b38a-e32b3ed96bf6.aspx).|
+|SCL=\<*number*\>|For more information about the different SCL values and what they mean, see [Spam Confidence Levels](https://docs.microsoft.com/microsoft-365/security/office-365-security/spam-confidence-levels).|
+|PCL=\<*number*\>|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam Confidence Levels](https://docs.microsoft.com/microsoft-365/security/office-365-security/spam-confidence-levelsx).|
 |DI=SB|The sender of the message was blocked.|
 |DI=SQ|The message was quarantined.|
 |DI=SD|The message was deleted.|
 |DI=SJ|The message was sent to the recipient's Junk Email folder.|
-|DI=SN|The message was routed through the higher risk delivery pool. For more information, see [Higher risk delivery pool for Outbound Messages](https://technet.microsoft.com/library/ac11edd9-2da3-462d-8ea3-bbf9dbc6f948.aspx).|
+|DI=SN|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](https://docs.microsoft.com/microsoft-365/security/office-365-security/high-risk-delivery-pool-for-outbound-messages).|
 |DI=SO|The message was routed through the normal outbound delivery pool.|
 |SFS=[a]|SFS=[b]|This denotes that spam rules were matched.|
 |IPV=CAL|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|

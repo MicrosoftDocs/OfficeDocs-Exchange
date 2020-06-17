@@ -37,7 +37,7 @@ Transport rules allow you to apply messaging policies to email messages that flo
 
 Sensitive information rules are integrated with the transport rules framework by introduction of a condition that you can customize: **If the message contains...Sensitive Information**. This condition can be configured with one or more sensitive information types that are contained within the messages. When multiple DLP policies or rules within a policy are configured with this condition, the policy or rule is satisfied when any of the conditions match. Exchange policy rules examine the subject, body and any attachments of a message. If the rule matches any of these message components, the rule actions will be applied.
 
-The sensitive information condition may be combined with any of the already existing transport rules to define messaging policies. If combined, the condition works in conjunction with other rules and provides the AND semantics. For example, two different conditions are added together with an AND statement such that both need to match for the action to be applied. Any of the transport rule actions can be configured as result of rules containing the sensitive information type matching. Many different file types can be scanned by the transport rules agent, which scans messages to enforce transport rules. To learn more about the supported file types, see [File Types That Are Supported In Transport Rules](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx.
+The sensitive information condition may be combined with any of the already existing transport rules to define messaging policies. If combined, the condition works in conjunction with other rules and provides the AND semantics. For example, two different conditions are added together with an AND statement such that both need to match for the action to be applied. Any of the transport rule actions can be configured as result of rules containing the sensitive information type matching. Many different file types can be scanned by the transport rules agent, which scans messages to enforce transport rules. To learn more about the supported file types, see [Use transport rules to inspect message attachments](use-transport-rules-to-inspect-message-attachments-exchange-2013-help.md).
 
 The rules can also be used in the exception part of a rule definition. Their use in the exception definition is independent of their use as a condition within the rule. This provides the flexibility to define rules that have the condition specifying multiple information types to be applied as part of the condition and also differing information types in the condition. This would allow policies such as matching specific traditional message-classification rules, but not matching other sensitive information types before performing actions that you define within a policy.
 
@@ -45,7 +45,7 @@ The rules can also be used in the exception part of a rule definition. Their use
 
 [Data loss prevention](data-loss-prevention-exchange-2013-help.md)
 
-[Sensitive Information Types Inventory](https://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx)
+[Sensitive information types in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/data-loss-prevention/sensitive-information-types)
 
 [Transport protection rules](transport-protection-rules-exchange-2013-help.md)
 

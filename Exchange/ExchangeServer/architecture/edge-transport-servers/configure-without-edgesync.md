@@ -58,7 +58,7 @@ For more information about Send connectors, see [Send connectors](../../mail-flo
 
 - On Edge Transport servers, you can only use the Exchange Management Shell to create Send connectors and Receive connectors. On Mailbox servers, you can use the Exchange admin center (EAC) or the Exchange Management Shell to create Send connectors.
 
-   To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+   To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
    For information about opening and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
 
@@ -89,7 +89,7 @@ To create a Send connector that's configured to send messages to the internet, r
 New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/new-sendconnector).
 
 ### Step 2: Create a dedicated Send connector to only send messages to the Exchange organization
 
@@ -115,7 +115,7 @@ To create a Send connector configured to send messages to the Exchange organizat
 New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces "--" -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential (Get-Credential)
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/new-sendconnector).
 
 ### Step 3: Modify the default Receive connector to only accept messages from the internet
 
@@ -131,7 +131,7 @@ To modify the default Receive connector to only accept messages from the interne
 Set-ReceiveConnector -Identity "Default internal Receive connector ServerName>" -Name "From Internet" -Bindings 10.1.1.1:25
 ```
 
-For detailed syntax and parameter information, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-receiveconnector).
+For detailed syntax and parameter information, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/set-receiveconnector).
 
 ### Step 4: Create a dedicated Receive connector to only accept messages from the Exchange organization
 
@@ -153,7 +153,7 @@ To create a Receive connector configured to only accept messages from the Exchan
 New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
 ```
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-receiveconnector).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/new-receiveconnector).
 
 ### How do you know this worked?
 
@@ -243,7 +243,7 @@ To create a Send connector to send outgoing messages to the Edge Transport serve
 New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential (Get-Credential)
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-sendconnector).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/new-sendconnector).
 
 #### How do you know this worked?
 

@@ -444,9 +444,9 @@ A move request is the process of moving a mailbox from one mailbox database to a
 
 - [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md)
 
-- [New-MoveRequest](https://technet.microsoft.com/library/dd351123\(v=exchg.150\))
+- [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/New-MoveRequest)
 
-- [New-MigrationBatch](https://technet.microsoft.com/library/jj219166\(v=exchg.150\))
+- [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/New-MigrationBatch)
 
 - [Moving Mailboxes](https://go.microsoft.com/fwlink/p/?linkid=296351)
 

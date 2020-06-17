@@ -26,5 +26,3 @@ Microsoft Exchange Server 2007 setup cannot continue because its attempt to use
 Exchange 2007 setup requires that the domain controller specified in the setup command match the domain controller that has been statically mapped using a registry override.
 
 To resolve this issue, run setup again, specifying the statically mapped domain controller for the **/DomainController: \<***FQDN of the* *statically mapped domain controller***\>** parameter.
-
-For more information about DSAccess and directory services detection, see Microsoft Knowledge Base article 250570, "Directory Service Server Detection and DSAccess Usage" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=250570](https://go.microsoft.com/fwlink/?linkid=3052&kbid=250570)).

@@ -28,12 +28,12 @@ To resolve this issue do either of these steps:
 
 - To preserve the mailboxes and their content, move the mailboxes to another server. For instructions, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md).
 
-- Disable the mailboxes if they're no longer required. For more information, see [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-mailbox).
+- Disable the mailboxes if they're no longer required. For more information, see [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/disable-mailbox).
 
 - Remove the mailbox databases if they're no longer required. For instructions, see [Manage mailbox databases in Exchange Server](../../architecture/mailbox-servers/manage-databases.md).
 
 After you deal with the mailbox databases on the server, run Exchange Setup again.
 
-- For more information about how to identify a mailbox in the database, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox).
+- For more information about how to identify a mailbox in the database, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

@@ -98,7 +98,7 @@ This example returns all restore requests that have been suspended.
 Get-MailboxRestoreRequest -Suspend $true
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829907\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxRestoreRequest).
 
 ## Get-MailboxRestoreRequest Output
 
@@ -179,11 +179,11 @@ This example returns additional information for all restore requests that have a
 Get-MailboxRestoreRequest -Status Failed | Get-MailboxRestoreRequestStatistics -IncludeReport | Format-List > AllRestoreReports.txt
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/library/ff829912\(v=exchg.150\)) and [Get-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829907\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-MailboxRestoreRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxRestoreRequestStatistics) and [Get-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxRestoreRequest).
 
 ## Get-MailboxRestoreRequestStatistics Output
 
-By default, the [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/library/ff829912\(v=exchg.150\)) cmdlet returns the name of the request, the status of the request, the alias of the target mailbox, and the percentage completed. The following table lists other useful information returned if you pipeline the cmdlet to the **Format-List** cmdlet.
+By default, the [Get-MailboxRestoreRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxRestoreRequestStatistics) cmdlet returns the name of the request, the status of the request, the alias of the target mailbox, and the percentage completed. The following table lists other useful information returned if you pipeline the cmdlet to the **Format-List** cmdlet.
 
 <table>
 <colgroup>
@@ -424,17 +424,17 @@ This example specifies that the restore request MailboxRestore1 for Florence Fli
 Set-MailboxRestoreRequest -Identity "Florence Flipo\MailboxRestore1" -BadItemLimit 100 -AcceptLargeDataLoss
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829909\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxRestoreRequest).
 
 ## How do you know this worked?
 
 To verify that you've successfully changed the properties of a restore request, run the **Get-MailboxRestoreRequestStatistics** cmdlet to display the revised properties for the restore request. If the restore request was successfully created, the *Status* property will have a value of `Queued`, `InProgress`, or `Completed`. After the restore request is completed, the contents of the soft-deleted mailbox will appear in the target mailbox.
 
-For detailed syntax and parameter information, see [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/library/ff829912\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-MailboxRestoreRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxRestoreRequestStatistics).
 
 ## Use the Shell to suspend a restore request
 
-You can suspend a restore request any time after the request was created but before the request reaches the status of `Completed`. See Use the Shell to resume a restore request later in this topic for the command syntax to resume the restore request using the [Resume-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829908\(v=exchg.150\)) cmdlet.
+You can suspend a restore request any time after the request was created but before the request reaches the status of `Completed`. See Use the Shell to resume a restore request later in this topic for the command syntax to resume the restore request using the [Resume-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/Resume-MailboxRestoreRequest) cmdlet.
 
 This example suspends the restore request MailboxRestore1 for Pilar Pinilla's mailbox.
 
@@ -448,7 +448,7 @@ This example suspends all restore requests in progress by first retrieving all r
 Get-MailboxRestoreRequest -Status InProgress | Suspend-MailboxRestoreRequest -SuspendComment "Resume after FY13Q2 Maintenance"
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829906\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Suspend-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/Suspend-MailboxRestoreRequest).
 
 ## How do you know this worked?
 
@@ -476,7 +476,7 @@ This example resumes all restore requests that have a status of Failed.
 Get-MailboxRestoreRequest -Status Failed | Resume-MailboxRestoreRequest
 ```
 
-For detailed syntax and parameter information, see [Resume-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829908\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Resume-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/Resume-MailboxRestoreRequest).
 
 ## How do you know this worked?
 
@@ -513,7 +513,7 @@ This example cancels the restore request by using the *RequestGuid* parameter fo
 Remove-MailboxRestoreRequest -RequestQueue MBXDB01 -RequestGuid 25e0eaf2-6cc2-4353-b83e-5cb7b72d441f
 ```
 
-For detailed syntax and parameter information, see [Remove-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829910\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Remove-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/Remove-MailboxRestoreRequest).
 
 ## How do you know this worked?
 

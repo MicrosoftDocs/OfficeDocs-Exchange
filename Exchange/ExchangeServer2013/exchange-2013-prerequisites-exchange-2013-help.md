@@ -187,11 +187,11 @@ After you've installed the operating system roles and features, install the foll
    > [!NOTE]
    > Here you'll find an overview of the latest supported [Visual C++ Redistributable versions](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 
-6. [Microsoft Knowledge Base article KB974405 (Windows Identity Foundation)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
+6. [Microsoft Knowledge Base article KB974405 (Windows Identity Foundation)](https://support.microsoft.com/help/974405)
 
-7. [Knowledge Base article KB2619234 (Enable the Association Cookie/GUID that is used by RPC over HTTP to also be used at the RPC layer in Windows 7 and in Windows Server 2008 R2)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
+7. [Knowledge Base article KB2619234 (Enable the Association Cookie/GUID that is used by RPC over HTTP to also be used at the RPC layer in Windows 7 and in Windows Server 2008 R2)](https://support.microsoft.com/help/2619234)
 
-8. [Knowledge Base article KB2533623 (Insecure library loading could allow remote code execution)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=2533623)
+8. [Knowledge Base article KB2533623 (Insecure library loading could allow remote code execution)](https://support.microsoft.com/help/2533623)
 
     > [!NOTE]
     > This hotfix may already be installed if you've configured Windows Update to install security updates on your computer.
@@ -250,7 +250,7 @@ After you've installed the operating system features, install the following soft
 
 2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
 
-3. [Knowledge Base article KB974405 (Windows Identity Foundation)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=974405)
+3. [Knowledge Base article KB974405 (Windows Identity Foundation)](https://support.microsoft.com/help/974405)
 
 ## Windows 8 and Windows 8.1 prerequisites (admin tools only)
 

@@ -30,7 +30,7 @@ The following table describes the character sets that you can configure in remot
 
 - In the Exchange admin center (EAC), go to **Mail flow** > **Remote domains**. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.png) to create a new remote domain or select the existing remote domain and click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.png). In the settings window that opens, use the **MIME character set** and **Non-MIME character set** drop-down lists to select the character set.
 
-- In Exchange Online PowerShell, use the value in the Name column in the following table for the _CharacterSet_ parameter or _NonMimeCharacterSet_ parameter on the [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-remotedomain) cmdlet.
+- In Exchange Online PowerShell, use the value in the Name column in the following table for the _CharacterSet_ parameter or _NonMimeCharacterSet_ parameter on the [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/set-remotedomain) cmdlet.
 
 |**Name**|**Description**|
 |:-----|:-----|

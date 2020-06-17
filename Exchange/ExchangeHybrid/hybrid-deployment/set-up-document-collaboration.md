@@ -64,15 +64,15 @@ Verify that the following prerequisite steps have been completed, and then use t
 
 - Exchange 2016 must be installed in your on-premises organization. Exchange 2016 can coexist with earlier versions of Exchange, but document collaboration will only work for mailboxes on an Exchange 2016 server.
 
-- The authenticating server must be installed with all users synchronized. You can use the [Get-AuthServer](https://docs.microsoft.com/powershell/module/exchange/organization/get-authserver) cmdlet to find your authenticating server. We recommend using the HCW from an Exchange 2016 server to make any necessary OAuth configurations.
+- The authenticating server must be installed with all users synchronized. You can use the [Get-AuthServer](https://docs.microsoft.com/powershell/module/exchange/get-authserver) cmdlet to find your authenticating server. We recommend using the HCW from an Exchange 2016 server to make any necessary OAuth configurations.
 
     > [!IMPORTANT]
     > OAuth between Exchange 2016 and Office 365 need to be configured properly. For more information see [Configure OAuth Authentication Between Exchange and Exchange Online Organizations](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help).
 
-- Users must have the proper licenses. Users with a OneDrive for Business account need to be licensed for either SharePoint Online or OneDrive for Business. You can verify a user's license by selecting the user in the Office 365 portal and selecting the **Edit** button.
+- Users must have the proper licenses. Users with a OneDrive for Business account need to be licensed for either SharePoint Online or OneDrive for Business. You can verify a user's license by selecting the user in the Microsoft 365 admin center and selecting the **Edit** button.
 
     > [!NOTE]
-    > See [Set up OneDrive for Business in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=627455) for more information.
+    > See [Set up OneDrive for Business in Office 365](https://docs.microsoft.com/onedrive/onedrive) for more information.
 
 Perform the following steps:
 

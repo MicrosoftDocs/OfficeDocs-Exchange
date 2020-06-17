@@ -114,7 +114,7 @@ Additional information you might want to know
 
 - You need to be assigned permissions for managing EAC. To see what permissions you need, see the "Exchange admin center connectivity" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
-- You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/library/dd638134\(v=exchg.150\)).
+- You might be able to use only the Shell to perform some procedures. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -123,7 +123,7 @@ Additional information you might want to know
 
 ## Step 1 - Review the certificate requirements for AD FS
 
-Certificates play a critical role in securing communications between Exchange 2013 SP1 servers; web clients such as Outlook Web App; and EAC, Windows Server 2012 R2 servers, including Active Directory Federation Services (AD FS) servers and Web Application Proxy servers. The requirements for certificates vary depending on whether you are setting up an AD FS server, AD FS Proxy, or Web Application Proxy server. The certificates that are used for AD FS services including the SSL and token signing certificates must be imported into the Trust Root Certification Authorities store on all of your Exchange, AD FS and Web Application Proxy servers. The thumbprint for the certificate that is imported is also used on the Exchange 2013 SP1 servers when you use the [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443\(v=exchg.150\)) cmdlet.
+Certificates play a critical role in securing communications between Exchange 2013 SP1 servers; web clients such as Outlook Web App; and EAC, Windows Server 2012 R2 servers, including Active Directory Federation Services (AD FS) servers and Web Application Proxy servers. The requirements for certificates vary depending on whether you are setting up an AD FS server, AD FS Proxy, or Web Application Proxy server. The certificates that are used for AD FS services including the SSL and token signing certificates must be imported into the Trust Root Certification Authorities store on all of your Exchange, AD FS and Web Application Proxy servers. The thumbprint for the certificate that is imported is also used on the Exchange 2013 SP1 servers when you use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet.
 
 In any AD FS design, various certificates must be used to secure communication between users on the Internet and AD FS servers. Each federation server must have a service communication certificate or Secure Socket Layer (SSL) certificate and a token-signing certificate before AD FS servers, Active Directory domain controllers, and Exchange 2013 servers can communicate and authenticate. Depending on your security and budget requirements, carefully consider which of your certificates will be obtained by a public CA or an Enterprise CA. If you want to install and configure an Enterprise Root or Subordinate CA, you can use Active Directory Certificate Services (AD CS). If you want to know more about AD CS, see [Active Directory Certificate Services Overview](https://go.microsoft.com/fwlink/?linkid=392697).
 
@@ -157,24 +157,24 @@ When you are setting up Exchange 2013 SP1, AD FS, and Web Application Proxy, fol
 
 - **Web Application Proxy**
 
-     - SSL certificate used for service communications
+  - SSL certificate used for service communications
 
-        - Subject name: **owa.contoso.com**
+    - Subject name: **owa.contoso.com**
 
-        - Subject Alternative Name (SAN): None
+    - Subject Alternative Name (SAN): None
 
-   > [!NOTE]
-   > If your Web Application Proxy External URL is the same as your internal URL, you can reuse Exchange's SSL certificate here.
+    > [!NOTE]
+    > If your Web Application Proxy External URL is the same as your internal URL, you can reuse Exchange's SSL certificate here.
 
-     - AD FS Proxy SSL certificate
+    - AD FS Proxy SSL certificate
 
-        - Subject name: **adfs.contoso.com** (AD FS deployment name)
+      - Subject name: **adfs.contoso.com** (AD FS deployment name)
 
-        - Subject Alternative Name (SAN): None
+      - Subject Alternative Name (SAN): None
 
-     - Token signing certificate - This will be copied over from AD FS automatically as part of the steps below. If this certificate is used, it must be trusted by the Exchange 2013 servers in your organization.
+    - Token signing certificate - This will be copied over from AD FS automatically as part of the steps below. If this certificate is used, it must be trusted by the Exchange 2013 servers in your organization.
 
-See the certificate requirements section in [Review the requirements for deploying AD FS](https://go.microsoft.com/fwlink/?linkid=392699) for more information about certificates.
+See the certificate requirements section in [AD FS Requirements](https://docs.microsoft.com/windows-server/identity/ad-fs/overview/ad-fs-requirements) for more information about certificates.
 
 > [!NOTE]
 > An SSL encryption certificate is still needed for Outlook Web App and EAC even if you have an SSL certificate for AD FS. The SSL certificate is used on the OWA and ECP virtual directories.
@@ -259,7 +259,7 @@ Import-Module ADFS
 Install-AdfsFarm -CertificateThumbprint 0E0C205D252002D535F6D32026B6AB074FB840E7 -FederationServiceDisplayName "Contoso Corporation" -FederationServiceName adfs.contoso.com -GroupServiceAccountIdentifier "contoso\FSgmsa`$"
 ```
 
-For details and syntax, see [Install-AdfsFarm](https://go.microsoft.com/fwlink/?linkid=392704).
+For details and syntax, see [Install-AdfsFarm](https://docs.microsoft.com/powershell/module/adfs/install-adfsfarm).
 
 To verify the installation: On the AD FS server, open your web browser, and then browse to the URL of the federation metadata (for example, **https://adfs.contoso.com/federationmetadata/2007-06/federationmetadata.xml**).
 
@@ -267,7 +267,7 @@ To verify the installation: On the AD FS server, open your web browser, and then
 
 For all applications and services that you want to publish through Web Application Proxy, you must configure a relying party trust on the AD FS server. For deployments with multiple Active Directory sites that use separate namespaces, a relying party trust for Outlook Web App and EAC must be added for each namespace.
 
-EAC uses the ECP virtual directory. You can view or configure settings for EAC by using the [Get-EcpVirtualDirectory](https://technet.microsoft.com/library/dd351058\(v=exchg.150\)) and the [Set-EcpVirtualDirectory](https://technet.microsoft.com/library/dd297991\(v=exchg.150\)) cmdlets. To access EAC, you must use a web browser and go to **http://server1.contoso.com/ecp**.
+EAC uses the ECP virtual directory. You can view or configure settings for EAC by using the [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Get-EcpVirtualDirectory) and the [Set-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-EcpVirtualDirectory) cmdlets. To access EAC, you must use a web browser and go to **http://server1.contoso.com/ecp**.
 
 > [!NOTE]
 > The inclusion of the trailing slash <STRONG>/</STRONG> in the URL examples shown below is intentional. It's important to ensure that both the AD FS relying party trusts and Exchange Audience URI's <STRONG>are identical</STRONG>. This means the AD FS relying party trusts and Exchange Audience URI's should <STRONG>both have</STRONG> or <STRONG>both emit</STRONG> the trailing slashes in their URLs. The examples in this section contain the trailing <STRONG>/</STRONG>'s after any url ending with "owa" ( /owa/) or "ecp" (/ecp/).
@@ -499,13 +499,13 @@ After you complete these steps, Web Application Proxy will perform AD FS authent
 
 ## Step 7 - Configure Exchange 2013 to use AD FS authentication
 
-When you are configuring AD FS to be used for claims-based authentication with Outlook Web App and EAC in Exchange 2013, you must enable AD FS for your Exchange organization. You must use the [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443\(v=exchg.150\)) cmdlet to configure AD FS settings for your organization:
+When you are configuring AD FS to be used for claims-based authentication with Outlook Web App and EAC in Exchange 2013, you must enable AD FS for your Exchange organization. You must use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet to configure AD FS settings for your organization:
 
 - Set the AD FS issuer to **https://adfs.contoso.com/adfs/ls/**.
 
 - Set the AD FS URIs to **https://mail.contoso.com/owa/** and **https://mail.contoso.com/ecp/**.
 
-- Find the AD FS token signing certificate thumbprint by using Windows PowerShell on the AD FS server and entering `Get-ADFSCertificate -CertificateType "Token-signing"`. Then, assign the token-signing certificate thumbprint that you found. If the AD FS token-signing certificate has expired, the thumbprint from the new AD FS token-signing certificate must be updated by using the [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443\(v=exchg.150\)) cmdlet.
+- Find the AD FS token signing certificate thumbprint by using Windows PowerShell on the AD FS server and entering `Get-ADFSCertificate -CertificateType "Token-signing"`. Then, assign the token-signing certificate thumbprint that you found. If the AD FS token-signing certificate has expired, the thumbprint from the new AD FS token-signing certificate must be updated by using the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet.
 
 Run the following commands in the Exchange Management Shell.
 
@@ -517,7 +517,7 @@ Set-OrganizationConfig -AdfsIssuer "https://adfs.contoso.com/adfs/ls/" -AdfsAudi
 > [!NOTE]
 > The <EM>-AdfsEncryptCertificateThumbprint</EM> parameter isn't supported for these scenarios.
 
-For details and syntax, see [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443\(v=exchg.150\)) and [Get-ADFSCertificate](https://go.microsoft.com/fwlink/?linkid=392706).
+For details and syntax, see [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) and [Get-ADFSCertificate](https://go.microsoft.com/fwlink/?linkid=392706).
 
 ## Step 8 - Enable AD FS authentication on the OWA and ECP virtual directories
 
@@ -541,7 +541,7 @@ Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -AdfsAuthentication $true -Bas
 > [!NOTE]
 > The preceding Exchange Management Shell commands configure the OWA and ECP virtual directories on every Client Access server in your organization. If you don't want to apply these settings to all Client Access servers, use the <EM>-Identity</EM> parameter and specify the Client Access server. It's likely you will want to apply these settings only to the Client Access servers in your organization that are Internet facing.
 
-For details and syntax, see [Get-OwaVirtualDirectory](https://technet.microsoft.com/library/aa998588\(v=exchg.150\)) and [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/bb123515\(v=exchg.150\)) or [Get-EcpVirtualDirectory](https://technet.microsoft.com/library/dd351058\(v=exchg.150\)) and [Set-EcpVirtualDirectory](https://technet.microsoft.com/library/dd297991\(v=exchg.150\)).
+For details and syntax, see [Get-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Get-OwaVirtualDirectory) and [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-OwaVirtualDirectory) or [Get-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Get-EcpVirtualDirectory) and [Set-EcpVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-EcpVirtualDirectory).
 
 ## Step 9 - Restart or recycle Internet Information Services (IIS)
 
@@ -565,7 +565,7 @@ To test the AD FS claims for Outlook Web App:
 
 - In the browser window, if you get a certificate error, just continue on to the Outlook Web App website. You should be redirected to the ADFS sign-in page or the ADFS prompt for credentials.
 
-- Type your user name (domain\\user) and password, and then click **Sign in**.
+- Type your username (domain\\user) and password, and then click **Sign in**.
 
 Outlook Web App will load in the window.
 
@@ -575,7 +575,7 @@ To test the AD FS claims for EAC:
 
 2. In the browser window, if you get a certificate error, just continue on to the ECP website. You should be redirected to the ADFS sign-in page or the ADFS prompt for credentials.
 
-3. Type your user name (domain\\user) and password, and then click **Sign in**.
+3. Type your username (domain\\user) and password, and then click **Sign in**.
 
 4. EAC should load in the window.
 
@@ -591,7 +591,7 @@ For on-premises Exchange 2013 SP1 deployments, deploying and configuring Active 
 
 - Something only the user is (for example, a biometric characteristic, such as a fingerprint)
 
-For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/?linkid=392707) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/?linkid=392708).
+For details on multifactor authentication in Windows Server 2012 R2, see [Overview: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-risk-with-additional-multi-factor-authentication-for-sensitive-applications) and [Walkthrough Guide: Manage Risk with Additional Multi-Factor Authentication for Sensitive Applications](https://go.microsoft.com/fwlink/?linkid=392708).
 
 In the Windows Server 2012 R2 AD FS role service, the federation service functions as a security token service, provides the security tokens that are used with claims, and gives you the ability to support multifactor authentication. The federation service issues tokens based on the credentials that are presented. After the account store verifies a user's credentials, the claims for the user are generated according to the rules of the trust policy and then added to a security token that is issued to the client. For more information about claims, see [Understanding Claims](https://go.microsoft.com/fwlink/?linkid=392709).
 

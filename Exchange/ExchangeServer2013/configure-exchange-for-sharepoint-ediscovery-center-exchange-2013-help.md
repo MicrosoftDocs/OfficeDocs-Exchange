@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 Microsoft Exchange Server 2013 includes features that work with Microsoft SharePoint Server 2013 and Microsoft Lync Server 2013, known as *partner applications*. To make sure these partner applications can access each other's resources, you need to configure server-to-server authentication.
 
-This topic shows you how to configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so users can use the eDiscovery Center in SharePoint 2013 to search Exchange Server 2013 mailbox content. To fully enable this functionality, you must complete additional steps in SharePoint 2013. For details, see [Configure eDiscovery in SharePoint 2013](https://go.microsoft.com/fwlink/?linkid=257727).
+This topic shows you how to configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so users can use the eDiscovery Center in SharePoint 2013 to search Exchange Server 2013 mailbox content. To fully enable this functionality, you must complete additional steps in SharePoint 2013. For details, see [Configure eDiscovery in SharePoint 2013](https://docs.microsoft.com/SharePoint/governance/configure-ediscovery-0).
 
 ## What do you need to know before you begin?
 

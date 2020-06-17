@@ -41,7 +41,7 @@ If you want users to be able to use Exchange Server In-Place eDiscovery, you fir
 
   - Other role groups
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 ## Use the EAC to add a user to the Discovery Management role group
 
@@ -73,7 +73,7 @@ This example add the members of the mail-enabled security group named Contoso Co
 Add-RoleGroupMember -Identity "Discovery Management" -Member "Contoso Compliance Management"
 ```
 
-For more information, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
+For more information, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
 
 ## How do you know this worked?
 

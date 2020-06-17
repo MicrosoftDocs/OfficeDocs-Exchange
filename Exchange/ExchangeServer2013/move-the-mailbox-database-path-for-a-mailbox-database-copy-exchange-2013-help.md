@@ -31,7 +31,7 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 - To perform the move operation, the database must be temporarily dismounted, making it inaccessible to all users. If the database is currently dismounted, it isn't remounted upon completion.
 
-- To perform the move operation, replication for the database must be disabled for all copies. It's not enough to suspend replication; you must disable it by using the [Remove-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335119\(v=exchg.150\)) cmdlet to remove the database copies.
+- To perform the move operation, replication for the database must be disabled for all copies. It's not enough to suspend replication; you must disable it by using the [Remove-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Remove-MailboxDatabaseCopy) cmdlet to remove the database copies.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -43,13 +43,13 @@ Looking for other management tasks related to mailbox database copies? Check out
 > [!NOTE]
 > You can't use the EAC to move a replicated mailbox database to a new path.
 
-1. Note any replay lag or truncation lag settings for all copies of the mailbox database being moved. You can obtain this information by using the [Get-MailboxDatabase](https://technet.microsoft.com/library/bb124924\(v=exchg.150\)) cmdlet, as shown in this example.
+1. Note any replay lag or truncation lag settings for all copies of the mailbox database being moved. You can obtain this information by using the [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabase) cmdlet, as shown in this example.
 
    ```powershell
    Get-MailboxDatabase DB1 | Format-List *lag*
    ```
 
-2. If circular logging is enabled for the database, it must be disabled before proceeding. You can disable circular logging for a mailbox database by using the [Set-MailboxDatabase](https://technet.microsoft.com/library/bb123971\(v=exchg.150\)) cmdlet, as shown in this example.
+2. If circular logging is enabled for the database, it must be disabled before proceeding. You can disable circular logging for a mailbox database by using the [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabase) cmdlet, as shown in this example.
 
    ```powershell
    Set-MailboxDatabase DB1 -CircularLoggingEnabled $false
@@ -75,13 +75,13 @@ Looking for other management tasks related to mailbox database copies? Check out
     Net start MSExchangeFastSearch
     ```
 
-9. Optionally, enable circular logging by using the [Set-MailboxDatabase](https://technet.microsoft.com/library/bb123971\(v=exchg.150\)) cmdlet, as shown in this example.
+9. Optionally, enable circular logging by using the [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabase) cmdlet, as shown in this example.
 
     ```powershell
     Set-MailboxDatabase DB1 -CircularLoggingEnabled $true
     ```
 
-10. Reconfigure any previously set values for replay lag time and truncation lag time by using the [Set-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd298104\(v=exchg.150\)) cmdlet, as shown in this example.
+10. Reconfigure any previously set values for replay lag time and truncation lag time by using the [Set-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabaseCopy) cmdlet, as shown in this example.
 
     ```powershell
     Set-MailboxDatabaseCopy DB1\MBX2 -ReplayLagTime 00:15:00
@@ -91,21 +91,21 @@ Looking for other management tasks related to mailbox database copies? Check out
 
     1. Examining the event log for any error or warning events related to the database or the database copy.
 
-    2. Using the [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/library/dd298044\(v=exchg.150\)) cmdlet to check the health and status of continuous replication for the database copy.
+    2. Using the [Get-MailboxDatabaseCopyStatus](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabaseCopyStatus) cmdlet to check the health and status of continuous replication for the database copy.
 
-    3. Using the [Test-ReplicationHealth](https://technet.microsoft.com/library/bb691314\(v=exchg.150\)) cmdlet to verify the health and status of the database availability group and continuous replication.
+    3. Using the [Test-ReplicationHealth](https://docs.microsoft.com/powershell/module/exchange/Test-ReplicationHealth) cmdlet to verify the health and status of the database availability group and continuous replication.
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-MailboxDatabase](https://technet.microsoft.com/library/bb124924\(v=exchg.150\))
+- [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabase)
 
-- [Set-MailboxDatabase](https://technet.microsoft.com/library/bb123971\(v=exchg.150\))
+- [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabase)
 
-- [Set-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd298104\(v=exchg.150\))
+- [Set-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Set-MailboxDatabaseCopy)
 
-- [Get-MailboxDatabaseCopyStatus](https://technet.microsoft.com/library/dd298044\(v=exchg.150\))
+- [Get-MailboxDatabaseCopyStatus](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabaseCopyStatus)
 
-- [Test-ReplicationHealth](https://technet.microsoft.com/library/bb691314\(v=exchg.150\))
+- [Test-ReplicationHealth](https://docs.microsoft.com/powershell/module/exchange/Test-ReplicationHealth)
 
 ## How do you know this worked?
 

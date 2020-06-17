@@ -28,7 +28,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 - Estimated time to complete: 2 to 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Dynamic distribution groups" entry in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Dynamic distribution groups" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -121,7 +121,7 @@ New-DynamicDistributionGroup -Name "Full Time Employees" -RecipientFilter "(Reci
 
 ```
 
-For detailed syntax and parameter information, see [New-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-dynamicdistributiongroup).
+For detailed syntax and parameter information, see [New-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-dynamicdistributiongroup).
 
 ### How do you know this worked?
 
@@ -248,9 +248,9 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-DynamicDistributionGroup** and **Set-DynamicDistributionGroup** cmdlets to view and change properties for dynamic distribution groups. Advantages of using the Shell are the ability to change the properties that aren't available in the EAC and change properties for multiple groups. For information about what parameters correspond to distribution group properties, see the following topics:
 
-- [Get-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-dynamicdistributiongroup)
+- [Get-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-dynamicdistributiongroup)
 
-- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-dynamicdistributiongroup)
+- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-dynamicdistributiongroup)
 
 Here are some examples of using the Shell to change dynamic distribution group properties.
 

@@ -136,11 +136,11 @@ You can edit the default sharing policy to allow all of your users to share full
 
 For detailed syntax and parameter information, see the following topics:
 
-- [New-SharingPolicy](https://technet.microsoft.com/library/dd298186\(v=exchg.150\))
+- [New-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/New-SharingPolicy)
 
-- [Set-ExchangeServer](https://technet.microsoft.com/library/bb123716\(v=exchg.150\))
+- [Set-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/Set-ExchangeServer)
 
-- [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/bb123515\(v=exchg.150\))
+- [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-OwaVirtualDirectory)
 
 ## How do you know this worked?
 

@@ -20,129 +20,109 @@ manager: serdars
 
 ---
 
-# Manage mail contacts
+# Manage mail contacts in Exchange Online
 
-Mail contacts are mail-enabled directory service objects that contain information about people or organizations that exist outside your Exchange or Exchange Online organization. Each mail contact has an external email address. For more information about mail contacts, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+In Exchange Online organizations, ail contacts are mail-enabled objects that contain information about people who exist outside your organization. Each mail contact has an external email address. For more information about mail contacts, see [Recipients in Exchange Online](recipients-in-exchange-online.md).
+
+You manage mail contacts in the Exchange admin center (EAC) or in PowerShell (Exchange Online PowerShell in organizations with Exchange Online mailboxes; standalone Exchange Online Protection (EOP) in organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
 
-- Estimated time to complete: 2 minutes.
+- To open the Exchange admin center (EAC), see [Exchange admin center in Exchange Online](../exchange-admin-center.md).
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
-## Create a mail contact
+## Use the Exchange admin center to manage mail contacts
 
-### Use the EAC to create a mail contact
+### Use the EAC to create mail contacts
 
-1. In the EAC, navigate to **Recipients** \> **Contacts**.
+1. In the EAC, go to **Recipients** \> **Contacts**
 
-2. Click **New** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) \> **Mail contact**.
+2. Click **New** ![New icon](../media/ITPro_EAC_AddIcon.png) and then select **Mail contact**.
 
-3. Complete the following boxes on the **New mail contact** page:
+3. In the **New mail contact** page that opens, configure the following settings. Settings marked with an <sup>\*</sup> are required.
 
-   - **First name**: Use this box to type the contact's first name.
+   - **First name**
 
-   - **Initials**: Use this box to type the contact's initials.
+   - **Initials**: The person's middle initial.
 
-   - **Last name**: Use this box to type the contact's last name.
+   - **Last name**
 
-   - **\* Display name**: Use this box to type a display name for the contact. This is the name that's listed in the contacts list in the EAC and in your organization's address book. By default, this box is populated with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
+   - <sup>\*</sup>**Display name**: By default, this box shows the values from the **First name**, **Initials**, and **Last name** boxes. You can accept this value or change it. The value should be unique, and has a maximum length of 64 characters.
 
-   - **\* Name**: Use this box to type a name for the contact. This is the name that's listed in the directory service. Like the display name, this box is populated by default with the names you enter in the **First name**, **Initials**, and **Last name** boxes. If you didn't use those boxes, you must still type a name in this box because it's required. The name can't exceed 64 characters.
+   - <sup>\*</sup>**Alias**: Enter a unique alias, using up to 64 characters, for the user
 
-   - **\* Alias**: Use this box to type an alias (64 characters or less) for the contact. This box is required.
-
-   - **\* External email address**: Use this box to type the outside email account of the contact. This box is required. Email sent to this contact is forwarded to this email address.
-
-   - **Organizational unit**: You can select an organizational unit (OU) other than the default, which is the recipient scope. If the recipient scope is set to the forest, the default value is set to the Users container in the domain that contains the computer on which the EAC is running. If the recipient scope is set to a specific domain, the Users container in that domain is selected by default. If the recipient scope is set to a specific OU, that OU is selected by default.
-
-     To select a different OU, click **Browse**. The dialog box displays all OUs in the forest that are within the specified scope. Select the OU you want, and then click **OK**.
-
-     > [!NOTE]
-     > The **Organizational unit** box is only available in Exchange Server. It isn't available in Exchange Online.
+   - <sup>\*</sup>**External email address**: Enter the user's email address. The domain should be external to your cloud-based organization.
 
 4. When you're finished, click **Save**.
 
-### Use Exchange Online PowerShell to create a mail contact
+### Use the EAC to modify mail contacts
 
-This example creates a mail contact for Debra Garcia in Exchange Server.
+1. In the EAC, go to **Recipients** \> **Contacts**.
 
-```PowerShell
-New-MailContact -Name "Debra Garcia" -ExternalEmailAddress dgarcia@tailspintoys.com -OrganizationalUnit Users
-```
+2. In the list of contacts, select the mail contact that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_AddIcon.png).
 
-This example creates a mail contact for Alan Shen in Exchange Online.
+3. On the mail contact properties page that opens, click one of the following tabs to view or change properties.
 
-```PowerShell
-New-MailContact -Name "Alan Shen" -ExternalEmailAddress alans@fourthcoffee.com
-```
-
-This example mail-enables an existing contact named Karen Toh in Exchange Server.
-
-```PowerShell
-Enable-MailContact -Identity "Karen Toh" -ExternalEmailAddress ktoh@tailspintoys.com
-```
-
-### How do you know this worked?
-
-To verify that you've successfully created a mail contact, do one of the following:
-
-- In the EAC, navigate to **Recipients** \> **Contacts**. The new mail contact is displayed in the contact list. Under **Contact Type**, the type is **Mail contact**.
-
-- In Exchange Online PowerShell, run the following command to display information about the new mail contact.
-
-  ```PowerShell
-  Get-MailContact <Name> | Format-List Name,RecipientTypeDetails,ExternalEmailAddress
-  ```
-
-## Change mail contact properties
-
-### Use the EAC to change mail contact properties
-
-1. In the EAC, navigate to **Recipients** \> **Contacts**.
-
-2. In the list of mail contacts and mail users, click the mail contact that you want to change the properties for, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif).
-
-3. On the mail contact properties page, click one of the following sections to view or change properties.
+   When you're finished, click **Save**.
 
 #### General
 
 Use the **General** section to view or change basic information about the mail contact.
 
-- **First name**, **Initials**, **Last name**
+- **First name**
 
-- **\* Name**: This is the name that's listed in Active Directory. If you change this name, it can't exceed 64 characters.
+- **Initials**
 
-- **\* Display name**: This name appears in your organization's address book, on the To and From lines in email, and in the Mailbox list. This name can't contain empty spaces before or after the display name.
+- **Last name**
 
-- **\* Alias**: This is the mail contact's alias. If you change it, it must be unique in the organization and must be 64 characters or less.
+- **Display name**: This name appears in your organization's address book, on the To: and From: lines in email, and in the list of contacts in the EAC. This name can't contain empty spaces before or after the display name.
 
-- **\* External email address**: This is mail contact's primary SMTP address and their outside email account. Email sent to this contact is forwarded to this email address.
+- **Alias**: This is the mail contact's alias. If you change it, it must be unique in the organization and must be 64 characters or less.
 
-- Click **More options** to display the OU that contains the mail contact account. You have to use Active Directory Users and Computers to move the contact to a different OU.
+- **External email address**: This is mail contact's primary SMTP address in their external email organization. Email sent to this contact is forwarded to this email address.
+
+- **Hide from address lists**: Select this check box to prevent the mail contact from appearing in the address book and other address lists that are defined in your organization. After you select this check box, users can still send messages to the recipient by using the email address.
 
 #### Contact Information
 
-Use the **Contact Information** section to view or change the recipient's contact information, such as mailing address and telephone numbers. This information is displayed in the address book.
+Use the **Contact information** tab to view or change the user's contact information. The information on this page is displayed in the address book.
+
+- **Street**
+- **City**
+- **State/Province**
+- **ZIP/Postal code**
+- **Country/Region**
+- **Office**
+- **Work phone**
+- **Fax**
+- **Home phone**
+- **Mobile phone**
+- **Notes**
+
+> [!TIP]
+> You can use the **State/Province** value to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
 #### Organization
 
-Use the **Organization** section to record detailed information about the mail contact's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that's accessible from email clients such as Outlook.
+Use the **Organization** tab to record detailed information about the user's role in the organization. This information is displayed in the address book. Also, you can create a virtual organization chart that's accessible from email clients such as Outlook.
 
-- **Title**: Use this box to view or change the contact's title.
+- **Title**: Use this box to view or change the recipient's title.
 
-- **Department**: Use this box to view or change the department in which the contact works. You can use this box to create recipient conditions for dynamic distribution groups and address lists.
+- **Department**: Use this box to view or change the department in which the user works. You can use this box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
-- **Company**: Use this box to view or change the company for which the contact works. You can also use this box to create recipient conditions for dynamic distribution groups.
+- **Company**: Use this box to view or change the company for which the user works. You can use this box to create recipient conditions for dynamic distribution groups, email address policies, or address lists.
 
 - **Manager**: To add a manager, click **Browse**. In **Select Manager**, select a person, and then click **OK**.
 
-- **Direct reports**: You can't modify this box. A direct report is a recipient who reports to a specific manager. If you've specified a manager for the recipient, that recipient appears as a direct report in the details of the manager's mailbox. For example, Toby manages Ann and Spencer, who are mail contacts, so Toby is specified in the **Manager** box in the organization properties for Ann and Spencer, and Ann and Spencer appear in the **Direct reports** box in the properties of Toby's mailbox.
+- **Direct reports**: You can't modify this box. A direct report is a user who reports to a specific manager. If you've specified a manager for the user, that user appears as a direct report in the details of the manager's mailbox. For example, Kari manages Chris and Kate, so Kari is specified in the **Manager** box for Chris and Kate, and Chris and Kate appear in the **Direct reports** box in the properties of Kari's account.
 
 #### Email Options
 
@@ -153,74 +133,16 @@ Use the **Email Options** section to add or remove proxy addresses for the mail 
 
 #### MailTip
 
-Use the **MailTip** section to add a MailTip to alert users of potential issues before they send a message to this recipient. A MailTip is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
+Use the **MailTip** tab to add an alert for potential issues before a user sends messages to this recipient. The text is displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
 
-> [!NOTE]
-> MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
-
-### Use Exchange Online PowerShell to change mail contact properties
-
-Properties for a mail contact are stored in both Active Directory and Exchange. In general, use the **Get-Contact** and **Set-Contact** cmdlets to view and change organization and contact information properties. Use the **Get-MailContact** and **Set-MailContact** cmdlets to view or change mail-related properties, such as email addresses, the MailTip, custom attributes, and whether the contact is hidden from address lists.
-
-For more information, see the following topics:
-
-- [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-contact)
-
-- [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-contact)
-
-- [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-mailcontact)
-
-- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailcontact)
-
-Here are some examples of using Exchange Online PowerShell to change mail contact properties.
-
-This example configures the Title, Department, Company, and Manager properties for the mail contact Kai Axford.
-
-```PowerShell
-Set-Contact "Kai Axford" -Title Consultant -Department "Public Relations" -Company Fabrikam -Manager "Karen Toh"
-```
-
-This example sets the CustomAttribute1 property to a value of PartTime for all mail contacts and hides them from the organization's address book.
-
-```PowerShell
-Get-MailContact | Set-MailContact -CustomAttribute1 PartTime -HiddenFromAddressListsEnabled $true
-```
-
-This example sets the CustomAttribute15 property to a value of TemporaryEmployee for all mail contacts in the Public Relations department.
-
-```PowerShell
-Get-Contact -Filter "Department -eq 'Public Relations'" | Set-MailContact -CustomAttribute15 TemporaryEmployee
-```
-
-### How do you know this worked?
-
-To verify that you've successfully changed properties for a mail contact, do the following:
-
-- In the EAC, select the mail contact, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the property that you changed.
-
-- In Exchange Online PowerShell, use the **Get-Contact** and **Get-MailContact** cmdlets to verify the changes. One advantage of using Exchange Online PowerShell is that you can view multiple properties for multiple mail contacts. In the example above where all mail contacts had the CustomAttribute1 property set to PartTime and were hidden from the address book, run the following command to verify the changes.
-
-  ```PowerShell
-  Get-MailContact | Format-List Name,CustomAttribute1,HiddenFromAddressListsEnabled
-  ```
-
-  In the previous example where the CustomAttribute15 was set for all mail contacts in the Public Relations department, run the following command to verify the changes.
-
-  ```PowerShell
-  Get-Contact -Filter "Department -eq 'Public Relations'" | Get-MailContact | Format-List Name,CustomAttribute15
-  ```
-
-## Bulk edit mail contacts
-
-You can use the EAC to change selected properties for multiple mail contacts. When you select two or more mail contacts from the contacts list in the EAC, the properties that can be bulk edited are displayed in the Details pane. When you change one of these properties, the change is applied to all selected recipients.
-
-When you bulk edit mail contacts, you can change the following property areas:
-
-- **Contact Information**: Change shared properties such as street, postal code, and city name.
-
-- **Organization**: Change shared properties such as department name, company name, and the manager that the selected mail contacts or mail users report to.
+MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
 ### Use the EAC to bulk edit mail contacts
+
+When you bulk edit mail contacts in the EAC, you can change the following types of properties:
+
+- [Contact information](#contact-information)
+- [Organization](#organization)
 
 1. In the EAC, navigate to **Recipients** \> **Contacts**.
 
@@ -233,14 +155,95 @@ When you bulk edit mail contacts, you can change the following property areas:
 
 4. Make the changes on the properties page and then save your changes.
 
-### How do you know this worked?
+### Use the EAC to remove mail contacts
 
-To verify that you've successfully bulk edited mail contacts, do one of the following:
+1. In the EAC, go to **Recipients** \> **Contacts**.
 
-- In the EAC, select each of the mail contacts that you bulk edited, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.gif) to view the properties that you changed.
+2. Select the mail contact that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
 
-- In Exchange Online PowerShell, use the **Get-Contact** cmdlet to verify the changes. For example, say you used the bulk edit feature in the EAC to change the manager and the office for all mail contacts from a vendor company named A. Datum Corporation. To verify these changes, you could run the following command in Exchange Online PowerShell.
+## Use PowerShell to manage mail contacts
+
+### Use Exchange Online PowerShell to create mail contacts
+
+This example creates a mail contact for Debra Garcia
+
+- The name and display name is Debra Garcia (if you don't use the _DisplayName_ parameter, the value of the _Name_ parameter is used for the display name).
+
+- The alias is dgarcia.
+
+```PowerShell
+New-MailContact -Name "Debra Garcia" -ExternalEmailAddress dgarcia@tailspintoys.com -Alias dgarcia
+```
+
+For detailed syntax and parameter information, see [New-MailContact](https://docs.microsoft.com/powershell/module/exchange/new-mailcontact).
+
+### Use Exchange Online PowerShell to modify mail contacts
+
+In general, use the **Get-Contact** and **Set-Contact** cmdlets to view and change organization and contact information properties. Use the **Get-MailContact** and **Set-MailContact** cmdlets to view or change mail-related properties, such as email addresses, the MailTip, custom attributes, and whether the contact is hidden from address lists.
+
+For more information, see the following topics:
+
+- [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/get-contact)
+- [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/set-contact)
+- [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/get-mailcontact)
+- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact)
+
+Here are some examples of using Exchange Online PowerShell to change mail contact properties:
+
+This example configures the Title, Department, Company, and Manager properties for the mail contact Kai Axford.
+
+```PowerShell
+Set-Contact "Kai Axford" -Title Consultant -Department "Public Relations" -Company Fabrikam -Manager "Karen Toh"
+```
+
+This example sets the CustomAttribute1 property to a value of PartTime for all mail contacts and hides them from the organization's address book.
+
+```PowerShell
+$Contacts = Get-MailContact -Resultsize unlimited
+$Contacts | foreach {Set-MailContact -Identity $_ -CustomAttribute1 PartTime -HiddenFromAddressListsEnabled $true}
+```
+
+This example sets the CustomAttribute15 property to a value of TemporaryEmployee for all mail contacts in the Public Relations department.
+
+```PowerShell
+$PR = Get-Contact -ResultSize unlimited -Filter "Department -eq 'Public Relations'"
+$PR | foreach {Set-MailContact -Identity $_ -CustomAttribute15 TemporaryEmployee}
+```
+
+### Use Exchange Online PowerShell to remove mail contacts
+
+To remove a mail contact, use the following syntax:
+
+```powershell
+Remove-MailContact -Identity <MailUserIdentity>
+```
+
+This example remove the mail contact for Pilar Pinilla:
+
+```powershell
+Remove-MailContact -Identity "Pilar Pinilla"
+```
+
+For detailed syntax and parameter information, see [Remove-MailContact](https://docs.microsoft.com/powershell/module/exchange/remove-mailcontact).
+
+## How do you know these procedures worked?
+
+To verify that you've successfully created, modified, or removed mail contacts, do any of the following steps:
+
+- In the EAC, go to **Recipients** \> **Contacts**. Verify the mail contact is list (or not listed). The **Contact Type** value is **Mail contact**. Select the mail contact from the list, and click lick **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to view the properties.
+
+- In Exchange Online PowerShell, replace \<MailContactIdentity\> with the name, email address, or alias of the mail contact, and run the following command to verify that the mail contact is listed (or not listed).
 
   ```PowerShell
-  Get-Contact -ResultSize unlimited -Filter "Company -eq 'Adatum'" | Format-List Name,Office,Manager
+  Get-MailContact -Identity <MailContactIdentity> | Format-List Name,Alias,DisplayName,ExternalEmailAddress
   ```
+
+- In Exchange Online PowerShell, use the **Get-Contact** and **Get-Contact** cmdlets to verify the property changes you made.
+
+   ```PowerShell
+   Get-MailContact | Format-List Name,CustomAttribute1,HiddenFromAddressListsEnabled
+   ```
+
+   ```PowerShell
+   Get-Contact -Filter "Department -eq 'Public Relations'" | Get-MailContact | Format-List Name,CustomAttribute15
+   ```

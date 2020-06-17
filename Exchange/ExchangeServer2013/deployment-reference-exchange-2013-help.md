@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 [Exchange 2013: editions and versions](exchange-2013-editions-and-versions-exchange-2013-help.md)
 
-[Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098\(v=exchg.150\))
+[Exchange Server Updates: build numbers and release dates](https://docs.microsoft.com/Exchange/new-features/build-numbers-and-release-dates)
 
 [Exchange Server Supportability Matrix](exchange-server-supportability-matrix-exchange-2013-help.md)
 

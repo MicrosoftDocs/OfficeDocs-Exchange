@@ -75,4 +75,4 @@ This example creates the child address list Building 34 Meeting Rooms in the All
 New-AddressList -Name "Building 34 Meeting Rooms" -Container "\All Rooms" -IncludedRecipients Resources -ConditionalCustomAttribute1 "Building 34"
 ```
 
-For detailed syntax and parameter information, see [New-AddressList](https://technet.microsoft.com/library/aa996912\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-AddressList](https://docs.microsoft.com/powershell/module/exchange/New-AddressList).

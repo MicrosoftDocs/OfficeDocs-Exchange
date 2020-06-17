@@ -79,11 +79,11 @@ When you set up the ASA credential, keep these guidelines in mind:
 
     Where *EXCH2013ASA* is the name of the account and the attribute to be modified is *msDS-SupportedEncryptionTypes* with a decimal value of 28, which enables the following ciphers: RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96.
 
-For more information about these cmdlets, see [Import-Module](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Import-Module) and [New-ADComputer](https://technet.microsoft.com/library/ee617245.aspx).
+For more information about these cmdlets, see [Import-Module](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Import-Module) and [New-ADComputer](https://docs.microsoft.com/powershell/module/activedirectory/new-adcomputer).
 
 ## Cross-forest scenarios
 
-If you have a cross-forest or resource-forest deployment, and you have users that are outside the Active Directory forest that contains Exchange, you need to configure forest trust relationships between the forests. Also, for each forest in the deployment, you need to set up a routing rule that enables trust between all name suffixes within the forest and across forests. For more information about managing cross-forest trusts, see [Managing forest trusts](https://technet.microsoft.com/library/cc772440.aspx).
+If you have a cross-forest or resource-forest deployment, and you have users that are outside the Active Directory forest that contains Exchange, you need to configure forest trust relationships between the forests. Also, for each forest in the deployment, you need to set up a routing rule that enables trust between all name suffixes within the forest and across forests. For more information about managing cross-forest trusts, see [Configuring Partner Organizations](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/configuring-partner-organizations).
 
 ## Identify the Service Principal Names to associate with the ASA credential
 

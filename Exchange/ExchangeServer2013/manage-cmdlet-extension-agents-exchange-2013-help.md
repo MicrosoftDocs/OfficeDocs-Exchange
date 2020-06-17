@@ -47,7 +47,7 @@ This example enables a cmdlet extension agent by using the **Enable-CmdletExtens
 Enable-CmdletExtensionAgent "Scripting Agent"
 ```
 
-For detailed syntax and parameter information, see [Enable-CmdletExtensionAgent](https://technet.microsoft.com/library/dd335192\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Enable-CmdletExtensionAgent](https://docs.microsoft.com/powershell/module/exchange/Enable-CmdletExtensionAgent).
 
 ## Disable a cmdlet extension agent
 
@@ -62,7 +62,7 @@ To disable a cmdlet extension agent, use the **Disable-CmdletExtensionAgent** cm
 Disable-CmdletExtensionAgent "Scripting Agent"
 ```
 
-For detailed syntax and parameter information, see [Disable-CmdletExtensionAgent](https://technet.microsoft.com/library/dd298132\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Disable-CmdletExtensionAgent](https://docs.microsoft.com/powershell/module/exchange/Disable-CmdletExtensionAgent).
 
 ## View existing cmdlet extension agents
 
@@ -84,7 +84,7 @@ This example gets multiple cmdlet extension agents by using the **Get-CmdletExte
 Get-CmdletExtensionAgent | Format-Table Name, Enabled, Priority
 ```
 
-For detailed syntax and parameter information, see [Get-CmdletExtensionAgent](https://technet.microsoft.com/library/dd297946\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-CmdletExtensionAgent](https://docs.microsoft.com/powershell/module/exchange/Get-CmdletExtensionAgent).
 
 ## Change the priority of a cmdlet extension agent
 
@@ -101,4 +101,4 @@ This example changes the priority of a cmdlet extension agent by using the **Set
 Set-CmdletExtensionAgent "Scripting Agent" -Priority 3
 ```
 
-For detailed syntax and parameter information, see [Set-CmdletExtensionAgent](https://technet.microsoft.com/library/dd335175\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-CmdletExtensionAgent](https://docs.microsoft.com/powershell/module/exchange/Set-CmdletExtensionAgent).

@@ -51,7 +51,7 @@ The health sets in Exchange are organized into the following four categories tha
 
 For a complete list of Exchange health sets, see [Appendix A: Exchange health sets](appendix-a-exchange-health-sets.md).
 
-To learn more about Managed Availability, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
+To learn more about Managed Availability, see [Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help).
 
 ## How health rolls up
 

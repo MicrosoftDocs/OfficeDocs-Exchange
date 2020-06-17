@@ -19,9 +19,9 @@ _**Applies to:** Exchange Server 2013_
 
 To successfully perform cross-premises eDiscovery searches in an Exchange 2013 hybrid organization, you will have to configure OAuth (Open Authorization) authentication between your Exchange on-premises and Exchange Online organizations so that you can use In-Place eDiscovery to search on-premises and cloud-based mailboxes. OAuth authentication supports the following eDiscovery scenarios in an Exchange hybrid deployment:
 
-  - Search on-premises mailboxes that use Exchange Online Archiving for cloud-based archive mailboxes.
+- Search on-premises mailboxes that use Exchange Online Archiving for cloud-based archive mailboxes.
 
-  - Search on-premises and cloud-based mailboxes in the same eDiscovery search.
+- Search on-premises and cloud-based mailboxes in the same eDiscovery search.
 
 For step-by-step instructions for configuring OAuth authentication to support eDiscovery, see [Configure OAuth authentication between Exchange and Exchange Online organizations](configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help.md).
 
@@ -29,7 +29,7 @@ For step-by-step instructions for configuring OAuth authentication to support eD
 
 OAuth authentication is a server-to-server authentication protocol that allows applications to authenticate to each other. With OAuth authentication, user credentials and passwords are not passed from one computer to another. Instead, authentication and authorization is based on the exchange of security tokens, which grant access to a specific set of resources for a specific amount of time.
 
-OAuth authentication typically involves three parties: a single authorization server and the two realms that need to communicate with one another. Security tokens are issued by the authorization server (also known as a security token server) to the two realms that need to communicate; these tokens verify that communications originating from one realm should be trusted by the other realm. When using OAuth authentication between an on-premises Exchange organization and Exchange Online, the function of the authorization server is provided by Microsoft Azure Active Directory Access Control Services (ACS) in your Office 365 organization. For example, during a cross-premises eDiscovery search, Azure ACS issues tokens that verify that an administrator or compliance officer from the Exchange on-premises organization is able to access mailboxes in the Exchange Online organization, and vice-versa.
+OAuth authentication typically involves three parties: a single authorization server and the two realms that need to communicate with one another. Security tokens are issued by the authorization server (also known as a security token server) to the two realms that need to communicate; these tokens verify that communications originating from one realm should be trusted by the other realm. When using OAuth authentication between an on-premises Exchange organization and Exchange Online, the function of the authorization server is provided by Microsoft Azure Active Directory Access Control Services (ACS) in your Microsoft 365 or Office 365 organization. For example, during a cross-premises eDiscovery search, Azure ACS issues tokens that verify that an administrator or compliance officer from the Exchange on-premises organization is able to access mailboxes in the Exchange Online organization, and vice-versa.
 
 ## eDiscovery scenarios in a hybrid deployment
 
@@ -69,7 +69,7 @@ The follow table identifies the eDiscovery scenarios in an Exchange hybrid deplo
 </td>
 </tr>
 <tr class="odd">
-<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by an Office 365 tenant administrator or a compliance officer signed in to an Office 365 user account.</p></td>
+<td><p>Search Exchange Online mailboxes from an eDiscovery search initiated from Exchange Online or the eDiscovery Center in SharePoint Online by a Microsoft 365 or Office 365 tenant administrator or a compliance officer signed in to a Microsoft 365 or Office 365 user account.</p></td>
 <td><p>No</p></td>
 </tr>
 </tbody>
@@ -83,8 +83,8 @@ If OAuth isn't configured for your Exchange hybrid deployment, you can't use eDi
 
 ## More information
 
-  - You can also use OAuth authentication to allow other applications, such as SharePoint 2013 and Lync Server 2013, to authenticate to Exchange 2013. For more information, see [Configure OAuth authentication with SharePoint 2013 and Lync 2013](configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md).
+- You can also use OAuth authentication to allow other applications, such as SharePoint 2013 and Lync Server 2013, to authenticate to Exchange 2013. For more information, see [Configure OAuth authentication with SharePoint 2013 and Lync 2013](configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help.md).
 
-  - You can configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so administrators and compliance officers can use the eDiscovery Center in SharePoint 2013 to search Exchange 2013 mailboxes. For more information, see [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).
+- You can configure server-to-server authentication between Exchange 2013 and SharePoint 2013 so administrators and compliance officers can use the eDiscovery Center in SharePoint 2013 to search Exchange 2013 mailboxes. For more information, see [Configure Exchange for SharePoint eDiscovery Center](configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help.md).
 
-  - You can configure an Exchange hybrid deployment using the Hybrid Configuration Wizard in Exchange 2013. For a customized, step-by-step hybrid deployment configuration checklist, see the [Exchange Server Deployment Assistant](https://go.microsoft.com/fwlink/p/?linkid=277105).
+- You can configure an Exchange hybrid deployment using the Mail migration advisor. For more information, see [Use the Microsoft 365 and Office 365 mail migration advisor](https://docs.microsoft.com/exchange/mail-migration-jump).

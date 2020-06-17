@@ -58,7 +58,7 @@ For additional management tasks related to UM mailboxes, see [Voice mail for use
 
 ## Use Exchange Online PowerShell to disable selected Outlook Voice Access features for UM-enabled users on a UM mailbox policy
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Unified Messaging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 This example prevents users associated with a UM mailbox policy named `MyUMMailboxPolicy` from accessing their calendar when they dial in to Outlook Voice Access.
 
@@ -86,7 +86,7 @@ Set-UMMailboxPolicy -Identity MyUMMailboxPolicy -AllowTUIAccessToPersonalContact
 
 ## Use Exchange Online PowerShell to disable selected Outlook Voice Access features on the mailbox of a single UM-enabled user
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailboxes" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Unified Messaging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 This example disables access to the calendar on a UM mailbox named tony@contoso.com when the user dials in to Outlook Voice Access.
 

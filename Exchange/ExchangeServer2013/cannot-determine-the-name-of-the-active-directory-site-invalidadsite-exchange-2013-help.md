@@ -27,6 +27,6 @@ Microsoft Exchange setup requires that the server that is used for installation 
 
 To resolve this issue, verify that the local server is a member of a valid Active Directory site and rerun Exchange Server 2007 setup.
 
-You can use the **/DsGetSite** option of the Nltest.exe command line tool to verify and display site membership. For more information, see "Nltest.exe: NLTest Overview" in the "Tools and Settings Collection" of *Windows Server 2003 Technical Reference* ([https://go.microsoft.com/fwlink/?LinkId=27734](https://go.microsoft.com/fwlink/?linkid=27734)).
+You can use the **/DsGetSite** option of the Nltest.exe command line tool to verify and display site membership. For more information, see "Nltest.exe: NLTest Overview" in the "Tools and Settings Collection" of [Windows Server 2003 Technical Reference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc758478(v=ws.10)).
 
 For more information about Active Directory troubleshooting, see "Troubleshooting Active Directory Operations" in *Windows Server 2003: Operations* (<https://go.microsoft.com/fwlink/?linkid=68099>).

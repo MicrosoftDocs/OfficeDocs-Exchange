@@ -66,7 +66,7 @@ This example returns only the specified properties for the same rule.
 Get-ClientAccessRule -Identity "Block Client Connections from 192.168.1.0/24" | Format-List Name,Priority,Enabled,Scope,Action
 ```
 
-For detailed syntax and parameter information, see [Get-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-clutter).
+For detailed syntax and parameter information, see [Get-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/get-clutter).
 
 ## Use Exchange Online PowerShell to create Client Access Rules
 
@@ -96,7 +96,7 @@ This example creates a new Client Access Rule named Restrict EAC Access that blo
 New-ClientAccessRule -Name "Restrict EAC Access" -Action DenyAccess -AnyOfProtocols ExchangeAdminCenter -ExceptAnyOfClientIPAddressesOrRanges 192.168.10.1/24 -ExceptUsernameMatchesAnyOfPatterns *tanyas*
 ```
 
-For detailed syntax and parameter information, see [New-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/client-access/new-clientaccessrule).
+For detailed syntax and parameter information, see [New-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/new-clientaccessrule).
 
 ### How do you know this worked?
 
@@ -144,7 +144,7 @@ This example adds the IP address range 172.17.17.27/16 to the existing Client Ac
 Set-ClientAccessRule -Identity "Allow IMAP4" -AnyOfClientIPAddressesOrRanges @{Add="172.17.17.27/16"}
 ```
 
-For detailed syntax and parameter information, see [Set-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-clutter).
+For detailed syntax and parameter information, see [Set-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/set-clutter).
 
 ### How do you know this worked?
 
@@ -210,7 +210,7 @@ Remove-ClientAccessRule -Identity "Block POP3"
 
  **Note**: To disable a Client Access Rule without deleting it, use the _Enabled_ parameter with the value `$false` on the **Set-ClientAccessRule** cmdlet.
 
-For detailed syntax and parameter information, see [Remove-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/client-access/remove-clientaccessrule).
+For detailed syntax and parameter information, see [Remove-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/remove-clientaccessrule).
 
 ### How do you know this worked?
 
@@ -244,4 +244,4 @@ This example returns the Client Access Rules that would match a client connectio
 Test-ClientAccessRule -User julia@contoso.com -AuthenticationType BasicAuthentication -Protocol OutlookWebApp -RemoteAddress 172.17.17.26 -RemotePort 443
 ```
 
-For detailed syntax and parameter information, see [Test-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/client-access/test-clientaccessrule).
+For detailed syntax and parameter information, see [Test-ClientAccessRule](https://docs.microsoft.com/powershell/module/exchange/test-clientaccessrule).

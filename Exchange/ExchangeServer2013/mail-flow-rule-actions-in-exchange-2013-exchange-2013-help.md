@@ -25,7 +25,7 @@ For more information about transport rules in Exchange Server 2013, see [Transpo
 
 For more information about conditions and exceptions in transport rules, see [Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md).
 
-For more information about actions in transport rules in Exchange Online or Exchange Online Protection, see [Transport rule actions in Exchange Online](https://technet.microsoft.com/library/jj919237\(v=exchg.150\)) or [Transport rule actions in Exchange Online Protection](https://technet.microsoft.com/library/jj920117\(v=exchg.150\)).
+For more information about actions in transport rules in Exchange Online or Exchange Online Protection, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/-exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
 ## Actions for transport rules on Mailbox servers
 
@@ -209,7 +209,7 @@ The actions that are available in transport rules on Mailbox servers are describ
 <td><p><em>ApplyRightsProtectionTemplate</em></p></td>
 <td><p><code>RMSTemplate</code></p></td>
 <td><p>Applies the specified Rights Management Services (RMS) template to the message.</p>
-<p>RMS requires Exchange Enterprise client access licenses (CALs) for each mailbox. For more information about CALs, see <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>.</p></td>
+<p>RMS requires Exchange Enterprise client access licenses (CALs) for each mailbox. For more information about CALs, see <a href="https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview">Exchange licensing FAQs</a>.</p></td>
 <td><p>Exchange 2010 or later</p></td>
 </tr>
 <tr class="even">
@@ -593,7 +593,7 @@ The property values that are used for actions in transport rules are described i
 <td><p>Specifies the Rights Management Services (RMS) template that's applied to the message.</p>
 <p>In the EAC, you select the RMS template from a list.</p>
 <p>In the Exchange Management Shell, use the <strong>Get-RMSTemplate</strong> cmdlet to see the RMS templates that are available.</p>
-<p>RMS requires Exchange Enterprise client access licenses (CALs) for each mailbox. For more information about CALs, see <a href="https://go.microsoft.com/fwlink/p/?linkid=237292">Exchange Server Licensing</a>.</p></td>
+<p>RMS requires Exchange Enterprise client access licenses (CALs) for each mailbox. For more information about CALs, see <a href="https://www.microsoft.com/microsoft-365/exchange/microsoft-exchange-server-licensing-licensing-overview">Exchange licensing FAQs</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><code>SCLValue</code></p></td>
@@ -621,8 +621,4 @@ The property values that are used for actions in transport rules are described i
 
 [Transport rule conditions and exceptions (predicates) in Exchange 2013](mail-flow-rule-conditions-and-exceptions-predicates-in-exchange-2013-exchange-2013-help.md)
 
-[Transport rule actions in Exchange Online](https://technet.microsoft.com/library/jj919237\(v=exchg.150\)) for Exchange Online
-
-[Transport rule actions in Exchange Online Protection](https://technet.microsoft.com/library/jj920117\(v=exchg.150\)) for Exchange Online Protection
-
-[Organization-wide message disclaimers, signatures, footers, or headers in Office 365](https://technet.microsoft.com/library/dn600323\(v=exchg.150\))
+[Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help.md)

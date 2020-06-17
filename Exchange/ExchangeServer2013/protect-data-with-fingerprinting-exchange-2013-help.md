@@ -33,7 +33,7 @@ If your organization uses forms to collect sensitive information, users might tr
 
 5. To upload a form, click **Add** ![Add Icon](images/ITPro_EAC_AddIcon.gif).
 
-6. Choose a form, and click **Open**. (Make sure that the file you upload contains text, isn't password protected, and is in one of the file types that are supported in transport rules. For a list of supported file types, see [File Types That Are Supported In Transport Rules](https://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx). Otherwise, you'll get an error when you try creating the fingerprint.) Repeat for any additional files you want to add to the document list for this document fingerprint. You can also add or remove files from this document fingerprint later if you want.
+6. Choose a form, and click **Open**. (Make sure that the file you upload contains text, isn't password protected, and is in one of the file types that are supported in transport rules. For a list of supported file types, see [Supported file types for transport rule content inspection](https://docs.microsoft.com/Exchange/use-transport-rules-to-inspect-message-attachments-exchange-2013-help#supported-file-types-for-transport-rule-content-inspection). Otherwise, you'll get an error when you try creating the fingerprint.) Repeat for any additional files you want to add to the document list for this document fingerprint. You can also add or remove files from this document fingerprint later if you want.
 
 7. Click **Save**.
 
@@ -74,7 +74,7 @@ New-TransportRule -Name "Notify :External Recipient Contoso confidential" -Notif
 
 The DLP agent now detects documents that match the Contoso Customer Form.docx document fingerprint.
 
-For syntax and parameter information, see [New-Fingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-fingerprint), [New-DataClassification](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dataclassification), [Set-DataClassification](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dataclassification), and [Get-DataClassification](https://technet.microsoft.com/library/7f1daf42-8805-4313-831c-f473ddfd6371.aspx).
+For syntax and parameter information, see [New-Fingerprint](https://docs.microsoft.com/powershell/module/exchange/new-fingerprint), [New-DataClassification](https://docs.microsoft.com/powershell/module/exchange/new-dataclassification), [Set-DataClassification](https://docs.microsoft.com/powershell/module/exchange/set-dataclassification), and [Get-DataClassification](https://docs.microsoft.com/powershell/module/exchange/Get-DataClassification).
 
 ## For more information
 

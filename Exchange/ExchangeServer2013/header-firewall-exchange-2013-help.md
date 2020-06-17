@@ -205,9 +205,9 @@ For more information, see the following topics:
 
 - [Receive connectors](receive-connectors-exchange-2013-help.md)
 
-- [Add-ADPermission](https://technet.microsoft.com/library/bb124403\(v=exchg.150\))
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission)
 
-- [Remove-ADPermission](https://technet.microsoft.com/library/aa996048\(v=exchg.150\))
+- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Remove-ADPermission)
 
 ## Header firewall for outbound messages on Send connectors
 
@@ -292,9 +292,9 @@ For more information, see the following topics:
 
 - [Send connectors](send-connectors-exchange-2013-help.md)
 
-- [Add-ADPermission](https://technet.microsoft.com/library/bb124403\(v=exchg.150\))
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission)
 
-- [Remove-ADPermission](https://technet.microsoft.com/library/aa996048\(v=exchg.150\))
+- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Remove-ADPermission)
 
 ## Header firewall for other message sources
 

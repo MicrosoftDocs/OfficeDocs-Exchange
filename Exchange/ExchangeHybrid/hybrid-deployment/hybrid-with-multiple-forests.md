@@ -13,12 +13,12 @@ ms.collection:
 - M365-email-calendar
 ms:assetid: d5d77069-f70f-4e85-bbe0-d06bfa73b613
 ms.reviewer:
-description: "Learn about hybrid deployments with multiple on-premises forests and a single Office 365 tenant."
+description: "Learn about hybrid deployments with multiple on-premises forests and a single Office 365 organization."
 ---
 
 # Hybrid deployments with multiple forests
 
-Exchange 2010 and later hybrid deployments are supported for organizations with multiple on-premises Exchange forests and a single Office 365 tenant. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren't classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
+Exchange 2010 and later hybrid deployments are supported for organizations with multiple on-premises Exchange forests and a single Office 365 organization. For hybrid deployment features and considerations, multi-forest organizations are defined as organizations having Exchange servers deployed in multiple forests. Organizations that utilize a resource forest for user accounts, but maintain all Exchange servers in a single forest, aren't classified as multi-forest in hybrid deployment scenarios. These types of organizations should consider themselves a single forest organization when planning and configuring a hybrid deployment.
 
 The migration of public folders from an on-premises environment to Office 365 is only supported from a single Active Directory forest. Similarly, accessing public folders in a hybrid state is only supported when the on-premises public folders are housed in a single Active Directory forest.
 
@@ -54,7 +54,7 @@ Multi-forest hybrid deployment prerequisites are almost identical to the hybrid 
   
 - **Exchange servers**: At least one Exchange 2013 server with the Client Access server role, or one Exchange 2016 or later server with the Mailbox role, must be installed in each Active Directory forest configured for hybrid deployment.
 
-  In Exchange 2013, the Client Access server is the inbound secure mail transport endpoint for the Exchange Online Protection (EOP) service included with the Office 365 tenant service and enables the Hybrid Configuration wizard to run in the Active Directory forest. Additionally, at least one Exchange server with the Mailbox server role must be installed in each Active Directory forest configured for hybrid deployment. The Exchange 2013 Mailbox server is the outbound secure mail transport endpoint for messages sent to the EOP service and the Exchange Online organization.
+  In Exchange 2013, the Client Access server is the inbound secure mail transport endpoint for the Exchange Online Protection (EOP) service included with the Office 365 organization service and enables the Hybrid Configuration wizard to run in the Active Directory forest. Additionally, at least one Exchange server with the Mailbox server role must be installed in each Active Directory forest configured for hybrid deployment. The Exchange 2013 Mailbox server is the outbound secure mail transport endpoint for messages sent to the EOP service and the Exchange Online organization.
 
   In Exchange 2016 and later, the Mailbox server role handles all inbound and outbound secure transport between your on-premises organization and Exchange Online.
 
@@ -96,7 +96,7 @@ If you compare Contoso's existing organization configuration and the hybrid depl
 |Message transport|On-premises Client Access servers handle all inbound and outbound message routing.|On-premises Client Access server handles internal message routing between the on-premises and Exchange Online organization.|
 |Outlook Web App|On-premises Client Access server receives all Outlook Web App requests and displays mailbox information.|On-premises Client Access server redirects Outlook Web App requests to either the on-premises Exchange 2013 Mailbox server or provides a link to log on to the Exchange Online organization.|
 |Unified GAL for both organizations|Not applicable; single organization only.|On-premises Active Directory synchronization server replicates Active Directory information for mail-enabled objects to the Exchange Online organization.|
-|Single-sign on used for both organizations|Not applicable; single organization only.|On-premises Active Directory Federation Services (AD FS) server supports using single-sign on credentials for mailboxes located either on-premises or in the Office 365 organization.|
+|Single-sign on used for both organizations|Not applicable; single organization only.|On-premises Active Directory Federation Services (AD FS) server supports using single-sign on credentials for mailboxes located either on-premises or in the Microsoft 365 or Office 365 organization.|
 |Organization relationship established and a federation trust with Azure AD authentication system|Trust relationship with the Azure AD authentication system and organization relationships with other federated Exchange organizations may be configured.|Trust relationship with the Azure AD authentication system is required. Organization relationships are established between the on-premises and Exchange Online organization.|
 |Free/busy sharing|Free/busy sharing between on-premises users only.|Free/busy sharing between both on-premises and Exchange Online users.|
 

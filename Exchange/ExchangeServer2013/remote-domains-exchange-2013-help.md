@@ -81,4 +81,4 @@ Exchange 2013 provides you with granular control over the contents of an NDR des
 
 This feature is controlled with the *NDRDiagnosticInfoEnabled* parameter on the **Set-RemoteDomain** cmdlet. Because this setting is configurable for each remote domain, you can have different settings based on your needs. For example, you can choose to remove the NDR diagnostic information for the default remote domain, but allow full NDR diagnostic information for the remote domains that represent your partners.
 
-For more information about this new setting, see [Set-RemoteDomain](https://technet.microsoft.com/library/aa997857\(v=exchg.150\)).
+For more information about this new setting, see [Set-RemoteDomain](https://docs.microsoft.com/powershell/module/exchange/Set-RemoteDomain).

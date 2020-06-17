@@ -54,11 +54,3 @@ To resolve this issue, remove all ADC components, and rerun Exchange 2007 or Ex
 </tr>
 </tbody>
 </table>
-
-For more information about ADC, see the following Microsoft Knowledge Base articles:
-
-  - 325300, "Support WebCast: Introduction to the Active Directory Connector" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325300](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325300)).
-
-  - 325221, "Support WebCast: Microsoft Advanced Active Directory Connector" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=325221](https://go.microsoft.com/fwlink/?linkid=3052&kbid=325221)).
-
-  - 312632, "How To Install and Configure the Active Directory Connector in Exchange 2000 Server" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=312632](https://go.microsoft.com/fwlink/?linkid=3052&kbid=312632)).

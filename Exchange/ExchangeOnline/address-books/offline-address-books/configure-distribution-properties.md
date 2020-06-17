@@ -29,7 +29,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Offline address books" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure. In Exchange Online, this feature is available only in the Address Lists role, and by default, the role isn't assigned to any role groups. To use this cmdlet, you need to add the Address Lists role to a role group (for example, to the Organization Management role group). For more information, see [Modify a role group in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/role-groups#modify-role-groups).
 
 - You can't use the Exchange admin center (EAC) to perform this procedure. You must use Exchange Online PowerShell.
 
@@ -52,7 +52,7 @@ This example sets the external distribution point to https://contoso.com/OAB for
 Set-OABVirtualDirectory "OAB (Default Web Site)" -ExternalUrl https://contoso.com/OAB
 ```
 
-For detailed syntax and parameter information, see [set-OabVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-oabvirtualdirectory).
+For detailed syntax and parameter information, see [set-OabVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-oabvirtualdirectory).
 
 ## For More Information
 

@@ -92,7 +92,7 @@ When planning for Outlook Voice Access PINs, you must choose the appropriate lev
 After you set the Outlook Voice Access PIN requirements, you must create and configure a UM mailbox policy to enforce your organizational PIN requirements. For details about how to create a UM mailbox policy, see [Create a UM mailbox policy](create-um-mailbox-policy-exchange-2013-help.md). For details about how to manage UM mailbox policies, see [Manage a UM mailbox policy](manage-um-mailbox-policy-exchange-2013-help.md).
 
 > [!NOTE]
-> After you create the UM mailbox policy, you must link the UM-enabled user or users with the appropriate UM mailbox policy. You can do this by using the **Enable-UMMailbox** cmdlet in the Exchange Management Shell or by using the Exchange admin center (EAC). For more information about the Exchange Management Shell cmdlet, see [Enable-UMMailbox](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/enable-ummailbox).
+> After you create the UM mailbox policy, you must link the UM-enabled user or users with the appropriate UM mailbox policy. You can do this by using the **Enable-UMMailbox** cmdlet in the Exchange Management Shell or by using the Exchange admin center (EAC). For more information about the Exchange Management Shell cmdlet, see [Enable-UMMailbox](https://docs.microsoft.com/powershell/module/exchange/enable-ummailbox).
 
 There are situations in which Outlook Voice Access users forget their PIN or are locked out of voice mail access to their mailbox. In either case, it may be necessary for you to reset a UM-enabled user's PIN. For details, see [Reset a voice mail PIN](reset-a-voice-mail-pin-exchange-2013-help.md).
 

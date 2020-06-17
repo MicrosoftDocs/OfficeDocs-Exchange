@@ -157,7 +157,7 @@ This example sets the default theme for Outlook Web App, where the server name i
 set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom
 ```
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/bb123515\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-OwaVirtualDirectory).
 
 ### Use the Shell to disable theme selection for Outlook Web App
 
@@ -173,7 +173,7 @@ You can also complete both commands at the same time as shown in the following e
 set-owavirtualdirectory -identity "fourthcoffee\owa (default web site)" -defaulttheme Custom -themeselectionenabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/bb123515\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-OwaVirtualDirectory).
 
 ## Step 6: Run iisreset/noforce to save your changes
 

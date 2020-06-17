@@ -65,7 +65,7 @@ This example adds the *EmailAddress* and *City* parameters to the **CreateUsers.
 Set-ManagementRoleEntry "Recipient Administrators\CreateUsers.ps1" -Parameters EmailAddress, City -AddParameter -UnscopedTopLevel
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/library/dd351162\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementRoleEntry).
 
 ## Use the Shell to remove one or more parameters from a role entry
 
@@ -92,7 +92,7 @@ This example removes the *Delay*, *Force*, and *Credential* parameters from the 
 Set-ManagementRoleEntry "Tier 1 Server Administrators\Start-Widget" -Parameters Delay, Force, Credential -RemoveParameter -UnscopedTopLevel
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/library/dd351162\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementRoleEntry).
 
 ## Use the Shell to remove all parameters from a role entry
 
@@ -121,7 +121,7 @@ This example removes all the parameters from the FindMailboxesOverQuota.ps1 scri
 Set-ManagementRoleEntry "Recipient Administrators\FindMailboxesOverQuota.ps1" -Parameters $Null -UnscopedTopLevel
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/library/dd351162\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementRoleEntry).
 
 ## Use the Shell to apply a specific set of parameters
 
@@ -146,7 +146,7 @@ This example includes only the *Alias*, *DisplayName*, *WidgetConfig*, and *Enab
 Set-ManagementRoleEntry "Seattle Mail Recipient Admins\Set-UMMailbox" -Parameters Alias, DisplayName, WidgetConfig, Enabled -UnscopedTopLevel
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://technet.microsoft.com/library/dd351162\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementRoleEntry](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementRoleEntry).
 
 ## Other tasks
 

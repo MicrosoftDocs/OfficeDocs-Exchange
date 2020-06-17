@@ -23,9 +23,9 @@ For additional management tasks related to DLP, see [Manage DLP policies](manage
 
 - Estimated time to complete: 15 minutes
 
-- The EAC doesn't provide a way to export DLP policies or templates to an external file. To use the Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- The EAC doesn't provide a way to export DLP policies or templates to an external file. To use the Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -47,8 +47,6 @@ This example exports all DLP sensitive information types along with their attrib
 You can now edit the XML file to adjust the policies as needed. To learn how to customize the built-in sensitive information types, see [Customize the built-in DLP sensitive information types](customize-the-built-in-dlp-sensitive-information-types-exchange-2013-help.md). For details on importing policies back into Exchange, see [Import a custom DLP policy template from a file](import-a-custom-dlp-policy-template-from-a-file-exchange-2013-help.md).
 
 ## For more information
-
-[Sensitive information types inventory](https://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx)
 
 [Customize the built-in DLP sensitive information types](customize-the-built-in-dlp-sensitive-information-types-exchange-2013-help.md)
 

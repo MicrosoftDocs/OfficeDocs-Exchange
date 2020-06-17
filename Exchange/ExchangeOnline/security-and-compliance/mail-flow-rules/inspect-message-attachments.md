@@ -43,7 +43,7 @@ Exchange Online admins can create mail flow rules in the Exchange admin center (
 
 ![List of conditions for attachments](../../media/c8ab24df-dbb6-4760-bfb0-b62938bfb447.png)
 
- For more information about mail flow rules, including the full range of conditions and actions that you can choose, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md). Exchange Online Protection (EOP) and hybrid customers can benefit from the mail flow rules best practices provided in [Best Practices for Configuring EOP](https://technet.microsoft.com/library/faf1efd1-3b0c-411a-804d-17f37292eac0.aspx). If you're ready to start creating rules, see [Manage mail flow rules in Exchange Online](manage-mail-flow-rules.md).
+ For more information about mail flow rules, including the full range of conditions and actions that you can choose, see [Mail flow rules (transport rules) in Exchange Online](mail-flow-rules.md). Exchange Online Protection (EOP) and hybrid customers can benefit from the mail flow rules best practices provided in [Best Practices for Configuring EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop). If you're ready to start creating rules, see [Manage mail flow rules in Exchange Online](manage-mail-flow-rules.md).
 
 ## Inspect the content within attachments
 
@@ -59,7 +59,7 @@ In order to start using these conditions when inspecting messages, you need to a
 
 > [!NOTE]
 >
-> - The condition names in Exchange Online PowerShell are parameter names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+> - The condition names in Exchange Online PowerShell are parameter names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
 > 
 > - Learn more about property types for these conditions at [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
 > 
@@ -99,7 +99,7 @@ The following conditions can be used in mail flow rules to inspect different pro
 
 > [!NOTE]
 > 
-> - The condition names in Exchange Online PowerShell are parameter names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+> - The condition names in Exchange Online PowerShell are parameter names on the **New-TransportRule** and **Set-TransportRule** cmdlets. For more information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
 > 
 > - Learn more about property types for these conditions at [Mail flow rule conditions and exceptions (predicates) in Exchange Online](conditions-and-exceptions.md).
 > 
@@ -125,7 +125,7 @@ The mail flow rules use true type detection to inspect file properties rather th
 |Windows executable program file.|.exe|
 
 > [!IMPORTANT]
-> **.rar** (self-extracting archive files created with the WinRAR archiver), **.jar** (Java archive files), and **.obj** (compiled source code, 3D object, or sequence files) files are **not** considered to be executable file types. To block these files, you can use mail flow rules that look for files with these extensions as described earlier in this topic, or you can configure an antimalware policy that blocks these file types (the common attachment types filter). For more information, see [Configure Anti-Malware Policies](https://technet.microsoft.com/library/b0cfc21f-e3c6-41b6-8670-feb2b2e252e5.aspx).
+> **.rar** (self-extracting archive files created with the WinRAR archiver), **.jar** (Java archive files), and **.obj** (compiled source code, 3D object, or sequence files) files are **not** considered to be executable file types. To block these files, you can use mail flow rules that look for files with these extensions as described earlier in this topic, or you can configure an antimalware policy that blocks these file types (the common attachment types filter). For more information, see [Configure anti-malware policies in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies).
 
 ## Data loss prevention policies and attachment mail flow rules
 
@@ -135,4 +135,4 @@ DLP policies and attachment-related conditions can help you enforce your busines
 
 ## For more information
 
-For information on broadly blocking email with attachments, regardless of malware status, see [Reducing Malware Threats Through File Attachment Blocking in Exchange Online Protection](https://technet.microsoft.com/library/c4fb4a86-b772-49d0-8773-e8ee897e175d.aspx).
+For information on broadly blocking email with attachments, regardless of malware status, see [Use mail flow rules to block messages with executable attachments in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro).

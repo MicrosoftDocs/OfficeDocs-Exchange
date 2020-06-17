@@ -33,7 +33,7 @@ After you've completed the installation of Microsoft Exchange Server 2013, read 
 <tbody>
 <tr class="odd">
 <td><p><a href="enter-your-exchange-2013-product-key-exchange-2013-help.md">Enter your Exchange 2013 product key</a></p></td>
-<td><p>Read this topic to license an Microsoft Exchange server.</p></td>
+<td><p>Read this topic to license a Microsoft Exchange server.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="configure-mail-flow-and-client-access-exchange-2013-help.md">Configure mail flow and client access</a></p></td>

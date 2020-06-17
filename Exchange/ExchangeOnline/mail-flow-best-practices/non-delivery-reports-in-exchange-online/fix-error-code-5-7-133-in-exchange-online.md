@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 991abc19-7756-438f-abcb-39f69b80f284
 description: "Learn how to fix email issues for error code 5.7.133 in Exchange Online (the group recipient is configured to reject messages from external or unauthenticated senders)."
 ---
@@ -78,7 +79,7 @@ To configure the group's allowed senders list, open the EAC do the following ste
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 
@@ -86,4 +87,4 @@ To configure the group's allowed senders list, open the EAC do the following ste
 
 [Email non-delivery reports in Exchange Online](non-delivery-reports-in-exchange-online.md)
 
-[Create and manage distribution groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=613635).
+[Create and manage distribution groups in Exchange Online](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md).

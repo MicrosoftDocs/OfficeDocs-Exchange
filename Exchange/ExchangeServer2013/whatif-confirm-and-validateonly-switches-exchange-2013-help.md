@@ -25,7 +25,7 @@ The *WhatIf*, *Confirm*, and *ValidateOnly* switches are especially useful when 
 > If you want to use the <EM>WhatIf</EM>, <EM>Confirm</EM>, and <EM>ValidateOnly</EM> switches with commands in a script, you must add the appropriate switch to each command in the script, and not on the command line that calls the script.
 
 > [!NOTE]
-> <EM>WhatIf</EM>, <EM>Confirm</EM>, and <EM>ValidateOnly</EM> are called switch parameters. For more information about switch parameters, see <A href="https://technet.microsoft.com/library/bb124388(v=exchg.150)">Parameters</A>.
+> <EM>WhatIf</EM>, <EM>Confirm</EM>, and <EM>ValidateOnly</EM> are called switch parameters. For more information about switch parameters, see <A href="https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_parameters">Parameters</A>.
 
 ## WhatIf switch
 

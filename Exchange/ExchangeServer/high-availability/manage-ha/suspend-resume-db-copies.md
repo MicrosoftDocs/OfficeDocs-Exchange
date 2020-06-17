@@ -26,7 +26,7 @@ Looking for other management tasks related to mailbox database copies? Check out
 
 - Estimated time to complete this task: 1 minute
 
-- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To open the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox database copies" entry in the [High availability and site resilience permissions](../../permissions/feature-permissions/ha-permissions.md) topic.
 
@@ -65,7 +65,7 @@ This example suspends activation for a copy of the database DB2 hosted on the se
 Suspend-MailboxDatabaseCopy -Identity DB2\MBX2 -ActivationOnly -Confirm:$False
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/suspend-mailboxdatabasecopy).
+For detailed syntax and parameter information, see [Suspend-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/suspend-mailboxdatabasecopy).
 
 ## Resume a mailbox database copy
 
@@ -94,7 +94,7 @@ This example resumes a copy of the database DB2 on the server MBX2 for replicati
 Resume-MailboxDatabaseCopy -Identity DB2\MBX2 -ReplicationOnly
 ```
 
-For detailed syntax and parameter information, see [Resume-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/resume-mailboxdatabasecopy).
+For detailed syntax and parameter information, see [Resume-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/resume-mailboxdatabasecopy).
 
 ## How do you know this worked?
 

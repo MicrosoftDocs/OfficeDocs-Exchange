@@ -62,7 +62,7 @@ This example audits the cmdlets specified in the preceding list.
 Set-AdminAuditLogConfig -AdminAuditLogCmdlets New-Mailbox, *TransportRule, *Management*, Set-Transport*
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/dd298169\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/Set-AdminAuditLogConfig).
 
 ## Specify the parameters to be audited
 
@@ -91,7 +91,7 @@ This example audits the parameters specified in the preceding list.
 Set-AdminAuditLogConfig -AdminAuditLogParameters Database, *Address*, Custom*, *Region
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/dd298169\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/Set-AdminAuditLogConfig).
 
 ## Specify the audit log age limit
 
@@ -116,7 +116,7 @@ This example specifies an age limit of two years and six months.
 Set-AdminAuditLogConfig -AdminAuditLogAgeLimit 913.00:00:00
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/dd298169\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/Set-AdminAuditLogConfig).
 
 ## Enable or disable logging of Test cmdlets
 
@@ -134,7 +134,7 @@ This command disables the logging of **Test** cmdlets.
 Set-AdminAuditLogConfig -TestCmdletLoggingEnabled $False
 ```
 
-For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://technet.microsoft.com/library/dd298169\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-AdminAuditLogConfig](https://docs.microsoft.com/powershell/module/exchange/Set-AdminAuditLogConfig).
 
 ## Disable administrator audit logging
 

@@ -27,7 +27,7 @@ To find out what permissions you need to perform the procedure or run the cmdlet
 
 1. In the table below, find the feature that is most related to the procedure you want to perform or the cmdlet you want to run.
 
-2. Next, look at the permissions required for the feature. You must be assigned one of those role groups, an equivalent custom role group, or an equivalent management role. You can also click on a role group to see its management roles. If a feature lists more than one role group, you only need to be assigned one of the role groups to use the feature. For more information about role groups and management roles, see [Understanding Role Based Access Control](https://technet.microsoft.com/library/dd298183.aspx).
+2. Next, look at the permissions required for the feature. You must be assigned one of those role groups, an equivalent custom role group, or an equivalent management role. You can also click on a role group to see its management roles. If a feature lists more than one role group, you only need to be assigned one of the role groups to use the feature. For more information about role groups and management roles, see [Understanding Role Based Access Control](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help).
 
 3. Now, run the **Get-ManagementRoleAssignment** cmdlet to look at the role groups or management roles assigned to you to see if you have the permissions that are necessary to manage the feature.
 
@@ -40,18 +40,18 @@ If you want to delegate the ability to manage a feature to another user, see [De
 
 You can configure settings for the UM components and features in the following table.
 
-Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information, see [View-only Organization Management](https://technet.microsoft.com/library/dd351130.aspx).
+Users who are assigned the View-Only Management role group can view the configuration of the features in the following table. For more information, see [View-only Organization Management](https://docs.microsoft.com/exchange/view-only-organization-management-exchange-2013-help).
 
 |**Feature**|**Permissions required**|
 |:-----|:-----|
-|UM auto attendants|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://technet.microsoft.com/library/c91f0387-615c-4a1d-87d4-133ddac1e407.aspx)|
-|UM call answering rules|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://technet.microsoft.com/library/c91f0387-615c-4a1d-87d4-133ddac1e407.aspx)|
-|UM call data and summary reports|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://technet.microsoft.com/library/c91f0387-615c-4a1d-87d4-133ddac1e407.aspx)|
-|UM Call Router service (front-end)|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://technet.microsoft.com/library/c91f0387-615c-4a1d-87d4-133ddac1e407.aspx)|
-|UM dial plans|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://technet.microsoft.com/library/c91f0387-615c-4a1d-87d4-133ddac1e407.aspx)|
-|UM hunt groups|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://technet.microsoft.com/library/c91f0387-615c-4a1d-87d4-133ddac1e407.aspx)|
-|UM IP gateways|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://technet.microsoft.com/library/c91f0387-615c-4a1d-87d4-133ddac1e407.aspx)|
-|UM mailbox policies|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://technet.microsoft.com/library/c91f0387-615c-4a1d-87d4-133ddac1e407.aspx)|
-|UM mailboxes|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://technet.microsoft.com/library/c91f0387-615c-4a1d-87d4-133ddac1e407.aspx)|
-|UM prompts|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://technet.microsoft.com/library/c91f0387-615c-4a1d-87d4-133ddac1e407.aspx)|
-|UM service (back-end)|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Server Management](https://technet.microsoft.com/library/30cbc4de-adb3-42e8-922f-7661095bdb8c.aspx)|
+|UM auto attendants|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://docs.microsoft.com/exchange/um-management-exchange-2013-help)|
+|UM call answering rules|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://docs.microsoft.com/exchange/um-management-exchange-2013-help)|
+|UM call data and summary reports|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://docs.microsoft.com/exchange/um-management-exchange-2013-help)|
+|UM Call Router service (front-end)|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://docs.microsoft.com/exchange/um-management-exchange-2013-help)|
+|UM dial plans|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://docs.microsoft.com/exchange/um-management-exchange-2013-help)|
+|UM hunt groups|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://docs.microsoft.com/exchange/um-management-exchange-2013-help)|
+|UM IP gateways|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://docs.microsoft.com/exchange/um-management-exchange-2013-help)|
+|UM mailbox policies|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://docs.microsoft.com/exchange/um-management-exchange-2013-help)|
+|UM mailboxes|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://docs.microsoft.com/exchange/um-management-exchange-2013-help)|
+|UM prompts|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Unified Messaging Management](https://docs.microsoft.com/exchange/um-management-exchange-2013-help)|
+|UM service (back-end)|[Organization Management](https://docs.microsoft.com/exchange/organization-management-exchange-2013-help) <br/> [Server Management](https://docs.microsoft.com/exchange/server-management-exchange-2013-help)|

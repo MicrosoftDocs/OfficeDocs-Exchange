@@ -54,7 +54,7 @@ This example restores the public folder \\Dev\\CustomerEnagagements to the targe
 New-MailboxRestoreRequest -SourceStoreMailbox Development -SourceDatabase MBX_DB01 -TargetMailbox Development01 -AllowLegacyDNMismatch -IncludeFolders \Dev\CustomerEngagements
 ```
 
-For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829875\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/New-MailboxRestoreRequest).
 
 ## Restore a soft-deleted public folder mailbox
 
@@ -64,4 +64,4 @@ This example restores the public folder mailbox PF\_Singapore to the new public 
 New-MailboxRestoreRequest -SourceStoreMailbox PF_Singapore -SourceDatabase MBX_DB01 -TargetMailbox PF_Singapore_Restore -AllowLegacyDNMismatch
 ```
 
-For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829875\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/New-MailboxRestoreRequest).

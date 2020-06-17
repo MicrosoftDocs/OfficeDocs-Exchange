@@ -174,7 +174,7 @@ To learn more about these features see:
 
 [Data loss prevention](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
 
-[Rights Management connector](https://go.microsoft.com/fwlink/p/?linkid=330432)
+[Rights Management connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)
 
 ## In-place Archiving, retention, and eDiscovery
 
@@ -251,7 +251,7 @@ How messages flow through an organization and what happens to them has changed s
 
 - **Routing**: Mail routing in Exchange 2013 recognizes DAG boundaries as well as Active Directory site boundaries. Also, mail routing has been improved to queue messages more directly for internal recipients. For more information, see [Mail routing](mail-routing-exchange-2013-help.md).
 
-- **Connectors**: The default maximum message size for a Send connector or a Receive connector, as specified by the *MaxMessageSize* parameter, has been increased from 10MB to 25MB. For more information about how to set parameters on a connector, see [Set-SendConnector](https://technet.microsoft.com/library/aa998294\(v=exchg.150\)) and [Set-ReceiveConnector](https://technet.microsoft.com/library/bb125140\(v=exchg.150\)).
+- **Connectors**: The default maximum message size for a Send connector or a Receive connector, as specified by the *MaxMessageSize* parameter, has been increased from 10MB to 25MB. For more information about how to set parameters on a connector, see [Set-SendConnector](https://docs.microsoft.com/powershell/module/exchange/Set-SendConnector) and [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/Set-ReceiveConnector).
 
     You can set a Send connector in the Transport service of a Mailbox server to route outbound mail through a Front End transport server in the local Active Directory site, by means of the *FrontEndProxyEnabled* parameter of the **Set-SendConnector** cmdlet, thus consolidating how email is routed from the Transport service.
 

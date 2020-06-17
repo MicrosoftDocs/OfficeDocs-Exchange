@@ -62,7 +62,7 @@ This example configures a Web proxy URL on Mailbox server MAIL01.
 Set-ExchangeServer -Identity "MAIL01" -InternetWebProxy "<Webproxy URL>"
 ```
 
-For detailed syntax and parameter information, see [Set-ExchangeServer](https://technet.microsoft.com/library/bb123716\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/Set-ExchangeServer).
 
 ### How do you know this step worked?
 
@@ -85,7 +85,7 @@ Set-OwaVirtualDirectory -Identity "CAS01\owa (Default Web Site)" -ExternalUrl "<
 
 Where the identity `CAS01\owa (Default Web Site)` is both the server name and the Outlook Web App virtual directory.
 
-For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://technet.microsoft.com/library/bb123515\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-OwaVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/Set-OwaVirtualDirectory).
 
 ### How do you know this step worked?
 
@@ -150,7 +150,7 @@ This example adds the sharing policy Internet to an organizational unit (OU).
 Set-Mailbox -OrganizationalUnit <OU name> -SharingPolicy "Internet"
 ```
 
-For detailed syntax and parameter information, see [New-SharingPolicy](https://technet.microsoft.com/library/dd298186\(v=exchg.150\)) and [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-SharingPolicy](https://docs.microsoft.com/powershell/module/exchange/New-SharingPolicy) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox).
 
 ### How do you know this step worked?
 
@@ -194,7 +194,7 @@ This example updates the Default Sharing Policy and configures the policy to sha
 Set-SharingPolicy -Name "Default Sharing Policy" -Domains 'Anonymous: CalendarSharingFreeBusySimple' -Enabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox).
 
 ### How do you know this step worked?
 

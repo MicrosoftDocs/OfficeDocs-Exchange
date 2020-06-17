@@ -20,7 +20,7 @@ _**Applies to:** Exchange Server 2013_
 You may need to coordinate schedules with people in different organizations or with friends and family members so that you can work together on projects or plan social events. With Exchange 2013, administrators can set up different levels of calendar access to allow businesses to collaborate with other businesses and to let users share their schedules with others. Business-to-business calendar sharing is set up by creating *organization relationships*. User-to-user calendar sharing is set up by applying *sharing policies*.
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china">Learn about Office 365 operated by 21Vianet</A>.
 
 ## Sharing Scenarios in Exchange 2013
 
@@ -41,9 +41,9 @@ The following sharing scenarios are supported in Exchange 2013:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Share calendars with an Office 365 organization</p></td>
+<td><p>Share calendars with a Microsoft 365 or Office 365 organization</p></td>
 <td><p>Organization relationships</p></td>
-<td><p>The Office 365 organization is ready to configure. The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements. To learn more about setting up federation, see <a href="federation-exchange-2013-help.md">Federation</a>.</p></td>
+<td><p>The Microsoft 365 or Office 365 organization is ready to configure. The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements. To learn more about setting up federation, see <a href="federation-exchange-2013-help.md">Federation</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Share calendars with another on-premises Exchange organization</p></td>
@@ -165,7 +165,7 @@ The following limitations apply when sharing free/busy information between Excha
 
     4. Stop and restart the Microsoft Internet Information Services (IIS) on all the Exchange 2007 CAS servers.
 
-4. **Exchange organizations that have both on-premises and cloud users**: If you set up calendar sharing with another Exchange organization that is configured in a hybrid deployment with Microsoft Office 365, free/busy availability lookups for Office 365-based or remote users that have been moved to the cloud will fail. Because the organization relationship for your Exchange organization is with the remote on-premises Exchange organization, not the Office 365-based Exchange Online organization, the free/busy request can't query the Office 365-based users. Exchange 2013 doesn't support functionality to proxy these availability requests through the on-premises organization to the Office 365 service.
+4. **Exchange organizations that have both on-premises and cloud users**: If you set up calendar sharing with another Exchange organization that is configured in a hybrid deployment with Microsoft 365 or Office 365, free/busy availability lookups for Microsoft 365-based or Office 365-based or remote users that have been moved to the cloud will fail. Because the organization relationship for your Exchange organization is with the remote on-premises Exchange organization, not the Microsoft 365-based or Office 365-based Exchange Online organization, the free/busy request can't query the Microsoft 365-based or Office 365-based users. Exchange 2013 doesn't support functionality to proxy these availability requests through the on-premises organization to the Microsoft 365 or Office 365 service.
 
 For details about how to configure free/busy sharing between common Exchange deployments, see [Configuring federated sharing between Exchange organizations](configuring-federated-sharing-between-exchange-organizations-exchange-2013-help.md).
 

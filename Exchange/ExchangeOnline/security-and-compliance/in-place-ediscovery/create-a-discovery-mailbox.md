@@ -31,7 +31,7 @@ For more information, see [Discovery mailboxes](in-place-ediscovery.md#discmbxs)
 
 - Estimated time to complete: 3 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Creating discovery mailboxes" entry in [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Discovery mailboxes - create" entry in [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - Discovery mailboxes have a mailbox storage quota of 50 gigabytes (GB). This storage quota can't be increased.
 
@@ -57,7 +57,7 @@ New-Mailbox -Name SearchResults -Discovery
 > [!IMPORTANT]
 > The 'Name' parameter must not contain any spaces.
 
-For detailed syntax and parameter information, see [new-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
+For detailed syntax and parameter information, see [new-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
 
 To display a list of all discovery mailboxes in an Exchange organization, run the following command:
 
@@ -65,7 +65,7 @@ To display a list of all discovery mailboxes in an Exchange organization, run th
 Get-Mailbox -Resultsize unlimited -Filter "RecipientTypeDetails -eq 'DiscoveryMailbox'"
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox).
 
 ## Step 3: Assign permissions to a discovery mailbox
 
@@ -81,7 +81,7 @@ For example, the following command assigns the Full Access permission to the Lit
 Add-MailboxPermission "Fabrikam Litigation" -User "Litigation Managers" -AccessRights FullAccess -InheritanceType all
 ```
 
-For detailed syntax and parameter information, see [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-mailboxpermission).
+For detailed syntax and parameter information, see [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/add-mailboxpermission).
 
 ## More information
 

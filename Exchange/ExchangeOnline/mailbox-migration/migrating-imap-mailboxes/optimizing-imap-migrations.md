@@ -44,7 +44,7 @@ Here are some tips for optimizing an IMAP migration:
 
     For more information, see:
 
-  - Exchange 2013: [Set connection limits for IMAP4](https://go.microsoft.com/fwlink/p/?LinkId=623631)
+  - Exchange 2013: [Set connection limits for IMAP4](https://docs.microsoft.com/exchange/set-connection-limits-for-imap4-exchange-2013-help)
 
   - Exchange 2010: [View or Configure IMAP4 Properties](https://go.microsoft.com/fwlink/p/?LinkId=183037)
 
@@ -52,7 +52,7 @@ Here are some tips for optimizing an IMAP migration:
 
   - Exchange 2003: [How to Set Connection Limits](https://go.microsoft.com/fwlink/p/?LinkId=183039)
 
-- **Change the DNS Time-to-Live (TTL) setting on your MX record**: Before you start migrating mailboxes, change the Domain Name System (DNS) TTL setting on your current MX record to a shorter interval, such as 3,600 seconds (one hour). Then, when you change the MX record to point to your Office 365 email organization after all mailboxes are migrated, the updated MX record should propagate more quickly because of the shortened TTL interval.
+- **Change the DNS Time-to-Live (TTL) setting on your MX record**: Before you start migrating mailboxes, change the Domain Name System (DNS) TTL setting on your current MX record to a shorter interval, such as 3,600 seconds (one hour). Then, when you change the MX record to point to your Microsoft 365 or Office 365 email organization after all mailboxes are migrated, the updated MX record should propagate more quickly because of the shortened TTL interval.
 
 - **Run one or more test migration batches**: Run a few small IMAP migration batches before you migrate larger numbers of users. In a test migration, you can do the following:
 
@@ -77,7 +77,7 @@ Here are some tips for optimizing an IMAP migration:
 
 - **Don't delete mailboxes or change their SMTP addresses during migration**: The migration system will report an error when it can't find a mailbox that's been migrated. Be sure to complete the migration and delete the migration batch before you delete or change the SMTP address of an Office 365 or on-premises mailbox that's been migrated.
 
-- **Communicate with your users**: Let users know ahead of time that you'll be migrating the content of their on-premises mailboxes to your Office 365 organization. Consider the following:
+- **Communicate with your users**: Let users know ahead of time that you'll be migrating the content of their on-premises mailboxes to your Microsoft 365 or Office 365 organization. Consider the following:
 
   - Tell users that email messages larger than 35 MB won't be migrated. Ask users to save very large messages and attachments to their local computer or to a removable USB drive.
 

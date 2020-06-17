@@ -27,7 +27,7 @@ You may want to import or export mailbox data for the following reasons:
 
 - **Create a point-in-time snapshot of a mailbox**: By creating a snapshot of specific mailboxes, you avoid having to retain an entire backup set for a mailbox database.
 
-- **Move a user's .pst file into his or her mailbox or personal archive**: Microsoft Outlook users can save their email locally as .pst files. Using the [New-MailboxImportRequest](https://technet.microsoft.com/library/ff607310\(v=exchg.150\)) cmdlet, you can move data from a user's .pst file to his or her mailbox or personal archive. This is an easy method for transferring email from a user's local computer to Exchange servers.
+- **Move a user's .pst file into his or her mailbox or personal archive**: Microsoft Outlook users can save their email locally as .pst files. Using the [New-MailboxImportRequest](https://docs.microsoft.com/powershell/module/exchange/New-MailboxImportRequest) cmdlet, you can move data from a user's .pst file to his or her mailbox or personal archive. This is an easy method for transferring email from a user's local computer to Exchange servers.
 
 ## Advantages to using import and export requests
 
@@ -93,31 +93,31 @@ Use the following cmdlets for mailbox import requests.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/ff607310(v=exchg.150)">New-MailboxImportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/New-MailboxImportRequest">New-MailboxImportRequest</a></p></td>
 <td><p>Starts the process of importing a .pst file to a mailbox or personal archive. You can create more than one import request per mailbox. Each request must have a unique name.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/ff607317(v=exchg.150)">Set-MailboxImportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Set-MailboxImportRequest">Set-MailboxImportRequest</a></p></td>
 <td><p>Changes import request options after the request is created or recover from a failed request.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/ff607309(v=exchg.150)">Suspend-MailboxImportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Suspend-MailboxImportRequest">Suspend-MailboxImportRequest</a></p></td>
 <td><p>Suspends an import request any time after the request is created but before the request reaches the status of Completed.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/ff607306(v=exchg.150)">Resume-MailboxImportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Resume-MailboxImportRequest">Resume-MailboxImportRequest</a></p></td>
 <td><p>Resumes an import request that's suspended or failed.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/ff607311(v=exchg.150)">Remove-MailboxImportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Remove-MailboxImportRequest)">Remove-MailboxImportRequest</a></p></td>
 <td><p>Removes fully or partially completed import requests. Completed import requests aren't automatically cleared. You must use this cmdlet to remove them.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/ff607368(v=exchg.150)">Get-MailboxImportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Get-MailboxImportRequest">Get-MailboxImportRequest</a></p></td>
 <td><p>View general information about an import request.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/ff607315(v=exchg.150)">Get-MailboxImportRequestStatistics</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Get-MailboxImportRequestStatistics">Get-MailboxImportRequestStatistics</a></p></td>
 <td><p>View detailed information about an import request.</p></td>
 </tr>
 </tbody>
@@ -152,31 +152,31 @@ Use the following cmdlets for mailbox export requests.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/ff607299(v=exchg.150)">New-MailboxExportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/New-MailboxExportRequest">New-MailboxExportRequest</a></p></td>
 <td><p>Starts the process of exporting data from a primary mailbox or personal archive to a .pst file. You can create more than one export request per mailbox. Each request must have a unique name.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/ff607312(v=exchg.150)">Set-MailboxExportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Set-MailboxExportRequest">Set-MailboxExportRequest</a></p></td>
 <td><p>Changes export request options after the request is created or recover from a failed request.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/ff607305(v=exchg.150)">Suspend-MailboxExportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Suspend-MailboxExportRequest">Suspend-MailboxExportRequest</a></p></td>
 <td><p>Suspends an export request any time after the request is created but before the request reaches the status of Completed.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/ff607476(v=exchg.150)">Resume-MailboxExportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Resume-MailboxExportRequest">Resume-MailboxExportRequest</a></p></td>
 <td><p>Resumes an export request that's suspended or failed.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/ff607464(v=exchg.150)">Remove-MailboxExportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Remove-MailboxExportRequest">Remove-MailboxExportRequest</a></p></td>
 <td><p>Removes fully or partially completed export requests. Completed export requests aren't automatically cleared. You must use this cmdlet to remove them.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://technet.microsoft.com/library/ff607479(v=exchg.150)">Get-MailboxExportRequest</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Get-MailboxExportRequest">Get-MailboxExportRequest</a></p></td>
 <td><p>View general information about an export request.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://technet.microsoft.com/library/ff607316(v=exchg.150)">Get-MailboxExportRequestStatistics</a></p></td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/Get-MailboxExportRequestStatistics">Get-MailboxExportRequestStatistics</a></p></td>
 <td><p>View detailed information about an export request.</p></td>
 </tr>
 </tbody>

@@ -26,7 +26,7 @@ Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exch
 
 ## Run Get-ExchangeServer
 
-To verify that Exchange installed successfully, run the following commands in the Exchange Management Shell. To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+To verify that Exchange installed successfully, run the following commands in the Exchange Management Shell. To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 This command returns a summary list of the names, Active Directory sites, Exchange server roles, Exchange editions, and Exchange versions of all Exchange servers in the organization.
 
@@ -40,7 +40,7 @@ This example returns additional details about the Exchange server named Mailbox0
 Get-ExchangeServer -Identity Mailbox01 | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/organization/get-exchangeserver).
+For detailed syntax and parameter information, see [Get-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/get-exchangeserver).
 
 ## Review the Windows Application log and the Exchange Setup log
 

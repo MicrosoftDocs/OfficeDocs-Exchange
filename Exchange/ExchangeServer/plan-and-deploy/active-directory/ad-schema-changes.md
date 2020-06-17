@@ -30,6 +30,10 @@ Exchange schema updates are cumulative. Each Cumulative Update (CU) includes all
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2019 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange 2019](../prepare-ad-and-domains.md).
 
+## Exchange 2019 CU6 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2019 CU6.
+
 ## Exchange 2019 CU5 Active Directory schema changes
 
 No changes are made to the Active Directory schema in Exchange 2019 CU5.
@@ -1478,10 +1482,14 @@ The following table lists the extended rights that are added when you install Ex
 |Cumulative Update 2|Cumulative Update 4 <br> through <br> Cumulative Update 6|**Yes**, schema updates are required. <br> You need to apply the CU3 schema updates.|
 |Cumulative Update 3|Cumulative Update 4 <br> through <br> Cumulative Update 6|**No**, no schema updates are required. <br> No schema changes are made in CU4 through CU6.|
 |Cumulative Update 6|Cumulative Update 7 <br> through <br> Cumulative Update 14|**Yes**, schema updates are required. <br> You need to apply the CU14 schema updates.|
-|Cumulative Update 7 or higher|Cumulative Update 8 <br> through <br> Cumulative Update 16|**No**, no schema updates are required. <br> No schema changes are made in CU8 through CU16.|
+|Cumulative Update 7 or higher|Cumulative Update 8 <br> through <br> Cumulative Update 17|**No**, no schema updates are required. <br> No schema changes are made in CU8 through CU17.|
 
 > [!NOTE]
 > The Active Directory schema changes that are described in this topic might not apply to all editions of an Exchange 2016 version. To verify that Active Directory has been successfully prepared, see the [Exchange Active Directory versions](../prepare-ad-and-domains.md#exchange-active-directory-versions) section in [Prepare Active Directory and domains for Exchange Server](../prepare-ad-and-domains.md).
+
+## Exchange 2016 CU17 Active Directory schema changes
+
+No changes are made to the Active Directory schema in Exchange 2016 in CU17.
 
 ## Exchange 2016 CU16 Active Directory schema changes
 

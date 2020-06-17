@@ -23,7 +23,7 @@ Standard journaling is configured on a mailbox database. It enables the Journali
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Journaling" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Journaling" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
 - A journaling mailbox has been created, or an existing mailbox is available for use as the journaling mailbox. You can't designate an Exchange Online mailbox as a journaling mailbox. You can deliver journal reports to an on-premises archiving system or a third-party archiving service. If you're running a hybrid deployment with your mailboxes split between on-premises servers and Exchange Online, you can designate an on-premises mailbox as the journaling mailbox for your Exchange Online and on-premises mailboxes.
 
@@ -97,7 +97,7 @@ This example retrieves the journal rule Brokerage Journal Rule, and pipes the ou
 Get-JournalRule "Brokerage Journal Rule" | Format-List
 ```
 
-If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-journalrule) cmdlet. This example changes the name of the journal rule `JR-Sales` to `TraderVault`. The following rule settings are also changed:
+If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/set-journalrule) cmdlet. This example changes the name of the journal rule `JR-Sales` to `TraderVault`. The following rule settings are also changed:
 
 - Recipient
 
@@ -215,7 +215,7 @@ This example disables per-mailbox database journaling on the Sales Database mail
 Set-MailboxDatabase "Sales Database" -JournalRecipient $Null
 ```
 
-This example disables per-mailbox database journaling on all mailbox databases in the Exchange organization. The [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/get-mailboxdatabase) cmdlet is used to retrieve all mailbox databases in the Exchange organization, and results from the cmdlet are piped to the [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase) cmdlet.
+This example disables per-mailbox database journaling on all mailbox databases in the Exchange organization. The [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/get-mailboxdatabase) cmdlet is used to retrieve all mailbox databases in the Exchange organization, and results from the cmdlet are piped to the [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/set-mailboxdatabase) cmdlet.
 
 ```powershell
 Get-MailboxDatabase | Set-MailboxDatabase -JournalRecipient $Null
@@ -241,16 +241,16 @@ Get-MailboxDatabase | Format-Table Name,JournalRecipient
 
 [Disable or enable journaling of voice mail and missed call notifications](disable-or-enable-journaling-of-voice-mail-and-missed-call-notifications-exchange-2013-help.md)
 
-[New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule)
+[New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule)
 
-[Get-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-journalrule)
+[Get-JournalRule](https://docs.microsoft.com/powershell/module/exchange/get-journalrule)
 
-[Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-journalrule)
+[Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/set-journalrule)
 
-[Enable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/enable-journalrule)
+[Enable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/enable-journalrule)
 
-[Disable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/disable-journalrule)
+[Disable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/disable-journalrule)
 
-[Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-journalrule)
+[Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/remove-journalrule)
 
-[Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase)
+[Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/set-mailboxdatabase)

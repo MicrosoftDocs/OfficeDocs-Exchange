@@ -46,7 +46,7 @@ This example begins the move request for the public folder mailbox PF\_SanFranci
 New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01
 ```
 
-For detailed syntax and parameter information, see [New-MoveRequest](https://technet.microsoft.com/library/dd351123\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/New-MoveRequest).
 
 ## Create a move request to complete at a later time
 
@@ -58,7 +58,7 @@ This example begins the move request for the public folder mailbox PF\_SanFranci
 New-MoveRequest -Identity "PF_SanFrancisco" -TargetDatabase MBX_DB01 -SuspendWhenReadyToComplete
 ```
 
-For detailed syntax and parameter information, see [New-MoveRequest](https://technet.microsoft.com/library/dd351123\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/New-MoveRequest).
 
 This example retrieves the status of the ongoing mailbox move for the public folder mailbox PF\_SanFrancisco.
 
@@ -66,7 +66,7 @@ This example retrieves the status of the ongoing mailbox move for the public fol
 Get-MoveRequest -Identity "PF_SanFrancisco"
 ```
 
-For detailed syntax and parameter information, see [Get-MoveRequest](https://technet.microsoft.com/library/dd335227\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/Get-MoveRequest).
 
 When the move request reaches the status of Suspended, you can resume the request. This example resumes the move request for the public folder mailbox PF\_SanFrancisco.
 
@@ -74,7 +74,7 @@ When the move request reaches the status of Suspended, you can resume the reques
 Resume-MoveRequest -Identity "PF_SanFrancisco"
 ```
 
-For detailed syntax and parameter information, see [Resume-MoveRequest](https://technet.microsoft.com/library/ee332320\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Resume-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/Resume-MoveRequest).
 
 ## How do you know this worked?
 

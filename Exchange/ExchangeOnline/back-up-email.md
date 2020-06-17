@@ -30,7 +30,7 @@ As a result, you can readily access up-to-date mailbox data in the event of a fa
 
 
 > [!NOTE]
-> You can get the latest information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [View the status of your services](https://go.microsoft.com/fwlink/p/?LinkId=786661).
+> You can get the latest information related to a service interrupting event by logging into the Service Health Dashboard. For more information, see [How to check Microsoft 365 service health](https://docs.microsoft.com/office365/enterprise/view-service-health).
 
 ## What happens if users accidentally delete data from their mailboxes?
 
@@ -47,8 +47,8 @@ For more information about how admins can recover deleted items in Exchange Onli
 > [!NOTE]
 > Point in time restoration of mailbox items is out of scope for the Exchange Online service, though there might be third-party solutions available that provide this functionality. Exchange Online offers great retention and recovery support for your organization's email infrastructure, and your mailbox data is available when you need it, no matter what happens. For more information about additional options, see the following topics:
 >
-> - [High Availability and Business Continuity](https://technet.microsoft.com/library/7b03465e-3b9c-4500-8956-a83377f4c2c3.aspx)
-> - [Exchange Online Service Description](https://technet.microsoft.com/library/7a83da3c-3b6d-4f86-ad4d-6104707cd0ec.aspx)
+> - [High Availability and Business Continuity](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/high-availability-and-business-continuity)
+> - [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)
 > - [In-Place Hold and Litigation Hold](security-and-compliance/in-place-and-litigation-holds.md)
 > - [Office 365 retention policies](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 > - [Inactive mailboxes in Office 365](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)
@@ -83,4 +83,4 @@ To learn how to restore deleted items in Outlook on the web (formerly known as O
 
 ## Offboard a user from Office 365
 
-For more info what to do when a user in your organization leaves, check out [Remove a former employee from Office 365](https://go.microsoft.com/fwlink/p/?LinkId=816871). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.
+For more info what to do when a user in your organization leaves, check out [Remove a former employee](https://docs.microsoft.com/microsoft-365/admin/add-users/remove-former-employee). This topic discusses the steps you should take and how to secure your data after an employee leaves your organization.

@@ -24,7 +24,7 @@ Connectivity logging records outbound connection activity (source, destination, 
 
 - Estimated time to complete: 15 minutes
 
-- You can use the Exchange admin center (EAC) to enable or disable connectivity logging and set the log path for the Transport service on Mailbox servers only. For all other connectivity logging options in the other transport services, you need to use the Exchange Management Shell. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- You can use the Exchange admin center (EAC) to enable or disable connectivity logging and set the log path for the Transport service on Mailbox servers only. For all other connectivity logging options in the other transport services, you need to use the Exchange Management Shell. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - The folder for connectivity logging needs the following permissions:
 
@@ -91,7 +91,7 @@ This example sets the following connectivity log settings in the Transport servi
 Set-TransportService -Identity Mailbox01 -ConnectivityLogPath "D:\Connectivity Log\Hub" -ConnectivityLogMaxFileSize 20MB -ConnectivityLogMaxDirectorySize 1.5GB -ConnectivityLogMaxAge 45.00:00:00
 ```
 
-For detailed syntax and parameter information, see [Set-TransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-transportservice), [Set-FrontendTransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-frontendtransportservice), and [Set-MailboxTransportService](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-mailboxtransportservice).
+For detailed syntax and parameter information, see [Set-TransportService](https://docs.microsoft.com/powershell/module/exchange/set-transportservice), [Set-FrontendTransportService](https://docs.microsoft.com/powershell/module/exchange/set-frontendtransportservice), and [Set-MailboxTransportService](https://docs.microsoft.com/powershell/module/exchange/set-mailboxtransportservice).
 
  **Notes**:
 

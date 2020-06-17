@@ -27,7 +27,7 @@ Did you find what you're looking for? Please take a minute to [send us feedback]
 
 To verify that Exchange 2013 installed successfully, run the **Get-ExchangeServer** cmdlet in the Exchange Management Shell. A list is displayed of all Exchange 2013 server roles that are installed on the specified server when this cmdlet is run.
 
-For detailed syntax and parameter information, see [Get-ExchangeServer](https://technet.microsoft.com/library/bb123873\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/Get-ExchangeServer).
 
 ## Review the setup log file
 

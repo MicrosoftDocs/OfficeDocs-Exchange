@@ -54,7 +54,7 @@ This example enables IRM log on a Mailbox server.
 Set-TransportService -Identity EXCH01 -IRMLogEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-TransportService](https://technet.microsoft.com/library/jj215682\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-TransportService](https://docs.microsoft.com/powershell/module/exchange/Set-TransportService).
 
 ## Use the Shell to disable IRM logging on a server
 
@@ -64,11 +64,11 @@ This example disables IRM logging on a Mailbox server.
 Set-TransportService -Identity EXCH01 -IRMLogEnabled $false
 ```
 
-For detailed syntax and parameter information, see [Set-TransportService](https://technet.microsoft.com/library/jj215682\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-TransportService](https://docs.microsoft.com/powershell/module/exchange/Set-TransportService).
 
 ## How do you know this worked?
 
-To verify that you have successfully enabled or disbled IRM logging on a server, run the [Get-TransportService](https://technet.microsoft.com/library/jj215746\(v=exchg.150\)) cmdlet to retrieve IRM settings.
+To verify that you have successfully enabled or disbled IRM logging on a server, run the [Get-TransportService](https://docs.microsoft.com/powershell/module/exchange/Get-TransportService) cmdlet to retrieve IRM settings.
 
 This example retrieves all IRM logging properties on the server EXCH01.
 

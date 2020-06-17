@@ -39,7 +39,7 @@ For additional management tasks related to hybrid deployments, see [Hybrid Deplo
 
 - Estimated time to complete this task: Varies, depending on type of hybrid deployment issues
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Hybrid deployments" entry in the [Exchange and Shell infrastructure permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Hybrid deployments" entry in the [Exchange and PowerShell infrastructure permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/infrastructure-permissions) topic.
 
 - The guidance in this topic applies to hybrid deployments configured using the Hybrid Configuration wizard. Hybrid deployments that have been manually configured are not supported.
 
@@ -54,7 +54,7 @@ For additional management tasks related to hybrid deployments, see [Hybrid Deplo
 
 The configuration of the on-premises Exchange servers is typically the area where most problems may occur in a hybrid deployment. Usually, the areas that need to be examined are the following:
 
-- **Availability**: Correctly publishing the on-premises Exchange servers to the Internet is vital to features working correctly in your hybrid deployment. For hybrid features to work correctly, you must configure your on-premises firewall or other security appliances to allow inbound access from the Internet to the Autodiscover and Exchange Web Services (EWS) endpoints on the on-premises Exchange servers. Additionally, the Exchange servers must also be configured to accept inbound SMTP mail. If the Microsoft Exchange Online Protection (EOP) service included in your Office 365 organization can't reach the on-premises Exchange servers, secure mail transport from the Exchange Online organization to the on-premises organization will not function correctly.
+- **Availability**: Correctly publishing the on-premises Exchange servers to the Internet is vital to features working correctly in your hybrid deployment. For hybrid features to work correctly, you must configure your on-premises firewall or other security appliances to allow inbound access from the Internet to the Autodiscover and Exchange Web Services (EWS) endpoints on the on-premises Exchange servers. Additionally, the Exchange servers must also be configured to accept inbound SMTP mail. If the Microsoft Exchange Online Protection (EOP) service included in your Microsoft 365 or Office 365 organization can't reach the on-premises Exchange servers, secure mail transport from the Exchange Online organization to the on-premises organization will not function correctly.
 
 - **Certificates**: The digital certificate used for secure mail transport between the on-premises and Exchange Online organizations needs to be installed on all on-premises Internet-facing Exchange servers that will communicate with Exchange Online, must be issued from a third-party certificate authority (CA), must not be expired, and must have the IIS and SMTP services assigned. If these certificate requirements are not met, secure mail transport from the Exchange Online organization to the on-premises organization will not function correctly. More information about certificate requirements is provided in "Troubleshoot issues with Certificates" later in this topic.
 
@@ -62,7 +62,7 @@ The configuration of the on-premises Exchange servers is typically the area wher
 
 To verify that you have successfully published your on-premises Exchange servers, use the Microsoft Remote Connectivity Analyzer to verify inbound Internet connectivity to your on-premises Exchange servers. Do the following:
 
-1. Go to the [Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/?linkid=154308) tool.
+1. Go to the [Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365) tool.
 
 2. This step is for a general test of EWS tasks to confirm they are working, and that the EWS endpoint is configured.
 
@@ -126,4 +126,4 @@ If you receive an error while running the Hybrid Configuration wizard, you can f
 
   You should see the following entry listed for your Exchange servers: `{[::]:25, 0.0.0.0:25}`
 
-   If this binding isn't listed, you need to add it to your Receive connector using the _Bindings_ parameter of the **Set-ReceiveConnector** cmdlet. For details, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-receiveconnector).
+   If this binding isn't listed, you need to add it to your Receive connector using the _Bindings_ parameter of the **Set-ReceiveConnector** cmdlet. For details, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/set-receiveconnector).

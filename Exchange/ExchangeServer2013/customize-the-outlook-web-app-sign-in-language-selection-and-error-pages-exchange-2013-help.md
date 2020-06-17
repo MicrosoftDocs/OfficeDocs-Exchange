@@ -45,7 +45,7 @@ For information about creating a custom theme, see [Create a theme for Outlook W
 
 2. Use a text editor, such as Notepad, to open logon.css.
 
-3. Search for the default color value \#0072c6 and replace it with the HTML RGB value for the color you want to use. You can find HTML RGB values here: [Color Table](https://go.microsoft.com/fwlink/p/?linkid=280679).
+3. Search for the default color value \#0072c6 and replace it with the HTML RGB value for the color you want to use.
 
 4. Save and close the file.
 
@@ -55,17 +55,17 @@ For information about creating a custom theme, see [Create a theme for Outlook W
 
 2. Use a text editor, such as Notepad, to open errorFE.css.
 
-3. Search for the default color value \#0072c6 and replace it with the HTML RGB value for the color you want to use. You can find HTML RGB values here: [Color Table](https://go.microsoft.com/fwlink/p/?linkid=280679).
+3. Search for the default color value \#0072c6 and replace it with the HTML RGB value for the color you want to use.
 
 4. Save and close the file.
 
 ## Customize the color of the language selection page
 
-1. Log on to the Exchange server and use Windows Explorer to go to the Exchange server installation directory and find \\V15\\Client Access\\OWA\\version\\Owa2\\resources\\styles.
+1. Log on to the Exchange server, then use Windows Explorer to go to the Exchange server installation directory and find \\V15\\ClientAccess\\Owa\\prem\\\<version\>\\resources\\styles.
 
 2. Use a text editor, such as Notepad, to open LanguageSelection.css.
 
-3. Search for the default color value \#0072c6 and replace it with the HTML RGB value for the color you want to use. You can find HTML RGB values here: [Color Table](https://go.microsoft.com/fwlink/p/?linkid=280679).
+3. Search for the default color value \#0072c6 and replace it with the HTML RGB value for the color you want to use.
 
 4. Save and close the file.
 
@@ -91,7 +91,7 @@ Use an image editing tool to open and edit the images used to build the sign-in 
 
    - olk\_exchange\_text\_stacked\_white\_small.png is used in tnarrow.
 
-3. Search for the default color value \#0072c6 and replace it with the HTML RGB value for the color you want to use. You can find HTML RGB values here: [Color Table](https://go.microsoft.com/fwlink/p/?linkid=280679).
+3. Search for the default color value \#0072c6 and replace it with the HTML RGB value for the color you want to use.
 
 4. Save and close the file.
 

@@ -92,7 +92,7 @@ Get-WebServicesVirtualDirectory | FL Identity,MRSProxyEnabled
 
 Verify that the *MRSProxyEnabled* parameter is set to `True`.
 
-Another way to verify that the MRS Proxy endpoint is enabled is to use the **Test-MigrationServerAvailability** cmdlet to test the ability to communicate with the remote server that hosts the mailboxes that you want to move, or in the case of offboarding Exchange Online mailboxes to your on-premises organization, a server in your on-premises organization. For more information, see [Test-MigrationServerAvailability](https://technet.microsoft.com/library/jj219169\(v=exchg.150\)).
+Another way to verify that the MRS Proxy endpoint is enabled is to use the **Test-MigrationServerAvailability** cmdlet to test the ability to communicate with the remote server that hosts the mailboxes that you want to move, or in the case of offboarding Exchange Online mailboxes to your on-premises organization, a server in your on-premises organization. For more information, see [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability).
 
 The following example tests the connection to a server in the corp.contoso.com forest.
 

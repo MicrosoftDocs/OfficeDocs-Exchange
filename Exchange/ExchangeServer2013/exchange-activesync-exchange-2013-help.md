@@ -23,7 +23,7 @@ Learn about the Exchange ActiveSync client protocol for Exchange Server 2013. Yo
 > This topic is for admins. Want to set up your Windows Phone, iOS, or Android device to access your Office 365 or Exchange Server mailbox? Check out the following topics.
 > <UL>
 > <LI>
-> <P><A href="https://go.microsoft.com/fwlink/p/?linkid=615415">Set up email on Windows Phone</A></P>
+> <P><A href="https://support.microsoft.com/office/181a112a-be92-49ca-ade5-399264b3d417">Set up email on Windows Phone</A></P>
 > <LI>
 > <P><A href="https://go.microsoft.com/fwlink/p/?linkid=615414">Set up email on iPhone, iPad, or iPod Touch</A></P>
 > <LI>
@@ -107,12 +107,7 @@ In addition to the ability to configure security options for communications betw
 
 - **Remote wipe**: If a mobile device is lost, stolen, or otherwise compromised, you can issue a remote wipe command from the Exchange Server computer or from any Web browser by using Outlook Web App. This command erases all data from the mobile device.
 
-- **Device password policies**: Exchange ActiveSync lets you configure several options for device passwords.
-
-    > [!NOTE]
-    > Apple Touch ID and Face ID are not supported as a substitute for a device password. If you enable Touch ID or Face ID to secure your iOS device, you must still create and enter a password if your mobile device mailbox policies require a password.
-
-    The device password options include the following:
+- **Device password policies**: Exchange ActiveSync lets you configure several options for device passwords. The device password options include the following:
 
   - **Minimum password length (characters)**: This option specifies the length of the password for the mobile device. The default length is 4 characters, but as many as 18 can be included.
 

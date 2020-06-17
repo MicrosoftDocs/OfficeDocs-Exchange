@@ -96,7 +96,7 @@ To resolve this issue, make sure that the "Allow permissions to propagate to thi
 <li><p>Select the <strong>Security</strong> tab and then click <strong>Advanced</strong>.</p></li>
 <li><p>Select <strong>Allow inheritable permissions from the parent to propagate to this object and all child objects</strong> to re-enable permissions inheritance.</p></li>
 <li><p>Select <strong>Ok</strong> twice to apply the change.</p></li>
-<li><p>Wait for Active Directory replication to propagate the changes or force Active Directory replication by following the guidance in Microsoft Knowledge Base article 232072, &quot;Initiating Replication Between Active Directory Direct Replication Partners&quot; (<a href="https://go.microsoft.com/fwlink/?linkid=3052&kbid=232072" class="uri">https://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=232072</a>).</p></li>
+<li><p>Wait for Active Directory replication to propagate the changes or force Active Directory replication.</p></li>
 </ol></td>
 </tr>
 </tbody>

@@ -77,7 +77,7 @@ This example returns all mailboxes that have the sharing policy Contoso applied,
 Get-Mailbox -ResultSize unlimited | Where {$_.SharingPolicy -eq "Contoso" } | format-table Alias, EmailAddresses
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)) and [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox) and [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox).
 
 ## How do you know this worked?
 

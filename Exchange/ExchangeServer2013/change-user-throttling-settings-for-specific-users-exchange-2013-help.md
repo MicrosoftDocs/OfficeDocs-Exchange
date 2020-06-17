@@ -44,7 +44,7 @@ This example creates a non-default user throttling policy named ITStaffPolicy th
 New-ThrottlingPolicy -Name ITStaffPolicy -EwsMaxConcurrency 4 -ThrottlingPolicyScope Regular
 ```
 
-This example associates a user with the user name tonysmith with the throttling policy ITStaffPolicy (which has higher limits).
+This example associates a user with the username tonysmith with the throttling policy ITStaffPolicy (which has higher limits).
 
 ```powershell
 Set-ThrottlingPolicyAssociation -Identity tonysmith -ThrottlingPolicy ITStaffPolicy
@@ -60,7 +60,7 @@ $b = Get-ThrottlingPolicy ITStaffPolicy
 Set-Mailbox -Identity tonysmith -ThrottlingPolicy $b
 ```
 
-For more information about syntax and parameters, see [New-ThrottlingPolicy](https://technet.microsoft.com/library/dd351045\(v=exchg.150\)) and [Set-ThrottlingPolicyAssociation](https://technet.microsoft.com/library/ff459231\(v=exchg.150\)).
+For more information about syntax and parameters, see [New-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/New-ThrottlingPolicy) and [Set-ThrottlingPolicyAssociation](https://docs.microsoft.com/powershell/module/exchange/Set-ThrottlingPolicyAssociation).
 
 ## How do you know this worked?
 

@@ -72,5 +72,3 @@ The following table lists the DLP policy templates in Exchange. To learn more ab
 [Data loss prevention](data-loss-prevention-exchange-2013-help.md)
 
 [Create a DLP policy from a template](create-dlp-policy-from-template-exchange-2013-help.md)
-
-[Sensitive Information Types Inventory](https://technet.microsoft.com/library/98b81f9c-87bb-4905-8e53-04621c3ae74d.aspx)

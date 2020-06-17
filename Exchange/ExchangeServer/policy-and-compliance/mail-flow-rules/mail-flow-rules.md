@@ -24,15 +24,15 @@ This article explains the [components](#mail-flow-rule-components) of mail flow 
 
 You can use the Exchange admin center (EAC) or the Exchange Management Shell to manage mail flow rules. For instructions on how to manage mail flow rules, see [Procedures for mail flow rules in Exchange Server](mail-flow-rule-procedures.md).
 
- For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a mail flow rule](https://technet.microsoft.com/library/3d949e2a-8ba4-4261-8cfb-736fd2446ea1.aspx) and [Policy Tips](https://technet.microsoft.com/library/4266b83c-dd8a-4b3d-99ff-402e68fc810c.aspx).
+ For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test a mail flow rule](https://docs.microsoft.com/Exchange/test-transport-rules-exchange-2013-help) and [Policy Tips](https://docs.microsoft.com/Exchange/policy-tips-exchange-2013-help).
 
 For steps to implement specific messaging policies, see the following topics:
 
 - [Organization-wide disclaimers, signatures, footers, or headers in Exchange Server](signatures.md)
 
-- [Common message approval scenarios](https://technet.microsoft.com/library/5c13a07e-c21d-4502-a9f9-fb801197e1dd.aspx)
+- [Common message approval scenarios](https://docs.microsoft.com/Exchange/common-message-approval-scenarios-exchange-2013-help)
 
-- [Using mail flow rules to inspect message attachments](https://technet.microsoft.com/library/c0de687e-e33c-4e8a-b253-771494678795.aspx)
+- [Using mail flow rules to inspect message attachments](https://docs.microsoft.com/exchange/use-transport-rules-to-inspect-message-attachments-exchange-2013-help)
 
 ## Mail flow rule components
 
@@ -68,7 +68,7 @@ The following table describes the rule properties that are available in mail flo
 |**Property name in the EAC**|**Parameter name in the Exchange Management Shell**|**Description**|
 |:-----|:-----|:-----|
 |**Priority**|_Priority_|Indicates the order that the rules are applied to messages. The default priority is based on when the rule is created (older rules have a higher priority than newer rules), and higher priority rules are processed before lower priority rules. <br/> You change the rule priority in the EAC by moving the rule up or down in the list of rules. In the Exchange Management Shell, you set the priority number (0 is the highest priority). <br/> For example, if you have one rule to reject messages that include a credit card number, and another one requiring approval, you'll want the reject rule to happen first, and stop applying other rules. <br/> For more information, see [Set the priority of mail flow rules](mail-flow-rule-procedures.md#set-the-priority-of-mail-flow-rules).|
-|**Mode**| _Mode_|You can specify whether you want the rule to start processing messages immediately, or whether you want to test rules without affecting the delivery of the message (with or without Data Loss Prevention or DLP Policy Tips). <br/> Policy Tips are similar to MailTips, and can be configured to present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see [Policy Tips](https://technet.microsoft.com/library/4266b83c-dd8a-4b3d-99ff-402e68fc810c.aspx).For more information about the modes, see [Test a mail flow rule](https://technet.microsoft.com/library/3d949e2a-8ba4-4261-8cfb-736fd2446ea1.aspx).|
+|**Mode**| _Mode_|You can specify whether you want the rule to start processing messages immediately, or whether you want to test rules without affecting the delivery of the message (with or without Data Loss Prevention or DLP Policy Tips). <br/> Policy Tips are similar to MailTips, and can be configured to present a brief note in Outlook or Outlook on the web that provides information about possible policy violations to the person that's creating the message. For more information, see [Policy Tips](https://docs.microsoft.com/Exchange/policy-tips-exchange-2013-help).For more information about the modes, see [Test a mail flow rule](https://docs.microsoft.com/Exchange/test-transport-rules-exchange-2013-help).|
 |**Activate this rule on the following date** <br/> **Deactivate this rule on the following date**| _ActivationDate_ <br/> _ExpiryDate_|Specifies the date range when the rule is active.|
 |**On** check box selected or not selected|New rules: _Enabled_ parameter on the **New-TransportRule** cmdlet. <br/> Existing rules: Use the **Enable-TransportRule** or **Disable-TransportRule** cmdlets. <br/> The value is displayed in the **State** property of the rule.|You can create a disabled rule, and enable it when you're ready to test it. Or, you can disable a rule without deleting it to preserve the settings. For instructions, see [Enable or disable mail flow rules](mail-flow-rule-procedures.md#enable-or-disable-mail-flow-rules).|
 |**Defer the message if rule processing doesn't complete**| _RuleErrorAction_|You can specify how the message should be handled if the rule processing can't be completed. By default, the rule will be ignored, but you can choose to resubmit the message for processing.|
@@ -85,7 +85,7 @@ Mail flow rules are applied by a transport agent on Mailbox servers and Edge Tra
 |**Transport Rule agent on Mailbox servers**|The **OnResolvedMessage** categorizer event. <br/> In Exchange 2010, the Transport Rule agent was invoked on the **OnRoutedMessage** categorizer event. The change to **OnResolvedMessage** allowed new rule actions that can change how a message is routed (for example, require TLS).|In Active Directory. Rules are available to all Mailbox servers in the Active Directory forest.|
 |**Edge Rule agent on Edge Transport servers**|The **OnEndOfData** SMTP event|In the local instance of Active Directory Lightweight Directory Services (AD LDS) on the server. Rules are only applied to messages that flow through the local server.|
 
-For more information about transport agents, see [Transport Agents](https://technet.microsoft.com/library/e7389d63-3172-40d5-bf53-0d7cd7e78340.aspx).
+For more information about transport agents, see [Transport Agents](https://docs.microsoft.com/exchange/transport-agents-exchange-2013-help).
 
 ### Differences in processing based on message type
 
@@ -109,7 +109,7 @@ Mail flow rules that you create and configure on Mailbox servers are stored in A
 
  **Notes**:
 
-- Replication between domain controllers depends on factors that aren't controlled by Exchange (for example, the number of Active Directory sites, and the speed of network links). Therefore, you need to consider replication delays when you implement mail flow rules in your organization. For more information about Active Directory replication, see [Introduction to Active Directory Replication and Topology Management Using Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=274904).
+- Replication between domain controllers depends on factors that aren't controlled by Exchange (for example, the number of Active Directory sites, and the speed of network links). Therefore, you need to consider replication delays when you implement mail flow rules in your organization. For more information about Active Directory replication, see [Introduction to Active Directory Replication and Topology Management Using Windows PowerShell](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/powershell/introduction-to-active-directory-replication-and-topology-management-using-windows-powershell--level-100-).
 
 - Each Mailbox server caches expanded distribution groups to avoid repeated Active Directory queries to determine a group's membership. By default, entries in the expanded groups cache expire every four hours. Therefore, changes to the group's membership aren't detected by mail flow rules until the expanded groups cache is updated. To force an immediate update of the cache on a Mailbox server, restart the Microsoft Exchange Transport service. You need to restart the service on each Mailbox server where you want to forcibly update the cache.
 
@@ -127,9 +127,9 @@ There are two mixed environment scenarios that are common:
 
   **Important**: Even though there is a substantial overlap between the conditions and actions that are available in Office 365 and Exchange Server, there are differences. If you plan on creating the same rule in both locations, make sure that all conditions and actions you plan to use are available. To see the list of available conditions and actions that are available in Office 365, see the following topics:
 
-  [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/library/7235e5ed-f7f4-41b1-b1a0-47bb96223a2f.aspx)
+  [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-  [Mail flow rule actions in Exchange Online](https://technet.microsoft.com/library/a5dfe768-fe26-4290-a801-84b3499f1bc4.aspx)
+  [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
 - **Coexistence with Exchange 2010**
 

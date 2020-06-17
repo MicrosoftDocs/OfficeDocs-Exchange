@@ -100,8 +100,6 @@ The hybrid Modern Authentication architecture has the following technical requir
 
    - Exchange Online
 
-   - Exchange Hybrid write-back
-
    - Azure RMS
 
    - Intune
@@ -113,14 +111,14 @@ The hybrid Modern Authentication architecture has the following technical requir
     
 3. **Exchange hybrid setup**: Requires full hybrid relationship between Exchange on-premises with Exchange Online.
 
-   - Hybrid Office 365 tenant is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is setup as specified in the [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy).
+   - Hybrid Office 365 organization is configured in full hybrid configuration using Exchange Classic Hybrid Topology mode and is setup as specified in the [Exchange Deployment Assistant](https://technet.microsoft.com/exdeploy).
 
        > [!NOTE]
        > Hybrid Modern Authentication is not supported with the [Hybrid Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent).
 
    - Requires an Office 365 Enterprise, Business, or Education tenant.
 
-   - The on-premises mailbox data is synchronized in the same datacenter region where that Office 365 tenant is setup. For more about where Office 365 data is located, visit the Microsoft Trust Center.
+   - The on-premises mailbox data is synchronized in the same datacenter region where that Office 365 organization is setup. For more about where Office 365 data is located, visit the Microsoft Trust Center.
 
    - The external URL host names for Exchange ActiveSync and AutoDiscover must be published as service principals to Azure Active Directory through the Hybrid Configuration Wizard.
 
@@ -132,11 +130,11 @@ The hybrid Modern Authentication architecture has the following technical requir
 
 5. **Office 365 licensing**:
 
-   - Outlook for iOS and Android requires an Office 365 subscription that includes the Office desktop applications: Business, Business Premium, Enterprise E3, E5, and ProPlus, or the corresponding versions of those plans for Government or Education. Commercial users with the following subscriptions are allowed to use Outlook for iOS and Android on devices with integrated screens 10.1" diagonally or less: Office 365 Enterprise E1, Office 365 F1, Office 365 Business Essentials, Office 365 A1, and if you only have an Exchange Online license (without Office). If you only have an Exchange on-premises (Exchange Server) license, your users are not licensed to use the app.
+   - Outlook for iOS and Android is free for consumer usage from the iOS App store and from Google Play. However, commercial users require an Office 365 or Microsoft 365 subscription that includes the Office desktop applications: Microsoft 365 Apps for Business, Microsoft 365 Business Standard, Microsoft 365 Apps for enterprise, Office 365 Enterprise E3, Office 365 Enterprise E5, or the corresponding versions of those plans for Government or Education. Commercial users with the following subscriptions are allowed to use the Outlook mobile app on devices with integrated screens 10.1" diagonally or less: Office 365 Enterprise E1, Office 365 F1, Office 365 A1, Microsoft 365 Business Basic, and if you only have an Exchange Online license (without Office). If you only have an Exchange on-premises (Exchange Server) license, you are not licensed to use the app.
 
-   - Use of advanced Exchange Online features (e.g., [Service Encryption with Customer Key](https://support.office.com/article/41ae293a-bd5c-4083-acd8-e1a2b4329da6) or [Multi-Geo Capabilities](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)) require the on-premises user to be assigned the applicable Office 365 subscription license within the Microsoft 365 Admin Center.
+   - Use of advanced Exchange Online features (e.g., [Service Encryption with Customer Key](https://docs.microsoft.com/microsoft-365/compliance/customer-key-set-up) or [Multi-Geo Capabilities](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)) require the on-premises user to be assigned the applicable Office 365 or Microsoft 365 subscription license within the Microsoft 365 Admin Center.
 
-   For more information on how to assign a license, see [Assign licenses to users in Office 365 for business](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
+   For more information on how to assign a license, see [Assign licenses to users in Office 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users.
 
 6. **EMS licensing**: Each on-premises user must have one of the following licenses:
 
@@ -286,7 +284,7 @@ The following features are not supported for on-premises mailboxes using hybrid 
 
 **Q**: Can I leverage Azure ExpressRoute for managing traffic between the Microsoft Cloud and my on-premises environment?
 
-**A**: Connectivity to the Microsoft Cloud requires Internet connectivity. Microsoft recommends exposing AutoDiscover and Exchange ActiveSync directly to the Internet; for more information, see [Office 365 Network Connectivity Principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles). However, Azure ExpressRoute is supported for Exchange hybrid scenarios. For more information, see [Azure ExpressRoute for Office 365](https://support.office.com/article/6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
+**A**: Connectivity to the Microsoft Cloud requires Internet connectivity. Microsoft recommends exposing AutoDiscover and Exchange ActiveSync directly to the Internet; for more information, see [Office 365 Network Connectivity Principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles). However, Azure ExpressRoute is supported for Exchange hybrid scenarios. For more information, see [Azure ExpressRoute for Office 365](https://docs.microsoft.com/office365/enterprise/azure-expressroute).
 
 With ExpressRoute, there is no private IP space for ExpressRoute connections, nor can there be "private" DNS resolution. That means that any endpoint your company wants to use over ExpressRoute must resolve in public DNS. If that endpoint resolves to an IP that is contained in the advertised prefixes associated with the ExpressRoute circuit (your company must configure those prefixes in the Azure portal when you enable Microsoft peering on the ExpressRoute connection), then the outbound connection from Exchange Online to your on-premises environment will route through the ExpressRoute circuit. Your company will have to ensure that the return traffic associated with these connections goes through the ExpressRoute circuit (avoiding asymmetric routing).
 
@@ -436,6 +434,30 @@ Set-AuthServer EvoSts -RefreshAuthMetadata
 ```
 
 You can also create a scheduled task that executes the above command every 24 hours.
+
+### Exchange Online statistics
+
+You can use the following Exchange Online cmdlets to see statistical information for each synchronized on-premises mailbox.
+
+1. First, obtain the location of the synchronized on-premises mailbox in the tenant, specifying the on-premises mailbox's identity (for example, jane@contoso.com).
+
+    ```PowerShell
+    $m = Get-MailboxLocation <identity>
+    ```
+
+2. To see mailbox-related statistics, use
+
+    ```PowerShell
+    Get-MailboxStatistics $m.id
+    ```
+
+3. To see mobile device statistics (like seeing when Outlook for iOS and Android last synchronized to Exchange Online), use
+
+    ```PowerShell
+    Get-MobileDeviceStatistics -Mailbox $m.id
+    ```
+
+For more information, see [Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps) and [Get-MobileDeviceStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mobiledevicestatistics?view=exchange-ps).
 
 ### Other issues
 

@@ -43,7 +43,7 @@ This topic shows you how to:
 
 - You need to export mailboxes to .pst files on a UNC network share (\\ _\<Server\>_\ _\<Share\>_\ or \\ _\<LocalServerName\>_\c$\). The Exchange Trusted Subsystem security group requires the Read/Write permission to the network share. If the share doesn't have this permission, you'll get errors when you try to export mailboxes to .pst files.
 
-- You can create mailbox export requests in the Exchange admin center (EAC) or in the Exchange Management Shell. All other procedures can only be done in the Exchange Management Shell. For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- You can create mailbox export requests in the Exchange admin center (EAC) or in the Exchange Management Shell. All other procedures can only be done in the Exchange Management Shell. For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
@@ -124,7 +124,7 @@ This example creates a new mailbox export request with these settings:
 New-MailboxExportRequest -Name "Kathleen Reiter Export" -Mailbox kreiter -FilePath "\\SERVER01\PSTFiles\Kathleen Reiter.pst" -IsArchive -IncludeFolders "#Inbox#" -Priority Hight
 ```
 
-For detailed syntax and parameter information, see [New-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailboxexportrequest).
+For detailed syntax and parameter information, see [New-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/new-mailboxexportrequest).
 
 ### How do you know this worked?
 
@@ -186,7 +186,7 @@ This example returns the summary list of completed mailbox export requests in th
 Get-MailboxExportRequest -Status Completed -BatchName "Export DB01 PSTs"
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxexportrequest).
+For detailed syntax and parameter information, see [Get-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/get-mailboxexportrequest).
 
 To view detailed information about a mailbox export request, use this syntax:
 
@@ -202,7 +202,7 @@ This example returns detailed information for the mailbox export request named M
 Get-MailboxExportRequestStatistics -Identity "aal-zuhairi\MailboxExport" -IncludeReport | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-MailboxExportRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxexportrequeststatistics).
+For detailed syntax and parameter information, see [Get-MailboxExportRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxexportrequeststatistics).
 
 ## Use the Exchange Management Shell to modify mailbox export requests
 
@@ -220,7 +220,7 @@ This example modifies the failed mailbox export request for the mailbox of Valer
 Set-MailboxExportRequest -Identity "Valeria Barrios\MailboxExport" -BadItemLimit 5
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailboxexportrequest).
+For detailed syntax and parameter information, see [Set-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/set-mailboxexportrequest).
 
  **Note**: After you modify a suspended or failed mailbox export request, you need to resume it by using the **Resume-MailboxExportRequest** cmdlet.
 
@@ -254,7 +254,7 @@ This example suspends all in-progress mailbox export requests with the comment "
 Get-MailboxExportRequest -Status InProgress | Suspend-MailboxExportRequest -SuspendComment "OK to resume after 10 P.M. on Monday 6/19"
 ```
 
-For detailed syntax and parameter information, see [Suspend-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/suspend-mailboxexportrequest).
+For detailed syntax and parameter information, see [Suspend-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/suspend-mailboxexportrequest).
 
  **Notes**:
 
@@ -300,7 +300,7 @@ This example resumes all suspended mailbox export requests.
 Get-MailboxExportRequest -Status Suspended | Resume-MailboxExportRequest
 ```
 
-For detailed syntax and parameter information, see [Resume-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/resume-mailboxexportrequest).
+For detailed syntax and parameter information, see [Resume-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/resume-mailboxexportrequest).
 
 ### How do you know this worked?
 
@@ -334,7 +334,7 @@ This example removes all completed mailbox export requests.
 Get-MailboxExportRequest -Status Completed | Remove-MailboxExportRequest
 ```
 
-For detailed syntax and parameter information, see [Remove-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailboxexportrequest).
+For detailed syntax and parameter information, see [Remove-MailboxExportRequest](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxexportrequest).
 
 ### How do you know this worked?
 

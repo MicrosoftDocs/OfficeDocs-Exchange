@@ -27,7 +27,7 @@
 ### [Set up EXO hybrid public folders](../hybrid-deployment/set-up-exo-hybrid-public-folders.md)
 ### [Set up delegated mailbox permissions](../hybrid-deployment/set-up-delegated-mailbox-permissions.md)
 ### [Set up document collaboration](../hybrid-deployment/set-up-document-collaboration.md)
-### [Set up Office 365 Groups](../hybrid-deployment/set-up-office-365-groups.md)
+### [Set up Microsoft 365 Groups](../hybrid-deployment/set-up-office-365-groups.md)
 ### [Create cloud-based archive](../hybrid-deployment/create-cloud-based-archive.md)
 ### [Simplify OWA URL](../hybrid-deployment/simplify-owa-url.md)
 ### [Troubleshoot a hybrid deployment](../hybrid-deployment/troubleshoot-a-hybrid-deployment.md)

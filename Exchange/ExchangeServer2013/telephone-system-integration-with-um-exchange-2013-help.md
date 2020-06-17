@@ -27,9 +27,9 @@ To successfully deploy Unified Messaging (UM), you must have a good understandin
 
 - VoIP gateways
 
-In an on-premises, hybrid, or Office 365 environment, connecting and configuring the required telephony components is the most complex and important step in successfully deploying UM, with or without Lync Server Enterprise Voice. You'll need to connect and configure VoIP gateways, advanced VoIP gateways, PBXs, IP PBXs, and session border controllers (SBCs) for a traditional telephony network and connect to a telephony network if you'll be using Microsoft Lync Server and UM.
+In an on-premises, hybrid, or Microsoft 365 or Office 365 environment, connecting and configuring the required telephony components is the most complex and important step in successfully deploying UM, with or without Lync Server Enterprise Voice. You'll need to connect and configure VoIP gateways, advanced VoIP gateways, PBXs, IP PBXs, and session border controllers (SBCs) for a traditional telephony network and connect to a telephony network if you'll be using Microsoft Lync Server and UM.
 
-Planning and deploying a new deployment of UM or upgrading a legacy voice mail system can pose challenges for organizations. It requires significant knowledge about VoIP gateways, PBXs, IP PBXs, Microsoft Lync Server, and Unified Messaging. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging. To contact a Unified Messaging specialist, see the [Microsoft solution providers](https://go.microsoft.com/fwlink/p/?LinkId=261951) page.
+Planning and deploying a new deployment of UM or upgrading a legacy voice mail system can pose challenges for organizations. It requires significant knowledge about VoIP gateways, PBXs, IP PBXs, Microsoft Lync Server, and Unified Messaging. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging. To contact a Unified Messaging specialist, see the [Microsoft solution providers](https://www.microsoft.com/solution-providers/) page.
 
 ## Integrating your telephony network
 
@@ -43,7 +43,7 @@ A VoIP gateway is a third-party hardware device that connects a legacy PBX to yo
 
 UM relies on the VoIP gateway's ability to translate or convert Time Division Multiplexing (TDM) or circuit-switched based protocols like ISDN and QSIG from a PBX to IP-based or VoIP-based protocols like SIP, Realtime Transport Protocol (RTP), or T.38 for Realtime Fax Transport. The VoIP gateway is integral to the functionality and operation of UM. The VoIP gateway can also connect to PBX systems that use VoIP instead of public switched telephone network (PSTN) circuit-switched protocols.
 
-Choosing the correct VoIP gateway, IP PBX, SIP-enabled PBX, or SBC is only the first part of integrating your telephony network with UM. You must configure those devices to work with UM. In both on-premises and hybrid deployments, you would need to deploy the required Client Access and Mailbox servers, and create and configure all necessary UM components. For Office 365 with hosted voice mail, you're not required to install and configure any server. The components allow you to make the connection from your telephony, circuit-switched network to your IP data network and to enable voice mail for the users in your organization. For details and supported telephony devices, see the following resources:
+Choosing the correct VoIP gateway, IP PBX, SIP-enabled PBX, or SBC is only the first part of integrating your telephony network with UM. You must configure those devices to work with UM. In both on-premises and hybrid deployments, you would need to deploy the required Client Access and Mailbox servers, and create and configure all necessary UM components. For Microsoft 365 or Office 365 with hosted voice mail, you're not required to install and configure any server. The components allow you to make the connection from your telephony, circuit-switched network to your IP data network and to enable voice mail for the users in your organization. For details and supported telephony devices, see the following resources:
 
 - [Telephony advisor for Exchange 2013](telephony-advisor-for-exchange-2013-exchange-2013-help.md)
 
@@ -71,7 +71,7 @@ The Exchange UM routing component handles voice mail routing between Lync Server
 
 - Queues missed call notifications, and then uploads them to the Exchange server when the WAN link is restored.
 
-For more information about Microsoft Lync Server, see [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?LinkId=265752).
+For more information about Microsoft Lync Server, see [Microsoft Lync Server](https://docs.microsoft.com/lyncserver/microsoft-lync-server-2013).
 
 > [!CAUTION]
 > When you're integrating Unified Messaging and Lync Server in an on-premises or hybrid deployment, missed call notifications aren't available to users who have a mailbox located on Exchange 2007 or Exchange 2010 Mailbox servers. A missed call notification is generated when a user disconnects before the call is sent to a Mailbox server.

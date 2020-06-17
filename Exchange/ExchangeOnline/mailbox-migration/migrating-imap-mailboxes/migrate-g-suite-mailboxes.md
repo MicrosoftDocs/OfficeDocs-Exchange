@@ -34,7 +34,7 @@ manager: serdars
 
 [Migrate your IMAP mailboxes to Office 365](migrating-imap-mailboxes.md) gives you an overview of the migration process. Read it first and when you're familiar with the contents of that article, return to this topic to learn how to migrate mailboxes from G Suite (formerly known as Google Apps) Gmail to Office 365. You must be a global admin in Office 365 to complete IMAP migration steps.
 
-Looking for Windows PowerShell commands? See [User PowerShell to perform an IMAP migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkID=615256).
+Looking for Windows PowerShell commands? See [User PowerShell to perform an IMAP migration to Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365).
 
 Want to migrate other types of IMAP mailboxes? See [Migrate other types of IMAP mailboxes to Office 365](migrate-other-types-of-imap-mailboxes.md) .
 
@@ -42,7 +42,7 @@ Want to migrate other types of IMAP mailboxes? See [Migrate other types of IMAP 
 
 You can use the setup wizard in the Microsoft 365 admin center for an IMAP migration. See [IMAP migration in the Microsoft 365 admin center](imap-migration-in-the-admin-center.md) for instructions.
 
- **IMPORTANT**: IMAP migration will only migrate emails, not calendar and contact information. Users can import their own email, contacts, and other mailbox information to Office 365. See [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e) to learn how.
+ **IMPORTANT**: IMAP migration will only migrate emails, not calendar and contact information. Users can import their own email, contacts, and other mailbox information to Office 365. See [Migrate email and contacts to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
 
 Before Office 365 can connect to Gmail or G Suites, all the account owners need to create an app password to access their account. This is because Google considers Outlook to be a less secure app and will not allow a connection to it with a password alone. For instructions, see [Prepare your G Suite account for connecting to Outlook and Office 365](prepare-gmail-or-g-suite-accounts.md). You'll also need to make sure your [G Suite users can turn on 2-step verification](enable-2-step-verification-for-google-apps.md).
 
@@ -55,17 +55,17 @@ The following list contains the migration tasks given in the order in which you 
 In this task, you'll first verify to Office 365 that you own the domain you used for your G Suite accounts.
 
 > [!NOTE]
-> Another option is to use the *your company name*.onmicrosoft.com domain that is included with your Office 365 subscription instead of using your own custom domain. In that case, you can just add users as described in [Add users individually or in bulk to Office 365 - Admin Help](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec) and omit this task. Most people, however, prefer to use their own domain.
+> Another option is to use the *your company name*.onmicrosoft.com domain that is included with your Office 365 or Microsoft 365 subscription instead of using your own custom domain. In that case, you can just add users as described in [Add users individually or in bulk to Office 365 - Admin Help](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) and omit this task. Most people, however, prefer to use their own domain.
 
-Domain verification is a task you will go through as you setup Office 365. During the setup Office 365 setup wizard provides you with a TXT record you will add at your domain host provider. See [Add a domain to Office 365](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611) for the steps to complete in Microsoft 365 admin center, and choose a domain registrar from the two following options to see how to complete add the TXT record that your DNS host provider.
+Domain verification is a task you will go through as you setup Office 365. During the setup Office 365 setup wizard provides you with a TXT record you will add at your domain host provider. See [Add a domain to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) for the steps to complete in Microsoft 365 admin center, and choose a domain registrar from the two following options to see how to complete add the TXT record that your DNS host provider.
 
-- **Your current DNS host provider is Google**: If you purchased your domain from Google and they are the DNS hosting provider, follow these instructions: [Create DNS records when your domain is managed by Google (Go Daddy)](https://support.office.com/article/f1369214-9880-48c0-923c-d28eb795ef7b).
+- **Your current DNS host provider is Google**: If you purchased your domain from Google and they are the DNS hosting provider, follow these instructions: [Create DNS records when your domain is managed by Google (Go Daddy)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-godaddy).
 
-- **You purchased your domain from another domain registrar**: If you purchased your domain from a different company, we provide [instructions](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) for many popular domain hosting providers.
+- **You purchased your domain from another domain registrar**: If you purchased your domain from a different company, we provide [instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) for many popular domain hosting providers.
 
 ### Step 2: Add users to Office 365
 
-You can add your users either [one at a time](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec), or [several users at a time](https://support.office.com/article/1f5767ed-e717-4f24-969c-6ea9d412ca88). When you add users you also add licenses to them. Each user has to have a mailbox on Office 365 before you can migrate email to it. Each user also needs a license that includes an Exchange Online plan to use his or her mailbox.
+You can add your users either [one at a time](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users), or [several users at a time](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time). When you add users you also add licenses to them. Each user has to have a mailbox on Office 365 before you can migrate email to it. Each user also needs a license that includes an Exchange Online plan to use his or her mailbox.
 
 > [!IMPORTANT]
 > At this point you have verified that you own the domain and created your G Suite users and mailboxes in Office 365 with your custom domain. Close the wizard at this step. Do not proceed to **Set up domain**, until your Gmail mailboxes are migrated to Office 365. You'll finish the setup steps in task 7, [Step 6: Update your DNS records to route Gmail directly to Office 365](#step-6-update-your-dns-records-to-route-gmail-directly-to-office-365).
@@ -88,9 +88,9 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
     ![User details in the Google apps admin center](../media/b3362fb5-c33f-465d-84bb-8555f0e310b4.PNG)
 
-4. [Sign in to the Microsoft 365 admin center](https://portal.office.com/admin/default.aspx), and go to **Users** \> **Active users**. Keep an eye on the **username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center window open, too.
+4. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and go to **Users** \> **Active users**. Keep an eye on the **Username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center window open, too.
 
-    ![username column in the Microsoft 365 admin center.](../media/4cb16a9d-43b8-4ca8-b37a-baf0847f1aa6.JPG)
+    ![Username column in the Microsoft 365 admin center.](../media/4cb16a9d-43b8-4ca8-b37a-baf0847f1aa6.JPG)
 
 5. Start Excel.
 
@@ -208,17 +208,17 @@ You use a migration batch to migrate groups of Gmail mailboxes to Office 365 at 
 
 - In the Exchange admin center, go to **Recipients** \> **Migration**. Verify that the batch is displayed in the migration dashboard. If the migration completed successfully, the status is **Synced**.
 
-- If this task fails, check the associated Mailbox status reports for specific errors, and double-check that your migration file has the correct Office 365 email address in the **EmailAddress** column.
+- If this task fails, check the associated Mailbox status reports for specific errors, and double-check that your migration file has the correct Microsoft 365 or Office 365 email address in the **EmailAddress** column.
 
 #### Verify a successful mailbox migration to Office 365
 
 - Ask your migrated users to complete the following tasks:
 
-  - Go to the [Office 365 sign-in page](https://go.microsoft.com/fwlink/p/?LinkId=394559), and sign in with your username and temporary password.
+  - Go to the [Office 365 sign-in page](https://login.microsoftonline.com), and sign in with your username and temporary password.
 
   - Update your password, and set your time zone. It's important that you select the correct time zone to make sure your calendar and email settings are correct.
 
-  - When Outlook on the web (formerly known as Outlook Web App) opens, send an email message to another Office 365 user to verify that you can send email.
+  - When Outlook on the web (formerly known as Outlook Web App) opens, send an email message to another Microsoft 365 or Office 365 user to verify that you can send email.
 
   - Choose **Outlook**, and check that your email messages and folders are all there.
 
@@ -234,13 +234,13 @@ The place to change the TTL setting is on your email system's mail exchanger rec
 
 Don't worry if you skip this task. It might take longer for email to start showing up in your new Office 365 mailboxes, but it will get there.
 
-If you need some help configuring your DNS settings, see [Create DNS records for Office 365 when you manage your DNS records](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx).
+If you need some help configuring your DNS settings, see [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ### Step 6: Update your DNS records to route Gmail directly to Office 365
 
 Email systems use a DNS record called an MX record to figure out where to deliver email. During the email migration process, your MX record was pointing to your Gmail system. Now that you've completed your email migration to Office 365, it's time to point your MX record to Office 365. After you change your MX record following these steps, email sent to users at your custom domain is delivered to Office 365 mailboxes
 
-For many DNS providers, there are specific instructions to change your MX record, see [Create DNS records for Office 365 when you manage your DNS records](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx) for instructions. If your DNS provider isn't included, or if you want to get a sense of the general directions, general MX record instructions are provided as well. See [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166) for instructions.
+For many DNS providers, there are specific instructions to change your MX record, see [Create DNS records for Office 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) for instructions. If your DNS provider isn't included, or if you want to get a sense of the general directions, general MX record instructions are provided as well. See [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) for instructions.
 
 1. Sign in to Office 365 with your work or school account.
 

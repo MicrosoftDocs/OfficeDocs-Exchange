@@ -21,7 +21,7 @@ Use this procedure to remove an address book policy (ABP).
 
 - Estimated time to complete: Less than 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address book policies" entry in the [Email Address and Address Book Permissions](https://technet.microsoft.com/library/1c1de09d-16ef-4424-9bfb-eb7edffbc8c2.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address book policies" entry in the [Email address and address book permissions](email-address-and-address-book-permissions-exchange-2013-help.md) topic.
 
 - You can't remove an ABP if it's assigned to a user's mailbox or to a soft-deleted mailbox. To determine if an ABP is assigned to a user, run the following Shell command:
 
@@ -52,4 +52,4 @@ This example removes the ABP ABP_TailspinToys.
 Remove-AddressBookPolicy -Identity "ABP_TailspinToys"
 ```
 
-For detailed syntax and parameter information, see [Remove-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-addressbookpolicy).
+For detailed syntax and parameter information, see [Remove-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-addressbookpolicy).

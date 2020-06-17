@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 3269ef55-dabe-4710-9921-a3753c66b2c9
 description: "Learn how to fix email issues for error code 5.7.124 in Exchange Online (the sender isn't in the recipient group's allowed senders list)."
 ---
@@ -28,7 +29,7 @@ It's frustrating when you get an error after sending an email message. This topi
 
 ## I got this bounce message. How do fix I it?
 
-Typically, members of a group can send messages to the group. If the group is in your Exchange Online organization, you can try to join the group in Outlook or Outlook on the web (formerly known as Outlook Web App). For instructions, see [Join a group in Outlook](https://support.office.com/article/2e59e19c-b872-44c8-ae84-0acc4b79c45d).
+Typically, members of a group can send messages to the group. If the group is in your Exchange Online organization, you can try to join the group in Outlook or Outlook on the web (formerly known as Outlook Web App). For instructions, see [Join a group in Outlook](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d).
 
 You might have to wait for the group's owner to approve your request to join the group before you can successfully send messages to it. If the group isn't in your organization, or if the group doesn't allow requests to join, then you'll need to ask the group owner to add you to the allowed senders list. You'll find instructions for finding the group owner in the NDR.
 
@@ -77,15 +78,15 @@ Groups with more than 5,000 members have the following restrictions automaticall
 
 - Senders to the group must be members of the group.
 
-- Messages sent to the group require the approval of a moderator. To configure moderation for a group, see [Configure a moderated recipient in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=613634).
+- Messages sent to the group require the approval of a moderator. To configure moderation for a group, see [Configure a moderated recipient in Exchange Online](../../recipients-in-exchange-online/configure-a-moderated-recipient.md).
 
-- Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see the "Distribution group limits" section in [Exchange Online Limits](https://go.microsoft.com/fwlink/p/?LinkId=613633).
+- Large messages can't be sent to the group. However, senders of large messages will receive a different NDR. For more information about large messages, see [Distribution group limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#distribution-group-limits).
 
 ## Still need help with error code 550 5.7.124?
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://admin.microsoft.com/AdminPortal/Home#/support
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 
@@ -93,4 +94,4 @@ Groups with more than 5,000 members have the following restrictions automaticall
 
 [Email non-delivery reports in Exchange Online](non-delivery-reports-in-exchange-online.md)
 
-[Create and manage distribution groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=613635).
+[Create and manage distribution groups in Exchange Online](../../recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups.md).

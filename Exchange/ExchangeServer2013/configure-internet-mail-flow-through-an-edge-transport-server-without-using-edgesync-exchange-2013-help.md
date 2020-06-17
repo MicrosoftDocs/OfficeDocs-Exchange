@@ -73,14 +73,14 @@ To create a Send connector that's configured to send messages to the Internet, r
 New-SendConnector -Name "To Internet" -AddressSpaces * -Usage Internet -DNSRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/aa998936\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/New-SendConnector).
 
 ## Step 2: Create a Send connector configured to send messages to the Exchange organization
 
 Use the **New-SendConnector** cmdlet to create a Send connector.
 
 > [!NOTE]
-> Before you create the Send connector, you first need to run the <STRONG>Get-Credential</STRONG> command to save the user name and password you will use in a temporary variable. You need to do this because the <STRONG>New-SendConnector</STRONG> cmdlet will not accept user credentials in plain text.
+> Before you create the Send connector, you first need to run the <STRONG>Get-Credential</STRONG> command to save the username and password you will use in a temporary variable. You need to do this because the <STRONG>New-SendConnector</STRONG> cmdlet will not accept user credentials in plain text.
 
 This Send connector requires the following configuration:
 
@@ -96,7 +96,7 @@ This Send connector requires the following configuration:
 
 - **Smart host authentication methods**: Basic authentication over TLS
 
-- **Smart host authentication credentials**: Credentials for the user account in the internal domain. You first need to save the user name and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
+- **Smart host authentication credentials**: Credentials for the user account in the internal domain. You first need to save the username and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
 
 To create a Send connector configured to send messages to the Exchange organization, run the following commands.
 
@@ -105,7 +105,7 @@ $MailboxCredentials = Get-Credential
 New-SendConnector -Name "To Internal Org" -Usage Internal -AddressSpaces *.contoso.com -DNSRoutingEnabled $false -SmartHosts mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $MailboxCredentials
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/aa998936\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/New-SendConnector).
 
 ## Step 3: Modify the default Receive connector to only accept messages from the Internet
 
@@ -121,7 +121,7 @@ To modify the default Receive connector to only accept messages from the Interne
 Set-ReceiveConnector "Default internal Receive connector Edge01" -Name "From Internet" -Bindings 10.1.1.1:25
 ```
 
-For detailed syntax and parameter information, see [Set-ReceiveConnector](https://technet.microsoft.com/library/bb125140\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/Set-ReceiveConnector).
 
 ## Step 4: Create a Receive connector configured to only accept messages from the Exchange organization
 
@@ -143,7 +143,7 @@ To create a Receive connector configured to only accept messages from the Exchan
 New-ReceiveConnector -Name "From Internal Org" -Usage Internal -AuthMechanism TLS,BasicAuth,BasicAuthRequireTLS,ExchangeServer -Bindings 10.1.1.2:25 -RemoteIPRanges 192.168.5.10,192.168.5.20
 ```
 
-For detailed syntax and parameter information, see [New-ReceiveConnector](https://technet.microsoft.com/library/bb125139\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/New-ReceiveConnector).
 
 ## How do you know these steps worked?
 
@@ -178,7 +178,7 @@ This Send connector requires the following configuration:
 
 - **Smart host authentication method**: Basic authentication over TLS.
 
-- **Smart host authentication credentials**: Credentials for the user account on the Edge Transport server. You first need to save the user name and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
+- **Smart host authentication credentials**: Credentials for the user account on the Edge Transport server. You first need to save the username and password in a temporary variable, because the **New-SendConnector** cmdlet will not accept user credentials in plain text.
 
 To create a Send connector configured to send outgoing messages to the Edge Transport server, run the following commands.
 
@@ -187,7 +187,7 @@ $EdgeCredentials = Get-Credential
 New-SendConnector -Name "To Edge" -Usage Internal -AddressSpaces * -DNSRoutingEnabled $false -SmartHosts edge01.contoso.com -SourceTransportServers mbxserver01.contoso.com,mbxserver02.contoso.com -SmartHostAuthMechanism BasicAuthRequireTLS -AuthenticationCredential $EdgeCredentials
 ```
 
-For detailed syntax and parameter information, see [New-SendConnector](https://technet.microsoft.com/library/aa998936\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-SendConnector](https://docs.microsoft.com/powershell/module/exchange/New-SendConnector).
 
 ## How do you know this step worked?
 

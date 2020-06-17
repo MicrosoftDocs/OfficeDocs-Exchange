@@ -28,7 +28,7 @@ Policy Tips are informative notices that are displayed to email senders while th
 
 - Estimated time to complete each procedure: 30 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Data loss prevention (DLP)" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - Policy Tips will only show up for email senders when the following conditions are met:
 
@@ -213,7 +213,7 @@ The following example creates a new English-language Policy Tip that will block 
 New-PolicyTipConfig -Name en\Reject -Value "This message appears to contain restricted content and will not be delivered."
 ```
 
-For detailed syntax and parameter information, see [New-PolicyTipConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-policytipconfig).
+For detailed syntax and parameter information, see [New-PolicyTipConfig](https://docs.microsoft.com/powershell/module/exchange/new-policytipconfig).
 
 ### Use Exchange Online PowerShell to modify custom Policy Tip notification text
 
@@ -223,7 +223,7 @@ The following example modifies an existing English-language, notify-only Policy 
 Set-PolicyTipConfig en\NotifyOnly "Sending bank account numbers in email is not recommended."
 ```
 
-For detailed syntax and parameter information, see [Set-PolicyTipConfig](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-policytipconfig).
+For detailed syntax and parameter information, see [Set-PolicyTipConfig](https://docs.microsoft.com/powershell/module/exchange/set-policytipconfig).
 
 ### How do you know this worked?
 
@@ -242,8 +242,6 @@ To verify that you have successfully created custom Policy Tip text, do the foll
 [Data loss prevention](data-loss-prevention.md)
 
 [Policy Tips](policy-tips.md)
-
-[Mail flow rules in Exchange Server](https://technet.microsoft.com/library/c3d2031c-fb7b-4866-8ae1-32928d0138ef.aspx)
 
 [Mail flow rules (transport rules) in Exchange Online](../../security-and-compliance/mail-flow-rules/mail-flow-rules.md)
 

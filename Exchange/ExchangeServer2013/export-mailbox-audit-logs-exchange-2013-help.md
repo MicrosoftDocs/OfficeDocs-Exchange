@@ -38,7 +38,7 @@ You have to enable mailbox audit logging on each mailbox that you want to audit 
 
 You have to enable mailbox audit logging for each mailbox that you want to run a non-owner mailbox access report for. If mailbox audit logging isn't enabled for a mailbox, you won't get any results for that mailbox when you export the mailbox audit log.
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox audit logging" entry in the [Messaging policy and compliance permissions](messaging-policy-and-compliance-permissions-exchange-2013-help.md) topic.
 
 To enable mailbox audit logging for a single mailbox, run the command in the Shell.
 
@@ -60,7 +60,7 @@ $UserMailboxes | ForEach {Set-Mailbox $_.Identity -AuditEnabled $true}
 
 When you export the mailbox audit log, Microsoft Exchange attaches the audit log, which is an XML file, to an email message. However, Outlook Web App blocks XML attachments by default. To access the exported audit log, you have to use Microsoft Outlook or configure Outlook Web App to allow XML attachments.
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App mailbox policies" entry in the [Client Access Permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App mailbox policies" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
 Perform the following procedures to allow XML attachments in Outlook Web App. In Exchange Server 2013, use the value `Default` for the _Identity_ parameter.
 
@@ -106,7 +106,7 @@ To verify that you've successfully configured mailbox audit logging, do the foll
 
 ## Export the mailbox audit log
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
 1. In the Exchange admin center (EAC), go to **Compliance Management** \> **Auditing**.
 
@@ -140,7 +140,7 @@ Sign in to the mailbox where the mailbox audit log was sent. If you've successfu
 
 ## View the mailbox audit log
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
 To save and view the SearchResult.xml file:
 
@@ -187,7 +187,7 @@ To save and view the SearchResult.xml file:
   |:-----|:-----|
   |Owner|The owner of the mailbox that was accessed by a non-owner.|
   |LastAccessed|The date and time when the mailbox was accessed.|
-  |Operation|The action that was performed by the non-owner. For more information, see the "What gets logged in the mailbox audit log?" section in [Run a Non-Owner Mailbox Access Report](https://technet.microsoft.com/library/18f52b7e-cd60-4a2f-b8a3-0c08747635bb.aspx).|
+  |Operation|The action that was performed by the non-owner. For more information, see the "What gets logged in the mailbox audit log?" section in [Run a non-owner mailbox access report in Exchange 2013](non-owner-mailbox-access-report-exchange-2013-help.md).|
   |OperationResult|Whether the action performed by the non-owner succeeded or failed.|
   |LogonType|The type of non-owner access. These include administrator, delegate, and external.|
   |FolderPathName|The name of the folder that contained the message that was affected by the non-owner.|

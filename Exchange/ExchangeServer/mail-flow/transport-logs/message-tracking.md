@@ -41,7 +41,7 @@ By default, the message tracking log files exist in `%ExchangeInstallPath%Transp
 |**File name**|**Servers**|**Description**|
 |:-----|:-----|:-----|
 | `MSGTRK`|Mailbox servers and Edge Transport servers|Log files for the Transport service.|
-| `MSGTRKMA`|Mailbox servers|Log files for the approvals and rejections in moderated transport. For more information, see [Moderated Transport](https://technet.microsoft.com/library/43a89f71-8002-4cb0-b3c8-1c2b2597f227.aspx).|
+| `MSGTRKMA`|Mailbox servers|Log files for the approvals and rejections in moderated transport. For more information, see [Manage message approval](https://docs.microsoft.com/Exchange/manage-message-approval-exchange-2013-help).|
 | `MSGTRKMD`|Mailbox servers|Log files for messages delivered to mailboxes by the Mailbox Transport Delivery service.|
 | `MSGTRKMS`|Mailbox servers|Log files for messages sent from mailboxes by the Mailbox Transport Submission service.|
 
@@ -108,7 +108,7 @@ The message tracking log stores each message event on a single line in the log. 
 |**tenant-id**|This field isn't used in on-premises Exchange organizations.|
 |**original-client-ip**|The IPv4 or IPv6 address of the original client.|
 |**original-server-ip**|The IPv4 or IPv6 address of the original server.|
-|**custom-data**|This field contains data related to specific event types. For example, the Transport Rule agent uses this field to record the GUID of the mail flow rule (also known as a transport rule) or DLP policy that acted on the message. For more information about these Transport Rule agent values, see the "Data logging" section in the [DLP Policy Detection Management](https://technet.microsoft.com/library/5c3f1cf6-d8c7-4d83-bb24-641ea9d50cbc.aspx) topic,|
+|**custom-data**|This field contains data related to specific event types. For example, the Transport Rule agent uses this field to record the GUID of the mail flow rule (also known as a transport rule) or DLP policy that acted on the message. For more information, see [View DLP policy detection reports](https://docs.microsoft.com/exchange/view-dlp-policy-detection-reports-exchange-2013-help).|
 |**transport-traffic-type**|In on-premises Exchange, this field is blank or has the value `Email`.|
 |**log-id**|A unique identifier for a row in the in the message tracking log. This field isn't important in on-premises Exchange organizations.|
 |**schema-version**|Version number of the Exchange server that created the entry in the message tracking log. The value uses the format `15.01.nnnn.nnn`.|
@@ -137,9 +137,9 @@ Various event types in the **event-id** field are used to classify the message e
 |**HARECEIVE**|A shadow message was received by the server in the local database availability group (DAG) or Active Directory site.|
 |**HAREDIRECT**|A shadow message was created.|
 |**HAREDIRECTFAIL**|A shadow message failed to be created. The details are stored in the **source-context** field.|
-|**INITMESSAGECREATED**|A message was sent to a moderated recipient, so the message was sent to the arbitration mailbox for approval. For more information, see [Moderated Transport](https://technet.microsoft.com/library/43a89f71-8002-4cb0-b3c8-1c2b2597f227.aspx).|
+|**INITMESSAGECREATED**|A message was sent to a moderated recipient, so the message was sent to the arbitration mailbox for approval. For more information, see [Manage message approval](https://docs.microsoft.com/Exchange/manage-message-approval-exchange-2013-help).|
 |**LOAD**|A message was successfully loaded at boot.|
-|**MODERATIONEXPIRE**|A moderator for a moderated recipient never approved or rejected the message, so the message expired. For more information about moderated recipients, see [Moderated Transport](https://technet.microsoft.com/library/43a89f71-8002-4cb0-b3c8-1c2b2597f227.aspx).|
+|**MODERATIONEXPIRE**|A moderator for a moderated recipient never approved or rejected the message, so the message expired. For more information about moderated recipients, see [Manage message approval](https://docs.microsoft.com/Exchange/manage-message-approval-exchange-2013-help).|
 |**MODERATORAPPROVE**|A moderator for a moderated recipient approved the message, so the message was delivered to the moderated recipient.|
 |**MODERATORREJECT**|A moderator for a moderated recipient rejected the message, so the message wasn't delivered to the moderated recipient.|
 |**MODERATORSALLNDR**|All approval requests sent to all moderators of a moderated recipient were undeliverable, and resulted in non-delivery reports (also known as NDRs or bounce messages).|
@@ -171,7 +171,7 @@ The values in the **source** field in the message tracking log indicate the tran
 |:-----|:-----|
 |**ADMIN**|The event source was human intervention. For example, an administrator used Queue Viewer to delete a message, or submitted message files using the Replay directory.|
 |**AGENT**|The event source was a transport agent.|
-|**APPROVAL**|The event source was the approval framework that's used with moderated recipients. For more information, see [Moderated Transport](https://technet.microsoft.com/library/43a89f71-8002-4cb0-b3c8-1c2b2597f227.aspx).|
+|**APPROVAL**|The event source was the approval framework that's used with moderated recipients. For more information, see [Manage message approval](https://docs.microsoft.com/Exchange/manage-message-approval-exchange-2013-help).|
 |**BOOTLOADER**|The event source was unprocessed messages that exist on the server at boot time. This is related to the **LOAD** event type.|
 |**DNS**|The event source was DNS.|
 |**DSN**|The event source was a delivery status notification (also known as a DSN, bounce message, non-delivery report, or NDR).|
@@ -179,7 +179,7 @@ The values in the **source** field in the message tracking log indicate the tran
 |**MAILBOXRULE**|The event source was an Inbox rule. For more information, see [Inbox rules](https://go.microsoft.com/fwlink/p/?LinkID=285479).|
 |**MEETINGMESSAGEPROCESSOR**|The event source was the meeting message processor, which updates calendars based on meeting updates.|
 |**ORAR**|The event source was an Originator Requested Alternate Recipient (ORAR). You can enable or disable support for ORAR on Receive connectors using the _OrarEnabled_ parameter on the **New-ReceiveConnector** or **Set-ReceiveConnector** cmdlets.|
-|**PICKUP**|The event source was the Pickup directory. For more information, see [Pickup Directory and Replay Directory](https://technet.microsoft.com/library/ae191700-953f-411c-906f-dc90feec3d5a.aspx).|
+|**PICKUP**|The event source was the Pickup directory. For more information, see [Pickup Directory and Replay Directory](https://docs.microsoft.com/exchange/pickup-directory-and-replay-directory-exchange-2013-help).|
 |**POISONMESSAGE**|The event source was the poison message identifier. For more information about poison messages and the poison message queue, see [Queues and messages in queues](../../mail-flow/queues/queues.md)|
 |**PUBLICFOLDER**|The event source was a mail-enabled public folder.|
 |**QUEUE**|The event source was a queue.|

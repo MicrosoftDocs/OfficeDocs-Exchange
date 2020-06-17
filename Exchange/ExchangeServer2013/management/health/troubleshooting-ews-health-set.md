@@ -67,7 +67,7 @@ EWS is monitored by using the following probes and monitors.
 </tbody>
 </table>
 
-This probe performs a full EWS logon from the Client Access server (CAS) to a Mailbox server by using a monitoring account. This probe calls the **GetFolder** method on EWS. For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
+This probe performs a full EWS logon from the Client Access server (CAS) to a Mailbox server by using a monitoring account. This probe calls the **GetFolder** method on EWS. For more information about probes and monitors, see [Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help).
 
 ## Common issues
 
@@ -167,7 +167,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 7. If the issue still exits, review the protocol log files on the CA and Mailbox servers. The protocol logs for the CAS reside in the *\<exchange server installation directory\>\\Logging\\HttpProxy\\Ews* folder. On the Mailbox server, the logs reside in the *\<exchange server installation directory\>\\Logging\\Ews* folder.
 
-8. Create a test user account, and then log on by running the test user account against the given CAS. For example, log on by using: https:// \<servername\>/ews/exchange.asmx. If the issue still exists, try a different CAS to determine whether the problem is scoped to that CAS and not to the Mailbox server. If the test user name passes, an issue may affect the specific Mailbox database or Mailbox server on which the monitoring mailbox is located. Try to repeat this step by using a test account that exists in the Mailbox database.
+8. Create a test user account, and then log on by running the test user account against the given CAS. For example, log on by using: https:// \<servername\>/ews/exchange.asmx. If the issue still exists, try a different CAS to determine whether the problem is scoped to that CAS and not to the Mailbox server. If the test username passes, an issue may affect the specific Mailbox database or Mailbox server on which the monitoring mailbox is located. Try to repeat this step by using a test account that exists in the Mailbox database.
 
 9. Check network connectivity between the CA and Mailbox server.
 
@@ -199,10 +199,10 @@ It's possible that the service recovered after it issued the alert. Therefore, w
     Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $false
     ```
 
-16. If the probe is still failing, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+16. If the probe is still failing, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and then select **Servers** \> **Exchange Server**. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## For More Information
 
-[Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
+[Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)
 
-[What's new in Exchange 2013](https://technet.microsoft.com/library/jj150540\(v=exchg.150\))
+[What's new in Exchange 2013](https://docs.microsoft.com/exchange/what-s-new-in-exchange-2013-exchange-2013-help)

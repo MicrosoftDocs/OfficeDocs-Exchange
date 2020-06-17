@@ -30,9 +30,9 @@ Looking for the Exchange Server version of this topic? See [Use the Exchange Man
 
 ## What do you need to know before you begin?
 
-- You need to be a member of the Organization Management role group in Exchange Online (or an Office 365 global administrator) before you can perform the procedure in this topic.
+- You need to be a member of the Organization Management role group in Exchange Online (or a global administrator) before you can perform the procedure in this topic.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
 
@@ -44,7 +44,7 @@ To enable ABP routing in the Exchange Online organization, run the following com
 Set-TransportConfig -AddressBookPolicyRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-transportconfig).
+For detailed syntax and parameter information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/set-transportconfig).
 
 ### How do you know this worked?
 

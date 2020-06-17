@@ -70,7 +70,7 @@ The CSV file can contain up to 50,000 rows, one row for each user, and can be as
 If you plan to migrate lots of users, decide which ones to include in each batch. For example, if you have 10,000 accounts to migrate, you could run four batches with 2,500 users each. You could also divide the batches alphabetically; by user type, such as faculty, students, and alumni; by class, such as freshman, sophomore, junior, and senior; or in other ways that meet your organization's needs.
 
 > [!TIP]
-> One strategy is to create Office 365 mailboxes and migrate email for the same group of users. For example, if you import 100 new users to your Office 365 organization, create a migration batch for those same 100 users. This is an effective way to organize and manage your migration from an on-premises messaging system to Office 365.
+> One strategy is to create Office 365 mailboxes and migrate email for the same group of users. For example, if you import 100 new users to your Microsoft 365 or Office 365 organization, create a migration batch for those same 100 users. This is an effective way to organize and manage your migration from an on-premises messaging system to Office 365.
 
 ## Provide user or administrator credentials
 <a name="BK_Creds"> </a>

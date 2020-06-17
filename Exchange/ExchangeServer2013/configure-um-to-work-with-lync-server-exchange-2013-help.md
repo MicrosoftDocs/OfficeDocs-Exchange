@@ -37,7 +37,7 @@ For additional management tasks related to integrating Lync Server and Unified M
 
 - Estimated time to complete: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions Cmdlets" entry in the [Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\)) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see [Unified Messaging permissions](unified-messaging-permissions-exchange-2013-help.md).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

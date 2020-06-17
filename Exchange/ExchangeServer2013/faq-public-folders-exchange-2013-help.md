@@ -60,7 +60,7 @@ You can force a delta sync to occur before finalization (prior to locking the so
 Resume-PublicFolderMigrationRequest \PublicFolderMigration
 ```
 
-For detailed syntax and parameter information, see [Resume-PublicFolderMigrationRequest](https://technet.microsoft.com/library/jj218689\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Resume-PublicFolderMigrationRequest](https://docs.microsoft.com/powershell/module/exchange/Resume-PublicFolderMigrationRequest).
 
 ## For the migration of a geo-distributed hierarchy, how can I make sure that the public folders are created in the location nearest to the target users?
 
@@ -111,7 +111,7 @@ Run the following command:
 Get-OrganizationConfig | Format-List RootPublicFolderMailbox
 ```
 
-For detailed syntax and parameter information, see [Get-OrganizationConfig](https://technet.microsoft.com/library/aa997571\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig).
 
 ## How can I create content mailboxes for public folders using Exchange Management Shell cmdlets?
 
@@ -129,11 +129,11 @@ There is no database-level setting in Exchange 2013. Exchange 2013 has a mailbox
 
 ## How are public folder metric tools being used in Exchange 2013?
 
-In Exchange 2013, you can use [Get-PublicFolderStatistics](https://technet.microsoft.com/library/aa998663\(v=exchg.150\)) and [Get-PublicFolderItemStatistics](https://technet.microsoft.com/library/ee332344\(v=exchg.150\)) cmdlets to get public folder metrics data. This is the same solution that we had in Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
+In Exchange 2013, you can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderStatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderItemStatistics) cmdlets to get public folder metrics data. This is the same solution that we had in Exchange 2010, so nothing has changed here. Public folders don't require additional reporting add-ons.
 
 ## Can public folders distinguish between internal versus third-party access to public folders?
 
-In Exchange 2013, public folder permissions are managed by using Role Based Access Control (RBAC). Access control lists (ACLs) aren't used in Exchange 2013. You can use [Get-PublicFolderStatistics](https://technet.microsoft.com/library/aa998663\(v=exchg.150\)) and [Get-PublicFolderItemStatistics](https://technet.microsoft.com/library/ee332344\(v=exchg.150\)) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
+In Exchange 2013, public folder permissions are managed by using Role Based Access Control (RBAC). Access control lists (ACLs) aren't used in Exchange 2013. You can use [Get-PublicFolderStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderStatistics) and [Get-PublicFolderItemStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderItemStatistics) cmdlets to keep track of accounts that are performing administrative tasks and then audit access accordingly. To learn more about RBAC, see [Understanding Role Based Access Control](understanding-role-based-access-control-exchange-2013-help.md).
 
 ## Does mailbox audit logging work against public folders?
 
@@ -153,7 +153,7 @@ Just like in previous versions of Exchange, you can set retention limits on item
 
 ## Can you specify which users can use a specific public folder mailbox?
 
-In Exchange 2007 and Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)) cmdlet with the *DefaultPublicFolderMailbox* parameter.
+In Exchange 2007 and Exchange 2010, you could specify which users had access to specific public folders. In Exchange 2013, you can set the default public folder mailbox per user. To do so, run the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox) cmdlet with the *DefaultPublicFolderMailbox* parameter.
 
 ```powershell
 Set-Mailbox -Identity kweku@contoso.com -DefaultPublicFolderMailbox "PF_Administration"

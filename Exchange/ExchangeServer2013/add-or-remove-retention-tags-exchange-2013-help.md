@@ -35,9 +35,9 @@ For more information about retention tags, see [Retention tags and retention pol
 
 - Estimated time to completion: 10 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Messaging records management" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-- Retention tags aren't applied to a mailbox until they're linked to a retention policy and the Managed Folder Assistant processes the mailbox. To start the Managed Folder Assistant so that it processes a mailbox, see [Configure and run the Managed Folder Assistant in Exchange 2016](https://technet.microsoft.com/library/9fcfb9b6-bd24-4218-a163-bc599cd5476a.aspx).
+- Retention tags aren't applied to a mailbox until they're linked to a retention policy and the Managed Folder Assistant processes the mailbox. To start the Managed Folder Assistant so that it processes a mailbox, see [Configure the Managed Folder Assistant](configure-the-managed-folder-assistant-exchange-2013-help.md)).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -83,11 +83,11 @@ $TagList.Remove((Get-RetentionPolicyTag 'VPs-Inbox').DistinguishedName)
 Set-RetentionPolicy "RetPolicy-VPs" -RetentionPolicyTagLinks $TagList
 ```
 
-For detailed syntax and parameter information, see [Set-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentionpolicy) and [Get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentionpolicy).
+For detailed syntax and parameter information, see [Set-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentionpolicy) and [Get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentionpolicy).
 
 ## How do you know this worked?
 
-To verify that you have successfully added or removed a retention tag from a retention policy, use the [Get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentionpolicy) cmdlet to verify the _RetentionPolicyTagLinks_ property.
+To verify that you have successfully added or removed a retention tag from a retention policy, use the [Get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentionpolicy) cmdlet to verify the _RetentionPolicyTagLinks_ property.
 
 This example use the **Get-RetentionPolicy** cmdlet to retrieve retention tags added to the Default MRM Policy and pipes them to the **Format-Table** cmdlet to output only the name property of each tag.
 

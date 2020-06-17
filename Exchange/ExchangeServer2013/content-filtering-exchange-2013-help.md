@@ -20,7 +20,7 @@ _**Applies to:** Exchange Server 2013_
 > [!NOTE]
 > On November 1, 2016, Microsoft stopped producing spam definition updates for the SmartScreen filters in Exchange and Outlook. The existing SmartScreen spam definitions will be left in place, but their effectiveness will likely degrade over time. For more information, see <A href="https://go.microsoft.com/fwlink/p/?linkid=835894">Deprecating support for SmartScreen in Outlook and Exchange</A>.
 
-The Content Filter agent evaluates inbound email messages and assesses the probability that an inbound message is legitimate or spam. Unlike many other filtering technologies, the Content Filter agent uses characteristics from a statistically significant sample of email messages. The inclusion of legitimate messages in this sample reduces the chance of mistakes. Because the Content Filter agent recognizes characteristics of legitimate messages and spam, its accuracy is increased. Updates to the Content Filter agent are available periodically through [Microsoft Update](https://go.microsoft.com/fwlink/p/?linkid=54836).
+The Content Filter agent evaluates inbound email messages and assesses the probability that an inbound message is legitimate or spam. Unlike many other filtering technologies, the Content Filter agent uses characteristics from a statistically significant sample of email messages. The inclusion of legitimate messages in this sample reduces the chance of mistakes. Because the Content Filter agent recognizes characteristics of legitimate messages and spam, its accuracy is increased. Updates to the Content Filter agent are available periodically through Microsoft Update.
 
 ## Using the Content Filter agent
 
@@ -76,6 +76,6 @@ You configure the Content Filter agent by using the Exchange Management Shell.
 
 The Content Filter agent depends on updates to determine whether a message can be delivered with confidence that it isn't spam. These updates contain data about phishing Web sites, Microsoft SmartScreen spam heuristics, and other Intelligent Message Filter updates. Content filter updates generally contain about 6 MB of data that's useful for longer periods of time than other anti-spam update data.
 
-Content filter updates are available from [Microsoft Update](https://go.microsoft.com/fwlink/p/?linkid=54836). The content filter update data is updated and available for download every two weeks.
+Content filter updates are available from Microsoft Update. The content filter update data is updated and available for download every two weeks.
 
 For more information about how to configure content filtering, see [Manage content filtering](manage-content-filtering-exchange-2013-help.md).

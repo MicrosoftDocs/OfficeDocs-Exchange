@@ -68,7 +68,7 @@ After using the **New-MailboxSearch** cmdlet to create an In-Place eDiscovery se
 
 - [Use the Shell to create an In-Place eDiscovery search](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/create-in-place-ediscovery-search)
 
-- [New-MailboxSearch](https://technet.microsoft.com/library/dd298064\(v=exchg.150\))
+- [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/New-MailboxSearch)
 
 For example, you would run the following command to start an eDiscovery search named *Fabrikam Investigation* to copy the search results to the specified discovery mailbox.
 

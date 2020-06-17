@@ -84,7 +84,7 @@ This example restores Pilar Pinilla's soft-deleted archive mailbox, which is ide
 New-MailboxRestoreRequest -SourceStoreMailbox dc35895a-a628-4bba-9aa9-650f5cdb9ae7 -SourceDatabase MBXDB02 -TargetMailbox pilarp@contoso.com -TargetIsArchive
 ```
 
-For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829875\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/New-MailboxRestoreRequest).
 
 ## How do you know this worked?
 
@@ -94,6 +94,6 @@ For more information, see:
 
 - [Manage mailbox restore requests](manage-mailbox-restore-requests-exchange-2013-help.md)
 
-- [Get-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829907\(v=exchg.150\))
+- [Get-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxRestoreRequest)
 
-- [Get-MailboxRestoreRequestStatistics](https://technet.microsoft.com/library/ff829912\(v=exchg.150\))
+- [Get-MailboxRestoreRequestStatistics](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxRestoreRequestStatistics)

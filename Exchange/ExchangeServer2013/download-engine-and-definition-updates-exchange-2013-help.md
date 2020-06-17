@@ -23,7 +23,7 @@ Microsoft Exchange Server 2013 administrators can manually download anti-malwar
 
 - Estimated time to complete: 5 minutes
 
-- You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://technet.microsoft.com/library/dd638134\(v=exchg.150\)).
+- You can only use the Shell to perform this procedure. To learn how to open the Shell in your on-premises Exchange organization, see [Open the Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - To download updates, your computer must be able to access the Internet and be able to establish a connection on TCP port 80 (HTTP). If your organization uses a proxy server for Internet access, see the Use the Shell to configure proxy server settings for anti-malware updates section in this topic.
 

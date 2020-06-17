@@ -50,10 +50,6 @@ The coexistence (and therefore, upgrade) options for Exchange are described in t
 |Exchange 2010|Exchange 2016|
 |Exchange 2013|Exchange 2019|
 
-When upgrading to Exchange 2010 or later, you can use the Exchange Deployment Assistant to help complete your deployment. For more information, see the following links:
-
-- [Exchange 2010 Deployment Assistant](https://go.microsoft.com/fwlink/p/?LinkId=171086)
-
-- [Exchange 2013 Deployment Assistant](https://go.microsoft.com/fwlink/p/?LinkId=277105)
+When upgrading to Exchange 2013 or later, you can use the Exchange Deployment Assistant to help complete your deployment. For more information, see [Exchange Deployment Assistant](https://assistants.microsoft.com/).
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at: [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612).

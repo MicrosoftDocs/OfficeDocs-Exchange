@@ -20,7 +20,7 @@ manager: serdars
 
 # Configure mail flow using connectors in Office 365
 
-Connectors are a collection of instructions that customize the way your email flows to and from your Office 365 organization. Actually, most Office 365 organizations don't need connectors for regular mail flow. This topic describes the mail flow scenarios that require connectors.
+Connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization. Actually, most Microsoft 365 or Office 365 organizations don't need connectors for regular mail flow. This topic describes the mail flow scenarios that require connectors.
 
 ## What do connectors do?
 
@@ -28,14 +28,14 @@ Connectors are used to:
 
 - Enable mail flow between Office 365 and any email server that you have in your on-premises organization (also known as on-premises email servers).
 
-- Apply security restrictions or controls for to email exchanges between your Office 365 organization and a business partner or service provider.
+- Apply security restrictions or controls for to email exchanges between your Microsoft 365 or Office 365 organization and a business partner or service provider.
 
 - Enable email notifications from printers, devices, or other non-mailbox entities.
 
-- Avoid graylisting that would otherwise occur because of the large volume of mail that's regularly exchanged between your Office 365 organization and your on-premises email server or partners.
+- Avoid graylisting that would otherwise occur because of the large volume of mail that's regularly exchanged between your Microsoft 365 or Office 365 organization and your on-premises email server or partners.
 
 > [!NOTE]
-> Graylisting is a delay tactic that's used to protect email systems from spam. In Office 365, graylisting is done by throttling IPs to limit senders from sending suspiciously large amounts of email. Office 365 responds to these abnormal influxes of mail by returning a temporary non-delivery report error (also known as an NDR or bounce message) in the range 451 4.7.500-699 (ASxxx). For more details on these types of delivery issues, see [Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Office 365](https://support.office.com/article/51356082-9fef-4639-a18a-fc7c5beae0c8).
+> Graylisting is a delay tactic that's used to protect email systems from spam. In Office 365, graylisting is done by throttling IPs to limit senders from sending suspiciously large amounts of email. Office 365 responds to these abnormal influxes of mail by returning a temporary non-delivery report error (also known as an NDR or bounce message) in the range 451 4.7.500-699 (ASxxx). For more details on these types of delivery issues, see [Fix email delivery issues for error code 451 4.7.500-699 (ASxxx) in Exchange Online](../non-delivery-reports-in-exchange-online/fix-error-code-451-4-7-500-699-asxxx-in-exchange-online.md).
 
 ## What happened to inbound and outbound connectors?
 

@@ -99,7 +99,7 @@ Connect-Mailbox -Identity "Corporate Shared Mailbox" -Database "Mailbox Database
 > [!NOTE]
 > If you don't include the <EM>Alias</EM> parameter when you run the <STRONG>Connect-Mailbox</STRONG> cmdlet, the value specified in the <EM>User</EM> or <EM>LinkedMasterAccount</EM> parameter is used to create the email address alias for the reconnected mailbox.
 
-For detailed syntax and parameter information, see [Connect-Mailbox](https://technet.microsoft.com/library/aa997878\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Connect-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Connect-Mailbox).
 
 ## How do you know this worked?
 

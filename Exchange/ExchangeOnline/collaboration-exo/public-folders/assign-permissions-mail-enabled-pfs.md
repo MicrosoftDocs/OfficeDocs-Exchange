@@ -52,6 +52,6 @@ The following example assigns "Send As" permissions for the mail-enabled public 
 
 For detailed syntax and parameter information, see the following articles:
 
-- [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-mailpublicfolder?view=exchange-ps)
+- [Set-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/set-mailpublicfolder?view=exchange-ps)
 
-- [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-recipientpermission?view=exchange-ps)
+- [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission?view=exchange-ps)

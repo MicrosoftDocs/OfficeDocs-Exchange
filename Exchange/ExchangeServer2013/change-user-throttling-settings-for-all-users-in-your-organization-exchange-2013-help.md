@@ -44,7 +44,7 @@ This example creates a throttling policy that applies to all users in your organ
 New-ThrottlingPolicy -Name AllUsersEWSPolicy EwsMaxConcurrency 4 -ThrottlingPolicyScope Organization
 ```
 
-For more information about syntax and parameters, see [New-ThrottlingPolicy](https://technet.microsoft.com/library/dd351045\(v=exchg.150\)).
+For more information about syntax and parameters, see [New-ThrottlingPolicy](https://docs.microsoft.com/powershell/module/exchange/New-ThrottlingPolicy).
 
 ## How do you know this worked?
 

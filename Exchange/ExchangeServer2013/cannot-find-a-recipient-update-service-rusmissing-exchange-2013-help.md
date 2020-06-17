@@ -49,13 +49,3 @@ To resolve this issue, verify that an instance of the Recipient Update Service e
 </tr>
 </tbody>
 </table>
-
-For more information about the Recipient Update Service, see the following Microsoft Knowledge Base articles:
-
-  - "How the Recipient Update Service applies recipient policies" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=328738](https://go.microsoft.com/fwlink/?linkid=3052&kbid=328738)).
-
-  - "How the Recipient Update Service Populates Address Lists" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253828](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253828)).
-
-  - "How to check the progress of the Exchange Recipient Update Service" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=246127](https://go.microsoft.com/fwlink/?linkid=3052&kbid=246127)).
-
-  - "Tasks performed by the Exchange Recipient Update Service" ([https://go.microsoft.com/fwlink/?linkid=3052\&kbid=253770](https://go.microsoft.com/fwlink/?linkid=3052&kbid=253770)).

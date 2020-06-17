@@ -40,7 +40,7 @@ Select a topic below to get started:
 
 [Configure document collaboration with OneDrive for Business and Exchange 2016 on-premises](set-up-document-collaboration.md)
 
-[Configure Office 365 Groups with on-premises Exchange hybrid](set-up-office-365-groups.md)
+[Configure Microsoft 365 Groups with on-premises Exchange hybrid](set-up-office-365-groups.md)
 
 [Create a cloud-based archive for an on-premises primary mailbox in an Exchange hybrid deployment](create-cloud-based-archive.md)
 

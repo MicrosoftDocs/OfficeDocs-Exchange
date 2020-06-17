@@ -30,16 +30,16 @@ To successfully deploy Unified Messaging (UM), you must have a good understandin
 
 - VoIP gateways
 
-In an on-premises, hybrid, or Office 365 environment, connecting and configuring the required telephony components is the most complex and important step in successfully deploying UM, with or without Lync Server Enterprise Voice. You'll need to connect and configure VoIP gateways, advanced VoIP gateways, PBXs, IP PBXs, and session border controllers (SBCs) for a traditional telephony network and connect to a telephony network if you'll be using Microsoft Lync Server and UM.
+In an on-premises, hybrid, or Office 365 environment, connecting and configuring the required telephony components is the most complex and important step in successfully deploying UM, with or without Skype for Business Server Enterprise Voice. You'll need to connect and configure VoIP gateways, advanced VoIP gateways, PBXs, IP PBXs, and session border controllers (SBCs) for a traditional telephony network and connect to a telephony network if you'll be using Microsoft Skype for Business Server and UM.
 
-Planning and deploying a new deployment of UM or upgrading a legacy voice mail system can pose challenges for organizations. It requires significant knowledge about VoIP gateways, PBXs, IP PBXs, Microsoft Lync Server, and Unified Messaging. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging.
+Planning and deploying a new deployment of UM or upgrading a legacy voice mail system can pose challenges for organizations. It requires significant knowledge about VoIP gateways, PBXs, IP PBXs, Microsoft Skype for Business Server, and Unified Messaging. Depending on your technical experience with Exchange and voice mail systems, you might want to obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth transition from a legacy or third-party voice mail system to Exchange Unified Messaging.
 
 > [!NOTE]
 > Exchange Online UM support for third-party PBX systems via direct connections from customer operated SBCs will end on December 1, 2019. See the Exchange team blog [New date for discontinuation of support for Session Border Controllers in Exchange Online Unified Messaging](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853) for more information.
 
 ## Integrating your telephony network
 
-Unified Messaging requires that you integrate your Exchange Server deployment with your existing telephony network or integrate UM with Microsoft Lync Server for your organization. To successfully deploy and manage UM voice mail you need to make a careful analysis of your existing telephony infrastructure or your Microsoft Lync Server Enterprise Voice deployment and complete the necessary planning steps.
+Unified Messaging requires that you integrate your Exchange Server deployment with your existing telephony network or integrate UM with Microsoft Skype for Business Server for your organization. To successfully deploy and manage UM voice mail you need to make a careful analysis of your existing telephony infrastructure or your Microsoft Skype for Business Server Enterprise Voice deployment and complete the necessary planning steps.
 
 ### VoIP gateways
 
@@ -57,9 +57,9 @@ Choosing the correct VoIP gateway, IP PBX, SIP-enabled PBX, or SBC is only the f
 
 - [Configuration notes for supported session border controllers](configuration-notes-for-session-border-controllers.md)
 
-### Microsoft Lync Server
+### Microsoft Skype for Business Server
 
-Unified Messaging can use Microsoft Lync Server to combine voice messaging, instant messaging, enhanced presence, audio/video conferencing, and email into a familiar, integrated communications experience. Providing Enterprise Voice features to the users in your organization by integrating UM and Microsoft Lync Server has the following benefits:
+Unified Messaging can use Microsoft Skype for Business Server to combine voice messaging, instant messaging, enhanced presence, audio/video conferencing, and email into a familiar, integrated communications experience. Providing Enterprise Voice features to the users in your organization by integrating UM and Microsoft Skype for Business Server has the following benefits:
 
 - Enhanced presence notifications across a variety of applications that keep users informed of the availability of contacts.
 
@@ -67,11 +67,11 @@ Unified Messaging can use Microsoft Lync Server to combine voice messaging, inst
 
 - Availability of communications alternatives from any location where an internet connection is available.
 
-- A smart client (Microsoft Lync) for telephony, instant messaging, and conferencing.
+- A smart client (Skype for Business) for telephony, instant messaging, and conferencing.
 
 - Continuity of the user experience across multiple devices.
 
-The Exchange UM routing component handles voice mail routing between Lync Server and Exchange servers to integrate Lync Server with Unified Messaging features. The Exchange UM routing component found in Lync Server also handles rerouting of voice mail over the PSTN if Exchange servers aren't available. If you have Enterprise Voice deployed at branch office sites, and those sites don't have a resilient WAN link to a central site, a Survivable Branch Appliance that you deploy at the branch site provides voice mail for branch users if a WAN link goes down. When the WAN link is unavailable, the Survivable Branch Appliance does the following:
+The Exchange UM routing component handles voice mail routing between Skype for Business Server and Exchange servers to integrate Skype for Business Server with Unified Messaging features. The Exchange UM routing component found in Skype for Business Server also handles rerouting of voice mail over the PSTN if Exchange servers aren't available. If you have Enterprise Voice deployed at branch office sites, and those sites don't have a resilient WAN link to a central site, a Survivable Branch Appliance that you deploy at the branch site provides voice mail for branch users if a WAN link goes down. When the WAN link is unavailable, the Survivable Branch Appliance does the following:
 
 - Reroutes unanswered calls over the PSTN to an Exchange server in the central site.
 
@@ -79,7 +79,7 @@ The Exchange UM routing component handles voice mail routing between Lync Server
 
 - Queues missed call notifications, and then uploads them to the Exchange server when the WAN link is restored.
 
-For more information about Microsoft Lync Server, see [Microsoft Lync Server](https://go.microsoft.com/fwlink/p/?LinkId=265752).
+For more information about Microsoft Skype for Business Server, see [Microsoft Skype for Business Server](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-server-2019).
 
 > [!CAUTION]
-> When you're integrating Unified Messaging and Lync Server in an on-premises or hybrid deployment, missed call notifications aren't available to users who have a mailbox located on Exchange 2007 or Exchange 2010 Mailbox servers. A missed call notification is generated when a user disconnects before the call is sent to a Mailbox server.
+> When you're integrating Unified Messaging and Skype for Business Server in an on-premises or hybrid deployment, missed call notifications aren't available to users who have a mailbox located on Exchange 2007 or Exchange 2010 Mailbox servers. A missed call notification is generated when a user disconnects before the call is sent to a Mailbox server.

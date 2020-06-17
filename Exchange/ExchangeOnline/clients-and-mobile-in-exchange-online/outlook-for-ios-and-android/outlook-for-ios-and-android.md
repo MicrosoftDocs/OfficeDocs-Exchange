@@ -27,7 +27,7 @@ The Outlook app for iOS and Android is designed to bring together email, calenda
 
 ## Outlook for iOS and Android architecture
 
-The Outlook for iOS and Android app is fully powered by the Microsoft Cloud. All Office 365 Enterprise, Government, Business, and Education accounts are supported natively, which means there is no mailbox data cached outside of Office 365. Data simply stays in its current Exchange Online mailbox, and it's protected by TLS-secured connections end-to-end, between Office 365 and the app. Outlook for iOS and Android is fully delivered through Microsoft services that provide a strong commitment to security, privacy, and compliance.
+The Outlook for iOS and Android app is fully powered by the Microsoft Cloud. All Office 365 Enterprise, Government, Business, and Education accounts are supported natively, which means there is no mailbox data cached outside of Office 365. Data simply stays in its current Exchange Online mailbox, and it's secured with TLS version 1.2 over HTTPS connections end-to-end, between Office 365 and the app. Outlook for iOS and Android is fully delivered through Microsoft services that provide a strong commitment to security, privacy, and compliance.
 
 The Office 365-based architecture provides the following benefits:
 1. **Data locality**: User mailbox data stays in place, and therefore continues to respect the data locality and regionality promises of Office 365 for data at rest. In other words, the user's mailbox data is stored within the region in which the tenant (or mailbox in the case of a [Multi-Geo](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online) tenant) is located.
@@ -38,7 +38,7 @@ The Office 365-based architecture provides the following benefits:
 
 4. **Enterprise Mobility + Security support**: Customers can take advantage of Microsoft Enterprise Mobility + Security (EMS) including Microsoft Intune and Azure Active Directory Premium, to enable conditional access and Intune app protection policies, which control and secure corporate messaging data on the mobile device.
 
-Within the Office 365-based architecture, Outlook for iOS and Android utlilizes the native Microsoft sync technology for data synchronization. 
+Within the Office 365-based architecture, Outlook for iOS and Android uses the native Microsoft sync technology as the protocol for data synchronization.
 
 ![new synch image](../../media/newsync.png)
 
@@ -46,7 +46,7 @@ The native Microsoft sync technology offers several benefits:
 
 1. **Eliminates middle tier services**: Data synchronization with the native Microsoft sync technology occurs between the app and Office 365, eliminating the need for any middle tier services.
 
-2. **Latency reduction**: By replacing the propietary Outlook device API and Stateless Protocol Translator, there is a reduction in end-to-end latency between the app and Office 365.
+2. **Latency reduction**: By replacing the proprietary Outlook device API and Stateless Protocol Translator, there is a reduction in end-to-end latency between the app and Office 365.
 
 3. **Additional Office 365 instance support**: Removing the intermediary Stateless Protocol Translator for data connections enables Microsoft to support other unique Office 365 instances, like Office 365 Government Community Cloud High and Office 365 Department of Defense, that were previously blocked from using Outlook for iOS and Android.
 

@@ -52,7 +52,7 @@ If you don't enter a product key, your server is automatically licensed as a tri
 
 1. Open the EAC by browsing to https://\<*Client Access server name*\>/ecp.
 
-2. Enter your user name and password in **Domain\\user name** and **Password**, and then click **Sign in**.
+2. Enter your username and password in **Domain\\user name** and **Password**, and then click **Sign in**.
 
 3. Go to **Servers** \> **Servers**. Select the server you want to license, and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
@@ -79,7 +79,7 @@ This example uses the **set-ExchangeServer** cmdlet to enter the product key.
 Set-ExchangeServer ExServer01 -ProductKey aaaaa-aaaaa-aaaaa-aaaaa-aaaaa
 ```
 
-For detailed syntax and parameter information, see [Set-ExchangeServer](https://technet.microsoft.com/library/bb123716\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ExchangeServer](https://docs.microsoft.com/powershell/module/exchange/Set-ExchangeServer).
 
 If you licensed an Exchange server running the Mailbox server role, do the following to restart the Microsoft Exchange Information Store service:
 
@@ -91,7 +91,7 @@ If you licensed an Exchange server running the Mailbox server role, do the follo
 
 To use the EAC to verify that you've successfully licensed the server as Standard Edition or Enterprise Edition, do the following:
 
-1. Enter your user name and password in **Domain\\user name** and **Password**, and then click **Sign in**.
+1. Enter your username and password in **Domain\\user name** and **Password**, and then click **Sign in**.
 
 2. Go to **Servers** \> **Servers**.
 

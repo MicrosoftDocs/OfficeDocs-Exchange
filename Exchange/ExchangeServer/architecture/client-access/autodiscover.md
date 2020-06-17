@@ -28,7 +28,7 @@ Exchange 2016 introduced changes to services that were previously handled by the
 
 - Client Access services on Mailbox servers provide authentication and proxy services for internal and external client connections.
 
-- Outlook configures services with only the user name and password.
+- Outlook configures services with only the username and password.
 
 > [!NOTE]
 > If you are a user looking for help with connecting your Outlook client to your Exchange server, see [Outlook email setup](https://go.microsoft.com/fwlink/p/?linkId=843935).
@@ -43,10 +43,10 @@ Exchange automatically creates at installation the virtual directory `autodiscov
 
 The SCP object is also created in Active Directory at the same time as the Autodiscover service virtual directory. The SCP stores and provides authoritative URLs of the Autodiscover service for domain-joined computers.
 
- You need to update the SCP object to point to the Exchange server. This is necessary because Exchange servers provide additional Autodiscover information to clients to improve the discovery process. You can use the **Set-ClientAccessService** cmdlet to update the SCP object. For more information, see [Set-ClientAccessService](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-clientaccessservice).
+ You need to update the SCP object to point to the Exchange server. This is necessary because Exchange servers provide additional Autodiscover information to clients to improve the discovery process. You can use the **Set-ClientAccessService** cmdlet to update the SCP object. For more information, see [Set-ClientAccessService](https://docs.microsoft.com/powershell/module/exchange/set-clientaccessservice).
 
 > [!IMPORTANT]
-> You need to be assigned permissions before you can run the **Set-ClientAccessService** cmdlet. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
+> You need to be assigned permissions before you can run the **Set-ClientAccessService** cmdlet. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/find-exchange-cmdlet-permissions).
 
 Autodiscover makes it easy to retrieve the information that you need to connect to mailboxes on Exchange servers. SCP objects locate those Autodiscover servers or endpoints appropriate for the user you're retrieving settings for. And SCP objects in AD DS provide an easy way for domain-joined clients to look up Autodiscover servers.
 
@@ -56,7 +56,7 @@ Exchange publishes two types of SCP objects for the Autodiscover service:
 
 - **SCP URLs**: Contains URLs for Autodiscover endpoints. SCP URLs are stamped with the following GUID: 77378F46-2C66-4aa9-A6A6-3E7A48B19596
 
-The SCP object contains the authoritative list of Autodiscover service URLs for the forest. To learn more about locating Autodiscover service endpoints, see [Generate a list of Autodiscover endpoints](https://go.microsoft.com/fwlink/p/?linkId=843957).
+The SCP object contains the authoritative list of Autodiscover service URLs for the forest. To learn more about locating Autodiscover service endpoints, see [Generate a list of Autodiscover endpoints](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-generate-a-list-of-autodiscover-endpoints).
 
 Client connectivity in Exchange 2016 and Exchange 2019 is like Exchange 2013 and differs from Exchange 2010. In Exchange 2016 and 2019, MAPI over HTTP is enabled by default, when previously Outlook clients used Outlook Anywhere (RPC over HTTP). Exchange 2016 and 2019 require fewer name spaces for site-resilient solutions than Exchange 2010, reducing to two from the previously required seven namespaces. To read more about namespace and Exchange Server, see the blog [Namespace Planning in Exchange 2016](https://go.microsoft.com/fwlink/p/?linkId=843937).
 
@@ -76,7 +76,7 @@ Client applications use the Autodiscover service when the application starts for
 |:-----|:-----|
 |https://longview.contoso.com/autodiscover/autodiscover.xml|SCP results|
 |https://email.contoso.com/autodiscover/autodiscover.xml|SCP results|
-|https://newark.contoso.com/autodiscover/autodiscovfer.xml|SCP results|
+|https://newark.contoso.com/autodiscover/autodiscover.xml|SCP results|
 |https://contoso.com/autodiscover/autodiscover.exc|Derived from email address|
 |https://autodiscover.contoso.com/autodiscover/autodiscover|Derived from email address|
 
@@ -175,14 +175,14 @@ Through the Autodiscover service, Outlook finds a new connection point made up o
 
 - Outlook Anywhere server settings
 
-You'll need to make sure that you have configured the correct external URLs for the virtual directories of the following services. The examples in the table that follows show values required for the contoso.com email domain. In addition, you may need to set IIS Authentication Methods. You can learn more about that in [Setting Up Standard Authentication Methods for Outlook Web App](https://technet.microsoft.com/library/f4ae771b-de25-47e4-963f-4b1e43f8b3d4.aspx).
+You'll need to make sure that you have configured the correct external URLs for the virtual directories of the following services. The examples in the table that follows show values required for the contoso.com email domain.
 
 |**Service**|**Exchange Management Shell**|**Modifies**|
 |:-----|:-----|:-----|
-|[Offline Address Book](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/Set-OabVirtualDirectory)|`Get-OabVirtualDirectory | Set-OabVirtualDirectory -ExternalURL https://mail.companycontoso.com/oab`|OAB virtual directories used in IIS|
-|[Exchange Web Sevices](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-WebServicesVirtualDirectory)|`Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -ExternalURL https://mail.companycontoso.com/ews/exchange.asmx`|Exchange Web Services virtual directories in IIS|
-|[Outlook Anywhere (RPC over HTTP)](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-OutlookAnywhere)|`Get-OutlookAnywhere | Set-OutlookAnywhere -ExternalHostname mail.contoso.com -ExternalClientsRequireSsl $true`|Outlook Anywhere virtual directories in IIS|
-|[Messaging Application Programming Interface (MAPI) over HTTP](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/Set-MapiVirtualDirectory) (Exchange 2013 SP1 or later)|`Get-MapiVirtualDirectory | Set-MapiVirtualDirectory -ExternalURL https://mail.companycontoso.com/mapi` <br/><br/> `Set-OrganizationConfig -MapiHttpEnabled $true`|MAPI virtual directories in IIS|
+|[Offline Address Book](https://docs.microsoft.com/powershell/module/exchange/Set-OabVirtualDirectory)|`Get-OabVirtualDirectory | Set-OabVirtualDirectory -ExternalURL https://mail.companycontoso.com/oab`|OAB virtual directories used in IIS|
+|[Exchange Web Sevices](https://docs.microsoft.com/powershell/module/exchange/Set-WebServicesVirtualDirectory)|`Get-WebServicesVirtualDirectory | Set-WebServicesVirtualDirectory -ExternalURL https://mail.companycontoso.com/ews/exchange.asmx`|Exchange Web Services virtual directories in IIS|
+|[Outlook Anywhere (RPC over HTTP)](https://docs.microsoft.com/powershell/module/exchange/Set-OutlookAnywhere)|`Get-OutlookAnywhere | Set-OutlookAnywhere -ExternalHostname mail.contoso.com -ExternalClientsRequireSsl $true`|Outlook Anywhere virtual directories in IIS|
+|[Messaging Application Programming Interface (MAPI) over HTTP](https://docs.microsoft.com/powershell/module/exchange/Set-MapiVirtualDirectory) (Exchange 2013 SP1 or later)|`Get-MapiVirtualDirectory | Set-MapiVirtualDirectory -ExternalURL https://mail.companycontoso.com/mapi` <br/><br/> `Set-OrganizationConfig -MapiHttpEnabled $true`|MAPI virtual directories in IIS|
 
 
 Click the Service name in the preceding table for more information about how to obtain or reconfigure these URLs.

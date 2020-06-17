@@ -21,10 +21,10 @@ Thanks for clicking the link that brought you to this page. Although we don't cu
 
 - Review the Application log and System log on your computers running Exchange 2013 for events related to this feature.
 
-- Search the [Microsoft Knowledge Base](https://go.microsoft.com/fwlink/p/?linkid=18175). For example, search the Knowledge Base for this health set. If you find error events in the Event log, search for the Event Source and Event ID associated with this health set.
+- Search the [Microsoft Knowledge Base](https://support.microsoft.com/). For example, search the Knowledge Base for this health set. If you find error events in the Event log, search for the Event Source and Event ID associated with this health set.
 
 - View the content available from the [Exchange 2013 Forum](https://go.microsoft.com/fwlink/p/?linkid=257903). You can also post a question on the forum.
 
 - View the content available from the [Exchange Server Community](https://go.microsoft.com/fwlink/p/?linkid=14927).
 
-- If you still can't resolve the issue, contact Microsoft Customer Service and Support. To contact support, go to [Exchange Server 2013 for IT Pros](https://go.microsoft.com/fwlink/p/?linkid=402506) and click on **Contact a Microsoft support professional**.
+- If you still can't resolve the issue, contact Microsoft Customer Service and Support. To contact support, go to [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and select **Servers** \> **Exchange Server**.

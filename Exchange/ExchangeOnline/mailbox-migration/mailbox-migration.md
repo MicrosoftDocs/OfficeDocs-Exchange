@@ -30,7 +30,7 @@ manager: serdars
 
 Your organization can migrate email to Office 365 from other systems. Your administrators can [Migrate mailboxes from Exchange Server](mailbox-migration.md#StagedorCutover) or [Migrate email from another IMAP-enabled email system](mailbox-migration.md#IMAP). And your users can [import their own email](mailbox-migration.md#Import), contacts, and other mailbox information to an Office 365 mailbox created for them. Your organization also can [work with a partner to migrate email](mailbox-migration.md#Partner).
 
-Before you start an email migration, review [limits](https://go.microsoft.com/fwlink/p/?LinkID=328224) and [best practices](https://go.microsoft.com/fwlink/p/?LinkID=392945) for Exchange Online to make sure you get the performance and behavior you expect after migration.
+Before you start an email migration, review [limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) and [best practices](office-365-migration-best-practices.md) for Exchange Online to make sure you get the performance and behavior you expect after migration.
 
 See [Decide on a migration path](decide-on-a-migration-path.md) or [Exchange migration advisors](https://aka.ms/office365setup) for help with choosing the best option for your organization.
 
@@ -71,7 +71,7 @@ There are three types of email migrations that can be made from an Exchange Serv
 
   - You have Exchange 2013.
 
-    For more information, see [Plan an Exchange Online hybrid deployment in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=517633).
+    For more information, see [Use the Microsoft 365 and Office 365 mail migration advisor](https://docs.microsoft.com/exchange/mail-migration-jump).
 
 ## Use Office 365 Import Service to migrate PST-files
 <a name="StagedorCutover"> </a>
@@ -82,7 +82,7 @@ If your organization has many large PST files, you can use the Office 365 Import
 
 You can use the Office 365 Import Service to either upload the PST files through a network, or to mail the PST files in a drive that you prepare.
 
-For instructions, see [Office 365 Import Service](https://go.microsoft.com/fwlink/p/?LinkId=544944).
+For instructions, see [Overview of importing your organization's PST files](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365).
 
 ## Migrate email from another IMAP-enabled email system
 <a name="IMAP"> </a>
@@ -98,7 +98,7 @@ To migrate email from another mail system, see [Migrate your IMAP mailboxes to O
 ## Have users import their own email
 <a name="Import"> </a>
 
-Users can import their own email, contacts, and other mailbox information to Office 365. See [Migrate email and contacts to Office 365](https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e) to learn how.
+Users can import their own email, contacts, and other mailbox information to Office 365. See [Migrate email and contacts to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
 
 ![A user can import email, contacts, and calendar information to Office 365.](media/86255b6b-a1bf-413d-b3f2-95ad43a628c0.png)
 
@@ -107,12 +107,9 @@ Users can import their own email, contacts, and other mailbox information to Off
 
 If none of the types of migrations described will work for your organization, consider working with a partner to migrate email to Office 365.
 
-|**Method**|**Description**|
-|:-----|:-----|
-|![Use third-party migration tools to migrate mailboxes to Office 365](media/e0d851ac-72c5-49e5-b759-f1083c912f03.png)|**Use a third-party email migration tool** <br/> Migration tools can help speed up and simplify email migration. You'll find a list of tools in the [Office 365 Marketplace](https://go.microsoft.com/fwlink/p/?LinkId=785068).|
-|![Hire a partner to help you deploy Office 365](media/60914e97-f5fe-4dff-9e96-a23de8aa2879.png)|**Hire a partner to help migrate your email** <br/> You'll find a list of partners in the [Office 365 Marketplace](https://go.microsoft.com/fwlink/p/?LinkId=620000).|
+To find a partner, use the [Microsoft solution providers](https://www.microsoft.com/solution-providers/) page.
 
 ## Related Topics
 <a name="Partner"> </a>
 
-[Use PowerShell for email migration to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=615247)
+[Use PowerShell for email migration to Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-for-email-migration-to-office-365)

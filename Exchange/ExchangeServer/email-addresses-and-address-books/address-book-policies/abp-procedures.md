@@ -26,7 +26,7 @@ Address book policies (ABPs) allow you to segment users into specific groups to 
 
 - Estimated time to complete each procedure: Less than 5 minutes.
 
-- You can assign ABPs to mailboxes in the Exchange admin center (EAC), but all other ABP procedures require the Exchange Management Shell. For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- You can assign ABPs to mailboxes in the Exchange admin center (EAC), but all other ABP procedures require the Exchange Management Shell. For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Address book policies" entry in the [Email address and address book permissions](../../permissions/feature-permissions/address-book-permissions.md) topic.
 
@@ -54,7 +54,7 @@ This example returns detailed information for the ABP named All Fabrikam ABP.
 Get-AddressBookPolicy -Identity "All Fabrikam ABP" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy).
+For detailed syntax and parameter information, see [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy).
 
 ## Use the Exchange Management Shell to create address book policies
 
@@ -82,7 +82,7 @@ This example creates an ABP named All Fabrikam ABP with the these settings:
 New-AddressBookPolicy -Name "All Fabrikam ABP" -GlobalAddressList "\All Fabrikam" -OfflineAddressBook \Fabrikam-All-OAB -RoomList "\All Fabrikam Rooms" -AddressLists "\All Fabrikam Mailboxes","\All Fabrikam DLs","\All Fabrikam Contacts"
 ```
 
-For detailed syntax and parameter information, see [New-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/new-addressbookpolicy).
+For detailed syntax and parameter information, see [New-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/new-addressbookpolicy).
 
 ### How do you know this worked?
 
@@ -136,7 +136,7 @@ You use the **Set-AddressBookPolicy** cmdlet to modify an existing ABP. The sett
   Set-AddressBookPolicy -Identity "ABP Fabrikam" -AddressLists Fabrikam-Finance
   ```
 
-For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-addressbookpolicy).
+For detailed syntax and parameter information, see [Set-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/set-addressbookpolicy).
 
 ### How do you know this worked?
 
@@ -170,7 +170,7 @@ This example removes the ABP named ABP_TailspinToys.
 Remove-AddressBookPolicy -Identity "ABP_TailspinToys"
 ```
 
-For detailed syntax and parameter information, see [Remove-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/remove-addressbookpolicy).
+For detailed syntax and parameter information, see [Remove-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-addressbookpolicy).
 
 ### How do you know this worked?
 
@@ -240,7 +240,7 @@ Set-Mailbox -Identity joe@fabrikam.com -AddressBookPolicy "All Fabrikam"
 
  **Note**: You can also assign an ABP when you create a user mailbox with the **New-Mailbox** cmdlet by using the _AddressBookPolicy_ parameter. If you don't specify an ABP when you create the mailbox, no ABP is assigned (the default value is blank or `$null`).
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ### Use the EAC to assign an address book policy to multiple mailboxes
 
@@ -278,7 +278,7 @@ For detailed syntax and parameter information, see [Set-Mailbox](https://docs.mi
 
 You can use the **Get-Mailbox** or **Get-Content** cmdlets to identify the user mailboxes that you want to assign the ABP to. For example:
 
-- Use the _Filter_ parameter to create OPATH filters that identify the mailboxes. For more information, see [Filterable Properties for the -Filter Parameter](https://docs.microsoft.com/powershell/exchange/exchange-server/recipient-filters/filter-properties).
+- Use the _Filter_ parameter to create OPATH filters that identify the mailboxes. For more information, see [Filterable Properties for the -Filter Parameter](https://docs.microsoft.com/powershell/exchange/filter-properties).
 
 - Use a text file to specify the mailboxes. The text file contains one mailbox (email address, name, or other unique identifier) on each line like this:
 
@@ -296,7 +296,7 @@ This example uses the text file C:\My Documents\Accounts.txt to assign the same 
 Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-Mailbox $_ -AddressBookPolicy "ABP_EngineeringDepartment"}
 ```
 
-For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox).
+For detailed syntax and parameter information, see [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox).
 
 ### How do you know this worked?
 
@@ -348,7 +348,7 @@ Install-TransportAgent -Name "ABP Routing Agent" -TransportAgentFactory "Microso
 
  **Note**: You'll get a warning that the Transport service needs to be restarted for the changes to take effect. But, don't restart the Transport service until you finish Step 2 (so you only have to restart the Transport service once).
 
-For detailed syntax and parameter information, see [Install-TransportAgent](https://docs.microsoft.com/powershell/module/exchange/mail-flow/install-transportagent).
+For detailed syntax and parameter information, see [Install-TransportAgent](https://docs.microsoft.com/powershell/module/exchange/install-transportagent).
 
 ### Step 2: Enable the ABP Routing agent
 
@@ -358,7 +358,7 @@ To enable the ABP Routing Agent on the local Mailbox server, run this command on
 Enable-TransportAgent "ABP Routing Agent"
 ```
 
-For detailed syntax and parameter information, see [Enable-TransportAgent](https://docs.microsoft.com/powershell/module/exchange/mail-flow/enable-transportagent).
+For detailed syntax and parameter information, see [Enable-TransportAgent](https://docs.microsoft.com/powershell/module/exchange/enable-transportagent).
 
 ### Step 3: Restart the Transport service
 
@@ -368,7 +368,7 @@ To restart the Transport service, run this command on every Mailbox server in th
 Restart-Service MSExchangeTransport
 ```
 
-For detailed syntax and parameter information, see [Get-TransportAgent](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-transportagent).
+For detailed syntax and parameter information, see [Get-TransportAgent](https://docs.microsoft.com/powershell/module/exchange/get-transportagent).
 
 ### Step 4: Enable ABP routing globally in the Exchange organization
 
@@ -378,7 +378,7 @@ To enable ABP routing globally in the Exchange organization, run this command on
 Set-TransportConfig -AddressBookPolicyRoutingEnabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/mail-flow/set-transportconfig).
+For detailed syntax and parameter information, see [Set-TransportConfig](https://docs.microsoft.com/powershell/module/exchange/set-transportconfig).
 
  **Note**: To disable ABP routing after you've enabled it, do these steps:
 

@@ -119,7 +119,7 @@ Office 365 UM offers administrators:
 
 - **Incoming fax support**: UM provides built-in incoming fax support for users who have a UM-enabled mailbox. They can receive fax messages through calls placed to their extension number.
 
-    Customers who require a fax solution will have to deploy a fax partner solution. Fax partner solutions are available from several fax partners. The fax partner solutions are designed to be tightly integrated with Exchange and enable UM-enabled users to receive incoming fax messages. You can find a fax partner solution by visiting [Microsoft Pinpoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238).
+    Customers who require a fax solution will have to deploy a fax partner solution. Fax partner solutions are available from several fax partners. The fax partner solutions are designed to be tightly integrated with Exchange and enable UM-enabled users to receive incoming fax messages. You can find a fax partner solution by visiting [Microsoft solution providers](https://www.microsoft.com/solution-providers/).
 
 - **Support for multiple languages**: All available language packs contain support for the Text-to-Speech (TTS) engine and the prerecorded prompts for a specified language and ASR support. However, only some language packs contain support for Voice Mail Preview.
 
@@ -192,4 +192,4 @@ For more information about the EAC, see [Exchange admin center in Exchange Onlin
 
 Exchange Online PowerShell is a powerful command-line interface that enables automation of administrative tasks. Exchange Online PowerShell can perform every task that can be performed by the EAC plus tasks that can't be done in the EAC. In fact, when you do something in the EAC, it's Exchange Online PowerShell that's doing the work behind the scenes.
 
-For more information about Exchange Online PowerShell, see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell).
+For more information about Exchange Online PowerShell, see [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).

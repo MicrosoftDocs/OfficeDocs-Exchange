@@ -51,7 +51,7 @@ The first step is to create and run a Compliance Search to find the message that
 
 In this example, the commands will create and start a search of all mailboxes in the organization for a message that contains the words "Update your account information" in the subject line.
 
-1. [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+1. [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 2. Run the following commands.
 
@@ -65,9 +65,9 @@ In this example, the commands will create and start a search of all mailboxes in
 
 For information about creating a Compliance Search and configuring search queries, see the following topics:
 
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
+- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
 
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
+- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
 
 - [Message properties and search operators for In-Place eDiscovery in Exchange Server](message-properties-and-search-operators.md)
 
@@ -83,7 +83,7 @@ The goal of the search query is to narrow the results of the search to only the 
 
 - Preview the search results to verify that the search returned only the message (or messages) that you want to delete.
 
-- Use the search estimate statistics (by running the [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch) cmdlet) to get a count of the total number of search results.
+- Use the search estimate statistics (by running the [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch) cmdlet) to get a count of the total number of search results.
 
 Here are two examples of queries to find suspicious email messages.
 
@@ -106,7 +106,7 @@ After you've created and refined a Compliance Search to return the message that 
 
 In this example, the command will delete the search results returned by a Compliance Search named "Remove Phishing Message".
 
-1. [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+1. [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 2. Run the following command.
 

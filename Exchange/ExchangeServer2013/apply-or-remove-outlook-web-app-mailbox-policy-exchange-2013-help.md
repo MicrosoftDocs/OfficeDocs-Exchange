@@ -21,7 +21,7 @@ You can apply an Outlook Web App mailbox policy to one or more mailboxes or remo
 
 - Estimated time to complete each procedure: 10 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App mailbox policies" entry in the [Clients and mobile devices permissions](https://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Outlook Web App mailbox policies" entry in the [Clients and mobile devices permissions](clients-and-mobile-devices-permissions-exchange-2013-help.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -60,7 +60,7 @@ This example applies the Outlook Web App mailbox policy named "Calendar" to the 
 Set-CASMailbox -Identity tony@contoso.com -OwaMailboxPolicy:Calendar
 ```
 
-For more information about syntax and parameters, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
+For more information about syntax and parameters, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
 ## Remove an Outlook Web App mailbox policy
 
@@ -84,4 +84,4 @@ This example removes the Outlook Web App mailbox policy from mailbox of the user
 Set-CASMailbox -Identity tony@contoso.com -OwaMailboxPolicy:$null
 ```
 
-For more information about syntax and parameters, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/client-access/set-casmailbox).
+For more information about syntax and parameters, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).

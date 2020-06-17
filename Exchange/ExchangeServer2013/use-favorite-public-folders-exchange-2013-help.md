@@ -22,7 +22,7 @@ In the Outlook client, users in your organization can add public folders to thei
 In order for users to perform certain tasks on public folders in their **Favorites** folder, they must first use the Outlook client to add public folders to the **Favorites** folder.
 
 > [!NOTE]
-> For more information about creating and configuring public folders, users in your organization can see [Create a public folder in Outlook](https://support.office.com/article/d5981360-28d3-4c8f-a373-c98ae570420a).
+> For more information about creating and configuring public folders, users in your organization can see [Create a public folder in Outlook](https://support.microsoft.com/office/a2835011-d524-4a5c-a207-05c159bb2a97).
 
 1. In Outlook, go to the **Folders** view. Click the three dots on the Navigation Bar, and the click **Folders**.
 
@@ -64,4 +64,4 @@ Your users can now use Outlook Web App to perform the following tasks in their f
 
 ## See also
 
-[Create a public folder in Outlook](https://support.office.com/article/a2835011-d524-4a5c-a207-05c159bb2a97)
+[Create a public folder in Outlook](https://support.microsoft.com/office/a2835011-d524-4a5c-a207-05c159bb2a97)

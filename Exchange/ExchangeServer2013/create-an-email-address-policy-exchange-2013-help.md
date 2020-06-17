@@ -143,4 +143,4 @@ This example creates an email address policy that includes mailbox users in the 
 New-EmailAddressPolicy -Name "southeast offices" -IncludedRecipients MailboxUsers -ConditionalStateorProvince "Georgia","Alabama","Louisiana" -EnabledEmailAddressTemplates "SMTP:%s%2g@southeast.contoso.com"
 ```
 
-For detailed syntax and parameter information, see [New-EmailAddressPolicy](https://technet.microsoft.com/library/aa996800\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/New-EmailAddressPolicy).

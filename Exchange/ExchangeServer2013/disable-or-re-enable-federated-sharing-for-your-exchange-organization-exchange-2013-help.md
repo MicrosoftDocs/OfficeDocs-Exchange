@@ -27,7 +27,7 @@ To learn more about federation trusts, see [Federation](federation-exchange-2013
 For additional management tasks related to federated sharing, see [Federation procedures](federation-procedures-exchange-2013-help.md).
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china">Learn about Office 365 operated by 21Vianet</A>.
 
 ## What do you need to know before you begin?
 
@@ -53,7 +53,7 @@ This example enables the OrgID and re-enables federation and federated sharing f
 Set-FederatedOrganizationIdentifier -Enabled $true
 ```
 
-For detailed syntax and parameter information, see [Set-FederatedOrganizationIdentifier](https://technet.microsoft.com/library/dd351037\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-FederatedOrganizationIdentifier](https://docs.microsoft.com/powershell/module/exchange/Set-FederatedOrganizationIdentifier).
 
 ## How do you know this worked?
 

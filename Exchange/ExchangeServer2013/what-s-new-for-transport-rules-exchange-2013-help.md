@@ -41,7 +41,7 @@ For detailed information about using these new predicates and actions, see [Tran
 
 - **HasSenderOverride**: Used to detect messages where the sender has chosen to override a DLP policy restriction.
 
-- **MessageContainsDataClassifications**: Used to detect sensitive information in the message body and any of the attachments. For a list of data classifications available, see [What the sensitive information types in Exchange look for](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md).
+- **MessageContainsDataClassifications**: Used to detect sensitive information in the message body and any of the attachments. For a list of data classifications available, see [What the sensitive information types in Exchange 2013 look for](what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help.md).
 
 - **MessageSizeOver**: Used to detect messages whose overall size is greater than or equal to the specified limit.
 

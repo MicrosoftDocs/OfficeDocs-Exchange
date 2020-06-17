@@ -43,6 +43,6 @@ If the mobile phone is unable to contact the Exchange server automatically throu
 
 ### Windows Phone synchronization
 
-If you're configuring a Windows Phone mobile phone to synchronize with an Exchange mailbox using Exchange ActiveSync, only a subset of mobile device mailbox policy settings are supported. Those policy settings are detailed in [Supported Mobile Device Mailbox Policies for Windows Phones and Devices](https://technet.microsoft.com/library/d76b1d4c-d1f6-4501-a7c9-854327aceda5.aspx).
+If you're configuring a Windows Phone mobile phone to synchronize with an Exchange mailbox using Exchange ActiveSync, only a subset of mobile device mailbox policy settings are supported.
 
 If you configure mobile device mailbox policy settings that are not supported for the version of Windows Phone you're using, you must also set the **AllowNonProvisionableDevices** policy setting to true or create a separate mobile device mailbox policy for Windows Phone mobile phones.

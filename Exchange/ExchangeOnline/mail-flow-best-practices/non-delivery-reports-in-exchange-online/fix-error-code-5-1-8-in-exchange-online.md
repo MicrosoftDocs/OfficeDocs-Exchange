@@ -14,6 +14,7 @@ ms.custom: MiniMaven
 search.appverid:
 - BCS160
 - MOE150
+- MET150
 ms.assetid: 303238b8-658d-46b6-8f45-a789acd2173b
 description: "Learn how to fix email issues for error code 5.1.8 in Exchange Online (the account has been blocked for sending too much spam)."
 ---
@@ -32,7 +33,7 @@ You received this NDR with error code 5.1.8 because your account has been blocke
 
 ## I got this bounce message. How do I fix it?
 
-First, you need to reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your Office 365 account has been compromised](https://go.microsoft.com/fwlink/p/?linkid=861995).
+First, you need to reset your password and scan your devices for malware. However, the hacker might have configured other settings on your mailbox (for example, created Inbox rules to auto-forward email messages or added additional mailbox delegates). So, follow the additional steps in [How to determine whether your Office 365 account has been compromised](https://docs.microsoft.com/office365/troubleshoot/sign-In/determine-account-is-compromised).
 
 Then, you need to tell your email admin that you think your account has been compromised. Your admin will need to unblock your account before you can send email again.
 
@@ -44,13 +45,13 @@ The sending account might be compromised. You'll need to:
 
 - [Go to the SCC Restricted Users page](https://protection.office.com/?hash=restrictedusers) to unblock the account. After you unblock the account, the user should be able to resume sending messages *within a few hours*.
 
-- To help prevent future account compromises, follow the recommendations in [Security best practices for Office 365](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3.aspx).
+- To help prevent future account compromises, follow the recommendations in [Security best practices for Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices).
 
 ## Still need help with error code 5.1.8?
 
 [![Get help from the Office 365 community forums](../../media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
-[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+[![Admins: Sign in and create a service request](../../media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)](https://go.microsoft.com/fwlink/p/?LinkId=)
 
 [![Admins: Call Support](../../media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 

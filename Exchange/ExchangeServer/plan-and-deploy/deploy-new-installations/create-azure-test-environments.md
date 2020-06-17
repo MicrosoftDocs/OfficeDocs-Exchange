@@ -142,7 +142,7 @@ You can create a new Azure virtual network with a domain controller with Azure P
    New-AZVM -ResourceGroupName $rgName -Location $locName -VM $vm
    ```
 
-   You will be prompted for a user name and password. This article will refer to this user name as ADMIN_NAME. Use a strong password and record both in a secure location.
+   You will be prompted for a username and password. This article will refer to this username as ADMIN_NAME. Use a strong password and record both in a secure location.
 
    **Note**: The password that you specify cannot be "pass@word1". It must be between 8-123 characters long and must satisfy at least 3 of the following password complexity requirements:
 
@@ -420,4 +420,4 @@ Start-AZVM -Name exVM -ResourceGroupName $rgName
 
 [What's new in Exchange Server](../../new-features/new-features.md)
 
-[Cloud adoption Test Lab Guides (TLGs)](https://technet.microsoft.com/library/dn635308.aspx)
+[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)

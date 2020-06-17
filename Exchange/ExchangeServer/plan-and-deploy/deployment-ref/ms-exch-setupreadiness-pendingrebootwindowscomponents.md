@@ -34,7 +34,7 @@ Typically, you only need to restart the server to get past this error, but you m
 
 If you see this error after you've restarted the server more than two or three times, try reinstalling any programs or Windows updates that you've installed recently. This might allow a failed installation to complete successfully.
 
-If you *still* receive this error after multiple restarts and reinstalling recent programs or Windows updates, we recommend that you contact Microsoft Customer Serive and Support. They'll help you find the reason why Windows and other programs think your computer needs to be restarted. To contact Microsoft support, go to [Support for Microsoft Exchange Server](https://go.microsoft.com/fwlink/p/?LinkId=525940).
+If you *still* receive this error after multiple restarts and reinstalling recent programs or Windows updates, we recommend that you contact Microsoft Customer Service and Support. They'll help you find the reason why Windows and other programs think your computer needs to be restarted. To contact Microsoft support, go to [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and select **Servers** \> **Exchange Server**.
 
 > [!CAUTION]
 > Although it's tempting, we strongly recommend that you don't attempt to work around this issue by manually deleting or changing registry keys or values. Although you might fix this issue now, manually modifying the registry might cause issues later on. This is especially important if the failed installation was a Windows update.

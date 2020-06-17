@@ -24,9 +24,9 @@ This topic describes the most frequently used cmdlets available in the release t
 
 For more information about the Exchange Management Shell in Exchange 2013 and all the available cmdlets, see the following topics:
 
-  - [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/library/bb123778\(v=exchg.150\))
+- [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-management-shell)
 
-  - [Exchange 2013 cmdlets](https://technet.microsoft.com/library/bb124413\(v=exchg.150\))
+- [Exchange PowerShell](https://docs.microsoft.com/powershell/exchange/)
 
 ## What would you like to learn about?
 

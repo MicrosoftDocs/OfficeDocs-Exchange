@@ -67,11 +67,7 @@ For more information about Outlook on the web, see [Outlook on the web in Exchan
 
 ## Customize the color of the Outlook on the web language selection page
 
-1. Use Notepad to open the file `%ExchangeInstallPath%ClientAccess\Owa\Current2\version\resources\styles\languageselection.css`. An easy way to do this is to press the Windows key + R, and run the following command:
-
-   ```console
-   Notepad.exe %ExchangeInstallPath%ClientAccess\Owa\Current2\version\resources\styles\languageselection.css
-   ```
+1. Use Notepad to open the file `%ExchangeInstallPath%ClientAccess\Owa\prem\<ExchangeVersion>\resources\styles\languageselection.css`.
 
 2. In the `languageselection.css` file, replace the default blue color value #0072c6 with the HTML RGB value that you want to use.
 

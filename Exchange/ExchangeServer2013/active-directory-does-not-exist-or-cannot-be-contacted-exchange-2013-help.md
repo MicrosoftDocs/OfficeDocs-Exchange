@@ -25,11 +25,11 @@ For more information about Active Directory troubleshooting and configuration fo
 
 - [Prepare Active Directory and domains](prepare-active-directory-and-domains-exchange-2013-help.md)
 
-- [Troubleshooting Active Directory Domain Services](https://go.microsoft.com/fwlink/p/?linkid=272144)
+- [Troubleshooting Active Directory Domain Services](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/ad-ds-troubleshooting)
 
 - [Configuring a Computer for Troubleshooting](https://go.microsoft.com/fwlink/p/?linkid=272141)
 
-- [Troubleshooting Active Directory Replication Problems](https://go.microsoft.com/fwlink/p/?linkid=272142)
+- [Troubleshooting Active Directory Replication Problems](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/troubleshoot/troubleshooting-active-directory-replication-problems)
 
 - [Monitoring and Troubleshooting Active Directory Replication Using Repadmin](https://go.microsoft.com/fwlink/p/?linkid=272143)
 

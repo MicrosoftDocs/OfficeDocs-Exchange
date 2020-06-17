@@ -56,7 +56,7 @@ This example changes the Seattle Servers scope to Seattle Exchange Servers.
 Set-ManagementScope "Seattle Servers" -Name "Seattle Exchange Servers"
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementScope](https://technet.microsoft.com/library/dd297996\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementScope).
 
 ## Change a recipient filter on a scope
 
@@ -72,7 +72,7 @@ This example changes the recipient filter to match all the recipient objects whe
 Set-ManagementScope "Company Scope" -RecipientRestrictionFilter "Company -eq 'contoso'"
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementScope](https://technet.microsoft.com/library/dd297996\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementScope).
 
 For more information about recipient filters and to see a list of filterable recipient properties, see [Understanding management role scope filters](understanding-management-role-scope-filters-exchange-2013-help.md).
 
@@ -90,7 +90,7 @@ This example changes the OU root to the North America/Sales Sales Users OU under
 Set-ManagementScope "Sales Users" -RecipientRoot "contoso.com/North America/Sales"
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementScope](https://technet.microsoft.com/library/dd297996\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementScope).
 
 ## Change a server filter on a scope
 
@@ -106,7 +106,7 @@ This example changes the server filter to match all the server objects where the
 Set-ManagementScope "Company Scope" -ServerRestrictionFilter "ServerSite -eq 'CN=Redmond,CN=Sites,CN=Configuration,DC=contoso,DC=com'"
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementScope](https://technet.microsoft.com/library/dd297996\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementScope).
 
 For more information about server filters and to see a list of filterable server properties, see [Understanding management role scope filters](understanding-management-role-scope-filters-exchange-2013-help.md).
 
@@ -136,7 +136,7 @@ This example changes the database filter to match all the database objects where
 Set-ManagementScope "Database Executive Scope" -DatabaseRestrictionFilter "Name -Like '*Executive*'"
 ```
 
-For detailed syntax and parameter information, see [Set-ManagementScope](https://technet.microsoft.com/library/dd297996\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementScope).
 
 For more information about database filters and to see a list of filterable database properties, see [Understanding management role scope filters](understanding-management-role-scope-filters-exchange-2013-help.md).
 

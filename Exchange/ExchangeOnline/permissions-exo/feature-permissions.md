@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 The permissions required to perform tasks to manage Microsoft Exchange Online vary depending on the procedure being performed or the cmdlet you want to run.
 
-For information about Exchange Online Protection (EOP) permissions, see [Feature Permissions in EOP](https://technet.microsoft.com/library/34674847-a6b7-4a7e-9eaa-b64f22bc150d.aspx).
+For information about Exchange Online Protection (EOP) permissions, see [Feature Permissions in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop).
 
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
 
@@ -45,20 +45,37 @@ You can use the features in the following table to manage your Exchange Online o
 |:-----|:-----|
 |Anti-malware|Organization Management <br/><br/> Hygiene Management|
 |Anti-spam|Organization Management <br/><br/> Hygiene Management|
-|Data loss prevention|Organization Management <br/><br/> Compliance Management|
+|Arbitration|Organization Management|
+|Client Access user settings|Organization Management|
+|Data loss prevention (DLP)|Organization Management <br/><br/> Compliance Management|
+|Discovery mailboxes - Create|Organization Management <br/> Recipient Management|
+|Distribution groups|Organization Management <br/> Recipient Management|
 |Office 365 connectors|Organization Management|
+|In-Place eDiscovery|Discovery Management  <br/> **Note**: By default, the Discovery Management role group doesn't have any members. No users, including adminis, have the required permissions to search mailboxes. For more information, see [Assign eDiscovery permissions in Exchange](../security-and-compliance/in-place-ediscovery/assign-ediscovery-permissions.md).|
+|In-Place Hold|Discovery Management <br/> Organization Management <br/> **Notes**:  <br/> • To create a query-based In-Place Hold, a user requires both the Mailbox Search and Legal Hold roles to be assigned via membership in a role group that has both roles assigned. To create an In-Place Hold without using a query, which places all mailbox items on hold, you must have the Legal Hold role assigned. The Discovery Management role group is assigned both roles.  <br/> • The Organization Management role group is assigned the Legal Hold role. Members of the Organization Management role group can place an In-Place Hold on all items in a mailbox, but can't create a query-based In-Place Hold.|
 |Journal archiving|Organization Management <br/><br/> Recipient Management|
+|Journaling|Organization Management <br/> Records Management|
 |Linked user|Organization Management <br/><br/> Recipient Management|
 |Mail flow|Organization Management|
+|Mail flow rules|Organization Management|
 |Mailbox settings|Organization Management <br/><br/> Recipient Management|
 |Microsoft Office 365 Message Encryption (OME)|Organization Management <br/><br/> Compliance Management <br/><br/> Records Management|
 |Message trace|Organization Management <br/><br/> Compliance Management <br/><br/> Help Desk|
+|Messaging records management|Compliance Management <br/> Organization Management <br/> Records Management|
+|Mobile devices|Organization Management <br/><br/> Recipient Management
 |Organization configuration|Organization Management|
-|Outlook on thew web mailbox policies|Organization Management <br/><br/> Recipient Management
+|Outlook on thew web mailbox policies|Organization Management <br/><br/> Recipient Management|
+|Permissions and delegation|Organization Management|
+|Public folders|Organization Management <br/> Public Folder Management <br/> Mail-enabled public folders require Recipient Management|
 |POP3 and IMAP4 permissions|Organization Management|
 |Quarantine|Organization Management <br/><br/> Hygiene Management|
+|Recipients|Organization Management <br/> Recipient Management|
+|Retention policies|Organization Management <br/> Recipient Management <br/> Records Management|
+|Role assignments|Organization Management|
 |Supervision|Organization Management|
+|Unified Messaging|Organization Management <br/> Unified Messaging Management|
+|View-only administrator audit logging|Organization Management <br/><br/> Records Management|
 |View reports|Organization Management: Users have access to mailbox reports and mail protection reports. <br/><br/> View-Only Organization Management: Users have access to mailbox reports. <br/><br/> View-Only Recipients: Users have access to mail protection reports. <br/><br/> Compliance Management: Users have access to mail protection reports and Data Loss Prevention (DLP) reports (if their subscription has DLP capabilities).|
 
 > [!NOTE]
-> To find the permissions that are required to run any Exchange Online cmdlet, see [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
+> To find the permissions that are required to run any Exchange Online cmdlet, see [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/find-exchange-cmdlet-permissions).

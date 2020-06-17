@@ -34,7 +34,7 @@ Users can use any email programs that support POP3 and IMAP4 to connect to Excha
 POP3 and IMAP4 provide access to the basic email features of Exchange Online and allow for offline email access, but don't offer rich email, calendaring, and contact management, or other features that are available when users connect with Outlook, Exchange ActiveSync, Outlook on the web (formerly known as Outlook Web App), or Outlook Voice Access.
 
 > [!NOTE]
-> Each time a person accesses a POP-based or IMAP-based email program to open his or her Office 365 email, that user will experience a delay of several seconds. The delay results from using a proxy server, which introduces an additional hop for authentication. The proxy server first looks up the assigned pod server (client access server) and then authenticates against that.
+> Each time a person accesses a POP-based or IMAP-based email program to open his or her Microsoft 365 or Office 365 email, that user will experience a delay of several seconds. The delay results from using a proxy server, which introduces an additional hop for authentication. The proxy server first looks up the assigned pod server (client access server) and then authenticates against that.
 
 ## Settings users use to set up POP3 or IMAP4 access to their Exchange Online mailboxes
 <a name="settings"> </a>

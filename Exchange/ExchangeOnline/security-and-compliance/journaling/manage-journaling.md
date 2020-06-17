@@ -28,7 +28,7 @@ This topic shows you how to perform basic tasks related to managing journaling i
 
 - Estimated time to complete each procedure: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Journaling" entry in the [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Journaling" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - You need to have a journaling mailbox and an alternate journaling mailbox configured. For more information, see [Configure Journaling in Exchange Online](configure-journaling.md).
 
@@ -37,7 +37,7 @@ This topic shows you how to perform basic tasks related to managing journaling i
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
 > [!TIP]
-> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://go.microsoft.com/fwlink/p/?LinkId=331674).
+> Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542) or [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). If you're having trouble with the **JournalingReportDNRTo** mailbox, see [Transport and Mailbox Rules in Exchange Online don't work as expected](https://support.microsoft.com/help/2829319).
 
 ## Create a journal rule
 
@@ -104,7 +104,7 @@ This example retrieves the journal rule Brokerage Journal Rule, and pipes the ou
 Get-JournalRule -Identity "Brokerage Journal Rule" | Format-List
 ```
 
-If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-journalrule) cmdlet. This example changes the name of the journal rule `JR-Sales` to `TraderVault`. The following rule settings are also changed:
+If you want to modify the properties of a specific rule, you need to use the [Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/set-journalrule) cmdlet. This example changes the name of the journal rule `JR-Sales` to `TraderVault`. The following rule settings are also changed:
 
 - Recipient
 
@@ -195,14 +195,14 @@ To verify that you have successfully removed the journal rule, do one of the fol
 
 ## For more information
 
-[New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule)
+[New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule)
 
-[Get-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-journalrule)
+[Get-JournalRule](https://docs.microsoft.com/powershell/module/exchange/get-journalrule)
 
-[Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-journalrule)
+[Set-JournalRule](https://docs.microsoft.com/powershell/module/exchange/set-journalrule)
 
-[Enable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/enable-journalrule)
+[Enable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/enable-journalrule)
 
-[Disable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/disable-journalrule)
+[Disable-JournalRule](https://docs.microsoft.com/powershell/module/exchange/disable-journalrule)
 
-[Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-journalrule)
+[Remove-JournalRule](https://docs.microsoft.com/powershell/module/exchange/remove-journalrule)

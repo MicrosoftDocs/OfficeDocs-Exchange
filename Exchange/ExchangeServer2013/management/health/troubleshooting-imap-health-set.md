@@ -82,7 +82,7 @@ The IMAP4 service is monitored by using the following probes and monitors.
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help).
 
 ## User Action
 
@@ -124,7 +124,7 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
 ## ImapTestDeepMonitor and ImapSelfTestMonitor Recovery Actions
 
-1. Restart the Exchange IMAP4 service on the back-end server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/library/bb124022\(v=exchg.150\)).
+1. Restart the Exchange IMAP4 service on the back-end server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://docs.microsoft.com/exchange/start-and-stop-the-imap4-services-exchange-2013-help).
 
 2. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
@@ -148,13 +148,13 @@ It's possible that the service recovered after it issued the alert. Therefore, w
 
    Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $false
 
-7. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+7. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and then select **Servers** \> **Exchange Server**. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## ImapCTPMonitor Recovery Actions
 
 This monitor alert is typically issued on CAS servers.
 
-1. Restart the Exchange IMAP4 service on the backend server. For more information about stopping and starting the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/library/bb124022\(v=exchg.150\))
+1. Restart the Exchange IMAP4 service on the backend server. For more information about stopping and starting the IMAP4 service, see [Start and stop the IMAP4 services](https://docs.microsoft.com/exchange/start-and-stop-the-imap4-services-exchange-2013-help)
 
 2. Rerun the associated probe as shown in step 2.c. in the Verifying the issue still exists section.
 
@@ -166,7 +166,7 @@ This monitor alert is typically issued on CAS servers.
       Set-ImapSettings -server <CAS server name> -ProtocolLoggingEnabled $true
       ```
 
-   2. Restart the Exchange IMAP4 service on the backend server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/library/bb124022\(v=exchg.150\))
+   2. Restart the Exchange IMAP4 service on the backend server. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://docs.microsoft.com/exchange/start-and-stop-the-imap4-services-exchange-2013-help)
 
    3. Rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
@@ -200,7 +200,7 @@ This monitor alert is typically issued on CAS servers.
 
 7. Restart the IMAP4 service.
 
-8. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+8. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and then select **Servers** \> **Exchange Server**. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## ImapProxyTestMonitor recovery actions
 
@@ -212,13 +212,13 @@ This monitor alert is typically issued on CAS servers.
 
 4. After the server restarts, rerun the associated probe as shown in step 2c in the Verifying the issue still exists section.
 
-5. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+5. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and then select **Servers** \> **Exchange Server**. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## AverageCommandProcessingTimeGt60sMonitor RequestsQueuedGt500Monitor Recovery Actions
 
 This monitor alert is typically issued on CA and Mailbox servers.
 
-1. Restart the Exchange IMAP4 service on the back-end server or CAS. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://technet.microsoft.com/library/bb124022\(v=exchg.150\))
+1. Restart the Exchange IMAP4 service on the back-end server or CAS. For more information about how to stop and start the IMAP4 service, see [Start and stop the IMAP4 services](https://docs.microsoft.com/exchange/start-and-stop-the-imap4-services-exchange-2013-help)
 
 2. Wait 10 minutes to see whether the monitor stays healthy. After 10 minutes, run the following command:
 
@@ -256,12 +256,12 @@ This monitor alert is typically issued on CA and Mailbox servers.
    Set-MailboxServer server1.contoso.com -DatabaseCopyActivationDisabledAndMoveNow $false
    ```
 
-7. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit the [Exchange Server Solutions Center](https://go.microsoft.com/fwlink/p/?linkid=180809). In the navigation pane, click **Support options and resources** and use one of the options listed under **Get technical support** to contact a Microsoft Support professional. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
+7. If the probe continues to fail, you may need assistance to resolve this issue. Contact a Microsoft Support professional to resolve this issue. To contact a Microsoft Support professional, visit [Support for business](https://support.microsoft.com/supportforbusiness/productselection) and then select **Servers** \> **Exchange Server**. Because your organization may have a specific procedure for directly contacting Microsoft Product Support Services, be sure to review your organization's guidelines first.
 
 ## For More Information
 
-[POP3 and IMAP4](https://technet.microsoft.com/library/jj657728\(v=exchg.150\))
+[POP3 and IMAP4](https://docs.microsoft.com/exchange/pop3-and-imap4-in-exchange-server-2013-exchange-2013-help)
 
-[Enable IMAP4 in Exchange 2013](https://technet.microsoft.com/library/bb124489\(v=exchg.150\))
+[Enable IMAP4 in Exchange 2013](https://docs.microsoft.com/exchange/enable-imap4-in-exchange-2013-exchange-2013-help)
 
-[Test-ImapConnectivity](https://technet.microsoft.com/library/bb738126\(v=exchg.150\))
+[Test-ImapConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-ImapConnectivity)

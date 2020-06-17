@@ -70,7 +70,7 @@ For more information about how to manage MWI settings on a UM mailbox policy, se
 
 - [Disable Message Waiting Indicator (MWI) for users](disable-mwi-for-users.md)
 
-- [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-ummailboxpolicy)
+- [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-ummailboxpolicy)
 
 ### UM IP gateways and MWI
 
@@ -92,7 +92,7 @@ For more information about how to manage MWI settings, see the following topics:
 
 - [Prevent Message Waiting Indicator (MWI) on a UM IP gateway](prevent-mwi-on-um-ip-gateway.md)
 
-- [Set-UMIPGateway](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-umipgateway)
+- [Set-UMIPGateway](https://docs.microsoft.com/powershell/module/exchange/set-umipgateway)
 
 ## Text message (SMS) notifications for voice mail messages and missed calls
 <a name="SMS"> </a>
@@ -118,7 +118,7 @@ For more information about how to manage text message notification settings on a
 
 - [Manage voice mail settings for a user](../../voice-mail-unified-messaging/set-up-voice-mail/manage-voice-mail-settings.md)
 
-- [Set-UMMailbox](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-ummailbox)
+- [Set-UMMailbox](https://docs.microsoft.com/powershell/module/exchange/set-ummailbox)
 
 The following table shows the parameter on a UM mailbox policy that must be configured for a user to receive text messages for voice mail and missed call notifications:
 
@@ -132,7 +132,7 @@ For more information about how to manage text message notification settings, see
 
 - [Manage a UM mailbox policy](../../voice-mail-unified-messaging/set-up-voice-mail/manage-um-mailbox-policy.md)
 
-- [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-ummailboxpolicy)
+- [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-ummailboxpolicy)
 
 For text message notifications for voice mail and missed calls to work correctly, you must perform the following tasks:
 

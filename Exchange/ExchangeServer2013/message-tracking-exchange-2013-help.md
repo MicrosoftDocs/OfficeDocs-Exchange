@@ -46,8 +46,6 @@ Message tracking logs contain vast amounts of data as messages move through an E
 
 - **Delivery reports for administrators**: Administrators can use the **Delivery reports** tab in the Exchange admin center (EAC) or the underlying **Search-MessageTrackingReport** and **Get-MesageTrackingReport** cmdlets to search the message tracking logs for information about messages sent by or received by a specific mailbox in the organization. For more information see [Delivery reports for administrators](delivery-reports-for-administrators-exchange-2013-help.md).
 
-- **Delivery reports for users**: Users can use the **Delivery reports** tab in Outlook Web App to search the message tracking logs for information about messages sent to or sent by their own mailbox. For more information, see [Delivery Reports for Users](https://go.microsoft.com/fwlink/?linkid=279920).
-
 ## Structure of the message tracking log files
 
 By default, the message tracking log files exist in %ExchangeInstallPath%TransportRoles\\Logs\\MessageTracking.

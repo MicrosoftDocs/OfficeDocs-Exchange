@@ -58,7 +58,7 @@ This example retrieves the details about the Mail Recipients management role.
 Get-ManagementRole "Mail Recipients" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRole).
 
 ## List all management roles
 
@@ -82,7 +82,7 @@ This example returns a list of all the roles in your organization and includes t
 Get-ManagementRole | Format-Table Name, Implicit*
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRole).
 
 ## List management roles that contain a specific cmdlet
 
@@ -100,7 +100,7 @@ This example returns a list of roles that contain the **New-Mailbox** cmdlet.
 Get-ManagementRole -Cmdlet New-Mailbox
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRole).
 
 ## List management roles that contain a specific parameter
 
@@ -128,7 +128,7 @@ Get-ManagementRole -Cmdlet Set-Mailbox -CmdletParameters EmailAddresses
 
 You can also use the wildcard character (\*) with either the *Cmdlet* or *CmdletParameters* parameters to match partial cmdlet or parameter names.
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRole).
 
 ## List management roles of a specific role type
 
@@ -146,7 +146,7 @@ This example returns a list of roles based on the `UmMailboxes` role type.
 Get-ManagementRole -RoleType UmMailboxes
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRole).
 
 ## List the immediate child roles of a parent role
 
@@ -164,7 +164,7 @@ This example returns a list of immediate children of the Disaster Recovery role.
 Get-ManagementRole "Disaster Recovery" -GetChildren
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRole).
 
 ## List all child roles below a parent role
 
@@ -182,4 +182,4 @@ This example returns all the child roles of the Mail Recipients role.
 Get-ManagementRole "Mail Recipients" -Recurse
 ```
 
-For detailed syntax and parameter information, see [Get-ManagementRole](https://technet.microsoft.com/library/dd351125\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/Get-ManagementRole).

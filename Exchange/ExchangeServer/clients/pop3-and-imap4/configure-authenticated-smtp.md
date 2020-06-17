@@ -183,7 +183,7 @@ To verify that you've configured Outlook on the web to display the SMTP settings
 
 To verify that you've configured the authenticated SMTP settings on the Exchange server, perform one or more following procedures:
 
-- Use the **Test-PopConnectivity** or **Test-ImapConnectivity** cmdlets, which use authenticated SMTP to send test messages. For more information, see [Test-PopConnectivity](https://docs.microsoft.com/powershell/module/exchange/client-access/test-popconnectivity) and [Test-ImapConnectivity](https://docs.microsoft.com/powershell/module/exchange/client-access/test-imapconnectivity).
+- Use the **Test-PopConnectivity** or **Test-ImapConnectivity** cmdlets, which use authenticated SMTP to send test messages. For more information, see [Test-PopConnectivity](https://docs.microsoft.com/powershell/module/exchange/test-popconnectivity) and [Test-ImapConnectivity](https://docs.microsoft.com/powershell/module/exchange/test-imapconnectivity).
 
 - Enable protocol logging on the "Client Frontend _\<Server name\>_" Receive connector, configure a POP3 or IMAP4 client to connect to a mailbox, send a test message from an internal network connection and/or an external Internet connection, and view the results in the protocol log. For more information, see [Protocol logging](../../mail-flow/connectors/protocol-logging.md).
 

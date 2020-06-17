@@ -341,7 +341,7 @@ To enable callers to use the multiple language features found in Unified Messagi
 
 ## Unified Messaging language packs
 
-You install a UM language pack on a Mailbox server using Setup.exe. After you install the new language pack, the language associated with the language pack will be added to the list of available languages that you can use. You can view the languages that have been installed using the [Get-UMService](https://technet.microsoft.com/library/jj552407\(v=exchg.150\)) cmdlet in the Exchange Management Shell.
+You install a UM language pack on a Mailbox server using Setup.exe. After you install the new language pack, the language associated with the language pack will be added to the list of available languages that you can use. You can view the languages that have been installed using the [Get-UMService](https://docs.microsoft.com/powershell/module/exchange/Get-UMService) cmdlet in the Exchange Management Shell.
 
 When you install the UM language pack, the files that are used by the TTS engine and the pre-recorded prompts for the chosen language are copied and made available for users who connect to the voice mail system. You can download the UM language packs from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=266542). For details, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
 

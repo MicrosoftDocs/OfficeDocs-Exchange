@@ -129,7 +129,7 @@ The **Auditing** page in the EAC has several reports that provide information ab
 
 - **Admin audit log report**: This report enables you to view entries in the admin audit log recorded within a specified time frame. You can also export admin audit log entries to a XML file and then send the file via email to a recipient you specify. For more information about the contents of the XML file, see [Administrator audit log structure](log-structure.md).
 
-For information about how to use these reports, see [Search the Administrator Audit Log](https://technet.microsoft.com/library/c7188d53-e672-492b-b57d-cd711379ddb3.aspx).
+For information about how to use these reports, see [Search the role group changes or administrator audit logs](https://docs.microsoft.com/Exchange/search-role-group-changes-exchange-2013-help).
 
 ### Search-AdminAuditLog cmdlet
 
@@ -151,7 +151,7 @@ When you run the **Search-AdminAuditLog** cmdlet, all the audit log entries that
 
 Each audit log entry contains the information described in the table in [Audit log contents](#audit-log-contents). By default, only the first 1,000 log entries that match the search criteria are returned. However, you can override this default and return more or fewer entries using the _ResultSize_ parameter. You can specify a value of `Unlimited` with the _ResultSize_ parameter to return all log entries that match the specified criteria.
 
-For information about how to use the **Search-AdminAuditLog** cmdlet, see [Search the Administrator Audit Log](https://technet.microsoft.com/library/c7188d53-e672-492b-b57d-cd711379ddb3.aspx).
+For information about how to use the **Search-AdminAuditLog** cmdlet, see [Search the role group changes or administrator audit logs](https://docs.microsoft.com/Exchange/search-role-group-changes-exchange-2013-help).
 
 ### New-AdminAuditLogSearch cmdlet
 
@@ -164,7 +164,7 @@ After you run the **New-AdminAuditLogSearch** cmdlet, Exchange may take up to 15
 > [!NOTE]
 > Outlook Web App doesn't allow you to open XML attachments by default. You can either configure Exchange to allow XML attachments to be viewed using Outlook Web App, or you can use another email client, such as Microsoft Outlook, to view the attachment. For information about how to configure Outlook Web App to allow you to view an XML attachment, see [View or configure Outlook on the web virtual directories in Exchange Server](../../clients/outlook-on-the-web/virtual-directories.md).
 
-For information about how to use the **New-AdminAuditLogSearch** cmdlet, see [Search the Administrator Audit Log](https://technet.microsoft.com/library/c7188d53-e672-492b-b57d-cd711379ddb3.aspx).
+For information about how to use the **New-AdminAuditLogSearch** cmdlet, see [Search the role group changes or administrator audit logs](https://docs.microsoft.com/Exchange/search-role-group-changes-exchange-2013-help).
 
 ## Manual admin audit log entries
 
@@ -180,7 +180,7 @@ With the **Write-AdminAuditLog** cmdlet, you specify a string of text to include
 
 You can retrieve manual audit log entries the same way as any other log entry, using the EAC **Auditing** page or using the **Search-AdminAuditLog** or **New-AdminAuditLogSearch** cmdlets.
 
-To view the contents of the _Comment_ parameter on the **Write-AdminAuditLog** cmdlet in a manual audit log entry, see [Search the Administrator Audit Log](https://technet.microsoft.com/library/c7188d53-e672-492b-b57d-cd711379ddb3.aspx).
+To view the contents of the _Comment_ parameter on the **Write-AdminAuditLog** cmdlet in a manual audit log entry, see [Search the role group changes or administrator audit logs](https://docs.microsoft.com/Exchange/search-role-group-changes-exchange-2013-help).
 
 ## Active Directory replication
 

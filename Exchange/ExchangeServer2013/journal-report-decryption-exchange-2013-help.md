@@ -56,7 +56,7 @@ The agent decrypts the following types of IRM-protected messages:
 
 ## Configuring journal report decryption
 
-Journal report decryption is configuredb using the [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)) cmdlet in the Exchange Management Shell. However, before you configure journal report decryption, you must assign Exchange 2013 servers the permissions to decrypt content that's IRM-protected by your AD RMS server. To do this, you add the Federation mailbox to the super users group configured on your organization's AD RMS cluster. For details, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
+Journal report decryption is configuredb using the [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration) cmdlet in the Exchange Management Shell. However, before you configure journal report decryption, you must assign Exchange 2013 servers the permissions to decrypt content that's IRM-protected by your AD RMS server. To do this, you add the Federation mailbox to the super users group configured on your organization's AD RMS cluster. For details, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
 
 > [!IMPORTANT]
 > In cross-forest AD&nbsp;RMS deployments where you have an AD&nbsp;RMS cluster deployed in each forest, you must add the Federation mailbox to the super users group on the AD&nbsp;RMS cluster in each forest to allow Exchange 2013 Transport service to decrypt the messages protected against each AD&nbsp;RMS cluster.

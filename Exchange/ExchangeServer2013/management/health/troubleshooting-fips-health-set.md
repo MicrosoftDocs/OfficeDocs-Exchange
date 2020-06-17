@@ -16,7 +16,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-The **FIPS** health set monitors the overall health of the Federal Information Processing Standards (FIPS) settings on Exchange servers. For more information about FIPS 140, see [FIPS 140 Validation](https://go.microsoft.com/fwlink/p/?linkid=521913).
+The **FIPS** health set monitors the overall health of the Federal Information Processing Standards (FIPS) settings on Exchange servers. For more information about FIPS 140, see [FIPS 140-2 Validation](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation).
 
 If you receive an alert that indicates that the **FIPS** health set is unhealthy, this indicates an issue that may prevent your Exchange server from using FIPS 140-compliant components and processes.
 
@@ -76,7 +76,7 @@ The **FIPS** service is monitored using the following probes and monitors.
 </tbody>
 </table>
 
-For more information about probes and monitors, see [Server health and performance](https://technet.microsoft.com/library/jj150551\(v=exchg.150\)).
+For more information about probes and monitors, see [Server health and performance](https://docs.microsoft.com/exchange/server-health-and-performance-exchange-2013-help).
 
 ## User Action
 

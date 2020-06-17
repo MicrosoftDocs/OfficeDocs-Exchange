@@ -41,7 +41,7 @@ To enable push notifications, the admin must:
 
 Office 365 is a cloud-based service that is designed to help meet your organization's needs for robust security, reliability, and user productivity. Office 365 refers to subscription plans that include access to Office applications plus other productivity services that are enabled over the Internet (cloud services), such as Lync web conferencing and Exchange Online hosted email for business.
 
-Many Office 365 plans also include the desktop version of the latest Office applications, which users can install across multiple computers and devices. All Office 365 plans are paid for on a subscription basis, monthly or annually. To find out more or to enroll in Office 365 for your organization, see [What is Office 365 for business?](https://support.office.com/article/what-is-office-365-for-business-4608c472-4532-44a0-ae0f-e7f0b12d2113). For more about each of the services offered through Office 365, see [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
+Many Office 365 plans also include the desktop version of the latest Office applications, which users can install across multiple computers and devices. All Office 365 plans are paid for on a subscription basis, monthly or annually. To find out more or to enroll in Office 365 for your organization, see [What is Office 365 for business?](https://support.microsoft.com/office/901e2522-c2cf-4b8c-894e-f482cda3347a). For more about each of the services offered through Office 365, see [Office 365 Service Descriptions](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library).
 
 ## Update to CU3 or later
 
@@ -49,7 +49,7 @@ Cumulative Update 3 (CU3) for Exchange Server 2013 resolves issues that were fou
 
 ## Set up On-premises Exchange 2013 to Office 365 Authentication
 
-Using a single, standardized method for server-to-server authentication is the approach used by Exchange Server 2013. [Exchange Server 2013](https://go.microsoft.com/fwlink/?linkid=290946) (as well as [Lync Server 2013](https://go.microsoft.com/fwlink/?linkid=273796) and [SharePoint 2013](https://go.microsoft.com/fwlink/?linkid=335701)) and [Office 2013](https://go.microsoft.com/fwlink/?linkid=335696) support the OAuth (Open Authorization) protocol for server-to-server authentication and authorization. With OAuth, a standard authorization protocol used by a number of major websites, user credentials and passwords aren't passed from one computer to another. Instead, authentication and authorization are based on the OAuth security tokens; these tokens grant access to a specific set of resources for a specific amount of time.
+Using a single, standardized method for server-to-server authentication is the approach used by Exchange Server 2013. [Exchange Server 2013](exchange-server-2013-exchange-2013-help.md) (as well as [Lync Server 2013](https://docs.microsoft.com/skypeforbusiness/manage/authentication/server-to-server-and-partner-applications) and [SharePoint 2013](https://support.microsoft.com/office/2229681c-8a19-4efb-a59a-fc9ece9e9557)) and [Office 2013](https://go.microsoft.com/fwlink/?linkid=335696) support the OAuth (Open Authorization) protocol for server-to-server authentication and authorization. With OAuth, a standard authorization protocol used by a number of major websites, user credentials and passwords aren't passed from one computer to another. Instead, authentication and authorization are based on the OAuth security tokens; these tokens grant access to a specific set of resources for a specific amount of time.
 
 OAuth authentication typically involves three components: a single authorization server and the two realms that need to communicate with one another. Security tokens are issued by the authorization server (also known as a security token server) to the two realms that need to communicate; these tokens verify that communications originating from one realm should be trusted by the other realm. For example, the authorization server might issue tokens that verify that users from a specific Lync Server 2013 realm are able to access a specified Exchange 2013 realm, and vice versa.
 
@@ -65,7 +65,7 @@ In order to configure server-to-server authentication for an on-premises impleme
   **Note**: Copying and pasting the code into a text editor like Notepad and saving it with a .ps1 extension makes it easier to run Shell scripts.
 
   ```powershell
-  # Make sure to update the following $tenantDomain with your Office 365 tenant domain.
+  # Make sure to update the following $tenantDomain with your Office 365 organization domain.
 
   $tenantDomain = "Fabrikam.com"
 
@@ -133,7 +133,7 @@ In order to configure server-to-server authentication for an on-premises impleme
 > [!NOTE]
 > Before you continue, the Azure Active Directory Module for Windows PowerShell cmdlets is required. If the Azure Active Directory Module for Windows PowerShell cmdlets (previously known as the Microsoft Online Services Module for Windows PowerShell) hasn't been installed, you can install it from <A href="https://aka.ms/aadposh">Manage Azure AD using Windows PowerShell</A>.
 
-- **Step 2 - Configure Office 365 to communicate with Exchange 2013 on-premises**: Configure the Office 365 server that Exchange Server 2013 will communicate with to be a partner application. For example, if Exchange Server 2013 on-premises needs to communicate with Office 365, you need to configure Exchange on-premises to be a partner application. A partner application is any application that Exchange 2013 can directly exchange security tokens with, without having to go through a third-party security token server. An on-premises Exchange 2013 administrator must use the following Exchange Management Shell script to configure the Office 365 tenant that Exchange 2013 will communicate with to be a partner application. During execution, there will be a prompt to enter the administrator user name and password of the Office 365 tenant domain (for example, administrator@fabrikam.com). Make sure to update the value of *$CertFile* to the location of the certificate if not created from the previous script. To do this, copy and paste the following code.
+- **Step 2 - Configure Office 365 to communicate with Exchange 2013 on-premises**: Configure the Office 365 server that Exchange Server 2013 will communicate with to be a partner application. For example, if Exchange Server 2013 on-premises needs to communicate with Office 365, you need to configure Exchange on-premises to be a partner application. A partner application is any application that Exchange 2013 can directly exchange security tokens with, without having to go through a third-party security token server. An on-premises Exchange 2013 administrator must use the following Exchange Management Shell script to configure the Office 365 organization that Exchange 2013 will communicate with to be a partner application. During execution, there will be a prompt to enter the administrator username and password of the Office 365 organization domain (for example, administrator@fabrikam.com). Make sure to update the value of *$CertFile* to the location of the certificate if not created from the previous script. To do this, copy and paste the following code.
 
   ```powershell
   # Make sure to update the following $CertFile with the path to the cert if not using the previous script.
@@ -152,7 +152,7 @@ In order to configure server-to-server authentication for an on-premises impleme
       $binCert = $cer.GetRawCertData();
       $credValue = [System.Convert]::ToBase64String($binCert);
 
-      Write-Host "Please enter the administrator user name and password of the Office 365 tenant domain..."
+      Write-Host "Please enter the administrator username and password of the Office 365 organization domain..."
 
       Connect-MsolService;
       Import-Module msonlineextended;
@@ -170,7 +170,7 @@ In order to configure server-to-server authentication for an on-premises impleme
 
   The results should resemble the following output:
 
-  > Please enter the administrator user name and password of the Office 365 tenant domain... <br/> Adding a key to Service Principal... <br/> Complete.
+  > Please enter the administrator username and password of the Office 365 organization domain... <br/> Adding a key to Service Principal... <br/> Complete.
 
 ## Enable push notifications proxying
 

@@ -25,7 +25,7 @@ description: "Summary: Instructions for enabling on-premises Exchange 2013 users
 
 In a hybrid deployment, your users can be in Exchange Online, on-premises, or both, and your public folders are either in Exchange Online or on-premises. Sometimes your online users may need to access public folders in your Exchange Server 2013 on-premises environment. Similarly, Exchange 2013 users may need to access public folders in Office 365 or Exchange Online.
 
-This article describes how to enable users in your Exchange 2013 on-premises environment to access Exchange Online/Office 365 public folders. To enable Exchange Online/Office 365 users to access on-premises Exchange 2013 public folders, see [Configure Exchange 2013 public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md).
+This article describes how to enable users in your Exchange 2013 on-premises environment to access Exchange Online, Microsoft 365, or Office 365 public folders. To enable Exchange Online, Microsoft 365, or Office 365 users to access on-premises Exchange 2013 public folders, see [Configure Exchange 2013 public folders for a hybrid deployment](set-up-modern-hybrid-public-folders.md).
 
 > [!NOTE]
 > If you have Exchange 2010 public folders, see [Configure legacy on-premises public folders for a hybrid deployment](set-up-legacy-hybrid-public-folders.md).
@@ -70,13 +70,13 @@ Running the script `Sync-MailPublicFoldersCloudToOnprem.ps1` will synchronize th
 > [!NOTE]
 > Synchronized mail-enabled public folders will appear as mail contact objects for mail flow purposes and will not be viewable in the Exchange admin center. See the Get-MailPublicFolder command. To recreate the SendAs permissions in the cloud, use the Add-RecipientPermission command.
 
-1. On the Exchange 2013 server, run the following command to synchronize mail-enabled public folders from Exchange Online/Office 365 to your local on-premises Active Directory.
+1. On the Exchange 2013 server, run the following command to synchronize mail-enabled public folders from Exchange Online, Microsoft 365, or Office 365 to your local on-premises Active Directory.
 
    ```PowerShell
    Sync-MailPublicFoldersCloudToOnprem.ps1 -Credential (Get-Credential)
    ```
 
-   Where  *Credential* is your Office 365 user name and password.
+   Where *Credential* is your Microsoft 365 Office 365 username and password.
 
    > [!NOTE]
    > We recommend that you run this script daily to synchronize your mail-enabled public folders.
@@ -93,7 +93,7 @@ Running the script `Import-PublicFolderMailboxes.ps1` will import public folder 
    Import-PublicFolderMailboxes.ps1 -Credential (Get-Credential)
    ```
 
-   Where *Credential* is your Office 365 user name and password.
+   Where *Credential* is your Microsoft 365 or Office 365 username and password.
 
    > [!NOTE]
    > We recommend that you run this script daily to import your public folder mailbox objects because whenever public folder mailboxes reach their threshold capacity, they automatically split into multiple new mailboxes. Therefore, you always want to ensure you have imported the most recent public folder mailboxes from the cloud.

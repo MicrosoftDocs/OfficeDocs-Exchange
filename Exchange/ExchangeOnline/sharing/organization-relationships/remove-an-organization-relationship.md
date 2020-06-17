@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: An organization relationship lets users in your Office 365 organization share calendar free/busy information with other Office 365 or on-premises Exchange organizations. You can remove an organization relationship to disable calendar sharing with the other organization.
+description: An organization relationship lets users in your Microsoft 365 or Office 365 organization share calendar free/busy information with other Office 365 or on-premises Exchange organizations. You can remove an organization relationship to disable calendar sharing with the other organization.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -20,7 +20,7 @@ manager: serdars
 
 # Remove an organization relationship in Exchange Online
 
-An organization relationship lets users in your Office 365 organization share calendar free/busy information with other Office 365 or on-premises Exchange organizations. You can remove an organization relationship to disable calendar sharing with the other organization.
+An organization relationship lets users in your Microsoft 365 or Office 365 organization share calendar free/busy information with other Office 365 or on-premises Exchange organizations. You can remove an organization relationship to disable calendar sharing with the other organization.
 
 To learn more about organization relationships, see [Organization relationships in Exchange Online](organization-relationships.md).
 
@@ -50,7 +50,7 @@ This example removes the organization relationship Contoso.
 Remove-OrganizationRelationship -Identity "Contoso"
 ```
 
-For detailed syntax and parameter information, see [Remove-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/remove-organizationrelationship).
+For detailed syntax and parameter information, see [Remove-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/remove-organizationrelationship).
 
 ## How do you know this worked?
 

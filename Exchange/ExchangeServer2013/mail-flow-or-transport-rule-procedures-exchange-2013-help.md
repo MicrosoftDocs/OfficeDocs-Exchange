@@ -19,9 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 You can begin using transport rules by using the following procedures. To learn about concepts and objectives for transport rules, see [Mail flow or transport rules](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
-[Add an email disclaimer, legal disclaimer, common signature, or email footer or header](https://technet.microsoft.com/library/dn600323\(v=exchg.150\)): Information to help you set up a legal disclaimer, email disclaimer, consistent signature, email header, or email footer by using transport rules.
-
-[Create a domain or user-based safe sender or blocked sender list](https://technet.microsoft.com/library/dn198251\(v=exchg.150\)): Information to help you create domain or user-based safe sender and blocked sender lists by using transport rules.
+[Organization-wide disclaimers, signatures, footers, or headers in Exchange 2013](organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help.md): Information to help you set up a legal disclaimer, email disclaimer, consistent signature, email header, or email footer by using transport rules.
 
 [Use transport rules to route email based on a list of words, phrases, or patterns](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/use-rules-to-route-email): Information to help you comply with your organization's email policies.
 

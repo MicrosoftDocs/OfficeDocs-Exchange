@@ -124,7 +124,7 @@ Here's a description of useful fields in the mailbox audit log. They can help yo
 |:-----|:-----|
 |Owner|The owner of the mailbox that was accessed by a non-owner.|
 |LastAccessed|The date and time when the mailbox was accessed.|
-|Operation|The action that was performed by the non-owner. For more information, see the "What gets logged in the mailbox audit log?" section in [Run a Non-Owner Mailbox Access Report](https://technet.microsoft.com/library/18f52b7e-cd60-4a2f-b8a3-0c08747635bb.aspx).|
+|Operation|The action that was performed by the non-owner. For more information, see the "What gets logged in the mailbox audit log?" section in [Run a non-owner mailbox access report in Exchange Online](non-owner-mailbox-access-report.md).|
 |OperationResult|Whether the action performed by the non-owner succeeded or failed.|
 |LogonType|The type of non-owner access. These include admin, delegate, and external.|
 |FolderPathName|The name of the folder that contained the message that was affected by the non-owner.|

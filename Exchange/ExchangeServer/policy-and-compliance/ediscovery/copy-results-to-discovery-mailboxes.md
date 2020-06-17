@@ -30,7 +30,7 @@ After you create an In-Place eDiscovery search in Exchange Server, you can use t
 
 - It might take 5 minutes or longer to copy search results to a discovery mailbox, depending on the number of mailbox items returned in the results.
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 ## Use the EAC to copy search results
 
@@ -42,7 +42,7 @@ After you create an In-Place eDiscovery search in Exchange Server, you can use t
 
 4. In **Copy Search Results**, select from the following options:
 
-   - **Include unsearchable items**: Select this check box to include mailbox items that couldn't be searched (for example, messages with attachments of file types that couldn't be indexed by Exchange Search). For more information, see [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx).
+   - **Include unsearchable items**: Select this check box to include mailbox items that couldn't be searched (for example, messages with attachments of file types that couldn't be indexed by Exchange Search). For more information, see [Unsearchable Items in Exchange eDiscovery](https://docs.microsoft.com/exchange/unsearchable-items-in-exchange-ediscovery-exchange-2013-help).
 
    - **Enable de-duplication**: Select this check box to exclude duplicate messages. Only a single instance of a message will be copied to the discovery mailbox.
 
@@ -66,7 +66,7 @@ After using the **New-MailboxSearch** cmdlet to create an In-Place eDiscovery se
 
 - [Create an In-Place eDiscovery search in Exchange Server](create-searches.md)
 
-- [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch)
+- [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch)
 
 In the following example, you would run the following command to start an eDiscovery search named *Fabrikam Investigation* to copy the search results to the discovery mailbox that was specified by the _TargetMailbox_ parameter when the search was created.
 
@@ -93,15 +93,15 @@ Start-MailboxSearch "FY15 Q2 Financial Results"
 
 For more information about these cmdlets, see the following topics:
 
-- [Set-Mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch)
+- [Set-Mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/set-mailboxsearch)
 
-- [Start-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-mailboxsearch)
+- [Start-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/start-mailboxsearch)
 
 ## More information
 
 - After you copy search results to the discovery mailbox, you can also export those search results to a PST file. For more information, see [Export eDiscovery search results to a PST file](export-results-to-pst.md). Note that you can export search results without having to copy them to a discovery mailbox. You can create an estimate-only search, start it, and then export the search results.
 
-- For more information about unsearchable items, see [Unsearchable Items in Exchange eDiscovery](https://technet.microsoft.com/library/32550081-9af9-474b-ae7b-28f1e68cad41.aspx).
+- For more information about unsearchable items, see [Unsearchable Items in Exchange eDiscovery](https://docs.microsoft.com/exchange/unsearchable-items-in-exchange-ediscovery-exchange-2013-help).
 
 - If you're copying all mailbox content within a specific date range (by not specifying any keywords in the search criteria), then all unsearchable items within that date range will be automatically included in the search results. Therefore, don't select the **Include unsearchable items** checkbox when copying search results. Otherwise, a duplicate copy of all unsearchable items will be copied to the discovery mailbox.
 

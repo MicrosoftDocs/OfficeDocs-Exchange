@@ -34,7 +34,7 @@ Messaging records management (MRM) is the records management technology in Excha
 
 MRM provides the flexibility to implement the records management policy that best meets your organization's requirements. With a good understanding of MRM, In-Place Archiving, and In-Place Hold, you can help meet your goals of managing mailbox storage and meeting regulatory retention requirements.
 
-Looking for management tasks related to MRM? See [Messaging Records Management Procedures](https://technet.microsoft.com/library/bc2ff408-4a2b-4202-9515-e3e922a6320d.aspx).
+Looking for management tasks related to MRM? See [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 ## MRM in Exchange Server and Exchange Online
 
@@ -50,9 +50,9 @@ You can use retention policies to enforce basic message retention for an entire 
 
 **Move messages to archive mailboxes**: In this strategy, you implement MRM policies that move items to the user's archive mailbox. An archive mailbox provides additional storage for users to maintain old and infrequently accessed content. Retention tags that move items are also known as archive policies. Within the same retention policy, you can combine a DPT and personal tags to move items, and a DPT, RPTs, and personal tags to delete items. To learn more about archiving policies, see:
 
-- **Exchange Server 2016**: [In-Place Archiving](https://technet.microsoft.com/library/b5e4c0e9-0558-4b90-bc12-f67adbfb59ac.aspx)
+- **Exchange Server 2016**: [In-Place Archiving](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
 
-- **Exchange Online**: [Archive Mailboxes in Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=825607)
+- **Exchange Online**: [Archive Mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
 
 > [!NOTE]
 > In an Exchange hybrid deployment, you can enable a cloud-based archive mailbox for an on-premises primary mailbox. If you assign an archive policy to an on-premises mailbox, items are moved to the cloud-based archive. If an item is moved to the archive mailbox, a copy of it isn't retained in the on-premises mailbox. If the on-premises mailbox is placed on hold, an archive policy will still move items to the cloud-based archive mailbox where they are preserved for the duration specified by the hold.
@@ -76,7 +76,7 @@ For example, you can use a retention policy with personal tags that have a short
 
  **Retain messages for eDiscovery purposes**: In this strategy, you implement MRM policies that remove messages from mailboxes after a specified period but also retain them in the Recoverable Items folder for [In-Place eDiscovery](../../security-and-compliance/in-place-ediscovery/in-place-ediscovery.md) purposes, even if the messages were deleted by the user or another process.
 
-You can meet this requirement by using a combination of retention policies and [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md) or Litigation Hold. Retention policies remove messages from the mailbox after the specified period. A time-based In-Place Hold or Litigation Hold preserves messages that were deleted or modified before that period. For example, to retain messages for seven years, you can create a retention policy with a DPT that deletes messages in seven years and Litigation Hold to hold messages for seven years. Messages that aren't removed by users will be deleted after seven years; messages deleted by users before the seven year period will be retained in the Recoverable Items folder for seven years. To learn more about this folder, see [Recoverable Items Folder](https://technet.microsoft.com/library/efc48fb4-2ed8-4d05-93af-f3505fbc389d.aspx).
+You can meet this requirement by using a combination of retention policies and [In-Place Hold and Litigation Hold](../../security-and-compliance/in-place-and-litigation-holds.md) or Litigation Hold. Retention policies remove messages from the mailbox after the specified period. A time-based In-Place Hold or Litigation Hold preserves messages that were deleted or modified before that period. For example, to retain messages for seven years, you can create a retention policy with a DPT that deletes messages in seven years and Litigation Hold to hold messages for seven years. Messages that aren't removed by users will be deleted after seven years; messages deleted by users before the seven year period will be retained in the Recoverable Items folder for seven years. To learn more about this folder, see [Recoverable Items folder in Exchange Online](../recoverable-items-folder/recoverable-items-folder.md).
 
 Optionally, you can use RPTs and personal tags to allow users to clean up their mailboxes. However, In-Place Hold and Litigation Hold continues to retain the deleted messages until the hold period expires.
 

@@ -29,9 +29,9 @@ For most organizations, we recommend using hosted mail flow because it's the sim
 
 ### Hosted mail flow scenarios
 
-- I'm a new Office 365 customer, and all my users' mailboxes are in Office 365. I want to use all filtering solutions that Office 365 offers.
+- I'm a new Microsoft 365 or Office 365 customer, and all my users' mailboxes are in Microsoft 365 or Office 365. I want to use all filtering solutions that Office 365 offers.
 
-- I'm a new Office 365 customer. I have an existing email service, but I plan to immediately move all existing mailboxes to the cloud. I want to use all filtering solutions that Office 365 offers.
+- I'm a new Microsoft 365 or Office 365 customer. I have an existing email service, but I plan to immediately move all existing mailboxes to the cloud. I want to use all filtering solutions that Office 365 offers.
 
 For this scenario, your organization's mail flow setup looks like the following diagram:
 
@@ -45,25 +45,25 @@ To set up hosted mail flow, we recommend using the Office 365 setup wizard. To g
 
 The Office 365 setup wizard walks you through the following steps.
 
-1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add users and domains](https://go.microsoft.com/fwlink/p/?LinkId=708999).
+1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
-2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=524030).
+2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](../mailbox-migration/mailbox-migration.md).
 
-3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://go.microsoft.com/fwlink/p/?LinkID=534835).)
+3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).)
 
-    The following DNS records control mail flow:
+   The following DNS records control mail flow:
 
-  - **MX record** - Point your MX record to Office 365 in the following format: \<domainKey\>.mail.protection.outlook.com.
+   - **MX record** - Point your MX record to Office 365 in the following format: \<domainKey\>.mail.protection.outlook.com.
 
-    For example, the domain contoso.com should have the MX record contoso-com.mail.protection.outlook.com.
+   For example, the domain contoso.com should have the MX record contoso-com.mail.protection.outlook.com.
 
-  - **SPF record** - This is a special TXT record in DNS that identifies a service as a valid sender for a particular domain. Because Office 365 is sending all your messages, list only Office 365 as a valid sender for your domain. To do that, add an SPF record for your domain in the following format:
+   - **SPF record** - This is a special TXT record in DNS that identifies a service as a valid sender for a particular domain. Because Office 365 is sending all your messages, list only Office 365 as a valid sender for your domain. To do that, add an SPF record for your domain in the following format:
 
-  ```
-  v=spf1 include:spf.protection.outlook.com -all
-  ```
+   ```text
+   v=spf1 include:spf.protection.outlook.com -all
+   ```
 
-For a full list of setup instructions, check out [Set up Office 365 for business](https://go.microsoft.com/fwlink/p/?LinkID=522378) or [Deploy Office 365 Enterprise for your organization](https://go.microsoft.com/fwlink/p/?LinkID=703951).
+For a full list of setup instructions, check out [Set up Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/admin/setup/setup) or [Deploy Office 365 Enterprise for your organization](https://docs.microsoft.com/office365/enterprise/setup-overview-for-enterprises).
 
 ## See also
 <a name="BKMK_HostedMailFlow"> </a>

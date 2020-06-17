@@ -17,13 +17,13 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Mail contacts are mail-enabled directory service objects that contain information about people or organizations that exist outside your Exchange organization. Each mail contact has an external email address. For more information about mail contacts, see [Recipients](https://technet.microsoft.com/library/40300ed4-85a5-463d-bb3a-cf787bd44e9d.aspx).
+Mail contacts are mail-enabled directory service objects that contain information about people or organizations that exist outside your Exchange organization. Each mail contact has an external email address. For more information about mail contacts, see [Recipients](recipients-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Mailbox Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -145,13 +145,13 @@ Properties for a mail contact are stored in both Active Directory and Exchange. 
 
 For more information, see the following topics:
 
-- [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-contact)
+- [Get-Contact](https://docs.microsoft.com/powershell/module/exchange/get-contact)
 
-- [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-contact)
+- [Set-Contact](https://docs.microsoft.com/powershell/module/exchange/set-contact)
 
-- [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-mailcontact)
+- [Get-MailContact](https://docs.microsoft.com/powershell/module/exchange/get-mailcontact)
 
-- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailcontact)
+- [Set-MailContact](https://docs.microsoft.com/powershell/module/exchange/set-mailcontact)
 
 Here are some examples of using the Shell to change mail contact properties.
 

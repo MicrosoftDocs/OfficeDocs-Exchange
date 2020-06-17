@@ -34,7 +34,7 @@ For more information about health reporting and managed availability, see [Manag
 
 - Estimated time to complete each procedure: 2 minutes
 
-- The procedures in this topic require the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- The procedures in this topic require the Exchange Management Shell. For more information, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](../../about-documentation/exchange-admin-center-keyboard-shortcuts.md).
 
@@ -69,7 +69,7 @@ Get-ExchangeServer | Get-HealthReport -RollupGroup -HealthSetName <HealthSet>
 (Get-DatabaseAvailabilityGroup <DAGName>).Servers | Get-HealthReport -RollupGroup
 ```
 
-For detailed syntax and parameter information, see [Get-HealthReport](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-healthreport).
+For detailed syntax and parameter information, see [Get-HealthReport](https://docs.microsoft.com/powershell/module/exchange/get-healthreport).
 
 ## Use the Exchange Management Shell to view a list of health sets
 
@@ -81,7 +81,7 @@ Run the following command to view the health sets on an Exchange server:
 Get-HealthReport -Server <ServerName>
 ```
 
-For detailed syntax and parameter information, see [Get-HealthReport](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-healthreport).
+For detailed syntax and parameter information, see [Get-HealthReport](https://docs.microsoft.com/powershell/module/exchange/get-healthreport).
 
 ## Use the Exchange Management Shell to view the probes, monitors and responders for a health set
 
@@ -93,7 +93,7 @@ Run the following command to view the probes, monitors and responders associated
 Get-MonitoringItemIdentity -Server <ServerName> -Identity <HealthSetName> | Format-Table Identity,ItemType,Name -Auto
 ```
 
-For detailed syntax and parameter information, see [Get-MonitoringItemIdentity](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-monitoringitemidentity).
+For detailed syntax and parameter information, see [Get-MonitoringItemIdentity](https://docs.microsoft.com/powershell/module/exchange/get-monitoringitemidentity).
 
 ## Use the Exchange Management Shell to View a List of Monitors and Their Current Health
 
@@ -105,4 +105,4 @@ Run the following command to view a list of the monitors and their current healt
 Get-ServerHealth -HealthSet <HealthSetName> -Server <ServerName> | Format-Table Name, AlertValue -Auto
 ```
 
-For detailed syntax and parameter information, see [Get-ServerHealth](https://docs.microsoft.com/powershell/module/exchange/server-health-and-performance/get-serverhealth).
+For detailed syntax and parameter information, see [Get-ServerHealth](https://docs.microsoft.com/powershell/module/exchange/get-serverhealth).

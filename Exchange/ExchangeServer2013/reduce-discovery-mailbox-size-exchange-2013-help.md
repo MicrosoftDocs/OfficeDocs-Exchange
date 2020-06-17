@@ -23,7 +23,7 @@ In Exchange Server 2013, the maximum size of discovery mailboxes, which are used
 
 - They're not supported.
 
-- They can't be migrated to Office 365.
+- They can't be migrated to Microsoft 365 or Office 365.
 
 - If they're discovery mailboxes in Exchange Server 2010, they can't be upgraded to Exchange Server 2013.
 
@@ -128,7 +128,7 @@ The next step is to use the **New-MailboxSearch** cmdlet to copy the search resu
 
    - **Using the EAC**: Go to **Compliance management** \> **In-Place eDiscovery & hold**. Select the search, click **Search** ![Search icon](images/ITPro_EAC_.gif), and then click **Copy search results**.
 
-     For more information, see [Copy eDiscovery Search Results to a Discovery Mailbox](https://technet.microsoft.com/library/bff2ce89-9e6f-494a-bd6a-2f2011507845.aspx).
+     For more information, see [Copy eDiscovery search results to a discovery mailbox](copy-ediscovery-search-results-to-a-discovery-mailbox-exchange-2013-help.md).
 
 5. Repeat steps 1 through 4 to create new searches for additional date ranges. Include the date range in the name of the new search to indicate the range of the results. To make sure none of the discovery mailboxes exceeds the 50 GB limit, use different discovery mailboxes as the target mailbox.
 

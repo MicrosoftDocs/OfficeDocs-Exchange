@@ -52,7 +52,7 @@ Before you can send mail to the Internet, you need to create a Send connector on
 
 1. Open the EAC by browsing to the URL of your Client Access server. For example, https://Ex2013CAS/ECP.
 
-2. Enter your user name and password in **Domain\\user name** and **Password** and then click **Sign in**.
+2. Enter your username and password in **Domain\\user name** and **Password** and then click **Sign in**.
 
 3. Go to **Mail flow** \> **Send connectors**. On the **Send connectors** page, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
@@ -90,7 +90,7 @@ By default, when you deploy a new Exchange 2013 organization in an Active Direct
 
 1. Open the EAC by browsing to the URL of your Client Access server. For example, https://Ex2013CAS/ECP.
 
-2. Enter your user name and password in **Domain\\user name** and **Password** and then click **Sign in**.
+2. Enter your username and password in **Domain\\user name** and **Password** and then click **Sign in**.
 
 3. Go to **Mail flow** \> **Accepted domains**. On the **Accepted domains** page, click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 
@@ -112,7 +112,7 @@ If you added an accepted domain in the previous step and you want that domain to
 
 1. Open the EAC by browsing to the URL of your Client Access server. For example, https://Ex2013CAS/ECP.
 
-2. Enter your user name and password in **Domain\\user name** and **Password** and then click **Sign in**.
+2. Enter your username and password in **Domain\\user name** and **Password** and then click **Sign in**.
 
 3. Go to **Mail flow** \> **Email address policies**. On the **Email address policies** page, select **Default Policy** and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
@@ -127,7 +127,7 @@ If you added an accepted domain in the previous step and you want that domain to
 8. In the **Default Policy** details pane, click **Apply**.
 
 > [!NOTE]
-> We recommend that you configure a user principal name (UPN) that matches the primary email address of each user. If you don't provide a UPN that matches the email address of a user, the user will be required to manually provide their domain\user name or UPN in addition to their email address. If their UPN matches their email address, Outlook Web App, ActiveSync, and Outlook will automatically match their email address to their UPN.
+> We recommend that you configure a user principal name (UPN) that matches the primary email address of each user. If you don't provide a UPN that matches the email address of a user, the user will be required to manually provide their domain\username or UPN in addition to their email address. If their UPN matches their email address, Outlook Web App, ActiveSync, and Outlook will automatically match their email address to their UPN.
 
 ### How do you know this step worked?
 
@@ -153,7 +153,7 @@ Before clients can connect to your new server from the Internet, you need to con
 
 1. Open the EAC by browsing to the URL of your Client Access server. For example, https://Ex2013CAS/ECP.
 
-2. Enter your user name and password in **Domain\\user name** and **Password** and then click **Sign in**.
+2. Enter your username and password in **Domain\\user name** and **Password** and then click **Sign in**.
 
 3. Go to **Servers** \> **Servers**, select the name of the Internet-facing Client Access server and then click **Edit** ![Edit icon](images/JJ218640.6f53ccb2-1f13-4c02-bea0-30690e6ea71d(EXCHG.150).gif "Edit icon").
 
@@ -545,7 +545,7 @@ Some services, such as Outlook Anywhere and Exchange ActiveSync, require certifi
 
 1. Open the EAC by browsing to the URL of your Client Access server. For example, https://Ex2013CAS/ECP.
 
-2. Enter your user name and password in **Domain\\user name** and **Password** and then click **Sign in**.
+2. Enter your username and password in **Domain\\user name** and **Password** and then click **Sign in**.
 
 3. Go to **Servers** \> **Certificates**. On the **Certificates** page, make sure your Client Access server is selected in the **Select server** field, and then click **New** ![Add Icon](images/JJ218640.c1e75329-d6d7-4073-a27d-498590bbb558(EXCHG.150).gif "Add Icon").
 

@@ -23,17 +23,17 @@ The cmdlets and parameters that you use to configure a HAB are described in the 
 
 |**Cmdlet**|**Parameter**|**Description**|
 |:-----|:-----|:-----|
-|[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig)|_HierarchicalAddressBookRoot_|Enables or disables the HAB in the organization. <br/><br/> A valid value is a distribution group or mail-enabled security group. You can't use a dynamic distribution group or an Office 35 group.|
-|[Set-Group](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-group)|_IsHierarchicalGroup_|Specifies whether the distribution group or mail-enabled security group is used in the hierarchy of the HAB. Valid values are `$true` or `$false` (the default value is `$false`).|
-|[Set-Contact](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-contact) <br/> [Set-Group](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-group) <br/> [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user)|_SeniorityIndex_ <br/> _PhoneticDisplayName_|_SeniorityIndex_: A numerical value that sorts users, contacts, or groups in descending order in the HAB (higher values are shown before lower values). <br/><br/>  _PhoneticDisplayName_: When multiple users, contacts or groups have the same _SeniorityIndex_ value or the value isn't set, the users, contacts, or groups are listed in ascending alphabetical order. If _PhoneticDisplayName_ isn't configured, the users, contacts, or groups are listed in ascending alphabetical order based on the _DisplayName_ parameter value (which is also the default sort order without the HAB).|
+|[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)|_HierarchicalAddressBookRoot_|Enables or disables the HAB in the organization. <br/><br/> A valid value is a distribution group or mail-enabled security group. You can't use a dynamic distribution group or an Office 35 group.|
+|[Set-Group](https://docs.microsoft.com/powershell/module/exchange/set-group)|_IsHierarchicalGroup_|Specifies whether the distribution group or mail-enabled security group is used in the hierarchy of the HAB. Valid values are `$true` or `$false` (the default value is `$false`).|
+|[Set-Contact](https://docs.microsoft.com/powershell/module/exchange/set-contact) <br/> [Set-Group](https://docs.microsoft.com/powershell/module/exchange/set-group) <br/> [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user)|_SeniorityIndex_ <br/> _PhoneticDisplayName_|_SeniorityIndex_: A numerical value that sorts users, contacts, or groups in descending order in the HAB (higher values are shown before lower values). <br/><br/>  _PhoneticDisplayName_: When multiple users, contacts or groups have the same _SeniorityIndex_ value or the value isn't set, the users, contacts, or groups are listed in ascending alphabetical order. If _PhoneticDisplayName_ isn't configured, the users, contacts, or groups are listed in ascending alphabetical order based on the _DisplayName_ parameter value (which is also the default sort order without the HAB).|
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete: 30 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
-- To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To open the Exchange Management Shell, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - This topic uses the Exchange Management Shell examples to create distribution groups, but you can also use the Exchange admin center (EAC) to create and add members to distribution groups. For details, see [Manage distribution groups](https://docs.microsoft.com/Exchange/recipients/distribution-groups).
 
@@ -84,7 +84,7 @@ New-DistributionGroup -Name "Administration Group" -Alias Administration
 
 **Note**: If you don't use the _Alias_ parameter when you create a distribution group, the value of the _Name_ parameter is used with spaces removed.
 
-For detailed syntax and parameter information, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup).
+For detailed syntax and parameter information, see [New-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup).
 
 ### Step 2: Use the Exchange Management Shell to specify the root organization for the HAB
 
@@ -126,7 +126,7 @@ Set-Group -Identity "Accounting Group" -IsHierarchicalGroup $true
 Set-Group -Identity "Administration Group" -IsHierarchicalGroup $true
 ```
 
-For detailed syntax and parameter information, see [Set-Group](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-group).
+For detailed syntax and parameter information, see [Set-Group](https://docs.microsoft.com/powershell/module/exchange/set-group).
 
 ### Step 4: Add the child groups as members of the appropriate groups in the hierarchy
 
@@ -142,7 +142,7 @@ This example adds the groups named Human Resources, Accounting Group, and Admini
 Update-DistributionGroupMember -Identity "Corporate Office" -Members "Human Resources","Accounting Group","Administration Group"
 ```
 
-For detailed syntax and parameter information, see [Update-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-distributiongroupmember).
+For detailed syntax and parameter information, see [Update-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/update-distributiongroupmember).
 
 ### Step 5: Add users to the appropriate groups in the HAB
 
@@ -152,7 +152,7 @@ This example adds the users Amy Alberts, David Hamilton, and Rajesh M. Patel to 
 Update-DistributionGroupMember -Identity "Corporate Office" -Members @{Add="aalberts@contoso.com","dhamilton@contoso.com","rmpatel@contoso.com"}
 ```
 
-For detailed syntax and parameter information, see [Update-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-distributiongroupmember).
+For detailed syntax and parameter information, see [Update-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/update-distributiongroupmember).
 
 ### Step 6: Use the Exchange Management Shell to configure the sort order for groups in the HAB
 
@@ -178,7 +178,7 @@ Set-Group -Identity "Accounting Group" -SeniorityIndex 50
 Set-Group -Identity "Administration Group" -SeniorityIndex 25
 ```
 
-For detailed syntax and parameter information, see [Set-Group](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-group).
+For detailed syntax and parameter information, see [Set-Group](https://docs.microsoft.com/powershell/module/exchange/set-group).
 
 ### Step 7: Use the Exchange Management Shell to configure the sort order for users in the HAB
 
@@ -204,7 +204,7 @@ Set-User -Identity RMPatel -SeniorityIndex 50
 Set-User -Identity AAlberts -SeniorityIndex 25
 ```
 
-For detailed syntax and parameter information, see [Set-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-user).
+For detailed syntax and parameter information, see [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user).
 
 ### How do you know this worked?
 

@@ -25,7 +25,7 @@ Critical product updates are packages that address a Microsoft-released security
 
 To get the latest version of Exchange 2013, download and install [Microsoft Exchange Server 2013 Cumulative Update 23](https://www.microsoft.com/downloads/details.aspx?FamilyID=4706d685-777d-4761-81a2-5736f38c21f8). Because each CU is a full installation of Exchange and includes updates and changes from all previous CUs, you don't need to install any previous CUs or service packs first.
 
-For more information about updates as they relate to Exchange 2013, including an extensive FAQ, see [Servicing Exchange 2013](https://go.microsoft.com/fwlink/p/?linkid=282528) and "Servicing Model Update" in [Released: Exchange Server 2013 Cumulative Update 2](https://go.microsoft.com/fwlink/p/?linkid=313613).
+For more information about updates as they relate to Exchange 2013, including an extensive FAQ, see [Servicing Exchange 2013](https://techcommunity.microsoft.com/t5/exchange-team-blog/servicing-exchange-2013/ba-p/596398) and "Servicing Model Update" in [Released: Exchange Server 2013 Cumulative Update 2](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-exchange-server-2013-rtm-cumulative-update-2/ba-p/593058).
 
 The following table contains links to Exchange Team blog posts ("What's New" information) for this and other Exchange 2013 CUs.
 
@@ -33,7 +33,7 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 
 - For information about the new features you'll get when you upgrade to Exchange 2013 from previous versions of Exchange, see [What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md).
 
-- For downloads and updates for other versions of Exchange, see [Exchange Server Updates: build numbers and release dates](https://go.microsoft.com/fwlink/p/?linkid=512549).
+- For downloads and updates for other versions of Exchange, see [Exchange Server build numbers and release dates](https://docs.microsoft.com/Exchange/new-features/build-numbers-and-release-dates).
 
 |**Version**|**Blog pst**|
 |:-----|:-----|
@@ -48,19 +48,19 @@ The following table contains links to Exchange Team blog posts ("What's New" inf
 |Exchange 2013 CU15|[Released: December 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=837801)|
 |Exchange 2013 CU14|[Released: September 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=827208)|
 |Exchange 2013 CU13|[Released: June 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=808655)|
-|Exchange 2013 CU12|[Released: March 2016 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=747752)|
-|Exchange 2013 CU11|[Released: December 2015 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=717701)|
-|Exchange 2013 CU10|[Released: September 2015 Quarterly Exchange Updates](https://go.microsoft.com/fwlink/p/?linkid=624569)|
-|Exchange 2013 CU9|[Released: June 2015 Exchange Cumulative Update and Update Rollups](https://go.microsoft.com/fwlink/?linkid=616334)|
-|Exchange 2013 CU8|[Released: Exchange Server 2013 Cumulative Update 8](https://go.microsoft.com/fwlink/?linkid=526303)|
-|Exchange 2013 CU7|[Released: Exchange Server 2013 Cumulative Update 7](https://go.microsoft.com/fwlink/?linkid=518202) <br/><br/> [OAB Improvements in Exchange 2013 Cumulative Update 7](https://go.microsoft.com/fwlink/p/?linkid=518373)|
-|Exchange 2013 CU6|[Released: Exchange Server 2013 Cumulative Update 6](https://go.microsoft.com/fwlink/?linkid=507530) <br/><br/> [Public Folder Updates in Exchange 2013 CU6: Improving Scale and More](https://go.microsoft.com/fwlink/p/?linkid=510954)|
-|Exchange 2013 CU5|[Released: Exchange Server 2013 Cumulative Update 5](https://go.microsoft.com/fwlink/p/?linkid=398006)|
-|Exchange 2013 SP1|[Released: Exchange Server 2013 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=390170)|
-|Exchange 2013 CU3|[Released: Exchange Server 2013 Cumulative Update 3](https://go.microsoft.com/fwlink/p/?linkid=330380)|
-|Exchange 2013 CU2|[Released: Exchange Server 2013 Cumulative Update 2](https://go.microsoft.com/fwlink/p/?linkid=313613)|
-|Exchange 2013 CU1|[Released: Exchange Server 2013 Cumulative Update 1](https://go.microsoft.com/fwlink/p/?linkid=293710)|
-|Exchange 2013 RTM|[What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md) <br/><br/> [Exchange Server 2013 Reaches General Availability](https://go.microsoft.com/fwlink/p/?linkid=507700)|
+|Exchange 2013 CU12|[Released: March 2016 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-march-2016-quarterly-exchange-updates/ba-p/604375)|
+|Exchange 2013 CU11|[Released: December 2015 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-december-2015-quarterly-exchange-updates/ba-p/604618)|
+|Exchange 2013 CU10|[Released: September 2015 Quarterly Exchange Updates](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-september-2015-quarterly-exchange-updates/ba-p/604159)|
+|Exchange 2013 CU9|[Released: June 2015 Exchange Cumulative Update and Update Rollups](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-june-2015-exchange-cumulative-update-and-update-rollups/ba-p/603879)|
+|Exchange 2013 CU8|[Announcing Cumulative Update 8 for Exchange Server 2013](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-cumulative-update-8-for-exchange-server-2013/ba-p/611020)|
+|Exchange 2013 CU7|[Exchange releases: December 2014](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-releases-december-2014/ba-p/584630) <br/><br/> [OAB Improvements in Exchange 2013 Cumulative Update 7](https://techcommunity.microsoft.com/t5/exchange-team-blog/oab-improvements-in-exchange-2013-cumulative-update-7/ba-p/585006)|
+|Exchange 2013 CU6|[Released: Exchange Server 2013 Cumulative Update 6](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-cumulative-update-6-for-exchange-server-2013/ba-p/585495) <br/><br/> [Public Folder Updates in Exchange 2013 CU6: Improving Scale and More](https://techcommunity.microsoft.com/t5/exchange-team-blog/public-folder-updates-in-exchange-2013-cu6-improving-scale-and/ba-p/585428)|
+|Exchange 2013 CU5|[Released: Exchange Server 2013 Cumulative Update 5](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-exchange-server-2013-cumulative-update-5/ba-p/586186)|
+|Exchange 2013 SP1|[Released: Exchange Server 2013 Service Pack 1](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-exchange-server-2013-service-pack-1/ba-p/587548)|
+|Exchange 2013 CU3|[Released: Exchange Server 2013 Cumulative Update 3](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-exchange-server-2013-cumulative-update-3/ba-p/589560)|
+|Exchange 2013 CU2|[Released: Exchange Server 2013 Cumulative Update 2](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-exchange-server-2013-rtm-cumulative-update-2/ba-p/593058)|
+|Exchange 2013 CU1|[Released: Exchange Server 2013 Cumulative Update 1](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-exchange-server-2013-rtm-cumulative-update-1/ba-p/594576)|
+|Exchange 2013 RTM|[What's new in Exchange 2013](what-s-new-in-exchange-2013-exchange-2013-help.md) <br/><br/> [Exchange Server 2013 Reaches General Availability](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-2013-reaches-general-availability/ba-p/597316)|
 
 ## New features, improvements, and updates included in Exchange 2013 SP1
 
@@ -74,11 +74,11 @@ Edge Transport servers minimize attack surface by handling all Internet-facing m
 
 ### OWA Junk Email Reporting
 
-Outlook Web App customers can report missed spam in the inbox (false negative) and misclassified as spam (false positive) messages to Microsoft for analysis by using its built-in junk email reporting options. Depending on the results of the analysis, we can then adjust the anti-spam filter rules for our Exchange Online Protection (EOP) service. For more information, see [Report junk email and phishing scams in Outlook on the web](https://technet.microsoft.com/library/dn594557\(v=exchg.150\)).
+Outlook Web App customers can report missed spam in the inbox (false negative) and misclassified as spam (false positive) messages to Microsoft for analysis by using its built-in junk email reporting options. Depending on the results of the analysis, we can then adjust the anti-spam filter rules for our Exchange Online Protection (EOP) service. For more information, see [Report junk email and phishing scams in Outlook on the web](https://docs.microsoft.com/microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop).
 
 ### S/MIME for Message Signing and Encryption
 
-Exchange 2013 SP1 now supports S/MIME-based message security with Outlook Web App. Secure/Multipurpose Internet Mail Extensions (S/MIME) allows people to help protect sensitive information by sending signed and encrypted email within their organization. Administrators can enable S/MIME for mailboxes by synchronizing user certificates and then configuring Outlook Web App to support S/MIME. For more information, see [S/MIME for message signing and encryption](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption) and the [Get-SmimeConfig](https://technet.microsoft.com/library/dn554257\(v=exchg.150\)) cmdlet reference.
+Exchange 2013 SP1 now supports S/MIME-based message security with Outlook Web App. Secure/Multipurpose Internet Mail Extensions (S/MIME) allows people to help protect sensitive information by sending signed and encrypted email within their organization. Administrators can enable S/MIME for mailboxes by synchronizing user certificates and then configuring Outlook Web App to support S/MIME. For more information, see [S/MIME for message signing and encryption](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption) and the [Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/Get-SmimeConfig) cmdlet reference.
 
 ### DLP Policy Tips available in the desktop and mobile version of Outlook Web App
 
@@ -92,13 +92,13 @@ Deep content analysis is a cornerstone of DLP in Exchange. [Document Fingerprint
 
 ### DLP sensitive information types for new regions
 
-Exchange 2013 SP1 provides an expanded set of standard DLP sensitive information types covering an increased set of regions, which makes it easier to start using the DLP features. Exchange 2013 SP1 adds region support for Poland, Finland and Taiwan. To learn more about the new DLP sensitive information types, see [What the sensitive information types in Exchange look for](what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md).
+Exchange 2013 SP1 provides an expanded set of standard DLP sensitive information types covering an increased set of regions, which makes it easier to start using the DLP features. Exchange 2013 SP1 adds region support for Poland, Finland and Taiwan. To learn more about the new DLP sensitive information types, see [What the sensitive information types in Exchange 2013 look for](what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help.md).
 
 ### Using AD FS claims-based authentication with Outlook Web App and ECP
 
 Deploying and configuring Active Directory Federation Services (AD FS) using claims means multifactor authentication can be used with Exchange 2013 SP1 including supporting smartcard and certificate-based authentication in Outlook Web App. In a nutshell, to implement AD FS to support multifactor authentication:
 
-- Install and configure Windows Server 2012 R2 AD FS (this is the most current version of AD FS and contains additional support for multifactor authentication). To learn more about setting up AD FS, see [Active Directory Federation Services (AD FS) Overview](https://technet.microsoft.com/library/hh831502).
+- Install and configure Windows Server 2012 R2 AD FS (this is the most current version of AD FS and contains additional support for multifactor authentication). To learn more about setting up AD FS, see [Active Directory Federation Services (AD FS) Overview](https://docs.microsoft.com/windows-server/identity/active-directory-federation-services).
 
 - Create relying party trusts and the required AD FS claims.
 

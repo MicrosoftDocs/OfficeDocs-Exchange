@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: In Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Office 365 organization.
+description: In Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Microsoft 365 or Office 365 organization.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -20,7 +20,7 @@ manager: serdars
 
 # Mobile device mailbox policies in Exchange Online
 
-In Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Office 365 organization.
+In Office 365, you can create mobile device mailbox policies to apply a common set of policies or security settings to a collection of users. A default mobile device mailbox policy is created in every Microsoft 365 or Office 365 organization.
 
 ## Overview of mobile device mailbox policies
 
@@ -40,7 +40,14 @@ You can use mobile device mailbox policies to manage many different settings. Th
 
 Mobile device mailbox policies can be created in the Exchange admin center (EAC) or Exchange Online PowerShell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using Exchange Online PowerShell.
 
+## Mobile device password settings and biometrics
+
+Many mobile devices support biometrics such as Apple Touch ID or Face ID. Exchange mobile device mailbox policies do not control whether biometrics can be used instead of typing the device PIN. Mobile device mailbox policies can be configured to require a device PIN, but then the users control whether they use biometrics after complying with the device PIN requirement.
+
+Customers that need advanced control over the use of biometrics should consider device enrollment solutions such as Microsoft Intune. See [Deploying Outlook for iOS and Android app configuration settings](../outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune.md) for more information.
+
 ## Mobile device password settings and Android
+
 Android 9.0 and earlier versions utilize Android's device admin functionality to manage device password settings defined in a mobile device mailbox policy.
 
 With Android 10.0 and later, Android has removed device admin functionality. Instead, apps that require a screen lock query the device's (or the work profile's) screen lock complexity. Apps that require a stronger screen lock direct the user to the system screen lock settings, allowing the user to update the security settings to become compliant. At no time is the app aware of the user's password; the app is only aware of the password complexity level. Android supports the following four password complexity levels:

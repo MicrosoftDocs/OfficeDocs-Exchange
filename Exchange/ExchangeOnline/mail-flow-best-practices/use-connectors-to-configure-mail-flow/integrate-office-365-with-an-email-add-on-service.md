@@ -18,13 +18,13 @@ manager: serdars
 
 # Scenario: Integrate Office 365 with an email add-on service
 
-Many third-party cloud service solutions provide add-on services for Office 365. For security reasons, we don't allow third-party email add-on services to be installed in Office 365. But, you can work with the service provider to configure the settings in your Office 365 organization so you can use the service.
+Many third-party cloud service solutions provide add-on services for Office 365. For security reasons, we don't allow third-party email add-on services to be installed in Office 365. But, you can work with the service provider to configure the settings in your Microsoft 365 or Office 365 organization so you can use the service.
 
 This topic describes the best practices for how your organization can use a third-party email add-on service by examining a fictional service named Contoso Signature Service. This fictional service runs in Azure and provides custom email signatures (note that the service could be deployed in a cloud environment other than Azure). The mail flow and a high-level summary of the service are shown in the following diagram.
 
 ![Functional diagram for fictional Contoso Signature Service email add-on service](../../media/a38e832b-0b37-49d8-9074-c9dc6f7710b3.png)
 
-1. When a user in your Office 365 organization composes and sends a message, the message is diverted to Contoso Signature Service by using a connector and a mail flow rule (also known as a transport rule) that you create.
+1. When a user in your Microsoft 365 or Office 365 organization composes and sends a message, the message is diverted to Contoso Signature Service by using a connector and a mail flow rule (also known as a transport rule) that you create.
 
    Connections from Office 365 to Contoso Signature Service are encrypted by TLS, because you configure the certificate domain name for the service in the connector settings (for example, smtp.contososignatureservice.com).
 
@@ -32,16 +32,16 @@ This topic describes the best practices for how your organization can use a thir
 
 3. Contoso Signature Service routes the message back to Office 365. A connector that you create accepts the incoming messages from Contoso Signature Service.
 
-   - Contoso Signature Service uses smart host routing to route messages back to the region where your Office 365 organization is located. For example, if your Office 365 domain is fabrikam.onmicrosoft.com, the destination smart host is fabrikam.mail.protection.outlook.com.
+   - Contoso Signature Service uses smart host routing to route messages back to the region where your Microsoft 365 or Office 365 organization is located. For example, if your Office 365 domain is fabrikam.onmicrosoft.com, the destination smart host is fabrikam.mail.protection.outlook.com.
 
-   - Contoso Signature Service provides a unique certificate domain name for each customer. You configure this domain name as an accepted domain in your Office 365 organization, and in the connector settings (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
+   - Contoso Signature Service provides a unique certificate domain name for each customer. You configure this domain name as an accepted domain in your Microsoft 365 or Office 365 organization, and in the connector settings (for example, S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com).
 
 4. Office 365 sends the message with the customized signature to the original recipients.
 
 The rest of this topic explains how to configure mail flow in Office 365 to work with the email add-on service.
 
 > [!NOTE]
-> These elements are required for any email add-on service that you want to integrate with your Office 365 organization. You need to work with the email add-on service provider to configure their required settings in Office 365.
+> These elements are required for any email add-on service that you want to integrate with your Microsoft 365 or Office 365 organization. You need to work with the email add-on service provider to configure their required settings in Office 365.
 
 ## What do you need to know before you begin?
 
@@ -152,7 +152,7 @@ This example creates an outbound connector with these settings:
 New-OutboundConnector -Name "Office 365 to Contoso Signature Service" -ConnectorType OnPremises -IsTransportRuleScoped $true -UseMxRecord $false -SmartHosts smtp.contososignatureservice.com -TlsSettings DomainValidation -TlsDomain smtp.contososignatureservice.com -CloudServicesMailEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-OutboundConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-outboundconnector).
+For detailed syntax and parameter information, see [New-OutboundConnector](https://docs.microsoft.com/powershell/module/exchange/new-outboundconnector).
 
 ### How do you know this step worked?
 
@@ -220,7 +220,7 @@ This example creates the mail flow rule with these settings:
 New-TransportRule -Name "Route email to Contoso Signature Service" -FromScope InOrganization -RouteMessageOutboundConnector "Office 365 to Contoso Signature Service" -ExceptIfHeaderContainsMessageHeader SignatureContoso -ExceptIfHeaderContainsWords true -StopRuleProcessing $true
 ```
 
-For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule).
+For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
 
 ### How do you know this step worked?
 
@@ -236,7 +236,7 @@ To verify that you've successfully created a mail flow rule to route unprocessed
 
 ## Step 3: Add the custom certificate domain provided by the email add-on service as an accepted domain in Office 365
 
-1. Go to the Microsoft 365 admin center at [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home), and then click **Setup** \> **Domains**, and then click **Add domain**.
+1. Open the [Microsoft 365 admin center](https://admin.microsoft.com), click **Setup** \> **Domains**, and then click **Add domain**.
 
    ![In the admin center, go to Setup \> Domains to add the certificate domain as an accepted domain.](../../media/5d4db406-5970-45f4-8955-2bc90d087b6f.png)
 
@@ -310,7 +310,7 @@ This example creates an inbound connector with these settings:
 
 - **Name**: Contoso Signature Service to Office 365
 
-- **Domain name used by the email add-on service's certificate to authenticate with your Office 365 organization**: S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com
+- **Domain name used by the email add-on service's certificate to authenticate with your Microsoft 365 or Office 365 organization**: S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com
 
 - Internal Exchange message headers that identify messages returning from the email add-on service as internal messages are preserved.
 
@@ -318,7 +318,7 @@ This example creates an inbound connector with these settings:
 New-InboundConnector -Name "Contoso Signature Service to Office 365" -SenderDomains * -ConnectorType OnPremises -RequireTls $true -RestrictDomainsToCertificate $true -TlsSenderCertificateName S5HG3DCG14H8S1R2303RZHM4RX.smtp.contososignatureservice.com -CloudServicesMailEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/mail-flow/new-inboundconnector).
+For detailed syntax and parameter information, see [New-InboundConnector](https://docs.microsoft.com/powershell/module/exchange/new-inboundconnector).
 
 ### How do you know this step worked?
 

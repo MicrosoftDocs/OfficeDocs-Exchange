@@ -4,11 +4,11 @@ A repository to hold the help content for Exchange Server, Exchange Online, and 
 ## Learn How To Contribute
 Anyone who is interested can contribute to the topics. When you contribute your work will go directly into the content set after being merged. It will then show up on docs.microsoft.com and you will be listed as a contributor at: https://github.com/MicrosoftDocs/OfficeDocs-Exchange/graphs/contributors
 
-### Contribute using the GitHub website 
+### Contribute using the GitHub website
 
 **NOTE: The following guidance is for Office PowerShell but the same process applies for any Markdown document on GitHub.**
 
-[![Image of Quick Start video](README-media/edit_video_capture.jpg)](https://support.office.com/en-us/article/edit-powershell-cmdlet-in-github-dcd20227-3764-48ce-ad6e-763af8b48daf?ui=en-US&rs=en-US&ad=US)
+[![Image of Quick Start video](README-media/edit_video_capture.jpg)](https://support.office.com/article/edit-powershell-cmdlet-in-github-dcd20227-3764-48ce-ad6e-763af8b48daf)
 
 1. Open your browser, login to GitHub, and then navigate to https://github.com/microsoftdocs/office-docs-powershell
 2. Browse to the file you want to edit. In this example we will edit https://github.com/MicrosoftDocs/office-docs-powershell/blob/master/teams/teams-ps/teams/New-Team.md and add a link in the Related Links section.

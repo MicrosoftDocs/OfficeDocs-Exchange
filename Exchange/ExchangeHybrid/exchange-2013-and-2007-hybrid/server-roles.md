@@ -48,7 +48,7 @@ Learn more about Exchange capacity planning at [Understanding Multiple Server Ro
 
 Exchange servers provide several important functions for your on-premises organization in a hybrid deployment:
 
-- **Federation**: Exchange 2013 servers enable you to create a federation trust for your on-premises organization with the Microsoft Federation Gateway. The Microsoft Federation Gateway is a free, cloud-based service offered by Microsoft that acts as the trust broker between your on-premises organization and the Office 365 tenant organization. Federation is a requirement for creating an organization relationship between the on-premises and the Exchange Online organizations.
+- **Federation**: Exchange 2013 servers enable you to create a federation trust for your on-premises organization with the Microsoft Federation Gateway. The Microsoft Federation Gateway is a free, cloud-based service offered by Microsoft that acts as the trust broker between your on-premises organization and the Office 365 organization. Federation is a requirement for creating an organization relationship between the on-premises and the Exchange Online organizations.
 
     Learn more at [Understanding Federation](https://docs.microsoft.com/exchange/federation-exchange-2013-help).
 
@@ -70,20 +70,20 @@ Exchange servers provide several important functions for your on-premises organi
 
 ## Exchange server topology
 
-If you add additional Exchange 2013 servers to support your hybrid deployment, the Exchange server is deployed much like any other Exchange server is deployed to your existing Exchange 2007 organization. Configuring your existing on-premises Exchange 2007 organization for a hybrid deployment doesn't require any special Exchange server topology. However, you must install Exchange 2007 Service Pack 3 (SP3) Update Rollup 10 on your Exchange 2007 servers and also install Exchange 2013 Cumulative Update 1 (CU1) or greater to enable compatibility and full hybrid functionality with Office 365.
+If you add additional Exchange 2013 servers to support your hybrid deployment, the Exchange server is deployed much like any other Exchange server is deployed to your existing Exchange 2007 organization. Configuring your existing on-premises Exchange 2007 organization for a hybrid deployment doesn't require any special Exchange server topology. However, you must install Exchange 2007 Service Pack 3 (SP3) Update Rollup 10 on your Exchange 2007 servers and also install Exchange 2013 Cumulative Update 1 (CU1) or greater to enable compatibility and full hybrid functionality with Microsoft 365 or Office 365.
 
 The following table describes briefly the changes in services after configuring a hybrid deployment.
 
 |**Service**|**Before hybrid deployment**|**After hybrid deployment**|**Description**|
 |:-----|:-----|:-----|:-----|
-|Message transport (inbound and outbound)|Exchange 2007 Client Access server|Exchange 2013 Client Access server or Exchange Online Protection (EOP) included with Office 365|The MX (mail exchanger) record for the domain may remain unchanged or be updated to point to EOP.|
+|Message transport (inbound and outbound)|Exchange 2007 Client Access server|Exchange 2013 Client Access server or Exchange Online Protection (EOP) included with Microsoft 365 and Office 365|The MX (mail exchanger) record for the domain may remain unchanged or be updated to point to EOP.|
 |Outlook Web App public URL|Exchange 2007 Client Access server|Exchange 2013 Client Access server|Exchange 2013 Client Access servers proxy Outlook Web App requests for on-premises mailboxes to Exchange 2007 Client Access servers. Outlook Web App requests for mailboxes hosted on Exchange Online are provided with a link to the Exchange Online Outlook Web App URL.|
 
 ## Exchange server software
 
 Exchange 2013 CU1 or later enables hybrid deployment functionality with the Hybrid Configuration wizard (HCW). You can use any Exchange 2013 CU1 or later media when installing additional Exchange 2013 servers.
 
-For information on how to download the latest version of Exchange Server, see [Updates for Exchange](https://technet.microsoft.com/Library/jj907309).
+For information on how to download the latest version of Exchange Server, see [Updates for Exchange Server](https://docs.microsoft.com/Exchange/new-features/updates).
 
 > [!IMPORTANT]
 > You need to license your hybrid server when you configure a hybrid deployment. The HCW is now able to detect and license your designated on-premises Exchange 2010, Exchange 2013, or Exchange 2016 hybrid server for free without going to a separate web site or calling Microsoft support. You can access the HCW [here](https://aka.ms/HybridWizard). Note that the free Exchange Server license is not available for Exchange 2019 hybrid servers.

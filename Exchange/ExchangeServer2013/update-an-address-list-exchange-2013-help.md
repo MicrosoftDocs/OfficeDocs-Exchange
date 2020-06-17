@@ -58,4 +58,4 @@ If you have more than one address list with the same name, you must specify the 
 Update-AddressList "North America\Sales"
 ```
 
-For detailed syntax and parameter information, see [Update-AddressList](https://technet.microsoft.com/library/aa997982\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Update-AddressList](https://docs.microsoft.com/powershell/module/exchange/Update-AddressList).

@@ -45,7 +45,7 @@ When you install a Mailbox server running the Transport service, two Receive con
 
 Each connector is assigned a *TransportRole* value. You can use it to determine the role the connector is running in. This can be helpful in cases where you are running multiple roles on a single server. In the case of each Receive connector previously mentioned, their *TransportRole* value is **HubTransport**.
 
-To view the default Receive connectors and their parameter values, you can use the [Get-ReceiveConnector](https://technet.microsoft.com/library/aa998618\(v=exchg.150\)) cmdlet.
+To view the default Receive connectors and their parameter values, you can use the [Get-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/Get-ReceiveConnector) cmdlet.
 
 ## Default Receive connectors created on a Front End Transport server
 
@@ -89,9 +89,9 @@ The type determines the default permission groups that are assigned to the Recei
 
 Each type is appropriate for a specific connection scenario. Select the type that has the default settings most applicable to the configuration that you want. You can modify permissions by using the **Add-ADPermission** and **Remove-ADPermission** cmdlets. For more information, see the following topics:
 
-- [Add-ADPermission](https://technet.microsoft.com/library/bb124403\(v=exchg.150\))
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Add-ADPermission)
 
-- [Remove-ADPermission](https://technet.microsoft.com/library/aa996048\(v=exchg.150\))
+- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/Remove-ADPermission)
 
 ## Receive connector permissions
 
@@ -111,4 +111,4 @@ The following features were added in Exchange 2013:
 
 - The *TransportRole* parameter designates the server role associated with this connector. It is typically used to specify the server role when you host multiple server roles on a single computer.
 
-See [New-ReceiveConnector](https://technet.microsoft.com/library/bb125139\(v=exchg.150\)) for more information about these parameters and other parameters for Receive connectors.
+See [New-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/New-ReceiveConnector) for more information about these parameters and other parameters for Receive connectors.

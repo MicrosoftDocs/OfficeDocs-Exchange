@@ -27,14 +27,14 @@ Exchange 2007 setup requires that a failed server role installation be successfu
 
 To address this issue, either reinstall just the failed server role(s), or remove the server role(s).
 
-**To reinstall the failed server role from the command line**
+## To reinstall the failed server role from the command line
 
 1. Open a Command Prompt window, and then navigate to the installation files.
 
 2. Run the following command:
 
     ```powershell
-    Setup /roles:<Failed Server Role>
+    Setup /role:<Failed Server Role>
     ```
 
     Select from one or more of the following roles, in a comma-separated list:
@@ -44,10 +44,9 @@ To address this issue, either reinstall just the failed server role(s), or remov
     EdgeTransport (or ET, or E)
 
     > [!NOTE]
-    > The Edge Transport server role cannot coexist on the same computer with any other server role.
-
-    > [!NOTE]
-    > You must deploy the Edge Transport server role in the perimeter network and outside the Active Directory forest.
+    > - The Edge Transport server role cannot coexist on the same computer with any other server role.
+    >
+    > - You must deploy the Edge Transport server role in the perimeter network and outside the Active Directory forest.
 
     HubTransport (or HT, or H)
 
@@ -65,7 +64,7 @@ To address this issue, either reinstall just the failed server role(s), or remov
 > [!NOTE]
 > If any Exchange Server&nbsp;2007 server role previously installed successfully, the Setup wizard will run in maintenance mode. If no Exchange 2007 server roles were previously successfully installed, the Setup wizard will start from where it stopped.
 
-**To use the Exchange Server 2007 Setup wizard in maintenance mode to reinstall the failed server role**
+## To use the Exchange Server 2007 Setup wizard in maintenance mode to reinstall the failed server role
 
 1. Log on to the server for which you want to reinstall a server role.
 
@@ -78,13 +77,7 @@ To address this issue, either reinstall just the failed server role(s), or remov
 5. On the **Server Role Selection** page, select the check boxes for the server roles that you want to install, and then click **Next**.
 
     > [!NOTE]
-    > The Edge Transport server role cannot coexist on the same computer with any other server role.
-
-    > [!NOTE]
-    > You must deploy the Edge Transport server role in the perimeter network and outside the Active Directory forest.
-
-    > [!NOTE]
-    > If you select Management Tools, you will install the Exchange Management Console, the Exchange cmdlets for the Exchange Management Shell, and the Exchange Help file. The management tools will be installed automatically if you install any other server role.
+    > The Edge Transport server role cannot coexist on the same computer with any other server role. <br/><br/> You must deploy the Edge Transport server role in the perimeter network and outside the Active Directory forest. <br/><br/> If you select Management Tools, you will install the Exchange Management Console, the Exchange cmdlets for the Exchange Management Shell, and the Exchange Help file. The management tools will be installed automatically if you install any other server role.
 
 6. If you selected **Hub Transport Role**, and if you are installing Exchange 2007 in a forest that has an existing Exchange Server 2003 or Exchange 2000 Server organization, on the **Mail Flow Settings** page, select a bridgehead server in the existing organization that is a member of the Exchange 2003 or Exchange 2000 routing group to which you want to create a routing group connector.
 
@@ -92,13 +85,13 @@ To address this issue, either reinstall just the failed server role(s), or remov
 
 8. On the **Completion** page, click **Finish**.
 
-**To use the Exchange Server 2007 Setup wizard to reinstall the failed server role when no other server role was previously successfully installed**
+## To use the Exchange Server 2007 Setup wizard to reinstall the failed server role when no other server role was previously successfully installed
 
 1. Follow the guidance in "How to Perform a Custom Installation Using Exchange Server 2007 Setup" ([https://go.microsoft.com/fwlink/?LinkId=86648](https://go.microsoft.com/fwlink/?linkid=86648)) in the Exchange Server 2007 product documentation.
 
-**To remove the failed server role**
+## To remove the failed server role
 
-1. Follow the guidance in "How to Remove Exchange 2007 Server Roles" ([https://go.microsoft.com/fwlink/?LinkId=86649](https://go.microsoft.com/fwlink/?linkid=86649)) in the Exchange Server 2007 product documentation.
+Follow the guidance in [How to Remove Exchange 2007 Server Roles](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb124115(v=exchg.80)) in the Exchange Server 2007 product documentation.
 
 ## For More Information
 

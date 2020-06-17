@@ -27,7 +27,7 @@ By default, the user's mailbox and the dial plan that is linked with the user al
 > [!NOTE]
 > You can use the EAC to configure fax settings on a Unified Messaging mailbox policy. However, you must use Exchange Online PowerShell to configure fax settings on dial plans or for individual users.
 
-For more information about fax partners, see [Microsoft PinPoint for Fax Partners](https://go.microsoft.com/fwlink/p/?LinkId=190238).
+For more information about fax partners, see [Microsoft solution providers](https://www.microsoft.com/solution-providers/).
 
 For additional management tasks related to faxing, see [Faxing procedures](faxing-procedures.md).
 
@@ -35,7 +35,7 @@ For additional management tasks related to faxing, see [Faxing procedures](faxin
 
 - Estimated time to complete: 2 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "UM mailbox policies" entry in the [Unified Messaging Permissions](https://technet.microsoft.com/library/d326c3bc-8f33-434a-bf02-a83cc26a5498.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Unified Messaging" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - Before you perform these procedures, confirm that a UM dial plan has been created. For detailed steps, see [Create a UM dial plan](../../voice-mail-unified-messaging/connect-voice-mail-system/create-um-dial-plan.md).
 

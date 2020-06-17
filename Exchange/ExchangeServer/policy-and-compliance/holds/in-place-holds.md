@@ -36,7 +36,7 @@ You can create In-Place holds in the Exchange admin center (EAC) or in the Excha
 
 - See the [More information](#more-information) section for a description of the In-Place Hold workflow process.
 
-- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 ## Create an In-Place Hold
 
@@ -93,7 +93,7 @@ This example places an In-Place Hold on all public folders in the organization, 
 New-MailboxSearch -Name "Hold for Public Folders" -AllPublicFolderSources $true -AllSourceMailboxes $false -ItemHoldPeriod 2555 -InPlaceHoldEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch).
+For detailed syntax and parameter information, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch).
 
 ### How do you know this worked?
 
@@ -143,7 +143,7 @@ This example first disables In-Place Hold named Hold-CaseId012 and then removes 
 Set-MailboxSearch "Hold-CaseId012" -InPlaceHoldEnabled $false; Remove-MailboxSearch "Hold-CaseId012"
 ```
 
-For detailed syntax and parameter information, see [Set-Mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch).
+For detailed syntax and parameter information, see [Set-Mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/set-mailboxsearch).
 
 ### How do you know this worked?
 

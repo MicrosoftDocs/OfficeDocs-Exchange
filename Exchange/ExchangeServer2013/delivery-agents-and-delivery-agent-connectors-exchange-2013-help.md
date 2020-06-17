@@ -60,13 +60,13 @@ To use a delivery agent in your organization, you have to complete the following
 
 When all of these steps are completed, messages to the foreign systems will be routed through the Delivery Agent connectors and processed by the delivery agent.
 
-[Microsoft.Exchange.Data.Transport.Delivery Namespace](https://go.microsoft.com/fwlink/?linkid=262690) provides more information about developing a delivery agent.
+[Microsoft.Exchange.Data.Transport.Delivery Namespace](https://docs.microsoft.com/previous-versions/office/exchange-server-api/aa564119(v=exchg.150)) provides more information about developing a delivery agent.
 
 ## Delivery Agent connectors
 
 A Delivery Agent connector in Exchange 2013 is similar to the Delivery Agent connector introduced in Exchange 2010. They route messages addressed to foreign systems that do not use the SMTP protocol. When a message is routed to a Delivery Agent connector, the associated delivery agent performs the content conversion and message delivery. Typically, delivery agents are created by a third-party and configured to work with a Delivery Agent connector in your organization.
 
-A Delivery Agent connector cannot be created in the Exchange admin center. Rather, you create a Delivery Agent connector in the Exchange Management Shell with the [New-DeliveryAgentConnector](https://technet.microsoft.com/library/dd351063\(v=exchg.150\)) cmdlet and edit the Delivery Agent connector's properties with [Set-DeliveryAgentConnector](https://technet.microsoft.com/library/dd351159\(v=exchg.150\)). You can specify one or more host Mailbox servers for the connector, by using the optional *SourceTransportServers* parameter.
+A Delivery Agent connector cannot be created in the Exchange admin center. Rather, you create a Delivery Agent connector in the Exchange Management Shell with the [New-DeliveryAgentConnector](https://docs.microsoft.com/powershell/module/exchange/New-DeliveryAgentConnector) cmdlet and edit the Delivery Agent connector's properties with [Set-DeliveryAgentConnector](https://docs.microsoft.com/powershell/module/exchange/Set-DeliveryAgentConnector). You can specify one or more host Mailbox servers for the connector, by using the optional *SourceTransportServers* parameter.
 
 ## Default text messaging Delivery Agent connector
 

@@ -21,7 +21,7 @@ You may need to remove public folders that are no longer being used in your orga
 
 - Estimated time to complete: 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](https://technet.microsoft.com/library/b7fa4b7c-1266-45bd-a14b-f66be0459cc5.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Public folders" entry in the [Sharing and collaboration permissions](sharing-and-collaboration-permissions-exchange-2013-help.md) topic.
 
 - You can't delete a mail-enabled public folder. Before you can delete it, you must first disable email for the public folder. For more information, see [Mail-enable or mail-disable a public folder](enable-or-disable-mail-for-public-folder-exchange-2013-help.md).
 
@@ -62,4 +62,4 @@ This example removes the public folder Marketing and all its subfolders because 
 Remove-PublicFolder -Identity "\Marketing" -Recurse:$True
 ```
 
-For detailed syntax and parameter information, see [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/remove-publicfolder).
+For detailed syntax and parameter information, see [Remove-PublicFolder](https://docs.microsoft.com/powershell/module/exchange/remove-publicfolder).

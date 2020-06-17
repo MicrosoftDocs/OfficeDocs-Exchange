@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: An organization relationship lets users in your Office 365 organization share calendar free/busy information with other Office 365 or on-premises Exchange organizations. You may want to change the settings of an organization relationship, such as changing the name, temporarily disabling calendar sharing, changing the access level, or changing which security groups will share calendars.
+description: An organization relationship lets users in your Microsoft 365 or Office 365 organization share calendar free/busy information with other Office 365 or on-premises Exchange organizations. You may want to change the settings of an organization relationship, such as changing the name, temporarily disabling calendar sharing, changing the access level, or changing which security groups will share calendars.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -20,7 +20,7 @@ manager: serdars
 
 # Modify an organization relationship in Exchange Online
 
-An organization relationship lets users in your Office 365 organization share calendar free/busy information with other Office 365 or on-premises Exchange organizations. You may want to change the settings of an organization relationship, such as changing the name, temporarily disabling calendar sharing, changing the access level, or changing which security groups will share calendars.
+An organization relationship lets users in your Microsoft 365 or Office 365 organization share calendar free/busy information with other Office 365 or on-premises Exchange organizations. You may want to change the settings of an organization relationship, such as changing the name, temporarily disabling calendar sharing, changing the access level, or changing which security groups will share calendars.
 
 To learn more about organization relationships, see [Organization relationships in Exchange Online](organization-relationships.md).
 
@@ -109,7 +109,7 @@ To learn more about organization relationships, see [Organization relationships 
 
   ```
 
-For detailed syntax and parameter information, see [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/get-organizationrelationship) and [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/set-organizationrelationship).
+For detailed syntax and parameter information, see [Get-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/get-organizationrelationship) and [Set-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/set-organizationrelationship).
 
 ## How do you know this worked?
 

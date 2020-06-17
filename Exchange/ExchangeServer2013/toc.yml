@@ -787,7 +787,7 @@
       - name: Common attachment blocking scenarios for transport rules
         href: common-attachment-blocking-scenarios-exchange-2013-help.md
       - name: Organization-wide disclaimers, signatures, footers, or headers
-        href: organization-wide-disclaimers-signatures-footers-or-headers-exchange-online-help.md
+        href: organization-wide-disclaimers-signatures-footers-or-headers-exchange-2013-help.md
       - name: Transport rule procedures
         href: mail-flow-or-transport-rule-procedures-exchange-2013-help.md
         items:
@@ -814,7 +814,7 @@
       - name: Integrating sensitive information rules with transport rules
         href: integrate-sensitive-information-rules-exchange-2013-help.md
       - name: What the sensitive information types look for
-        href: what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md
+        href: what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help.md
       - name: DLP policy templates
         href: dlp-policy-templates-exchange-2013-help.md
         items:
@@ -1353,7 +1353,7 @@
         href: considerations-when-deploying-public-folders-exchange-2013-help.md
       - name: Accessing public folders with Outlook 2016 for Mac
         href: https://docs.microsoft.com/exchange/collaboration-exo/public-folders/access-public-folders-with-outlook-2016-for-mac
-      - name: Migrate your public folders to Office 365 Groups
+      - name: Migrate your public folders to Microsoft 365 Groups
         href: https://docs.microsoft.com/exchange/collaboration-exo/public-folders/migrate-your-public-folders-to-office-365-groups
       - name: Public folder procedures
         href: public-folder-procedures-exchange-2013-help.md
@@ -1377,9 +1377,9 @@
           items:
           - name: Roll back a public folder migration from Exchange 2013 to Exchange Online
             href: https://docs.microsoft.com/exchange/collaboration/public-folders/roll-back-exchange-online-migration
-        - name: Use batch migration to migrate Exchange 2010 public folders to Office 365 Groups
+        - name: Use batch migration to migrate Exchange 2010 public folders to Microsoft 365 Groups
           href: use-batch-migration-to-migrate-exchange-2010-public-folders-to-office-365-groups-exchange-2013-help.md
-        - name: Use batch migration to migrate Exchange 2013 public folders to Office 365 Groups
+        - name: Use batch migration to migrate Exchange 2013 public folders to Microsoft 365 Groups
           href: use-batch-migration-to-migrate-exchange-2013-public-folders-to-office-365-groups-exchange-2013-help.md
         - name: Create a public folder mailbox
           href: create-public-folder-mailbox-exchange-2013-help.md

@@ -40,9 +40,9 @@ After you have setup two-step verification, you can also obtain an app password 
 
 ## Turn on two-step verification and create an app password in Outlook.com or Hotmail.com
 
-1. Sign in to [Outlook.com](https://go.microsoft.com/fwlink/p/?LinkId=255207) or [Hotmail.com](https://go.microsoft.com/fwlink/p/?LinkId=229224).
+1. Sign in to Outlook.com or Hotmail.com at <https://outlook.live.com/owa/>.
 
-2. Go to the [Security settings](https://go.microsoft.com/fwlink/p/?LinkId=239676) page. Enter your password if prompted.
+2. Go to the [Security settings](https://account.live.com/Proofs/Manage) page. Enter your password if prompted.
 
     If you want to navigate to the Security settings page, in Outlook.com click or tap your profile picture on the upper right \> **View account** and on the Account page, On your **Account** page, choose **Security** on the blue bar and then, **more security options**.
 
@@ -65,7 +65,7 @@ After you have setup two-step verification, you can also obtain an app password 
 
 6. On your mobile device, download the Microsoft Authenticator from your app store.
 
-    Choose on of the links take you to the Microsoft Authenticator for [Windows Phone](https://go.microsoft.com/fwlink/p/?LinkId=722777), [Android](https://go.microsoft.com/fwlink/p/?LinkId=722778) or [iOS](https://go.microsoft.com/fwlink/p/?LinkId=722779).
+    Choose on of the links take you to the Microsoft Authenticator for [Windows Phone](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6), [Android](https://play.google.com/store/apps/details?id=com.azure.authenticator) or [iOS](https://apps.apple.com/app/azure-authenticator/id983156458).
 
 7. Open the Microsoft Authenticator app on your mobile device, and choose **+**. Scan the code on the **Set up an authenticator app** page.
 

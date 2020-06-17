@@ -26,9 +26,9 @@ For In-Place eDiscovery, the only property on a user mailbox that you can use to
 
 To learn more about management scopes, see:
 
-- [Understanding management role scopes](https://technet.microsoft.com/library/24ed4a38-438a-4223-9f9c-5d4dea4b046b.aspx)
+- [Understanding management role scopes](https://docs.microsoft.com/exchange/understanding-management-role-scopes-exchange-2013-help)
 
-- [Understanding management role scope filters](https://technet.microsoft.com/library/6acc2922-ee9c-41f1-8a0f-10a541e8c273.aspx)
+- [Understanding management role scope filters](https://docs.microsoft.com/exchange/understanding-management-role-scope-filters-exchange-2013-help)
 
 ## What do you need to know before you begin?
 
@@ -199,6 +199,6 @@ Here are some ways to verify if you've successfully implemented custom managemen
 
   You can also use the EAC to add members to a role group. For more information, see the "Add members to a role group" section in [Manage Role Group Members](https://technet.microsoft.com/library/c064729d-7cda-47fc-b105-acf4b300d430.aspx).
 
-- In Exchange Online, a custom management scope used for eDiscovery can't be used to search inactive mailboxes. This is because an inactive mailbox can't be a member of a distribution group. For example, let's say that a user is a member of a distribution group that was used to create a custom management scope for eDiscovery. Then that user leaves the organization and their mailbox is made inactive (by placing a Litigation Hold or In-Place hold on the mailbox and then deleting the corresponding Office 365 user account). The result is that the user is removed as a member from any distribution group, including the group that was used to create the custom management scope used for eDiscovery. If a discovery manager (who is a member of the role group that's assigned the custom management scope) tries to search the inactive mailbox, the search will fail. To search inactive mailboxes, a discover manager must be a member of the Discovery Management role group or any role group that has permissions to search the entire organization.
+- In Exchange Online, a custom management scope used for eDiscovery can't be used to search inactive mailboxes. This is because an inactive mailbox can't be a member of a distribution group. For example, let's say that a user is a member of a distribution group that was used to create a custom management scope for eDiscovery. Then that user leaves the organization and their mailbox is made inactive (by placing a Litigation Hold or In-Place hold on the mailbox and then deleting the corresponding user account). The result is that the user is removed as a member from any distribution group, including the group that was used to create the custom management scope used for eDiscovery. If a discovery manager (who is a member of the role group that's assigned the custom management scope) tries to search the inactive mailbox, the search will fail. To search inactive mailboxes, a discover manager must be a member of the Discovery Management role group or any role group that has permissions to search the entire organization.
 
   For more information about inactive mailboxes, see [Create and manage inactive mailboxes in Office 365](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).

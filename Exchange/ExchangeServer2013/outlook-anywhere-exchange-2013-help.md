@@ -65,7 +65,7 @@ Finally, configure the Outlook Anywhere external host name to point to the Excha
 
 You can test for end-to-end client Outlook connectivity by doing either of the following:
 
-- Running the **Test-OutlookConnectivity** cmdlet. The cmdlet tests for Outlook Anywhere (RPC over HTTP) connections. If the cmdlet test fails, the output notes the step that failed. For detailed syntax and parameters, see [Test-OutlookConnectivity](https://technet.microsoft.com/library/dd638082\(v=exchg.150\)).
+- Running the **Test-OutlookConnectivity** cmdlet. The cmdlet tests for Outlook Anywhere (RPC over HTTP) connections. If the cmdlet test fails, the output notes the step that failed. For detailed syntax and parameters, see [Test-OutlookConnectivity](https://docs.microsoft.com/powershell/module/exchange/Test-OutlookConnectivity).
 
 - Running the Outlook Anywhere connectivity test using the Exchange Remote Connectivity Analyzer (ExRCA). When you run this test, you get a detailed summary showing where the test failed and what steps you can take to fix issues. For more information, see [Exchange Remote Connectivity Analyzer](exchange-remote-connectivity-analyzer-exchange-2013-help.md).
 

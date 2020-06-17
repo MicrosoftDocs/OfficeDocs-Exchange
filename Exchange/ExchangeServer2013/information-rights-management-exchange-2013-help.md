@@ -183,8 +183,8 @@ To enforce messaging policies and for regulatory compliance, you must be able to
 
 - **IRM decryption for Exchange Search**: With IRM decryption for Exchange Search, Exchange Search can index content in IRM-protected messages. When a discovery manager performs an In-Place eDiscovery search, IRM-protected messages that have been indexed are returned in search results. For more information, see [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery).
 
-    > [!NOTE]
-    > In Exchange 2010 SP1 and later, members of the Discovery Management role group can access IRM-protected messages returned by a discovery search and residing in a discovery mailbox. To enable this functionality, use the <EM>EDiscoverySuperUserEnabled</EM> parameter with <A href="https://technet.microsoft.com/library/dd979792(v=exchg.150)">Set-IRMConfiguration</A> cmdlet. For more information, see <A href="configure-irm-for-exchange-search-and-https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">Configure IRM for Exchange Search and In-Place eDiscovery</A>.
+  > [!NOTE]
+  > In Exchange 2010 SP1 and later, members of the Discovery Management role group can access IRM-protected messages returned by a discovery search and residing in a discovery mailbox. To enable this functionality, use the <EM>EDiscoverySuperUserEnabled</EM> parameter with <A href="https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration">Set-IRMConfiguration</A> cmdlet. For more information, see <A href="configure-irm-for-exchange-search-and-https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery">Configure IRM for Exchange Search and In-Place eDiscovery</A>.
 
 To enable these decryption features, Exchange servers must have access to the message. This is accomplished by adding the Federation mailbox, a system mailbox created by Exchange Setup, to the super users group on the AD RMS server. For details, see [Add the Federation Mailbox to the AD RMS Super Users Group](add-the-federation-mailbox-to-the-ad-rms-super-users-group-exchange-2013-help.md).
 
@@ -268,7 +268,7 @@ To implement IRM in your Exchange 2013 organization, your deployment must meet t
 <tr class="odd">
 <td><p>AD RMS cluster</p></td>
 <td><ul>
-<li><p><strong>Operating system</strong>   Windows Server 2012, Windows Server 2008 R2 or Windows Server 2008 SP2 with the hotfix <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973247">Active Directory Rights Management Services role in Windows Server 2008</a> is required.</p></li>
+<li><p><strong>Operating system</strong>   Windows Server 2012, Windows Server 2008 R2 or Windows Server 2008 SP2 with the hotfix <a href="https://support.microsoft.com/help/973247">Active Directory Rights Management Services role in Windows Server 2008</a> is required.</p></li>
 <li><p><strong>Service connection point</strong>   Exchange 2010 and AD RMS-aware applications use the service connection point registered in Active Directory to discover an AD RMS cluster and URLs. AD RMS allows you to register the service connection point from within AD RMS Setup. If the account used to set up AD RMS isn't a member of the Enterprise Admins security group, service connection point registration can be performed after setup is complete. There is only one service connection point for AD RMS in an Active Directory forest.</p></li>
 <li><p><strong>Permissions</strong>   Read and Execute permissions to the AD RMS server certification pipeline (<code>ServerCertification.asmx</code> file on AD RMS servers) must be assigned to the following:</p>
 <ul>
@@ -283,7 +283,7 @@ To implement IRM in your Exchange 2013 organization, your deployment must meet t
 <td><p>Exchange</p></td>
 <td><ul>
 <li><p>Exchange 2010 or later is required.</p></li>
-<li><p>The hotfix <a href="https://go.microsoft.com/fwlink/p/?linkid=3052&kbid=973136">FIX: ArgumentNullException exception error message when a .NET Framework 2.0 SP2-based application tries to process a response with zero-length content to an asynchronous ASP.NET Web service request: &quot;Value cannot be null&quot;</a> is recommended for Microsoft .NET Framework 2.0 SP2.</p></li>
+<li><p>The hotfix <a href="https://support.microsoft.com/help/973136">FIX: ArgumentNullException exception error message when a .NET Framework 2.0 SP2-based application tries to process a response with zero-length content to an asynchronous ASP.NET Web service request: &quot;Value cannot be null&quot;</a> is recommended for Microsoft .NET Framework 2.0 SP2.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -308,13 +308,13 @@ To implement IRM in your Exchange 2013 organization, your deployment must meet t
 > [!IMPORTANT]
 > In a production environment, installing AD&nbsp;RMS and Exchange on the same server isn't supported.
 
-Exchange 2013 IRM features support Microsoft Office file formats. You can extend IRM protection to other file formats by deploying custom protectors. For more information about custom protectors, see Information Protection and Control Partners in [Independent Software Vendors](https://go.microsoft.com/fwlink/p/?linkid=210336).
+Exchange 2013 IRM features support Microsoft Office file formats. You can extend IRM protection to other file formats by deploying custom protectors. For more information about custom protectors, see Information Protection and Control Partners in the [Microsoft Partner Center](https://www.microsoft.com/solution-providers/).
 
 ## Configuring and testing IRM
 
-You must use the Exchange Management Shell to configure IRM features in Exchange 2013. To configure individual IRM features, use the [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792\(v=exchg.150\)) cmdlet. You can enable or disable IRM for internal messages, transport decryption, journal report decryption, Exchange Search, and Outlook Web App. For more information about configuring IRM features, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
+You must use the Exchange Management Shell to configure IRM features in Exchange 2013. To configure individual IRM features, use the [Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-IRMConfiguration) cmdlet. You can enable or disable IRM for internal messages, transport decryption, journal report decryption, Exchange Search, and Outlook Web App. For more information about configuring IRM features, see [Information Rights Management procedures](information-rights-management-procedures-exchange-2013-help.md).
 
-After you set up an Exchange 2013 server, you can use the [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798\(v=exchg.150\)) cmdlet to perform end-to-end tests of your IRM deployment. These tests are useful to verify IRM functionality immediately after initial IRM configuration and on an ongoing basis. The cmdlet performs the following tests:
+After you set up an Exchange 2013 server, you can use the [Test-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/Test-IRMConfiguration) cmdlet to perform end-to-end tests of your IRM deployment. These tests are useful to verify IRM functionality immediately after initial IRM configuration and on an ongoing basis. The cmdlet performs the following tests:
 
 - Inspects IRM configuration for your Exchange 2013 organization.
 
@@ -334,4 +334,4 @@ After you set up an Exchange 2013 server, you can use the [Test-IRMConfiguration
 
 The Microsoft Rights Management connector (RMS connector) is an optional application that enhances data protection for your Exchange 2013 server by employing cloud-based Microsoft Rights Management services. Once you install the RMS connector, it provides continuous data protection during the lifespan of the information and because these services are customizable, you can define the level of protection you need. For example, you can limit email message access to specific users or set view-only rights for certain messages.
 
-To learn more about the RMS connector and how to install it, see [Rights Management connector](https://technet.microsoft.com/library/dn375964.aspx).
+To learn more about the RMS connector and how to install it, see [Rights Management connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector).

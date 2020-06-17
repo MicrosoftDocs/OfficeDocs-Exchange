@@ -30,7 +30,7 @@ You can't upgrade an existing Exchange 2003 organization directly to Exchange 20
 > [!WARNING]
 > You need to remove all instances of Exchange 2003 from your organization before you can upgrade to Exchange 2013.
 
-You can migrate all your Exchange 2003 mailboxes to Exchange Online. For more information about this approach, see [Ways to migrate multiple email accounts to Office 365](https://go.microsoft.com/fwlink/p/?linkid=524030).
+You can migrate all your Exchange 2003 mailboxes to Exchange Online. For more information about this approach, see [Ways to migrate multiple email accounts to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
 
 The following table lists the scenarios in which coexistence between Exchange 2013 and earlier versions of Exchange is supported.
 

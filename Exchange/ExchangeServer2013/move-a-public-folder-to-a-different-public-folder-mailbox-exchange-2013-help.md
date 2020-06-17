@@ -37,7 +37,7 @@ For additional management tasks related to public folders see [Public folder pro
 
 - You can perform only one public folder move request at a time. You must use the **Remove-PublicFolderMoveRequest** cmdlet to remove the request after it's complete.
 
-- To check the status of an ongoing public folder move request, run the [Get-PublicFolderMoveRequest](https://technet.microsoft.com/library/jj878076\(v=exchg.150\)) cmdlet.
+- To check the status of an ongoing public folder move request, run the [Get-PublicFolderMoveRequest](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderMoveRequest) cmdlet.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -55,7 +55,7 @@ New-PublicFolderMoveRequest -Folders \DeveloperReports\CustomerEngagements -Targ
 > [!NOTE]
 > The target public folder mailbox will be locked while the move request is active.
 
-For detailed syntax and parameter information, see [New-PublicFolderMoveRequest](https://technet.microsoft.com/library/jj878081\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-PublicFolderMoveRequest](https://docs.microsoft.com/powershell/module/exchange/New-PublicFolderMoveRequest).
 
 ## Move multiple public folders
 
@@ -68,7 +68,7 @@ New-PublicFolderMoveRequest -Folders \Dev\CustomerEngagements,\Dev\RequestsforCh
 > [!NOTE]
 > The target public folder mailbox will be locked while the move request is active.
 
-For detailed syntax and parameter information, see [New-PublicFolderMoveRequest](https://technet.microsoft.com/library/jj878081\(v=exchg.150\)).
+For detailed syntax and parameter information, see [New-PublicFolderMoveRequest](https://docs.microsoft.com/powershell/module/exchange/New-PublicFolderMoveRequest).
 
 ## Move a branch of public folders
 

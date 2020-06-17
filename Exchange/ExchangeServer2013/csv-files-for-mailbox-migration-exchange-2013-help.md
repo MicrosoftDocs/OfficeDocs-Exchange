@@ -125,7 +125,7 @@ The following table describes the supported attributes for a CSV file for local 
 
 ## Onboarding remote move migrations in a hybrid deployment
 
-In a hybrid deployment, you can move mailboxes from an on-premises Exchange organization to Exchange Online. When onboarding mailboxes, the migration batch is created in the Exchange Online organization and initiated by an Exchange Online administrator. For more information, see [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](https://technet.microsoft.com/library/jj906432\(v=exchg.150\)).
+In a hybrid deployment, you can move mailboxes from an on-premises Exchange organization to Exchange Online. When onboarding mailboxes, the migration batch is created in the Exchange Online organization and initiated by an Exchange Online administrator. For more information, see [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes).
 
 The following table describes the supported attributes for a CSV file for onboarding remote move migrations.
 
@@ -188,9 +188,9 @@ The following table describes the supported attributes for a CSV file for onboar
 
 As previously stated, cross-forest moves are initiated either from the target forest or from the source forest. Offboarding remote move migrations are initiated from your Exchange Online organization. For more information, see:
 
-  - [Prepare mailboxes for cross-forest move requests](prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md)
+- [Prepare mailboxes for cross-forest move requests](prepare-mailboxes-for-cross-forest-move-requests-exchange-2013-help.md)
 
-  - [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](https://technet.microsoft.com/library/jj906432\(v=exchg.150\))
+- [Move mailboxes between on-premises and Exchange Online organizations in hybrid deployments](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
 
 The following table describes the supported attributes for a CSV file for cross-forest enterprise moves and for offboarding remote move migrations in an Exchange hybrid deployment.
 
@@ -265,7 +265,7 @@ The following table describes the supported attributes for a CSV file for cross-
 
 ## Staged Exchange migrations
 
-You have to use a CSV file to identify the group of users for a migration batch when you want to use a staged Exchange migration to migrate Exchange 2003 and Exchange 2007 on-premises mailboxes to Exchange Online. There isn't a limit for the number of mailboxes that you can migrate to the cloud using a staged Exchange migration. However, the CSV file for a migration batch can contain a maximum of 1,000 rows. To migrate more than 1,000 mailboxes, you have to create additional CSV files, and then use each one to create a new migration batch. For more information about staged Exchange migrations, see [Migrate mailboxes to Exchange Online with a staged migration](https://technet.microsoft.com/library/jj874018\(v=exchg.150\)).
+You have to use a CSV file to identify the group of users for a migration batch when you want to use a staged Exchange migration to migrate Exchange 2003 and Exchange 2007 on-premises mailboxes to Exchange Online. There isn't a limit for the number of mailboxes that you can migrate to the cloud using a staged Exchange migration. However, the CSV file for a migration batch can contain a maximum of 1,000 rows. To migrate more than 1,000 mailboxes, you have to create additional CSV files, and then use each one to create a new migration batch. For more information about staged Exchange migrations, see [Migrate mailboxes to Exchange Online with a staged migration](https://docs.microsoft.com/exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration).
 
 The following table describes the supported attributes for a CSV file for a staged Exchange migration.
 
@@ -294,11 +294,11 @@ The following table describes the supported attributes for a CSV file for a stag
 <tr class="even">
 <td><p>Password</p></td>
 <td><p>Optional</p></td>
-<td><p>A password has to have a minimum length of eight characters, and satisfy any password restrictions that are applied to your Office 365 organization.</p></td>
+<td><p>A password has to have a minimum length of eight characters, and satisfy any password restrictions that are applied to your Microsoft 365 or Office 365 organization.</p></td>
 <td><p>This password is set on the user account when the corresponding mail-enabled user in Exchange Online is converted to a mailbox during the migration.</p></td>
 </tr>
 <tr class="odd">
-<td><p>ForceChangePassword</p></td>
+<t[CSV files for mailbox migration](csv-files-for-mailbox-migration-exchange-2013-help.md)d><p>ForceChangePassword</p></td>
 <td><p>Optional</p></td>
 <td><p><code>True</code> or <code>False</code></p></td>
 <td><p>Specifies whether a user must change the password the first time they sign in to their Exchange Online mailbox.</p>
@@ -315,9 +315,9 @@ The following table describes the supported attributes for a CSV file for a stag
 
 A CSV file for an IMAP migration batch can have maximum of 50,000 rows. But it's a good idea to migrate users in several smaller batches. For more information about IMAP migrations, see the following topics:
 
-  - [Migrate Email from an IMAP Server to Exchange Online Mailboxes](https://technet.microsoft.com/library/jj874015\(v=exchg.150\))
+- [Migrate Email from an IMAP Server to Exchange Online Mailboxes](https://docs.microsoft.com/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)
 
-  - [CSV files for IMAP migration batches](https://technet.microsoft.com/library/jj200730\(v=exchg.150\))
+- [CSV files for mailbox migration](csv-files-for-mailbox-migration-exchange-2013-help.md)
 
 The following table describes the supported attributes for a CSV file for an IMAP migration.
 
@@ -347,7 +347,7 @@ The following table describes the supported attributes for a CSV file for an IMA
 <td><p>UserName</p></td>
 <td><p>Required</p></td>
 <td><p>String that identifies the user on the IMAP messaging system, in a format supported by the IMAP server.</p></td>
-<td><p>Specifies the logon name for the user's account in the IMAP messaging system (the source environment). In addition to the user name, you can use the credentials of an account that has been assigned the necessary permissions to access mailboxes on the IMAP server. For more information, see <a href="https://technet.microsoft.com/library/jj200730(v=exchg.150)">CSV files for IMAP migration batches</a>.</p></td>
+<td><p>Specifies the logon name for the user's account in the IMAP messaging system (the source environment). In addition to the user name, you can use the credentials of an account that has been assigned the necessary permissions to access mailboxes on the IMAP server. For more information, see <a href="https://docs.microsoft.com/Exchange/csv-files-for-mailbox-migration-exchange-2013-help">CSV files for IMAP migration batches</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Password</p></td>

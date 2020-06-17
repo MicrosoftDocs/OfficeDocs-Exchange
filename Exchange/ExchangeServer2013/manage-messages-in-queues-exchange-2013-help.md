@@ -75,7 +75,7 @@ To verify that you have successfully removed messages from queues, do one of the
 
 - In Queue Viewer, select the queue or create a filter to verify the messages no longer exist.
 
-- Use the **Get-Message** cmdlet with the *Queue* or *Filter* parameters to verify the messages no longer exist. For more information, see [Get-Message](https://technet.microsoft.com/library/bb124738\(v=exchg.150\)).
+- Use the **Get-Message** cmdlet with the *Queue* or *Filter* parameters to verify the messages no longer exist. For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/Get-Message).
 
 ## Resume messages in queues
 
@@ -129,7 +129,7 @@ To verify that you have successfully resume messages in queues, do one of the fo
 
 - In Queue Viewer, select the queue or create a filter to verify the messages are no longer suspended.
 
-- Use the **Get-Message** cmdlet with the *Queue* or *Filter* parameters to verify the messages are no longer suspended. For more information, see [Get-Message](https://technet.microsoft.com/library/bb124738\(v=exchg.150\)).
+- Use the **Get-Message** cmdlet with the *Queue* or *Filter* parameters to verify the messages are no longer suspended. For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/Get-Message).
 
 Note that if you can't find the message in any queues on the server, that probably indicates the message was successfully delivered to the next hop.
 
@@ -175,4 +175,4 @@ To verify that you have successfully suspended messages in queues, do one of the
 
 - In Queue Viewer, select the queue or create a filter to verify messages are suspended.
 
-- Use the **Get-Message** cmdlet with the *Queue* or *Filter* parameters to verify the messages are suspended. For more information, see [Get-Message](https://technet.microsoft.com/library/bb124738\(v=exchg.150\)).
+- Use the **Get-Message** cmdlet with the *Queue* or *Filter* parameters to verify the messages are suspended. For more information, see [Get-Message](https://docs.microsoft.com/powershell/module/exchange/Get-Message).

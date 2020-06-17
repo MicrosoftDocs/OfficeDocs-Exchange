@@ -21,9 +21,9 @@ You can use a linked management role group to enable members of a universal secu
 
 To create and configure linked role groups, you need to use the **New-RoleGroup** and **Set-RoleGroup** cmdlets. For detailed syntax and parameter information, see the following topics:
 
-- [New-RoleGroup](https://technet.microsoft.com/library/dd638181\(v=exchg.150\))
+- [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup)
 
-- [Set-RoleGroup](https://technet.microsoft.com/library/dd638182\(v=exchg.150\))
+- [Set-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Set-RoleGroup)
 
 For additional management tasks related to role groups, see [Permissions](permissions-exchange-2013-help.md).
 
@@ -39,7 +39,7 @@ For additional management tasks related to role groups, see [Permissions](permis
 
 - You must have the following information about the foreign Active Directory forest:
 
-  - **Credentials**: You must have a user name and password that can access the foreign Active Directory forest. This information is used with the *LinkedCredential* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlets.
+  - **Credentials**: You must have a username and password that can access the foreign Active Directory forest. This information is used with the *LinkedCredential* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlets.
 
   - **Domain controller**: You must have the fully qualified domain name (FQDN) of an Active Directory domain controller in the foreign Active Directory forest. This information is used with the *LinkedDomainController* parameter on the **New-RoleGroup** and **Set-RoleGroup** cmdlets.
 

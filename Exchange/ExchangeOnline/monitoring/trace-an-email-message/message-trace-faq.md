@@ -26,7 +26,7 @@ This topic presents messaging questions that a user may have, along with possibl
 
 - In the Exchange admin center (EAC), the search results appear immediately for messages that are less than 7 days old.
 
-- In the Office 365 Security & Compliance Center, the search results appear immediately for messages that are less than 10 days old.
+- In the Microsoft 365 Security Center, the search results appear immediately for messages that are less than 10 days old.
 
 When you run a message trace for older messages, the results are returned within a few hours as a downloadable CSV file.
 
@@ -38,19 +38,19 @@ When a message is sent, it should take between 5-10 minutes for the message to a
 
 You can use the following cmdlets in Exchange Online PowerShell or Exchange Online Protection PowerShell to run a message trace:
 
-[Get-MessageTrace](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-messagetrace): Trace messages that are less than 10 days old.
+[Get-MessageTrace](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace): Trace messages that are less than 10 days old.
 
-[Get-MessageTraceDetail](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-messagetracedetail): View the message trace event details for a specific message.
+[Get-MessageTraceDetail](https://docs.microsoft.com/powershell/module/exchange/get-messagetracedetail): View the message trace event details for a specific message.
 
-[Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch): Use this cmdlet to view information about historical searches that have been performed within the last 10 days.
+[Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch): Use this cmdlet to view information about historical searches that have been performed within the last 10 days.
 
-[Start-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/mail-flow/start-historicalsearch): Start a new historical search for messages that are less than 90 days old.
+[Start-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/start-historicalsearch): Start a new historical search for messages that are less than 90 days old.
 
-[Stop-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/mail-flow/stop-historicalsearch): Stop queued historical searches that haven't started yet (the status value is `NotStarted`).
+[Stop-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/stop-historicalsearch): Stop queued historical searches that haven't started yet (the status value is `NotStarted`).
 
-To connect to Exchange Online PowerShell, see [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+To connect to Exchange Online PowerShell, see [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 ## Why am I getting a timeout error when running a message trace in the user interface?
 
@@ -242,5 +242,3 @@ You should be aware of the following when using the message trace tool:
 ## For more information
 
 [Trace an email message](trace-an-email-message.md)
-
-[Help and Support for EOP](https://technet.microsoft.com/library/64535a0a-1044-413f-8bc2-ed8e8a0bc54c.aspx)

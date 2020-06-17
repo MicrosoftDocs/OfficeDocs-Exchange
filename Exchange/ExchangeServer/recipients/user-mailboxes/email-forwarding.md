@@ -47,9 +47,9 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 ### Use the Exchange Management Shell to set up mail forwarding
 
-Haven't used Exchange Management Shell much? Check out the [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell) topic to learn more. Take a look at the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox) topics for more details on the cmdlets used here.
+Haven't used Exchange Management Shell much? Check out the [Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-management-shell) topic to learn more. Take a look at the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox) topics for more details on the cmdlets used here.
 
-This example delivers email to the mailbox of Douglas Kohn and, at the same time, forwards all mail sent to Douglas Kohn to douglaskohn.parents@fineartschool.net.
+This example delivers email to the mailbox of Douglas Kohn and also forwards all mail sent to Douglas Kohn to an external email address, douglaskohn.parents@fineartschool.net.
 
 ```PowerShell
 Set-Mailbox -Identity "Douglas Kohn" -DeliverToMailboxAndForward $true -ForwardingSMTPAddress "douglaskohn.parents@fineartschool.net"
@@ -58,10 +58,10 @@ Set-Mailbox -Identity "Douglas Kohn" -DeliverToMailboxAndForward $true -Forwardi
 This example forwards all email sent to the mailbox of Ken Sanchez, an employee of Contoso Suites, to one of his coworkers, pilarp@contoso.com.
 
 ```PowerShell
-Set-Mailbox -Identity "Ken Sanchez" -ForwardingSMTPAddress "pilarp@contoso.com"
+Set-Mailbox -Identity "Ken Sanchez" -ForwardingAddress "pilarp@contoso.com"
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## How do you know this worked?
 
@@ -89,7 +89,7 @@ Make sure that the forwarding address is listed in the _ForwardingSMTPAddress_ p
 
 Check out the following topics on how to forward your email to another email address by using Outlook and Outlook Web App.
 
-- [Forward email to another email account](https://go.microsoft.com/fwlink/p/?LinkId=510866)
+- [Forward email to another email account](https://support.microsoft.com/office/ecafbc06-e812-4b9e-a7af-5074a9c7abd0)
 
 - [Manage email messages by using rules](https://go.microsoft.com/fwlink/p/?LinkId=510869)
 

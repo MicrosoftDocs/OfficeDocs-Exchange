@@ -23,7 +23,7 @@ Most conditions and exceptions have one property that requires one or more value
 
 For more information about transport rules in Exchange Server 2013, see [Transport rules in Exchange 2013](mail-flow-rules-transport-rules-in-exchange-2013-exchange-2013-help.md).
 
-For more information about conditions and exceptions in transport rules in Exchange Online Protection or Exchange Online, see [Transport rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/library/jj919235\(v=exchg.150\)) or [Transport rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/library/jj919234\(v=exchg.150\)).
+For more information about conditions and exceptions in transport rules in Exchange Online Protection or Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
 ## Conditions and exceptions for transport rules on Mailbox servers
 
@@ -1087,7 +1087,7 @@ The property types that are used in conditions and exceptions are described in t
 <tr class="odd">
 <td><p><code>SensitiveInformationTypes</code></p></td>
 <td><p>Array of sensitive information types</p></td>
-<td><p>Specifies one or more sensitive information types that are defined in your organization. For a list of built-in sensitive information types, see <a href="what-the-sensitive-information-types-in-exchange-look-for-exchange-online-help.md">What the sensitive information types in Exchange look for</a>.</p>
+<td><p>Specifies one or more sensitive information types that are defined in your organization. For a list of built-in sensitive information types, see <a href="what-the-sensitive-information-types-in-exchange-look-for-exchange-2013-help.md">What the sensitive information types in Exchange 2013 look for</a>.</p>
 <p>In the Exchange Management Shell, use the syntax <code>@{&lt;SensitiveInformationType1&gt;},@{&lt;SensitiveInformationType2&gt;},...</code>. For example, to look for content that contains at least two credit card numbers, and at least one ABA routing number, use the value <code>@{Name=&quot;Credit Card Number&quot;; minCount=&quot;2&quot;},@{Name=&quot;ABA Routing Number&quot;; minCount=&quot;1&quot;}</code>.</p></td>
 </tr>
 <tr class="even">
@@ -1169,6 +1169,4 @@ The property types that are used in conditions and exceptions are described in t
 
 [Transport rule procedures in Exchange 2013](mail-flow-or-transport-rule-procedures-exchange-2013-help.md)
 
-[Transport rule conditions and exceptions (predicates) in Exchange Online](https://technet.microsoft.com/library/jj919235\(v=exchg.150\)) for Exchange Online
-
-[Transport rule conditions and exceptions (predicates) in Exchange Online Protection](https://technet.microsoft.com/library/jj919234\(v=exchg.150\)) for Exchange Online Protection
+[Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)

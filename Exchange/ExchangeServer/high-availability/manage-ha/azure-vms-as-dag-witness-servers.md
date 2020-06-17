@@ -30,7 +30,7 @@ This configuration requires three separate physical locations: two datacenters f
 
 This configuration requires a multi-site VPN. It has always been possible to connect your organization's network to Microsoft Azure using a site-to-site VPN connection. However, in the past, Azure supported only a single site-to-site VPN. Since configuring a DAG and its witness across three datacenters required multiple site-to-site VPNs, placement of the DAG witness on an Azure VM wasn't initially possible.
 
-In June 2014, Microsoft Azure introduced multi-site VPN support, which enabled organizations to connect multiple datacenters to the same Azure virtual network. This change also made it possible for organizations with two datacenters to leverage Microsoft Azure as a third location to place their DAG witness servers. To learn more about the multi-site VPN feature in Azure, see [Configure a Multi-Site VPN](https://go.microsoft.com/fwlink/p/?linkId=522621).
+In June 2014, Microsoft Azure introduced multi-site VPN support, which enabled organizations to connect multiple datacenters to the same Azure virtual network. This change also made it possible for organizations with two datacenters to leverage Microsoft Azure as a third location to place their DAG witness servers. To learn more about the multi-site VPN feature in Azure, see [Configure a Multi-Site VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-multi-site).
 
 > [!NOTE]
 > This configuration leverages Azure virtual machines and a multi-site VPN for deploying the witness server and does not use the Azure Cloud Witness.
@@ -67,7 +67,7 @@ After you have your Azure subscription, you need to do the following in order:
 
 - A public IP address that is not behind NAT for the VPN gateways in each site.
 
-- A VPN device in each site that is compatible with Microsoft Azure. See [About VPN Devices for Virtual Network](https://go.microsoft.com/fwlink/p/?linkId=522619) for more information about compatible devices.
+- A VPN device in each site that is compatible with Microsoft Azure. See [About VPN Devices for Virtual Network](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) for more information about compatible devices.
 
 - Familiarity with DAG concepts and management.
 
@@ -151,7 +151,7 @@ The next step is to establish the VPN gateways to your on-premises sites. To do 
 
 6. Configure on-premises VPN devices.
 
-For more information about configuring a multi-site VPN, see [Configure a Multi-Site VPN](https://go.microsoft.com/fwlink/p/?linkId=522621).
+For more information about configuring a multi-site VPN, see [Configure a Multi-Site VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-multi-site).
 
 #### Establish a VPN gateway to your first site
 
@@ -270,7 +270,7 @@ You need to create a minimum of two virtual machines in Microsoft Azure for this
 
 4. Prepare the file server with the prerequisites for an Exchange DAG witness:
 
-   1. Add the File Server role using the Add Roles and Features Wizard or the [Add-WindowsFeature](https://technet.microsoft.com/library/ee662309.aspx) cmdlet.
+   1. Add the File Server role using the Add Roles and Features Wizard or the [Install-WindowsFeature](https://docs.microsoft.com/powershell/module/servermanager/install-windowsfeature) cmdlet.
 
    2. Add the Exchange Trusted Subsystems universal security group to the Local Administrators group.
 
@@ -300,7 +300,7 @@ See the following topics for more information:
 
 [Configure database availability group properties](configure-dag-properties.md)
 
-[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/database-availability-groups/set-databaseavailabilitygroup)
+[Set-DatabaseAvailabilityGroup](https://docs.microsoft.com/powershell/module/exchange/set-databaseavailabilitygroup)
 
 #### Checkpoint: Validate the DAG file share witness
 

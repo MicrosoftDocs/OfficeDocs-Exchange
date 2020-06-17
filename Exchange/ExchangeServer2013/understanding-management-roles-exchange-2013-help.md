@@ -747,16 +747,16 @@ The following table lists all of the user-focused management role types and thei
 
 ## For more information
 
-[New-ManagementRole](https://technet.microsoft.com/library/dd298073\(v=exchg.150\))
+[New-ManagementRole](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRole)
 
-[New-ManagementRoleAssignment](https://technet.microsoft.com/library/dd335193\(v=exchg.150\))
+[New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRoleAssignment)
 
-[Set-ManagementRoleAssignment](https://technet.microsoft.com/library/dd335173\(v=exchg.150\))
+[Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementRoleAssignment)
 
-[New-ManagementScope](https://technet.microsoft.com/library/dd335137\(v=exchg.150\))
+[New-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/New-ManagementScope)
 
-[Set-ManagementScope](https://technet.microsoft.com/library/dd297996\(v=exchg.150\))
+[Set-ManagementScope](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementScope)
 
-[New-ManagementRoleAssignment](https://technet.microsoft.com/library/dd335193\(v=exchg.150\))
+[New-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/New-ManagementRoleAssignment)
 
-[Set-ManagementRoleAssignment](https://technet.microsoft.com/library/dd335173\(v=exchg.150\))
+[Set-ManagementRoleAssignment](https://docs.microsoft.com/powershell/module/exchange/Set-ManagementRoleAssignment)

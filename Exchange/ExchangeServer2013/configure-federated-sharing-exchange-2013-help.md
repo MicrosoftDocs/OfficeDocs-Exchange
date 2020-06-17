@@ -20,7 +20,7 @@ _**Applies to:** Exchange Server 2013_
 With federated sharing in Exchange Server 2013, users can share information with recipients in external federated organizations. This includes sharing their free/busy (also known as calendar availability) information for scheduling purposes or, depending on the nature of the business relationship, sharing more detailed calendar information. To learn more about federation sharing, see [Sharing](sharing-exchange-2013-help.md).
 
 > [!IMPORTANT]
-> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://go.microsoft.com/fwlink/?linkid=313640">Learn about Office 365 operated by 21Vianet</A>.
+> This feature of Exchange Server 2013 isn't fully compatible with Office 365 operated by 21Vianet in China and some feature limitations may apply. For more information, see <A href="https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china">Learn about Office 365 operated by 21Vianet</A>.
 
 ## What do you need to know before you begin?
 

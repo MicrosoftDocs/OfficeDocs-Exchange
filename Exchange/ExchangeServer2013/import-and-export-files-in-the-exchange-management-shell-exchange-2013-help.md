@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Microsoft Exchange Server 2013 uses Windows PowerShell command-line interface remoting to establish a connection between the server or workstation from which you're administering Exchange and the server running Exchange 2013 that you're administering. In Exchange 2013, this is called remote Exchange Management Shell, or remote Shell. Even if you're administering the local Exchange 2013 server, remote Shell is used to make the connection. For more information about local and remote Shell, see [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://technet.microsoft.com/library/bb123778\(v=exchg.150\)).
+Microsoft Exchange Server 2013 uses Windows PowerShell command-line interface remoting to establish a connection between the server or workstation from which you're administering Exchange and the server running Exchange 2013 that you're administering. In Exchange 2013, this is called remote Exchange Management Shell, or remote Shell. Even if you're administering the local Exchange 2013 server, remote Shell is used to make the connection. For more information about local and remote Shell, see [Using PowerShell with Exchange 2013 (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-management-shell).
 
 How you import and export files to and from an Exchange server in Exchange 2013 is different than how you might have done it in Exchange Server 2007. This is due to the use of remote Shell in Exchange 2013. This topic discusses why this new process is required and how to import and export files between a local server or workstation and an Exchange 2013 server.
 
@@ -151,7 +151,7 @@ The Shell must know that you want to save the data stored in the **FileData** pr
 For example, the following command exports the data stored in the **FileData** property on the object created by the **Export-SomeData** fictional cmdlet. The exported data is stored in a file you specify on the local computer, in this case MyData.dat.
 
 > [!NOTE]
-> This procedure uses the <STRONG>ForEach</STRONG> cmdlet, objects, and pipelining. For more information about each, see <A href="https://technet.microsoft.com/library/aa998260(v=exchg.150)">Pipelining</A> and <A href="https://technet.microsoft.com/library/aa996386(v=exchg.150)">Structured data</A>.
+> This procedure uses the <STRONG>ForEach</STRONG> cmdlet, objects, and pipelining. For more information about each, see <A href="https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines">Pipelining</A> and <A href="https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_objects">Structured data</A>.
 
 ```powershell
 Export-SomeData | ForEach {Export-SomeData | ForEach {$_.FileData | Add-Content C:\MyData.dat -Encoding Byte}.FileData | Add-Content C:\MyData.dat -Encoding Byte}

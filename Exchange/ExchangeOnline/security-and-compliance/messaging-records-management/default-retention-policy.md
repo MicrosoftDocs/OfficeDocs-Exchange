@@ -13,6 +13,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 audience: Admin
+search.appverid: MET150
 ms.service: exchange-online
 manager: serdars
 
@@ -55,7 +56,7 @@ The following table lists the default retention tags linked to the Default MRM P
 
 ## More information
 
-- A Retention Tag can be linked to more than one Retention Policy. For details about managing [Retention tags and retention policies](retention-tags-and-policies.md), see [Messaging Records Management Procedures](https://technet.microsoft.com/library/bc2ff408-4a2b-4202-9515-e3e922a6320d.aspx).
+- A Retention Tag can be linked to more than one Retention Policy. For details about managing [Retention tags and retention policies](retention-tags-and-policies.md), see [Messaging Records Management Procedures](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365).
 
 - The Default MRM Policy doesn't include a DPT to automatically delete items (but it does contain personal tags with the delete retention action that users can apply to mailbox items). If you want to automatically delete items after a specified period, you can create a DPT with the required delete action and add it to the policy. For details, see [Create a Retention Policy](create-a-retention-policy.md) and [Add retention tags to or remove retention tags from a retention policy](add-or-remove-retention-tags.md).
 

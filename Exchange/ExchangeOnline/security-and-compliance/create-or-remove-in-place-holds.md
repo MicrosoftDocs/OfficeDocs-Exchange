@@ -29,7 +29,7 @@ An In-Place Hold preserves all mailbox content, including deleted items and orig
 
 - Estimated time to complete: 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place Hold" entry in the [Messaging Policy and Compliance Permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "In-Place Hold" entry in the [Feature permissions in Exchange Online](../permissions-exo/feature-permissions.md) topic.
 
 - To place an Exchange Online mailbox on In-Place Hold, it must be assigned an Exchange Online (Plan 2) license. If a mailbox is assigned an Exchange Online (Plan 1) license, you would have to assign it a separate Exchange Online Archiving license to place it on hold.
 
@@ -41,7 +41,7 @@ An In-Place Hold preserves all mailbox content, including deleted items and orig
 
 - In Exchange Online, the quota for the Recoverable Items folder is automatically increased to 100 GB when you place an In-Place Hold on a mailbox. The default size of the Recoverable Items folder is 30 GB.
 
-- In Exchange Online, you can place an In-Place hold on Office 365 groups. When you place an Office 365 group on hold, the group mailbox is placed on hold; the mailboxes of the group members aren't placed on hold. For information about Office 365 groups, see [Learn about Office 365 groups](https://go.microsoft.com/fwlink/p/?LinkId=724066).
+- In Exchange Online, you can place an In-Place hold on Microsoft 365 groups. When you place an Office 365 group on hold, the group mailbox is placed on hold; the mailboxes of the group members aren't placed on hold. For information about Microsoft 365 groups, see [Learn about Microsoft 365 groups](https://go.microsoft.com/fwlink/p/?LinkId=724066).
 
 ## Create an In-Place Hold
 
@@ -61,7 +61,7 @@ An In-Place Hold preserves all mailbox content, including deleted items and orig
 
    2. **Don't search any mailboxes**: Select this option when you're creating an In-Place Hold exclusively for public folders.
 
-   3. **Specify mailboxes to search**: Select this option and then click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) to select the mailboxes or distribution groups that you want to place on hold. In Exchange Online, you can also select Office 365 groups to place on hold.
+   3. **Specify mailboxes to search**: Select this option and then click **Add** ![Add Icon](../media/ITPro_EAC_AddIcon.gif) to select the mailboxes or distribution groups that you want to place on hold. In Exchange Online, you can also select Microsoft 365 groups to place on hold.
 
    4. **Search all public folders**: In Exchange Online, you can select this checkbox to place all public folders in your organization on hold. As previously explained, to create an In-Place Hold only for public folders, be sure to select the **Don't search any mailboxes** option.
 
@@ -91,7 +91,7 @@ This example creates an In-Place Hold named Hold-CaseId012 and adds the mailbox 
 New-MailboxSearch "Hold-CaseId012"-SourceMailboxes "joe@contoso.com" -InPlaceHoldEnabled $true
 ```
 
-For detailed syntax and parameter information, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch).
+For detailed syntax and parameter information, see [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch).
 
 ### How do you know this worked?
 
@@ -99,7 +99,7 @@ To verify that you have successfully created the In-Place Hold, do one of the fo
 
 - Use the EAC to verify that the In-Place Hold is listed in the list view of the **In-place eDiscovery & hold** tab.
 
-- Use the **Get-MailboxSearch** cmdlet to retrieve the mailbox search and check the search parameters. For an example of how to retrieve a mailbox search, see the examples in [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-mailboxsearch).
+- Use the **Get-MailboxSearch** cmdlet to retrieve the mailbox search and check the search parameters. For an example of how to retrieve a mailbox search, see the examples in [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch).
 
 ## Remove an In-Place Hold
 
@@ -127,7 +127,7 @@ Set-MailboxSearch "Hold-CaseId012" -InPlaceHoldEnabled $false
 Remove-MailboxSearch "Hold-CaseId012"
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch).
+For detailed syntax and parameter information, see [Set-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/set-mailboxsearch).
 
 ### How do you know this worked?
 
@@ -135,4 +135,4 @@ To verify that you have successfully removed an In-Place Hold, do one of the fol
 
 - Use the EAC to verify that the In-Place Hold doesn't appear in the list view of the **In-place eDiscovery & hold** tab.
 
-- Use the **Get-MailboxSearch** cmdlet to retrieve all mailbox searches and check that the search you removed is no longer listed. For an example of how to retrieve a mailbox search, see the examples in [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-mailboxsearch).
+- Use the **Get-MailboxSearch** cmdlet to retrieve all mailbox searches and check that the search you removed is no longer listed. For an example of how to retrieve a mailbox search, see the examples in [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch).

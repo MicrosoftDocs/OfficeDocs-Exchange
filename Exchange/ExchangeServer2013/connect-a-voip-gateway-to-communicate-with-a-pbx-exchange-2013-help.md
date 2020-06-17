@@ -33,7 +33,7 @@ The following suggested resources in the Exchange TechCenter provide information
 
   - **Configuring a Dialogic-based VoIP gateway**: The [Dialogic website](https://www.dialogic.com/) provides the latest support and configuration information for Dialogic-based VoIP gateways.
 
-We recommend that all customers who plan to deploy Unified Messaging obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth upgrade to Unified Messaging from a legacy or third-party voice mail system and help you plan and deploy a new voice mail system with Exchange Unified Messaging. Deploying a new voice mail system or upgrading a legacy voice one requires significant knowledge about VoIP gateways, PBXs, and Unified Messaging. To contact a Unified Messaging specialist, see the [Microsoft solution providers](https://go.microsoft.com/fwlink/p/?LinkId=261951) page.
+We recommend that all customers who plan to deploy Unified Messaging obtain the assistance of a Unified Messaging specialist. An Exchange Unified Messaging specialist will help make sure that there's a smooth upgrade to Unified Messaging from a legacy or third-party voice mail system and help you plan and deploy a new voice mail system with Exchange Unified Messaging. Deploying a new voice mail system or upgrading a legacy voice one requires significant knowledge about VoIP gateways, PBXs, and Unified Messaging. To contact a Unified Messaging specialist, see the [Microsoft solution providers](https://www.microsoft.com/solution-providers/) page.
 
 ## For more information
 

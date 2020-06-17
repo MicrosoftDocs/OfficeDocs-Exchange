@@ -15,15 +15,15 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-You can search the administrator audit logs to discover who made changes to organization, server, and recipient configuration. This can be helpful when you're trying to track the cause of unexpected behavior, to identify a malicious administrator, or to verify that compliance requirements are being met. For more information about administrator audit logging, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx).
+You can search the administrator audit logs to discover who made changes to organization, server, and recipient configuration. This can be helpful when you're trying to track the cause of unexpected behavior, to identify a malicious administrator, or to verify that compliance requirements are being met. For more information about administrator audit logging, see [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md).
 
-If you want to search the mailbox audit log, see [Mailbox Audit Logging](https://technet.microsoft.com/library/29b67d58-eef9-4ad4-863f-562405ea8794.aspx).
+If you want to search the mailbox audit log, see [Mailbox audit logging](mailbox-audit-logging-exchange-2013-help.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: less than 5 minutes
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell Infrastructure Permissions](https://technet.microsoft.com/library/3646a4e8-36b2-41fb-89a4-79b0963fcb11.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "View-only administrator audit logging" entry in the [Exchange and Shell infrastructure permissions](exchange-and-shell-infrastructure-permissions-exchange-2013-help.md) topic.
 
 - Administrator audit logging is enabled by default. To verify that it's enabled, run the following command:
 
@@ -37,7 +37,7 @@ If you want to search the mailbox audit log, see [Mailbox Audit Logging](https:/
   Set-AdminAuditLogConfig -AdminAuditLogEnabled $true
   ```
 
-  For more information, see [Configure Administrator Audit Logging](https://technet.microsoft.com/library/15c284c0-b8e6-42ca-9913-7c59fdb6885d.aspx).
+  For more information, see [Manage administrator audit logging](manage-administrator-audit-logging-exchange-2013-help.md).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange 2013](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 
@@ -77,7 +77,7 @@ If any log entries are found using the criteria you specified, an XML file will 
 
 ## Use the Shell to search for audit log entries
 
-You can use the Shell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in the Shell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports.
+You can use the Shell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in the Shell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports.
 
 If you want to send audit log search results in an email attachment to a recipient, see the [Use the Shell to search for audit log entries and send results to a recipient](#use-the-shell-to-search-for-audit-log-entries-and-send-results-to-a-recipient) section later in this topic.
 
@@ -120,11 +120,11 @@ Search-AdminAuditLog -StartDate 05/01/2012 -EndDate 10/03/2012 -ObjectID contoso
 
 If your searches return many log entries, we recommend that you use the procedure provided in **Use the Shell to search for audit log entries and send results to a recipient** later in this topic. The procedure in that section sends an XML file as an email attachment to the recipients you specify, enabling you to more easily extract the data you're interested in.
 
-For detailed syntax and parameter information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+For detailed syntax and parameter information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
 
 ### View details of audit log entries
 
-The **Search-AdminAuditLog** cmdlet returns the fields described in the "Audit log contents section of [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Of the fields returned by the cmdlet, two fields, **CmdletParameters** and **ModifiedProperties**, contain additional information that isn't viewable by default.
+The **Search-AdminAuditLog** cmdlet returns the fields described in the "Audit log contents section of [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md). Of the fields returned by the cmdlet, two fields, **CmdletParameters** and **ModifiedProperties**, contain additional information that isn't viewable by default.
 
 To view the contents of the **CmdletParameters** and **ModifiedProperties** fields, use the following steps. Or, you can use the procedure in **Use the Shell to search for audit log entries and send results to a recipient** later in this topic to create an XML file.
 
@@ -157,7 +157,7 @@ This procedure uses the following concepts:
 
 ## Use the Shell to search for audit log entries and send results to a recipient
 
-You can use the Shell to search for audit log entries that meet the criteria you specify, and then send those results to a recipient you specify as an XML file attachment. The results are sent to the recipient within 15 minutes. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx).
+You can use the Shell to search for audit log entries that meet the criteria you specify, and then send those results to a recipient you specify as an XML file attachment. The results are sent to the recipient within 15 minutes. For a list of search criteria, see [Administrator audit logging](administrator-audit-logging-exchange-2013-help.md).
 
 > [!NOTE]
 > Outlook Web App doesn't allow you to open XML attachments by default. You can either configure Exchange to allow XML attachments to be viewed using Outlook Web App, or you can use another email client, such as Microsoft Outlook, to view the attachment. For information about how to configure Outlook Web App to allow you to view an XML attachment, see [View or configure Outlook Web App virtual directories](view-or-configure-outlook-web-app-virtual-directories-exchange-2013-help.md).
@@ -189,6 +189,6 @@ New-AdminAuditLogSearch -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota, Proh
 > [!NOTE]
 > The report that the **New-AdminAuditLogSearch** cmdlet generates can be a maximum of 10 MB in size. If the search you perform returns a report larger than 10 MB, change the search criteria you specified. For example, reduce the size of the date range and run multiple reports, each with a portion of the original date range.
 
-For more information about the format of the XML file, see [Administrator Audit Log Structure](https://technet.microsoft.com/library/87e259c9-c884-4d53-bd78-d13f2300d73e.aspx).
+For more information about the format of the XML file, see [Administrator audit log structure](administrator-audit-log-structure-exchange-2013-help.md).
 
-For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-adminauditlogsearch).
+For detailed syntax and parameter information, see [New-AdminAuditLogSearch](https://docs.microsoft.com/powershell/module/exchange/new-adminauditlogsearch).

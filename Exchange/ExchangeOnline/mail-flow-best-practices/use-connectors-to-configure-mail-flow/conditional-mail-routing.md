@@ -24,7 +24,7 @@ When the steps below are completed, a mail flow rule will redirect messages addr
 
 ## Step 1: Use the Exchange admin center to create the connector
 
-The first thing we need to do is create an Outbound connector. This connector will be used by the mail flow rule that we'll set up in Step 2. In this connector, you'll select where messages it receives originate (such as a mailbox in your Office 365 organization), the type of organization where the messages will be sent (such as your on-premises servers), the security that should be applied to the connection, and name or IP address of the target server. If you want to learn more about how to create connectors, check out [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md).
+The first thing we need to do is create an Outbound connector. This connector will be used by the mail flow rule that we'll set up in Step 2. In this connector, you'll select where messages it receives originate (such as a mailbox in your Microsoft 365 or Office 365 organization), the type of organization where the messages will be sent (such as your on-premises servers), the security that should be applied to the connection, and name or IP address of the target server. If you want to learn more about how to create connectors, check out [Configure mail flow using connectors in Office 365](use-connectors-to-configure-mail-flow.md).
 
 1. In the EAC, go to **Mail flow** \> **Connectors**. click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to create a new connector.
 

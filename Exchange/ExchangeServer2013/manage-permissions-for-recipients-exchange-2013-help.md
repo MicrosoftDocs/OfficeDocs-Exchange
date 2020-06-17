@@ -47,7 +47,7 @@ You can use the EAC or the Shell to assign permissions to users or groups (calle
 
 As previously stated, you can assign delegates permissions to user mailboxes, linked mailboxes, resource mailboxes, and shared mailboxes. You can also use the Shell to assign delegates permissions to access a discovery mailbox.
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Permissions and delegation" entry in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 ### Use the EAC to assign permissions
 
@@ -171,9 +171,9 @@ Remove-MailboxPermission -Identity ayla -User "Jim Hance" -AccessRights FullAcce
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/add-mailboxpermission)
+- [Add-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/add-mailboxpermission)
 
-- [Remove-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailboxpermission)
+- [Remove-MailboxPermission](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxpermission)
 
 ### Manage the Send As permission for mailboxes
 
@@ -196,9 +196,9 @@ Remove-ADPermission -Identity "James Alvord" -User pilarp -ExtendedRights "Send 
 
 For detailed syntax and parameter information, see:
 
-- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/add-adpermission)
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/add-adpermission)
 
-- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/remove-adpermission)
+- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/remove-adpermission)
 
 ### Manage the Send on Behalf permission for mailboxes
 
@@ -216,7 +216,7 @@ This example removes the Send on Behalf permission on the Contoso Executives sha
 Set-Mailbox "Contoso Executives" -GrantSendOnBehalfTo @{remove="tempassistants@contoso.com"}
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ### How do you know this worked?
 
@@ -262,7 +262,7 @@ Or
 
 As previously stated, you can assign the Send As and Send on Behalf permissions to distribution groups, dynamic distribution groups, and mail-enabled security groups to allow delegates to send messages as the group or on behalf of the group.
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" and "Dynamic distribution groups" entries in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution groups" and "Dynamic distribution groups" entries in the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 ### Use the EAC to assign permissions to groups
 
@@ -303,9 +303,9 @@ Remove-ADPermission -Identity "Corporate IT Admins" -User contoso\alans -Extende
 
 For detailed syntax and parameter information, see:
 
-- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/add-adpermission)
+- [Add-ADPermission](https://docs.microsoft.com/powershell/module/exchange/add-adpermission)
 
-- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/active-directory/remove-adpermission)
+- [Remove-ADPermission](https://docs.microsoft.com/powershell/module/exchange/remove-adpermission)
 
 ### Manage the Send on Behalf permission
 
@@ -331,9 +331,9 @@ Set-DynamicDistributionGroup "All Employees" -GrantSendOnBehalfTo @{remove="admi
 
 For detailed syntax and parameter information, see:
 
-- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-distributiongroup)
+- [Set-DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-distributiongroup)
 
-- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-dynamicdistributiongroup)
+- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-dynamicdistributiongroup)
 
 ### How do you know this worked?
 

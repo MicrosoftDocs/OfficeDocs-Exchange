@@ -78,11 +78,11 @@ When you set up the ASA credential, keep these guidelines in mind:
 
    Where _EXCH2016ASA_ is the name of the account and the attribute to be modified is _msDS-SupportedEncryptionTypes_ with a decimal value of 28, which enables the following ciphers: RC4-HMAC, AES128-CTS-HMAC-SHA1-96, AES256-CTS-HMAC-SHA1-96.
 
-For more information about these cmdlets, see [Import-Module](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Import-Module) and [New-ADComputer](https://technet.microsoft.com/library/ee617245.aspx).
+For more information about these cmdlets, see [Import-Module](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Import-Module) and [New-ADComputer](https://docs.microsoft.com/powershell/module/activedirectory/new-adcomputer).
 
 ## Cross-forest scenarios
 
-If you have a cross-forest or resource-forest deployment, and you have users that are outside the Active Directory forest that contains Exchange, you must configure forest trust relationships between the forests. Also, for each forest in the deployment, you have to set up a routing rule that enables trust between all name suffixes within the forest and across forests. For more information about managing cross-forest trusts, see [Managing forest trusts](https://technet.microsoft.com/library/cc772440.aspx).
+If you have a cross-forest or resource-forest deployment, and you have users that are outside the Active Directory forest that contains Exchange, you must configure forest trust relationships between the forests. Also, for each forest in the deployment, you have to set up a routing rule that enables trust between all name suffixes within the forest and across forests. For more information about managing cross-forest trusts, see [Configuring Partner Organizations](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/configuring-partner-organizations).
 
 ## Identify the Service Principal Names to associate with the ASA credential
 
@@ -138,7 +138,7 @@ You configure the ASA credential by using the Exchange Management Shell as descr
 
 - Deploy the ASA credential to subsequent Exchange servers running Client Access services
 
-The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](https://technet.microsoft.com/library/6ac55aae-472a-4ed6-83df-2d0e7b48e05c.aspx). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
+The only supported method for deploying the ASA credential is to use the RollAlternateServiceAcountPassword.ps1 script. For more information, see [Using the RollAlternateserviceAccountCredential.ps1 Script in the Shell](https://docs.microsoft.com/exchange/using-the-rollalternateserviceaccountcredential-ps1-script-in-the-shell-exchange-2013-help). After the script has run, we recommend that you verify that all the targeted servers have been updated correctly.
 
 ### Deploy the ASA Credential to the first Exchange server running Client Access services
 

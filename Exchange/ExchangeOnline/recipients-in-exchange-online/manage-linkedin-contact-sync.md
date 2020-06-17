@@ -27,10 +27,10 @@ manager: serdars
 LinkedIn contact synchronization lets people set up a connection between their LinkedIn account and their Office 365 account by using Outlook on the web (formerly known as Outlook Web App). After they set up LinkedIn contact sync, all their LinkedIn connections are listed as contacts in People in Office 365. They can then interact with their LinkedIn connections as they do with other contacts. LinkedIn contact sync is turned on by default if the feature is available for your region.
 
 > [!TIP]
-> As an administrator, you probably want to keep LinkedIn contact sync turned on if your organization uses LinkedIn for business purposes, such as networking and marketing. Turn it off if you don't want your users to download their LinkedIn connections as contacts in Outlook on the web. For more information about how people can set up LinkedIn contact sync, see [Managed LinkedIn contact sync in your organization](https://support.office.com/article/8097C125-8628-4453-8138-BAEC6438863F).
-
-> [!NOTE]
-> The features that are available to your Office 365 organization are determined by the service plan for your account. Some features aren't available to mailboxes or organizations in specific regions.
+> 
+> As an admin, you probably want to keep LinkedIn contact sync turned on if your organization uses LinkedIn for business purposes, such as networking and marketing. Turn it off if you don't want your users to download their LinkedIn connections as contacts in Outlook on the web.
+> 
+> The features that are available to your Microsoft 365 or Office 365 organization are determined by the service plan for your account. Some features aren't available to mailboxes or organizations in specific regions.
 
 ## Turn LinkedIn contact sync on or off
 

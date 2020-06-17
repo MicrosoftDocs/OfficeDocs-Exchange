@@ -23,7 +23,7 @@ The articles in this section were written by the Exchange performance team. They
 
 ## Architectural Changes in Exchange 2013 and other Resources
 
-The architectural changes in Exchange 2013 are already documented on TechNet and in the [Exchange Team Blog](https://go.microsoft.com/fwlink/p/?linkid=35786). We'll first touch upon a few high level changes you should consider in order to better understand performance cost and sizing. Then, below, we've included a list of recommended references to provide further context and background in these important areas.
+The architectural changes in Exchange 2013 are already documented on TechNet and in the [Exchange Team Blog](https://techcommunity.microsoft.com/t5/exchange-team-blog/bg-p/Exchange). We'll first touch upon a few high level changes you should consider in order to better understand performance cost and sizing. Then, below, we've included a list of recommended references to provide further context and background in these important areas.
 
 > [!NOTE]
 > Please see <A href="exchange-2013-virtualization-exchange-2013-help.md">Exchange 2013 virtualization</A> for performance optimization guidance about deploying Exchange Server 2013 in a virtualized environment.
@@ -34,7 +34,7 @@ Another noteworthy change in Exchange 2013 is in the Information Store. The Info
 
 The Microsoft Exchange Replication service is responsible for all high availability services related to the Mailbox Server role. This replication service hosts the Active Manager component, which is responsible for monitoring failures and taking corrective actions.
 
-A great post on architectural changes, including the impact to re-sizing an Exchange 2013 environment from earlier versions, can be found in [Exchange 2013 Server Role Architecture](https://go.microsoft.com/fwlink/p/?linkid=523735).
+A great post on architectural changes, including the impact to re-sizing an Exchange 2013 environment from earlier versions, can be found in [Exchange 2013 Server Role Architecture](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-2013-server-role-architecture/ba-p/596821).
 
 More about Exchange 2013 architectural changes, and background information on other relevant areas, can be found in the following:
 
@@ -54,18 +54,18 @@ More about Exchange 2013 architectural changes, and background information on ot
 
 [Implementing Exchange Server 2013: (05) Outlook Connectivity](https://go.microsoft.com/fwlink/p/?linkid=523781)
 
-[The Preferred Architecture](https://go.microsoft.com/fwlink/p/?linkid=523782)
+[The Preferred Architecture](https://techcommunity.microsoft.com/t5/exchange-team-blog/the-preferred-architecture/ba-p/586755)
 
-[Exchange 2013 Client Access Server Role](https://go.microsoft.com/fwlink/p/?linkid=386373)
+[Exchange 2013 Client Access Server Role](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-2013-client-access-server-role/ba-p/596493)
 
 [Exchange Server 2013 Virtualization Best Practices](https://go.microsoft.com/fwlink/p/?linkid=523783)
 
 [Load balancing](load-balancing-exchange-2013-help.md)
 
-[Exchange Server Updates: build numbers and release dates](https://technet.microsoft.com/library/hh135098\(v=exchg.150\))
+[Exchange Server Updates: build numbers and release dates](https://docs.microsoft.com/Exchange/new-features/build-numbers-and-release-dates)
 
 [Release notes for Exchange 2013](release-notes-for-exchange-2013-exchange-2013-help.md)
 
 [Updates for Exchange 2013](updates-for-exchange-2013-exchange-2013-help.md)
 
-[ASP.NET Thread Usage on IIS 7.5, IIS 7.0, and IIS 6.0](https://go.microsoft.com/fwlink/p/?linkid=169626)
+[ASP.NET Thread Usage on IIS 7.5, IIS 7.0, and IIS 6.0](https://docs.microsoft.com/archive/blogs/tmarq/asp-net-thread-usage-on-iis-7-5-iis-7-0-and-iis-6-0)

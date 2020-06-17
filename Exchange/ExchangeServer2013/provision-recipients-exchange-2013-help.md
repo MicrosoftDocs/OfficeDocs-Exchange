@@ -40,7 +40,7 @@ For additional management tasks related to OABs, see [Offline address book proce
 
 ## Use the Shell to provision recipients for OAB downloads by linking their mailbox database to a public folder database or to a default OAB
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox databases" entry in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox databases" entry in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 This example sets up the web-based distribution of My OAB for the default mailbox database.
 
@@ -48,11 +48,11 @@ This example sets up the web-based distribution of My OAB for the default mailbo
 Set-MailboxDatabase -Identity "Mailbox Database" -OfflineAddressBook "My OAB"
 ```
 
-For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/set-mailboxdatabase).
+For detailed syntax and parameter information, see [Set-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/set-mailboxdatabase).
 
 ## Use the Shell to specify which OAB will be downloaded by linking the OAB directly to a recipient's mailbox
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 To specify which OAB is downloaded by linking the OAB directly to a recipient's mailbox, use the following syntax.
 
@@ -69,11 +69,11 @@ This example specifies that the user Kim will download the OAB My OAB.
 Set-Mailbox -Identity Kim -OfflineAddressBook "My OAB"
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## Use the Shell to specify the OAB that multiple recipients will download
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](recipients-permissions-exchange-2013-help.md) topic.
 
 This example specifies that all user mailboxes in the United States for Contoso will download the OAB Contoso United States.
 
@@ -81,4 +81,4 @@ This example specifies that all user mailboxes in the United States for Contoso 
 Get-User -ResultSize Unlimited -Filter "Company -eq 'Contoso' -and RecipientType -eq 'UserMailbox'" | Where { $_.CountryOrRegion -eq "United States"} | Set-Mailbox -OfflineAddressBook "Contoso United States"
 ```
 
-For detailed syntax and parameter information, see [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For detailed syntax and parameter information, see [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) and [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).

@@ -32,7 +32,7 @@ Apps for Outlook aren't dependent on the version of Exchange Server that you're 
 
 Administrators can use the Exchange admin center (EAC) to manage the apps available to users in the organization. Users can then manage their apps. Administrators can also allow users to download apps from Office.com. For more information about the EAC, see [Exchange admin center in Exchange 2013](exchange-admin-center-in-exchange-2013-exchange-2013-help.md).
 
-In addition, we encourage third-party developers to create additional apps for Outlook and then offer them at Office.com. To learn more, see [Build Apps for Office](https://go.microsoft.com/fwlink/p/?linkid=252597) for background information and [Mail apps for Outlook](https://go.microsoft.com/fwlink/p/?linkid=252598) for detailed information about building apps for Outlook.
+In addition, we encourage third-party developers to create additional apps for Outlook and then offer them at Office.com. To learn more, see [Deploy and publish Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/publish/publish) for background information and [Outlook add-ins overview](https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview) for detailed information about building apps for Outlook.
 
 ## People
 
@@ -144,10 +144,10 @@ In the table below, the following definitions apply:
 </table>
 
 > [!NOTE]
-> In previous versions, Outlook Web App had a built-in spell checker. In Exchange Server 2013, Outlook Web App relies on the web browser for spell checking, which Internet Explorer prior to version 10 doesn't provide.
-
-> [!NOTE]
-> Office 365 users will be limited to the light version of Outlook Web App when using Internet Explorer 8. Users whose mailboxes are on a locally managed Exchange server will continue to see the standard version of Outlook Web App when using Internet Explorer 8, but may experience slow or otherwise unsatisfactory performance.
+> 
+> - In previous versions, Outlook Web App had a built-in spell checker. In Exchange Server 2013, Outlook Web App relies on the web browser for spell checking, which Internet Explorer prior to version 10 doesn't provide.
+> 
+> - Microsoft 365 users will be limited to the light version of Outlook Web App when using Internet Explorer 8. Users whose mailboxes are on a locally managed Exchange server will continue to see the standard version of Outlook Web App when using Internet Explorer 8, but may experience slow or otherwise unsatisfactory performance.
 
 ### Other Windows operating system and browser combination
 
@@ -231,7 +231,7 @@ You can use the web browser on a tablet or smartphone to sign in to Outlook Web 
 
 ## OWA for Devices app
 
-The OWA for Devices app lets users in an Exchange 2013 on-premises deployment with an Office 365 mailbox or in an Office 365 only organization use their iPhone or iPad access their mailbox. The OWA for iPhone and OWA for iPad apps simplify signing in to their mailbox and allows them access their mailbox even when they don't have an Internet connection. The OWA for iPhone or OWA for iPad apps are recommended instead of using your iPhone's or iPad's browser. For Exchange on-premises deployments, you need to enable push notifications for OWA for Devices to work, see [Configuring push notifications proxying for OWA for Devices](configuring-push-notifications-proxying-for-owa-for-devices-exchange-2013-help.md).
+The OWA for Devices app lets users in an Exchange 2013 on-premises deployment with a Microsoft 365 or Office 365 mailbox or in a Microsoft 365-only or Office 365-only organization use their iPhone or iPad access their mailbox. The OWA for iPhone and OWA for iPad apps simplify signing in to their mailbox and allows them access their mailbox even when they don't have an Internet connection. The OWA for iPhone or OWA for iPad apps are recommended instead of using your iPhone's or iPad's browser. For Exchange on-premises deployments, you need to enable push notifications for OWA for Devices to work, see [Configuring push notifications proxying for OWA for Devices](configuring-push-notifications-proxying-for-owa-for-devices-exchange-2013-help.md).
 
 You can download the OWA for iPhone and OWA for iPad apps from the Apple App Store by searching for OWA for iPhone or OWA for iPad or download them from [OWA for iPhone in the Apple Store](https://itunes.apple.com/app/owa-for-iphone/id659503543) or [OWA for iPad in the Apple Store](https://itunes.apple.com/app/owa-for-ipad/id659524331). The table below shows the versions of iPad and iPhone that are supported.
 
@@ -260,7 +260,7 @@ To learn more about OWA for iPhone and OWA for iPad, see [OWA for iPhone and OWA
 
 ## OWA for Android
 
-OWA for Android lets you interact with your Office 365 mailbox to get to your email, Calendar, and People from anywhere using your Android phone running Kit Kat 4.4 or higher. You can download the OWA for Android app at the [Google Play Store](https://play.google.com/store)
+OWA for Android lets you interact with your Microsoft 365 or Office 365 mailbox to get to your email, Calendar, and People from anywhere using your Android phone running Kit Kat 4.4 or higher. You can download the OWA for Android app at the [Google Play Store](https://play.google.com/store).
 
 With the OWA for Android app, you can:
 
@@ -272,7 +272,7 @@ With the OWA for Android app, you can:
 
 - Skip the administrator phone setup.
 
-- Keep your Office 365 business data secure.
+- Keep your Microsoft 365 or Office 365 business data secure.
 
 - Use the Remote Wipe feature.
 

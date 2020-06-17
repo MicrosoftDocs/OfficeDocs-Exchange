@@ -61,7 +61,7 @@ $tags -= "Deleted Items - 3 Days"
 Set-RetentionPolicy "Corp-Users" -RetentionPolicyTagLinks $tags
 ```
 
-For detailed syntax and parameter information, see [Get-RetentionPolicy](https://technet.microsoft.com/library/dd298086\(v=exchg.150\)) and [Set-RetentionPolicy](https://technet.microsoft.com/library/dd335196\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Get-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-RetentionPolicy) and [Set-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-RetentionPolicy).
 
 ## Remove retention policies from mailboxes
 
@@ -87,7 +87,7 @@ This Shell example removes the retention policy Corp-Finance from all mailbox us
 Get-Mailbox -ResultSize unlimited -Filter "RetentionPolicy -eq 'Corp-Finance'" | Set-Mailbox -RetentionPolicy $null
 ```
 
-For detailed syntax and parameter information, see [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)) and [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox) and [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox).
 
 ## Turn off MRM permanently for an entire organization
 
@@ -121,8 +121,8 @@ Remove-RetentionPolicy Corp-Users
 
 For detailed syntax and parameter information, see the following topics:
 
-- [Get-RetentionPolicyTag](https://technet.microsoft.com/library/dd298009\(v=exchg.150\))
+- [Get-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/Get-RetentionPolicyTag)
 
-- [Remove-RetentionPolicyTag](https://technet.microsoft.com/library/dd335092\(v=exchg.150\))
+- [Remove-RetentionPolicyTag](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionPolicyTag)
 
-- [Remove-RetentionPolicy](https://technet.microsoft.com/library/dd297962\(v=exchg.150\))
+- [Remove-RetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionPolicy)

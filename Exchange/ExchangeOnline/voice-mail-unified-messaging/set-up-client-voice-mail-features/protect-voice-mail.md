@@ -115,7 +115,7 @@ You can use the EAC or the **Set-UMMailboxPolicy** cmdlet in Exchange Online Pow
 |_RequireProtectedPlayOnPhone_|Yes|The _RequireProtectedPlayOnPhone_ parameter specifies whether users associated with the UM mailbox policy will be forced to listen to the protected voice message over the phone (using Play On Phone). The default value is `$false`. When the value is set to `$true`, the audio media player on Protected Voice Mail forms in Outlook or Outlook on the web will be shown as disabled. Note that the preview text for the voice message can always be accessed. The user can't play the audio file using any media player software or use the embedded media player to listen to the voice message.|
 |_AllowVoiceResponseToOtherMessageTypes_|Yes|The _AllowVoiceResponseToOtherMessageTypes_ parameter specifies whether callers who have authenticated to Outlook Voice Access to access their email will be able to compose a voice reply to email messages and meeting requests.|
 
-For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](protected-voice-mail-procedures.md) or [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/unified-messaging/set-ummailboxpolicy).
+For more information about how to manage Protected Voice Mail settings, see [Protected Voice Mail procedures](protected-voice-mail-procedures.md) or [Set-UMMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-ummailboxpolicy).
 
 ## Text message notifications and Protected Voice Mail
 <a name="notifications"> </a>

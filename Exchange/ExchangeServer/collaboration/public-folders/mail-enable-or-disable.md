@@ -65,7 +65,7 @@ Enable-MailPublicFolder -Identity "\Marketing\Reports" -HiddenFromAddressListsEn
 
 If you want external users to send mail to this public folder, make sure you follow the steps in [Allow anonymous users to send email to a mail-enabled public folder](#allow-anonymous-users-to-send-email-to-a-mail-enabled-public-folder).
 
-For detailed syntax and parameter information, see [Enable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/enable-mailpublicfolder).
+For detailed syntax and parameter information, see [Enable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/enable-mailpublicfolder).
 
 ## Use the Exchange Management Shell to mail-disable a public folder
 
@@ -75,7 +75,7 @@ This example mail-disables the public folder Marketing\Reports.
 Disable-MailPublicFolder -Identity "\Marketing\Reports"
 ```
 
-For detailed syntax and parameter information, see [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/disable-mailpublicfolder).
+For detailed syntax and parameter information, see [Disable-MailPublicFolder](https://docs.microsoft.com/powershell/module/exchange/disable-mailpublicfolder).
 
 ## Allow anonymous users to send email to a mail-enabled public folder
 <a name="CreateItems"> </a>
@@ -103,4 +103,4 @@ Add-PublicFolderClientPermission "\Customer Feedback" -AccessRights CreateItems 
 
 ```
 
-For detailed syntax and parameter information, see [Add-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/add-publicfolderclientpermission).
+For detailed syntax and parameter information, see [Add-PublicFolderClientPermission](https://docs.microsoft.com/powershell/module/exchange/add-publicfolderclientpermission).

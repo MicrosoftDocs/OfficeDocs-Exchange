@@ -11,6 +11,7 @@ ms.collection:
 - exchange-online
 - M365-email-calendar
 audience: Admin
+search.appverid: MET150
 ms.service: exchange-online
 f1.keywords:
 - NOCSH

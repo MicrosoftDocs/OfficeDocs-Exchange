@@ -31,7 +31,7 @@ Inbound messages sent to recipients in both organizations from external Internet
 
 You'll need to choose how to route inbound and outbound mail when you plan and configure your hybrid deployment. The route taken by inbound and outbound messages sent to and from recipients in the on-premises and Exchange Online organizations depends on the following:
 
-- Do you want to route inbound Internet mail for both your on-premises and Exchange Online mailboxes through Microsoft Office 365 and EOP or through your on-premises organization?
+- Do you want to route inbound Internet mail for both your on-premises and Exchange Online mailboxes through Microsoft 365 or Office 365 and EOP or through your on-premises organization?
 
     You can choose to route inbound Internet mail for both organizations through your on-premises organization or through EOP and the Exchange Online organization. The route that inbound messages for both organizations take depends on whether you enable centralized mail transport in your hybrid deployment.
 
@@ -52,7 +52,7 @@ To learn more about how these options affect message routing in your organizatio
 
 ## Exchange Online Protection in hybrid deployments
 
-EOP is an online service provided by Microsoft that's used by many companies to protect their on-premises organizations from viruses, spam, phishing scams, and policy violations. In Office 365, EOP is used to protect Exchange Online organizations from the same threats. When you sign up for Office 365, an EOP company is automatically created that's tied to your Exchange Online organization.
+EOP is an online service provided by Microsoft that's used by many companies to protect their on-premises organizations from viruses, spam, phishing scams, and policy violations. In Microsoft 365 and Office 365, EOP is used to protect Exchange Online organizations from the same threats. When you sign up for Microsoft 365 or Office 365, an EOP company is automatically created that's tied to your Exchange Online organization.
 
 An EOP company contains several of the mail transport settings that can be configured for your Exchange Online organization. You can specify which SMTP domains must come from specific IP addresses, require a TLS and a Secure Sockets Layer (SSL) certificate, can bypass compliance policies, and more. EOP is the front door to your Exchange Online organization. All messages, regardless of their origin, must pass through EOP before they reach mailboxes in your Exchange Online organization. And, all messages sent from your Exchange Online organization must go through EOP before they reach the Internet.
 

@@ -30,6 +30,6 @@ Foreign gateway servers can send messages into the Exchange 2013 organization by
 
 [Delivery agents and Delivery Agent connectors](delivery-agents-and-delivery-agent-connectors-exchange-2013-help.md)
 
-[New-ForeignConnector](https://technet.microsoft.com/library/aa996310\(v=exchg.150\))
+[New-ForeignConnector](https://docs.microsoft.com/powershell/module/exchange/New-ForeignConnector)
 
-[Set-ForeignConnector](https://technet.microsoft.com/library/bb123789\(v=exchg.150\))
+[Set-ForeignConnector](https://docs.microsoft.com/powershell/module/exchange/Set-ForeignConnector)

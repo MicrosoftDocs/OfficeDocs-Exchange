@@ -138,7 +138,7 @@ Each EdgeSync replication account is assigned the properties shown in the follow
 <tr class="odd">
 <td><p><strong>UserName</strong></p></td>
 <td><p>String</p></td>
-<td><p>The user name used to authenticate.</p></td>
+<td><p>The username used to authenticate.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Password</strong></p></td>

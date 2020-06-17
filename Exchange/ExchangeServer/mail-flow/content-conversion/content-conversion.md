@@ -86,7 +86,7 @@ These conversion and encoding options are independent of one another. For exampl
 
 You can specify the content conversion at various levels of the Exchange organization as described in the following list:
 
-- **Remote domain settings**: Remote domains define the settings for outgoing message transfers between the Exchange organization and external domains.. Even if you don't create remote domain entries for specific domains, there's a predefined remote domain named Default that applies to all remote address spaces (\*). For more information about remote domains, see [Remote Domains](https://technet.microsoft.com/library/10fb7d62-4d78-40a3-82db-d62bcd27ba42.aspx).
+- **Remote domain settings**: Remote domains define the settings for outgoing message transfers between the Exchange organization and external domains.. Even if you don't create remote domain entries for specific domains, there's a predefined remote domain named Default that applies to all remote address spaces (\*). For more information about remote domains, see [Remote Domains](https://docs.microsoft.com/exchange/remote-domains-exchange-2013-help).
 
 - **Mail user and mail contact settings**: Mail users and mail contacts are similar because both have external email addresses and contain information about people outside the Exchange organization. The main difference is mail users have accounts that they can use to log on to Active Directory and access resources in the organization. For more information, see [Recipients](../../recipients/recipients.md).
 

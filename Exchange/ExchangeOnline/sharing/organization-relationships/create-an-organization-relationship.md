@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Office 365 organization or with an Exchange on-premises organization.
+description: Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Microsoft 365 or Office 365 organization or with an Exchange on-premises organization.
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -20,7 +20,7 @@ manager: serdars
 
 # Create an organization relationship in Exchange Online
 
-Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Office 365 organization or with an Exchange on-premises organization.
+Set up an organization relationship to share calendar information with an external business partner. Office 365 admins can set up an organization relationship with another Microsoft 365 or Office 365 organization or with an Exchange on-premises organization.
 
 ## What do you need to know before you begin?
 
@@ -86,7 +86,7 @@ If you're not sure which domains Contoso has set up for cloud-based authenticati
 Get-FederationInformation -DomainName Contoso.com | New-OrganizationRelationship -Name "Contoso" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel LimitedDetails
 ```
 
-For detailed syntax and parameter information, see [Get-FederationInformation](https://docs.microsoft.com/powershell/module/exchange/federation-and-hybrid/get-federationinformation) and [New-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/new-organizationrelationship).
+For detailed syntax and parameter information, see [Get-FederationInformation](https://docs.microsoft.com/powershell/module/exchange/get-federationinformation) and [New-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/new-organizationrelationship).
 
 If you're setting up an organization relationship with an on-premises Exchange organization, you may want to provide the connection settings. This example creates an organization relationship with Fourth Coffee and specifies the connection settings to use. The following conditions apply:
 
@@ -104,7 +104,7 @@ If you're setting up an organization relationship with an on-premises Exchange o
 New-OrganizationRelationship -Name "Fourth Coffee" -DomainNames "fourthcoffee.com" -FreeBusyAccessEnabled $true -FreeBusyAccessLevel AvailabilityOnly -TargetAutodiscoverEpr "https://mail.fourthcoffee.com/autodiscover/autodiscover.svc/wssecurity" -TargetApplicationUri "mail.fourthcoffee.com"
 ```
 
-For detailed syntax and parameter information, see [New-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/sharing-and-collaboration/new-organizationrelationship).
+For detailed syntax and parameter information, see [New-OrganizationRelationship](https://docs.microsoft.com/powershell/module/exchange/new-organizationrelationship).
 
 ## How do you know this worked?
 

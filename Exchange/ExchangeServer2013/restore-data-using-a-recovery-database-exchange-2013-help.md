@@ -19,7 +19,7 @@ _**Applies to:** Exchange Server 2013_
 
 A recovery database (RDB) is a special kind of mailbox database that allows you to mount and extract data from a restored mailbox database as part of a recovery operation. RDBs allow you to recover data from a backup or copy of a database without disrupting user access to current data.
 
-After you create an RDB, you can restore a mailbox database into the RDB by using a backup application or by copying a database and its log files into the RDB folder structure. Then you can use the [New-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829875\(v=exchg.150\)) cmdlet to extract data from the recovered database. Once extracted, the data can then be exported to a folder or merged into an existing mailbox.
+After you create an RDB, you can restore a mailbox database into the RDB by using a backup application or by copying a database and its log files into the RDB folder structure. Then you can use the [New-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/New-MailboxRestoreRequest) cmdlet to extract data from the recovered database. Once extracted, the data can then be exported to a folder or merged into an existing mailbox.
 
 For additional management tasks related to RDBs, see [Recovery databases](recovery-databases-exchange-2013-help.md).
 
@@ -31,9 +31,9 @@ For additional management tasks related to RDBs, see [Recovery databases](recove
 
 - Some backup applications have the ability to restore Exchange data directly to a recovery database. Windows Server Backup can restore only file-level backups to a recovery database. It cannot be used to restore application-level backups to a recovery database.
 
-- The database and log files containing the recovered data must be restored or copied into the RDB folder structure.
+- The database and log files containing the recovered data must be restored or copied into the RDB folder structure. Do not rename the .edb files.
 
-- The database must be in a clean shutdown state. Because an RDB is an alternate restore location for all databases, all restored databases will be in a dirty shutdown state. You must use **Eseutil /R** to put restored databases into a clean shutdown state.
+- The database must be in a clean shutdown state. If the previously restored databases is in a dirty shutdown state. You must use **Eseutil /R** to put restored databases into a clean shutdown state. If you are running Exchange 2019 and utilizing a MCDB you must use **Eseutil /R /i**
 
 ## Use the Shell to recover data using a recovery database
 
@@ -95,9 +95,9 @@ For additional management tasks related to RDBs, see [Recovery databases](recove
     New-MaiboxRestoreRequest -SourceDatabase DB1 -SourceStoreMailbox "Morris Cornejo" -TargetMailbox Morris@contoso.com -TargetIsArchive
     ```
 
-8. Periodically check the status of the Mailbox restore request using [Get-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829907\(v=exchg.150\)).
+8. Periodically check the status of the Mailbox restore request using [Get-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxRestoreRequest).
 
-    Once the restore has a status of Completed, remove the restore request using [Remove-MailboxRestoreRequest](https://technet.microsoft.com/library/ff829910\(v=exchg.150\)). For example:
+    Once the restore has a status of Completed, remove the restore request using [Remove-MailboxRestoreRequest](https://docs.microsoft.com/powershell/module/exchange/Remove-MailboxRestoreRequest). For example:
 
     ```powershell
     Get-MailboxRestoreRequest -Status Completed | Remove-MailboxRestoreRequest

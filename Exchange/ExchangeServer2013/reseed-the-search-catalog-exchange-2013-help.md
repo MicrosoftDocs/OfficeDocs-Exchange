@@ -72,7 +72,7 @@ This example reseeds the content index catalog for the database copy DB1 on Mail
 Update-MailboxDatabaseCopy -Identity DB1\MBX1 -CatalogOnly
 ```
 
-For detailed syntax and parameter information, see [Update-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335201\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Update-MailboxDatabaseCopy).
 
 ## Reseed the content index catalog from a specific source
 
@@ -82,7 +82,7 @@ This example reseeds the content index catalog for the database copy DB1 on Mail
 Update-MailboxDatabaseCopy -Identity DB1\MBX1 -SourceServer MBX2 -CatalogOnly
 ```
 
-For detailed syntax and parameter information, see [Update-MailboxDatabaseCopy](https://technet.microsoft.com/library/dd335201\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Update-MailboxDatabaseCopy](https://docs.microsoft.com/powershell/module/exchange/Update-MailboxDatabaseCopy).
 
 ## Reseed the content index catalog if there is only one copy of the mailbox database
 

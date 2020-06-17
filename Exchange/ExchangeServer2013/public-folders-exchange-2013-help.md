@@ -31,7 +31,7 @@ Public folders aren't designed to do the following:
 
 - **Data archiving** Users who have mailbox limits sometimes use public folders instead of mailboxes to archive data. This practice isn't recommended because it affects storage in public folders and undermines the goal of mailbox limits. Instead, we recommend that you use [In-Place Archiving in Exchange 2013](in-place-archiving-in-exchange-2013-exchange-2013-help.md) as your archiving solution.
 
-- **Document sharing and collaboration** Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint](https://go.microsoft.com/fwlink/?linkid=282474) as your documentation sharing solution.
+- **Document sharing and collaboration** Public folders don't provide versioning or other document management features, such as controlled check-in and check-out functionality and automatic notifications of content changes. Instead, we recommend that you use [SharePoint](https://docs.microsoft.com/sharepoint/) as your documentation sharing solution.
 
 To learn more about public folders and other collaboration methods in Exchange 2013, see [Collaboration](collaboration-exchange-2013-help.md).
 
@@ -41,7 +41,7 @@ For more information about the limits and quotas for public folders, see [Limits
 
 For a list of public folder management tasks, see [Public folder procedures](public-folder-procedures-exchange-2013-help.md).
 
-Looking for the Exchange Online version of this topic? See [Public folders in Office 365 and Exchange Online](https://technet.microsoft.com/library/jj200758\(v=exchg.150\)).
+Looking for the Exchange Online version of this topic? See [Public folders in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/public-folders).
 
 ## Public folder architecture
 
@@ -64,7 +64,7 @@ There are two ways you can manage public folder mailboxes:
 
 - In the Exchange admin center (EAC), navigate to **Public folders** \> **Public folder mailboxes**.
 
-- In the Exchange Management Shell, use the **\*-Mailbox** set of cmdlets. The following parameters have been added to the [New-Mailbox](https://technet.microsoft.com/library/aa997663\(v=exchg.150\)) cmdlet to support public folder mailboxes:
+- In the Exchange Management Shell, use the **\*-Mailbox** set of cmdlets. The following parameters have been added to the [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/New-Mailbox) cmdlet to support public folder mailboxes:
 
   - *PublicFolder*: This parameter is used with the **New-Mailbox** cmdlet to create a public folder mailbox. When you create a public folder mailbox, a new mailbox is created with the mailbox type of `PublicFolder`. For more information, see [Create a public folder mailbox](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/create-public-folder-mailbox).
 
@@ -98,7 +98,7 @@ The public folder hierarchy synchronization process uses Incremental Change Sync
 > [!IMPORTANT]
 > Because there's only one writeable copy of the hierarchy, folder creation is proxied to the hierarchy mailbox by the content mailbox users are connected to.
 
-In a large organization, when you create a new public folder mailbox, the hierarchy must synchronize to that public folder before users can connect to it. Otherwise, users may see an incomplete public folder structure when connecting with Outlook. To allow time for this synchronization to occur without users attempting to connect to the new public folder mailbox, set the *IsExcludedFromServingHierarchy* parameter on the **New-Mailbox** cmdlet when creating the public folder mailbox. This parameter prevents users from connecting to the newly created public folder mailbox. When synchronization is complete, run the [Set-Mailbox](https://technet.microsoft.com/library/bb123981\(v=exchg.150\)) cmdlet with the *IsExcludedFromServingHierarchy* parameter set to `false`, indicating that the public folder mailbox is ready to be connected to. You can use also the [Get-PublicFolderMailboxDiagnostics](https://technet.microsoft.com/library/jj218720\(v=exchg.150\)) cmdlet to view the sync status by the *SyncInfo* and the *AssistantInfo* properties.
+In a large organization, when you create a new public folder mailbox, the hierarchy must synchronize to that public folder before users can connect to it. Otherwise, users may see an incomplete public folder structure when connecting with Outlook. To allow time for this synchronization to occur without users attempting to connect to the new public folder mailbox, set the *IsExcludedFromServingHierarchy* parameter on the **New-Mailbox** cmdlet when creating the public folder mailbox. This parameter prevents users from connecting to the newly created public folder mailbox. When synchronization is complete, run the [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Set-Mailbox) cmdlet with the *IsExcludedFromServingHierarchy* parameter set to `false`, indicating that the public folder mailbox is ready to be connected to. You can use also the [Get-PublicFolderMailboxDiagnostics](https://docs.microsoft.com/powershell/module/exchange/Get-PublicFolderMailboxDiagnostics) cmdlet to view the sync status by the *SyncInfo* and the *AssistantInfo* properties.
 
 For more information, see [Create a public folder](https://docs.microsoft.com/exchange/collaboration-exo/public-folders/create-public-folder).
 
@@ -117,7 +117,7 @@ If you already have Exchange 2010 SP3 or Exchange 2007 SP3 RU10 public folders i
 
 Due to the changes in how public folders are stored, legacy Exchange mailboxes are unable to access the public folder hierarchy on Exchange 2013 servers or on Exchange Online. However, user mailboxes on Exchange 2013 servers or Exchange Online can connect to legacy public folders. Exchange 2013 public folders and legacy public folders can't exist in your Exchange organization simultaneously. This effectively means that there's no coexistence between versions. Migrating public folders to Exchange Server 2013 or Exchange Online is currently a one-time cutover process.
 
-For this reason, it's recommended that prior to migrating your public folders, you should first migrate your legacy mailboxes to Exchange 2013 or Exchange Online. For more information about migrating mailboxes, see [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md), [Perform a cutover migration of email to Office 365](https://go.microsoft.com/fwlink/p/?linkid=536689), and [Perform a staged migration of email to Office 365](https://go.microsoft.com/fwlink/p/?linkid=536687).
+For this reason, it's recommended that prior to migrating your public folders, you should first migrate your legacy mailboxes to Exchange 2013 or Exchange Online. For more information about migrating mailboxes, see [Mailbox moves in Exchange 2013](mailbox-moves-in-exchange-2013-exchange-2013-help.md), [Perform a cutover migration of email to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/cutover-migration-to-office-365), and [Perform a staged migration of email to Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration).
 
 ## Public folder moves
 
@@ -129,7 +129,7 @@ In addition to moving public folders, you can move public folder mailboxes to di
 
 ## Public folder quotas
 
-When created, public folder mailboxes automatically inherit the size limits of the mailbox database defaults. As a result, to accurately evaluate the current storage quota status when using the [Get-Mailbox](https://technet.microsoft.com/library/bb123685\(v=exchg.150\)) cmdlet, you must review at the *UseDatabaseQuotaDefaults* property in addition to the *ProhibitSendQuota*, *ProhibitSendReceiveQuota*, and *IssueWarningQuota* properties. If the *UseDatabaseQuotaDefaults* property is set to `true`, the per-mailbox settings are ignored and the mailbox database limits are used. If this property is set to `true` and the *ProhibitSendQuota*, *ProhibitSendReceiveQuota*, and *IssueWarningQuota* properties are set to `unlimited`, the mailbox size isn't really unlimited. Instead, you must use the **Get-MailboxDatabase** cmdlet and review the mailbox database storage limits to find out what the limits for the mailbox are. If the *UseDatabaseQuotaDefaults* property is set to `false`, the per-mailbox settings are used. In Exchange 2013, the default mailbox database quota limits are as follows:
+When created, public folder mailboxes automatically inherit the size limits of the mailbox database defaults. As a result, to accurately evaluate the current storage quota status when using the [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/Get-Mailbox) cmdlet, you must review at the *UseDatabaseQuotaDefaults* property in addition to the *ProhibitSendQuota*, *ProhibitSendReceiveQuota*, and *IssueWarningQuota* properties. If the *UseDatabaseQuotaDefaults* property is set to `true`, the per-mailbox settings are ignored and the mailbox database limits are used. If this property is set to `true` and the *ProhibitSendQuota*, *ProhibitSendReceiveQuota*, and *IssueWarningQuota* properties are set to `unlimited`, the mailbox size isn't really unlimited. Instead, you must use the **Get-MailboxDatabase** cmdlet and review the mailbox database storage limits to find out what the limits for the mailbox are. If the *UseDatabaseQuotaDefaults* property is set to `false`, the per-mailbox settings are used. In Exchange 2013, the default mailbox database quota limits are as follows:
 
 - *Issue warning quota*: 1.9 GB
 
@@ -137,9 +137,9 @@ When created, public folder mailboxes automatically inherit the size limits of t
 
 - *Prohibit receive quota*: 2.3 GB
 
-To find the mailbox database quotas, run the [Get-MailboxDatabase](https://technet.microsoft.com/library/bb124924\(v=exchg.150\)) cmdlet.
+To find the mailbox database quotas, run the [Get-MailboxDatabase](https://docs.microsoft.com/powershell/module/exchange/Get-MailboxDatabase) cmdlet.
 
-To set the quotas on a public folder mailbox, use the [Set-OrganizationConfig](https://technet.microsoft.com/library/aa997443\(v=exchg.150\)) cmdlet.
+To set the quotas on a public folder mailbox, use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Set-OrganizationConfig) cmdlet.
 
 ## Disaster recovery
 

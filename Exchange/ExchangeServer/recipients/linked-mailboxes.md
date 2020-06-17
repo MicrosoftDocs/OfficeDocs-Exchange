@@ -27,7 +27,7 @@ The following figure illustrates the relationship between the linked user accoun
 ![Trust relationship between forests with linked mailboxes, linked mailbox Exchange, Exchange linked mailbox](../media/66033cd3-9501-45f6-bfaa-823f7f25d687.png)
 
 > [!NOTE]
-> A trust between the Exchange forest and at least one account forest must be set up before you can create linked mailboxes. At a minimum, you must set up a one-way, outgoing trust so that the Exchange forest trusts the account forest. For more information, see [Learn more about setting up a forest trust to support linked mailboxes](https://technet.microsoft.com/library/jj156983.aspx).
+> A trust between the Exchange forest and at least one account forest must be set up before you can create linked mailboxes. At a minimum, you must set up a one-way, outgoing trust so that the Exchange forest trusts the account forest. For more information, see [Learn more about setting up a forest trust to support linked mailboxes](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj156983(v=exchg.150)).
 
 ## What do you need to know before you begin?
 
@@ -58,7 +58,7 @@ The following figure illustrates the relationship between the linked user accoun
 
 3. On the **New linked mailbox** page, in the **Trusted forest or domain** box, select the name of the account forest that contains the user account that you're creating the linked mailbox for. Click **Next**.
 
-4. If your organization has configured a one-way outgoing trust where the Exchange forest trusts the account forest, you're prompted for administrator credentials in the account forest so that you can gain access to a domain controller in the trusted forest. Type the user name and password for an administrator account in the account forest, and then click **Next**.
+4. If your organization has configured a one-way outgoing trust where the Exchange forest trusts the account forest, you're prompted for administrator credentials in the account forest so that you can gain access to a domain controller in the trusted forest. Type the username and password for an administrator account in the account forest, and then click **Next**.
 
     > [!NOTE]
     > You won't be prompted for administrator credentials if you've created a two-way trust or have created another one-way outgoing trust where the account forest trusts the Exchange forest.
@@ -77,7 +77,7 @@ The following figure illustrates the relationship between the linked user accoun
 
      To select a different OU, click **Browse**. The dialog box displays all OUs in the Exchange forest that are within the specified scope. Select the OU you want, and then click **OK**.
 
-   - **\* User logon name**: Use this box to type the user logon name, which is required to create a linked mailbox. Type the user name here. This name will be used in the left portion of the email address for the linked mailbox if you don't specify an alias.
+   - **\* User logon name**: Use this box to type the user logon name, which is required to create a linked mailbox. Type the username here. This name will be used in the left portion of the email address for the linked mailbox if you don't specify an alias.
 
      > [!NOTE]
      > Because the user account that is created in the Exchange forest is disabled when you create a linked mailbox, the user doesn't use the user logon name to sign in to the linked mailbox. They sign in using their credentials from the account forest.
@@ -87,7 +87,7 @@ The following figure illustrates the relationship between the linked user accoun
    - **Alias**: Type the alias, which specifies the email alias for the linked mailbox. The user's alias is the portion of the email address on the left side of the at (@) symbol. It must be unique in the forest.
 
      > [!NOTE]
-     > If you leave this box blank, the value from the user name portion of the **User Logon Name** is used for the email alias.
+     > If you leave this box blank, the value from the username portion of the **User Logon Name** is used for the email alias.
 
    - **First name**, **Initials**, **Last name**
 
@@ -107,7 +107,7 @@ This example creates a linked mailbox for Ayla Kol in the CONTOSO Exchange resou
 New-Mailbox -Name "Ayla Kol" -LinkedDomainController "DC1_FABRIKAM" -LinkedMasterAccount " FABRIKAM\aylak" -OrganizationalUnit Users -UserPrincipalName aylak@contoso.com -LinkedCredential:(Get-Credential FABRIKAM\administrator)
 ```
 
-For syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-mailbox).
+For syntax and parameter information, see [New-Mailbox](https://docs.microsoft.com/powershell/module/exchange/new-mailbox).
 
 ### How do you know this worked?
 
@@ -125,7 +125,7 @@ To verify that you've successfully created a linked mailbox, do one of the follo
 
 After you create a linked mailbox, you can make changes and set additional properties by using the EAC or the Exchange Management Shell.
 
-You can also change properties for multiple linked mailboxes at the same time. For more information, see the section, "Bulk edit user mailboxes" section in the [Manage User Mailboxes](https://technet.microsoft.com/library/957ca61c-1fa1-42ab-a0e6-8488e4782566.aspx) topic.
+You can also change properties for multiple linked mailboxes at the same time. For more information, see [Bulk edit user mailboxes](user-mailboxes/user-mailboxes.md#bulk-edit-user-mailboxes).
 
 > [!IMPORTANT]
 > The estimated time to complete this task will vary based on the number of properties you want to view or change.
@@ -236,7 +236,7 @@ Use the **Mailbox Features** section to view or change the following mailbox fea
 
 - **Address Book policy**: This box shows the address book policy applied to the mailbox. An address book policy allows you to segment users into specific groups to provide customized views of the address book. To apply or change the address book policy that's applied to the mailbox, select one from the drop-down list.
 
-- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) in Exchange 2016, the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](https://technet.microsoft.com/library/ad027767-5e14-4cb1-9f8a-0791d9188db5.aspx). (**Note**: Unified Messaging is not available in Exchange 2019.)
+- **Unified Messaging**: This feature is disabled by default. When you enable Unified Messaging (UM) in Exchange 2016, the user will be able to use your organization's UM features and a default set of UM properties are applied to the user. Click **Enable** to enable UM for the mailbox. For information about how to enable UM, see [Enable a User for Unified Messaging](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail). (**Note**: Unified Messaging is not available in Exchange 2019.)
 
     > [!NOTE]
     > A UM dial plan and a UM mailbox policy must exist before you can enable UM.
@@ -336,9 +336,9 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-Mailbox** and **Set-Mailbox** cmdlets to view and change properties for linked mailboxes. One advantage of using the Exchange Management Shell is the ability to change the properties for multiple linked mailboxes. For information about what parameters correspond to mailbox properties, see the following topics:
 
-- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailbox)
+- [Get-Mailbox](https://docs.microsoft.com/powershell/module/exchange/get-mailbox)
 
-- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)
+- [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)
 
 Here are some examples of using the Exchange Management Shell to change linked mailbox properties.
 

@@ -28,10 +28,10 @@ The following sharing scenarios are supported in Exchange Online:
 
 |**Sharing goal**|**Setting to use**|**Requirements**|
 |:-----|:-----|:-----|
-|Share calendars with another Office 365 organization|Organization relationships|None, ready to configure|
+|Share calendars with another Microsoft 365 or Office 365 organization|Organization relationships|None, ready to configure|
 |Share calendars with an on-premises Exchange organization|Organization relationships|The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements|
-|Share an Office 365 user's calendar with another internet user|Sharing policies|None, ready to configure|
-|Share an Office 365 user's calendar with an Exchange on-premises user|Sharing policies|The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements|
+|Share a Microsoft 365 or Office 365 user's calendar with another internet user|Sharing policies|None, ready to configure|
+|Share a Microsoft 365 or Office 365 user's calendar with an Exchange on-premises user|Sharing policies|The on-premises Exchange administrator has to set up an authentication relationship with the cloud (also known as "federation") and must meet minimum software requirements|
 
 ## Sharing documentation
 <a name="docs"> </a>

@@ -28,13 +28,13 @@ The following two services process your move request to move mailboxes:
 
 The procedures in this topic will help you with on-premises mailbox moves. You can use the Exchange Management Shell and the Exchange admin center (EAC) to move mailboxes in your on-premises organization.
 
-For more information about the Mailbox replication service and proxy, see [Learn more about MRS Proxy](https://technet.microsoft.com/library/jj156451.aspx). For more information about mailbox moves, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md).
+For more information about the Mailbox replication service and proxy, see [Learn more about MRS Proxy](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj156451(v=exchg.150)). For more information about mailbox moves, see [Mailbox moves in Exchange Server](../../recipients/mailbox-moves.md).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 20 minutes
 
-- For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mailbox Move and Migration Permissions " entry in [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md).
 
@@ -167,7 +167,7 @@ This example uses similar settings, but only moves Angela's archive mailbox.
 New-MoveRequest -Identity agruber@contoso.com -ArchiveOnly -ArchiveTargetDatabase "MBX 03" -BadItemLimit 10
 ```
 
-For detailed syntax and parameter information, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest).
+For detailed syntax and parameter information, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest).
 
 A batch move request uses virtually the same syntax as a move request for an individual mailbox. The main differences are:
 
@@ -195,7 +195,7 @@ This example creates a batch move request with these settings:
 Get-Mailbox -Database "MBX DB01" | New-MoveRequest -BatchName "MBX DB01 to MBX DB02" -TargetDatabase "MBX DB02" -Priority High -BadItemLimit 51 -AcceptLargeDataLoss
 ```
 
-For detailed syntax and parameter information, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest).
+For detailed syntax and parameter information, see [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest).
 
 ### Use the Exchange Management Shell to create a local move request from a CSV file
 
@@ -271,11 +271,11 @@ To verify that you've successfully created a local move request, do any of these
   Get-MigrationUserStatistics -Identity <EmailAddress> | Format-List
   ```
 
-For more information, see [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationuserstatistics).
+For more information, see [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/get-migrationuserstatistics).
 
 ## Display migration batches
 
-For an example of how to use the Exchange Management Shell to display a migration batch, see Example 2 in [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationbatch).
+For an example of how to use the Exchange Management Shell to display a migration batch, see Example 2 in [Get-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch).
 
 ## Create a cross-forest move using a .csv batch file
 
@@ -291,11 +291,11 @@ For more information about preparing your forest for cross-forest moves, see the
 
 - [Prepare mailboxes for cross-forest move requests](prep-mailboxes-for-cross-forest-moves.md)
 
-- [Prepare Mailboxes for Cross-Forest Moves Using Sample Code](https://technet.microsoft.com/library/f35ac7a5-bb84-4653-b6d0-65906e93627b.aspx)
+- [Prepare Mailboxes for Cross-Forest Moves Using Sample Code](https://docs.microsoft.com/exchange/prepare-mailboxes-for-cross-forest-moves-using-sample-code-exchange-2013-help)
 
 - [Prepare mailboxes for cross-forest moves using the Exchange Management Shell](prep-mailboxes-for-cross-forest-moves-in-powershell.md)
 
-For detailed syntax and parameter information, see [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-migrationbatch) and [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest).
+For detailed syntax and parameter information, see [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch) and [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest).
 
 ### How do you know this worked?
 
@@ -307,4 +307,4 @@ To verify that you have successfully completed your migration, do the following:
   Get-MigrationUserStatistics -Identity BatchName -Status | Format-List
   ```
 
-For more information, see [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/get-migrationuserstatistics).
+For more information, see [Get-MigrationUserStatistics](https://docs.microsoft.com/powershell/module/exchange/get-migrationuserstatistics).

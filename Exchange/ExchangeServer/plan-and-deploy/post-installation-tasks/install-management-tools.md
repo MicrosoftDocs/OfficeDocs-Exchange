@@ -25,7 +25,7 @@ The management tools in Exchange Server 2016 and Exchange Server 2019 include th
 > [!NOTE]
 > The management tools don't include the Exchange admin center (EAC). The EAC is a web-based console that's hosted on Exchange 2016 Mailbox servers, and like any web site, you can access the EAC from other computers. For more information about the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md).
 
-For more information about the Exchange Management Shell and the Exchange Toolbox, see [Exchange Server PowerShell (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-server/exchange-management-shell) and [Exchange Toolbox](https://technet.microsoft.com/library/jj556600(v=exchg.150).aspx).
+For more information about the Exchange Management Shell, see [Exchange Server PowerShell (Exchange Management Shell)](https://docs.microsoft.com/powershell/exchange/exchange-management-shell).
 
 ## What do you need to know before you begin?
 

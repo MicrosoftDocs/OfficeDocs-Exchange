@@ -96,7 +96,7 @@ The GAL, OAB, room list, and address lists that are required in the ABPs for thi
 
 These are the important issues to consider when you use ABPs in your organization:
 
-- You can't use hierarchical address books (HABs) and ABPs simultaneously. To learn more, see [Understanding Hierarchical Address Books](https://technet.microsoft.com/library/a1d277a0-5437-40af-aade-e4730a0d1308.aspx).
+- You can't use hierarchical address books (HABs) and ABPs simultaneously. To learn more, see [Understanding Hierarchical Address Books](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books).
 
 - A user that's assigned an ABP needs to exist in the GAL that's specified for the ABP.
 
@@ -150,7 +150,7 @@ These are the important issues to consider when you use ABPs in your organizatio
 
 This section walks you through the deployment steps for [Scenario 2: Two companies sharing a CEO in one Exchange organization](#scenario-2-two-companies-sharing-a-ceo-in-one-exchange-organization). If you recall, Fabrikam and Tailspin Toys are separate companies that share the same CEO.
 
-To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 ### Step 1: Install and configure the Address Book Policy Routing Agent
 

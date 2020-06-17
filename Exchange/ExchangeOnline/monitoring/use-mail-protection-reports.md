@@ -20,7 +20,7 @@ manager: serdars
 
 # Use mail protection reports in Office 365 to view data about malware, spam, and rule detections
 
-If you're an Exchange Online or Exchange Online Protection (EOP) admin, there's a good chance you'd like to monitor how much spam and malware is being detected, or how often your mail flow rules (also known as transport rules) are being matched. With the interactive mail protection reports in the Office 365 Security & Compliance Center, you can quickly get a visual report of summary data, and drill-down into details about individual messages, for as far back as 90 days.
+If you're an Exchange Online or Exchange Online Protection (EOP) admin, there's a good chance you'd like to monitor how much spam and malware is being detected, or how often your mail flow rules (also known as transport rules) are being matched. With the interactive mail protection reports in the Microsoft 365 Security Center, you can quickly get a visual report of summary data, and drill-down into details about individual messages, for as far back as 90 days.
 
 ## Reports are now available in the Security & Compliance Center
 
@@ -29,7 +29,7 @@ If you were viewing mail protection reports in the Exchange admin center, they'v
 To get to the Security & Compliance Center, visit [https://protection.office.com](https://protection.office.com), and sign in using your work or school account.
 
 > [!NOTE]
-> You must be an Office 365 global administrator or have appropriate permissions assigned in order to use the Security & Compliance Center. For more details, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center).
+> You must be a global administrator or have appropriate permissions assigned in order to use the Security & Compliance Center. For more details, see [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center).
 
 ## Reporting overview
 

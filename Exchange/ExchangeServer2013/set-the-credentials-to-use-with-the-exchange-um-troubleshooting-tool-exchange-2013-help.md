@@ -57,7 +57,7 @@ By default, when you're running the UM Troubleshooting Tool, it uses the credent
    $cred=Get-Credential
    ```
 
-3. In the **Windows PowerShell Credential Request** window, type the domain\\user name and password, and then click **OK**.
+3. In the **Windows PowerShell Credential Request** window, type the domain\\username and password, and then click **OK**.
 
 4. In the **Microsoft Exchange 2010 UM Troubleshooting Tool** window, specify the necessary cmdlet parameters to test for call flow. For example:
 

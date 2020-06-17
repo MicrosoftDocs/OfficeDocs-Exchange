@@ -75,7 +75,7 @@ Let's say that you don't use the POP3 feature in your organization. You may want
 
 1. Start the Exchange Management Shell
 
-2. First, you need to determine the list of monitors associated with the POP3 service on a Mailbox server. The list in [Appendix A: Exchange health sets](appendix-a-exchange-health-sets.md) shows that the health set associated with POP3 service on a mailbox server is POP.Protocol. You need to run the [Get-MonitoringItemIdentity](https://technet.microsoft.com/library/jj218668\(v=exchg.150\)) cmdlet to get a list of all monitors associated with the POP.Protocol healthset. The following command returns all monitoring items for POP.Protocol health set and stores them in the temporary variable `$POPMonitoringItems`. Note that the command uses a mailbox server to get this list as the POP.Protocol health set won't be present on a server that doesn't have the Mailbox role installed.
+2. First, you need to determine the list of monitors associated with the POP3 service on a Mailbox server. The list in [Appendix A: Exchange health sets](appendix-a-exchange-health-sets.md) shows that the health set associated with POP3 service on a mailbox server is POP.Protocol. You need to run the [Get-MonitoringItemIdentity](https://docs.microsoft.com/powershell/module/exchange/Get-MonitoringItemIdentity) cmdlet to get a list of all monitors associated with the POP.Protocol healthset. The following command returns all monitoring items for POP.Protocol health set and stores them in the temporary variable `$POPMonitoringItems`. Note that the command uses a mailbox server to get this list as the POP.Protocol health set won't be present on a server that doesn't have the Mailbox role installed.
 
    ```powershell
    $POPMonitoringItems = Get-MonitoringItemIdentity -Identity POP.Protocol -Server Mailbox1
@@ -128,14 +128,14 @@ You also may need to modify specific thresholds for various monitor properties. 
 
 See the following topics for more information about the cmdlets you can use to configure monitoring overrides.
 
-- [Add-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272114)
+- [Add-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/Add-GlobalMonitoringOverride)
 
-- [Get-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272115)
+- [Get-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/Get-GlobalMonitoringOverride5)
 
-- [Remove-GlobalMonitoringOverride](https://go.microsoft.com/fwlink/?linkid=272116)
+- [Remove-GlobalMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/Remove-GlobalMonitoringOverride)
 
-- [Add-ServerMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272117)
+- [Add-ServerMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/Add-ServerMonitoringOverride)
 
-- [Get-ServerMonitoringOverride](https://go.microsoft.com/fwlink/p/?linkid=272118)
+- [Get-ServerMonitoringOverride](https://docs.microsoft.com/powershell/module/exchange/Get-ServerMonitoringOverride)
 
-- [Get-MonitoringItemIdentity](https://technet.microsoft.com/library/jj218668\(v=exchg.150\))
+- [Get-MonitoringItemIdentity](https://docs.microsoft.com/powershell/module/exchange/get-monitoringitemidentity)

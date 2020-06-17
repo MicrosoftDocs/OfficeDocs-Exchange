@@ -48,7 +48,7 @@ This example allows external POP3 server settings to be viewed by end users.
 Set-PopSettings -ExternalConnectionSettings {Dublin01.Contoso.com:995:SSL}
 ```
 
-For detailed syntax and parameter information, see [Set-PopSettings](https://technet.microsoft.com/library/aa997154\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-PopSettings](https://docs.microsoft.com/powershell/module/exchange/Set-PopSettings).
 
 This example allows external IMAP4 server settings to be viewed by end users.
 
@@ -56,7 +56,7 @@ This example allows external IMAP4 server settings to be viewed by end users.
 Set-ImapSettings -ExternalConnectionSettings {Dublin01.Contoso.com:993:SSL}
 ```
 
-For detailed syntax and parameter information, see [Set-ImapSettings](https://technet.microsoft.com/library/aa998252\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ImapSettings](https://docs.microsoft.com/powershell/module/exchange/Set-ImapSettings).
 
 To apply these changes, you must restart IIS. You don't need to restart the POP3 services. To restart IIS, from a command prompt, enter the following:
 
@@ -96,7 +96,7 @@ This example allows internal and external SMTP server settings to be viewed by e
 Get-ReceiveConnector "*Client Frontend*" | Set-ReceiveConnector -Fqdn Server.Contoso.com -AdvertiseClientSettings $true
 ```
 
-For detailed syntax and parameter information, see [Set-ReceiveConnector](https://technet.microsoft.com/library/bb125140\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-ReceiveConnector](https://docs.microsoft.com/powershell/module/exchange/Set-ReceiveConnector).
 
 ## How do you know this worked?
 

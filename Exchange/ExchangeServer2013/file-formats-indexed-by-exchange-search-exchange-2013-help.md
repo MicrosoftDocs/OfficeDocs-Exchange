@@ -24,7 +24,7 @@ In Microsoft Exchange Server 2013 and Exchange Online, Exchange Search includes
 
 When managing or using Exchange Search and the dependent features (such as [In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)), consider the difference between unsearchable items and file formats that are disabled for indexing or contain content that can't be indexed:
 
-- **Unsearchable items**: When Exchange Search can't index a particular file type for any reason (for example, if a filter isn't installed), the search for the file type fails. Messages containing such attachments are marked as *partially indexed*. Unsearchable items can be retrieved using the [Get-FailedContentIndexDocuments](https://technet.microsoft.com/library/dd351154\(v=exchg.150\)) cmdlet. When copying In-Place eDiscovery search results to a discovery mailbox or exporting search results to a PST file, you can include unsearchable items. For more information, see [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md).
+- **Unsearchable items**: When Exchange Search can't index a particular file type for any reason (for example, if a filter isn't installed), the search for the file type fails. Messages containing such attachments are marked as *partially indexed*. Unsearchable items can be retrieved using the [Get-FailedContentIndexDocuments](https://docs.microsoft.com/powershell/module/exchange/Get-FailedContentIndexDocuments) cmdlet. When copying In-Place eDiscovery search results to a discovery mailbox or exporting search results to a PST file, you can include unsearchable items. For more information, see [Unsearchable items in Exchange eDiscovery](unsearchable-items-in-exchange-ediscovery-exchange-2013-help.md).
 
 - **File formats with content that can't be indexed**: Certain file types such as Windows Media Video (WMV) don't contain content that can be indexed and therefore aren't indexed. Messages containing attachments of such file types are also returned as unsearchable items in In-Place eDiscovery searches.
 
@@ -37,7 +37,7 @@ For additional management tasks related to Exchange Search in on-premises organi
 
 ## Default filters
 
-The following table lists the default search filters installed on an Exchange 2013 Mailbox server and in Exchange Online. You can retrieve the list of default filters by using the [Get-SearchDocumentFormat](https://technet.microsoft.com/library/jj873755\(v=exchg.150\)) cmdlet.
+The following table lists the default search filters installed on an Exchange 2013 Mailbox server and in Exchange Online. You can retrieve the list of default filters by using the [Get-SearchDocumentFormat](https://docs.microsoft.com/powershell/module/exchange/Get-SearchDocumentFormat) cmdlet.
 
 <table>
 <colgroup>
@@ -160,7 +160,7 @@ The following table lists the default search filters installed on an Exchange 20
 
 ## Disabled file formats
 
-The following table lists the search filters that are disabled for indexing by default on an Exchange 2013 Mailbox server and in Exchange Online. In Exchange 2013, administrators can disable or re-enable a supported file format for indexing by using the [Set-SearchDocumentFormat](https://technet.microsoft.com/library/jj873756\(v=exchg.150\)) cmdlet. This cmdlet isn't available in Exchange Online.
+The following table lists the search filters that are disabled for indexing by default on an Exchange 2013 Mailbox server and in Exchange Online. In Exchange 2013, administrators can disable or re-enable a supported file format for indexing by using the [Set-SearchDocumentFormat](https://docs.microsoft.com/powershell/module/exchange/Set-SearchDocumentFormat) cmdlet. This cmdlet isn't available in Exchange Online.
 
 <table>
 <colgroup>

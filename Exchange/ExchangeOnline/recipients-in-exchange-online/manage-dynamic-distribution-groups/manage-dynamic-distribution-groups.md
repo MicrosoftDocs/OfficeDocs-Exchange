@@ -33,7 +33,7 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 - Estimated time to complete: 2 to 5 minutes.
 
-- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Dynamic distribution groups" entry in the [Recipients Permissions](https://technet.microsoft.com/library/5b690bcb-c6df-4511-90e1-08ca91f43b37.aspx) topic.
+- You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipients" entry in the [Feature permissions in Exchange Online](../../permissions-exo/feature-permissions.md) topic.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../../accessibility/keyboard-shortcuts-in-admin-center.md).
 
@@ -91,7 +91,8 @@ Unlike regular distribution groups that contain a defined set of members, the me
    |**Department**|The specified value matches the recipient's Department property.|
    |**Custom attributeN** (where N is a number from 1 to 15)|The specified value matches the recipient's CustomAttributeN property.|
 
-    **Important**: The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for **State or province**, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
+    > [!IMPORTANT]
+    > The values that you enter for the selected attribute must exactly match those that appear in the recipient's properties. For example, if you enter **Washington** for **State or province**, but the value for the recipient's property is **WA**, the condition will not be met. Also, text-based values that you specify aren't case-sensitive. For example, if you specify **Contoso** for the **Company** attribute, messages will be sent to a recipient if this value is **contoso**.
 
 6. In the **Specify words or phrases** window, type the value in the text box. Click **Add** and then click **OK**.
 
@@ -125,7 +126,7 @@ This example creates a dynamic distribution group with a custom recipient filter
 New-DynamicDistributionGroup -Name "Full Time Employees" -RecipientFilter "(RecipientTypeDetails -eq 'UserMailbox') -and (CustomAttribute10 -eq 'FullTimeEmployee')"
 ```
 
-For detailed syntax and parameter information, see [New-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-dynamicdistributiongroup).
+For detailed syntax and parameter information, see [New-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/new-dynamicdistributiongroup).
 
 ### How do you know this worked?
 
@@ -252,9 +253,9 @@ To assign permissions to delegates, click **Add** under the appropriate permissi
 
 Use the **Get-DynamicDistributionGroup** and **Set-DynamicDistributionGroup** cmdlets to view and change properties for dynamic distribution groups. Advantages of using Exchange Online PowerShell are the ability to change the properties that aren't available in the EAC and change properties for multiple groups. For information about what parameters correspond to distribution group properties, see the following topics:
 
-- [Get-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-dynamicdistributiongroup)
+- [Get-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/get-dynamicdistributiongroup)
 
-- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-dynamicdistributiongroup)
+- [Set-DynamicDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-dynamicdistributiongroup)
 
 Here are some examples of using Exchange Online PowerShell to change dynamic distribution group properties.
 

@@ -15,12 +15,12 @@ ms.collection:
 - Ent_O365_Hybrid
 - M365-email-calendar
 ms.assetid: 48d532cc-29f9-4009-9d2d-f19a9c13c320
-description: "In a hybrid deployment, digital certificates are an important part of securing the communication between the on-premises Exchange organization and Office 365. Certificates enable each Exchange organization to trust the identity of another. Certificates also help to ensure that each Exchange organization is communicating to the right source."
+description: "In a hybrid deployment, digital certificates are an important part of securing the communication between the on-premises Exchange organization and Microsoft 365 and Office 365. Certificates enable each Exchange organization to trust the identity of another. Certificates also help to ensure that each Exchange organization is communicating to the right source."
 ---
 
 # Certificate requirements for hybrid deployments
 
-In a hybrid deployment, digital certificates are an important part of securing the communication between the on-premises Exchange organization and Office 365. Certificates enable each Exchange organization to trust the identity of another. Certificates also help to ensure that each Exchange organization is communicating to the right source.
+In a hybrid deployment, digital certificates are an important part of securing the communication between the on-premises Exchange organization and Microsoft 365 or Office 365. Certificates enable each Exchange organization to trust the identity of another. Certificates also help to ensure that each Exchange organization is communicating to the right source.
 
 In a hybrid deployment, many services make use of certificates:
 

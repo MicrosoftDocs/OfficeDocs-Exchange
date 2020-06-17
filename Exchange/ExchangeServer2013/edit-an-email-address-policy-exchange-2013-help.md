@@ -65,4 +65,4 @@ Set-EmailAddressPolicy -Identity "South East Offices" -ConditionalStateorProvinc
 > [!NOTE]
 > Although the email address policy is already applied to recipients in Georgia, Alabama, and Louisiana, you must include them in the parameter because the parameter overwrites values; it doesn't append values to existing ones.
 
-For detailed syntax and parameter information, see [Set-EmailAddressPolicy](https://technet.microsoft.com/library/bb124517\(v=exchg.150\)).
+For detailed syntax and parameter information, see [Set-EmailAddressPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-EmailAddressPolicy).

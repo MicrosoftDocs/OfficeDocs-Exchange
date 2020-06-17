@@ -26,7 +26,7 @@ Download and install the 64-bit update from the following URL, and then click **
 > [!NOTE]
 > If this update requires a reboot to complete installation, you'll need to exit Exchange 2013 Setup, reboot, and then start Setup again.
 
-Microsoft Knowledge Base article KB2619234, [A hotfix is available to enable the Association Cookie/GUID that is used by RPC over HTTP to also be used at the RPC layer in Windows 7 and in Windows Server 2008 R2)](https://go.microsoft.com/fwlink/?linkid=3052&kbid=2619234)
+Microsoft Knowledge Base article KB2619234, [A hotfix is available to enable the Association Cookie/GUID that is used by RPC over HTTP to also be used at the RPC layer in Windows 7 and in Windows Server 2008 R2)](https://support.microsoft.com/help/2619234)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 

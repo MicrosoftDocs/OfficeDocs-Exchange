@@ -20,13 +20,13 @@ title: Disable or delete a mailbox in Exchange Server
 
 In Exchange Server, you can use the Exchange admin center (EAC) or the Exchange Management Shell to disable or delete mailboxes. Disabled or deleted mailboxes are also known as *disconnected mailboxes*. For more information about disconnected mailboxes, see [Disconnected mailboxes](disconnected-mailboxes.md).
 
- **Note**: If you need to delete a mailbox in Office 365, see [Delete or Restore User Mailboxes in Exchange Online](https://technet.microsoft.com/library/be7f59a5-bbc9-4b7a-a28b-f47b26dd33a7.aspx).
+ **Note**: If you need to delete a mailbox in Office 365, see [Delete or Restore User Mailboxes in Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes).
 
 ## What do you need to know before you begin?
 
 - Estimated time to complete each procedure: 2 minutes.
 
-- For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell).
+- For more information about accessing and using the EAC, see [Exchange admin center in Exchange Server](../../architecture/client-access/exchange-admin-center.md). To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see [Open the Exchange Management Shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell).
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Recipient Provisioning Permissions" section in the [Recipients Permissions](../../permissions/feature-permissions/recipient-permissions.md) topic.
 
@@ -85,7 +85,7 @@ This example disables the shared mailbox that has the email address sharedmbx@co
 Disable-Mailbox sharedmbx@contoso.com
 ```
 
-For detailed syntax and parameter information, see [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-mailbox).
+For detailed syntax and parameter information, see [Disable-Mailbox](https://docs.microsoft.com/powershell/module/exchange/disable-mailbox).
 
 ### How do you know this worked?
 
@@ -176,7 +176,7 @@ This example deletes the mailbox that has the alias value corpprint.
 Remove-Mailbox corpprint
 ```
 
-For detailed syntax and parameter information, see [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailbox).
+For detailed syntax and parameter information, see [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/remove-mailbox).
 
 **Note**: If you use the **Remove-Mailbox** cmdlet with the _Purge_ switch, the mailbox is immediately purged and isn't recoverable. For more information, see [Permanently delete a mailbox](permanently-delete-mailboxes.md).
 
