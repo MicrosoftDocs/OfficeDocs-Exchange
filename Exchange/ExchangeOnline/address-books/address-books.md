@@ -29,14 +29,14 @@ Exchange Online uses address books to organize and store email address informati
 |**Hierarchical address books**|The hierarchical address book (HAB) presents recipients in the GAL by using your organization's unique business structure (for example, seniority or management hierarchy), which provides an efficient method for locating internal recipients.|[Hierarchical address books](hierarchical-address-books/hierarchical-address-books.md)|
 |**Offline address books**|An offline address book (OAB) is a collection of address lists that can be downloaded and used in Outlook by users that are disconnected from the Exchange Online organization.|[Offline address books in Exchange Online](offline-address-books/offline-address-books.md)|
 
-**Note**: Email address policies are available in Exchange Online, but only for Microsoft 365 groups. For more information, see [Choose the domain to use when creating Microsoft 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/choose-domain-to-create-groups).
+**Note**: Email address policies are available in Exchange Online, but only for Microsoft 365 groups. For more information, see [Choose the domain to use when creating Microsoft 365 Groups](https://docs.microsoft.com/microsoft-365/admin/create-groups/choose-domain-to-create-groups).
 
 For help with everyday email tasks, such as organizing your contacts in Outlook, see [Microsoft 365 training](https://support.microsoft.com/training). You can find help including:
 
-- [Add an email contact](https://go.microsoft.com/fwlink/p/?LinkId=615396)
+- [Add an email contact](https://support.microsoft.com/office/e1dc4548-3bd6-4644-aecd-47b5728f7b0d)
 
-- [Import your contacts](https://go.microsoft.com/fwlink/p/?LinkId=615393)
+- [Import your contacts](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
 
-- [Create a contact group](https://go.microsoft.com/fwlink/p/?LinkId=615370)
+- [Create a contact group](https://support.microsoft.com/office/88ff6c60-0a1d-4b54-8c9d-9e1a71bc3023)
 
-- [Send an email message to a contact group](https://go.microsoft.com/fwlink/p/?LinkId=615391)
+- [Send an email message to a contact group](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)

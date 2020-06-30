@@ -56,7 +56,7 @@ When you install a language pack, the installation program does the following:
 
 4. Enables Voice Mail Preview for clients in other languages.
 
-You can add UM language packs by using the **Setup.exe** command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://go.microsoft.com/fwlink/p/?linkid=266542). However, you have to use the Setup.exe command to remove a UM language pack. There's no Exchange Management Shell cmdlet that you can use to add or remove languages from a Mailbox server. For more information about how to install a UM language pack, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md). For more information about how to remove a UM language pack, see [Remove a UM language pack](remove-a-um-language-pack-exchange-2013-help.md).
+You can add UM language packs by using the **Setup.exe** command or by running the *\<UMLanguagePack\>*.exe installation program after you've downloaded the UM language pack from [Exchange Server 2013 UM Language Packs](https://www.microsoft.com/download/details.aspx?id=35368). However, you have to use the Setup.exe command to remove a UM language pack. There's no Exchange Management Shell cmdlet that you can use to add or remove languages from a Mailbox server. For more information about how to install a UM language pack, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md). For more information about how to remove a UM language pack, see [Remove a UM language pack](remove-a-um-language-pack-exchange-2013-help.md).
 
 > [!NOTE]
 > By default, when you install a Mailbox server, the U.S. English (en-US) language pack is installed. It can't be removed unless you remove the Mailbox server from the computer.
@@ -88,182 +88,182 @@ The following table lists the Unified Messaging language packs that are currentl
 <td><p>Spain</p></td>
 <td><p>ca-ES</p></td>
 <td><p>UMLanguagePack. ca-ES</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Chinese (Hong Kong)</p></td>
 <td><p>China</p></td>
 <td><p>zh-HK</p></td>
 <td><p>UMLanguagePack. zh-HK</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Chinese (Simplified)</p></td>
 <td><p>China</p></td>
 <td><p>zh-CHS</p></td>
 <td><p>UMLanguagePack.zh-CN</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Chinese (Traditional)</p></td>
 <td><p>Taiwan</p></td>
 <td><p>zh-TW</p></td>
 <td><p>UMLanguagePack.zh-TW</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Danish</p></td>
 <td><p>Denmark</p></td>
 <td><p>da-DK</p></td>
 <td><p>UMLanguagePack.da-DK</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Dutch</p></td>
 <td><p>Netherlands</p></td>
 <td><p>nl-NL</p></td>
 <td><p>UMLanguagePack.nl-NL</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>English</p></td>
 <td><p>Australia</p></td>
 <td><p>en-AU</p></td>
 <td><p>UMLanguagePack.en-AU</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>English</p></td>
 <td><p>Canada</p></td>
 <td><p>en-CA</p></td>
 <td><p>UMLanguagePack. en-CA</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>English</p></td>
 <td><p>India</p></td>
 <td><p>en-IN</p></td>
 <td><p>UMLanguagePack. en-IN</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>English</p></td>
 <td><p>United Kingdom</p></td>
 <td><p>en-GB</p></td>
 <td><p>UMLanguagePack.en-GB</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>English</p></td>
 <td><p>United States</p></td>
 <td><p>en-US</p></td>
 <td><p>Included with installation of a Mailbox server</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Finnish</p></td>
 <td><p>Finland</p></td>
 <td><p>fi-Fl</p></td>
 <td><p>UMLanguagePack.fi-Fl</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>French</p></td>
 <td><p>Canada</p></td>
 <td><p>fr-CA</p></td>
 <td><p>UMLanguagePack.fr-CA</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>French</p></td>
 <td><p>France</p></td>
 <td><p>fr-FR</p></td>
 <td><p>UMLanguagePack.fr-FR</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>German</p></td>
 <td><p>Germany</p></td>
 <td><p>de-DE</p></td>
 <td><p>UMLanguagePack.de-DE</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Italian</p></td>
 <td><p>Italy</p></td>
 <td><p>it-IT</p></td>
 <td><p>UMLanguagePack.it-IT</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Japanese</p></td>
 <td><p>Japan</p></td>
 <td><p>ja-JP</p></td>
 <td><p>UMLanguagePack.ja-JP</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Korean</p></td>
 <td><p>Korean</p></td>
 <td><p>ko-KR</p></td>
 <td><p>UMLanguagePack.ko-KR</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Norwegian (Bokmal)</p></td>
 <td><p>Norway</p></td>
 <td><p>nb-NO</p></td>
 <td><p>UMLanguagePack.nb-NO</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Polish</p></td>
 <td><p>Poland</p></td>
 <td><p>pl-PL</p></td>
 <td><p>UMLanguagePack.pl-PL</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Portuguese</p></td>
 <td><p>Brazil</p></td>
 <td><p>pt-BR</p></td>
 <td><p>UMLanguagePack.pt-BR</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Portuguese</p></td>
 <td><p>Portugal</p></td>
 <td><p>pt-PT</p></td>
 <td><p>UMLanguagePack.pt-PT</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Russian</p></td>
 <td><p>Russia</p></td>
 <td><p>ru-RU</p></td>
 <td><p>UMLanguagePack. ru-RU</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Spanish</p></td>
 <td><p>Spain</p></td>
 <td><p>es-ES</p></td>
 <td><p>UMLanguagePack.es-ES</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Spanish</p></td>
 <td><p>Mexico</p></td>
 <td><p>es-MX</p></td>
 <td><p>UMLanguagePack.es-MX</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Swedish</p></td>
 <td><p>Sweden</p></td>
 <td><p>sv-SE</p></td>
 <td><p>UMLanguagePack.sv-SE</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=266542">Download available</a></p></td>
+<td><p><a href="https://www.microsoft.com/download/details.aspx?id=35368">Download available</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -327,7 +327,7 @@ There are Unified Messaging Voice Mail Preview partners that offer enhanced tran
 
 If you find that the voice mail previews sent to your users aren't accurate enough, you can contact one of the certified Voice Mail Preview partners listed on the [Microsoft Solution Providers](https://www.microsoft.com/solution-providers) website and sign up with them at an additional cost.
 
-You can download the UM language packs from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=266542). For details, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
+You can download the UM language packs from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35368). For details, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
 
 ## Unified Messaging languages
 
@@ -343,7 +343,7 @@ To enable callers to use the multiple language features found in Unified Messagi
 
 You install a UM language pack on a Mailbox server using Setup.exe. After you install the new language pack, the language associated with the language pack will be added to the list of available languages that you can use. You can view the languages that have been installed using the [Get-UMService](https://docs.microsoft.com/powershell/module/exchange/Get-UMService) cmdlet in the Exchange Management Shell.
 
-When you install the UM language pack, the files that are used by the TTS engine and the pre-recorded prompts for the chosen language are copied and made available for users who connect to the voice mail system. You can download the UM language packs from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=266542). For details, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
+When you install the UM language pack, the files that are used by the TTS engine and the pre-recorded prompts for the chosen language are copied and made available for users who connect to the voice mail system. You can download the UM language packs from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35368). For details, see [Install a UM language pack](install-a-um-language-pack-exchange-2013-help.md).
 
 ## UM dial plan languages
 

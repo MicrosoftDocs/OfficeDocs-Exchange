@@ -259,7 +259,7 @@ The levels of support for operating system and browser combinations that you can
 
   - **n/a**: The browser and operating system combination isn't possible. For example, an older browser on a newer operating system, or vice-versa.
 
-- Operating system and browser combinations that aren't listed are unsupported. This includes iOS, Android, and Windows Phone.
+- Operating system and browser combinations that aren't listed are unsupported. This includes iOS and Android.
 
 - Third-party plug-ins might cause issues with the EAC for supported browsers.
 

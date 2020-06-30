@@ -26,9 +26,9 @@ You use the Exchange admin center to manage email settings for your organization
 
 You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the Exchange admin center.
 
-1. [Sign in](https://go.microsoft.com/fwlink/p/?LinkID=529144) to Office 365 using your work or school account, and then choose the **Admin** tile.
+1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
 
-2. In the Microsoft  365 admin center, choose **Admin centers** \> **Exchange**.
+2. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
     ![Get to the Exchange admin center](media/ae439954-b836-47fa-9d02-3709b93cdb10.jpg)
 
@@ -74,7 +74,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 |![Edit icon](media/ITPro_EAC_EditIcon.gif)|Edit|Edit an object.|
 |![Delete icon](media/ITPro_EAC_DeleteIcon.gif)|Delete|Delete an object. Some delete icons have a down arrow you can click to show additional options.|
 |![Search icon](media/ITPro_EAC_.gif)|Search|Open a search box in which you can type the search phrase for an object you want to find.|
-|![Icon: Upgrade distribution group to Office 365 group](media/f48d2ecd-36e1-4ec1-a4eb-7c97a23d81dc.gif)|n/a|Upgrade a distribution group to an Office 365 group. This icon can be used only for a distribution group.|
+|![Icon: Upgrade distribution group to Microsoft 365 group](media/f48d2ecd-36e1-4ec1-a4eb-7c97a23d81dc.gif)|n/a|Upgrade a distribution group to a Microsoft 365 group. This icon can be used only for a distribution group.|
 |![Refresh Icon](media/ITPro_EAC_RefreshIcon.gif)|Refresh|Refresh the list view.|
 |![More Options Icon](media/ITPro_EAC_MoreOptionsIcon.gif)|More options|View more actions you can perform for that tab's objects. <br/> For example, in **Recipients** \> **Mailboxes** clicking this icon shows the following options: **Add/Remove columns**, **Deleted mailboxes**, **Export data to a CSV file**, and **Advanced search**.|
 |![Up Arrow Icon](media/ITPro_EAC_UpArrowIcon.gif)![Down Arrow Icon](media/ITPro_EAC_DownArrowIcon.gif)|Up arrow and down arrow|Move an object's priority up or down. <br/>  For example, in **Mail flow** \> **Rules** click the up arrow to raise the priority of a rule. You can also use these arrows to navigate the public folder hierarchy.|
@@ -105,7 +105,7 @@ The Centers tile allows you to change from one admin center to another. The Me t
 
 See the following articles:
 
-- [Office 365 System Requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources): lists supported browsers for Office 365 and the Exchange admin center.
+- [Microsoft 365 and Office resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources): lists supported browsers for Microsoft 365, Office 365, and the Exchange admin center.
 
 - [Supported Browsers for Outlook on the web](https://support.microsoft.com/office/c89774d6-0722-4c93-a547-ef45e693e006).
 

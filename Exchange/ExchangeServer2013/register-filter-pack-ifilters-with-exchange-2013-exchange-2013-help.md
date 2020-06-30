@@ -60,7 +60,7 @@ Deploying the Office 2010 Filter Pack consists of two main steps:
 > [!IMPORTANT]
 > You must perform this procedure on all Mailbox servers in your organization.
 
-1. Download and save the Microsoft Office 2010 Filter Pack (`FilterPack64bit.exe`) from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=191548).
+1. Download and save the Microsoft Office 2010 Filter Pack (`FilterPack64bit.exe`) from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=17062).
 
 2. Run the `FilterPack64bit.exe` file on your Mailbox server and follow the instructions to complete the installation.
 

@@ -39,4 +39,4 @@ To resolve this issue, do one or more of the following:
 
 To obtain the latest service pack for Windows Server 2003, see [KB889100](https://support.microsoft.com/help/889100).
 
-For more information about Exchange Server 2007 Setup parameters, see "How to Install Exchange 2007 in Unattended Mode" ([https://go.microsoft.com/fwlink/?LinkId=86476](https://go.microsoft.com/fwlink/?linkid=86476)) in the Exchange Server 2007 product documentation.
+For more information about Exchange Server 2007 Setup parameters, see "How to Install Exchange 2007 in Unattended Mode" ([https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa997281(v=exchg.80)](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa997281(v=exchg.80))) in the Exchange Server 2007 product documentation.

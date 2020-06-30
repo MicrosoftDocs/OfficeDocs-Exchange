@@ -31,7 +31,7 @@ This topic shows you how to configure server-to-server authentication between Ex
 
 - The SharePoint 2013 site must be configured to use Secure Sockets Layer (SSL).
 
-- The [Exchange Web Services Managed API](https://go.microsoft.com/fwlink/?linkid=257726) must be installed on every server that is running SharePoint 2013. Reset Internet Information Server (IIS) after installation.
+- The [Exchange Web Services Managed API](https://www.microsoft.com/download/details.aspx?id=35371) must be installed on every server that is running SharePoint 2013. Reset Internet Information Server (IIS) after installation.
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts in the Exchange admin center](keyboard-shortcuts-in-the-exchange-admin-center-2013-help.md).
 

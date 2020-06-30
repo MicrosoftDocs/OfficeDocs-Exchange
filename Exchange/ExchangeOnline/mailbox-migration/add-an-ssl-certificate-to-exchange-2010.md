@@ -31,7 +31,7 @@ Some services, such as Outlook Anywhere, Cutover migration to Microsoft 365 or O
 
 ## What permissions do you need?
 
-In order to add certificates, you need to be assigned the [Organization Management](https://go.microsoft.com/fwlink/p/?LinkId=615558) role group on the Exchange 2010.
+In order to add certificates, you need to be assigned the [Organization Management](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd335087(v=exchg.141)) role group on the Exchange 2010.
 
 ## Tasks for adding an SSL certificate
 

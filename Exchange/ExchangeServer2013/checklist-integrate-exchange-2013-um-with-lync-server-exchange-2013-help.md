@@ -59,7 +59,7 @@ For more information about how to perform the tasks that must be completed for L
 <td><p><a href="https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/integrate-with-exchange/integrate-with-exchange">Prerequisites for Integrating Microsoft Lync Server 2013 and Microsoft Exchange Server 2013</a></p>
 
 > [!TIP]
-> The Unified Communications Managed API (UCMA) 4.0 Runtime is required for Exchange 2013 and Lync Server 2010 and 2013 and is installed during installation. To download and review information about UCMA 4.0, see <A href="https://go.microsoft.com/fwlink/p/?linkid=258269">Unified Communications Managed API 4.0 Runtime</A>
+> The Unified Communications Managed API (UCMA) 4.0 Runtime is required for Exchange 2013 and Lync Server 2010 and 2013 and is installed during installation. To download and review information about UCMA 4.0, see <A href="https://www.microsoft.com/download/details.aspx?id=34992">Unified Communications Managed API 4.0 Runtime</A>
 
 </td>
 </tr>

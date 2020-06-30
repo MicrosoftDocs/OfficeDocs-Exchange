@@ -27,4 +27,4 @@ Exchange 2007 setup requires that the user who is logged on when uninstalling al
 
 To resolve this issue, grant the logged-on user Exchange Organization Administrator permissions or enroll them in the Enterprise Admins group, or log on with an account that has those permissions and rerun Exchange 2007 setup.
 
-For more information about Active Directory permissions needed with Microsoft Exchange, see "Working with Active Directory Permissions in Exchange Server" ([https://go.microsoft.com/fwlink/?LinkId=47592](https://go.microsoft.com/fwlink/?linkid=47592)).
+For more information about Active Directory permissions needed with Microsoft Exchange, see "Working with Active Directory Permissions in Exchange Server" ([https://docs.microsoft.com/previous-versions/tn-archive/bb124223(v=exchg.65)](https://docs.microsoft.com/previous-versions/tn-archive/bb124223(v=exchg.65))).

@@ -49,7 +49,7 @@ Install the following software, in the order shown, on the computer that will be
 
 1. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265)
 
-2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
+2. [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855) (included with Windows Server 2012 R2)
 
 After you've installed the software listed above, complete the following steps to install the Remote Tools Administration Pack. After you've installed the Remote Tools Administration Pack you'll be able to use the computer to prepare Active Directory. For more information about preparing Active Directory, see [Prepare Active Directory and domains](prepare-active-directory-and-domains-exchange-2013-help.md).
 
@@ -100,9 +100,9 @@ After you've installed the operating system roles and features, install the foll
     > [!IMPORTANT]
     > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
-2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
+2. [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855) (included with Windows Server 2012 R2)
 
-3. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
+3. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://www.microsoft.com/download/details.aspx?id=34992)
 
 4. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -132,7 +132,7 @@ Install the version of Microsoft .NET Framework that corresponds to the version 
     > [!IMPORTANT]
     > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
-2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234) (included with Windows Server 2012 R2)
+2. [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855) (included with Windows Server 2012 R2)
 
 3. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -176,9 +176,9 @@ After you've installed the operating system roles and features, install the foll
     > [!IMPORTANT]
     > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
-2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
+2. [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855)
 
-3. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
+3. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://www.microsoft.com/download/details.aspx?id=34992)
 
 4. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -223,9 +223,9 @@ After you've installed the operating system roles and features, install the foll
    > [!IMPORTANT]
    > Exchange 2013 CU23 **requires** .NET Framework 4.7.2. Upgrade your servers to .NET Framework 4.7.2 **before** you install Exchange 2013 CU23 or you'll receive an error. If you're running .NET Framework 4.7.1, upgrade to Exchange 2013 CU22 before you install .NET Framework 4.7.2. If you're running .NET Framework 4.6.2, upgrade to Exchange 2013 CU20 before you install .NET Framework 4.7.1.
 
-2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
+2. [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855)
 
-3. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkid=258269)
+3. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://www.microsoft.com/download/details.aspx?id=34992)
 
 4. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
@@ -248,7 +248,7 @@ After you've installed the operating system features, install the following soft
 
 1. [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/p/?linkid=863265)
 
-2. [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?linkid=390234)
+2. [Windows Management Framework 4.0](https://www.microsoft.com/download/details.aspx?id=40855)
 
 3. [Knowledge Base article KB974405 (Windows Identity Foundation)](https://support.microsoft.com/help/974405)
 

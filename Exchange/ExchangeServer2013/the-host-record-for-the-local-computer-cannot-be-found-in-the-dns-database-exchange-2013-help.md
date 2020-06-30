@@ -25,15 +25,15 @@ Exchange depends on DNS Host (A) records for the IP Address of its next internal
 
 To resolve this issue:
 
-  - Verify that the local TCP/IP configuration points to the correct DNS server. For more information, see [Configure TCP/IP settings](https://go.microsoft.com/fwlink/p/?linkid=108281).
+- Verify that the local TCP/IP configuration points to the correct DNS server. For more information, see [Configure TCP/IP settings](https://go.microsoft.com/fwlink/p/?linkid=108281).
 
-  - Use Nslookup.exe to verify that the Host (A) record exists on the DNS server. For more information, see [To verify A resource records exist in DNS](https://go.microsoft.com/fwlink/?linkid=63001).
+- Use Nslookup.exe to verify that the Host (A) record exists on the DNS server. For more information, see [To verify A resource records exist in DNS](https://docs.microsoft.com/previous-versions/orphan-topics/ws.10/cc772976(v=ws.10)).
 
 For information about DNS name resolution, troubleshooting, and Host (A) records, see the following:
 
-  - [Troubleshooting DNS](https://go.microsoft.com/fwlink/p/?linkid=294828)
+- [Troubleshooting DNS](https://go.microsoft.com/fwlink/p/?linkid=294828)
 
-  - [Managing resource records](https://go.microsoft.com/fwlink/p/?linkid=294829)
+- [Managing resource records](https://go.microsoft.com/fwlink/p/?linkid=294829)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 

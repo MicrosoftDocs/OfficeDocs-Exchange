@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Sending or replying to an S/MIME-encrypted message in Microsoft Outlook is very similar to the experience with a non-encrypted message. For more information about reading or sending S/MIME-encrypted messages from an email program such as Outlook Web App, see [Use Outlook to send and reply to S/MIME encrypted messages](https://go.microsoft.com/fwlink/p/?LinkId=392520).
+Sending or replying to an S/MIME-encrypted message in Microsoft Outlook is very similar to the experience with a non-encrypted message. For more information about reading or sending S/MIME-encrypted messages from an email program such as Outlook Web App, see [Use Outlook to send and reply to S/MIME encrypted messages](https://support.microsoft.com/office/2e57e4bd-4cc2-4531-9a39-426e7c873e26).
 
 ## For more information
 

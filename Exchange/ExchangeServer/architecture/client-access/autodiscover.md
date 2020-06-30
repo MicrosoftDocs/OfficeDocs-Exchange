@@ -31,7 +31,7 @@ Exchange 2016 introduced changes to services that were previously handled by the
 - Outlook configures services with only the username and password.
 
 > [!NOTE]
-> If you are a user looking for help with connecting your Outlook client to your Exchange server, see [Outlook email setup](https://go.microsoft.com/fwlink/p/?linkId=843935).
+> If you are a user looking for help with connecting your Outlook client to your Exchange server, see [Outlook email setup](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
 
 ## Autodiscover services and Active Directory
 
@@ -80,7 +80,7 @@ Client applications use the Autodiscover service when the application starts for
 |https://contoso.com/autodiscover/autodiscover.exc|Derived from email address|
 |https://autodiscover.contoso.com/autodiscover/autodiscover|Derived from email address|
 
-For more information about SCP objects, see [Publishing Services in Active Directory](https://go.microsoft.com/fwlink/p/?linkId=845325)
+For more information about SCP objects, see [Publishing with Service Connection Points](https://docs.microsoft.com/windows/win32/ad/publishing-with-service-connection-points).
 
 ## Autodiscover in DNS
 

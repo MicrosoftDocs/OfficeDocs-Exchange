@@ -1072,7 +1072,7 @@ The property types that are used in conditions and exceptions are described in t
 <tr class="odd">
 <td><p><code>Patterns</code></p></td>
 <td><p>Array of regular expressions</p></td>
-<td><p>Specifies one or more regular expressions that are used to identify text patterns in values. For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=180327">Regular Expression Syntax</a>.</p>
+<td><p>Specifies one or more regular expressions that are used to identify text patterns in values. For more information, see <a href="https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio">Regular Expression Syntax</a>.</p>
 <p>In the Exchange Management Shell, you specify multiple regular expressions separated by commas, and you enclose each regular expression in quotation marks (&quot;).</p></td>
 </tr>
 <tr class="even">

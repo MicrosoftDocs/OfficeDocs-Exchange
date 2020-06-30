@@ -45,7 +45,7 @@ The path you need to follow to install Exchange 2013 in your organization depend
 <li><p>Migrate Exchange 2007 mailboxes, public folders, and other components to Exchange 2013.</p></li>
 <li><p>Decommission and remove all Exchange 2007 servers.</p></li>
 </ol>
-<p>For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=103281">Upgrading to Exchange 2007</a> and <a href="upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md">Upgrade from Exchange 2007 to Exchange 2013</a>.</p></td>
+<p>For more information, see <a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb124008(v=exchg.80)">Upgrading to Exchange 2007</a> and <a href="upgrade-from-exchange-2007-to-exchange-2013-exchange-2013-help.md">Upgrade from Exchange 2007 to Exchange 2013</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Exchange 2003</p></td>
@@ -59,7 +59,7 @@ The path you need to follow to install Exchange 2013 in your organization depend
 <li><p>Migrate Exchange 2010 mailboxes, public folders, and other components to Exchange 2013.</p></li>
 <li><p>Decommission and remove all Exchange 2010 servers.</p></li>
 </ol>
-<p>For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=268414">Exchange 2003 - Planning Roadmap for Upgrade and Coexistence</a> and <a href="upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md">Upgrade from Exchange 2010 to Exchange 2013</a>.</p></td>
+<p>For more information, see <a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa998186(v=exchg.141)">Exchange 2003 - Planning Roadmap for Upgrade and Coexistence</a> and <a href="upgrade-from-exchange-2010-to-exchange-2013-exchange-2013-help.md">Upgrade from Exchange 2010 to Exchange 2013</a>.</p></td>
 </tr>
 </tbody>
 </table>

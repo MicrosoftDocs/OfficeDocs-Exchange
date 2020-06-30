@@ -47,7 +47,7 @@ What you need to do to enable support for delegated mailbox permissions depends 
 
 To enable ACLable object synchronization at the organization level, do the following.
 
-1. Install the latest version of Azure Active Directory Connect (AAD Connect) on all of your AAD Connect servers. This is needed to allow AAD Connect to synchronize the attributes needed to support hybrid permissions. You can download AAD Connect from [Microsoft Azure Active Directory Connect](https://go.microsoft.com/fwlink/p/?LinkID=510956).
+1. Install the latest version of Azure Active Directory Connect (AAD Connect) on all of your AAD Connect servers. This is needed to allow AAD Connect to synchronize the attributes needed to support hybrid permissions. You can download AAD Connect from [Microsoft Azure Active Directory Connect](https://www.microsoft.com/download/details.aspx?id=47594).
 
 2. Open the Exchange Management Shell on an Exchange 2013 or Exchange 2016 server running the latest available CU, or the immediately previous CU.
 

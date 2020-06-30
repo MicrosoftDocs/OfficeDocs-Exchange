@@ -102,7 +102,7 @@ Outlook for iOS and Android supports the following Exchange mobile device mailbo
 
 - Device encryption enabled
 
-- Min password length
+- Min password length (only on Android)
 
 - Password enabled
 

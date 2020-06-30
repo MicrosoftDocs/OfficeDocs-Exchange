@@ -30,7 +30,7 @@ manager: serdars
 
 # Enable or disable modern authentication for Outlook in Exchange Online
 
-Modern authentication in Exchange Online enables authentication features like multi-factor authentication (MFA), smart cards, certificate-based authentication (CBA), and third-party SAML identity providers. Modern authentication is based on the [Active Directory Authentication Library](https://go.microsoft.com/fwlink/p/?LinkId=717281) (ADAL) and OAuth 2.0.
+Modern authentication in Exchange Online enables authentication features like multi-factor authentication (MFA), smart cards, certificate-based authentication (CBA), and third-party SAML identity providers. Modern authentication is based on the [Active Directory Authentication Library](https://docs.microsoft.com/azure/active-directory/azuread-dev/active-directory-authentication-libraries) (ADAL) and OAuth 2.0.
 
 When you enable modern authentication in Exchange Online, Windows-based Outlook clients that support modern authentication (Outlook 2013 or later) use modern authentication to connect to Exchange Online mailboxes. For more information, see [How modern authentication works for Office client apps](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
 
@@ -85,4 +85,4 @@ When you disable modern authentication in Exchange Online, Windows-based Outlook
 
 [How modern authentication works for Office 2013 and Office 2016 client apps](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)
 
-[Set up multi-factor authentication for Microsoft 365 or Office 365 users](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)
+[Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)

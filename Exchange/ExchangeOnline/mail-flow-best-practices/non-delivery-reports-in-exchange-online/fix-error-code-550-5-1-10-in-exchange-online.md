@@ -282,7 +282,7 @@ If you have a custom domain (for example, contoso.com instead of contoso.onmicro
 
 [Configure email forwarding for a mailbox](../../recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding.md)
 
-[Synchronizing your directory with Microsoft 365 or Office 365 is easy](https://go.microsoft.com/fwlink/p/?linkid=833532)
+[Synchronizing your directory with Microsoft 365 or Office 365 is easy](https://www.microsoft.com/microsoft-365/blog/2014/04/15/synchronizing-your-directory-with-office-365-is-easy/)
 
 [Create DNS records at any DNS hosting provider](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
 

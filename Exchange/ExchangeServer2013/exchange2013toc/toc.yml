@@ -1574,8 +1574,6 @@
           href: ../add-or-remove-users-from-a-mobile-mailbox-policy-exchange-2013-help.md
         - name: Create or modify a mobile device mailbox policy
           href: ../create-or-modify-a-mobile-device-mailbox-policy-exchange-2013-help.md
-        - name: Supported mobile device mailbox policies for Windows Phones and devices
-          href: ../supported-mobile-device-mailbox-policies-for-windows-phones-and-devices-exchange-2013-help.md
       - name: Mobile devices
         href: ../mobile-devices-exchange-2013-help.md
         items:

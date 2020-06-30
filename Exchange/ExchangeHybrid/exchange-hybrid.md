@@ -172,8 +172,6 @@ Unified Messaging (UM) is supported in a hybrid deployment between your on-premi
 
 If you want to move mailboxes from your on-premises organization to the cloud, and those mailboxes are configured for UM, you should configure UM in your hybrid deployment prior to moving those mailboxes. If you move mailboxes before you configure UM in your hybrid deployment, those mailboxes will no longer have access to UM functionality.
 
-Learn more at: [Set Up Unified Messaging in a Hybrid Deployment](https://go.microsoft.com/fwlink/p/?linkid=842271)
-
 ### Information Rights Management
 
 Information Rights Management (IRM) enables users to apply Active Directory Rights Management Services (AD RMS) templates to messages that they send. AD RMS templates can help prevent information leakage by allowing users to control who can open a rights-protected message, and what they can do with that message after it's been opened.

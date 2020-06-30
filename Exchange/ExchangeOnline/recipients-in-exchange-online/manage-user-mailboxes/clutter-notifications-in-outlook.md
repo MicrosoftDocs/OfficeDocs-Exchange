@@ -29,9 +29,9 @@ Clutter is a feature in Microsoft 365 and Office 365 that helps users focus on t
 These notifications are an integral part of the Clutter feature and therefore can't be suspended by administrators. Clutter is a user election, similar to someone opting to use Conversation view, and the notifications help the user understand the state of Clutter across all clients. There is no central reporting available at this time. For information on how to change the branding of the notifications see [Change the branding of Clutter notifications](change-clutter-notification-branding.md).
 
 > [!NOTE]
-> For information on how end users can enable and begin using Clutter, see [Use Clutter to sort low priority messages in Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=528411).
+> For information on how end users can enable and begin using Clutter, see [Use Clutter to sort low priority messages in Outlook on the web](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0).
 
- **Invitation to use Clutter**
+## Invitation to use Clutter
 
 Before users enable Clutter, they may receive a Clutter invitation in their Inbox. The invitation lets the user know that the feature is available and covers the benefits of using Clutter.
 
@@ -57,7 +57,7 @@ An example of the invitation notification is as follows:
 
 Around the time that an invitation is sent, a new folder called **Clutter** is created and added to their Favorites. The same invitation message will appear as the first message inside the **Clutter** folder.
 
- **Cleaning up**
+## Cleaning up
 
 To make sure the user understands that the new feature is on, Clutter will send another notification to their Inbox, describing how Clutter works and how to correct Clutter when it incorrectly moves a message to the **Clutter** folder. Clutter is a "learning" feature, which means that after the user provides information to Clutter by manually moving low-priority messages to the **Clutter** folder, Clutter will be able to identify similar messages and move them automatically.
 
@@ -65,7 +65,7 @@ To make sure the user understands that the new feature is on, Clutter will send 
 
 ![Picture of the Meet your new cleaner inbox notification sent by Clutter](../../media/29398c38-47f9-4595-a784-aaf8e1d0395c.png)
 
- **Hard at work**
+## Hard at work
 
 During the first three weeks of Clutter usage, the following notification is sent periodically for two reasons. First, it reminds the user to inspect the **Clutter** folder and make sure that Clutter is filtering messages correctly. Second, this notification provides a way for the user to provide feedback on Clutter. Additionally, there are links that provide more information about the feature and that turn Clutter off.
 

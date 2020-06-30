@@ -96,11 +96,11 @@ Before you migrate mailboxes to Microsoft 365 or Office 365 by using a cutover m
 
 1. **Configure Outlook Anywhere on your on-premises Exchange Server**: The email migration service uses Outlook Anywhere (also known as RPC over HTTP), to connect to your on-premises Exchange Server. Outlook Anywhere is automatically configured for Exchange 2013. For information about how to set up Outlook Anywhere for Exchange 2010, Exchange 2007, and Exchange 2003, see the following:
 
-   - [Exchange 2010: Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=187249)
+   - [Exchange 2010: Enable Outlook Anywhere](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb123542(v=exchg.141))
 
-   - [Exchange 2007: How to Enable Outlook Anywhere](https://go.microsoft.com/fwlink/p/?LinkID=167210)
+   - [Exchange 2007: How to Enable Outlook Anywhere](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb123889(v=exchg.80))
 
-   - [How to configure Outlook Anywhere with Exchange 2003](https://go.microsoft.com/fwlink/p/?LinkID=167209)
+   - [How to configure Outlook Anywhere with Exchange 2003](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa996922(v=exchg.80))
 
 2. You must use a certificate issued by a trusted certification authority (CA) with your Outlook Anywhere configuration in order for Microsoft 365 or Office 365 to run a cutover migration. For cutover migration you will to add the Outlook Anywhere and Autodiscover services to your certificate. For instructions on how to set up certificates, see:
 
@@ -325,11 +325,11 @@ After migrating mailboxes to Microsoft 365 or Office 365, there are post-migrati
 
    For more information, see the following topics:
 
-   - [Modify or Remove Exchange 2010](https://go.microsoft.com/fwlink/p/?LinkId=217936)
+   - [Modify or Remove Exchange 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ee332361(v=exchg.141))
 
-   - [How to Remove an Exchange 2007 Organization](https://go.microsoft.com/fwlink/p/?LinkID=100485)
+   - [How to Remove an Exchange 2007 Organization](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))
 
-   - [How to Uninstall Exchange Server 2003](https://go.microsoft.com/fwlink/p/?LinkID=56561)
+   - [How to Uninstall Exchange Server 2003](https://docs.microsoft.com/previous-versions/tn-archive/bb125110(v=exchg.65))
 
    > [!NOTE]
    > Decommissioning Exchange can have unintended consequences. Before decommissioning your on-premises Exchange organization, we recommend that you contact Microsoft Support.

@@ -149,6 +149,6 @@ Email systems use a DNS record called an MX record to figure out where to delive
 
 [How to decommission Exchange servers in a Hybrid environment](https://docs.microsoft.com/exchange/decommission-on-premises-exchange)
 
-[Modify or remove Exchange 2010](https://go.microsoft.com/fwlink/p/?LinkId=217936)
+[Modify or remove Exchange 2010](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ee332361(v=exchg.141))
 
-[How to remove an Exchange 2007 organization](https://go.microsoft.com/fwlink/p/?LinkID=100485)
+[How to remove an Exchange 2007 organization](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998313(v=exchg.80))

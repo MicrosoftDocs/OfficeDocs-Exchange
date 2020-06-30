@@ -37,7 +37,7 @@ To resolve this issue, verify that the local TCP/IP configuration points to the 
 
 ## To verify the local TCP/IP configuration
 
-1. Review the local TCP/IP configuration. For more information, see [Configure TCP/IP to use DNS](https://go.microsoft.com/fwlink/p/?linkid=68094).
+1. Review the local TCP/IP configuration. For more information, see [Configure TCP/IP to use DNS](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc779282(v=ws.10)).
 
 2. Verify that the DNS server is running and can be contacted.
 
@@ -47,6 +47,6 @@ Verify that the DNS server is running by doing one or more of the following chec
 
 - Look at the DNS server status from the DNS Administration program on the DNS server.
 
-- Restart the DNS server. For more information, see [Start, stop, pause, or restart a DNS server](https://go.microsoft.com/fwlink/p/?linkid=62999).
+- Restart the DNS server. For more information, see [Start, stop, pause, or restart a DNS server](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc776431(v=ws.10)).
 
-- Verify the DNS server responsiveness by using the **nslookup** command. For more information, see the instructions in [Verify DNS server responsiveness using the nslookup command](https://go.microsoft.com/fwlink/p/?linkid=63000).
+- Verify the DNS server responsiveness by using the **nslookup** command. For more information, see the instructions in [Verify DNS server responsiveness using the nslookup command](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc740171(v=ws.10)).

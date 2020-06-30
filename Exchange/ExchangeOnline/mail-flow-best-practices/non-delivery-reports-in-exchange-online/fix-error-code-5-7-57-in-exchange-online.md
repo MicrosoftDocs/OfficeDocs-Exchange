@@ -35,7 +35,7 @@ When you connect to the smtp.office365.com endpoint to submit (relay) messages t
 
 - In the configuration of the connecting application or device, verify that the specified credentials are correct.
 
-- Verify that the application or device is able to negotiate TLS, as TLS is required in order to authenticate. For more information, see [How to set up a multifunction device or application to send email](../how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3.md).
+- Verify that the application or device is able to negotiate TLS, as TLS is required in order to authenticate. For more information, see [How to set up a multifunction device or application to send email](../how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365.md).
 
 ## I'm an email admin. How do I fix this?
 

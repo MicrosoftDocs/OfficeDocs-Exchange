@@ -21,7 +21,7 @@ Information workers often use e-mail to exchange sensitive information. To help 
 
 ## Mobile IRM protection in Exchange 2013
 
-In Exchange 2013, IRM in Microsoft Exchange ActiveSync allows your users to access rich IRM functionality on any supported Exchange ActiveSync device without having to configure AD RMS permissions or connect the device to a computer and activate it for IRM. Also, the mobile device doesn't need to be running Windows. Exchange ActiveSync is licensed by Microsoft to mobile device manufacturers, original equipment manufacturers (OEMs), and others. For a list of current Exchange ActiveSync licensees, expand the "Exchange ActiveSync Protocol" section on the [Microsoft Technology Licensing](https://go.microsoft.com/fwlink/p/?linkid=198562) page.
+In Exchange 2013, IRM in Microsoft Exchange ActiveSync allows your users to access rich IRM functionality on any supported Exchange ActiveSync device without having to configure AD RMS permissions or connect the device to a computer and activate it for IRM. Also, the mobile device doesn't need to be running Windows. Exchange ActiveSync is licensed by Microsoft to mobile device manufacturers, original equipment manufacturers (OEMs), and others. For a list of current Exchange ActiveSync licensees, expand the "Exchange ActiveSync Protocol" section on the [Microsoft Technology Licensing](https://www.microsoft.com/legal/intellectualproperty/mtl/default) page.
 
 Using IRM in Exchange ActiveSync, mobile device users can:
 
@@ -43,13 +43,13 @@ The following requirements apply:
 
 - IRM must be enabled in the Exchange ActiveSync mailbox policy. You can enable or disable IRM for different sets of users using different Exchange ActiveSync mailbox policies.
 
-- Devices that support Exchange ActiveSync protocol version 14.1, including Windows phones, can support IRM in Exchange ActiveSync. The device's mobile e-mail application must support the RightsManagementInformation tag defined in Exchange ActiveSync version 14.1.
+- Devices that support Exchange ActiveSync protocol version 14.1 can support IRM in Exchange ActiveSync. The device's mobile e-mail application must support the RightsManagementInformation tag defined in Exchange ActiveSync version 14.1.
 
 ## Security
 
 When you enable IRM in Exchange ActiveSync, the Client Access server decrypts IRM-protected messages before providing the messages for access by the supported mobile device. Upon synchronization, IRM-protected messages reside on the mobile device in an unencrypted format. IRM protection is enforced by the IRM-capable e-mail client application on the mobile device.
 
-IRM in Exchange ActiveSync doesn't decrypt IRM-protected attachments on the Client Access server. Access to IRM-protected files is enforced by the application used to create or view the file. For example, on a Windows phone, IRM protection for Microsoft Office files is enforced by [Microsoft Office Mobile](https://www.microsoft.com/microsoft-365/mobile). To access IRM-protected Office files, users must connect the device to a computer and activate Office Mobile with the RMS server.
+IRM in Exchange ActiveSync doesn't decrypt IRM-protected attachments on the Client Access server. Access to IRM-protected files is enforced by the application used to create or view the file. To access IRM-protected Office files, users must connect the device to a computer and activate Office Mobile with the RMS server.
 
 When enabling IRM in Exchange ActiveSync, we recommend using the Exchange ActiveSync policy settings shown in the following table to help secure mobile devices.
 

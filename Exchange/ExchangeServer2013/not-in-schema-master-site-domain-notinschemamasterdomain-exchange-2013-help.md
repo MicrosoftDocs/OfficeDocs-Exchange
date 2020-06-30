@@ -29,7 +29,7 @@ The domain schema master controls all updates and modifications to the Active D
 
 To resolve this issue, run Exchange Server 2007 setup using the **/prepareschema** and **/prepareAD** switches from the same site and domain as the domain schema master.
 
-For more information about the **/prepareschema** and **/prepareAD** setup switches, see the Exchange 2007 product documentation topic "How to Prepare Active Directory and Domains" (<https://go.microsoft.com/fwlink/?linkid=78453>)
+For more information about the **/prepareschema** and **/prepareAD** setup switches, see the Exchange 2007 product documentation topic "How to Prepare Active Directory and Domains" (<https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb125224(v=exchg.80)>)
 
 You can use the Schema Master tool to identify the role. However, the Schmmgmt.dll DLL must be registered in order to make the Schema tool available as an MMC snap-in.
 

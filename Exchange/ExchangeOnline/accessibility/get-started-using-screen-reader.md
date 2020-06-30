@@ -57,7 +57,7 @@ The EAC works with the Narrator and JAWS screen readers, among others. These scr
 
 - If your screen reader stops reading, press Alt+Tab to leave the current window, and then press Alt+Tab again to return to it. This resets the focus on the current window to get your screen reader to read the window properly.
 
-For more information about Narrator, refer to [Hear text read aloud with Narrator](https://support.microsoft.com/help/14234). For more information about JAWS, refer to the [JAWS Screen Reader documentation](https://go.microsoft.com/fwlink/p/?LinkId=787625).
+For more information about Narrator, refer to [Hear text read aloud with Narrator](https://support.microsoft.com/help/14234). For more information about JAWS, refer to the [JAWS Screen Reader documentation](https://www.freedomscientific.com/Products/software/JAWS/).
 
 ## Do more tasks with the EAC and a screen reader
 
@@ -115,6 +115,6 @@ Explore specific tasks that use the screen reader to work in the EAC.
 
 ## Technical support for customers with disabilities
 
-Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) for technical assistance.
+Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://www.microsoft.com/Accessibility/disability-answer-desk) for technical assistance.
 
-The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) site to find the contact details for your region.
+The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://www.microsoft.com/Accessibility/disability-answer-desk) site to find the contact details for your region.

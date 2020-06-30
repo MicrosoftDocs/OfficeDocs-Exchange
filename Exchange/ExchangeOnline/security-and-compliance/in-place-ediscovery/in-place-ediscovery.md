@@ -90,7 +90,7 @@ SharePoint also uses Microsoft Search Foundation for content indexing and queryi
 
 In on-premises deployments, before you can use eDiscovery Center in SharePoint to search Exchange mailboxes, you must establish trust between the two applications. In Exchange Server and SharePoint 2013, this is done using OAuth authentication. For details, see [Configure Exchange for SharePoint eDiscovery Center](https://docs.microsoft.com/exchange/configure-exchange-for-sharepoint-ediscovery-center-exchange-2013-help). eDiscovery searches performed from SharePoint are authorized by Exchange using RBAC. For a SharePoint user to be able to perform an eDiscovery search of Exchange mailboxes, they must be assigned delegated Discovery Management permission in Exchange. To be able to preview mailbox content returned in an eDiscovery search performed using SharePoint eDiscovery Center, the discovery manager must have a mailbox in the same Exchange organization.
 
-For step-by step instructions for setting up an eDiscovery Center in a Microsoft 365 or Office 365 organization, see [Set up an eDiscovery Center in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=331600).
+For step-by step instructions for setting up an eDiscovery Center in a Microsoft 365 or Office 365 organization, see [Set up an eDiscovery Center in SharePoint Online](https://support.microsoft.com/office/a18f8975-aa7f-43b4-a7d6-001d14744d8e).
 
 ## eDiscovery in an Exchange hybrid deployment
 <a name="oauth"> </a>

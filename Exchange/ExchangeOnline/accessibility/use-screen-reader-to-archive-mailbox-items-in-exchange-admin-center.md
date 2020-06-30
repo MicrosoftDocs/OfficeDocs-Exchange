@@ -74,7 +74,7 @@ With mailbox archiving in Exchange Online, also called "in-place archiving," use
    > [!TIP]
    > - If you want to enable archiving for additional users, move the focus back to the list of mailboxes by pressing Ctrl+Shift+F6. Select the name you want by pressing the Down Arrow key or the Up Arrow key, and repeat steps 7 through 9.
    > 
-   > - For more information, go to [Enable archive mailboxes in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes).
+   > - For more information, go to [Enable archive mailboxes in the compliance center](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes).
 
 ## Disable mailbox archiving for a user
 
@@ -102,7 +102,7 @@ If you disable a user's archive, the existing content is retained for 30 days. T
 
 The messaging records management (MRM) feature in Exchange Online helps you manage the life cycle of your organization's email; it allows you to set retention policies. Retention policies specify when certain types of mailbox items (including regular email messages, deleted items, and junk mail) should be moved, archived, or deleted. Exchange Online automatically applies the Default MRM Policy when you create a new mailbox with an archive or when you enable an archive for an existing mailbox user.
 
- **Note**: You can customize the Default MRM Policy by adding or removing retention tags or by modifying tag settings. You can also replace the default policy with any retention policies you create. To view, edit, or create a retention policy, on the EAC primary navigation pane, select the compliance management link and then, on the menu bar, select the retention policies link. [Learn more about retention policies](https://go.microsoft.com/fwlink/p/?LinkId=799151).
+ **Note**: You can customize the Default MRM Policy by adding or removing retention tags or by modifying tag settings. You can also replace the default policy with any retention policies you create. To view, edit, or create a retention policy, on the EAC primary navigation pane, select the compliance management link and then, on the menu bar, select the retention policies link. [Learn more about retention policies](../security-and-compliance/messaging-records-management/retention-tags-and-policies.md).
 
 You can apply the same retention policy to all users, or you can apply different policies to certain users.
 
@@ -126,10 +126,10 @@ You can apply the same retention policy to all users, or you can apply different
 
 ## Accessibility information
 
-The [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?LinkID=21487) website provides more information about assistive technology. A free monthly electronic newsletter is available to help you stay current with accessibility topics about Microsoft products. To subscribe, visit the [Microsoft Accessibility Update Newsletter Subscription](https://go.microsoft.com/fwlink/p/?LinkID=14920) page.
+The [Microsoft Accessibility](https://www.microsoft.com/accessibility/) website provides more information about assistive technology.
 
 ### Technical support for customers with disabilities
 
-Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) for technical assistance.
+Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://www.microsoft.com/Accessibility/disability-answer-desk) for technical assistance.
 
-The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) site to find the contact details for your region.
+The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://www.microsoft.com/Accessibility/disability-answer-desk) site to find the contact details for your region.

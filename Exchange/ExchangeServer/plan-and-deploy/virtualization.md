@@ -40,7 +40,7 @@ Microsoft supports Exchange 2016 and Exchange 2019 in production on hardware vir
 
   - Any version of Windows Server with Hyper-V technology or Microsoft Hyper-V Server
 
-  - Any third-party hypervisor that has been validated under the [Windows Server Virtualization Validation Program](https://go.microsoft.com/fwlink/p/?LinkId=125375).
+  - Any third-party hypervisor that has been validated under the [Windows Server Virtualization Validation Program](https://www.windowsservercatalog.com/svvp.aspx?svvppage=svvp.htm).
 
     > [!NOTE]
     > Deployment of Exchange 2016 or Exchange 2019 on Infrastructure-as-a-Service (IaaS) providers is supported if all supportability requirements are met. In the case of providers who are provisioning virtual machines, these requirements include ensuring that the hypervisor being used for Exchange virtual machines is fully supported, and that the infrastructure to be utilized by Exchange meets the performance requirements that were determined during the sizing process. Deployment on Microsoft Azure virtual machines is supported if all storage volumes used for Exchange databases and database transaction logs (including transport databases) are configured for Azure Premium Storage.

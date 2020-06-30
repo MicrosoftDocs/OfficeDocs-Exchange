@@ -27,6 +27,6 @@ Exchange 2007 and Exchange 2010 setup requires that all SMTP addresses used fo
 
 To resolve this issue, change the value of the SMTP address in the recipient policy so that it does not contain an IP address literal. Replace brackets (\[\]) and numbers (10.10.1.1) of the IP address literal with the Domain Name System (DNS) naming format, for example: *user@contoso.com*, and then rerun Exchange setup.
 
-For more information about managing recipient policies in Exchange Server 2007, see "Managing E-Mail Address Policies" ([https://go.microsoft.com/fwlink/?LinkId=86653](https://go.microsoft.com/fwlink/?linkid=86653)).
+For more information about managing recipient policies in Exchange Server 2007, see "Managing E-Mail Address Policies" ([https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998940(v=exchg.80)](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998940(v=exchg.80))).
 
-For more information about managing recipient policies in Exchange Server 2010, see "Managing E-Mail Address Policies" ([https://go.microsoft.com/fwlink/?LinkId=179519](https://go.microsoft.com/fwlink/?linkid=179519)).
+For more information about managing recipient policies in Exchange Server 2010, see "Managing E-Mail Address Policies" ([https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa998940(v=exchg.141)](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa998940(v=exchg.141))).

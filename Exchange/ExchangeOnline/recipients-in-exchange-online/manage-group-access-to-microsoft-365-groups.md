@@ -95,7 +95,7 @@ Or, let's say you want to block personal email address domains. You can set up a
 
 1. Did you install the **AzureADPreview** module as instructioned above? Not having the **preview** version is the #1 reason these steps don't work for people.
 
-2. Go to [Script for Allow/Block policy](https://go.microsoft.com/fwlink/p/?linkid=857710) at Microsoft Download Center to download the script ( **Set-GuestAllowBlockDomainPolicy.ps1**) for Allow/Block policy.
+2. Go to [Script for Allow/Block policy](https://www.microsoft.com/download/details.aspx?id=55709) at Microsoft Download Center to download the script ( **Set-GuestAllowBlockDomainPolicy.ps1**) for Allow/Block policy.
 
 3. Run the script with this command:
 
@@ -151,7 +151,7 @@ This list works independently from the SharePoint Online allow/block list. You w
 
 However, if your organization already has an allow/block list for SharePoint Online, you can migrate that list using this command.
 
-1. Install the [SharePoint Online Management tool](https://go.microsoft.com/fwlink/p/?linkid=854002).
+1. Install the [SharePoint Online Management tool](https://www.microsoft.com/download/details.aspx?id=35588).
 
 2. Run this command:
 
@@ -169,4 +169,4 @@ Set-GuestAllowBlockDomainPolicy.ps1 -Remove
 
 ## Script for Allow/Block policy
 
-Go to [Script for Allow/Block policy](https://go.microsoft.com/fwlink/p/?linkid=857710) at Microsoft Download Center to download the script (**Set-GuestAllowBlockDomainPolicy.ps1**) for Allow/Block policy.
+Go to [Script for Allow/Block policy](https://www.microsoft.com/download/details.aspx?id=55709) at Microsoft Download Center to download the script (**Set-GuestAllowBlockDomainPolicy.ps1**) for Allow/Block policy.

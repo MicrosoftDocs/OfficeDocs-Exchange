@@ -229,7 +229,7 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
       > [!NOTE]
       > You can only install this update if your Windows Server 2016 version is 14393.576 or earlier (circa December, 2016). You can check your Windows Server version by running the **winver** command. If your Windows Server 2016 version is greater than 14393.576, you don't need this update or its replacement [KB3213522](https://support.microsoft.com/help/3213522), which was released one week later. Exchange 2016 Setup looks for the installation of this update, won't allow you to continue if this update is missing, and will clearly inform you if you need it.
 
-   c. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+   c. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
    d. [Visual C++ Redistributable Package for Visual Studio 2013](https://support.microsoft.com/help/4032938)
 
@@ -241,7 +241,7 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
       >
       > - Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Other Exchange installations (management tools and Edge Transport) only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
 
-   e. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
+   e. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://www.microsoft.com/download/details.aspx?id=34992)
 
 ### Exchange 2016 Edge Transport servers on Windows Server 2016
 
@@ -255,7 +255,7 @@ The prerequisites that are needed to install Exchange 2016 on computers running 
 
    a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
-   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
       > [!NOTE]
       >
@@ -279,7 +279,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
    a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
-   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
    c. [Visual C++ Redistributable Package for Visual Studio 2013](https://support.microsoft.com/help/4032938/update-for-visual-c-2013-redistributable-package)
 
@@ -291,7 +291,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
       >
       > - Only the Mailbox role requires the Visual C++ Redistributable Packages for Visual Studio **2013**. Installations of the Exchange management tools and Edge Transport servers only require the Visual C++ Redistributable Packages for Visual Studio **2012**.
 
-   d. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://go.microsoft.com/fwlink/p/?linkId=258269)
+   d. [Microsoft Unified Communications Managed API 4.0, Core Runtime 64-bit](https://www.microsoft.com/download/details.aspx?id=34992)
 
 ### Exchange 2016 Edge Transport servers on Windows Server 2012 or Windows Server 2012 R2
 
@@ -305,7 +305,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
    a. [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
-   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+   b. [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
       > [!NOTE]
       >
@@ -317,7 +317,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 ### Exchange 2016 management tools on Windows 10
 
-1. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+1. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
    > [!NOTE]
    >
@@ -335,7 +335,7 @@ The prerequisites for Exchange 2016 on Windows Server 2012 or Windows Server 201
 
 1. Install [.NET Framework 4.8](https://go.microsoft.com/fwlink/p/?linkid=2088631)
 
-2. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://go.microsoft.com/fwlink/?linkid=327788)
+2. Install [Visual C++ Redistributable Package for Visual Studio 2012](https://www.microsoft.com/download/details.aspx?id=30679)
 
    > [!NOTE]
    >

@@ -29,27 +29,27 @@ This topic covers the following complex mail flow scenarios using Exchange Onlin
 > [!NOTE]
 > Examples in this topic use the fictitious organization, Contoso, which owns the domain contoso.com and is a tenant in Exchange Online. This is just an example. You can adapt this example to fit your organization's domain name and third-party service IP addresses where necessary.
 
-## Using a third-party cloud service with Office 365
+## Using a third-party cloud service with Microsoft 365 or Office 365
 
 ### Scenario 1 - MX record points to third-party spam filtering
 
-I plan to use Exchange Online to host all my organization's mailboxes. My organization uses a third-party cloud service for spam, malware, and phish filtering. All email from the internet must first be filtered by this third-party cloud service before being routed to Office 365.
+I plan to use Exchange Online to host all my organization's mailboxes. My organization uses a third-party cloud service for spam, malware, and phish filtering. All email from the internet must first be filtered by this third-party cloud service before being routed to Microsoft 365 or Office 365.
 
 For this scenario, your organization's mail flow setup looks like the following diagram:
 
-![Mail flow diagram showing inbound email from the internet to a third-party filtering service to Office 365 and from outbound mail from Office 365 to the internet.](../media/a8ee0cd5-6a4c-4e57-9030-0f233def25f3v2.png)
+![Mail flow diagram showing inbound email from the internet to a third-party filtering service to Microsoft 365 or Office 365 and from outbound mail from Microsoft 365 or Office 365 to the internet.](../media/a8ee0cd5-6a4c-4e57-9030-0f233def25f3v2.png)
 
-#### Best practices for using a third-party cloud filtering service with Office 365
+#### Best practices for using a third-party cloud filtering service with Microsoft 365 or Office 365
 
-1. Add your custom domains in Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
+1. Add your custom domains in Microsoft 365 or Office 365. To prove that you own the domains, follow the instructions in [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
-2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Office 365](../mailbox-migration/mailbox-migration.md).
+2. [Create user mailboxes in Exchange Online](../recipients-in-exchange-online/create-user-mailboxes.md) or [move all users' mailboxes to Microsoft 365 or Office 365](../mailbox-migration/mailbox-migration.md).
 
 3. Update the DNS records for the domains that you added in step 1. (Not sure how to do this? Follow the instructions on [this page](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).) The following DNS records control mail flow:
 
    - **MX record**: Your domain's MX record must point to your third-party service provider. Follow their guidelines for how to configure your MX record.
 
-   - **SPF record**: All mail sent from your domain to the internet originates in Office 365, so your SPF record requires the standard value for Office 365:
+   - **SPF record**: All mail sent from your domain to the internet originates in Microsoft 365 or Office 365, so your SPF record requires the standard value for Microsoft 365 or Office 365:
 
      ```text
      v=spf1 include:spf.protection.outlook.com -all
@@ -61,7 +61,7 @@ For this scenario, your organization's mail flow setup looks like the following 
 
    ![Example host name value](../media/ThirdPartyHostconfig.png)
 
-   In this example, the host name for the Office 365 host should be **hubstream-mx.mail.protection.outlook.com**. This value can vary from domain to domain, so check your value at **Configuration** \> **Domain** \> \<select domain\> to confirm your actual value.
+   In this example, the host name for the Microsoft 365 or Office 365 host should be **hubstream-mx.mail.protection.outlook.com**. This value can vary from domain to domain, so check your value at **Configuration** \> **Domain** \> \<select domain\> to confirm your actual value.
 
 4. Lock down your Exchange Online organization to only accept mail from your third-party service.
 
@@ -84,12 +84,12 @@ For this scenario, your organization's mail flow setup looks like the following 
 
 5. There are two options for this step:
 
-   - **Use Enhanced Filtering for Connectors (highly recommended)**: Use [Enahnced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md) (also known as skip listing) on the Partner inbound connector that receives messages from the third-party application. This allows EOP and Office 365 ATP scanning on the messages.
+   - **Use Enhanced Filtering for Connectors (highly recommended)**: Use [Enahnced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md) (also known as skip listing) on the Partner inbound connector that receives messages from the third-party application. This allows EOP and Microsoft 365 or Office 365 ATP scanning on the messages.
 
      > [!NOTE]
      > For hybrid scenarios where third-party applications rely on Exchange on-premises to send to Exchange Online, you also need to enable Enhanced Filtering for Connectors on the OnPremsise inbound connector.
 
-   - **Bypass spam filtering**: Use a mail flow rule (also known as a transport rule) to bypass spam filtering. This option will prevent most EOP and Office 365 ATP controls and will therefore prevent a double anti-spam check.
+   - **Bypass spam filtering**: Use a mail flow rule (also known as a transport rule) to bypass spam filtering. This option will prevent most EOP and Microsoft 365 or Office 365 ATP controls and will therefore prevent a double anti-spam check.
 
      ![Mail flow rule to prevent double-scanning](../media/TransportRuleFor3rdParty.png)
 
@@ -102,24 +102,24 @@ I plan to use Exchange Online to host all my organization's mailboxes. All email
 
 This scenario requires you to use [Enahnced Filtering for Connectors](use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors.md). Otherwise, mail from all internet senders appears to originate from the third-party service, not from the true sources on the internet.
 
-![Mail flow diagram showing inbound mail from the internet to a third-party solution to Microsoft 365 and outbound mail from Microsoft 365 to the third-party solution andt hen to the internet](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
+![Mail flow diagram showing inbound mail from the internet to a third-party solution to Office 365 or Microsoft 365, and showing outbound mail from Microsoft 365 or Office 365 to the third-party solution and then to the internet](../media/05300b2e-1223-4eb2-87df-b3370fac9f91_2.png)
 
-#### Best practices for using a third-party cloud service with Microsoft 365
+#### Best practices for using a third-party cloud service with Microsoft 365 or Office 365
 
-We strongly recommend that you use the archiving and auditing solutions that are provided by Microsoft 365.
+We strongly recommend that you use the archiving and auditing solutions that are provided by Microsoft 365 and Office 365.
 
 ## See also
 
-[Mail flow best practices for Exchange Online and Office 365 (overview)](mail-flow-best-practices.md)
+[Mail flow best practices for Exchange Online, Microsoft 365, Office 365 (overview)](mail-flow-best-practices.md)
 
 [Set up connectors for secure mail flow with a partner organization](use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner.md)
 
-[Manage all mailboxes and mail flow using Office 365](manage-mailboxes-with-office-365.md)
+[Manage all mailboxes and mail flow using Microsoft 365 or Office 365](manage-mailboxes-using-microsoft-365-or-office-365.md)
 
-[Manage mail flow with mailboxes in multiple locations (Office 365 and on-premises Exchange)](manage-mail-flow-for-multiple-locations.md)
+[Manage mail flow with mailboxes in multiple locations (Microsoft 365 or Office 365 and on-premises Exchange)](manage-mail-flow-for-multiple-locations.md)
 
 [Manage mail flow using a third-party cloud service with Exchange Online and on-premises mailboxes](manage-mail-flow-on-office-365-and-on-prem.md)
 
-[Troubleshoot Office 365 mail flow](troubleshoot-mail-flow.md)
+[Troubleshoot Microsoft 365 or Office 365 mail flow](troubleshoot-mail-flow.md)
 
-[Test mail flow by validating your Office 365 connectors](test-mail-flow.md)
+[Test mail flow by validating your connectors](test-mail-flow.md)

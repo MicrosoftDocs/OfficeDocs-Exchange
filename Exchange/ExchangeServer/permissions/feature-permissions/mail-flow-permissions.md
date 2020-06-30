@@ -20,7 +20,7 @@ manager: serdars
 
 The permissions required to perform tasks related to mail flow vary depending on the procedure being performed or the cmdlet you want to run. For more information about transport features, see [Mail flow and the transport pipeline](../../mail-flow/mail-flow.md).
 
-This topic lists the permissions required to manage the mail flow features in Exchange Server 2016 and Exchange Server 2019. For information about how Microsoft 365 or Office 365 permissions relate to Exchange permissions, see [About admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+This topic lists the permissions required to manage the mail flow features in Exchange Server 2016 and Exchange Server 2019. For information about how Microsoft 365 or Office 365 permissions relate to Exchange permissions, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 To find out what permissions you need to perform the procedure or run the cmdlet, do the following:
 

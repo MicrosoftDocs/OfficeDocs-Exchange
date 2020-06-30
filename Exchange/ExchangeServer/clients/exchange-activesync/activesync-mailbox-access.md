@@ -26,11 +26,9 @@ For more information about ActiveSync, see [Exchange ActiveSync](exchange-active
 
 For information about setting up email on your mobile device, see these topics:
 
-- [Set up Office apps and email on iOS devices](https://go.microsoft.com/fwlink/p/?linkid=396655)
+- [Set up Office apps and email on iOS devices](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f)
 
-- [Set up Office apps and email on Android](https://go.microsoft.com/fwlink/p/?linkid=525632)
-
-- [Set up Office apps and email on Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
+- [Set up Office apps and email on Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f)
 
 For additional management tasks related to user access to mailboxes, see these topics:
 

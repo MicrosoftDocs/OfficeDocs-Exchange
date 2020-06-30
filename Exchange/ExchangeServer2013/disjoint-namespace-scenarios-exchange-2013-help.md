@@ -34,7 +34,7 @@ A computer running Windows in an Active Directory domain has both a DNS domain n
 
 A computer in an Active Directory domain also has a primary DNS suffix and can have additional DNS suffixes. By default, the primary DNS suffix is the same as the DNS domain name. For detailed steps about how to change the primary DNS suffix, see the procedures later in this topic.
 
-You define the DNS domain name and NetBIOS domain name of an Active Directory domain when you configure the first domain controller in the domain. For more information about configuring domain controllers, see [Domain Controller Roles](https://go.microsoft.com/fwlink/p/?linkid=268367) and [Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?linkid=268366).
+You define the DNS domain name and NetBIOS domain name of an Active Directory domain when you configure the first domain controller in the domain. For more information about configuring domain controllers, see [Domain Controller Roles](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc786438(v=ws.10)) and [Active Directory Domain Services Overview](https://go.microsoft.com/fwlink/p/?linkid=268366).
 
 ## Disjoint namespaces
 
@@ -57,7 +57,7 @@ Exchange 2013 supports the following three scenarios for deploying Exchange in a
 These scenarios are detailed in the following sections.
 
 > [!NOTE]
-> It's supported to run Exchange 2013 in the disjoint namespace scenarios described in this topic. However, if you have a disjoint namespace scenario that isn't one of the scenarios described in this topic, you must work with Microsoft Services to deploy Exchange 2013. For more information, see <A href="https://go.microsoft.com/fwlink/p/?linkid=94845">Microsoft Services</A>.
+> It's supported to run Exchange 2013 in the disjoint namespace scenarios described in this topic. However, if you have a disjoint namespace scenario that isn't one of the scenarios described in this topic, you must work with Microsoft Services to deploy Exchange 2013. For more information, see <A href="https://www.microsoft.com/industry/services">Microsoft Services</A>.
 
 ## Scenario: Primary DNS suffix and DNS domain name are different
 

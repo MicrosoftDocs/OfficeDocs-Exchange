@@ -52,7 +52,7 @@ Troubleshoot configuration issues by examining logged information about mailbox 
 When Exchange mailbox auditing is enabled for a mailbox, information is recorded in the mailbox audit log whenever a user other than the owner accesses that mailbox. Each log entry includes information about who accessed the mailbox and what actions were performed. Search for non-owner mailbox access when you need to troubleshoot possible security issues.
 
 > [!NOTE]
-> Before you can search for non-owner mailbox access, you or another Admin must enable mailbox audit logging, which is done in Exchange Online PowerShell. [Learn more about running a non-owner mailbox access report](https://go.microsoft.com/fwlink/p/?LinkId=799418).
+> Before you can search for non-owner mailbox access, you or another Admin must enable mailbox audit logging, which is done in Exchange Online PowerShell. [Learn more about running a non-owner mailbox access report](../security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report.md).
 
 1. In the EAC, press Ctrl+F6 until the primary navigation pane has the focus and you hear "Dashboard, Primary navigation link."
 
@@ -97,28 +97,28 @@ When Exchange mailbox auditing is enabled for a mailbox, information is recorded
 
    2. To select a mailbox, press the Tab key about four times until you hear the name of the mailbox owner in the search results list. If there are multiple mailboxes in the search results list, press the Down Arrow key or Up Arrow key until you hear the name of the mailbox owner.
 
-   > [!TIP]
-   > You can select multiple consecutive mailboxes. To work with all mailboxes, leave the **Search** box blank, or enter all or part of the mailbox names you want to add. Tab to the search results. Press the Down Arrow key to hear each name. To add them all, press Ctrl+A. To add several mailboxes listed consecutively, press the Down Arrow key or the Up Arrow key until you hear the first mailbox name you want to add, hold down the Shift key, press the Down Arrow key or the Up Arrow key until you hear the last mailbox name you want to add, and then release the Shift key. All mailboxes between the first and last mailbox names are selected.
+      > [!TIP]
+      > You can select multiple consecutive mailboxes. To work with all mailboxes, leave the **Search** box blank, or enter all or part of the mailbox names you want to add. Tab to the search results. Press the Down Arrow key to hear each name. To add them all, press Ctrl+A. To add several mailboxes listed consecutively, press the Down Arrow key or the Up Arrow key until you hear the first mailbox name you want to add, hold down the Shift key, press the Down Arrow key or the Up Arrow key until you hear the last mailbox name you want to add, and then release the Shift key. All mailboxes between the first and last mailbox names are selected.
 
    3. To add the selected mailbox(es) to the list to be included in the non-owner mailbox access search, press Enter. The list of mailboxes retains the focus, so you can continue to add more mailboxes by selecting them and pressing Enter.
 
-   > [!TIP]
-   > To check the mailboxes you've added, tab to the **Add** button. To hear the list of mailboxes, press the Tab key again. You hear the first mailbox name in the list. To hear the second mailbox name in the list, press the Tab key once more. Continue pressing the Tab key until you hear the names of all the mailboxes you've added. To delete a mailbox from the list, activate the **Remove** link by pressing Enter when you hear the mailbox name.
+      > [!TIP]
+      > To check the mailboxes you've added, tab to the **Add** button. To hear the list of mailboxes, press the Tab key again. You hear the first mailbox name in the list. To hear the second mailbox name in the list, press the Tab key once more. Continue pressing the Tab key until you hear the names of all the mailboxes you've added. To delete a mailbox from the list, activate the **Remove** link by pressing Enter when you hear the mailbox name.
 
    4. To search for another mailbox or set of mailboxes, tab several times until you hear "Filter or search edit." Type all or part of the name of the next mailboxes you want to add, and press Enter. Repeat steps b and c. Do this for all mailboxes you want to add.
 
    5. To add an external mailbox, press the Tab key until you hear "Check names edit, Type in text." (In Narrator, you hear "Editing.") Type the email address of the external recipient, press Shift+Tab to select the **Check names** button, and then press Enter. This verifies the email address and adds it to the list of mailboxes.
 
-   > [!TIP]
-   > Be aware that if you type an external email address and press Enter, this adds the address to the list and then closes the dialog box. If you're not finished, use the **Check names** button to add it instead.
+      > [!TIP]
+      > Be aware that if you type an external email address and press Enter, this adds the address to the list and then closes the dialog box. If you're not finished, use the **Check names** button to add it instead.
 
    6. When you finish adding mailboxes, tab to the **OK** button and press Enter. The **Search for Mailboxes Accessed by Non-Owners** dialog box has the focus again, and the **Search these mailboxes** text box lists the selected mailboxes.
 
 10. Tab to the **Search for access by** combo box. This specifies which types of mailbox non-owners you want the non-owner mailbox report to show.
 
-   - To search the audit logs for administrator access, you don't need to do anything, as this is the default.
+    - To search the audit logs for administrator access, you don't need to do anything, as this is the default.
 
-   - To search the audit logs for another group of non-owners, like **All non-owners**, **External users** (Microsoft datacenter administrators), or **Administrators and delegated users**, press the Up Arrow key to move to the user type you want.
+    - To search the audit logs for another group of non-owners, like **All non-owners**, **External users** (Microsoft datacenter administrators), or **Administrators and delegated users**, press the Up Arrow key to move to the user type you want.
 
 11. Press the Tab key to access the **Search** button, and press Enter.
 
@@ -128,12 +128,12 @@ When Exchange mailbox auditing is enabled for a mailbox, information is recorded
 
 14. To close the dialog box, tab to the **Close** button and press Enter.
 
-   > [!TIP]
-   > You can also export the log of non-owner access of mailboxes and review it in an XML file. Learn more in [Use a screen reader to export and review audit logs in the Exchange admin center](use-screen-reader-to-export-and-review-audit-logs-in-exchange-admin-center.md).
+    > [!TIP]
+    > You can also export the log of non-owner access of mailboxes and review it in an XML file. Learn more in [Use a screen reader to export and review audit logs in the Exchange admin center](use-screen-reader-to-export-and-review-audit-logs-in-exchange-admin-center.md).
 
 ### Search for configuration changes on a mailbox
 
-With administrator audit logging, Exchange records specific changes an administrator makes to the organization's Exchange configuration. Such changes can include adding users, adding public folders, creating policies or rules, and so on. This can help you troubleshoot configuration problems or identify the cause of security-related or compliance-related problems. [Learn more about viewing the administrator audit log](https://go.microsoft.com/fwlink/p/?LinkId=799437).
+With administrator audit logging, Exchange records specific changes an administrator makes to the organization's Exchange configuration. Such changes can include adding users, adding public folders, creating policies or rules, and so on. This can help you troubleshoot configuration problems or identify the cause of security-related or compliance-related problems. [Learn more about running a non-owner mailbox access report](../security-and-compliance/exchange-auditing-reports/view-administrator-audit-log.md).
 
 1. In the EAC, press Ctrl+F6 until the primary navigation pane has the focus and you hear "Dashboard, Primary navigation link."
 
@@ -182,7 +182,7 @@ With administrator audit logging, Exchange records specific changes an administr
 
 ### Search for administrator role group changes
 
-You can search for administrator role changes, which, like configuration changes, are recorded in the administrator audit log. With a targeted search, you can examine the admin audit log for changes made to role groups, which are used to assign administrative permissions to users. [Learn more about running an administrator role group report](https://go.microsoft.com/fwlink/p/?LinkId=799420).
+You can search for administrator role changes, which, like configuration changes, are recorded in the administrator audit log. With a targeted search, you can examine the admin audit log for changes made to role groups, which are used to assign administrative permissions to users. [Learn more about running an administrator role group report](../security-and-compliance/exchange-auditing-reports/search-role-group-changes.md).
 
 1. In the EAC, press Ctrl+F6 until the primary navigation pane has the focus and you hear "Dashboard, Primary navigation link."
 
@@ -251,7 +251,7 @@ Monitor regulatory, compliance, and litigation requirements by finding status ch
 
 ### Search for changes to In-Place eDiscovery and Hold status
 
-If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery and In-Place Hold in Exchange Online can help you perform discovery searches for relevant content within mailboxes. You can search the administrator audit log to find mailboxes that have been put on or removed from In-Place eDiscovery or In-Place Hold. [Learn more about In-Place eDiscovery & Hold reports](https://go.microsoft.com/fwlink/p/?LinkId=799419).
+If your organization adheres to legal discovery requirements (related to organizational policy, compliance, or lawsuits), In-Place eDiscovery and In-Place Hold in Exchange Online can help you perform discovery searches for relevant content within mailboxes. You can search the administrator audit log to find mailboxes that have been put on or removed from In-Place eDiscovery or In-Place Hold. [Learn more about In-Place eDiscovery & Hold reports](../security-and-compliance/in-place-and-litigation-holds.md).
 
 1. In the EAC, press Ctrl+F6 until the primary navigation pane has the focus and you hear "Dashboard, Primary navigation link."
 
@@ -297,7 +297,7 @@ If your organization adheres to legal discovery requirements (related to organiz
 
 ### Search for mailboxes that are enabled or disabled for litigation holds
 
-If your organization is involved in a legal action, you may have to take steps to preserve email messages that might be used as evidence. You can use the litigation hold feature to retain all email sent and received by specific people or retain all email sent and received in your organization for a specific time period. Search the administrator audit log to monitor the mailboxes that have had a change to their litigation hold status (enabled or disabled) during a specified time period. Learn more about [running a per-mailbox litigation hold report](https://go.microsoft.com/fwlink/p/?LinkId=799414).
+If your organization is involved in a legal action, you may have to take steps to preserve email messages that might be used as evidence. You can use the litigation hold feature to retain all email sent and received by specific people or retain all email sent and received in your organization for a specific time period. Search the administrator audit log to monitor the mailboxes that have had a change to their litigation hold status (enabled or disabled) during a specified time period. Learn more about [running a per-mailbox litigation hold report](../security-and-compliance/exchange-auditing-reports/per-mailbox-litigation-hold-report.md).
 
 1. In the EAC, press Ctrl+F6 until the primary navigation pane has the focus and you hear "Dashboard, Primary navigation link."
 

@@ -229,13 +229,13 @@ Consider the following when using ABPs in your organization:
   New-TransportRule -Name "StopFabrikamtoContosoMail" -FromMemberOf "AllFabrikamEmployees" -SentToMemberOf "AllContosoEmployees" -DeleteMessage -ExceptIfFrom seniorleadership@fabrikam.com
   ```
 
-- If you want to enforce a feature similar to ABP in the Lync client, you can set the `msRTCSIP-GroupingID` attribute on specific user objects. For details, see [PartitionByOU Replaced with msRTCSIP-GroupingID](https://go.microsoft.com/fwlink/p/?linkid=232306) topic.
+- If you want to enforce a feature similar to ABP in the Lync client, you can set the `msRTCSIP-GroupingID` attribute on specific user objects. For details, see [PartitionByOU Replaced with msRTCSIP-GroupingID](https://docs.microsoft.com/previous-versions/office/skype-server-2010/gg429725(v=ocs.14)) topic.
 
 ## General deployment steps
 
 ## Migrating from address list segmentation to ABPs
 
-If your organization configured the Exchange 2007 address list segregation solution in place by using the instructions in the white paper [Configuring Virtual Organizations and Address List Segregation in Exchange 2007](https://go.microsoft.com/fwlink/p/?linkid=109601), you should first migrate to Exchange Server 2010 using the steps outlined in [Migrate to Exchange Server 2010 Address Book Policies from Exchange Server 2007 Address List Segregation](https://go.microsoft.com/fwlink/p/?linkid=235967). This procedure will require some down-time for your organization and you will therefore need to plan accordingly.
+If your organization configured the Exchange 2007 address list segregation solution in place by using the instructions in the white paper [Configuring Virtual Organizations and Address List Segregation in Exchange 2007](https://docs.microsoft.com/previous-versions/office/exchange-server-2007-technical-articles/bb936719(v=exchg.80)), you should first migrate to Exchange Server 2010 using the steps outlined in [Migrate to Exchange Server 2010 Address Book Policies from Exchange Server 2007 Address List Segregation](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/hh529930(v=exchg.141)). This procedure will require some down-time for your organization and you will therefore need to plan accordingly.
 
 ## New deployment of ABPs
 

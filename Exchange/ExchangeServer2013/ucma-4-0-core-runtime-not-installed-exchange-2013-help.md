@@ -26,7 +26,7 @@ Download and install the 64-bit update from the following URL, and then click **
 > [!NOTE]
 > If this update requires a reboot to complete installation, you'll need to exit Exchange 2013 Setup, reboot, and then start Setup again.
 
-[Unified Communications Managed API 4.0 Runtime](https://go.microsoft.com/fwlink/p/?linkid=258269)
+[Unified Communications Managed API 4.0 Runtime](https://www.microsoft.com/download/details.aspx?id=34992)
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 

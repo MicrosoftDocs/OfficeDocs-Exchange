@@ -1,6 +1,6 @@
 ---
 localization_priority: Normal
-description: Use batch migration to migrate legacy public folders to Office 365 and Exchange Online
+description: Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online
 ms.topic: article
 author: mattpennathe3rd
 ms.author: v-mapenn
@@ -8,7 +8,7 @@ ms.assetid: c0c561cb-3d25-4a26-b94a-ba3876c49fbf
 ms.reviewer: 
 f1.keywords:
 - NOCSH
-title: Public folder procedures in Office 365 and Exchange Online
+title: Public folder procedures in Microsoft 365, Office 365, and Exchange Online
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -18,9 +18,9 @@ manager: serdars
 
 ---
 
-# Public folder procedures in Office 365 and Exchange Online
+# Public folder procedures in Office 365, Microsoft 365, and Exchange Online
 
-[Use batch migration to migrate legacy public folders to Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md)
+[Use batch migration to migrate legacy public folders to Microsoft 365 or Office 365 and Exchange Online](batch-migration-of-legacy-public-folders.md)
 
 [Use batch migration to migrate Exchange Server public folders to Exchange Online](https://docs.microsoft.com/Exchange/collaboration/public-folders/migrate-to-exchange-online)
 

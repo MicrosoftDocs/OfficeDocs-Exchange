@@ -46,7 +46,7 @@ After you create a theme, you may also want to customize elements that are commo
 
 - The light version of Outlook on the web doesn't support themes.
 
-- To replace an existing color with a new color, you need the HTML RGB value of the new color. You can find HTML RGB values at [Color Table](https://go.microsoft.com/fwlink/p/?LinkId=280679). If you can't find the color there, you can use an image editing tool or an HTML color codes web site to determine its HTML RGB value.
+- To replace an existing color with a new color, you need the HTML RGB value of the new color. You can find HTML RGB values at [Color Table](https://developer.mozilla.org/docs/Web/CSS/color_value). If you can't find the color there, you can use an image editing tool or an HTML color codes web site to determine its HTML RGB value.
 
 - Don't delete the folder `%ExchangeInstallPath%ClientAccess\OWA\prem\<ExchangeVersion>\resources\themes\base`, or any files in it.
 

@@ -161,4 +161,4 @@ You can also run the following cmdlet in the Exchange Management Shell to verify
 Get-MigrationBatch -Identity <batch name>
 ```
 
-Having problems? Ask for help in the Microsoft 365 and Office forums. To access the forums, you'll need to sign in using an account that's granted administrator access to your cloud-based service. Visit the forums at: [Microsoft 365 and Office Forums](https://answers.microsoft.com/en-us/msoffice/forum)
+Having problems? Ask for help in the Microsoft 365 and Office forums. To access the forums, you'll need to sign in using an account that's granted administrator access to your cloud-based service. Visit the forums at: [Microsoft 365 and Office Forums](https://answers.microsoft.com/msoffice/forum)

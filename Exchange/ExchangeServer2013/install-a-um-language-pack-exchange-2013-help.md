@@ -17,7 +17,7 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013, Exchange Server 2016_
 
-To make a language available in the list of available Unified Messaging languages on a UM dial plan or UM auto attendant, you must first install the appropriate UM language pack. You install the language pack on a Mailbox server running the Microsoft Exchange Unified Messaging service by using the language-specific self-extracting executable file or the **setup.exe /AddUmLanguagePack** command. Before you can install a UM language pack, you must first download it to a local folder on the Mailbox server. You can download UM language packs from [Exchange Server 2013 UM Language Packs](https://go.microsoft.com/fwlink/p/?linkid=266542). There's a separate executable file for each language.
+To make a language available in the list of available Unified Messaging languages on a UM dial plan or UM auto attendant, you must first install the appropriate UM language pack. You install the language pack on a Mailbox server running the Microsoft Exchange Unified Messaging service by using the language-specific self-extracting executable file or the **setup.exe /AddUmLanguagePack** command. Before you can install a UM language pack, you must first download it to a local folder on the Mailbox server. You can download UM language packs from [Exchange Server 2013 UM Language Packs](https://www.microsoft.com/download/details.aspx?id=35368). There's a separate executable file for each language.
 
 After you install the appropriate UM language pack, you can view the list of installed UM language packs by viewing the drop-down list on the **Settings** page of a UM dial plan or the **Language for automated voice interface** drop-down list on the **General** page of a UM auto attendant. You can also configure the default language to be a language other than English (en-US) on UM dial plans and auto attendants.
 
@@ -41,7 +41,7 @@ For additional tasks related to UM languages, see [UM languages, prompts, and gr
 
 ## Use the UM Language Pack Installation (.exe) file to install a UM language pack
 
-1. From the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=266542), download the language-specific UM language pack (.exe) file into a local folder on the Mailbox server.
+1. From the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35368), download the language-specific UM language pack (.exe) file into a local folder on the Mailbox server.
 
 2. Double-click the UMLanguagePack.*\<CultureCode\>.exe* file. For example, for the German UM language pack, you would download the file named UMLanguagePack.de-DE.exe.
 

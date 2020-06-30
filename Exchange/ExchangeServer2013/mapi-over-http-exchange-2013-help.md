@@ -152,7 +152,7 @@ Complete the following steps to prepare the clients and servers to support MAPI 
    > [!NOTE]
    > All Client Access servers must be upgraded to the latest Exchange 2013 CU, or the immediately previous CU. Otherwise, Outlook can fail to connect to mailboxes.<BR>Failure to upgrade the all the Mailbox servers in a Database Availability Group (DAG) can result in email delays and a client requirement to restart Outlook in case of a database failover.
 
-3. On all Exchange 2013 servers, install the Microsoft .NET Framework version supported by the CU running on your Exchange server. For more information see [Exchange Server Supportability Matrix](exchange-server-supportability-matrix-exchange-2013-help.md) and [Installing the .NET Framework](https://go.microsoft.com/fwlink/p/?linkid=518380).
+3. On all Exchange 2013 servers, install the Microsoft .NET Framework version supported by the CU running on your Exchange server. For more information see [Exchange Server Supportability Matrix](exchange-server-supportability-matrix-exchange-2013-help.md) and [Installing the .NET Framework](https://www.microsoft.com/download/details.aspx?id=42642).
 
 ## Configuration
 

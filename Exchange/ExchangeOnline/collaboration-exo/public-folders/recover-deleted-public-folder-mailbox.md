@@ -10,7 +10,7 @@ ms.reviewer:
 ms.collection: 
 - exchange-online
 - M365-email-calendar
-description: 'Summary: This article describes how to recover a public folder mailbox in Office 365 that was previously soft-deleted, meaning the mailbox retention period has not yet elapsed and the recycle bin has not been purged.'
+description: 'Summary: This article describes how to recover a public folder mailbox in Microsoft 365 or Office 365 that was previously soft-deleted, meaning the mailbox retention period has not yet elapsed and the recycle bin has not been purged.'
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -20,7 +20,7 @@ title: Recover a deleted public folder mailbox
 
 # Recover a deleted public folder mailbox
 
- **Summary**: This article describes how to recover a public folder mailbox in Office 365 that was previously soft-deleted, meaning the mailbox retention period has not yet elapsed and the recycle bin has not been purged.
+ **Summary**: This article describes how to recover a public folder mailbox in Microsoft 365 or Office 365 that was previously soft-deleted, meaning the mailbox retention period has not yet elapsed and the recycle bin has not been purged.
 
 You can delete public folder mailboxes either in the EAC or through the `Remove-Mailbox -PublicFolder` cmdlet. To delete a primary mailbox, all other mailboxes must be deleted first. After a mailbox is deleted it will no longer be visible in the EAC.
 

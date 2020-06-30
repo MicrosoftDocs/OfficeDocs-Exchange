@@ -45,7 +45,7 @@ After you create a theme, you may also want to [Customize the Outlook Web App si
 
 - You need local server administrator access to perform these procedures.
 
-- You'll need a text editor to change the default colors, and a graphics editor to change the images. If you must match a specific color and you can't find a match for it at [Color Table](https://go.microsoft.com/fwlink/p/?linkid=280679), you can use an image editing tool to sample a color and determine its HTML RGB value.
+- You'll need a text editor to change the default colors, and a graphics editor to change the images. If you must match a specific color and you can't find a match for it at [Color Table](https://developer.mozilla.org/docs/Web/CSS/color_value), you can use an image editing tool to sample a color and determine its HTML RGB value.
 
 - As a best practice, we recommend that you use the following guidelines any time that you change or create an Outlook Web App theme:
 

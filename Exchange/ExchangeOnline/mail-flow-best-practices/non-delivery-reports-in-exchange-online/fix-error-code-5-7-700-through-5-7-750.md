@@ -63,7 +63,7 @@ In most cases, the connectors are set up correctly, but email is being sent from
 
 To fix this error, you can:
 
-- **Most common solution**: Add and validate all domains in Microsoft 365 or Office 365 that you use to send email messages. For more information, see [Add a domain](https://docs.microsoft.com/office365/admin/setup/add-domain).
+- **Most common solution**: Add and validate all domains in Microsoft 365 or Office 365 that you use to send email messages. For more information, see [Add a domain](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain).
 
 - Use a certificate-based outbound connector where the certificate's domain is an accepted and validated domain in Microsoft 365 or Office 365. For more information, see [Configure mail flow using connectors](../use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md).
 

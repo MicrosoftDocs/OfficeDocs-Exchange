@@ -62,9 +62,9 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 To learn how users can access and use shared mailboxes, check out the following:
 
-- [Open and use a shared mailbox in Outlook 2016 and Outlook 2013](https://go.microsoft.com/fwlink/p/?linkid=834764)
+- [Open and use a shared mailbox in Outlook](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd)
 
-- [Open and use a shared mailbox in Outlook on the web for business](https://go.microsoft.com/fwlink/p/?linkid=834766)
+- [Open and use a shared mailbox in Outlook Web App](https://support.microsoft.com/office/bc127866-42be-4de7-92ae-1ef2f787fd5c)
 
 ## Use the Shell to create a shared mailbox
 

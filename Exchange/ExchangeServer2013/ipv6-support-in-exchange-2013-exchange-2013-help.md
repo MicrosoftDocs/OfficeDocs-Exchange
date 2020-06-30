@@ -233,7 +233,7 @@ The following table provides a comparison of IPv4 elements and IPv6 elements.
 </tbody>
 </table>
 
-For more information about IPv6 addressing, see [IPv6 Address Types](https://go.microsoft.com/fwlink/p/?linkid=98357).
+For more information about IPv6 addressing, see [IPv6 Address Types](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc757359(v=ws.10)).
 
 ## Supported IPv6 Address Input Formats
 

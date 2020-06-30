@@ -98,7 +98,7 @@ The EAC allows you to create transport rules by using a template, copying an exi
 
       - If the condition you want isn't listed, select **More options**. Additional conditions will be listed.
 
-   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](https://go.microsoft.com/fwlink/p/?LinkId=402768) and the [transport rule reports](https://go.microsoft.com/fwlink/p/?).
+   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](view-dlp-policy-detection-reports-exchange-2013-help.md) and the [transport rule reports](https://go.microsoft.com/fwlink/p/?).
 
       Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
 

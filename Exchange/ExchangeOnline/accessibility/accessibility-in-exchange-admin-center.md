@@ -61,7 +61,7 @@ The bottom of the main window is a status bar which indicates how many records a
 
 ## Use a screen reader and keyboard shortcuts
 
-The EAC includes accessible names that can be read by a screen reader as you work in the application. You can use Narrator, the built-in screen reader in Windows, or a third-party screen reader, such as [JAWS](https://go.microsoft.com/fwlink/p/?LinkId=787625). For more information, refer to [Get started using a screen reader in the Exchange admin center](get-started-using-screen-reader.md). You can also use [Windows Speech Recognition](https://support.microsoft.com/help/14213) or a third-party speech tool to give voice commands to the EAC.
+The EAC includes accessible names that can be read by a screen reader as you work in the application. You can use Narrator, the built-in screen reader in Windows, or a third-party screen reader, such as [JAWS](https://www.freedomscientific.com/Products/software/JAWS/). For more information, refer to [Get started using a screen reader in the Exchange admin center](get-started-using-screen-reader.md). You can also use [Windows Speech Recognition](https://support.microsoft.com/help/14213) or a third-party speech tool to give voice commands to the EAC.
 
 To navigate in the EAC and to cycle through groups of screen elements, press Ctrl+F6 (forward) or Ctrl+Shift+F6 (backward). To cycle through screen elements, including lists of items, press the Tab key (forward) or Shift+Tab (backward). To select an item, press Enter. To browse within menus or lists, press the Up Arrow key or the Down Arrow key, and then, to make a selection, press Enter. To exit a menu or mode, press Esc. For more details, go to [Keyboard shortcuts for the Exchange admin center](keyboard-shortcuts-in-admin-center.md).
 
@@ -69,6 +69,6 @@ As you move around the areas of the EAC, your screen reader provides information
 
 ## Technical support for customers with disabilities
 
-Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) for technical assistance.
+Microsoft wants to provide the best possible experience for all our customers. If you have a disability or have questions related to accessibility, please contact the [Microsoft Disability Answer Desk](https://www.microsoft.com/Accessibility/disability-answer-desk) for technical assistance.
 
-The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://go.microsoft.com/fwlink/p/?LinkID=518252) site to find the contact details for your region.
+The Disability Answer Desk support team is trained in using many popular assistive technologies and can offer assistance in English, Spanish, French, and American Sign Language. Please visit the [Microsoft Disability Answer Desk](https://www.microsoft.com/Accessibility/disability-answer-desk) site to find the contact details for your region.

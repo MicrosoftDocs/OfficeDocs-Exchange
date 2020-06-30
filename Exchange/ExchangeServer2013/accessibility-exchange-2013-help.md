@@ -48,11 +48,11 @@ The following sections provide information about the features, products, and ser
 
 ### Accessibility features of Windows
 
-The Windows operating system has many built-in accessibility features that are useful for individuals who have difficulty typing or using a mouse, are blind or have low vision, or who are deaf or hard-of-hearing. The features are installed during Setup. For more information about these features, see Help in Windows and [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?linkId=18139).
+The Windows operating system has many built-in accessibility features that are useful for individuals who have difficulty typing or using a mouse, are blind or have low vision, or who are deaf or hard-of-hearing. The features are installed during Setup. For more information about these features, see Help in Windows and [Microsoft Accessibility](https://www.microsoft.com/accessibility/).
 
 - **Free step-by-step tutorials** Microsoft offers a series of step-by-step tutorials that provide detailed procedures for adjusting the accessibility options and settings on your computer. This information is presented in a side-by-side format so that you can learn how to use the mouse, the keyboard, or a combination of both.
 
-   To find step-by-step tutorials for Microsoft products, see [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?linkId=18139).
+   To find step-by-step tutorials for Microsoft products, see [Microsoft Accessibility](https://www.microsoft.com/accessibility/).
 
 - **Assistive technology products for Windows** A wide variety of assistive technology products are available to make computers easier to use for people with disabilities. You can search a catalog of assistive technology products that run on Windows at Microsoft Accessibility.
 
@@ -60,7 +60,7 @@ The Windows operating system has many built-in accessibility features that are u
 
 ### Documentation in alternative formats
 
-If you have difficulty reading or handling printed materials, you can obtain the documentation for many Microsoft products in more accessible formats. You can obtain an index of accessible product documentation at [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?linkId=18139).
+If you have difficulty reading or handling printed materials, you can obtain the documentation for many Microsoft products in more accessible formats. You can obtain an index of accessible product documentation at [Microsoft Accessibility](https://www.microsoft.com/accessibility/).
 
 In addition, you can obtain additional Microsoft publications from Learning Ally. Learning Ally distributes these documents to registered, eligible members of their distribution service. For information about the availability of Microsoft product documentation and books from Microsoft Press, contact Learning Ally.
 
@@ -74,8 +74,8 @@ If you're deaf or hard-of-hearing, complete access to Microsoft product and cust
 
 - For technical assistance in the United States, contact Microsoft Product Support Services at (800) 892-5234 between 6:00 A.M. and 6:00 P.M. Pacific Time, Monday through Friday, excluding holidays. In Canada, dial (905) 568-9641 between 8:00 A.M. and 8:00 P.M. Eastern Time, Monday through Friday, excluding holidays.
 
-Microsoft Support Services are subject to the prices, terms, and conditions in place at the time the service is used. For more information, see [Microsoft Support](https://go.microsoft.com/fwlink/p/?linkId=18142).
+Microsoft Support Services are subject to the prices, terms, and conditions in place at the time the service is used. For more information, see [Microsoft Support](https://support.microsoft.com/).
 
 ## For more information
 
-For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see [Microsoft Accessibility](https://go.microsoft.com/fwlink/p/?linkId=18139).
+For more information about how accessible technology for computers helps to improve the lives of people with disabilities, see [Microsoft Accessibility](https://www.microsoft.com/accessibility/).

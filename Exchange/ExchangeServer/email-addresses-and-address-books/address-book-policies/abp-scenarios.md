@@ -144,7 +144,7 @@ These are the important issues to consider when you use ABPs in your organizatio
 
 
 
-- To configure a feature that's similar to address book policies in the Skype for Business or Lync client, you can set the **msRTCSIP-GroupingID** attribute for specific users. For details, see [PartitionByOU Replaced with msRTCSIP-GroupingID](https://go.microsoft.com/fwlink/p/?LinkId=232306).
+- To configure a feature that's similar to address book policies in the Skype for Business or Lync client, you can set the **msRTCSIP-GroupingID** attribute for specific users. For details, see [PartitionByOU Replaced with msRTCSIP-GroupingID](https://docs.microsoft.com/previous-versions/office/skype-server-2010/gg429725(v=ocs.14)).
 
 ## Detailed deployment steps for Scenario 2: Two companies sharing a CEO in one Exchange organization
 

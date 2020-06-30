@@ -99,7 +99,7 @@ The EAC allows you to create mail flow rules by using a template, copying an exi
 
       - If the condition you want isn't listed, select **More options**. Additional conditions will be listed.
 
-   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](https://go.microsoft.com/fwlink/p/?LinkId=402768) and the [Mail protection reports](../../monitoring/use-mail-protection-reports.md).
+   3. Specify how rule match data for this rule is displayed in the [Data Loss Prevention (DLP) reports](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports) and the [Mail protection reports](../../monitoring/use-mail-protection-reports.md).
 
       Under **Audit this rule with severity level**, select a level to specify the severity level for this rule. The activity reports for mail flow rules group rule matches by severity level. Severity level is just a filter to make the reports easier to use. The severity level has no impact on the priority in which the rule is processed.
 

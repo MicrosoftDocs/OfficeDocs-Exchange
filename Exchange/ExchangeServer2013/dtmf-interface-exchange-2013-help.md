@@ -112,4 +112,4 @@ Sometimes a user's first name, last name, or email alias changes after the user 
 ## For more information
 <a name="fmi"> </a>
 
-[Adsiedit Overview](https://go.microsoft.com/fwlink/p/?linkId=73175)
+[Adsiedit Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc773354(v=ws.10))

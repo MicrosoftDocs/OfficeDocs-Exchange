@@ -166,7 +166,7 @@ The following table shows the relationships between these values.
 
 Extended rights are custom rights specified by individual applications. They are specified in the ACL. However, they are meaningless to Active Directory. The specific application enforces any extended rights. Examples of Exchange extended rights are "Create public folder" or "Create named properties in the information store."
 
-For information about permissions that are set during a Microsoft Exchange Server 2010 installation, see [Exchange 2010 Deployment Permissions Reference](https://go.microsoft.com/fwlink/p/?linkid=402924).
+For information about permissions that are set during a Microsoft Exchange Server 2010 installation, see [Exchange 2010 Deployment Permissions Reference](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ee681663(v=exchg.141)).
 
 ## Prepare Active Directory Permissions
 

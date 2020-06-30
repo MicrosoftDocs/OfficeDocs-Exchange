@@ -91,7 +91,7 @@ Check out the following topics on how to forward your email to another email add
 
 - [Forward email to another email account](https://support.microsoft.com/office/ecafbc06-e812-4b9e-a7af-5074a9c7abd0)
 
-- [Manage email messages by using rules](https://go.microsoft.com/fwlink/p/?LinkId=510869)
+- [Manage email messages by using rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59)
 
 ## Additional information
 

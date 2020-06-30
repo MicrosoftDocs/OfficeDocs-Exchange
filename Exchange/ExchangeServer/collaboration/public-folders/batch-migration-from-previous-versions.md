@@ -62,7 +62,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 - In Exchange 2016, you need to be a member of the Organization Management role group. For details about how to enable the Organization Management role group, see [Manage role groups](../../permissions/role-groups.md).
 
-- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/p/?linkId=299212).
+- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd638143(v=exchg.141)).
 
 - Before you migrate, you should consider the [Limits for public folders](limits.md).
 
@@ -82,7 +82,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 ## Step 1: Download the migration scripts
 
-1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://go.microsoft.com/fwlink/p/?linkId=299838).
+1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=38407).
 
 2. Save the scripts to the local computer on which you'll be running PowerShell. For example, C:\PFScripts. Make sure all scripts are saved in the same location.
 
@@ -416,7 +416,7 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 
 After the migration is complete, and you have verified that your Exchange 2016 public folders are working as expected, you should remove the public folder databases on the Exchange 2010 servers.
 
-For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://go.microsoft.com/fwlink/p/?linkId=81409).
+For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd876883(v=exchg.141)).
 
 ## Roll back the migration
 

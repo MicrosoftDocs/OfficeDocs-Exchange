@@ -37,4 +37,4 @@ Outlook clients supports a variety of add-ins that are available through the Off
 
 By default, all users can install and remove add-ins. Exchange Online admins have a number of controls available for managing add-ins and users' access to them. Admins can disable users from installing add-ins that are not downloaded from the Office Store (instead they are "side loaded" from a file or URL). Admins can also disable users from installing Office Store add-ins, and from installing add-ins on behalf of other users.
 
-To install add-ins for some or all users in your organization, see [Manage deployment of add-ins in the admin center](https://docs.microsoft.com/office365/admin/manage/manage-deployment-of-add-ins)
+To install add-ins for some or all users in your organization, see [Manage deployment of add-ins in the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)

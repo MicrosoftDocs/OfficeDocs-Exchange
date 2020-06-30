@@ -38,27 +38,27 @@ A great post on architectural changes, including the impact to re-sizing an Exch
 
 More about Exchange 2013 architectural changes, and background information on other relevant areas, can be found in the following:
 
-[Exchange Server 2013 Architecture](https://go.microsoft.com/fwlink/p/?linkid=523769)
+[Exchange Server 2013 Architecture](https://channel9.msdn.com/events/TechEd/NewZealand/2014/OFC306)
 
-[Plan it the right way: Exchange Server 2013 sizing scenarios](https://go.microsoft.com/fwlink/p/?linkid=523773)
+[Plan it the right way: Exchange Server 2013 sizing scenarios](https://channel9.msdn.com/events/MEC/2014/ARC308)
 
-[Monitoring and Tuning Microsoft Exchange Server 2013 Performance](https://go.microsoft.com/fwlink/p/?linkid=523774)
+[Monitoring and Tuning Microsoft Exchange Server 2013 Performance](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2014/OFC-B321)
 
-[Implementing Exchange Server 2013: (01) Upgrade and Deploy Exchange Server 2013](https://go.microsoft.com/fwlink/p/?linkid=523775)
+[Implementing Exchange Server 2013: (01) Upgrade and Deploy Exchange Server 2013](https://channel9.msdn.com/Series/Implementing-Exchange-Server-2013/01)
 
-[Implementing Exchange Server 2013: (02) Plan It the Right Way: Exchange Server 2013 Sizing](https://go.microsoft.com/fwlink/p/?linkid=523776)
+[Implementing Exchange Server 2013: (02) Plan It the Right Way: Exchange Server 2013 Sizing](https://channel9.msdn.com/Series/Implementing-Exchange-Server-2013/02)
 
-[Implementing Exchange Server 2013: (03) Exchange Server 2013 Virtualization Best Practices](https://go.microsoft.com/fwlink/p/?linkid=523777)
+[Implementing Exchange Server 2013: (03) Exchange Server 2013 Virtualization Best Practices](https://channel9.msdn.com/Series/Implementing-Exchange-Server-2013/03)
 
-[Implementing Exchange Server 2013: (04) Exchange Architecture: High Availability and Site Resilience](https://go.microsoft.com/fwlink/p/?linkid=523779)
+[Implementing Exchange Server 2013: (04) Exchange Architecture: High Availability and Site Resilience](https://channel9.msdn.com/Series/Implementing-Exchange-Server-2013/04)
 
-[Implementing Exchange Server 2013: (05) Outlook Connectivity](https://go.microsoft.com/fwlink/p/?linkid=523781)
+[Implementing Exchange Server 2013: (05) Outlook Connectivity](https://channel9.msdn.com/Series/Implementing-Exchange-Server-2013/05)
 
 [The Preferred Architecture](https://techcommunity.microsoft.com/t5/exchange-team-blog/the-preferred-architecture/ba-p/586755)
 
 [Exchange 2013 Client Access Server Role](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-2013-client-access-server-role/ba-p/596493)
 
-[Exchange Server 2013 Virtualization Best Practices](https://go.microsoft.com/fwlink/p/?linkid=523783)
+[Exchange Server 2013 Virtualization Best Practices](https://channel9.msdn.com/Events/MEC/2014/ARC305)
 
 [Load balancing](load-balancing-exchange-2013-help.md)
 

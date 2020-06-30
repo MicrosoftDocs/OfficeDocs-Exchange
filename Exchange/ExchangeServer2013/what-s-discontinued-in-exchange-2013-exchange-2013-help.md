@@ -324,7 +324,7 @@ This section lists the Exchange Server 2007 features that are no longer availabl
 <tbody>
 <tr class="odd">
 <td><p>Exchange WebDAV</p></td>
-<td><p>Use <a href="https://go.microsoft.com/fwlink/p/?linkid=167197">Exchange Web Services</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=157179">EWS Managed API</a>. Alternatively, you can maintain an Exchange 2007 server for mailboxes that are managed by applications that use WebDAV. For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=169474">Migrating from WebDAV</a>.</p></td>
+<td><p>Use <a href="https://docs.microsoft.com/exchange/client-developer/exchange-web-services/explore-the-ews-managed-api-ews-and-web-services-in-exchange">Exchange Web Services (EWS) or the EWS Managed API</a>. Alternatively, you can maintain an Exchange 2007 server for mailboxes that are managed by applications that use WebDAV.</p></td>
 </tr>
 </tbody>
 </table>

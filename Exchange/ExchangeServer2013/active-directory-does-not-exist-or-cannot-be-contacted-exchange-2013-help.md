@@ -31,7 +31,7 @@ For more information about Active Directory troubleshooting and configuration fo
 
 - [Troubleshooting Active Directory Replication Problems](https://docs.microsoft.com/windows-server/identity/ad-ds/manage/troubleshoot/troubleshooting-active-directory-replication-problems)
 
-- [Monitoring and Troubleshooting Active Directory Replication Using Repadmin](https://go.microsoft.com/fwlink/p/?linkid=272143)
+- [Monitoring and Troubleshooting Active Directory Replication Using Repadmin](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc811551(v=ws.10))
 
 Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Server](https://go.microsoft.com/fwlink/p/?linkid=60612).
 

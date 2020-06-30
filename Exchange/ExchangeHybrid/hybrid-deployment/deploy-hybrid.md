@@ -36,7 +36,7 @@ This topic covers configuring a hybrid deployment for your on-premises Exchange 
 
 For additional management tasks related to hybrid deployments, see [Hybrid Deployment procedures](hybrid-deployment.md).
 
-Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../exchange-hybrid.md). Learn more about Microsoft 365 and Office 365 at [What are Microsoft 365 and Office 365?](https://go.microsoft.com/fwlink/?LinkId=266712).
+Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../exchange-hybrid.md). Learn more about Microsoft 365 and Office 365 at [What are Microsoft 365 and Office 365?](https://www.microsoft.com/microsoft-365).
 
 ## What do you need to know before you begin?
 

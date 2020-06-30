@@ -71,7 +71,7 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 <tr class="even">
 <td><p></p></td>
 <td><p>5. Select an offline address book for all Exchange 2007 mailbox databases</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/?linkid=320546">How to Provision Recipients for Offline Address Book Downloads</a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa996345(v=exchg.80)">How to Provision Recipients for Offline Address Book Downloads</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
@@ -110,7 +110,7 @@ This checklist is generic in that it provides guidance for a typical upgrade sce
 <tr class="even">
 <td><p></p></td>
 <td><p>11. Configure Exchange 2007 certificates</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/?linkid=320553">Managing SSL for a Client Access Server</a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb310795(v=exchg.80)">Managing SSL for a Client Access Server</a></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>

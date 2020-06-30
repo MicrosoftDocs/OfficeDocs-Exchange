@@ -42,11 +42,11 @@ The following diagram is an overview of using a Microsoft Azure file server VM a
 > [!NOTE]
 > It is technically possible to use a single Azure VM for this purpose and place the file witness share on the domain controller. However, this will result in an unnecessary elevation of privileges. Therefore, it is not a recommended configuration.
 
-**DAG witness server on Microsoft Azure**
+### DAG witness server on Microsoft Azure
 
 ![Exchange DAG witness on Azure overview](../../media/7cbda882-bbae-4be7-b0ea-60947b8aa4ef.png)
 
-The first thing you need to do in order to use a Microsoft Azure VM for your DAG witness is to get a subscription. See [How to buy Azure](https://go.microsoft.com/fwlink/p/?linkId=398989) for the best way to acquire an Azure subscription.
+The first thing you need to do in order to use a Microsoft Azure VM for your DAG witness is to get a subscription. See [How to buy Azure](https://azure.microsoft.com/pricing/purchase-options/) for the best way to acquire an Azure subscription.
 
 After you have your Azure subscription, you need to do the following in order:
 

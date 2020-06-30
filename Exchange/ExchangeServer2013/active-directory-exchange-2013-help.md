@@ -23,7 +23,7 @@ Microsoft Exchange Server 2013 uses Active Directory to store and share director
 
 The Active Directory driver is the core Microsoft Exchange component that allows Exchange services to create, modify, delete, and query for Active Directory Domain Services (AD DS) data. In Exchange 2013, all access to Active Directory is done using the Active Directory driver itself. Previously, in Exchange 2010, DSAccess provided directory lookup services for components such as SMTP, message transfer agent (MTA), and the Exchange store.
 
-The Active Directory driver also uses Microsoft Exchange Active Directory Topology (MSExchangeADTopology), which allows the Active Directory driver to use Directory Service Access (DSAccess) topology data. This data includes the list of available domain controllers and global catalog servers available to handle Exchange requests. For more information about the Active Directory Driver, see [Active Directory Domain Services](https://go.microsoft.com/fwlink/p/?linkid=110942).
+The Active Directory driver also uses Microsoft Exchange Active Directory Topology (MSExchangeADTopology), which allows the Active Directory driver to use Directory Service Access (DSAccess) topology data. This data includes the list of available domain controllers and global catalog servers available to handle Exchange requests. For more information about the Active Directory Driver, see [Active Directory Domain Services](https://docs.microsoft.com/windows-server/identity/ad-ds/active-directory-domain-services).
 
 ## Active Directory schema changes
 

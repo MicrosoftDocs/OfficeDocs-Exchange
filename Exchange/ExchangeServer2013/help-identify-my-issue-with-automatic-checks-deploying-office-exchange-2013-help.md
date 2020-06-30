@@ -11,6 +11,7 @@ author: mattpennathe3rd
 f1.keywords:
 - NOCSH
 mtps_version: v=EXCHG.150
+ms.custom: SaRA-Download_ExRCA
 ---
 
 # Help Identify My Issue with Automatic Checks - Deploying Office
@@ -19,7 +20,7 @@ _**Applies to:** Exchange Server 2013_
 
 The check(s) on this page will help identify some of the most common configuration challenges. You can use the automatic check(s) below to validate your configuration and help you update your environment.
 
-If you already have an user account, select **Sign In**. You don't need an Azure ID account. You might be asked for a user account again when the checks run. If so, your user account is in the format of username@youroffice365login.domain and your password.
+If you already have an user account, select **Sign In**. You don't need an Azure ID account. You might be asked for a user account again when the checks run. If so, your user account is in the format of *username*@*yourFQDN* and your password.
 
 ## Hybrid Wizard Checks
 

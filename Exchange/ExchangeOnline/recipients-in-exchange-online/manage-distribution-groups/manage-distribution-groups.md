@@ -54,7 +54,7 @@ It's important to note the terminology differences between Active Directory and 
 
 ![New Try Microsoft 365 Groups](../../media/3ea82c95-9dda-450f-823b-cd0772249d81.png)
 
-You can now create a Microsoft 365group instead of a distribution group, if you have a Microsoft 365 or Office 365 for business plan or an Exchange Online plan. Microsoft 365 groups have the features of a distribution group and much more. With Microsoft 365 groups, you can send email to a group, share a common calendar, and have a library for storing and working on group files and folders. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) \> **Microsoft 365 group** to get started and see [Learn about Microsoft 365 Groups](https://go.microsoft.com/fwlink/p/?LinkId=800653).
+You can now create a Microsoft 365group instead of a distribution group, if you have a Microsoft 365 or Office 365 for business plan or an Exchange Online plan. Microsoft 365 groups have the features of a distribution group and much more. With Microsoft 365 groups, you can send email to a group, share a common calendar, and have a library for storing and working on group files and folders. Click **New** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) \> **Microsoft 365 group** to get started and see [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 If you have existing distribution groups that you want to migrate to Microsoft 365 groups, see [Upgrade distribution lists to Microsoft 365 Groups in Outlook](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists).
 

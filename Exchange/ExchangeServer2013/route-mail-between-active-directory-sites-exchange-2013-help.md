@@ -99,7 +99,7 @@ An Active Directory administrator implements the topology that best represents t
 
 The default cost for a site link is 100. A valid site link cost can be any number from 1 through 99,999. If you specify redundant links, the link with the lowest cost assignment is always preferred. An Exchange organization administrator can assign an Exchange-specific cost to an IP site link. If an Exchange cost is assigned to an IP site link, it will be used by Exchange. Otherwise, the Active Directory cost is used. For more information about how to set an Exchange cost on an IP site link, see "Controlling IP Site Link Costs" later in this topic. An administrator who has membership in the Enterprise Administrators group can create additional IP site links.
 
-For more information about Active Directory site configuration, see [Designing the Site Topology](https://go.microsoft.com/fwlink/p/?linkid=33551).
+For more information about Active Directory site configuration, see [Designing the Site Topology](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc787284(v=ws.10)).
 
 ## Controlling IP site link costs
 

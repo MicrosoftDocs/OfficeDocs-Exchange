@@ -70,6 +70,6 @@ Users can control the following settings:
 
   - **International options**: You can control the character sets used in messages.
 
-  For more information about Outlook settings, see [Change the message format in Outlook](https://go.microsoft.com/fwlink/p/?LinkID=397890).
+  For more information about Outlook settings, see [Change the message format in Outlook](https://support.microsoft.com/office/338a389d-11da-47fe-b693-cf41f792fefa).
 
 - **Outlook on the web settings**: You can set the default message format for all messages. You can override the default message format as you compose a specific message.

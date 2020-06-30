@@ -144,12 +144,12 @@ For step-by-step guidance about how to upgrade from Exchange 2010 UM to Exchange
 <tr class="odd">
 <td><p></p></td>
 <td><p>Disable call answering on the Exchange 2007 UM servers</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=296353">How to Disable Unified Messaging on Exchange 2007</a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb123529(v=exchg.80)">How to Disable Unified Messaging on Exchange 2007</a></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
 <td><p>Remove an Exchange 2007 UM server from a dial plan</p></td>
-<td><p><a href="https://go.microsoft.com/fwlink/p/?linkid=194765">How to Remove a Unified Messaging Server from a Dial Plan</a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa997238(v=exchg.80)">How to Remove a Unified Messaging Server from a Dial Plan</a></p></td>
 </tr>
 </tbody>
 </table>

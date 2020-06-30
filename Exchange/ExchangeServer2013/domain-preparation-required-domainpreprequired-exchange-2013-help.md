@@ -37,4 +37,4 @@ Preparation of the domain for Exchange Server 2007 consists of the following ta
 
 To resolve this issue, run **setup /PrepareDomain** to prepare the local domain and retry the server role installation.
 
-For more information about how to perform the PrepareDomain process, see "How to Prepare Active Directory and Domains" ([https://go.microsoft.com/fwlink/?LinkId=78453](https://go.microsoft.com/fwlink/?linkid=78453)).
+For more information about how to perform the PrepareDomain process, see "How to Prepare Active Directory and Domains" ([https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb125224(v=exchg.80)](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb125224(v=exchg.80))).

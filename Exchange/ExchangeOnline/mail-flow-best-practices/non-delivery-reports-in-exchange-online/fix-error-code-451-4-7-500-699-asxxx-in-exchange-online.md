@@ -55,7 +55,7 @@ To remove throttling for these messages, you need to configure a connector:
 
 2. If inbound email to your Microsoft 365 or Office 365 organization is first routed through a third-party service, appliance, or device, you need to [set up a connector to apply security restrictions](../use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner.md).
 
-After you set up a connector, you can [validate your connectors](../use-connectors-to-configure-mail-flow/validate-connectors.md).
+After you have set up a connector, you can monitor if IP throttling has stopped.
 
 > [!NOTE]
 > We don't recommend sending more than test messages from your initial onmicrosoft.com domain. Email from onmicrosoft.com domains is limited and filtered to prevent spam. In typical production environments, you need to [add a custom domain](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) and then send your regular volume of email messages. For more information on domains, check out this [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).

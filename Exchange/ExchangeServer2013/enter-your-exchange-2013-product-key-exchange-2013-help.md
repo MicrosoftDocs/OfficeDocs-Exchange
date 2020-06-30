@@ -27,9 +27,9 @@ If you don't enter a product key, your server is automatically licensed as a tri
 > We've noticed some visitors to this page are looking for information on how to install or activate Office. If that's you, check out these pages:
 > <UL>
 > <LI>
-> <P><A href="https://go.microsoft.com/fwlink/p/?linkid=403360">Install Office</A></P>
+> <P><A href="https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658">Install Office</A></P>
 > <LI>
-> <P><A href="https://go.microsoft.com/fwlink/p/?linkid=403361">Need help with your Office product key?</A></P></LI></UL>If you want to enter a product key on an Exchange 2010 server, go to <A href="https://go.microsoft.com/fwlink/p/?linkid=403370">Enter an Exchange 2010 product key</A>.<BR>If you want to enter a product key on an Exchange 2013 server, you're in the right place! Read on.
+> <P><A href="https://support.microsoft.com/office/0a82e5ae-739e-4b92-a6f4-2ec780c185db">Need help with your Office product key?</A></P></LI></UL>If you want to enter a product key on an Exchange 2010 server, go to <A href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124582(v=exchg.141)">Enter an Exchange 2010 product key</A>.<BR>If you want to enter a product key on an Exchange 2013 server, you're in the right place! Read on.
 
 ## What do you need to know before you begin?
 

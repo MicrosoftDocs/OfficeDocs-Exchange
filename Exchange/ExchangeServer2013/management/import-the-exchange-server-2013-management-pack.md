@@ -39,7 +39,7 @@ Before you can import the management pack, verify that the following conditions 
 
 Use the following steps to import the Exchange Server 2013 Management Pack. This procedure assumes that you have extracted the management pack contents to a local drive on your System Center Operations Manager (SCOM) server. You can download the Exchange Server 2013 Management Pack from the.
 
-1. Log on to your SCOM server, and download the Exchange Server 2013 Management Pack from [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=268587).
+1. Log on to your SCOM server, and download the Exchange Server 2013 Management Pack from [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=39039).
 
 2. Extract the management pack contents to a folder on your system by running the `ExchangeServerManagementPack.msi` file.
 

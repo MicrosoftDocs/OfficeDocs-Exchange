@@ -91,9 +91,9 @@ An item is considered to be permanently deleted in the following cases:
 
 Permanently deleted items are moved to the Deletions subfolder of the Recoverable Items folder. This provides an additional layer of protection so users can recover permanently deleted items without requiring Help desk intervention. Users can use the Recover Deleted Items feature in Outlook or Outlook Web App to recover a deleted item. Users can also use this feature to permanently delete an item. For more information, see:
 
-- [Restore deleted items in Outlook](https://go.microsoft.com/fwlink/p/?linkid=524923)
+- [Restore deleted items in Outlook](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-- [Recover deleted items or email in Outlook Web App](https://go.microsoft.com/fwlink/p/?linkid=524924)
+- [Recover deleted items or email in Outlook Web App](https://support.microsoft.com/office/c3d8fc15-eeef-4f1c-81df-e27964b7edd4)
 
 Items remain in the Deletions subfolder until the deleted item retention period is reached. The default deleted item retention period for a mailbox database is 14 days. You can modify this period for a mailbox database or for a specific mailbox. In addition to a deleted item retention period, the Recoverable Items folder is also subject to quotas. To learn more, see Recoverable Items Mailbox Quotas later in this topic.
 
@@ -318,6 +318,6 @@ If the mailbox is placed on In-Place Hold or Litigation Hold, copy-on-write page
 
 - If users need to recover deleted items from the Recoverable Items folder, point them to the following topics:
 
-  - [Restore deleted items in Outlook](https://go.microsoft.com/fwlink/p/?linkid=524923)
+  - [Restore deleted items in Outlook](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-  - [Recover deleted items or email in Outlook Web App](https://go.microsoft.com/fwlink/p/?linkid=524924)
+  - [Recover deleted items or email in Outlook Web App](https://support.microsoft.com/office/c3d8fc15-eeef-4f1c-81df-e27964b7edd4)

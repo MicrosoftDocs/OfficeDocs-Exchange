@@ -20,13 +20,13 @@ manager: serdars
 
 # The Host record for the local computer cannot be found in the DNS database [HostRecordMissing]
 
-Exchange Setup can't continue because the Host (A) record for this computer can't be found in the DNS zone for the domain. Setup requires a vaild A record for the server, and Exchange uses email server A records to find the IP address of the next hop to send messages.
+Exchange Setup can't continue because the Host (A) record for this computer can't be found in the DNS zone for the domain. Setup requires a valid A record for the server, and Exchange uses email server A records to find the IP address of the next hop to send messages.
 
 To resolve this issue:
 
 - Verify that the local TCP/IP configuration points to the correct DNS server. For more information, see [Configure TCP/IP settings](https://go.microsoft.com/fwlink/p/?linkid=108281).
 
-- Use Nslookup.exe to verify that the Host (A) record exists on the DNS server. For more information, see [To verify A resource records exist in DNS](https://go.microsoft.com/fwlink/?LinkId=63001).
+- Use Nslookup.exe to verify that the Host (A) record exists on the DNS server. For more information, see [To verify A resource records exist in DNS](https://docs.microsoft.com/previous-versions/orphan-topics/ws.10/cc772976(v=ws.10)).
 
 For information about DNS name resolution, troubleshooting, and A records, see the following:
 

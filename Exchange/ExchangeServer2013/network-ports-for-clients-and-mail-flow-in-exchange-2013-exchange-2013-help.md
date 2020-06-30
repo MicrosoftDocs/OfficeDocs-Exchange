@@ -280,4 +280,4 @@ The network ports that are required for Unified Messaging are covered in the fol
 
 - [UM protocols, ports, and services](um-protocols-ports-and-services-exchange-2013-help.md)
 
-- [Exchange Server 2013 SP1 Architecture Poster](https://go.microsoft.com/fwlink/p/?linkid=518646)
+- [Exchange Server 2013 SP1 Architecture Poster](https://www.microsoft.com/download/details.aspx?id=42542)

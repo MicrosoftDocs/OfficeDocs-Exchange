@@ -93,7 +93,7 @@ Senders in Outlook 2010 or earlier can also control the default TNEF message con
 
 - **Send using Outlook Rich Text format**: Any TNEF messages sent to remote recipients remain TNEF messages.
 
-To configure the TNEF conversion settings in Outlook, see [Change the message format to HTML, Rich Text Format, or plain text](https://go.microsoft.com/fwlink/p/?linkid=397890).
+To configure the TNEF conversion settings in Outlook, see [Change the message format to HTML, Rich Text Format, or plain text](https://support.microsoft.com/office/338a389d-11da-47fe-b693-cf41f792fefa).
 
 ## Order of precedence for TNEF conversion options
 <a name="Order"> </a>

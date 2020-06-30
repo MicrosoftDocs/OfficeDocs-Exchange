@@ -33,4 +33,4 @@ The existing non-US English language packs need to be uninstalled so that new la
 
 To resolve this issue, uninstall all Unified Messaging server role language packs, except the US English language pack, and then rerun Exchange 2007 setup.
 
-For more information about uninstalling Unified Messaging server role language packs, see [How to Remove a Unified Messaging Language Pack from a Unified Messaging Server](https://go.microsoft.com/fwlink/?linkid=85973) in the Exchange 2007 product documentation.
+For more information about uninstalling Unified Messaging server role language packs, see [How to Remove a Unified Messaging Language Pack from a Unified Messaging Server](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb124004(v=exchg.80)) in the Exchange 2007 product documentation.

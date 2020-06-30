@@ -27,9 +27,9 @@ The UM Troubleshooting tool can be installed on a local Unified Messaging server
 
 - The UM Troubleshooting tool requires that the following components be installed on a computer running Windows Vista, Windows 7, Windows 8, or the 64-bit edition of Windows Server 2008 or Windows Server 2012 or later before the tool is installed:
 
-  - Microsoft .NET Framework 3.5 Service Pack 1 (SP1)   See [Microsoft .NET Framework 3.5 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=152380).
+  - Microsoft .NET Framework 3.5 Service Pack 1 (SP1). See [Microsoft .NET Framework 3.5 Service Pack 1](https://www.microsoft.com/download/details.aspx?id=22).
 
-  - If the tool will be run on a Windows Vista or Windows Server 2008 computer, see [Microsoft .NET Framework 3.5 Family Update for Windows Vista x64, and Windows Server 2008 x64](https://go.microsoft.com/fwlink/p/?linkid=178998).
+  - If the tool will be run on a Windows Vista or Windows Server 2008 computer, see [Microsoft .NET Framework 3.5 Family Update for Windows Vista x64, and Windows Server 2008 x64](https://www.microsoft.com/download/details.aspx?id=1055).
 
   - Windows Remote Management (WinRM) 2.0 and Windows PowerShell V2 (Windows6.0-KB968930.msu). See Microsoft Knowledge Base article 968930, [Windows Management Framework Core package (Windows PowerShell 2.0 and WinRM 2.0)](https://support.microsoft.com/help/968930).
 
@@ -42,7 +42,7 @@ The UM Troubleshooting tool can be installed on a local Unified Messaging server
 
 ## Install the UM Troubleshooting Tool
 
-1. Download the Unified Messaging Troubleshooting Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=182625), and then double-click the MicrosoftExchange2010UMTroubleshootingTool.msi installation folder.
+1. Download the Unified Messaging Troubleshooting Tool from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=20839), and then double-click the MicrosoftExchange2010UMTroubleshootingTool.msi installation folder.
 
 2. On the **Welcome to the Microsoft Exchange 2010 UM Troubleshooting Tool Setup Wizard** page, click **Next**.
 

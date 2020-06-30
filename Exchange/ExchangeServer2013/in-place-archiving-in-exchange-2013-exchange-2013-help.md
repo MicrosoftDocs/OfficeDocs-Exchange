@@ -175,7 +175,7 @@ Before provisioning archive mailboxes for your users, we recommend that you info
 > [!NOTE]
 > If you apply a retention policy to users who have an archive mailbox, the retention policy replaces the default MRM policy. You can create one or more retention tags with the <STRONG>Move to Archive</STRONG> action, and then link the tags to the retention policy. You can also add the default <STRONG>Move to Archive</STRONG> tags (which are created by Setup and linked to the Default MRM Policy) to any retention policies you create.
 
-For information about compliance and archiving in Outlook 2010 and later, see [Plan for compliance and archiving in Outlook 2010](https://go.microsoft.com/fwlink/?linkid=210902).
+For information about compliance and archiving in Outlook 2010 and later, see [Plan for compliance and archiving in Outlook 2010](https://docs.microsoft.com/previous-versions/office/office-2010/ff800883(v=office.14)).
 
 ## Archive quotas
 

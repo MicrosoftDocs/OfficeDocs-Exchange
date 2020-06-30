@@ -66,9 +66,9 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 - In Exchange 2013, you need to be a member of the Organization Management role group. For details about how to enable the Organization Management role group, see [Manage role groups](manage-role-groups-exchange-2013-help.md).
 
-- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://go.microsoft.com/fwlink/?linkid=299212).
+- In Exchange 2010, you need to be a member of the Organization Management or Server Management RBAC role groups. For details, see [Add Members to a Role Group](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd638143(v=exchg.141)).
 
-- In Exchange 2007, you need to be assigned the Exchange Organization Administrator role or the Exchange Server Administrator role. In addition, you need to be assigned the Public Folder Administrator role and local Administrators group for the target server. For details, see [How to Add a User or Group to an Administrator Role](https://go.microsoft.com/fwlink/p/?linkid=81779).
+- In Exchange 2007, you need to be assigned the Exchange Organization Administrator role or the Exchange Server Administrator role. In addition, you need to be assigned the Public Folder Administrator role and local Administrators group for the target server. For details, see [How to Add a User or Group to an Administrator Role](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998008(v=exchg.80)).
 
 - On the Exchange 2007 server, upgrade to [Windows PowerShell 2.0 and WinRM 2.0 for Windows Server 2008 x64 Edition](https://support.microsoft.com/help/968930).
 
@@ -90,7 +90,7 @@ You can't migrate public folders directly from Exchange 2003. If you're running 
 
 ## Step 1: Download the migration scripts
 
-1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://go.microsoft.com/fwlink/?linkid=299838).
+1. Download all scripts and supporting files from [Public Folders Migration Scripts](https://www.microsoft.com/download/details.aspx?id=38407).
 
 2. Save the scripts to the local computer on which you'll be running PowerShell. For example, C:\\PFScripts. Make sure all scripts are saved in the same location.
 
@@ -483,9 +483,9 @@ In [Step 2: Prepare for the migration](#step-2-prepare-for-the-migration), you w
 
 After the migration is complete, and you have verified that your Exchange 2013 public folders are working as expected, you should remove the public folder databases on the legacy Exchange servers.
 
-- For details about how to remove public folder databases from Exchange 2007 servers, see [Removing Public Folder Databases](https://go.microsoft.com/fwlink/?linkid=123678).
+- For details about how to remove public folder databases from Exchange 2007 servers, see [Removing Public Folder Databases](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/cc164367(v=exchg.80)).
 
-- For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://go.microsoft.com/fwlink/?linkid=81409).
+- For details about how to remove public folder databases from Exchange 2010 servers, see [Remove Public Folder Databases](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd876883(v=exchg.141)).
 
 ## Roll back the migration
 

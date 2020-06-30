@@ -154,7 +154,7 @@ You can measure and monitor page zeroing functionality by viewing two ESE counte
   - MSExchange Database -\> Database Maintenance Pages Zeroed/sec: Indicates the rate at which pages are zeroed.
 
 > [!NOTE]
-> To learn how to enable these counters, see <A href="https://go.microsoft.com/fwlink/p/?linkid=101194">How to Enable Extended ESE Performance Counters</A>.
+> To learn how to enable these counters, see <A href="https://docs.microsoft.com/previous-versions/tn-archive/aa997018(v=exchg.65)">How to Enable Extended ESE Performance Counters</A>.
 
 Page zeroing is a database maintenance function, so performance information related to both page zeroing for run-time transactions and page zeroing due to background database maintenance is included in these counters.
 

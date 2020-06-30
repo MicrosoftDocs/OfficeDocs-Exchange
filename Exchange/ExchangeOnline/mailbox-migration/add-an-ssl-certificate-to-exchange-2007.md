@@ -42,7 +42,7 @@ Adding an SSL certificate to Microsoft Exchange Server 2007 is a three step proc
 ## Create a certificate request
 <a name="BK_Createrequest"> </a>
 
-To create a certificate request in Microsoft Exchange Server 2007, use the [New-ExchangeCertificate](https://go.microsoft.com/fwlink/p/?LinkId=615756) command. To run the **New-ExchangeCertificate** command, the account you use must be in the Exchange Server Administrator role and local Administrators group for the target server.
+To create a certificate request in Microsoft Exchange Server 2007, use the [New-ExchangeCertificate](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa998327(v=exchg.80)) command. To run the **New-ExchangeCertificate** command, the account you use must be in the Exchange Server Administrator role and local Administrators group for the target server.
 
  **To create a certificate request**
 
@@ -74,7 +74,7 @@ After you've saved the certificate request, submit the request to your CA. This 
 ## Import the certificate
 <a name="BK_import"> </a>
 
-After you receive the certificate from the CA, use the [Import-ExchangeCertificate](https://go.microsoft.com/fwlink/p/?LinkId=615769) command to import it.
+After you receive the certificate from the CA, use the [Import-ExchangeCertificate](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb124424(v=exchg.80)) command to import it.
 
  **To import the certificate request**
 
@@ -92,7 +92,7 @@ After you receive the certificate from the CA, use the [Import-ExchangeCertifica
 
  **To enable the certificate**
 
-1. To enable the certificate, you use the [Enable-ExchangeCertificate](https://go.microsoft.com/fwlink/p/?LinkId=615770) command. On the command line, type:
+1. To enable the certificate, you use the [Enable-ExchangeCertificate](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa997231(v=exchg.80)) command. On the command line, type:
 
     ```PowerShell
     Enable-ExchangeCertificate -Thumbprint 5113ae0233a72fccb75b1d0198628675333d010e -Services iis,smtp,pop,imap

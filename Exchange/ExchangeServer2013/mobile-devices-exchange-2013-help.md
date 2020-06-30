@@ -17,13 +17,13 @@ mtps_version: v=EXCHG.150
 
 _**Applies to:** Exchange Server 2013_
 
-Mobile devices that are enabled for Microsoft Exchange ActiveSync let users access most of their Microsoft Exchange mailbox data any time, anywhere. There are many different mobile phones and devices enabled for Exchange ActiveSync. These include Windows Phones, Nokia mobile phones, Android phones and tablets, and the Apple iPhone, iPod, and iPad.
+Mobile devices that are enabled for Microsoft Exchange ActiveSync let users access most of their Microsoft Exchange mailbox data any time, anywhere. There are many different mobile phones and devices enabled for Exchange ActiveSync. These include Android phones and tablets, as well as the Apple iPhone, iPod, and iPad.
 
 Although both phone and non-phone mobile devices support Exchange ActiveSync, in most Exchange ActiveSync documentation, we use the term *mobile device*. Unless the feature or features we're discussing require a cellular telephone signal, such as SMS message notification, the term mobile device applies to both mobile phones and other mobile devices such as tablets.
 
 ## Exchange ActiveSync
 
-Exchange ActiveSync is a communications protocol that enables mobile access, over the air, to email messages, scheduling data, contacts, and tasks. Exchange ActiveSync is available on Windows Phones and third-party phones that are enabled for Exchange ActiveSync.
+Exchange ActiveSync is a communications protocol that enables mobile access, over the air, to email messages, scheduling data, contacts, and tasks. Exchange ActiveSync is available on third-party phones that are enabled for Exchange ActiveSync.
 
 Exchange ActiveSync offers Direct Push technology. Direct Push uses an encrypted HTTPS connection that's established and maintained between the mobile device and the server to push new email messages and other Exchange data to the phone.
 

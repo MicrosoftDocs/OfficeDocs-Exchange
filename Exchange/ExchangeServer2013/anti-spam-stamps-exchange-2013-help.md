@@ -137,7 +137,7 @@ The following table describes the filter information that can appear in an anti-
 </tr>
 <tr class="even">
 <td><p>IPOnAllowList</p></td>
-<td><p>The IPOnAllowList stamp indicates that the sender's IP address is on the IP Allow list. For more information about the IP Allow list, see <a href="https://go.microsoft.com/fwlink/?linkid=268732">Understanding Connection Filtering</a>.</p></td>
+<td><p>The IPOnAllowList stamp indicates that the sender's IP address is on the IP Allow list. For more information about the IP Allow list, see <a href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124320(v=exchg.141)">Understanding Connection Filtering</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>MessageSecurityAntispamBypass</p></td>

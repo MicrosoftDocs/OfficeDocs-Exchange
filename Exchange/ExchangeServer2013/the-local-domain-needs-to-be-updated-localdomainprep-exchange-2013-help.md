@@ -27,4 +27,4 @@ Exchange setup requires that the user who is logged on when **Setup /PrepareDom
 
 To resolve this issue, grant the logged on user Domain Admins and Exchange Organization Administrator permissions, enroll them in the Enterprise Admins group, or log on with an account that has those permissions and rerun Exchange 2007 setup.
 
-For more information about Active Directory permissions that are needed with Microsoft Exchange, see "Working with Active Directory Permissions in Exchange Server" ([https://go.microsoft.com/fwlink/?LinkId=47592](https://go.microsoft.com/fwlink/?linkid=47592)).
+For more information about Active Directory permissions that are needed with Microsoft Exchange, see "Working with Active Directory Permissions in Exchange Server" ([https://docs.microsoft.com/previous-versions/tn-archive/bb124223(v=exchg.65)](https://docs.microsoft.com/previous-versions/tn-archive/bb124223(v=exchg.65))).

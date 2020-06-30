@@ -87,7 +87,7 @@ To address this issue, either reinstall just the failed server role(s), or remov
 
 ## To use the Exchange Server 2007 Setup wizard to reinstall the failed server role when no other server role was previously successfully installed
 
-1. Follow the guidance in "How to Perform a Custom Installation Using Exchange Server 2007 Setup" ([https://go.microsoft.com/fwlink/?LinkId=86648](https://go.microsoft.com/fwlink/?linkid=86648)) in the Exchange Server 2007 product documentation.
+1. Follow the guidance in "How to Perform a Custom Installation Using Exchange Server 2007 Setup" ([https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb125143(v=exchg.80)](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/bb125143(v=exchg.80))) in the Exchange Server 2007 product documentation.
 
 ## To remove the failed server role
 
@@ -95,4 +95,4 @@ Follow the guidance in [How to Remove Exchange 2007 Server Roles](https://docs.m
 
 ## For More Information
 
-For more information about how to install Exchange 2007 in unattended mode, see "How to Install Exchange 2007 in Unattended Mode" ([https://go.microsoft.com/fwlink/?LinkId=86476](https://go.microsoft.com/fwlink/?linkid=86476)).
+For more information about how to install Exchange 2007 in unattended mode, see "How to Install Exchange 2007 in Unattended Mode" ([https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa997281(v=exchg.80)](https://docs.microsoft.com/previous-versions/office/exchange-server-2007/aa997281(v=exchg.80))).

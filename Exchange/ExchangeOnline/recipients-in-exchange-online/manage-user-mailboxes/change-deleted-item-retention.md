@@ -89,7 +89,7 @@ A mailbox item is deleted and moved to the **Recoverable Items** folder when a u
 
  How long deleted items are kept in the **Deletions** folder depends on the deleted item retention period that is set for the mailbox. An Exchange Online mailbox keeps deleted items for 14 days, by default. Use Exchange Online PowerShell, as shown above, to change this setting, to increase the period up to a maximum of 30 days.
 
-Users can recover, or purge, deleted items before the retention time for a deleted item expires. To do so, they use the **Recover Deleted Items** feature in Outlook or Outlook on the web. See the following topics for [Outlook](https://go.microsoft.com/fwlink/p/?linkId=198206) or for [Outlook on the web](https://go.microsoft.com/fwlink/p/?LinkId=524924).
+Users can recover, or purge, deleted items before the retention time for a deleted item expires. To do so, they use the **Recover Deleted Items** feature in Outlook or Outlook on the web. See the following topics for [Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) or for [Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207).
 
 Additional help:
 

@@ -288,10 +288,10 @@ To verify that you've successfully assigned or removed the Send on Behalf permis
 
 For more information about how delegates can use the permissions that are assigned to them on mailboxes and groups, see the following topics:
 
-- [Access another person's mailbox](https://go.microsoft.com/fwlink/p/?LinkId=823179)
+- [Access another person's mailbox](https://support.microsoft.com/office/a909ad30-e413-40b5-a487-0ea70b763081)
 
-- [Open and use a shared mailbox in Outlook](https://go.microsoft.com/fwlink/p/?LinkId=816868)
+- [Open and use a shared mailbox in Outlook for Windows](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd)
 
-- [Open and use a shared mailbox in Outlook on the Web](https://go.microsoft.com/fwlink/p/?LinkId=816870)
+- [Open and use a shared mailbox in Outlook on the web](https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207)
 
-- [Send email from another person or group in Outlook on the Web](https://go.microsoft.com/fwlink/p/?LinkId=823180)
+- [Send email from or on behalf of an Office 365 group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)

@@ -26,7 +26,7 @@ Download and install the 64-bit update from the following URL, and then click **
 > [!NOTE]
 > If this update requires a reboot to complete installation, you'll need to exit Exchange 2013 Setup, reboot, and then start Setup again.
 
-[Microsoft Office 2010 Filter Packs](https://go.microsoft.com/fwlink/p/?linkid=191548)
+[Microsoft Office 2010 Filter Packs](https://www.microsoft.com/download/details.aspx?id=17062)
 
 > [!NOTE]
 > You must also install the Microsoft Office 2010 Filter Pack Service Pack 1 64-bit update. For more information, see <A href="office-2010-filter-pack-sp1-not-installed-exchange-2013-help.md">Office 2010 Filter Pack SP1 not installed</A>.

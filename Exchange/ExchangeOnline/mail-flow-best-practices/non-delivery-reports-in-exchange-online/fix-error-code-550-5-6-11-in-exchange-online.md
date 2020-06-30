@@ -34,7 +34,7 @@ A _bare line feed_ is a line feed (LF) character that's not immediately preceded
 
 Typically, each line in an email message ends with a carriage return followed by a line feed (CR LF).
 
-If a message contains bare line feeds, the SMTP Chunking feature is required to transmit the message between email servers. Chunking uses the SMTP BDAT command as defined in [RFC 3030](https://go.microsoft.com/fwlink/p/?LinkId=784893). If the destination email server doesn't support BDAT, then it can't accept messages that contain bare line feeds.
+If a message contains bare line feeds, the SMTP Chunking feature is required to transmit the message between email servers. Chunking uses the SMTP BDAT command as defined in [RFC 3030](https://tools.ietf.org/html/rfc3030). If the destination email server doesn't support BDAT, then it can't accept messages that contain bare line feeds.
 
 Microsoft 365 and Office 365 used to remove bare line feeds from messages to enable delivery to older email servers that didn't support SMTP Chunking and the BDAT command. In an effort to better support security standards (for example, DomainKeys Identified Mail or DKIM), Office 365 no longer removes bare line feeds from messages.
 
@@ -76,6 +76,6 @@ A _bare line feed_ is a single line feed character (LF or ASCII 10) that isn't i
 
 [Email non-delivery reports in Exchange Online](non-delivery-reports-in-exchange-online.md)
 
-[RFC 6376 DomainKeys Identified Mail (DKIM) Signatures](https://go.microsoft.com/fwlink/p/?LinkId=784892)
+[RFC 6376 DomainKeys Identified Mail (DKIM) Signatures](https://tools.ietf.org/html/rfc6376)
 
-[RFC 3030 SMTP Service Extensions for Transmission of Large and Binary Mime Messages (BDAT Support)](https://go.microsoft.com/fwlink/p/?LinkId=784893)
+[RFC 3030 SMTP Service Extensions for Transmission of Large and Binary Mime Messages (BDAT Support)](https://tools.ietf.org/html/rfc3030)

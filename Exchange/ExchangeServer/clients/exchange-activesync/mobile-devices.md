@@ -18,13 +18,13 @@ manager: serdars
 
 # Mobile devices
 
-There are many different mobile phones and devices enabled for Exchange ActiveSync. These include Windows Phones, Nokia mobile phones, Android phones and tablets, and the Apple iPhone, iPod, and iPad.
+There are many different mobile phones and devices enabled for Exchange ActiveSync. These include Android phones and tablets, as well as the Apple iPhone, iPod, and iPad.
 
 Both phone and non-phone mobile devices support Exchange ActiveSync, and in most Exchange ActiveSync documentation, we use the term *mobile device*. Unless the feature or features we're discussing require a cellular telephone signal, such as SMS message notification, the term mobile device applies to both mobile phones and other mobile devices such as tablets.
 
 ## What Exchange ActiveSync does
 
-Exchange ActiveSync is a communications protocol that enables over-the-air mobile access to email messages, scheduling data, contacts, and tasks. Exchange ActiveSync is available on Windows Phones and third-party phones that are enabled for Exchange ActiveSync.
+Exchange ActiveSync is a communications protocol that enables over-the-air mobile access to email messages, scheduling data, contacts, and tasks. Exchange ActiveSync is available on third-party phones that are enabled for Exchange ActiveSync.
 
 Exchange ActiveSync offers Direct Push technology. Direct Push uses an encrypted HTTPS connection that's established and maintained between the mobile device and the server to push new email messages and other Exchange data to the phone.
 

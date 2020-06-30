@@ -77,7 +77,7 @@ To test a rule, you can either send enough test messages to confirm that what yo
 
 One way to test is to sign in as both the sender and recipient of a test message.
 
-- If you don't have access to multiple accounts in your organization, you can test in a [trial account](https://go.microsoft.com/fwlink/p/?LinkId=402791) or create a few temporary fake users in your organization.
+- If you don't have access to multiple accounts in your organization, you can test in a [trial account](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-products) or create a few temporary fake users in your organization.
 
 - Because a web browser typically doesn't let you have simultaneous open sessions on the same computer signed in to multiple accounts, you can use [Internet Explorer InPrivate Browsing](https://support.microsoft.com/help/4026200), or a different computer, device, or web browser for each user.
 

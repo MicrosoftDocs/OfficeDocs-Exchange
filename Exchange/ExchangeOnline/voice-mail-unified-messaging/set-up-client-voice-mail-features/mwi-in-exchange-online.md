@@ -37,7 +37,7 @@ MWI notifications can include any mechanism that indicates the existence of a ne
 
   - Lync 2010 and 2013 desktop clients
 
-  - Lync Mobile client app for Windows Phone, Microsoft Surface. and iOS devices
+  - Lync Mobile client app for Microsoft Surface and iOS devices
 
 - A text or Short Messaging Service (SMS) message sent to a mobile phone that's configured to receive text messages.
 

@@ -39,34 +39,6 @@ For more information about all the settings you can configure, see Mobile device
 
 Mobile device mailbox policies can be created in the Exchange admin center (EAC) or the Exchange Management Shell. If you create a policy in the EAC, you can configure only a subset of the available settings. You can configure the rest of the settings using the Shell.
 
-## Windows Phone 7 synchronization
-
-If you have Windows Phone 7 mobile phones in your organization, these phones will experience synchronization problems if certain Exchange ActiveSync mailbox policy properties are configured. To allow Windows Phone 7 mobile phones to synchronize with an Exchange mailbox, either set the **AllowNonProvisionableDevices** property to True or only configure the following Exchange ActiveSync mailbox policy properties:
-
-  - AllowSimplePassword
-
-  - BlockInternetSharing
-
-  - BlockRemoteDesktop
-
-  - DisableDesktopSync
-
-  - DisableIrDA
-
-  - DisableRemovableStorage
-
-  - DeviceWipeThreshold
-
-  - MinPasswordLength
-
-  - IdleTimeoutFrequencyValue
-
-  - PasswordExpiration
-
-  - PasswordHistory
-
-  - PasswordRequired
-
 ## Mobile device mailbox policy settings
 
 The following table summarizes the settings you can specify using mobile device mailbox policies.
@@ -247,14 +219,7 @@ The following table summarizes the settings you can specify using mobile device 
 <li><p>Special characters (for example, exclamation marks).</p></li>
 </ul>
 <p>You can enter any number from 1 through 4. The default value is 1.</p>
-<p>For Windows Phone 8 devices, this setting specifies the number of character sets that are required in the password. For example, the value 3 requires at least one character from any three of the character sets.</p>
-<p>For Windows Phone 10 devices, this setting specifies the following password complexity requirements:</p>
-<ol>
-<li><p>Digits only.</p></li>
-<li><p>Digits and lower case letters.</p></li>
-<li><p>Digits, lower case letters, and upper case letters.</p></li>
-<li><p>Digits, lower case letters, upper case letters, and special characters.</p></li>
-</ol></td>
+</td>
 </tr>
 <tr class="even">
 <td><p>Min password length</p></td>

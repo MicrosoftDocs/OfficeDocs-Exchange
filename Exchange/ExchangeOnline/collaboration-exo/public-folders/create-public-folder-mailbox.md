@@ -25,7 +25,7 @@ Before you can create a public folder, you must first create a public folder mai
 > [!NOTE]
 > For more information about the storage quotas and limits for public folders, see [Exchange Online Limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
-For additional management tasks related to public folders in Exchange Online, see [Public folder procedures in Office 365 and Exchange Online](public-folder-procedures.md).
+For additional management tasks related to public folders in Exchange Online, see [Public folder procedures in Microsoft 365 or Office 365 and Exchange Online](public-folder-procedures.md).
 
 ## What do you need to know before you begin?
 

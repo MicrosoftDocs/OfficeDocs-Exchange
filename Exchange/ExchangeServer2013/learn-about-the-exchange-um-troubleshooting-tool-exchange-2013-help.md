@@ -24,7 +24,7 @@ The UM Troubleshooting Tool can be used to test whether voice mail is functionin
 > [!NOTE]
 > The UM Troubleshooting Tool is used for testing and troubleshooting. The <STRONG>Test-UMConnectivity</STRONG> cmdlet, on the other hand, should be used for monitoring. The <STRONG>Test-UMConnectivity</STRONG> cmdlet is used with System Center Operations Manager (SCOM) management packs that are used for monitoring Exchange 2010 UM servers or Exchange 2013 Client Access and Mailbox servers and the telephony components. The <STRONG>Test-UMConnectivity</STRONG> cmdlet performs local SIP tests and local logon tests to mailboxes, and can be run as an SCOM task.
 
-To download the UM Troubleshooting Tool, see [Unified Messaging Troubleshooting Tool](https://go.microsoft.com/fwlink/p/?linkid=182625).
+To download the UM Troubleshooting Tool, see [Unified Messaging Troubleshooting Tool](https://www.microsoft.com/download/details.aspx?id=20839).
 
 ## Overview
 
@@ -196,16 +196,16 @@ The UM Troubleshooting Tool can be installed on a local Unified Messaging server
 
 If you're using the UM Troubleshooting Tool on a 64-bit version of Windows 7, Windows 8, or the 64-bit edition of Windows Server 2008, the following components must be installed before you can install the UM Troubleshooting Tool:
 
-- Microsoft .NET Framework 3.5 Service Pack 1 (SP1)   See [Microsoft .NET Framework 3.5 Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=152380).
+- Microsoft .NET Framework 3.5 Service Pack 1 (SP1)   See [Microsoft .NET Framework 3.5 Service Pack 1](https://www.microsoft.com/download/details.aspx?id=22).
 
     > [!NOTE]
-    > If the tool will be run on a Windows Vista or Windows Server 2008 computer, see <A href="https://go.microsoft.com/fwlink/p/?linkid=178998">Microsoft .NET Framework 3.5 Family Update for Windows Vista x64, and Windows Server 2008 x64</A>.
+    > If the tool will be run on a Windows Vista or Windows Server 2008 computer, see <A href="https://www.microsoft.com/download/details.aspx?id=1055">Microsoft .NET Framework 3.5 Family Update for Windows Vista x64, and Windows Server 2008 x64</A>.
 
 - Windows Remote Management (WinRM) 2.0 and Windows PowerShell V2 (Windows6.0-KB968930.msu)   See Microsoft Knowledge Base article 968930, [Windows Management Framework Core package (Windows PowerShell 2.0 and WinRM 2.0)](https://support.microsoft.com/help/968930).
 
 - Microsoft Unified Communications Managed API 2.0 Core Runtime (UcmaRuntimeWebDownloadX64.msi).
 
-The UM Troubleshooting Tool (**Test-ExchangeUMCallFlow** cmdlet) isn't included on the Exchange 2010 SP1 DVD, the download that only includes Exchange 2010, or the Exchange 2013 installation media. However you can download the UM Troubleshooting Tool from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?linkid=182625).
+The UM Troubleshooting Tool (**Test-ExchangeUMCallFlow** cmdlet) isn't included on the Exchange 2010 SP1 DVD, the download that only includes Exchange 2010, or the Exchange 2013 installation media. However you can download the UM Troubleshooting Tool from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=20839).
 
 For details, see [Install the Exchange UM Troubleshooting Tool](install-the-exchange-um-troubleshooting-tool-exchange-2013-help.md).
 

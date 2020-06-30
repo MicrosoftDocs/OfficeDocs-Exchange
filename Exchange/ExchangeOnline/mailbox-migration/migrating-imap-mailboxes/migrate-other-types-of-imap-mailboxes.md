@@ -197,7 +197,7 @@ If you're migrating email from Mirapoint Message Server, use the format **#user@
 
 #### Courier IMAP and Oracle IMAP
 
-Some source email systems such as Courier IMAP and Oracle IMAP don't support using mailbox admin credentials to migrate mailboxes to Microsoft 365 or Office 365. Instead, you can set up your source email system to use virtual shared folders. Virtual shared folders allow you to use the mailbox admin credentials to access user mailboxes on the source email system. For more information about how to configure virtual shared folders for Courier IMAP, see [Shared Folders](https://go.microsoft.com/fwlink/p/?LinkId=398870).
+Some source email systems such as Courier IMAP and Oracle IMAP don't support using mailbox admin credentials to migrate mailboxes to Microsoft 365 or Office 365. Instead, you can set up your source email system to use virtual shared folders. Virtual shared folders allow you to use the mailbox admin credentials to access user mailboxes on the source email system. For more information about how to configure virtual shared folders for Courier IMAP, see [Shared Folders](https://www.courier-mta.org/imap/README.sharedfolders.html).
 
 To migrate mailboxes after you set up virtual shared folders on your source email system, you have to include the optional attribute **UserRoot** in the migration file. This attribute specifies the location of each user's mailbox in the virtual shared folder structure on the source email system. For example, the path to Alberta's mailbox is **/users/alberta**.
 

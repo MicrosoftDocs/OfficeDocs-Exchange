@@ -37,7 +37,7 @@ This topic explains how to use the Group Policy Management console (GPMC) to con
 
 ## Use the GPMC to configure the DNS suffix search list
 
-1. On a 32-bit computer in your domain, install GPMC with Service Pack 1 (SP1). For download information, see [Group Policy Management Console with Service Pack 1](https://go.microsoft.com/fwlink/p/?linkid=100126).
+1. On a 32-bit computer in your domain, install GPMC with Service Pack 1 (SP1). For download information, see [Group Policy Management Console with Service Pack 1](https://www.microsoft.com/download/details.aspx?id=21895).
 
     > [!NOTE]
     > If you have a computer in your domain running Windows Server 2008 or Windows Vista, you can skip this step.

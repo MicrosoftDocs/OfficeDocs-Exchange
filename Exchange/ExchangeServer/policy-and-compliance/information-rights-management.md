@@ -85,7 +85,7 @@ For more information about creating AD RMS rights policy templates, see [AD RMS 
 
 By default, an Exchange organization is enabled for IRM, but to apply IRM protection to messages, you need to use one or more of these methods:
 
-- **Manually by users in Outlook**: Users can IRM-protect messages in Outlook by using the AD RMS rights policy templates that are available to them. This process uses the IRM functionality in Outlook, not Exchange. For more information about using IRM in Outlook, see [Introduction to using IRM for email messages](https://go.microsoft.com/fwlink/p/?linkId=166897).
+- **Manually by users in Outlook**: Users can IRM-protect messages in Outlook by using the AD RMS rights policy templates that are available to them. This process uses the IRM functionality in Outlook, not Exchange. For more information about using IRM in Outlook, see [Introduction to using IRM for email messages](https://support.microsoft.com/office/bb643d33-4a3f-4ac7-9770-fd50d95f58dc).
 
 - **Manually by users in Outlook on the web**: When an administrator enables IRM in Outlook on the web (formerly known as Outlook Web App), users can IRM-protect messages that they send, and view IRM-protected messages that they receive. For more information about IRM in Outlook on the web, see [Understanding IRM in Outlook Web App](https://docs.microsoft.com/exchange/information-rights-management-in-outlook-web-app-exchange-2013-help).
 

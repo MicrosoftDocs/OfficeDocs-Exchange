@@ -183,7 +183,7 @@ When you're ready, do the following to prepare an individual domain in your Acti
 
 ## How do you know this worked?
 
-Once you've done all the steps above, you can check to make sure everything's gone smoothly. To do so, you'll use a tool called Active Directory Service Interfaces Editor (ADSI Edit). ADSI Edit is included as part of the Active Directory Domain Services Tools feature in Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2. If you want to know more about it, check out [ADSI Edit (adsiedit.msc)](https://go.microsoft.com/fwlink/p/?linkid=294644).
+Once you've done all the steps above, you can check to make sure everything's gone smoothly. To do so, you'll use a tool called Active Directory Service Interfaces Editor (ADSI Edit). ADSI Edit is included as part of the Active Directory Domain Services Tools feature in Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2. If you want to know more about it, check out [ADSI Edit (adsiedit.msc)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc773354(v=ws.10).
 
 > [!WARNING]
 > Never change values in ADSI Edit unless you're told to do so by Microsoft support. Changing values in ADSI Edit can cause irreparable harm to your Exchange organization and Active Directory.

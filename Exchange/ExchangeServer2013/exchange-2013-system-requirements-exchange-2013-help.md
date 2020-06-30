@@ -124,7 +124,7 @@ The following table lists the requirements for the network and the directory ser
 <li><p>Windows Server 2003 Standard Edition with Service Pack 2 (SP2) or later (32-bit or 64-bit)</p></li>
 <li><p>Windows Server 2003 Enterprise Edition with SP2 or later (32-bit or 64-bit)</p></li>
 </ul>
-<p>For more information about global catalog servers, see <a href="https://go.microsoft.com/fwlink/p/?linkid=178996">What is the Global Catalog</a>.</p></td>
+<p>For more information about global catalog servers, see <a href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc728188(v=ws.10)">What is the Global Catalog</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Domain controller</p></td>

@@ -41,4 +41,4 @@ To resolve this situation, configure the drives to match the original logical dr
 
       - To modify a drive letter, click it, click **Change**, click the drive letter you want to use, and then click **OK**.
 
-For more information about how to assign drive letters, see "Assign, change, or remove a drive letter" ([https://go.microsoft.com/fwlink/?LinkId=66764](https://go.microsoft.com/fwlink/?linkid=66764)).
+For more information about how to assign drive letters, see "Assign, change, or remove a drive letter" ([https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc757491(v=ws.10)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc757491(v=ws.10))).

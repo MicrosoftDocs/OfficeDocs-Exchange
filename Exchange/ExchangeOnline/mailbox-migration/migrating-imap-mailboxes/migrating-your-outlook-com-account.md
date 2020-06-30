@@ -56,8 +56,6 @@ After you have setup two-step verification, you can also obtain an app password 
 
     ![Note the app password in step 4](../media/07b49868-71a5-48c4-856c-85ad7bff6625.png)
 
-    If you use a Windows Phone 8 (or earlier) you need to replace the password you use to sign in to your email with the app password.
-
     > [!IMPORTANT]
     > Even though the page indicates this is for Windows Phone 8 (or earlier), **this list contains the app password your admin needs** to migrate you hotmail.com or outlook.com email to Office 365 for business. You will need this app password even if you set up two-step verification by using an Android or iPhone.
 
@@ -65,7 +63,7 @@ After you have setup two-step verification, you can also obtain an app password 
 
 6. On your mobile device, download the Microsoft Authenticator from your app store.
 
-    Choose on of the links take you to the Microsoft Authenticator for [Windows Phone](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6), [Android](https://play.google.com/store/apps/details?id=com.azure.authenticator) or [iOS](https://apps.apple.com/app/azure-authenticator/id983156458).
+    Microsoft Authenticator app is available for [Android](https://play.google.com/store/apps/details?id=com.azure.authenticator) or [iOS](https://apps.apple.com/app/azure-authenticator/id983156458).
 
 7. Open the Microsoft Authenticator app on your mobile device, and choose **+**. Scan the code on the **Set up an authenticator app** page.
 

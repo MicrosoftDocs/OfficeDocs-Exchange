@@ -235,7 +235,7 @@ The OWA for Devices app lets users in an Exchange 2013 on-premises deployment wi
 
 You can download the OWA for iPhone and OWA for iPad apps from the Apple App Store by searching for OWA for iPhone or OWA for iPad or download them from [OWA for iPhone in the Apple Store](https://itunes.apple.com/app/owa-for-iphone/id659503543) or [OWA for iPad in the Apple Store](https://itunes.apple.com/app/owa-for-ipad/id659524331). The table below shows the versions of iPad and iPhone that are supported.
 
-To learn more about OWA for iPhone and OWA for iPad, see [OWA for iPhone and OWA for iPad](https://go.microsoft.com/fwlink/p/?linkid=528333).
+To learn more about OWA for iPhone and OWA for iPad, see [OWA for iPhone and OWA for iPad](https://support.microsoft.com/office/7edbf8c6-1a0e-4be8-a374-2809e754eaaf).
 
 <table>
 <colgroup>

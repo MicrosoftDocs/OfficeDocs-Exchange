@@ -67,7 +67,7 @@ The Hybrid Configuration wizard automatically enables all hybrid deployment feat
 
 - **MailTips**: MailTips are informative messages displayed to users while they're composing a message. By enabling MailTips in the hybrid deployment, on-premises and Exchange Online senders can adjust messages they're composing to avoid undesirable situations or non-delivery reports (NDRs) between the organizations. Learn more at [MailTips in Exchange](https://docs.microsoft.com/exchange/mailtips-exchange-2013-help) and [MailTips in Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/mailtips/mailtips).
 
-- **Online archiving**: Online archiving enables the Exchange Online organization to host user email archives for both on-premises and Exchange Online users. Learn more at [Configure Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=266565).
+- **Online archiving**: Online archiving enables the Exchange Online organization to host user email archives for both on-premises and Exchange Online users. Learn more at [Configure Exchange Online Archiving](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes).
 
 - **Outlook on the web redirection**: Outlook on the web redirection provides a single, common URL to access both on-premises and Exchange Online mailboxes. Client Access servers automatically redirect Outlook on the web requests to on-premises mailbox servers or provides a link to users for their mailbox in the Exchange Online organization.
 

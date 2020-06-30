@@ -70,4 +70,4 @@ When using forced TLS transport, the sending and receiving servers examine the c
 
 In addition to using TLS, messages between the organizations are treated as "internal." This approach allows messages to bypass anti-spam settings and other services.
 
-Learn more about SSL certificates and domain security at [Certificate requirements for hybrid deployments](certificate-requirements.md) and [Understanding TLS Certificates](https://go.microsoft.com/fwlink/p/?linkid=187237).
+Learn more about SSL certificates and domain security at [Certificate requirements for hybrid deployments](certificate-requirements.md) and [Understanding TLS Certificates](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa998840(v=exchg.141)).

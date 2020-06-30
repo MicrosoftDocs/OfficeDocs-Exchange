@@ -29,7 +29,7 @@ If the FQDN of a computer matches the SMTP address of a recipient policy, this m
 
 To resolve this issue, rename the local computer or remove or rename the recipient policy and rerun Microsoft Exchange setup.
 
-**To rename the local computer**
+## To rename the local computer
 
 1. Open **System** in **Control Panel**.
 
@@ -40,9 +40,9 @@ To resolve this issue, rename the local computer or remove or rename the recipie
 4. Click **OK** to close the **System Properties** dialog box. You will be prompted to restart your computer to apply your changes.
 
 > [!IMPORTANT]
-> If the computer that you want to rename is a domain controller, see "Rename a domain controller" (<A href="https://go.microsoft.com/fwlink/?linkid=66828">https://go.microsoft.com/fwlink/?LinkId=66828</A>).
+> If the computer that you want to rename is a domain controller, see "Rename a domain controller" (<A href="https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc782761(v=ws.10)">https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc782761(v=ws.10)</A>).
 
-**To modify the recipient policy SMTP address**
+## To modify the recipient policy SMTP address
 
 1. Start Exchange System Manager.
 

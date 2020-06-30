@@ -170,7 +170,7 @@ You must complete the following steps to configure Unified Messaging to work wit
 
 8. Open the Exchange Management Shell and run the exchucutil.ps1 script located in the %Program Files%\\Microsoft\\Exchange Server\\V15\\Scripts folder. The exchucutil.ps1 script does the following:
 
-   - Grants Lync Server permission to read Exchange UM Active Directory components, specifically, the SIP URI dial plan that was created in the previous task. For details about how to configure permissions in Active Directory, see [How to Use ADSI Edit to Apply Permissions](https://go.microsoft.com/fwlink/p/?linkid=82751).
+   - Grants Lync Server permission to read Exchange UM Active Directory components, specifically, the SIP URI dial plan that was created in the previous task. For details about how to configure permissions in Active Directory, see [How to Use ADSI Edit to Apply Permissions](https://docs.microsoft.com/previous-versions/tn-archive/aa997502(v=exchg.65)).
 
    - Creates a UM IP gateway for each Lync Server pool or for each server running Lync Server Standard Edition that hosts users who will be enabled for Enterprise Voice. For details, see [Create a UM IP gateway](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/connect-voice-mail-system/create-um-ip-gateway).
 

@@ -55,7 +55,6 @@ The email client software that's used to listen to a Protected Voice Mail messag
 |Outlook|Protected voice messages are supported in Outlook 2010 and later versions.|
 |Outlook on the web|Outlook on the web supports Protected Voice Mail messages.|
 |Outlook Voice Access|Outlook Voice Access supports Protected Voice Mail.|
-|Windows Mobile or Windows Phone|Windows Mobile doesn't support Protected Voice Mail. However, Windows Phone 7 and Windows Phone 8 support Protected Voice Mail.|
 |Other third-party email clients|Protected Voice Mail isn't supported.|
 
 ## Protected voice message structure

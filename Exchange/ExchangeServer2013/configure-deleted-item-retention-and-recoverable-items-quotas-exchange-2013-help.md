@@ -20,7 +20,7 @@ _**Applies to:** Exchange Server 2013_
 When a user deletes items from the Deleted Items default folder by using the Delete, Shift+Delete, or **Empty Deleted Items Folder** actions, the items are moved to the **Recoverable Items\\Deletions** folder. The duration that deleted items remain in this folder is based on the deleted item retention settings configured for the mailbox database or the mailbox. By default, a mailbox database is configured to retain deleted items for 14 days, and the recoverable items warning quota and recoverable items quota are set to 20 gigabytes (GB) and 30 GB respectively.
 
 > [!NOTE]
-> Before the retention time for deleted items elapses, Microsoft Outlook and Microsoft Office&nbsp;Outlook Web App users can recover deleted items by using the Recover Deleted Items feature. To learn more about these features, see the "Recover deleted items" topic for <A href="https://go.microsoft.com/fwlink/p/?linkid=198206">Outlook</A> or <A href="https://go.microsoft.com/fwlink/p/?linkid=198207">Outlook Web App</A>.
+> Before the retention time for deleted items elapses, Microsoft Outlook and Microsoft Office&nbsp;Outlook Web App users can recover deleted items by using the Recover Deleted Items feature. To learn more about these features, see the "Recover deleted items" topic for <A href="https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce">Outlook</A> or <A href="https://support.microsoft.com/office/c3d8fc15-eeef-4f1c-81df-e27964b7edd4">Outlook Web App</A>.
 
 You can use the Shell to configure deleted item retention settings and recoverable items quotas for a mailbox or mailbox database. Deleted item retention settings are ignored when a mailbox is placed on In-Place Hold or litigation hold.
 

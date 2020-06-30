@@ -42,7 +42,7 @@ Depending on the hybrid deployment configuration that you want, an Exchange 2013
 
 - **More than one Exchange server**: If you choose to install more than one Exchange server in your on-premises organization, you can install the server roles on separate servers in your on-premises organization. For example, you could install one Exchange 2013 server that has the Mailbox and Client Access roles installed and also install another Exchange server that has only the Client Access server role installed. However, the best practice and recommended server configuration is to install both the Client Access and Mailbox server roles on each Exchange 2013 server deployed in your on-premises organization.
 
-Learn more about Exchange capacity planning at [Understanding Multiple Server Role Configurations in Capacity Planning](https://go.microsoft.com/fwlink/?LinkId=266576).
+Learn more about Exchange capacity planning at [Understanding Multiple Server Role Configurations in Capacity Planning](https://docs.microsoft.com/exchange/exchange-2013-sizing-and-capacity-planning-exchange-2013-help.md).
 
 ## Exchange server functionality in hybrid deployments
 
@@ -62,7 +62,7 @@ Exchange servers provide several important functions for your on-premises organi
 
 - **Message transport security**: Exchange 2013 servers with the Client Access and Mailbox server roles help to secure message communication between the on-premises and Exchange Online organizations by using the Domain Security functionality in Exchange 2013. Security can be increased by using mutual transport layer security authentication and encryption for message communications.
 
-    Learn more at [Understanding Domain Security](https://go.microsoft.com/fwlink/p/?LinkId=266581).
+    Learn more at [Understanding Domain Security](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124392(v=exchg.141)).
 
 - **Outlook Web App**: Exchange 2013 servers with the Client Access server role support configuring a single URL endpoint for external connections to on-premises and Exchange Online mailboxes. For on-premises mailboxes, Client Access servers are configured to service Outlook Web App requests. For Exchange Online organization mailboxes, Client Access servers are configured to automatically display a link to the Outlook Web App endpoint on the Exchange Online organization.
 

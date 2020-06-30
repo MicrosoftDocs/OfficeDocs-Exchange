@@ -25,7 +25,7 @@ For more information about preparing for cross-forest moves, including descripti
 
 ## What do you need to know before you begin?
 
-- Download the sample code from the [Prepare for Online Mailbox Move](https://go.microsoft.com/fwlink/p/?linkid=177882) page in the Microsoft Download Center.
+- Download the sample code from the [Prepare for Online Mailbox Move](https://www.microsoft.com/download/details.aspx?id=17741) page in the Microsoft Download Center.
 
 - To run the sample code, you need ILM 2007 Feature Pack 1 Service Pack 1 (SP1).
 

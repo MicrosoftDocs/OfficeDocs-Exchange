@@ -461,7 +461,7 @@ The values in the **source** field in the message tracking log indicate the tran
 </tr>
 <tr class="even">
 <td><p><strong>MAILBOXRULE</strong></p></td>
-<td><p>The event source was an Inbox rule. For more information, see <a href="https://go.microsoft.com/fwlink/?linkid=285479">Inbox rules</a>.</p></td>
+<td><p>The event source was an Inbox rule. For more information, see <a href="https://support.microsoft.com/office/edea3d17-00c9-434b-b9b7-26ee8d9f5622">Inbox rules</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MEETINGMESSAGEPROCESSOR</strong></p></td>

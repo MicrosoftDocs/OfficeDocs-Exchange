@@ -51,7 +51,7 @@ This article describes how to enable users in your Exchange 2013 on-premises env
 
 ## Step 1: Download the scripts
 
-1. Download the following files from [Mail-enabled Public Folders - directory sync from EXO to On-prem script](https://go.microsoft.com/fwlink/p/?LinkId=797795).
+1. Download the following files from [Mail-enabled Public Folders - directory sync from EXO to On-prem script](https://www.microsoft.com/download/details.aspx?id=52037).
 
    - `Import-PublicFolderMailboxes.ps1`
 

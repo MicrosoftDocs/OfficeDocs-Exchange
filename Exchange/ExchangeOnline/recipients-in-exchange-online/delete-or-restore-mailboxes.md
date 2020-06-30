@@ -83,7 +83,7 @@ This example deletes the user account for Walter Harp from Azure AD.
 Remove-MsolUser -UserPrincipalName <Walter Harp> -RemoveFromRecycleBin
 ```
 
-For more details, check out, [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?LinkID=809043).
+For more details, check out, [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser).
 
 ### How do you know this worked?
 
@@ -171,7 +171,7 @@ For other mailbox restoring scenarios related to hybrid infrastructures, refer t
 
 ## License removal
 
-For info on removing a license from a user in Microsoft 365 or Office 365 and Exchange Online, see [Delete a user from your organization](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide).
+For info on removing a license from a user in Microsoft 365 or Office 365 and Exchange Online, see [Delete a user from your organization](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
 
 > [!NOTE]
 > If the Microsoft 365 or Office 365 or Exchange Online license is removed from a user, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or Advanced eDiscovery. For more information, see the "Searching disconnected or de-licensed mailboxes" section in [Content Search](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).

@@ -81,10 +81,10 @@ Microsoft is working with VoIP gateway partners, AudioCodes and Dialogic, to add
 |**PBX model**|**PBX software release**|**Protocol**|**Gateway vendor**|**Gateway model**|**Configuration author**|**Configuration file download**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Cisco Call Manager 4.x|4.x|IP-to-IP|AudioCodes|AudioCodes|AudioCodes|[Download](https://www.audiocodes.com/solutions/microsoft-unified-messaging)|
-|Cisco Call Manager 5.1|5.1.0.9921-12|Direct SIP Connection|N.A.|N.A.|Microsoft|[Download](https://go.microsoft.com/fwlink/p/?linkId=225083)|
-|Cisco Unified Communications Manager 6.0 and 6.1|6.x|Direct SIP Connection|N.A.|N.A.|Microsoft|[Download](https://go.microsoft.com/fwlink/p/?linkId=225083)|
-|Cisco Unified Communications Manager 7.0|7.0.2.20000-5|Direct SIP Connection|N.A.|N.A.|Microsoft|[Download](https://go.microsoft.com/fwlink/p/?linkId=196361)|
-|Cisco Unified Communications Manager 8.0|8.0.3.20000-5|Direct SIP Connection|N.A.|N.A.|Microsoft|[Download](https://go.microsoft.com/fwlink/p/?linkId=213007)|
+|Cisco Call Manager 5.1|5.1.0.9921-12|Direct SIP Connection|N.A.|N.A.|Microsoft|[Download](https://www.microsoft.com/download/details.aspx?id=26834)|
+|Cisco Unified Communications Manager 6.0 and 6.1|6.x|Direct SIP Connection|N.A.|N.A.|Microsoft|[Download](https://www.microsoft.com/download/details.aspx?id=26834)|
+|Cisco Unified Communications Manager 7.0|7.0.2.20000-5|Direct SIP Connection|N.A.|N.A.|Microsoft|[Download](https://www.microsoft.com/download/details.aspx?id=18298)|
+|Cisco Unified Communications Manager 8.0|8.0.3.20000-5|Direct SIP Connection|N.A.|N.A.|Microsoft|[Download](https://www.microsoft.com/download/details.aspx?id=13591)|
 
 ### Inter-Tel
 <a name="inter-tel"> </a>

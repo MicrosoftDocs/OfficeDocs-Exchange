@@ -64,11 +64,11 @@ Caller ID look-up is integrated with contact aggregation, so that it searches ac
 
 Exchange Server 2013 UM introduces some enhancements to the speech platform and speech recognition, including the following:
 
-  - Enhancements and improved accuracy for Voice Mail Preview.
+- Enhancements and improved accuracy for Voice Mail Preview.
 
-  - Support for the [Microsoft Speech Platform - Runtime (Version 11.0)](https://go.microsoft.com/fwlink/p/?linkid=253196).
+- Support for the [Microsoft Speech Platform - Runtime (Version 11.0)](https://www.microsoft.com/download/details.aspx?id=27225).
 
-  - Speech grammar generation using the system mailbox for an organization.
+- Speech grammar generation using the system mailbox for an organization.
 
 Exchange Unified Messaging uses static and dynamic speech grammars to recognize commands, names of contacts in the global address list, and names of personal contacts in the user's mailbox. Today, in Exchange Server 2013, every Mailbox server running the Microsoft Exchange Unified Messaging service generates grammars for all UM languages installed on it and stores them in directories. Every Mailbox server stores every possible grammar, which it generates based on the number of dial plans, auto attendants, and the UM languages that are installed.
 

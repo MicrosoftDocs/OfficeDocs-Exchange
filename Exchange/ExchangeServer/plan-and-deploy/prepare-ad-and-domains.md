@@ -209,7 +209,7 @@ E:\Setup.exe /IAcceptExchangeServerLicenseTerms /PrepareDomain
 
 To verify that you successfully prepared Active Directory and domains for Exchange, use any of the following steps:
 
-- Use ADSI Edit and the information from the tables in the next section to verify that the specified objects have the correct values for the release of Exchange that you're installing. To learn more about ADSI Edit, see [ADSI Edit (adsiedit.msc)](https://go.microsoft.com/fwlink/p/?LinkId=294644).
+- Use ADSI Edit and the information from the tables in the next section to verify that the specified objects have the correct values for the release of Exchange that you're installing. To learn more about ADSI Edit, see [ADSI Edit (adsiedit.msc)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc773354(v=ws.10)).
 
 > [!CAUTION]
 > Never change values in ADSI Edit unless you're told to do so by Microsoft Customer Service and Support. Changing values in ADSI Edit can cause irreparable damage to your Exchange organization and Active Directory.

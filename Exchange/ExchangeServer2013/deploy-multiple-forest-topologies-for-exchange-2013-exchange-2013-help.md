@@ -57,7 +57,7 @@ By default, a GAL contains mail recipients from a single forest. If you have a c
 
 To enable GAL synchronization, you create management agents that import mail-enabled users, contacts, and groups from designated Active Directory services into a centralized metadirectory. In the metadirectory, mail-enabled objects are represented as mail users. Groups are represented as contacts without any associated membership. The management agents then export these mail users to an organizational unit in the specified target forest.
 
-For more information about Forefront Identity Manager (FIM), see [Forefront Identity Manager 2010](https://go.microsoft.com/fwlink/p/?linkid=279864).
+For more information about Forefront Identity Manager (FIM), see [Forefront Identity Manager 2010](https://docs.microsoft.com/previous-versions/tn-archive/ff630889(v=technet.10)).
 
 ## Moving mailboxes across forests
 

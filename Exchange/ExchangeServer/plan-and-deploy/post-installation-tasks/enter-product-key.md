@@ -28,11 +28,11 @@ If you don't enter a product key, your server is automatically licensed as a tri
 
  **Note**: If you want to install or activate Office, check out:
 
-- [Install Office](https://go.microsoft.com/fwlink/p/?LinkId=403360)
+- [Install Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
-- [Need help with your Office product key?](https://go.microsoft.com/fwlink/p/?LinkId=403361)
+- [Need help with your Office product key?](https://support.microsoft.com/office/0a82e5ae-739e-4b92-a6f4-2ec780c185db)
 
-If you want to enter a product key on an older version of Exchange, check out [Enter an Exchange 2010 product key](https://go.microsoft.com/fwlink/p/?LinkId=403370).
+If you want to enter a product key on an older version of Exchange, check out [Enter an Exchange 2010 product key](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/bb124582(v=exchg.141)).
 
 If you want to enter a product key on an Exchange 2016 or Exchange 2019 server, you're in the right place! Read on.
 

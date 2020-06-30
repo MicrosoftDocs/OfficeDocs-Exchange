@@ -52,7 +52,7 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
 - Configure federated sharing for the Exchange 2013 organization. Complete the steps in [Configure federated sharing](configure-federated-sharing-exchange-2013-help.md).
 
-- Configure federated delegation (previous name for federated sharing) for the Exchange 2010 SP2 organization. Complete the steps in [Configure federated delegation](https://go.microsoft.com/fwlink/p/?linkid=268410).
+- Configure federated delegation (previous name for federated sharing) for the Exchange 2010 SP2 organization. Complete the steps in [Configure federated delegation](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff601760(v=exchg.141)).
 
 ## Configure free/busy sharing between Exchange 2013 and Exchange 2007 organizations
 
@@ -62,11 +62,11 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
   1. **Add an Exchange 2010 SP2 server**
 
-     An Exchange 2010 SP2 server with the Client Access server role must be installed in the Exchange 2007 organization. If you have existing Exchange 2010 servers, they should also be updated to Exchange 2010 SP2. For information about installing Exchange 2010 in an Exchange 2007 organization, see [Exchange 2007 - Planning Roadmap for Upgrade and Coexistence](https://go.microsoft.com/fwlink/p/?linkid=268411).
+     An Exchange 2010 SP2 server with the Client Access server role must be installed in the Exchange 2007 organization. If you have existing Exchange 2010 servers, they should also be updated to Exchange 2010 SP2. For information about installing Exchange 2010 in an Exchange 2007 organization, see [Exchange 2007 - Planning Roadmap for Upgrade and Coexistence](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/dd638158(v=exchg.141)).
 
   2. **Configure federated delegation**
 
-     Configure federated delegation for the Exchange 2007 organization. On an Exchange 2010 SP2 server in the Exchange 2007 organization, complete the steps in [Configure federated delegation](https://go.microsoft.com/fwlink/p/?linkid=268410).
+     Configure federated delegation for the Exchange 2007 organization. On an Exchange 2010 SP2 server in the Exchange 2007 organization, complete the steps in [Configure federated delegation](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff601760(v=exchg.141)).
 
   3. **Configure Active Directory synchronization**
 
@@ -104,14 +104,14 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
   1. **Add Exchange 2010 SP2 server**.
 
-     An Exchange 2010 SP2 server with the Client Access server role must be installed in the Exchange 2003 organization. If you have existing Exchange 2010 servers, they should also be updated to Exchange 2010 SP2. For information about installing Exchange 2010 in an Exchange 2003 organization, see [Exchange 2003 - Planning Roadmap for Upgrade and Coexistence](https://go.microsoft.com/fwlink/?linkid=268414).
+     An Exchange 2010 SP2 server with the Client Access server role must be installed in the Exchange 2003 organization. If you have existing Exchange 2010 servers, they should also be updated to Exchange 2010 SP2. For information about installing Exchange 2010 in an Exchange 2003 organization, see [Exchange 2003 - Planning Roadmap for Upgrade and Coexistence](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/aa998186(v=exchg.141)).
 
      > [!IMPORTANT]
      > For free/busy sharing to work properly between Exchange 2013 and Exchange 2003 organizations, the **OU=EXTERNAL (FYDIBOHF25SPDLT)** public folder must exist in the public folder hierarchy. This folder is automatically created on the Exchange 2010 Mailbox server in the Exchange 2003 organization only if you select the option to create public folders as part of configuring client settings for Outlook 2003 support during Exchange 2010 Setup. Additionally, this option is presented during the setup process only if the Exchange 2010 Mailbox server is the first Mailbox server installed in the organization. If the **OU=EXTERNAL (FYDIBOHF25SPDLT)** public folder wasn't created during Setup, you must manually create it. For details about how to create this public folder, see [How to troubleshoot free/busy issues in a hybrid deployment of on-premises Exchange Server and Exchange Online in Office 365](https://support.microsoft.com/help/2555008/how-to-troubleshoot-free-busy-issues-in-a-hybrid-deployment-of-on-prem).
 
   2. **Configure federated delegation**.
 
-     Configure federated delegation for the Exchange 2003 organization. On an Exchange 2010 SP2 server in the Exchange 2003 organization, complete the steps in [Configure federated delegation](https://go.microsoft.com/fwlink/p/?linkid=268410).
+     Configure federated delegation for the Exchange 2003 organization. On an Exchange 2010 SP2 server in the Exchange 2003 organization, complete the steps in [Configure federated delegation](https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff601760(v=exchg.141)).
 
   3. **Configure Active Directory synchronization**.
 
@@ -163,4 +163,4 @@ Complete the steps in [Configure federated sharing](configure-federated-sharing-
 
      Modify the *LegacyExchangeDN* parameter on all mail-enabled objects in the Exchange 2003 organization that reference the remote Exchange 2013 organization. Change the existing organizational unit (OU) value for the mail-enabled object to **External (FYDIBOHF25SPDLT)**. For example, **LegacyExchangeDN=/o=First Organization/ou=External (FYDIBOHF25SPDLT)/cn=Recipients/cn=User Name**.
 
-     To modify mail-enabled objects in the Exchange 2003 organization, you can use the [Active Directory Service Interfaces Editor (ADSI Edit) tool](https://go.microsoft.com/fwlink/?linkid=294644).
+     To modify mail-enabled objects in the Exchange 2003 organization, you can use the [Active Directory Service Interfaces Editor (ADSI Edit) tool](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc773354(v=ws.10)).

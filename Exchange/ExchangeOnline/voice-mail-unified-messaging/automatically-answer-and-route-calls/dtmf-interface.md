@@ -108,11 +108,3 @@ After the DTMF map values have been created for a UM-enabled user, callers can u
 For more information about how to enable a user for Unified Messaging, see [Enable a user for voice mail](../../voice-mail-unified-messaging/set-up-voice-mail/enable-a-user-for-voice-mail.md).
 
 Sometimes a user's first name, last name, or email alias changes after the user is enabled for UM. The user's DTMF map values aren't updated automatically. If a caller enters the user's new name or email alias and the user's DTMF map hasn't been updated to reflect the change to the name or email alias, the caller won't be able to locate the user in the directory, send a message to the user, or transfer calls to the user. If you have to update a user's DTMF map after the user has been enabled for UM, you can use the **Set-User** cmdlet with the _-CreateDtmfMap_ parameter. You can also create PowerShell script using this cmdlet if you want to update the DTMF maps for multiple UM-enabled users.
-
-> [!CAUTION]
-> We recommend that you don't manually change the DTMF values for users by using a tool such as ADSI Edit because it might result in inconsistent configurations or other errors. We recommend that you use only the **Set-UMService** cmdlet or the **Set-User** cmdlet to create or update DTMF maps for users.
-
-## For more information
-<a name="fmi"> </a>
-
-[Adsiedit Overview](https://go.microsoft.com/fwlink/p/?linkId=73175)

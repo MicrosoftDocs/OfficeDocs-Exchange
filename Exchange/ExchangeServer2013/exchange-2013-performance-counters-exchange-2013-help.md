@@ -259,7 +259,7 @@ The following tables displays acceptable thresholds and information about common
 The following table shows active log I/O latency requirements counters and their acceptable thresholds. When thresholds are exceeded, the client experience degrades. For example, users may experience message delivery delays or slow system performance.
 
 > [!NOTE]
-> Normal storage latency guidance in Exchange 2013 is very similar to the guidance from Exchange 2010. Additional database counters can be found in <A href="https://go.microsoft.com/fwlink/p/?linkid=525622">Mailbox Server Counters</A>.
+> Normal storage latency guidance in Exchange 2013 is very similar to the guidance from Exchange 2010. Additional database counters can be found in <A href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff367871(v=exchg.141)">Mailbox Server Counters</A>.
 
 <table>
 <colgroup>
@@ -469,7 +469,7 @@ The following tables displays information about HTTP Proxy counters.
 The following tables displays acceptable thresholds and information about Information Store counters.
 
 > [!NOTE]
-> Normal storage latency guidance in Exchange 2013 is very similar to the guidance from Exchange 2010. Additional Information Store counters can be found in <A href="https://go.microsoft.com/fwlink/p/?linkid=525622">Mailbox Server Counters</A>.
+> Normal storage latency guidance in Exchange 2013 is very similar to the guidance from Exchange 2010. Additional Information Store counters can be found in <A href="https://docs.microsoft.com/previous-versions/office/exchange-server-2010/ff367871(v=exchg.141)">Mailbox Server Counters</A>.
 
 <table>
 <colgroup>

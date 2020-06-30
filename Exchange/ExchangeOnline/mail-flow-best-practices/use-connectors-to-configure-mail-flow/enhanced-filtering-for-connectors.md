@@ -74,14 +74,14 @@ Using the previous example, you would configure the IP address of the third-part
 
 - The cmdlets to manage inbound connectors are available in Exchange Online PowerShell. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- The account you use for the procedures needs to be a Microsoft 365 or Office 365 Exchange administrator. For more information about permissions in the Security & Compliance Center, see [Permissions in security and compliance centers](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
+- The account you use for the procedures needs to be a Microsoft 365 or Office 365 Exchange administrator. For more information about permissions in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
 
 ### Use the Security & Compliance Center to configure Enhanced Filtering for Connectors on an inbound connector
 
 1. Open the Security and Compliance Center, expand **Threat Management**, choose **Policy**, and then choose **Enhanced Filtering**.
 
    > [!TIP]
-   > To go directly to the **Enhanced Filtering** page in the Security & Compliance Center, use this URL: [https://protection.office.com/skip listing](https://protection.office.com/skiplisting)
+   > To go directly to the **Enhanced Filtering** page in the Security & Compliance Center, use this URL: [https://protection.office.com/skiplisting](https://protection.office.com/skiplisting)
 
 2. Select the inbound connector that you want to configure.
 

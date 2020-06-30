@@ -60,7 +60,7 @@ Voice Mail Preview text is available in the following languages:
 
 - Spanish (Spain) (es-ES)
 
-If you have an on-premises or hybrid deployment of UM, you can download the UM language packs from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=266542).
+If you have an on-premises or hybrid deployment of UM, you can download the UM language packs from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35368).
 
 If you have an on-premises or hybrid deployment, after you install a UM language pack, the dial plans and auto attendants can be configured to use the language you've chosen. For online customers, you don't have to install any UM language packs. Many companies have only one UM dial plan. UM will try to create a voice mail preview in the default dial plan language, but will only be successful if the default language supports Voice Mail Preview. A UM dial plan can only be configured to create voice mail previews in one language at a time.
 
