@@ -1,0 +1,32 @@
+Exchange Online supports the journaling of Unified Messaging voice mail and missed call notifications. An organization can disable the journaling of these messages by running the “VoicemailJournalingEnable” cmdlet detailed below. When voice mail journaling is disabled all Unified Messages, which contain the following messages classes will not be journaled. It is important to be aware that messages that are “spoof” using these message class will not be journaled.”
+
+"IPM.Note.Microsoft.Voicemail.UM"
+"IPM.Note.Microsoft.Voicemail.UM.CA"
+"IPM.Note.Microsoft.Missed.Voice"
+"IPM.Note.rpmsg.Microsoft.Voicemail.UM.CA"
+"IPM.Note.rpmsg.Microsoft.Voicemail.UM" 
+     
+What do you need to know before you begin?
+Estimated time to complete each procedure: 5 minutes.
+
+You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Journaling" entry in the Feature permissions in Exchange Online topic.
+
+You can only use Exchange Online PowerShell to perform this procedure.
+
+For information about keyboard shortcuts that may apply to the procedures in this topic, see Keyboard shortcuts in the Exchange admin center.
+
+ 
+Use Exchange Online PowerShellShell to disable or enable journaling of voice mail and missed call notifications
+This example disables journaling of voice mail and missed call notifications by setting the VoicemailJournalingEnabled parameter to $false.
+
+PowerShell
+
+Copy
+Set-TransportConfig -VoicemailJournalingEnabled $false
+This example enables the journaling of voice mail and missed call notifications by setting the same parameter to $true.
+
+PowerShell
+
+Copy
+Set-TransportConfig -VoicemailJournalingEnabled $true
+For detailed syntax and parameter information, see Set-TransportConfig.
