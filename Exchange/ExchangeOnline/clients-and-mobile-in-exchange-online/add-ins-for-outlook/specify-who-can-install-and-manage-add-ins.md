@@ -65,13 +65,13 @@ For information about add-ins, see [Add-ins for Outlook](add-ins-for-outlook.md)
 
 ### Use the EAC to assign permissions to administrators
 
-You can use the EAC to assign administrators the permissions required to install and manage add-ins that are available from the Office Store for your organization.
+You can use the Exchange Admin Center (EAC) to assign administrators the permissions required to install and manage add-ins that are available from the Office Store for your organization.
 
 ## Assign users the permissions required to install and manage add-ins for their own use
 
 ### Use the EAC to assign permissions to users
 
-You can use the EAC to assign users the permissions required to view and modify custom add-ins for their own use. For detailed information about how to do this, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
+You can use the Exchange Admin Center (EAC) to assign users the permissions required to view and modify custom add-ins for their own use. For detailed information about how to do this, see [Manage role groups in Exchange Online](../../permissions-exo/role-groups.md).
 
 ## Prevent add-in downloads by turning off the Office Store across Outlook
 

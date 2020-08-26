@@ -43,11 +43,13 @@ Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../e
 - Estimated time to complete: 30 minutes
 
     > [!IMPORTANT]
-    > Configuring the requirements for a hybrid deployment will take considerably longer than the estimated time to complete the Hybrid Configuration wizard procedures outlined in this topic. For example, signing up for Office 365 for enterprises, configuring Active Directory synchronization, and assigning Exchange Online licenses require a larger time investment and may also include network topology changes. You should plan for more than the time listed to complete this procedure for the overall time to complete the end-to-end hybrid deployment configuration.
+    > Configuring the requirements for a hybrid deployment will take considerably longer than the estimated time to complete the Hybrid Configuration wizard procedures outlined in this topic. For example, signing up for Microsoft 365 or Office 365 for enterprises, configuring Active Directory synchronization, and assigning Exchange Online licenses require a larger time investment and may also include network topology changes. You should plan for more than the time listed to complete this procedure for the overall time to complete the end-to-end hybrid deployment configuration.
 
 - You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Hybrid deployments" entry in the [Exchange and PowerShell infrastructure permissions](https://docs.microsoft.com/Exchange/permissions/feature-permissions/infrastructure-permissions) topic.
 
-- You need to run the Hybrid Configuration Wizard from a computer running the latest release of a supported version of Exchange. The final steps in the Hybrid Configuration wizard for configuring Exchange OAuth authentication require that the steps are performed from an on-premises Exchange or from any domain-joined server or workstation. Additionally, the OAuth authentication process works best when using the desktop version of Internet Explorer 11 or greater.
+- You need to run the Hybrid Configuration Wizard from a computer running the latest release of a supported version of on-premises Exchange, or from any domain-joined server or workstation capable of establishing remote PowerShell connections to the Client Access Server or Mailbox Server chosen for hybrid configuration. 
+
+- You need to download the Hybrid Configuration Wizard from a browser that supports ClickOnce technology (for example, the latest version of Microsoft Edge).
 
 - Review [Exchange Server Hybrid Deployments](../exchange-hybrid.md), and make sure you understand the areas that will be affected by configuring a hybrid deployment.
 
@@ -64,7 +66,7 @@ Learn more about hybrid deployments at [Exchange Server Hybrid Deployments](../e
 
 Use the following procedure to create and configure a hybrid deployment:
 
-1. Download the latest Hybrid Configuration Wizard from [here](https://aka.ms/hybridwizard).
+1. Download the latest Hybrid Configuration Wizard from [here](https://aka.ms/hybridwizard) or from the hybrid tab of the Exchange Online Admin Center.
 
 2. When you're prompted, click **Install** on the **Application Install** dialog.
 
@@ -94,6 +96,9 @@ Use the following procedure to create and configure a hybrid deployment:
     > This step will appear if you have more than one on-premises accepted domain added to your Microsoft 365 or Office 365 organization.
 
 11. On the **Federation Trust** page, click **Enable** and then click **Next**.
+
+    > [!NOTE]
+    > Steps 11 and 12 will appear only if there are Exchange 2010 servers on-premises.
 
 12. On the **Domain Ownership** page, click **Click copy to clipboard** to copy the domain proof token information for the domains you've selected to include in the hybrid deployment. Open a text editor such as Notepad and paste the token information for these domains. Before continuing in the Hybrid Configuration Wizard, you must use this information to create a TXT record for each domain in your public DNS. Refer to your DNS host's Help for information about how to add a TXT record to your DNS zone. Click **Next** after the TXT records have been created and the DNS records have replicated.
 
