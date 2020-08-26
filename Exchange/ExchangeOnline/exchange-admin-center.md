@@ -41,6 +41,9 @@ You can also get to the Exchange admin center directly by using a URL. To do thi
 
 Here's what the Modern Exchange admin center looks like.
 
+![UI elements of the modern EAC](media/ss1_wip.png)
+
+![Details pane of the modern EAC](media/ss2_wip.png)
 
 ### Feature pane
 
