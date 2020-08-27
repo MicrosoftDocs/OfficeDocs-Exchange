@@ -41,7 +41,9 @@ You can also get to the Exchange admin center directly by using a URL. To do thi
 
 Here's what the Modern Exchange admin center looks like.
 
-image needs to be added
+![change admin centre features](media/ModernExchangeAdminCenter1.png)
+
+![change admin detail pane](media/ModernExchangeAdminCenter2.png)
 
 ### Feature pane
 
