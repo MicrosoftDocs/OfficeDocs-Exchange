@@ -32,7 +32,7 @@ You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/micro
 
     ![Modern EAC](media/EAC-selection.PNG)
 
-You can also get to the Modern Exchange admin center directly by using a URL. To do this, go to [https://admin.microsoft.com](https://admin.microsoft.com) and sign in using your credentials.
+You can also get to the Modern Exchange admin center directly by using a URL. To do this, go to [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and sign in using your credentials.
 
 > [!NOTE]
 > Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
