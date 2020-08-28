@@ -30,7 +30,7 @@ You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/micro
 
 2. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
-    ![Modern EAC](media/admin-center-choice.PNG)
+    ![Modern EAC](media/EAC-selection.PNG)
 
 You can also get to the Modern Exchange admin center directly by using a URL. To do this, go to [https://admin.microsoft.com](https://admin.microsoft.com) and sign in using your credentials.
 
@@ -41,9 +41,9 @@ You can also get to the Modern Exchange admin center directly by using a URL. To
 
 Here's what the Modern Exchange admin center looks like.
 
-![change admin centre features](media/ModernExchangeAdminCenter1.png)
+![change admin centre features](media/Modern-Exchange-Admin-Center1.PNG)
 
-![change admin detail pane](media/ModernExchangeAdminCenter2.png)
+![change admin detail pane](media/Modern-Exchange-Admin-Center2.PNG)
 
 ### Feature pane
 
@@ -51,11 +51,10 @@ Here are the features you'll find in the left-hand navigation.
 
 |**Area**|**What you do here**|
 |:-----|:-----|
-|**Recipients**|View and manage your mailboxes, resource mailboxes, contacts, and shared mailboxes.|
-|**Mail flow**|Manage remote domains, accepted domains, connectors, and message tracing.|
+|**Recipients**|View and manage your mailboxes, groups, resource mailboxes, contacts, and shared mailboxes.|
+|**Mail flow**|Manage remote domains, accepted domains, connectors, message tracing, alerts, and alert policies.|
 |**Migration**|Manage the migration of emails, and mailboxes in batches.|
 |**Reports**|View and manage reports on mail flow and migration batches.|
-|**Alerts**|View alerts report on the status of mailbox and mail flow.|
 |**Insights**|View and use the recommendations to discover trends, insights and take actions to fix issues related to mailbox and mail flow.|
 |**More features**|View and access features and services from the classic exchange admin center.|
 
