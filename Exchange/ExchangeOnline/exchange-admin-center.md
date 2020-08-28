@@ -53,10 +53,10 @@ Here are the features you'll find in the left-hand navigation.
 |:-----|:-----|
 |**Recipients**|View and manage your mailboxes, groups, resource mailboxes, contacts, and shared mailboxes.|
 |**Mail flow**|Manage remote domains, accepted domains, connectors, message tracing, alerts, and alert policies.|
-|**Migration**|Manage the migration of emails, and mailboxes in batches.|
-|**Reports**|View and manage reports on mail flow and migration batches.|
-|**Insights**|View and use the recommendations to discover trends, insights and take actions to fix issues related to mailbox and mail flow.|
-|**More features**|View and access features and services from the classic exchange admin center.|
+|**Migration**|Migration of mailboxes in batches.|
+|**Reports**|View reports on mail flow and migration batches.|
+|**Insights**|Use the recommendations to discover trends, insights and take actions to fix issues related to mailbox and mail flow.|
+|**More features**|Access features and services from the classic exchange admin center.|
 
 ### Tabs
 
