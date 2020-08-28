@@ -22,17 +22,17 @@ manager: serdars
 
 You use the Exchange admin center to manage email settings for your organization.
 
-## Get to the Exchange admin center
+## Get to the Modern Exchange admin center
 
-You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
+You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the Modern Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
 
 1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
 
 2. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
-    ![Get to the Exchange admin center](media/ae439954-b836-47fa-9d02-3709b93cdb10.jpg)
+    ![Modern EAC](media/admin-center-choice.PNG)
 
-You can also get to the Exchange admin center directly by using a URL. To do this, go to [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) and sign in using your credentials.
+You can also get to the Modern Exchange admin center directly by using a URL. To do this, go to [https://admin.microsoft.com](https://admin.microsoft.com) and sign in using your credentials.
 
 > [!NOTE]
 > Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
@@ -78,6 +78,21 @@ When you select an item from the list view, information about that object is dis
 ### Centers, Me tile, and Help
 
 The Centers tile allows you to change from one admin center to another. The Me tile allows you to sign out of the EAC and sign in as a different user. The Help bubble displays contextual help for fields when you create or edit an object.
+
+## Get to the Classic Exchange admin center
+
+You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
+
+1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
+
+2. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
+
+    ![Get to the Exchange admin center](media/ae439954-b836-47fa-9d02-3709b93cdb10.jpg)
+
+You can also get to the Classic Exchange admin center directly by using a URL. To do this, go to [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) and sign in using your credentials.
+
+> [!NOTE]
+> Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
 
 ## Classic Exchange admin center features
 
@@ -128,7 +143,7 @@ The Centers tile allows you to change from one admin center to another. The Me t
 
 - **Help**: Click ![Help Icon](media/ITPro_EAC_HelpIcon.gif) to view the online help content.
 
-- **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit and object. You can turn off the Help bubble help or turn it on if it has been disabled.
+- **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object. You can turn off the Help bubble or turn it on if it has been disabled.
 
 ## Supported browsers
 
