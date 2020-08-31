@@ -22,7 +22,7 @@ manager: serdars
 
 You use the Exchange admin center to manage email settings for your organization.
 
-## Get to the New Exchange admin center
+## Get to the New Exchange admin center 
 
 You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the New Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
 
