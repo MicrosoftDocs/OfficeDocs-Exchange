@@ -22,9 +22,9 @@ manager: serdars
 
 You use the Exchange admin center to manage email settings for your organization.
 
-## Get to the Modern Exchange admin center
+## Get to the New Exchange admin center
 
-You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the Modern Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
+You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the New Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
 
 1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
 
@@ -32,14 +32,14 @@ You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/micro
 
     ![Modern EAC](media/EAC-selection.PNG)
 
-You can also get to the Modern Exchange admin center directly by using a URL. To do this, go to [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and sign in using your credentials.
+You can also get to the New Exchange admin center directly by using a URL. To do this, go to [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and sign in using your credentials.
 
 > [!NOTE]
 > Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
 
-## Modern Exchange admin center features
+## New Exchange admin center features
 
-Here's what the Modern Exchange admin center looks like.
+Here's what the New Exchange admin center looks like.
 
 ![change admin centre features](media/Modern-Exchange-Admin-Center1.PNG)
 
@@ -51,7 +51,7 @@ Here are the features you'll find in the left-hand navigation.
 
 |**Area**|**What you do here**|
 |:-----|:-----|
-|**Recipients**|View and manage your mailboxes, groups, resource mailboxes, contacts, and shared mailboxes.|
+|**Recipients**|View and manage your mailboxes (both user and shared mailboxes), groups, resource mailboxes, and contacts.|
 |**Mail flow**|Manage remote domains, accepted domains, connectors, message tracing, alerts, and alert policies.|
 |**Migration**|Migration of mailboxes in batches.|
 |**Reports**|View reports on mail flow and migration batches.|
@@ -68,7 +68,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 
 ### List view
 
-When you select a tab, in most cases you'll see a list view. The list view in Modern Exchange admin center is designed to remove limitations that existed in Exchange Control Panel.
+When you select a tab, in most cases you'll see a list view. The list view in New Exchange admin center is designed to remove limitations that existed in Exchange Control Panel.
 
 ### Details pane
 
