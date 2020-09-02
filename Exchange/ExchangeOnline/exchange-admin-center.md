@@ -32,10 +32,10 @@ You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/micro
 
     ![Modern EAC](media/EAC-selection.PNG)
 
-You can also get to the New Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and sign in using your  credentials.
+You can also get to the New Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in using your credentials.
 
 > [!NOTE]
->Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
+> Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
 
 ## New Exchange admin center features
 
@@ -55,7 +55,7 @@ Here are the features you'll find in the left-hand navigation.
 |**Mail flow**|Manage remote domains, accepted domains, connectors, message tracing, alerts, and alert policies.|
 |**Migration**|Migrate mailboxes in batches.|
 |**Reports**|View reports on mail flow and migrated batches.|
-|**Insights**|Use the recommendations to discover trends and/or insights,  and take actions to fix issues related to mailbox and mail flow.|
+|**Insights**|Use the recommendations to discover trends and/or insights, and take actions to fix issues related to mailbox and mail flow.|
 |**More features**|Access features and services from the classic exchange admin center.|
 
 ### Tabs
@@ -68,7 +68,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 
 ### List view
 
-When you select a tab, in most cases you'll see a list view. The list view in New Exchange admin center is designed to remove limitations that existed in Exchange Control Panel in the Classic Exchange admin center.
+When you select a tab, in most cases you'll see a list view. The list view in the New Exchange admin center is designed to remove limitations that existed in Exchange Control Panel in the Classic Exchange admin center.
 
 ### Details pane
 
@@ -76,7 +76,7 @@ When you select an item from the list view, information about that object is dis
 
 ### Centers, Me tile, and Help
 
-The Centers tile allows you to change from one admin center to another. The Me tile allows you to sign out of the EAC and sign in as a different user. The Help bubble displays contextual help for fields when you create or edit an object.
+The Centers tile allows you to change from one admin center to another. The Me tile allows you to sign out of the New Exchange admin center and sign in as a different user. The Help bubble displays contextual help for fields when you create or edit an object.
 
 ## Get to the Classic Exchange admin center
 
@@ -126,7 +126,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 
 ### List view
 
-When you select a tab, in most cases you'll see a list view. The list view in Classic Exchange admin center is designed to remove limitations that existed in Exchange Control Panel.
+When you select a tab, in most cases you'll see a list view. The list view in the Classic Exchange admin center is designed to remove limitations that existed in Exchange Control Panel.
 
 In Exchange Online, the viewable limit from within the Classic Exchange admin center list view is approximately 10,000 objects. In addition, paging is included so you can page to the results. In the **Recipients** list view, you can also configure page size and export the data to a CSV file.
 
