@@ -26,16 +26,16 @@ You use the Exchange admin center to manage email settings for your organization
 
 You must have [Microsoft 365 admin permissions](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles) to access the New Exchange admin center. For more information, see [Permissions in Exchange Online](permissions-exo/permissions-exo.md).
 
-1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account (AI - Further down for the URL.we are stating to use credentials to login. Is that different from the work or school account? If not, then we need to maintain consistency in usage of terminology across), and then choose the **Admin** tile.
+1. [Sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) to Microsoft 365 or Office 365 using your work or school account, and then choose the **Admin** tile.
 
 2. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
 
     ![Modern EAC](media/EAC-selection.PNG)
 
-You can also get to the New Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and signing in with your  credentials.
+You can also get to the New Exchange admin center directly by using the URL [https://admin.exchange.microsoft.com](https://admin.exchange.microsoft.com) and sign in using your  credentials.
 
 > [!NOTE]
-> When using the direct URL to access the Exchange admin center, be sure to use a private browsing session (not a regular session). This will prevent the credential that you are currently logged on with from being used (Did you mean misused?). To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P. (Can we put these two sentences as a small table with first column for the browser and second for shortcut key. Or can we put them as a bulleted lists to provide ease of reading?)
+>Be sure to use a private browsing session (not a regular session) to access the Exchange admin center using the direct URL. This will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Microsoft Edge or an incognito window in Google Chrome, press CTRL+SHIFT+N. To open an InPrivate Browsing session in Microsoft Edge Legacy, Internet Explorer, or a Private Browsing session in Mozilla Firefox, press CTRL+SHIFT+P.
 
 ## New Exchange admin center features
 
