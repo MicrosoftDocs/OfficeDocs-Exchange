@@ -34,7 +34,7 @@ There are two types of accepted domains in Exchange Online:
 
     - **Exchange Online**: [Manage mail users](../../recipients-in-exchange-online/manage-mail-users.md)
 
-    - **Exchange Online Protection**: [Manage Mail Users in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-mail-users-in-eopx)
+    - **Exchange Online Protection**: [Manage mail users in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-mail-users-in-eop)
 
   - Setting this option enables Directory Based Edge Blocking (DBEB), which rejects messages for invalid recipients at the service network perimeter. For more information about configuring DBEB during a migration, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../../mail-flow-best-practices/use-directory-based-edge-blocking.md).
 

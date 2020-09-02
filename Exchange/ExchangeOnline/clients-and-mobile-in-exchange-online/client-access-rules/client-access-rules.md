@@ -107,10 +107,12 @@ Not all authentication types are supported for all protocols in Client Access Ru
 ****
 
 |Protocol|AdfsAuthentication|BasicAuthentication|CertificateBasedAuthentication|NonBasicAuthentication|OAuthAuthentication|
-|---|---|---|---|---|---|
+|---|:---:|:---:|:---:|:---:|:---:|
 |`ExchangeActiveSync`|n/a|supported|supported|n/a|supported|
 |`ExchangeAdminCenter`|supported|supported|n/a|n/a|n/a|
+|`IMAP4`|n/a|supported|n/a|n/a|supported|
 |`OutlookWebApp`|supported|supported|n/a|n/a|n/a|
+|`POP3`|n/a|supported|n/a|n/a|supported|
 |`RemotePowerShell`|n/a|supported|n/a|supported|n/a|
 |
 
