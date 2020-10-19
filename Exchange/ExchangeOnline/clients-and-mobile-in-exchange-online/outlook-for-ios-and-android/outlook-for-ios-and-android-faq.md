@@ -68,7 +68,7 @@ Yes, Outlook for iOS and Android supports certificate-based authentication for m
 
 - [Certificate-based authentication on Android](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-android)
 
-### Q: What do I need to consider when my OnPremise Environment is running in a Resoruce Forest Scenario?
+### Q: What do I need to consider when my OnPremise Environment is running in a Resource Forest Scenario?
 
 You have to make sure the Trust between the Resource Forest and the Account Forest is configured as a two-way Trust.
 
