@@ -29,7 +29,7 @@ Delegated mailbox permissions enable someone to manage some part of another user
 
 For more information about the specific requirements to support delegated mailbox permissions in a hybrid deployment, take a look at [Permissions in Exchange hybrid deployments](../permissions.md).
 
-The following sections step you through the configuration of Exchange 2013 and Exchange 2010 on-premises deployments to enable support for delegated mailbox permissions. Before you follow these steps, you need to make sure you're on the latest Exchange 2013 CU or Exchange SP3 RU. For more information, see [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md).
+The following sections step you through the configuration of Exchange 2013 and Exchange 2016 on-premises deployments to enable support for delegated mailbox permissions. Before you follow these steps, you need to make sure you're on the latest Exchange 2013 CU or Exchange SP3 RU. For more information, see [Hybrid deployment prerequisites](../hybrid-deployment-prerequisites.md).
 
 ## Exchange 2013 And Exchange 2016
 
