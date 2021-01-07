@@ -37,11 +37,17 @@ A role group is a special kind of universal security group (USG) that's used in 
 
 ## View role groups
 
-### Use the EAC to view role groups
+### Use the new EAC to view role groups
 
-1. In the EAC, go to **Permissions** \> **Admin Roles**. All of the role groups in your organization are listed here.
+1. In the new EAC, go to **Roles** \> **Admin roles**. All of the role groups in your organization are listed here.
 
-2. Select a role group. The Details pane shows the **Name**, **Description**, **Assigned roles**, **Members**, **Managed by**, and **Write scope** of the role group. You can also see this information by clicking **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+2. Select a role group. The details pane shows the **Name**, **Description**, **Managed by**, **Write scope**, **Assigned**, and **Permissions** of the role group. 
+
+### Use the Classic EAC to view role groups
+
+1. In the Classic EAC, go to **Permissions** \> **Admin Roles**. All of the role groups in your organization are listed here.
+
+2. Select a role group. The details pane shows the **Name**, **Description**, **Assigned roles**, **Members**, **Managed by**, and **Write scope** of the role group. You can also see this information by clicking **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
 
 ### Use Exchange Online PowerShell to view role groups
 
@@ -75,9 +81,29 @@ For detailed syntax and parameter information, see [Get-RoleGroup](https://docs.
 
 When you create a new role group, you need to configure all of the settings yourself (during the creation of the group or after). To start with the configuration of an existing role group and modify it, see [Copy existing role groups](#copy-existing-role-groups).
 
-### Use the EAC to create role groups
+### Use the new EAC to create role groups
 
-1. In the EAC, go to **Permissions** \> **Admin Roles** and then click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png).
+1. In the new EAC, go to **Roles** \> **Admin roles** and then click **Add role group**.
+
+2. In the **Add role group** window, under **Set up the basics** section, configure the following settings and click **Next**:
+
+    - **Name**: Enter a unique name for the role group.
+
+    - **Description**: Enter an optional description for the role group.
+
+    - **Write scope**: The default value is **Default**, but you can also select a custom recipient write scope from the drop-down list.
+    
+3. In **Add permissions** section, select the roles and click **Next**. Roles define the scope of the tasks that the members assigned to this role group have permission to manage.
+   
+4. In **Assign admins** section, select the users to assign to this role group and click **Next**. They'll have permissions to manage the roles that you assigned. 
+
+5. In **Review role group and finish** section, verify all the details, and then click **Add role group**.
+
+6. Click **Done**.
+
+### Use the Classic EAC to create role groups
+
+1. In the Classic EAC, go to **Permissions** \> **Admin Roles** and then click **Add** ![Add icon](../media/ITPro_EAC_AddIcon.png).
 
 2. In the **New role group** window that appears, configure the following settings:
 
@@ -127,27 +153,39 @@ New-RoleGroup -Name "Limited Recipient Management" -Roles "Mail Recipients","Mai
 
 For detailed syntax and parameter information, [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
 
-### How do you know this worked?
-
-To verify that you've successfully created a role group, do either of the following steps:
-
-- In the EAC, go to **Permissions** \> **Admin Roles**, select the new role group you created, and verify the settings in the Details pane or click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to verify the settings.
-
-- In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the settings:
-
-  ```PowerShell
-  Get-RoleGroup -Identity "<Role Group Name>" | Format-List
-  ```
-
 ## Copy existing role groups
 
 If an existing role group is close in terms of the permissions and settings that you want to assign to users, you can copy the existing role group and modify the copy to suit your needs.
 
-### Use the EAC to copy a role group
+### Use the new EAC to copy a role group
 
-**Note**: You can't use the EAC to copy a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To copy role groups that have these settings, you need to use Exchange Online PowerShell.
+**Note**: You can't use the new EAC to copy a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To copy role groups that have these settings, you need to use Exchange Online PowerShell.
 
-1. In the EAC, go to **Permissions** \> **Admin Roles**.
+1. In the new EAC, go to **Roles** \> **Admin roles**.
+
+2. Select the role group that you want to copy and then click **Copy role group**.
+
+3. In the **Copy role group** window, under **Set up the basics** section, configure the following settings and click **Next**:
+
+   - **Name**: The default value is "Copy of _\<Role Group Name\>_, but you can enter a unique name for the role group.
+
+   - **Description**: The existing description is present, but you can change it.
+
+   - **Write scope**: The existing write scope is selected, but you can select **Default** or a custom recipient write scope from the drop-down list.
+   
+4. In **Edit permissions** section, modify the roles and click **Next**. Roles define the scope of the tasks that the members assigned to this role group have permission to manage.
+   
+5. In **Assign admins** section, modify the role group membership and click **Next**. They'll have permissions to manage the roles that you assigned. 
+
+6. In **Review role group and finish** section, verify all the details, and then click **Copy role group**.
+
+7. Click **Done**.   
+
+### Use the Classic EAC to copy a role group
+
+**Note**: You can't use the Classic EAC to copy a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To copy role groups that have these settings, you need to use Exchange Online PowerShell.
+
+1. In the Classic EAC, go to **Permissions** \> **Admin Roles**.
 
 2. Select the role group that you want to copy and then click **Copy** ![Copy icon](../media/ITPro_EAC_CopyIcon.png).
 
@@ -201,25 +239,25 @@ New-RoleGroup "Vancouver Organization Management" -Roles $RoleGroup.Roles -Custo
 
 For detailed syntax and parameter information, [New-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup).
 
-### How do you know this worked?
-
-To verify that you've successfully copied a role group, do either of the following steps:
-
-- In the EAC, go to **Permissions** \> **Admin Roles**, select the new role group you created, and verify the settings in the Details pane or click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to verify the settings.
-
-- In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the settings:
-
-  ```PowerShell
-  Get-RoleGroup -Identity "<Role Group Name>" | Format-List
-  ```
-
 ## Modify role groups
 
-### Use the EAC to modify role groups
+### Use the new EAC to modify role groups
 
-1. In the EAC, go to **Permissions** \> **Admin Roles**, select the role group you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+1. In the new EAC, go to **Roles** \> **Admin roles**, select the role group you want to modify, and then edit the following in the details pane:
 
-The same options are available when you modify role groups as when you [Use the EAC to create role groups](#use-the-eac-to-create-role-groups). You can:
+   - In **General** section, click **Edit basics** to change the name and description.
+
+   - In **Assigned** section, add/delete users from this role group. 
+
+   - In **Permissions** section, add/remove roles assigned to the role group. 
+
+2. When you're finished, click **Save**.
+
+### Use the Classic EAC to modify role groups
+
+1. In the Classic EAC, go to **Permissions** \> **Admin Roles**, select the role group you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png).
+
+The same options are available when you modify role groups as when you [Use the Classic EAC to create role groups](#use-the-classic-eac-to-create-role-groups). You can:
 
 - Change the name and description.
 
@@ -231,11 +269,11 @@ The same options are available when you modify role groups as when you [Use the 
 
 **Notes**:
 
-- You can't use the EAC to modify the write scope, roles and members of a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To modify the settings of these role groups, you need to use Exchange Online PowerShell.
+- You can't use the Classic EAC to modify the write scope, roles, and members of a role group if you've used Exchange Online PowerShell to configure multiple scopes or exclusive scopes on the role group. To modify the settings of these role groups, you need to use Exchange Online PowerShell.
 
 - Some role groups (for example, the Organization Management role group) restrict the roles that you can remove from group.
 
-- You can add or remove delegates to a role group in the EAC. You can only use Exchange Online PowerShell.
+- You can add or remove delegates to a role group in the Classic EAC. You can only use Exchange Online PowerShell.
 
 ### Use Exchange Online PowerShell to add roles to role groups (create role assignments)
 
@@ -397,24 +435,6 @@ Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remo
 
 For detailed syntax and parameter information, see [Update-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember).
 
-### How do you know this worked?
-
-To verify that you've successfully modified a role group, do any of the following steps:
-
-- In the EAC, go to **Permissions** \> **Admin Roles**, select the new role group you created, and verify the settings in the Details pane or click **Edit** ![Edit icon](../media/ITPro_EAC_EditIcon.png) to verify the settings.
-
-- In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the settings:
-
-  ```PowerShell
-  Get-RoleGroup -Identity "<Role Group Name>" | Format-List
-  ```
-
-- In Exchange Online PowerShell, replace \<Role Group Name\> with the name of the role group, and run the following command to verify the settings:
-
-  ```PowerShell
-  Get-ManagementRoleAssignment -RoleAssignee "<Role Group Name>" | Format-Table *WriteScope
-  ```
-
 ## Remove role groups
 
 You can't remove built-in role groups, but you can remove custom role groups that you've created.
@@ -424,6 +444,14 @@ You can't remove built-in role groups, but you can remove custom role groups tha
 - When you remove a role group, the management role assignments between the role group and the management roles are deleted. Any management roles that are assigned to the role group aren't deleted.
 
 - If a user depends on the role group for access to a feature, the user will no longer have access to the feature after you delete the role group.
+
+### Use the new EAC to remove a role group
+
+1. In the new EAC, go to **Roles** > **Admin roles**.
+
+2. Select the role group and click **Delete**.
+
+3. Click **Confirm** in the confirmation window.
 
 ### Use the EAC to remove a role group
 
@@ -454,15 +482,3 @@ Remove-RoleGroup - Identity "Vancouver Recipient Administrators" -BypassSecurity
 ```
 
 For detailed syntax and parameter information, see [Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup).
-
-### How do you know this worked?
-
-To verify that you've removed a role group, do either of the following steps:
-
-- In the EAC, go to **Permissions** \> **Admin Roles** and verify that the role group is no longer listed.
-
-- In Exchange Online PowerShell, run the following command to verify the role group is no longer listed:
-
-  ```PowerShell
-  Get-RoleGroup
-  ```

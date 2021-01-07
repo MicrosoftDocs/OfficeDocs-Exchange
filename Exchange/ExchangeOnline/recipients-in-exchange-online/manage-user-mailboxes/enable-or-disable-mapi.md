@@ -42,7 +42,7 @@ For additional management tasks related to managing email client access to a mai
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the forums at [Exchange Online](https://docs.microsoft.com/answers/topics/office-exchange-server-itpro.html) or [Exchange Online Protection](https://social.technet.microsoft.com/forums/forefront/home?forum=FOPE).
 
-## Use the new EAC to enable or disable MAPI
+## Use the new Exchange admin center to enable or disable MAPI
 
 1. In the new EAC, navigate to **Recipients** \> **Mailboxes**.
 
@@ -57,7 +57,6 @@ For additional management tasks related to managing email client access to a mai
    - To enable MAPI, for the **Outlook desktop (MAPI)** option, when the button is **Disabled**, set to **Enabled**.
 
 5. Click **Save** to save your change. A message **Email app settings updated successfully** is displayed. Click **Close** to exit.
-
 
 ## Use the Classic EAC to enable or disable MAPI
 
@@ -77,6 +76,16 @@ For additional management tasks related to managing email client access to a mai
 
 5. Click **Save** to save your change.
 
+## How do you know this worked?
+
+To verify that you've successfully enabled or disabled MAPI for a user mailbox, do one of the following:
+
+- In the EAC, navigate to **Recipients** \> **Mailboxes**, click the mailbox, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+
+- On the mailbox properties page, click **Mailbox Features**.
+
+- Under **Email Connectivity**, verify whether MAPI is enabled or disabled.
+
 ## Use Exchange Online PowerShell to enable or disable MAPI
 
 This example disables MAPI for the mailbox of Ken Sanchez.
@@ -93,4 +102,13 @@ Set-CASMailbox -Identity "Esther Valle" -MAPIEnabled $true
 
 For detailed syntax and parameter information, see [Set-CASMailbox](https://docs.microsoft.com/powershell/module/exchange/set-casmailbox).
 
+## How do you know this worked?
+
+To verify that you've successfully enabled or disabled MAPI for a user mailbox, do one of the following:
+
+- Run the following command in Exchange Online PowerShell.
+
+  ```PowerShell
+  Get-CASMailbox -Identity <MailboxIdentity>
+  ```
 

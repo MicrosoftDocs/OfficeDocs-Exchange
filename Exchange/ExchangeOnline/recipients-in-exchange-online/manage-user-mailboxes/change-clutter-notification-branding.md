@@ -20,6 +20,9 @@ manager: serdars
 
 # Change the branding of Clutter notifications
 
+> [!TIP]
+> [Focused Inbox](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/microsoft-365/admin/setup/configure-focused-inbox.md) is going to replace Clutter. Learn more: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
+
 The Clutter feature uses Inbox notifications to invite users and to send status messages. The default branding used for these notifications is Outlook, but you can modify the branding for your organization.
 
 ## Change the branding of Clutter notifications (new EAC)

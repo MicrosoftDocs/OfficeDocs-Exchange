@@ -47,7 +47,6 @@ You need to be assigned permissions before you can perform this procedure or pro
 
 8. Click **Save** to save your changes. Click **Close** to exit from the **Manage mail flow settings** display pane.
 
-
 ## Use the Classic Exchange admin center to configure email forwarding
 
 You can use the Classic Exchange admin center (EAC) to set up email forwarding to a single internal recipient, a single external recipient (using a mail contact), or multiple recipients (using a distribution group).

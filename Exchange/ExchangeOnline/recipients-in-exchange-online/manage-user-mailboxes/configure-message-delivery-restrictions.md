@@ -20,7 +20,7 @@ manager: serdars
 
 # Configure message delivery restrictions for a mailbox
 
-You can use the EAC or Exchange Online PowerShell to place restrictions on whether messages are delivered to individual recipients. Message delivery restrictions are useful to control who can send messages to users in your organization. For example, you can configure a mailbox to accept or reject messages sent by specific users or to accept messages only from users in your Exchange organization.
+You can use the new EAC, the classic EAC or Exchange Online PowerShell to place restrictions on whether messages are delivered to individual recipients. Message delivery restrictions are useful to control who can send messages to users in your organization. For example, you can configure a mailbox to accept or reject messages sent by specific users or to accept messages only from users in your Exchange organization.
 
 > [!IMPORTANT]
 > Message delivery restrictions do not impact mailbox permissions. A user with Full Access permissions on a mailbox will still be able to update the contents in that mailbox, such as by copying messages into the mailbox, even if that user has been restricted.
@@ -77,7 +77,6 @@ For additional management tasks related to recipients, see the following topics:
 
 5. Click **Save** to save your changes. Click **Close** to exit from the **Manage mail flow settings** display pane.
 
-
 ## Use the Classic EAC to configure message delivery restrictions
 
 1. In the Classic EAC, navigate to **Recipients** \> **Mailboxes**.
@@ -103,6 +102,18 @@ For additional management tasks related to recipients, see the following topics:
    - **Senders in the following list**: This option specifies that the mailbox will reject messages from a specified set of senders in your Exchange organization. Click **Add** ![Add Icon](../../media/ITPro_EAC_AddIcon.gif) to display a list of all recipients in your Exchange organization. Select the recipients you want, add them to the list, and then click **OK**. You can also search for a specific recipient by typing the recipient's name in the search box and then clicking **Search** ![Search icon](../../media/ITPro_EAC_.gif).
 
 5. Click **OK** to close the **Message Delivery Restrictions** page, and then click **Save** to save your changes.
+
+## How do you know this worked?
+
+To verify that you've successfully configured message delivery restrictions for a user mailbox, do one the following:
+
+1. In the EAC, navigate to **Recipients** \> **Mailboxes**.
+
+2. In the list of user mailboxes, click the mailbox that you want to verify the message delivery restrictions for, and then click **Edit** ![Edit icon](../../media/ITPro_EAC_EditIcon.gif).
+
+3. On the mailbox properties page, click **Mailbox Features**.
+
+4. Under **Message Delivery Restrictions**, click **View details** to verify the delivery restrictions for the mailbox.
 
 ## Use Exchange Online PowerShell to configure message delivery restrictions
 
@@ -156,3 +167,12 @@ For detailed syntax and parameter information related to configuring delivery re
 
 - [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)
 
+## How do you know this worked?
+
+To verify that you've successfully configured message delivery restrictions for a user mailbox using powershell, do one the following:
+
+Run the following command in Exchange Online PowerShell.
+
+```PowerShell
+Get-Mailbox <identity> | Format-List AcceptMessagesOnlyFrom,AcceptMessagesOnlyFromDLMembers,RejectMessagesFrom,RejectMessagesFromDLMembers,RequireSenderAuthenticationEnabled
+```
