@@ -16,7 +16,7 @@ manager: serdars
 
 # Track and prevent migration data loss
 
-When migrating to Exchange Online, the migration process might reveal inconsistencies that pose a risk of data loss. Such inconsistencies can occur during almost any migration, whether from on-premises Exchange Server, Public Folders, PST file imports, G Suite, or third-party IMAP servers. The migration process tracks and reports on any possible instances of data loss by generating a **DataConsistencyScore**.
+When migrating to Exchange Online, the migration process might reveal inconsistencies that pose a risk of data loss. Such inconsistencies can occur during almost any migration, whether from on-premises Exchange Server, Public Folders, PST file imports, Google Workspace, or third-party IMAP servers. The migration process tracks and reports on any possible instances of data loss by generating a **DataConsistencyScore**.
 
 ## Migration and DataConsistencyScore
 

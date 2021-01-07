@@ -5,7 +5,7 @@ author: msdmaguire
 ms.author: dmaguire
 ms.assetid: d164b35c-f624-4f83-ac58-b7cae96ab331
 ms.reviewer: 
-description: Admin can learn how to migrate Exchange mailboxes, IMAP mailboxes, and G Suite mailboxes, calendars, and contacts to Microsoft 365 or Office 365.
+description: Admin can learn how to migrate Exchange mailboxes, IMAP mailboxes, and Google Workspace mailboxes, calendars, and contacts to Microsoft 365 or Office 365.
 title: Manage migration batches
 ms.collection: 
 - exchange-online
@@ -26,7 +26,7 @@ manager: serdars
 
 # Manage migration batches
 
-You can use the Migration dashboard in the Microsoft 365 or Office 365 Exchange admin center (EAC) to manage mailbox migration to Microsoft 365 or Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server, or the contents of G Suite users' mailboxes, calendars, and contacts to existing Microsoft 365 or Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches.
+You can use the Migration dashboard in the Microsoft 365 or Office 365 Exchange admin center (EAC) to manage mailbox migration to Microsoft 365 or Office 365 using a cutover or staged Exchange migration. You can also use the Migration dashboard to migrate the contents of users' mailboxes from an on-premises IMAP server, or the contents of Google Workspace users' mailboxes, calendars, and contacts to existing Microsoft 365 or Office 365 mailboxes. The Migration dashboard displays statistics about the overall migration in addition to statistics about a specific migration batch. You can create, start, stop, pause, and edit migration batches.
 
 ## The Migration dashboard
 <a name="bk_dashboard"> </a>
@@ -84,10 +84,10 @@ The details pane in the Migration dashboard displays the following information a
 
 |**Field**|**Description**|
 |:-----|:-----|
-|**Type**| Indicates the migration type of the selected migration batch. The value of this field also denotes the type of migration endpoint associated with the migration batch. <br/> **Exchange Outlook Anywhere**: The migration batch is either a cutover Exchange migration or a staged Exchange migration. <br/> **IMAP**: The migration batch is an IMAP migration. <br/> **Remote move migration**: The migration batch is either an onboarding or offboarding remote move migration in an Exchange hybrid deployment. <br/> **Gmail**: The migration batch is a G Suite migration.|
-|**Direction**| Indicates if mailboxes are being migrated to Microsoft 365 or Office 365 or to your on-premises Exchange organization. <br/> **Onboarding**: Indicates that mailboxes are being migrated to Microsoft 365 or Office 365. Onboarding migration types are staged migrations, cutover migrations, IMAP migrations, G Suite migrations, and onboarding remote move migrations. <br/> **Offboarding**: Indicates that Microsoft 365 or Office 365 mailboxes are being migrated to your on-premises Exchange organization. Offboarding remote move migrations are the only type of offboarding migration.|
+|**Type**| Indicates the migration type of the selected migration batch. The value of this field also denotes the type of migration endpoint associated with the migration batch. <br/> **Exchange Outlook Anywhere**: The migration batch is either a cutover Exchange migration or a staged Exchange migration. <br/> **IMAP**: The migration batch is an IMAP migration. <br/> **Remote move migration**: The migration batch is either an onboarding or offboarding remote move migration in an Exchange hybrid deployment. <br/> **Gmail**: The migration batch is a Google Workspace migration.|
+|**Direction**| Indicates if mailboxes are being migrated to Microsoft 365 or Office 365 or to your on-premises Exchange organization. <br/> **Onboarding**: Indicates that mailboxes are being migrated to Microsoft 365 or Office 365. Onboarding migration types are staged migrations, cutover migrations, IMAP migrations, Google Workspace migrations, and onboarding remote move migrations. <br/> **Offboarding**: Indicates that Microsoft 365 or Office 365 mailboxes are being migrated to your on-premises Exchange organization. Offboarding remote move migrations are the only type of offboarding migration.|
 |**Status**| The current state of the selected migration batch. <br/> **Completed** <br/> **Syncing** <br/> **Stopped** <br/> **Synced** <br/> **Synced with errors** <br/>  See the previous description of each of these states.|
-|**Requested**|The number of mailboxes to be migrated in the migration batch. This number corresponds to the number of rows in the migration CSV file for IMAP, G Suite, staged, or remote move migrations, or the number of on-premises mailboxes in a cutover Exchange migration.|
+|**Requested**|The number of mailboxes to be migrated in the migration batch. This number corresponds to the number of rows in the migration CSV file for IMAP, Google Workspace, staged, or remote move migrations, or the number of on-premises mailboxes in a cutover Exchange migration.|
 |**Synced mailboxes**|The number of mailboxes out of the total number in the migration batch that have successfully completed initial synchronization. This field is updated during the migration.|
 |**Finalized**|The number of mailboxes out of the total number in the migration batch that have successfully been finalized. Finalization only occurs in onboarding and offboarding remote move migrations.|
 |**Failed mailboxes**|The number of mailboxes that failed initial synchronization.|

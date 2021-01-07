@@ -60,7 +60,7 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
      - Choose the email provider you are migrating from.
 
        > [!IMPORTANT]
-       > **If you're migrating email from Gmail**, you need to ask your users to [create an app password](prepare-gmail-or-g-suite-accounts.md) you will have to use instead of their account password. **If you're migrating email from Outlook.com or Hotmail.com**, you need to ask your users to [set up two-step verification](migrating-your-outlook-com-account.md) and obtain an app password. You will use their app password instead of their account password when you establish a connection between Outlook.com or Hotmail.com and Microsoft 365 or Office 365.
+       > **If you're migrating email from Gmail**, you need to ask your users to [create an app password](prepare-gmail-or-google-workspace-accounts.md) you will have to use instead of their account password. **If you're migrating email from Outlook.com or Hotmail.com**, you need to ask your users to [set up two-step verification](migrating-your-outlook-com-account.md) and obtain an app password. You will use their app password instead of their account password when you establish a connection between Outlook.com or Hotmail.com and Microsoft 365 or Office 365.
 
      - After you choose a provider, the **Select users to start migrating email messages** page will list all of your users with the source email pre-filled in.
 
@@ -72,12 +72,12 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
      2. On the **Select your data service** page, fill in the appropriate [IMAP connection data](setting-up-your-imap-server-connection.md) to test the connection. You can use any account for this.
 
-        The example below is for a Google apps domain called contoso.com, and therefore the IMAP server name is imap.gmail.com.
+        The example below is for a Google Workspace domain called contoso.com, and therefore the IMAP server name is imap.gmail.com.
 
-        Because the example is for Google apps, note that the password is the 16-digit app password for the email account that is entered to verify the connection to the server.
+        Because the example is for Google Workspace, note that the password is the 16-digit app password for the email account that is entered to verify the connection to the server.
 
         > [!IMPORTANT]
-        > If you're migrating email from Google Apps where you own the domain, you need to ask your users to [create an app password](prepare-gmail-or-g-suite-accounts.md) you will have to use instead of their account password.
+        > If you're migrating email from Google Workspace where you own the domain, you need to ask your users to [create an app password](prepare-gmail-or-google-workspace-accounts.md) you will have to use instead of their account password.
 
         ![Fill in IMAP server information and account info to connect](../media/313a395b-0767-4433-be28-7db3caa7e4d5.png)
 
@@ -85,7 +85,7 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
 4. **This and the following steps apply for both a listed email provider or "Other":**
 
-    Check the box next to the users whose email you want to migrate, and then fill in the email alias, and the password (app password if you are migrating mail from Gmail or Google apps).
+    Check the box next to the users whose email you want to migrate, and then fill in the email alias, and the password (app password if you are migrating mail from Gmail or Google Workspace).
 
 5. Choose **Start Migration** after you have entered the required information.
 
@@ -105,12 +105,12 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
     When you're done, choose **Close Connection**. This also allows you to start a new migration if you want to migrate emails from other providers as well.
 
-7. If you are migrating from Google apps where you own the domain, you need to go [Create DNS records at Google Domains for Microsoft](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-google-domains) after you have completed email migration so that the mail will be sent to Microsoft 365 or Office 365 mailboxes instead of Google apps. If you are migrating from another IMAP provider where you own the domain, [check these instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) to find your domain provider.
+7. If you are migrating from Google Workspace where you own the domain, you need to go [Create DNS records at Google Domains for Microsoft](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-google-domains) after you have completed email migration so that the mail will be sent to Microsoft 365 or Office 365 mailboxes instead of Google Workspace. If you are migrating from another IMAP provider where you own the domain, [check these instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) to find your domain provider.
 
    If you have migrated as a part of the setup experience, you can return to the setup. The setup steps will guide you through updating the DNS records.
 
 ## Related Topics
 
-[Prepare your Gmail or Google Apps account for connecting to Outlook and Microsoft 365 or Office 365](prepare-gmail-or-g-suite-accounts.md)
+[Prepare your Gmail or Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365](prepare-gmail-or-google-workspace-accounts.md)
 
 [Prepare your Outlook.com or Hotmail.com account for IMAP migration](migrating-your-outlook-com-account.md)

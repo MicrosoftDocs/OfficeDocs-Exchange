@@ -109,11 +109,11 @@ Admins can include fifteen extension attributes that they can use to add informa
 
 :::image type="content" source="media/whats-new-2020-06-2-customatt.png" alt-text="Screen capture of custom attributes":::
 
-### G-Suite automation
+### Google Workspace automation
 
-Admins can migrate batches of users from G Suite to Microsoft 365. In order to move the mailboxes from G Suite to Microsoft 365, there is a series of steps that admins need to perform in G Suite in order to establish the connection between the two environments. The new EAC aims to help the admins automate those steps to make the process easier and more convenient.
+Admins can migrate batches of users from Google Workspace to Microsoft 365. In order to move the mailboxes from Google Workspace to Microsoft 365, there is a series of steps that admins need to perform in Google Workspace in order to establish the connection between the two environments. The new EAC aims to help the admins automate those steps to make the process easier and more convenient.
 
-:::image type="content" source="media/whats-new-2020-06-3-gsuite.png" alt-text="Screen capture of G-suite automation":::
+:::image type="content" source="media/whats-new-2020-06-3-gsuite.png" alt-text="Screen capture of Google Workspace automation":::
 
 ## May 2020
 
@@ -195,9 +195,9 @@ Resources experience has been simplified for managing room and resource mailboxe
 
 Migration is now a first-class citizen under the Modern EAC and is no longer buried inside the Recipient tab as it was in the classic EAC. The major feature additions to the migration flow are:
 
-  - The Exchange and G-Suite migrations are now simple, wizard-based experiences.
-  - The G-Suite migration supports migrating Calendar and Contact data along with emails.
-  - For G-Suite migration, the 2GB per mailbox per day restriction has been removed.
+  - The Exchange and Google Workspace migrations are now simple, wizard-based experiences.
+  - The Google Workspace migration supports migrating Calendar and Contact data along with emails.
+  - For Google Workspace migration, the 2GB per mailbox per day restriction has been removed.
 
 ![Screen capture of what's new in migration](./media/whats-new-2020-03-migration.png)
 

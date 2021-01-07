@@ -75,7 +75,7 @@ These general steps apply whether you are migrating from Gmail or another IMAP s
 
     To perform the migration, you need an administrator account that has permissions, or the username and password to each mailbox.
 
-5. If you are using the steps described in [Migrate Google Apps mailboxes to Microsoft 365 or Office 365](migrate-g-suite-mailboxes.md) or [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](migrate-other-types-of-imap-mailboxes.md), you will create a list of mailboxes to migrate (CSV file). These migrations instructions start from the Exchange admin center, and you will need to create a CSV file that lists the email addresses, usernames, and passwords for the mailboxes you want to migrate.
+5. If you are using the steps described in [Migrate Gmail mailboxes to Microsoft 365 or Office 365](migrate-gmail-mailboxes.md) or [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](migrate-other-types-of-imap-mailboxes.md), you will create a list of mailboxes to migrate (CSV file). These migrations instructions start from the Exchange admin center, and you will need to create a CSV file that lists the email addresses, usernames, and passwords for the mailboxes you want to migrate.
 
     You can also use the migrations page or setup instructions in the [Admin center preview to migrate from IMAP](imap-migration-in-the-admin-center.md) systems such as Gmail, Hotmail.com or Outlook.com. These steps are the best if you plan to migrate mail for only a few users (less than 50). If you are migrating mail for more users it is easier to use a CSV file to enter all the information for the accounts.
 
@@ -115,7 +115,7 @@ To finish an email migration successfully, it's a good idea to be comfortable do
 
 If you're comfortable with what's involved in migrating mailboxes to Microsoft 365 or Office 365, you're ready to get started. The first step is to determine which source email system you're migrating from:
 
-- [Gmail](migrate-g-suite-mailboxes.md)
+- [Gmail](migrate-gmail-mailboxes.md)
 
     This procedure uses the Exchange admin center steps for an IMAP migration.
 

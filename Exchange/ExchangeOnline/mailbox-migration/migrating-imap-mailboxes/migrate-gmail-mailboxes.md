@@ -6,7 +6,7 @@ ms.author: dmaguire
 ms.assetid: 665dc56c-581c-4e35-8028-6bc1e8497016
 ms.reviewer: 
 description: "For consumers who want to migrate their Gmail mailboxes to Microsoft 365 or Office 365 with IMAP and app passwords."
-title: Migrate consumer G Suite mailboxes to Microsoft 365 or Office 365 
+title: Migrate consumer Gmail mailboxes to Microsoft 365 or Office 365 
 ms.collection: 
 - exchange-online
 - M365-email-calendar
@@ -27,24 +27,24 @@ manager: serdars
 
 ---
 
-# Migrate consumer G Suite mailboxes to Microsoft 365 or Office 365
+# Migrate consumer Gmail mailboxes to Microsoft 365 or Office 365
 
 > [!NOTE]
-> This article explains how to migrate consumer Gmail mailboxes to Microsoft 365 or Office 365. For organizations and enterprises interested in migrating G Suite content, including calendar and contacts information in addition to mailbox data, see [Perform a G Suite migration](../perform-G-Suite-migration.md).
+> This article explains how to migrate consumer Gmail mailboxes to Microsoft 365 or Office 365. For organizations and enterprises interested in migrating Google Workspace content, including calendar and contacts information in addition to mailbox data, see [Perform a Google Workspace migration](../perform-Google-Workspace-migration.md).
 
-[Migrate your IMAP mailboxes to Microsoft 365 or Office 365](migrating-imap-mailboxes.md) gives you an overview of the migration process. Read it first and when you're familiar with the contents of that article, return to this topic to learn how to migrate mailboxes from G Suite (formerly known as Google Apps) Gmail to Microsoft 365 or Office 365. You must be a global admin in Microsoft 365 or Office 365 to complete IMAP migration steps.
+[Migrate your IMAP mailboxes to Microsoft 365 or Office 365](migrating-imap-mailboxes.md) gives you an overview of the migration process. Read it first and when you're familiar with the contents of that article, return to this topic to learn how to migrate mailboxes from Gmail to Microsoft 365 or Office 365. You must be a global admin in Microsoft 365 or Office 365 to complete IMAP migration steps.
 
 Looking for Windows PowerShell commands? See [User PowerShell to perform an IMAP migration to Microsoft 365 or Office 365](https://docs.microsoft.com/office365/enterprise/powershell/use-powershell-to-perform-an-imap-migration-to-office-365).
 
 Want to migrate other types of IMAP mailboxes? See [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](migrate-other-types-of-imap-mailboxes.md) .
 
-## Migration from G Suite mailboxes using the Microsoft 365 admin center
+## Migration from Gmail mailboxes using the Microsoft 365 admin center
 
 You can use the setup wizard in the Microsoft 365 admin center for an IMAP migration. See [IMAP migration in the Microsoft 365 admin center](imap-migration-in-the-admin-center.md) for instructions.
 
  **IMPORTANT**: IMAP migration will only migrate emails, not calendar and contact information. Users can import their own email, contacts, and other mailbox information to Microsoft 365 or Office 365. See [Migrate email and contacts to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin) to learn how.
 
-Before Microsoft 365 or Office 365 can connect to Gmail or G Suites, all account owners must create an app password to access their account. This is because Google considers Outlook to be a less secure app and will not allow a connection to it with a password alone. For instructions, see [Prepare your G Suite account for connecting to Outlook and Microsoft 365 or Office 365](prepare-gmail-or-g-suite-accounts.md). You'll also need to make sure your [G Suite users can turn on 2-step verification](enable-2-step-verification-for-google-apps.md).
+Before Microsoft 365 or Office 365 can connect to Gmail or Google Workspace, all account owners must create an app password to access their account. This is because Google considers Outlook to be a less secure app and will not allow a connection to it with a password alone. For instructions, see [Prepare your Gmail or Google Workspace account for connecting to Outlook and Microsoft 365 or Office 365](prepare-gmail-or-google-workspace-accounts.md). You'll also need to make sure your [Google Workspace users can turn on 2-step verification](enable-2-step-verification-for-google-workspace.md).
 
 ### Gmail Migration tasks
 
@@ -52,7 +52,7 @@ The following list contains the migration tasks given in the order in which you 
 
 ### Step 1: Verify you own your domain
 
-In this task, you'll first verify to Microsoft 365 or Office 365 that you own the domain you used for your G Suite accounts.
+In this task, you'll first verify to Microsoft 365 or Office 365 that you own the domain you used for your Google Workspace or Gmail accounts.
 
 > [!NOTE]
 > Another option is to use the *your company name*.onmicrosoft.com domain that is included with your Microsoft 365 or Office 365 subscription instead of using your own custom domain. In that case, you can just add users as described in [Add users individually or in bulk](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) and omit this task. Most people, however, prefer to use their own domain.
@@ -68,17 +68,17 @@ Domain verification is a task you will go through as you set up Microsoft 365 or
 You can add your users either [one at a time](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users), or [several users at a time](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time). When you add users you also add licenses to them. Each user has to have a mailbox on Microsoft 365 or Office 365 before you can migrate email to it. Each user also needs a license that includes an Exchange Online plan to use his or her mailbox.
 
 > [!IMPORTANT]
-> At this point you have verified that you own the domain and created your G Suite users and mailboxes in Microsoft 365 or Office 365 with your custom domain. Close the wizard at this step. Do not proceed to **Set up domain**, until your Gmail mailboxes are migrated to Microsoft 365 or Office 365. You'll finish the setup steps in task 7, [Step 6: Update your DNS records to route Gmail directly to Microsoft 365 or Office 365](#step-6-update-your-dns-records-to-route-gmail-directly-to-microsoft-365-or-office-365).
+> At this point you have verified that you own the domain and created your Gmail users and mailboxes in Microsoft 365 or Office 365 with your custom domain. Close the wizard at this step. Do not proceed to **Set up domain**, until your Gmail mailboxes are migrated to Microsoft 365 or Office 365. You'll finish the setup steps in task 7, [Step 6: Update your DNS records to route Gmail directly to Microsoft 365 or Office 365](#step-6-update-your-dns-records-to-route-gmail-directly-to-microsoft-365-or-office-365).
 
 ### Step 3: Create a list of Gmail mailboxes to migrate
 
 For this task, you create a migration file that contains a list of Gmail mailboxes to migrate to Microsoft 365 or Office 365. The easiest way to create the migration file is by using Excel, so we use Excel in these instructions. You can use Excel 2013, Excel 2010, or Excel 2007.
 
-When you create the migration file, you need to know the app password of each Gmail mailbox that you want to migrate. We're assuming you don't know the user passwords, so you'll probably need to assign temporary passwords (by resetting the passwords) to all mailboxes during the migration. You must be an administrator in G Suite to reset passwords.
+When you create the migration file, you need to know the app password of each Gmail mailbox that you want to migrate. We're assuming you don't know the user passwords, so you'll probably need to assign temporary passwords (by resetting the passwords) to all mailboxes during the migration. You must be an administrator in Google Workspace to reset passwords.
 
 You don't have to migrate all Gmail mailboxes at once. You can do them in batches at your convenience. You can include up to 50,000 mailboxes (one row for each user) in your migration file. The file can be as large as 10 MB.
 
-1. Sign in to [G Suite admin console](http://admin.google.com/) using your administrator username and password.
+1. Sign in to [Google Workspace admin console](http://admin.google.com/) using your administrator username and password.
 
 2. After you're signed in, choose **Users**.
 
@@ -86,7 +86,7 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
 3. Select each user to identify each user's email address. Write down the address.
 
-    ![User details in the Google apps admin center](../media/b3362fb5-c33f-465d-84bb-8555f0e310b4.PNG)
+    ![User details in the Google Workspace admin center](../media/b3362fb5-c33f-465d-84bb-8555f0e310b4.PNG)
 
 4. Open the [Microsoft 365 admin center](https://admin.microsoft.com), and go to **Users** \> **Active users**. Keep an eye on the **Username** column. You'll use this information in a minute. Keep the Microsoft 365 admin center window open, too.
 
@@ -110,7 +110,7 @@ You don't have to migrate all Gmail mailboxes at once. You can do them in batche
 
    - **Column B** is the sign-in name for the user's Gmail mailbox (for example, alberta@contoso.com).
 
-   - **Column C** is the app password for the user's Gmail mailbox. Creating the app password is described in [Migration from G Suite mailboxes using the Microsoft 365 admin center](#migration-from-g-suite-mailboxes-using-the-microsoft-365-admin-center).
+   - **Column C** is the app password for the user's Gmail mailbox. Creating the app password is described in [Migration from Gmail mailboxes using the Microsoft 365 admin center](#migration-from-gmail-mailboxes-using-the-microsoft-365-admin-center).
 
     ![A completed sample migration file.](../media/f2b5e8b7-b9c2-402c-b2bb-2e3a5a4eb64c.JPG)
 

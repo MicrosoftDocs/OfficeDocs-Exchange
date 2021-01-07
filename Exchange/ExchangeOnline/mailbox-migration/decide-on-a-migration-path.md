@@ -101,7 +101,7 @@ For other email systems that support IMAP, you can use [IMAP migrations](migrati
 
 Depending on your source system, see one of the following:
 
-- [Migrate G Suite mailboxes to Microsoft 365 or Office 365](migrating-imap-mailboxes/migrate-g-suite-mailboxes.md)
+- [Migrate Gmail mailboxes to Microsoft 365 or Office 365](migrating-imap-mailboxes/migrate-gmail-mailboxes.md)
 
 - [Migrate other types of IMAP mailboxes to Microsoft 365 or Office 365](migrating-imap-mailboxes/migrate-other-types-of-imap-mailboxes.md)
 
