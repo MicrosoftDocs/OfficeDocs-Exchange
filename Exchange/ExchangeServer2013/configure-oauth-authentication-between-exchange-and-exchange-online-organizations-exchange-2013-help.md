@@ -55,18 +55,21 @@ For this procedure, you have to specify a verified domain for your Exchange Onli
 Run the following command in the Exchange Management Shell (Exchange PowerShell) in your on-premises Exchange organization:
 
 ```powershell
-New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://accounts.accesscontrol.windows.net/<your verified domain>/metadata/json/1"
-New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.windows.net/<your verified domain>/federationmetadata/2007-06/federationmetadata.xml"
+New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://accounts.accesscontrol.windows.net/<your tenant coexistence domain>/metadata/json/1"
+New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.windows.net/<your tenant coexistence domain>/federationmetadata/2007-06/federationmetadata.xml"
 ```
 
 > [!NOTE]
 > If you are in the GCC High or DOD instance then you will need to use the following:
 >
 > ```Powershell  
-> New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://login.microsoftonline.us/<your verified domain>/metadata/json/1"  
-> New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.microsoftonline.us/<your verified domain>/federationmetadata/2007-06/federationmetadata.xml"  
+> New-AuthServer -Name "WindowsAzureACS" -AuthMetadataUrl "https://login.microsoftonline.us/<your tenant coexistence domain>/metadata/json/1"  
+> New-AuthServer -Name "evoSTS" -Type AzureAD -AuthMetadataUrl "https://login.microsoftonline.us/<your tenant coexistence domain>/federationmetadata/2007-06/federationmetadata.xml"  
 > ```  
-
+   
+> [!NOTE]
+> Tenant coexistence domain is of the form contoso.mail.onmicrosoft.com
+   
 ### Step 2: Enable the partner application for your Exchange Online organization
 
 Run the following command in the Exchange PowerShell in your on-premises Exchange organization.
