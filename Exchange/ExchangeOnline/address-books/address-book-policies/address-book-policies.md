@@ -50,7 +50,7 @@ To turn on ABP email routing in your Exchange Online organization, see [Turn on 
 
 To assign ABPs to users, see [Assign an address book policy to users in Exchange Online](assign-an-address-book-policy-to-mail-users.md).
 
-APBs take effect when a user connects to their Exchange Online Mailbox. If you change an ABP, the updated APB takes effect when a user restarts or reconnects their email client app.
+ABPs take effect when a user connects to their Exchange Online Mailbox. If you change an ABP, the updated ABP takes effect when a user restarts or reconnects their email client app.
 
 ## ABP example
 

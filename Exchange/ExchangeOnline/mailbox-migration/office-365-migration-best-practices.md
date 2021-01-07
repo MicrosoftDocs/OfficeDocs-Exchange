@@ -333,6 +333,9 @@ For example, if a test migration was completed four hours before the start of a 
 
 Third-party tools are mostly used in migration scenarios that don't involve Exchange, such as those from Google Mail, IBM Lotus, Domino, and Novell GroupWise. This section focuses on the migration protocols used by third-party migration tools, rather than on the actual products and migration tools. The following table provides a list of factors that apply to third-party tools for Microsoft 365 or Office 365 migration scenarios.
 
+> [!IMPORTANT]
+> For issues with data consistency or integrity after performing a migration using third-party tools, please contact the vendor who provided the tool for support.
+
 ### Factor 1: Data source
 
 ****
