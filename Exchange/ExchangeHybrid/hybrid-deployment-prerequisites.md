@@ -136,6 +136,22 @@ The following table provides more detailed information about the involved on-pre
 
 For even more detail about this information, see [Deep Dive: How Hybrid Authentication Really Works](https://techcommunity.microsoft.com/t5/exchange-team-blog/deep-dive-how-hybrid-authentication-really-works/ba-p/606780), [Demystifying and troubleshooting hybrid mail flow: when is a message internal?](https://techcommunity.microsoft.com/t5/exchange-team-blog/demystifying-and-troubleshooting-hybrid-mail-flow-when-is-a/ba-p/1420838), [Transport routing in Exchange hybrid deployments](./transport-routing.md), [Configure mail flow using connectors](../ExchangeOnline/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow.md), and [Manage mail flow with mailboxes in multiple locations (Exchange Online and on-premises)](../ExchangeOnline/mail-flow-best-practices/manage-mail-flow-for-multiple-locations.md).
 
+From on-premises Exchange to Office 365, the 2010 MBX & CAS or 2013 MBX (backend), 2016 or 2019 would need outbound Internet access to O365 EWS endpoints as well as the Microsoft Federation Gateway or Authorization server (if using OAuth) via the following URLs:
+
+EWS & Autodiscover:
+https://outlook.office365.com/autodiscover/autodiscover.svc
+https://autodiscover-s.outlook.com/autodiscover/autodiscover.svc
+https://outlook.office365.com/ews/exchange.asmx
+
+MS Federation Gateway:
+https://nexus.microsoftonline-p.com/federationmetadata/2006-12/federationmetadata.xml  
+https://login.microsoftonline.com/extSTS.srf  
+https://domains.live.com/service/managedelegation2.asmx
+
+Authorization Server:
+https://login.windows.net/common/oauth2/authorize  
+https://accounts.accesscontrol.windows.net/
+
 ## Recommended tools and services
 
 The following tools and services are beneficial when you're configuring hybrid deployments with the Hybrid Configuration wizard:
