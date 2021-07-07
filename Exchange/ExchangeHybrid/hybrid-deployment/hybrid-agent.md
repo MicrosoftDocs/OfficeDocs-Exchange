@@ -33,7 +33,7 @@ The Hybrid Agent has multiple methods of installation with different requirement
 
   - TLS 1.2 enabled.
 
-    Azure Application Proxy documentation: [https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application)
+    Azure Application Proxy documentation: [https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy-add-on-premises-application](/azure/active-directory/app-proxy/application-proxy-add-on-premises-application)
 
   - Capable of establishing outbound HTTPS connections to the Internet.
 
