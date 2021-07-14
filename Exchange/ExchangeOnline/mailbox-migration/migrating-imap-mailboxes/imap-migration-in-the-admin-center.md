@@ -45,15 +45,19 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
 1. Sign into the [About the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/about-the-admin-center).
 
-2. Navigate to **Setup** \> **Data migration**.
+2. Navigate to **Setup** and choose **Migrations** under **Featured Collections**.
 
-    ![Data migration dashboard](../media/3831edd8-1781-4f05-85c5-3796f4658cee.png)
+    ![Data migration dashboard](../media/setup-migrations.png)
+
+3. In the **Migrations** page, choose **Email**.
+4. In the **Migrate your email** page, click the **Get started** button.
+5. In the **Email sources** pane, choose **Import my email messages**.
 
     **Select your data service** dashboard opens.
 
     ![Select your email service](../media/f0c92829-d849-4a26-9d38-1fce1bde616e.png)
 
-3. Do one of the following steps:
+6. Do one of the following steps:
 
    - **Your provider is listed**:
 
@@ -83,15 +87,15 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
      3. Click **Save** to test the connection. Once the connection is verified, the **Email Migration Status** page will list all your added users with the email address that you provided.
 
-4. **This and the following steps apply for both a listed email provider or "Other":**
+7. **This and the following steps apply for both a listed email provider or "Other":**
 
     Check the box next to the users whose email you want to migrate, and then fill in the email alias, and the password (app password if you are migrating mail from Gmail or Google apps).
 
-5. Choose **Start Migration** after you have entered the required information.
+8. Choose **Start Migration** after you have entered the required information.
 
     ![Choose Start Migration](../media/c820e755-42b4-4a78-9c09-6f2135d7d7da.png)
 
-6. The migration status will be one of:
+9. The migration status will be one of:
 
    - **Starting**
 
@@ -105,7 +109,7 @@ To migrate Exchange mail to Microsoft 365 or Office 365, see [Use express migrat
 
     When you're done, choose **Close Connection**. This also allows you to start a new migration if you want to migrate emails from other providers as well.
 
-7. If you are migrating from Google apps where you own the domain, you need to go [Create DNS records at Google Domains for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-google-domains) after you have completed email migration so that the mail will be sent to Microsoft 365 or Office 365 mailboxes instead of Google apps. If you are migrating from another IMAP provider where you own the domain, [check these instructions](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) to find your domain provider.
+10. If you are migrating from Google apps where you own the domain, you need to go [Create DNS records at Google Domains for Microsoft](/microsoft-365/admin/dns/create-dns-records-at-google-domains) after you have completed email migration so that the mail will be sent to Microsoft 365 or Office 365 mailboxes instead of Google apps. If you are migrating from another IMAP provider where you own the domain, [check these instructions](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) to find your domain provider.
 
    If you have migrated as a part of the setup experience, you can return to the setup. The setup steps will guide you through updating the DNS records.
 
